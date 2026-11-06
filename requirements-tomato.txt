@@ -1,0 +1,12 @@
+# Install torch/torchvision for your CUDA driver first; see docs/TOMATO_FOUR_STAGE_TRAINING.md.
+numpy>=1.26,<3
+pyarrow>=17
+av>=13
+opencv-python>=4.8
+torch>=2.6
+torchvision>=0.21
+transformers>=4.55,<6
+safetensors>=0.5
+huggingface_hub>=0.34
+PyYAML>=6
+pytest>=8
