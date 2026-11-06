@@ -19,7 +19,8 @@ LABELS = ('pickup', 'harvest', 'return', 'adjust')
 CAMERAS = ('cam0', 'cam1', 'cam2')
 MODEL_ID = 'facebook/vjepa2-vitl-fpc64-256'
 REVISION = 'b3c1679b7c34d3255ef3547f27c7b226aefab26f'
-SAMPLER_VERSION = 'timestamp-floor-v1'
+LEGACY_SAMPLER_VERSION = 'timestamp-floor-v1'
+SAMPLER_VERSION = 'uniform-integer-causal-v2'
 REPO = Path(__file__).resolve().parents[1]
 
 
@@ -339,16 +340,85 @@ def validate_source_and_media(episode, joint_names, joint_mode='arms-and-hands')
                 joint_max=q.max(axis=0).tolist(), measured_finite=True)
 
 
-def sample_causal_indices(times, anchor_index, history_frames=16, sample_hz=10):
+def sample_causal_indices(times, anchor_index, history_frames=16, sample_hz=10, sampler_version=None):
     times = np.asarray(times, dtype=np.float64)
     if (times.ndim != 1 or not len(times) or not np.isfinite(times).all() or np.any(np.diff(times) <= 0)
             or type(anchor_index) not in (int, np.int64, np.int32) or not 0 <= anchor_index < len(times)
             or history_frames < 1 or sample_hz <= 0):
         raise ValueError('Invalid causal timeline/history')
-    query = np.maximum(times[0], times[anchor_index] - np.arange(history_frames - 1, -1, -1) / sample_hz)
-    # 1e-12 only absorbs float arithmetic of exact 30Hz test timestamps, never a future frame.
-    indices = np.searchsorted(times[:anchor_index + 1], query + 1e-12, side='right') - 1
+    version = sampler_version or SAMPLER_VERSION
+    if version not in (SAMPLER_VERSION, LEGACY_SAMPLER_VERSION):
+        raise ValueError('Unknown sampler version')
+    steps = np.arange(history_frames - 1, -1, -1)
+    if version == SAMPLER_VERSION and len(times) > 1:
+        fps = int(round(1 / np.median(np.diff(times))))
+        stride = fps / sample_hz
+        if (fps > 0 and np.isclose(stride, round(stride), atol=1e-9, rtol=0)
+                and round(stride) >= 1
+                and np.allclose(times, times[0] + np.arange(len(times)) / fps, atol=1e-4, rtol=0)):
+            return np.maximum(0, anchor_index - steps * int(round(stride))).astype(np.int64)
+    query = np.maximum(times[0], times[anchor_index] - steps / sample_hz)
+    # Nonuniform/nonintegral-rate fallback uses only the already observed prefix.
+    epsilon = 1e-12 if version == LEGACY_SAMPLER_VERSION else 0.
+    indices = np.searchsorted(times[:anchor_index + 1], query + epsilon, side='right') - 1
     return np.maximum(indices, 0).astype(np.int64)
+
+
+def prediction_contract(config):
+    """Legacy dictionaries default to current-only; explicit YAML/CLI values are locked."""
+    contract = dict(prediction_mode=config.get('prediction_mode', 'current_only'),
+                    future_horizon_s=config.get('future_horizon_s', 1.0),
+                    lambda_current=config.get('lambda_current', 1.0),
+                    lambda_future=config.get('lambda_future', .5),
+                    stable_transition_k=config.get('stable_transition_k', 2))
+    active_heads(contract['prediction_mode'])
+    for key in ('future_horizon_s', 'lambda_current', 'lambda_future'):
+        value = contract[key]
+        if type(value) not in (int, float) or not np.isfinite(value) or value < 0:
+            raise ValueError(f'{key} must be finite and nonnegative')
+    if contract['future_horizon_s'] <= 0:
+        raise ValueError('future_horizon_s must be positive')
+    if type(contract['stable_transition_k']) is not int or contract['stable_transition_k'] < 1:
+        raise ValueError('stable_transition_k must be a positive integer')
+    for head in active_heads(contract['prediction_mode']):
+        if contract['lambda_' + head] <= 0:
+            raise ValueError(f'Active {head} head requires lambda_{head} > 0; select a single-head mode to disable it')
+    return contract
+
+
+def active_heads(mode):
+    if mode not in ('current_only', 'future_only', 'joint'):
+        raise ValueError('prediction_mode must be current_only, future_only, or joint')
+    return ('current', 'future') if mode == 'joint' else (mode.removesuffix('_only'),)
+
+
+def build_phase_targets(anchors, segments, episode_length, fps, future_horizon_s=1.0):
+    """Future *labels* only. Never supplies indices to the observation feature path."""
+    anchors = np.asarray(anchors)
+    if (anchors.ndim != 1 or not len(anchors) or not np.issubdtype(anchors.dtype, np.integer)
+            or np.any(np.diff(anchors) <= 0) or anchors[0] < 0 or anchors[-1] >= episode_length):
+        raise ValueError('Invalid target anchor grid')
+    validate_segments(segments, episode_length)
+    if not np.isfinite(fps) or fps <= 0 or not np.isfinite(future_horizon_s) or future_horizon_s <= 0:
+        raise ValueError('Finite positive fps and future horizon required')
+    offset = int(round(fps * future_horizon_s))
+    if offset < 1 or not np.isclose(offset, fps * future_horizon_s, atol=1e-7, rtol=0):
+        raise ValueError('future_horizon_s is not an exact positive integer number of frames at this FPS')
+    target = anchors + offset
+    valid = target < episode_length
+    current = np.array([label_at_frame(segments, int(i)) for i in anchors], dtype=np.int64)
+    future = np.full(len(anchors), -100, dtype=np.int64)
+    future[valid] = [label_at_frame(segments, int(i)) for i in target[valid]]
+    target_times = np.full(len(anchors), np.nan, dtype=np.float64)
+    target_times[valid] = target[valid] / fps
+    return dict(anchors=anchors.astype(np.int64), current_labels=current, future_labels=future,
+                future_valid_mask=valid, future_target_frames=np.where(valid, target, -1).astype(np.int64),
+                future_target_times_s=target_times)
+
+
+def serializable_targets(targets):
+    return {key: [None if isinstance(v, float) and not np.isfinite(v) else v for v in value.tolist()]
+            for key, value in targets.items()}
 
 
 def iter_phase_anchors(times, prediction_hz=2):

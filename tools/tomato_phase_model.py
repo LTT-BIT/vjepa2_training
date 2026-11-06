@@ -94,7 +94,7 @@ def feature_fingerprint(episode, contract, provenance):
                                camera_keys=episode['camera_keys'], joint_names=contract['joint_names'],
                                state_schema=episode['info']['features']['observation.state'], fps=episode['fps'],
                                joint_mode=contract['joint_mode'], history_frames=16, history_sample_hz=10,
-                               prediction_hz=2, sampler=ds.SAMPLER_VERSION, image_size=256,
+                               prediction_hz=2, sampler=contract.get('sampler_version', ds.SAMPLER_VERSION), image_size=256,
                                pooling='last_hidden_state.mean(dim=1)', preprocessing=FEATURE_VERSION,
                                model=provenance))
 
@@ -165,7 +165,7 @@ def load_cache(path, episode, contract, provenance):
         data = {k: f[k].copy() for k in f.files}
     t, _ = ds.read_state(episode, contract['joint_names'], contract['joint_mode'])
     anchors = ds.iter_phase_anchors(t)
-    histories = np.stack([ds.sample_causal_indices(t, int(i)) for i in anchors])
+    histories = np.stack([ds.sample_causal_indices(t, int(i), sampler_version=contract.get('sampler_version')) for i in anchors])
     if (str(data['fingerprint']) != key or not np.array_equal(data['anchors'], anchors)
             or not np.array_equal(data['times'], t[anchors])
             or not np.array_equal(data['input_indices'], histories)
@@ -185,7 +185,7 @@ def extract_episode(encoder, episode, contract, provenance, directory, batch_win
         raise ValueError('batch_windows must be positive')
     times, q = ds.read_state(episode, contract['joint_names'], contract['joint_mode'])
     anchors = ds.iter_phase_anchors(times)
-    histories = np.stack([ds.sample_causal_indices(times, int(i)) for i in anchors])
+    histories = np.stack([ds.sample_causal_indices(times, int(i), sampler_version=contract.get('sampler_version')) for i in anchors])
     views, prep_ms = decode_selected(episode, np.unique(histories))
     features, latency = [], []
     device = next(encoder.parameters()).device

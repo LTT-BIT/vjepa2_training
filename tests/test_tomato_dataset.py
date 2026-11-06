@@ -183,6 +183,51 @@ def test_actual_video_pts_offset_is_rejected(tmp_path):
         ds.validate_source_and_media(e, names)
 
 
+@pytest.mark.parametrize('dtype', [np.float64, np.float32])
+def test_p1_integer_sampler_survives_timestamp_roundtrip(dtype):
+    t = (np.arange(6000) / 30).astype(dtype).astype(np.float64)
+    for anchor in (0, 2, 15, 450, 5990):
+        expected = np.maximum(0, anchor - np.arange(15, -1, -1) * 3)
+        np.testing.assert_array_equal(ds.sample_causal_indices(t, anchor), expected)
+    if dtype == np.float32:
+        assert not np.array_equal(ds.sample_causal_indices(t, 450, sampler_version=ds.LEGACY_SAMPLER_VERSION), np.arange(405, 451, 3))
+
+
+def test_non30_sampler_has_explicit_integer_or_causal_fallback():
+    for fps in (10, 25, 60):
+        t = np.arange(100) / fps
+        ids = ds.sample_causal_indices(t, 70)
+        assert len(ids) == 16 and ids[-1] == 70 and np.all(t[ids] <= t[70])
+        if fps % 10 == 0:
+            np.testing.assert_array_equal(ids, np.maximum(0, 70 - np.arange(15, -1, -1) * (fps // 10)))
+
+
+@pytest.mark.parametrize('horizon,offset', [(.5, 15), (1., 30), (2., 60)])
+def test_future_targets_exact_frames_mask_and_half_open(horizon, offset):
+    segments = [dict(start_frame=a, end_frame=b, label=l, reviewed=True)
+                for a, b, l in [(0, 180, 'pickup'), (180, 300, 'harvest'), (300, 360, 'return'),
+                                (360, 420, 'adjust'), (420, 600, 'pickup')]]
+    anchors = np.array([0, 179 - offset, 180 - offset, 420 - offset, 580, 599])
+    targets = ds.build_phase_targets(anchors, segments, 600, 30, horizon)
+    assert targets['future_labels'][1:4].tolist() == [0, 1, 0]
+    assert targets['future_target_frames'][-1] == -1 and targets['future_labels'][-1] == -100
+    assert not targets['future_valid_mask'][-1] and np.isnan(targets['future_target_times_s'][-1])
+    assert ds.serializable_targets(targets)['future_target_times_s'][-1] is None
+    assert targets['current_labels'].tolist() == [ds.label_at_frame(segments, int(i)) for i in anchors]
+    with pytest.raises(ValueError, match='exact positive integer'):
+        ds.build_phase_targets(anchors, segments, 600, 30, .101)
+
+
+def test_metadata_policy_function_is_unchanged_from_authorized_baseline():
+    import ast
+    import subprocess
+    before = subprocess.check_output(['git', 'show', '11d2b57358b382aa638264303ebfac582d743029:tools/tomato_dataset.py'], cwd=ds.REPO, text=True)
+    after = (ds.REPO / 'tools/tomato_dataset.py').read_text()
+    def policy(text):
+        return ast.dump(next(n for n in ast.parse(text).body if isinstance(n, ast.FunctionDef) and n.name == 'load_reviewed_coarse'))
+    assert policy(before) == policy(after)
+
+
 def test_subset_metadata_exception_records_actual_hash_and_keeps_data_strict(tmp_path):
     from tools import tomato_phase_model as model
     e, ann, _ = make_episode(tmp_path / 'data', length=12)
