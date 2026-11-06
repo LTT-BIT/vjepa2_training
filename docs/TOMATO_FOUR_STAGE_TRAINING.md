@@ -1,5 +1,17 @@
 # Sharpa 番茄四阶段分类器
 
+一键运行（重复 `--dataset` 传入多个 LeRobot 根目录）：
+
+```bash
+python tools/train_tomato_vjepa_phase.py run --config configs/tomato_four_stage.yaml \
+  --dataset /absolute/path/to/normal_a --dataset /absolute/path/to/normal_b \
+  --output-dir /absolute/path/to/isolated_run
+```
+
+也可在配置中添加 `dataset_roots: [/absolute/path/to/normal_a, /absolute/path/to/normal_b]`，启动时省略 `--dataset`。命令行的 `--dataset` 会替代配置中的列表。每个目录须包含 `meta/episodes.jsonl` 和每条 Episode 唯一的已审核 coarse 文件；找不到或存在多份候选时会明确失败，可使用原有显式索引及分阶段命令。自动选择的索引保存在 run 目录中，后续输入变化必须使用新的 run 目录。入口会依次运行 prepare、extract、train；请在准备好真实权重和数据后再启动。
+
+> 测试模式更新：配置 `allow_subset_metadata_mismatch: true` 暂时允许 `meta/info.json` 和 `meta/episodes.jsonl` 与标注中原包哈希不同，差异及实际哈希记入 manifest。生成索引时加 `--allow-subset-metadata-mismatch`。视频、Parquet 和其他来源哈希仍严格校验，prepare 后的全部输入仍锁定实际哈希。设置为 `false` 可恢复原严格行为。下文关于本次原始审计结果的描述保留为历史记录。
+
 此分支只实现 `pickup / harvest / return / adjust` 分类、冻结 V-JEPA 2 特征提取、分类头训练和离线评估。没有 Agent、Prompt Manager、π0.5、RTC/T3 或控制接口。原柠檬脚本、标注、测试和 `experiment_results/` 保持基线字节不变。
 
 本次实测状态、数据问题及测试结果见 [TOMATO_IMPLEMENTATION_REPORT.md](TOMATO_IMPLEMENTATION_REPORT.md)。**当前样本来源校验未通过，真实番茄训练未执行。** 单元测试生成的模型、概率和视频均为合成测试产物。

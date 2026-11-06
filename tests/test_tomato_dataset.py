@@ -1,5 +1,6 @@
 import copy
 import json
+from pathlib import Path
 
 import numpy as np
 import pyarrow as pa
@@ -180,3 +181,24 @@ def test_actual_video_pts_offset_is_rejected(tmp_path):
         for packet in stream.encode(): c.mux(packet)
     with pytest.raises(ValueError, match='PTS/Parquet'):
         ds.validate_source_and_media(e, names)
+
+
+def test_subset_metadata_exception_records_actual_hash_and_keeps_data_strict(tmp_path):
+    from tools import tomato_phase_model as model
+    e, ann, _ = make_episode(tmp_path / 'data', length=12)
+    info_path = tmp_path / 'data/meta/info.json'
+    info = ds.read_json(info_path); info['subset_note'] = 'exported subset'; ds.write_json(info_path, info)
+    e = ds.load_episode_info(tmp_path / 'data', 0)
+    with pytest.raises(ValueError, match='SHA256 mismatch'):
+        ds.load_reviewed_coarse(ann, e)
+    reviewed = ds.load_reviewed_coarse(ann, e, True)
+    assert reviewed['allowed_metadata_mismatches'] == ['meta/info.json']
+    e['annotation'] = reviewed
+    e['input_sha256'] = {str(Path(p).relative_to(e['dataset_root'])): ds.digest(p) for p in [e['parquet'], *e['videos']]}
+    model.assert_source_unchanged(e)
+    info['subset_note'] = 'changed again'; ds.write_json(info_path, info)
+    with pytest.raises(ValueError, match='Source changed'):
+        model.assert_source_unchanged(e)
+    Path(e['parquet']).write_bytes(b'changed')
+    with pytest.raises(ValueError, match='parquet'):
+        ds.load_reviewed_coarse(ann, e, True)

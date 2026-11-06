@@ -94,3 +94,16 @@ def test_cv_summary_requires_all_folds_and_no_outer_leakage(tmp_path):
     m['splits']['test'] = folds[0]['test']; ds.write_json(p, m)
     with pytest.raises(ValueError, match='coverage'):
         ev.summarize_cv(tmp_path)
+
+
+def test_eval_uses_auto_discovered_run_index(tmp_path):
+    torch.set_num_threads(2)
+    cfg = make_config(tmp_path)
+    roots = [r['dataset_root'] for r in ds.read_json(cfg['annotation_index'])]
+    generated_cfg = dict(cfg)
+    tr.setup_discovered_index(generated_cfg, roots)
+    manifest = tr.prepare(generated_cfg)
+    synthetic_feature_index(generated_cfg, manifest)
+    tr.train(generated_cfg, manifest)
+    report, errors = ev.evaluate(cfg, video=False, measure=False)
+    assert report['samples'] == 8 and not errors

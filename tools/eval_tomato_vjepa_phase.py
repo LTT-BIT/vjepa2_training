@@ -148,6 +148,12 @@ def benchmark(config, episode, saved, head, windows=20):
 
 
 def evaluate(config, episode_id=None, video=True, measure=True, windows=20):
+    config = dict(config)
+    generated = Path(config['output_dir']) / 'annotation_index.json'
+    manifest_path = Path(config['output_dir']) / 'manifest.json'
+    if generated.is_file() and manifest_path.is_file():
+        if ds.digest(generated) == ds.read_json(manifest_path)['annotation_index_sha256']:
+            config['annotation_index'] = str(generated)
     manifest = trainer.load_locked_manifest(config)
     e = held_out_episode(manifest, episode_id)
     run = Path(config['output_dir'])

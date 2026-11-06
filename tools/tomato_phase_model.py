@@ -100,7 +100,7 @@ def feature_fingerprint(episode, contract, provenance):
 
 
 def assert_source_unchanged(episode):
-    expected_hashes = {**episode.get('annotation', {}).get('source', {}).get('sha256', {}),
+    expected_hashes = {**{r['path']: r['actual'] for r in episode.get('annotation', {}).get('source_hashes', [])},
                        **episode['input_sha256']}
     for rel, expected in expected_hashes.items():
         if ds.digest(ds.safe_source_path(episode['dataset_root'], rel)) != expected:

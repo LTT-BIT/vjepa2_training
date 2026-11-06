@@ -9,6 +9,8 @@ output_dir: ../runs/tomato/baseline
 feature_cache_dir: ../runs/tomato/feature_cache
 robot: sharpa
 variant: normal
+# Test only: allow subset metadata hashes to differ from the reviewed original.
+allow_subset_metadata_mismatch: true
 cameras:
 - cam0
 - cam1

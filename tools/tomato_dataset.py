@@ -98,7 +98,13 @@ def load_config(path):
             continue
         p = Path(cfg[key]).expanduser()
         cfg[key] = str((path.parent / p).resolve() if not p.is_absolute() else p.resolve())
+    if 'dataset_roots' in cfg:
+        if not isinstance(cfg['dataset_roots'], list) or not all(isinstance(v, str) for v in cfg['dataset_roots']):
+            raise ValueError('dataset_roots must be a list of paths')
+        cfg['dataset_roots'] = [str((path.parent / Path(v).expanduser()).resolve()) for v in cfg['dataset_roots']]
     cfg.setdefault('seed', 42)
+    if type(cfg.get('allow_subset_metadata_mismatch', False)) is not bool:
+        raise ValueError('allow_subset_metadata_mismatch must be a boolean')
     cfg.setdefault('device', 'cuda')
     cfg.setdefault('batch_windows', 1)
     cfg.setdefault('epochs', 100)
@@ -268,7 +274,7 @@ def source_hash_report(annotation, episode):
     return rows
 
 
-def load_reviewed_coarse(annotation_path, episode_metadata):
+def load_reviewed_coarse(annotation_path, episode_metadata, allow_subset_metadata_mismatch=False):
     path = Path(annotation_path).expanduser().resolve(strict=True)
     doc = read_json(path)
     saved_at = doc.get('saved_at')
@@ -293,10 +299,13 @@ def load_reviewed_coarse(annotation_path, episode_metadata):
     validate_segments(doc.get('segments'), episode_metadata['length'])
     hashes = source_hash_report(doc, episode_metadata)
     mismatches = [r['path'] for r in hashes if not r['matched']]
-    if mismatches:
-        raise ValueError('Annotation source SHA256 mismatch: ' + ', '.join(mismatches))
+    allowed = {'meta/info.json', 'meta/episodes.jsonl'} if allow_subset_metadata_mismatch is True else set()
+    rejected = [p for p in mismatches if p not in allowed]
+    if rejected:
+        raise ValueError('Annotation source SHA256 mismatch: ' + ', '.join(rejected))
     return dict(path=str(path), sha256=digest(path), revision=doc['revision'], saved_at=doc['saved_at'],
                 source=source, segments=doc['segments'], source_hashes=hashes,
+                allowed_metadata_mismatches=mismatches,
                 behavior_evidence={k: doc[k] for k in ('note', 'outcome', 'review_events', 'training_review') if k in doc},
                 behavior_review='coarse is phase truth only; action success not inferred')
 
@@ -395,7 +404,7 @@ def audit_dataset(root, config):
                      reviewed=[s.get('reviewed') for s in doc.get('segments', [])],
                      source_hashes=source_hash_report(doc, e))
             try:
-                load_reviewed_coarse(p, e)
+                load_reviewed_coarse(p, e, config.get('allow_subset_metadata_mismatch', False))
                 a['eligible'] = True
             except ValueError as exc:
                 a.update(eligible=False, error=str(exc))

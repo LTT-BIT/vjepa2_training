@@ -62,7 +62,7 @@ def prepare(config):
             if schema is not None and names != schema:
                 raise ValueError('Inconsistent full state schema across datasets')
             schema = names
-            ann = ds.load_reviewed_coarse(r['coarse_annotation'], e)
+            ann = ds.load_reviewed_coarse(r['coarse_annotation'], e, config.get('allow_subset_metadata_mismatch', False))
             if r.get('annotation_sha256', ann['sha256']) != ann['sha256'] or r.get('revision', ann['revision']) != ann['revision']:
                 raise ValueError('Locked annotation revision/SHA changed')
             before = {str(Path(p).relative_to(e['dataset_root'])): ds.digest(p) for p in [e['parquet'], *e['videos']]}
@@ -74,7 +74,7 @@ def prepare(config):
                 if ds.digest(Path(e['dataset_root']) / rel) != sha:
                     raise ValueError('Source changed during prepare')
             # Full source identity check again after decode guards changed metadata/labels as well.
-            if ds.load_reviewed_coarse(r['coarse_annotation'], ds.load_episode_info(r['dataset_root'], r['episode_index'])) != ann:
+            if ds.load_reviewed_coarse(r['coarse_annotation'], ds.load_episode_info(r['dataset_root'], r['episode_index']), config.get('allow_subset_metadata_mismatch', False)) != ann:
                 raise ValueError('Annotation changed during prepare')
             episodes.append({**e, 'annotation': ann, 'media_validation': media, 'input_sha256': before,
                              'anchors': anchors.tolist(), 'class_counts': counts.tolist(),
@@ -106,6 +106,7 @@ def prepare(config):
     contract_keys = ('project', 'robot', 'variant', 'model_id', 'model_revision', 'cameras', 'labels',
                      'image_size', 'history_frames', 'history_sample_hz', 'prediction_hz', 'joint_mode', 'joint_names', 'seed')
     manifest = dict(format_version=1, contract={k: config[k] for k in contract_keys},
+                    allow_subset_metadata_mismatch=config.get('allow_subset_metadata_mismatch', False),
                     cross_validation=dict(folds=config.get('cv_folds'), fold_index=config.get('cv_fold_index')),
                     annotation_index_sha256=ds.digest(config['annotation_index']),
                     sampler_version=ds.SAMPLER_VERSION, episodes=episodes, splits=splits, summary=summaries,
@@ -115,6 +116,8 @@ def prepare(config):
                                     sha256='25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b',
                                     config_sha256='3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9'),
                     model_weights_sha256='25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b')
+    if any(e['annotation']['allowed_metadata_mismatches'] for e in episodes):
+        manifest['warnings'].append('TEST ONLY: source metadata hash mismatch allowed; see annotation.source_hashes')
     for name, value in (('manifest.json', manifest), ('split.json', splits)):
         p = run / name
         if p.exists() and ds.read_json(p) != value:
@@ -327,16 +330,57 @@ def write_predictions(run, rows):
             writer.writerow({**{k: v for k, v in row.items() if k in columns}, **row['probabilities']})
 
 
+def discover_datasets(roots, allow_subset_metadata_mismatch=False):
+    """Select one explicit on-disk coarse file per episode; reject ambiguity."""
+    resolved = [Path(r).expanduser().resolve(strict=True) for r in roots]
+    if not resolved or len(set(resolved)) != len(resolved):
+        raise ValueError('Provide nonempty, distinct dataset roots')
+    rows = []
+    for root in sorted(resolved):
+        entries = ds.read_rows(root / 'meta/episodes.jsonl')
+        if not entries:
+            raise ValueError(f'No episodes in {root}')
+        for entry in entries:
+            i = entry['episode_index']
+            candidates = sorted((root / 'annotations/subtasks/coarse').glob(f'episode_{i:06d}*.json'))
+            if len(candidates) != 1:
+                raise ValueError(f'Expected exactly one coarse annotation for {root} episode {i}; found {len(candidates)}. Use an explicit annotation index for ambiguous versions.')
+            e = ds.load_episode_info(root, i)
+            a = ds.load_reviewed_coarse(candidates[0], e, allow_subset_metadata_mismatch)
+            rows.append(dict(dataset_root=str(root), episode_index=i, coarse_annotation=str(candidates[0].resolve()),
+                             variant='normal', annotation_sha256=a['sha256'], revision=a['revision'],
+                             allowed_metadata_mismatches=a['allowed_metadata_mismatches']))
+    return rows
+
+
+def setup_discovered_index(config, roots):
+    roots = [str(Path(r).expanduser().resolve(strict=True)) for r in roots]
+    out = ds.ensure_output_outside_sources(config['output_dir'], roots)
+    rows = discover_datasets(roots, config.get('allow_subset_metadata_mismatch', False))
+    ds.ensure_output_outside_sources(out, roots, [r['coarse_annotation'] for r in rows])
+    path = out / 'annotation_index.json'
+    if path.exists() and ds.read_json(path) != rows:
+        raise ValueError('Discovered selection changed; use a new output directory')
+    if not path.exists():
+        ds.write_json(path, rows)
+    config['annotation_index'] = str(path)
+    return rows
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('command', choices=['prepare', 'extract', 'train'])
+    p.add_argument('command', choices=['prepare', 'extract', 'train', 'run'])
     p.add_argument('--config', required=True)
+    p.add_argument('--dataset', action='append', help='LeRobot dataset root; repeat for multiple roots')
+    p.add_argument('--output-dir', help='Isolated output directory for this run')
     p.add_argument('--device', choices=['cpu', 'cuda'])
     p.add_argument('--batch-windows', type=int)
     p.add_argument('--cv-folds', type=int, help='Optional grouped outer folds; needs sufficient sources')
     p.add_argument('--cv-fold-index', type=int)
     a = p.parse_args(argv)
     config = ds.load_config(a.config)
+    if a.output_dir:
+        config['output_dir'] = str(Path(a.output_dir).expanduser().resolve())
     if a.device:
         config['device'] = a.device
     if a.batch_windows is not None:
@@ -348,12 +392,20 @@ def main(argv=None):
             p.error('Provide both --cv-folds and --cv-fold-index')
         config['cv_folds'], config['cv_fold_index'] = a.cv_folds, a.cv_fold_index
         config['output_dir'] = str(Path(config['output_dir']) / f'cv{a.cv_folds}' / f'fold_{a.cv_fold_index}')
-    selections = ds.load_annotation_index(config['annotation_index'])
+    roots = a.dataset if a.dataset is not None else config.get('dataset_roots', [])
+    if a.command == 'run' and roots:
+        selections = setup_discovered_index(config, roots)
+    else:
+        selections = ds.load_annotation_index(config['annotation_index'])
     out = ds.ensure_output_outside_sources(config['output_dir'], [r['dataset_root'] for r in selections],
                                            [r['coarse_annotation'] for r in selections])
     out.mkdir(parents=True, exist_ok=True)
     try:
-        if a.command == 'prepare':
+        if a.command == 'run':
+            manifest = prepare(config)
+            extract(config, manifest)
+            train(config, manifest)
+        elif a.command == 'prepare':
             prepare(config)
         elif a.command == 'extract':
             extract(config, load_locked_manifest(config))

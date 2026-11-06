@@ -13,7 +13,7 @@ except ImportError:
                                 load_episode_info, load_reviewed_coarse, read_json, write_json)
 
 
-def scan(roots):
+def scan(roots, allow_subset_metadata_mismatch=False):
     result = []
     for root in roots:
         for p in sorted((Path(root) / 'annotations/subtasks/coarse').glob('*.json')):
@@ -25,7 +25,8 @@ def scan(roots):
                        segments=len(doc.get('segments', [])))
             try:
                 e = load_episode_info(root, row['episode_index'])
-                load_reviewed_coarse(p, e)
+                ann = load_reviewed_coarse(p, e, allow_subset_metadata_mismatch)
+                row['allowed_metadata_mismatches'] = ann['allowed_metadata_mismatches']
                 row['eligible'] = True
             except (ValueError, KeyError, OSError) as exc:
                 row.update(eligible=False, error=str(exc))
@@ -36,7 +37,7 @@ def scan(roots):
     return result
 
 
-def lock_selection(selection, output):
+def lock_selection(selection, output, allow_subset_metadata_mismatch=False):
     rows = load_annotation_index(selection)
     output = Path(output).resolve()
     ensure_output_outside_sources(output.parent, [r['dataset_root'] for r in rows],
@@ -46,10 +47,11 @@ def lock_selection(selection, output):
     locked = []
     for row in rows:
         e = load_episode_info(row['dataset_root'], row['episode_index'])
-        ann = load_reviewed_coarse(row['coarse_annotation'], e)
+        ann = load_reviewed_coarse(row['coarse_annotation'], e, allow_subset_metadata_mismatch)
         if row.get('annotation_sha256', ann['sha256']) != ann['sha256']:
             raise ValueError('Selected annotation changed')
-        locked.append({**row, 'annotation_sha256': ann['sha256'], 'revision': ann['revision']})
+        locked.append({**row, 'annotation_sha256': ann['sha256'], 'revision': ann['revision'],
+                       'allowed_metadata_mismatches': ann['allowed_metadata_mismatches']})
     write_json(output, locked)
     return locked
 
@@ -60,15 +62,16 @@ def main(argv=None):
     p.add_argument('--report')
     p.add_argument('--selection', help='Explicit JSON/JSONL paths/episode/version selection')
     p.add_argument('--output')
+    p.add_argument('--allow-subset-metadata-mismatch', action='store_true', help='Test only: allow changed info.json and episodes.jsonl')
     a = p.parse_args(argv)
     if a.selection:
         if not a.output:
             p.error('--selection requires --output')
-        print(json.dumps(lock_selection(a.selection, a.output), ensure_ascii=False, indent=2))
+        print(json.dumps(lock_selection(a.selection, a.output, a.allow_subset_metadata_mismatch), ensure_ascii=False, indent=2))
     else:
         if not a.dataset:
             p.error('Provide --dataset for read-only inventory')
-        report = scan(a.dataset)
+        report = scan(a.dataset, a.allow_subset_metadata_mismatch)
         if a.report:
             ensure_output_outside_sources(Path(a.report).resolve().parent, a.dataset)
             write_json(a.report, report)

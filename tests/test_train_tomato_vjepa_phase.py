@@ -192,3 +192,26 @@ print('CPU_PREPARE_WITHOUT_MODEL_IMPORTS_OK')
     result = subprocess.run([sys.executable, '-c', code, str(path)], cwd=ds.REPO, capture_output=True, text=True)
     assert result.returncode == 0, result.stderr
     assert 'CPU_PREPARE_WITHOUT_MODEL_IMPORTS_OK' in result.stdout
+
+
+def test_run_discovers_multiple_datasets_and_locks_selection(tmp_path, monkeypatch):
+    import yaml
+    cfg = make_config(tmp_path)
+    roots = [r['dataset_root'] for r in ds.read_json(cfg['annotation_index'])]
+    cfg['dataset_roots'] = roots
+    config_path = tmp_path / 'config.yaml'
+    config_path.write_text(yaml.safe_dump(cfg))
+    calls = []
+    monkeypatch.setattr(tr, 'extract', lambda config, manifest: calls.append(('extract', manifest)))
+    monkeypatch.setattr(tr, 'train', lambda config, manifest: calls.append(('train', manifest)))
+    tr.main(['run', '--config', str(config_path)])
+    assert [x[0] for x in calls] == ['extract', 'train']
+    assert len(ds.read_json(Path(cfg['output_dir']) / 'annotation_index.json')) == 3
+    assert len(calls[0][1]['episodes']) == 3
+    tr.main(['run', '--config', str(config_path), '--dataset', roots[0], '--dataset', roots[1], '--dataset', roots[2]])
+    doc = ds.read_json(Path(roots[0]) / 'annotations/subtasks/coarse/episode_000000.json')
+    ds.write_json(Path(roots[0]) / 'annotations/subtasks/coarse/episode_000000_r2.json', doc)
+    with pytest.raises(ValueError, match='exactly one'):
+        tr.discover_datasets(roots)
+    with pytest.raises(ValueError, match='distinct'):
+        tr.discover_datasets([roots[0], roots[0]])
