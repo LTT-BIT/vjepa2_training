@@ -298,6 +298,12 @@ def save_checkpoint(path, head, mean, std, manifest, manifest_sha256, epoch, val
 
 def load_checkpoint(path, manifest_sha256=None, device='cpu', split_sha256=None):
     saved = torch.load(path, map_location='cpu', weights_only=True)
+    if device.startswith('cuda'):
+        try:
+            from .tomato_runtime import initialize_runtime
+        except ImportError:
+            from tomato_runtime import initialize_runtime
+        initialize_runtime(dict(device=device, seed=saved.get('contract', {}).get('seed', 42)))
     version = saved.get('format_version')
     if (version not in (1, 2) or saved.get('label_order') != list(ds.LABELS)
             or saved.get('sampler_version') not in (ds.SAMPLER_VERSION, ds.LEGACY_SAMPLER_VERSION)

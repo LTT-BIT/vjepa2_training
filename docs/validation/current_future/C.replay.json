@@ -1,0 +1,16 @@
+{
+  "path": "/home/user/pi05/vjepa2_training/runs/tomato/experiments/joint_h1s_lc1_lf0p5_seed42/offline_eval/9efc7aeb8216f65ff27d467e.mp4",
+  "frames": 5250,
+  "fps": 30.0,
+  "prediction_mode": "joint",
+  "future_horizon_s": 1.0,
+  "probabilities": "raw active-head softmax",
+  "stale_predictions": "HELD keeps original anchor and future target",
+  "cameras": [
+    "cam0",
+    "cam1",
+    "cam2"
+  ],
+  "timeline_path": "/home/user/pi05/vjepa2_training/runs/tomato/experiments/joint_h1s_lc1_lf0p5_seed42/offline_eval/9efc7aeb8216f65ff27d467e.frames.jsonl",
+  "events_path": "/home/user/pi05/vjepa2_training/runs/tomato/experiments/joint_h1s_lc1_lf0p5_seed42/offline_eval/9efc7aeb8216f65ff27d467e.events.json"
+}

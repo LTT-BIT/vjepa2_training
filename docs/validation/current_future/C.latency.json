@@ -1,0 +1,61 @@
+{
+  "measured": true,
+  "encoder_and_head_mean_ms": 87.25183539645514,
+  "encoder_and_head_p50_ms": 87.24294797866605,
+  "encoder_and_head_p95_ms": 87.5001098451321,
+  "encoder_and_head_p99_ms": 87.88269156037131,
+  "prediction_mode": "joint",
+  "future_horizon_s": 1.0,
+  "fused_shape": [
+    1,
+    4000
+  ],
+  "visual_dimension": 3072,
+  "measured_joint_history_dimension": 928,
+  "output_shapes": {
+    "current_logits": [
+      1,
+      4
+    ],
+    "future_logits": [
+      1,
+      4
+    ]
+  },
+  "encoder_frozen": true,
+  "encoder_dtype": "torch.bfloat16",
+  "first_input_indices": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "pretrained": {
+    "model_id": "facebook/vjepa2-vitl-fpc64-256",
+    "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+    "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+    "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+  },
+  "three_view_rgb_resize_mean_ms": 1.991856545330693,
+  "three_view_rgb_resize_p95_ms": 2.086334236082621,
+  "warmup_windows": 2,
+  "measured_windows": 20,
+  "device": "cuda:0",
+  "hardware": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "peak_gpu_bytes": 781746176,
+  "torch_version": "2.15.0+cu132",
+  "cuda_version": "13.2",
+  "scope": "Offline synchronized three-view 16-frame encoder + fusion + head. RGB conversion/resize measured separately per three-view source frame; excludes decode/I/O, ROS, other workloads. Not robot latency."
+}

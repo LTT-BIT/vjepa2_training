@@ -1,0 +1,61 @@
+{
+  "runtime": {
+    "pid": 2066932,
+    "seed": 42,
+    "device": "cuda",
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "tf32": false,
+    "cuda_initialized_before_first_setup": false,
+    "torch_version": "2.15.0+cu132",
+    "cuda_version": "13.2",
+    "random_generators": [
+      "python",
+      "numpy",
+      "torch",
+      "torch.cuda (manual_seed lazy seeds all devices)"
+    ],
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "bf16_supported": true
+  },
+  "results": [
+    {
+      "mode": "current_only",
+      "output_shapes": {
+        "current_logits": [
+          2,
+          4
+        ],
+        "future_logits": null
+      },
+      "all_active_logits_finite": true
+    },
+    {
+      "mode": "future_only",
+      "output_shapes": {
+        "current_logits": null,
+        "future_logits": [
+          2,
+          4
+        ]
+      },
+      "all_active_logits_finite": true
+    },
+    {
+      "mode": "joint",
+      "output_shapes": {
+        "current_logits": [
+          2,
+          4
+        ],
+        "future_logits": [
+          2,
+          4
+        ]
+      },
+      "all_active_logits_finite": true
+    }
+  ]
+}

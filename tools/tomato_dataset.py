@@ -356,12 +356,13 @@ def sample_causal_indices(times, anchor_index, history_frames=16, sample_hz=10, 
     if version not in (SAMPLER_VERSION, LEGACY_SAMPLER_VERSION):
         raise ValueError('Unknown sampler version')
     steps = np.arange(history_frames - 1, -1, -1)
-    if version == SAMPLER_VERSION and len(times) > 1:
-        fps = int(round(1 / np.median(np.diff(times))))
+    prefix = times[:anchor_index + 1]
+    if version == SAMPLER_VERSION and len(prefix) > 1:
+        fps = int(round(1 / np.median(np.diff(prefix))))
         stride = fps / sample_hz
         if (fps > 0 and np.isclose(stride, round(stride), atol=1e-9, rtol=0)
                 and round(stride) >= 1
-                and np.allclose(times, times[0] + np.arange(len(times)) / fps, atol=1e-4, rtol=0)):
+                and np.allclose(prefix, times[0] + np.arange(len(prefix)) / fps, atol=1e-4, rtol=0)):
             return np.maximum(0, anchor_index - steps * int(round(stride))).astype(np.int64)
     query = np.maximum(times[0], times[anchor_index] - steps / sample_hz)
     # Nonuniform/nonintegral-rate fallback uses only the already observed prefix.

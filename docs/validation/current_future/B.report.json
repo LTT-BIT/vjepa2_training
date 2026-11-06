@@ -1,0 +1,725 @@
+{
+  "tag": "B",
+  "run": "/home/user/pi05/vjepa2_training/runs/tomato/experiments/future_only_h1s_seed42",
+  "prediction": {
+    "prediction_mode": "future_only",
+    "future_horizon_s": 1.0,
+    "lambda_current": 1.0,
+    "lambda_future": 0.5,
+    "stable_transition_k": 2
+  },
+  "epochs_executed": 17,
+  "best_epoch": 2,
+  "test": {
+    "prediction_mode": "future_only",
+    "future_horizon_s": 1.0,
+    "lambda_current": 1.0,
+    "lambda_future": 0.5,
+    "stable_transition_k": 2,
+    "current": null,
+    "future": {
+      "samples": 348,
+      "accuracy": 0.9367816091954023,
+      "macro_f1": 0.8861841914351111,
+      "nll": 0.19895271048864374,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.8571428571428571,
+          "recall": 0.8780487804878049,
+          "f1": 0.8674698795180723,
+          "support": 41
+        },
+        "harvest": {
+          "precision": 0.9910313901345291,
+          "recall": 0.9444444444444444,
+          "f1": 0.9671772428884027,
+          "support": 234
+        },
+        "return": {
+          "precision": 0.6785714285714286,
+          "recall": 0.9047619047619048,
+          "f1": 0.7755102040816326,
+          "support": 21
+        },
+        "adjust": {
+          "precision": 0.9090909090909091,
+          "recall": 0.9615384615384616,
+          "f1": 0.9345794392523364,
+          "support": 52
+        }
+      },
+      "confusion_true_rows": [
+        [
+          36,
+          0,
+          0,
+          5
+        ],
+        [
+          6,
+          221,
+          7,
+          0
+        ],
+        [
+          0,
+          2,
+          19,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          50
+        ]
+      ],
+      "return_adjust_confusions": 2,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0",
+      "valid_samples": 348,
+      "masked_count": 2,
+      "valid_ratio": 0.9942857142857143,
+      "per_episode": {
+        "9efc7aeb8216f65ff27d467e": {
+          "metrics": {
+            "samples": 348,
+            "accuracy": 0.9367816091954023,
+            "macro_f1": 0.8861841914351111,
+            "nll": 0.19895271048864374,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8571428571428571,
+                "recall": 0.8780487804878049,
+                "f1": 0.8674698795180723,
+                "support": 41
+              },
+              "harvest": {
+                "precision": 0.9910313901345291,
+                "recall": 0.9444444444444444,
+                "f1": 0.9671772428884027,
+                "support": 234
+              },
+              "return": {
+                "precision": 0.6785714285714286,
+                "recall": 0.9047619047619048,
+                "f1": 0.7755102040816326,
+                "support": 21
+              },
+              "adjust": {
+                "precision": 0.9090909090909091,
+                "recall": 0.9615384615384616,
+                "f1": 0.9345794392523364,
+                "support": 52
+              }
+            },
+            "confusion_true_rows": [
+              [
+                36,
+                0,
+                0,
+                5
+              ],
+              [
+                6,
+                221,
+                7,
+                0
+              ],
+              [
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                50
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "masked_count": 2,
+          "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+          "forecast_error_intervals": [
+            {
+              "start_frame": 285,
+              "end_frame_exclusive": 330,
+              "start_timestamp_s": 9.5,
+              "duration_s": 1.5,
+              "predicted_stage": "pickup",
+              "anchors": 3,
+              "time_axis": "forecast issue anchor",
+              "target_start_frame": 315,
+              "target_end_frame_exclusive": 360
+            },
+            {
+              "start_frame": 1365,
+              "end_frame_exclusive": 1395,
+              "start_timestamp_s": 45.5,
+              "duration_s": 1.0,
+              "predicted_stage": "return",
+              "anchors": 2,
+              "time_axis": "forecast issue anchor",
+              "target_start_frame": 1395,
+              "target_end_frame_exclusive": 1425
+            },
+            {
+              "start_frame": 1740,
+              "end_frame_exclusive": 1770,
+              "start_timestamp_s": 58.0,
+              "duration_s": 1.0,
+              "predicted_stage": "return",
+              "anchors": 2,
+              "time_axis": "forecast issue anchor",
+              "target_start_frame": 1770,
+              "target_end_frame_exclusive": 1800
+            },
+            {
+              "start_frame": 2265,
+              "end_frame_exclusive": 2280,
+              "start_timestamp_s": 75.5,
+              "duration_s": 0.5,
+              "predicted_stage": "return",
+              "anchors": 1,
+              "time_axis": "forecast issue anchor",
+              "target_start_frame": 2295,
+              "target_end_frame_exclusive": 2310
+            },
+            {
+              "start_frame": 2445,
+              "end_frame_exclusive": 2475,
+              "start_timestamp_s": 81.5,
+              "duration_s": 1.0,
+              "predicted_stage": "return",
+              "anchors": 2,
+              "time_axis": "forecast issue anchor",
+              "target_start_frame": 2475,
+              "target_end_frame_exclusive": 2505
+            },
+            {
+              "start_frame": 3225,
+              "end_frame_exclusive": 3300,
+              "start_timestamp_s": 107.5,
+              "duration_s": 2.5,
+              "predicted_stage": "adjust",
+              "anchors": 5,
+              "time_axis": "forecast issue anchor",
+              "target_start_frame": 3255,
+              "target_end_frame_exclusive": 3330
+            },
+            {
+              "start_frame": 3555,
+              "end_frame_exclusive": 3600,
+              "start_timestamp_s": 118.5,
+              "duration_s": 1.5,
+              "predicted_stage": "pickup",
+              "anchors": 3,
+              "time_axis": "forecast issue anchor",
+              "target_start_frame": 3585,
+              "target_end_frame_exclusive": 3630
+            },
+            {
+              "start_frame": 4095,
+              "end_frame_exclusive": 4110,
+              "start_timestamp_s": 136.5,
+              "duration_s": 0.5,
+              "predicted_stage": "return",
+              "anchors": 1,
+              "time_axis": "forecast issue anchor",
+              "target_start_frame": 4125,
+              "target_end_frame_exclusive": 4140
+            },
+            {
+              "start_frame": 4995,
+              "end_frame_exclusive": 5010,
+              "start_timestamp_s": 166.5,
+              "duration_s": 0.5,
+              "predicted_stage": "return",
+              "anchors": 1,
+              "time_axis": "forecast issue anchor",
+              "target_start_frame": 5025,
+              "target_end_frame_exclusive": 5040
+            },
+            {
+              "start_frame": 5070,
+              "end_frame_exclusive": 5100,
+              "start_timestamp_s": 169.0,
+              "duration_s": 1.0,
+              "predicted_stage": "harvest",
+              "anchors": 2,
+              "time_axis": "forecast issue anchor",
+              "target_start_frame": 5100,
+              "target_end_frame_exclusive": 5130
+            }
+          ],
+          "forecast_error_duration_s": 11.0,
+          "anticipation": {
+            "events": [
+              {
+                "boundary_frame": 307,
+                "boundary_timestamp_s": 10.233333333333333,
+                "to_stage": "harvest",
+                "eligible_anchors": 2,
+                "new_stage_prediction_count": 0,
+                "ambiguous": false,
+                "detected": false,
+                "missed": true,
+                "first_warning_timestamp_s": null,
+                "lead_time_s": null
+              },
+              {
+                "boundary_frame": 2298,
+                "boundary_timestamp_s": 76.6,
+                "to_stage": "return",
+                "eligible_anchors": 2,
+                "new_stage_prediction_count": 2,
+                "ambiguous": false,
+                "detected": true,
+                "missed": false,
+                "first_warning_timestamp_s": 76.0,
+                "lead_time_s": 0.5999999999999943
+              },
+              {
+                "boundary_frame": 2474,
+                "boundary_timestamp_s": 82.46666666666667,
+                "to_stage": "adjust",
+                "eligible_anchors": 2,
+                "new_stage_prediction_count": 0,
+                "ambiguous": false,
+                "detected": false,
+                "missed": true,
+                "first_warning_timestamp_s": null,
+                "lead_time_s": null
+              },
+              {
+                "boundary_frame": 3249,
+                "boundary_timestamp_s": 108.3,
+                "to_stage": "pickup",
+                "eligible_anchors": 2,
+                "new_stage_prediction_count": 0,
+                "ambiguous": false,
+                "detected": false,
+                "missed": true,
+                "first_warning_timestamp_s": null,
+                "lead_time_s": null
+              },
+              {
+                "boundary_frame": 3582,
+                "boundary_timestamp_s": 119.4,
+                "to_stage": "harvest",
+                "eligible_anchors": 2,
+                "new_stage_prediction_count": 0,
+                "ambiguous": false,
+                "detected": false,
+                "missed": true,
+                "first_warning_timestamp_s": null,
+                "lead_time_s": null
+              },
+              {
+                "boundary_frame": 5097,
+                "boundary_timestamp_s": 169.9,
+                "to_stage": "return",
+                "eligible_anchors": 2,
+                "new_stage_prediction_count": 0,
+                "ambiguous": false,
+                "detected": false,
+                "missed": true,
+                "first_warning_timestamp_s": null,
+                "lead_time_s": null
+              }
+            ],
+            "ambiguous_alert_anchors": 0,
+            "out_of_window_false_alarm_count": 8,
+            "out_of_window_false_alarm_duration_s": 6.0,
+            "out_of_window_false_alarms_per_minute": 2.7586206896551726,
+            "false_alarm_intervals": [
+              {
+                "start_frame": 315,
+                "end_frame_exclusive": 330,
+                "start_timestamp_s": 10.5,
+                "duration_s": 0.5,
+                "predicted_stage": "pickup",
+                "anchors": 1
+              },
+              {
+                "start_frame": 1365,
+                "end_frame_exclusive": 1395,
+                "start_timestamp_s": 45.5,
+                "duration_s": 1.0,
+                "predicted_stage": "return",
+                "anchors": 2
+              },
+              {
+                "start_frame": 1740,
+                "end_frame_exclusive": 1770,
+                "start_timestamp_s": 58.0,
+                "duration_s": 1.0,
+                "predicted_stage": "return",
+                "anchors": 2
+              },
+              {
+                "start_frame": 2265,
+                "end_frame_exclusive": 2280,
+                "start_timestamp_s": 75.5,
+                "duration_s": 0.5,
+                "predicted_stage": "return",
+                "anchors": 1
+              },
+              {
+                "start_frame": 3255,
+                "end_frame_exclusive": 3300,
+                "start_timestamp_s": 108.5,
+                "duration_s": 1.5,
+                "predicted_stage": "adjust",
+                "anchors": 3
+              },
+              {
+                "start_frame": 3585,
+                "end_frame_exclusive": 3600,
+                "start_timestamp_s": 119.5,
+                "duration_s": 0.5,
+                "predicted_stage": "pickup",
+                "anchors": 1
+              },
+              {
+                "start_frame": 4095,
+                "end_frame_exclusive": 4110,
+                "start_timestamp_s": 136.5,
+                "duration_s": 0.5,
+                "predicted_stage": "return",
+                "anchors": 1
+              },
+              {
+                "start_frame": 4995,
+                "end_frame_exclusive": 5010,
+                "start_timestamp_s": 166.5,
+                "duration_s": 0.5,
+                "predicted_stage": "return",
+                "anchors": 1
+              }
+            ],
+            "valid_anchor_duration_s": 174.0,
+            "definition": "Alerts differ from oracle true current stage; supported only by a matching true transition within the fixed horizon. Multiple-boundary events are explicitly ambiguous; no online decision uses truth."
+          }
+        }
+      },
+      "per_source": {
+        "7d879f9d5d5a4be09beb55cf88591b0d": {
+          "samples": 348,
+          "accuracy": 0.9367816091954023,
+          "macro_f1": 0.8861841914351111,
+          "nll": 0.19895271048864374,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.8571428571428571,
+              "recall": 0.8780487804878049,
+              "f1": 0.8674698795180723,
+              "support": 41
+            },
+            "harvest": {
+              "precision": 0.9910313901345291,
+              "recall": 0.9444444444444444,
+              "f1": 0.9671772428884027,
+              "support": 234
+            },
+            "return": {
+              "precision": 0.6785714285714286,
+              "recall": 0.9047619047619048,
+              "f1": 0.7755102040816326,
+              "support": 21
+            },
+            "adjust": {
+              "precision": 0.9090909090909091,
+              "recall": 0.9615384615384616,
+              "f1": 0.9345794392523364,
+              "support": 52
+            }
+          },
+          "confusion_true_rows": [
+            [
+              36,
+              0,
+              0,
+              5
+            ],
+            [
+              6,
+              221,
+              7,
+              0
+            ],
+            [
+              0,
+              2,
+              19,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              50
+            ]
+          ],
+          "return_adjust_confusions": 2,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      },
+      "persistence_baselines": {
+        "oracle_current_persistence": {
+          "samples": 348,
+          "accuracy": 0.9655172413793104,
+          "macro_f1": 0.9307539682539683,
+          "nll": null,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9069767441860465,
+              "recall": 0.9512195121951219,
+              "f1": 0.9285714285714286,
+              "support": 41
+            },
+            "harvest": {
+              "precision": 0.9829059829059829,
+              "recall": 0.9829059829059829,
+              "f1": 0.9829059829059829,
+              "support": 234
+            },
+            "return": {
+              "precision": 0.8947368421052632,
+              "recall": 0.8095238095238095,
+              "f1": 0.85,
+              "support": 21
+            },
+            "adjust": {
+              "precision": 0.9615384615384616,
+              "recall": 0.9615384615384616,
+              "f1": 0.9615384615384616,
+              "support": 52
+            }
+          },
+          "confusion_true_rows": [
+            [
+              39,
+              0,
+              0,
+              2
+            ],
+            [
+              4,
+              230,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              17,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              50
+            ]
+          ],
+          "return_adjust_confusions": 2,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0",
+          "diagnostic_only": true,
+          "deployable": false,
+          "definition": "Oracle true current stage held as future prediction; hard labels, no probabilistic NLL"
+        }
+      },
+      "forecast_error_duration_s": 11.0,
+      "macro_f1_gain_over_oracle_persistence": -0.04456977681885721,
+      "macro_f1_gain_over_model_current_persistence": null,
+      "anticipation": {
+        "total_events": 6,
+        "ambiguous_events": 0,
+        "evaluable_events": 6,
+        "detected_events": 1,
+        "event_recall": 0.16666666666666666,
+        "missed_events": 5,
+        "lead_time_p50_s": 0.5999999999999943,
+        "lead_time_p95_s": 0.5999999999999943,
+        "out_of_window_false_alarm_count": 8,
+        "out_of_window_false_alarm_duration_s": 6.0,
+        "out_of_window_false_alarms_per_minute": 2.7586206896551726,
+        "ambiguity_rule": "Events with another boundary less than horizon away are excluded from recall, retained explicitly"
+      },
+      "phase_duration_strata": {
+        "short_threshold_s": 1.5,
+        "short": {
+          "samples": 0,
+          "metrics": null
+        },
+        "long": {
+          "samples": 348,
+          "metrics": {
+            "samples": 348,
+            "accuracy": 0.9367816091954023,
+            "macro_f1": 0.8861841914351111,
+            "nll": 0.19895271048864374,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8571428571428571,
+                "recall": 0.8780487804878049,
+                "f1": 0.8674698795180723,
+                "support": 41
+              },
+              "harvest": {
+                "precision": 0.9910313901345291,
+                "recall": 0.9444444444444444,
+                "f1": 0.9671772428884027,
+                "support": 234
+              },
+              "return": {
+                "precision": 0.6785714285714286,
+                "recall": 0.9047619047619048,
+                "f1": 0.7755102040816326,
+                "support": 21
+              },
+              "adjust": {
+                "precision": 0.9090909090909091,
+                "recall": 0.9615384615384616,
+                "f1": 0.9345794392523364,
+                "support": 52
+              }
+            },
+            "confusion_true_rows": [
+              [
+                36,
+                0,
+                0,
+                5
+              ],
+              [
+                6,
+                221,
+                7,
+                0
+              ],
+              [
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                50
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        }
+      }
+    },
+    "total_anchors": 350,
+    "manifest_sha256": "810c4cc348c9a5667b1885cf19e1857ef75b9091bafba02b5a8838e1f32cda80",
+    "split_sha256": "ab960cd70310488f71ab8f8ff16f95838b638c705e42afb88512d68de07acf73",
+    "warnings": [
+      "Fewer than 10 source recordings; smoke-scale result only",
+      "TEST ONLY: source metadata hash mismatch allowed; see annotation.source_hashes"
+    ]
+  },
+  "latency": {
+    "measured": true,
+    "encoder_and_head_mean_ms": 87.07994719297858,
+    "encoder_and_head_p50_ms": 87.0574750151718,
+    "encoder_and_head_p95_ms": 87.26515628804918,
+    "encoder_and_head_p99_ms": 87.4870048527373,
+    "prediction_mode": "future_only",
+    "future_horizon_s": 1.0,
+    "fused_shape": [
+      1,
+      4000
+    ],
+    "visual_dimension": 3072,
+    "measured_joint_history_dimension": 928,
+    "output_shapes": {
+      "current_logits": null,
+      "future_logits": [
+        1,
+        4
+      ]
+    },
+    "encoder_frozen": true,
+    "encoder_dtype": "torch.bfloat16",
+    "first_input_indices": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pretrained": {
+      "model_id": "facebook/vjepa2-vitl-fpc64-256",
+      "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+      "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+      "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+    },
+    "three_view_rgb_resize_mean_ms": 1.981939319279572,
+    "three_view_rgb_resize_p95_ms": 2.0624062526621856,
+    "warmup_windows": 2,
+    "measured_windows": 20,
+    "device": "cuda:0",
+    "hardware": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "peak_gpu_bytes": 781741568,
+    "torch_version": "2.15.0+cu132",
+    "cuda_version": "13.2",
+    "scope": "Offline synchronized three-view 16-frame encoder + fusion + head. RGB conversion/resize measured separately per three-view source frame; excludes decode/I/O, ROS, other workloads. Not robot latency."
+  }
+}

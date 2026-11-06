@@ -107,3 +107,30 @@ def test_eval_uses_auto_discovered_run_index(tmp_path):
     tr.train(generated_cfg, manifest)
     report, errors = ev.evaluate(cfg, video=False, measure=False)
     assert report['samples'] == 8 and not errors
+
+
+@pytest.mark.parametrize('mode,height', [('current_only', 476), ('future_only', 520), ('joint', 680)])
+def test_three_modes_real_video_io_and_explicit_future_time_semantics(tmp_path, mode, height):
+    cfg = make_config(tmp_path, length=240)
+    cfg.update(ds.prediction_contract(dict(prediction_mode=mode)))
+    m = tr.prepare(cfg); synthetic_feature_index(cfg, m); tr.train(cfg, m)
+    report, errors = ev.evaluate(cfg, video=True, measure=False)
+    assert not errors
+    out = Path(cfg['output_dir']) / 'offline_eval'
+    replay = ds.read_json(out / 'replay.json')
+    with av.open(replay['path']) as c:
+        frames = list(c.decode(video=0))
+    assert len(frames) == 240 and frames[0].height == height
+    traces = [json.loads(line) for line in Path(replay['timeline_path']).read_text().splitlines()]
+    assert not traces[0]['prediction_held'] and traces[1]['prediction_held']
+    if mode == 'future_only':
+        assert all('stage' not in r and 'current_stage' not in r for r in traces)
+    if mode != 'current_only':
+        assert traces[0]['future_target_frame'] == traces[1]['future_target_frame'] == 30
+        assert traces[15]['future_target_frame'] == 45
+        assert traces[-1]['future_target_status'] == 'TARGET_UNAVAILABLE'
+        assert traces[-1]['future_true_stage'] is None
+        assert traces[-1]['future_stage'] in ds.LABELS  # Forecast remains available, truth is masked.
+        assert report['future']['samples'] == 14 and report['future']['masked_count'] == 2
+    if mode != 'future_only':
+        assert all(r['stage'] == r['current_stage'] for r in traces)

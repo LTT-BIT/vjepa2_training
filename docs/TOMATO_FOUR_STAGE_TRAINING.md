@@ -1,5 +1,33 @@
 # Sharpa 番茄四阶段分类器
 
+## Current / Future / Joint 更新（基线 11d2b57）
+
+本轮实现 `current_only / future_only / joint`。原四类、58 维关节、冻结 Encoder 与 4000 维特征契约不变。**本轮已完成真实 Encoder 前向和三条真实录制的三模式 smoke 训练、评估与视频回放**；下文首次实施的“未训练/权重缺失”等是历史事实，当前结果和三模式启动命令见 [本轮实施及离线报告](TOMATO_CURRENT_FUTURE_JOINT_REPORT.md)。三条来源不是完整数据集的泛化验收。
+
+```yaml
+prediction_mode: joint
+future_horizon_s: 1.0
+lambda_current: 1.0
+lambda_future: 0.5
+stable_transition_k: 2
+```
+
+YAML 显式默认 joint，缺少新字段的旧配置/API 字典仍默认为 current_only。λ 独立可配置；活跃头 CE 按各自有效标签及 train-only 类别权重计算，然后以活跃 λ 归一化组合。单头的 λ 不改变 CE 尺度。活跃 λ 必须 >0，关闭头使用单头模式。所有新参数锁入 manifest/checkpoint，可用同名 CLI 参数覆盖。
+
+未来 1 秒在 30FPS 数据上严格为 +30 帧，支持任意可精确表示为整数帧的正 horizon；否则拒绝。尾部标签 -100、mask=false、目标帧 -1、JSON 时间 null，不重复最后阶段，也不将未来观测送入模型。新的 `uniform-integer-causal-v2` 修正 float32 历史窗口误差，30→10Hz 严格每 3 帧取样；旧缓存被版本指纹隔离，旧 v1 checkpoint 只读为 Current-only 并保留 legacy 采样读取路径。
+
+`CUBLAS_WORKSPACE_CONFIG`/seed/确定性策略在任何 CUDA 之前设定，外部过晚初始化须新进程。首次 prepare 全量验收并锁定 `validation_receipt.json` / `validation_lock.json`；日常 extract/train/eval 继续核验来源 SHA、审核 revision/SHA、配置、manifest/split、特征内容 SHA，默认不重复媒体全解码。`--full-revalidate` 可显式检查 PTS/帧数；合法 legacy manifest 首次用此参数建立旁路收据，不重写旧 manifest/checkpoint。
+
+**本轮没有修改 `allow_subset_metadata_mismatch` 的默认 true、两项豁免规则或来源 SHA 策略。** 当前实际元数据哈希在 prepare 后仍锁定；相关函数及默认值有回归证据。
+
+三模式共用来源 split 和冻结特征缓存，run 目录必须隔离。`evaluation.json` 的 current/future 为独立命名空间，非活跃头为 null；Current-only 保留旧顶层统计别名。`stage` 永远指 Current，Future-only 不输出该旧别名。新 checkpoint 为 v2，保存 mode/horizon/λ/K、采样、Encoder/manifest/split SHA 等；仍使用 weights_only=True。
+
+回放分别显示 Current 和 `anchor+Δ` Future，HELD 时保持原预测锚点及其未来目标，尾部标记 TARGET_UNAVAILABLE。`*.frames.jsonl` 提供完整时间轴，`*.events.json` 给出首次/稳定确认、提前预警和错误区间。稳定确认发生在第 K 个连续正确锚点，不回填；不足 K 点计 missed/null。K 不影响 raw F1。Future 单独比较 oracle-current/model-current persistence，多个相距小于 horizon 的真实边界显式标为 ambiguous；错误持续时间按固定 2Hz anchor-label 矩形估计，短/长阶段以 1.5 秒预设阈值分开报告。
+
+以下原始单模式说明及首轮审计保留供追溯；**使用三模式时以本节和链接报告中的命令为准**。
+
+---
+
 一键运行（重复 `--dataset` 传入多个 LeRobot 根目录）：
 
 ```bash
@@ -14,7 +42,7 @@ python tools/train_tomato_vjepa_phase.py run --config configs/tomato_four_stage.
 
 此分支只实现 `pickup / harvest / return / adjust` 分类、冻结 V-JEPA 2 特征提取、分类头训练和离线评估。没有 Agent、Prompt Manager、π0.5、RTC/T3 或控制接口。原柠檬脚本、标注、测试和 `experiment_results/` 保持基线字节不变。
 
-本次实测状态、数据问题及测试结果见 [TOMATO_IMPLEMENTATION_REPORT.md](TOMATO_IMPLEMENTATION_REPORT.md)。**当前样本来源校验未通过，真实番茄训练未执行。** 单元测试生成的模型、概率和视频均为合成测试产物。
+首轮实测状态、数据问题及测试结果见 [TOMATO_IMPLEMENTATION_REPORT.md](TOMATO_IMPLEMENTATION_REPORT.md)。**首轮严格来源校验未通过，当时真实番茄训练未执行。** 该轮单元测试的模型、概率和视频是合成产物；本轮三模式的真实 smoke 结果以开头链接的新报告为准。
 
 ## 1. 环境
 

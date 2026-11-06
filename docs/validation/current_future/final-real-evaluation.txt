@@ -1,0 +1,6 @@
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 8730.39it/s]
+current_only_seed42 FINAL_EVALUATION_OK
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 8785.78it/s]
+future_only_h1s_seed42 FINAL_EVALUATION_OK
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 9005.85it/s]
+joint_h1s_lc1_lf0p5_seed42 FINAL_EVALUATION_OK

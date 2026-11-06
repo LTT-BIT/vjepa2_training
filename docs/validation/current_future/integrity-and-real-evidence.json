@@ -1,0 +1,126 @@
+{
+  "baseline": "11d2b57358b382aa638264303ebfac582d743029",
+  "main_files_unchanged": [
+    "README.md",
+    "SHA256SUMS",
+    "annotations/phase_annotations_v3_clean.json",
+    "experiment_results/README.md",
+    "experiment_results/RESULTS.md",
+    "experiment_results/best_head.pt",
+    "experiment_results/evaluation.json",
+    "experiment_results/manifest.json",
+    "experiment_results/test_episode_000058_phases.mp4",
+    "experiment_results/training_config.json",
+    "tests/test_annotate_lemon_phase_video.py",
+    "tests/test_lemon_doubao_vjepa.py",
+    "tests/test_lemon_phase_model.py",
+    "tests/test_lemon_vjepa_phase.py",
+    "tools/annotate_lemon_phase_video.py",
+    "tools/download_pretrained.py",
+    "tools/lemon_phase_model.py",
+    "tools/run_lemon_doubao_vjepa.py",
+    "tools/serve_lemon_phase_agent.py",
+    "tools/train_lemon_vjepa_phase.py",
+    "tools/train_source_snapshot.py"
+  ],
+  "input_package_sha256_passed": 27,
+  "same_split": true,
+  "split_sha256": "ab960cd70310488f71ab8f8ff16f95838b638c705e42afb88512d68de07acf73",
+  "same_feature_paths": true,
+  "feature_files": [
+    "/home/user/pi05/vjepa2_training/runs/tomato/experiments/shared_feature_cache/82b3cfa1070e6283fbcf2c7f1ef3a5132fb90d407bc1017255e29211e83f7fac.npz",
+    "/home/user/pi05/vjepa2_training/runs/tomato/experiments/shared_feature_cache/da4e3e6636fb963b8f608c27f9db278cc1d220dacb5631e12f43aae577a9d224.npz",
+    "/home/user/pi05/vjepa2_training/runs/tomato/experiments/shared_feature_cache/1d7d137d7b324d3019ac721a046e3adfa2098e23acd9c9a0bd5df3b2e9b45184.npz"
+  ],
+  "policy_functions_unchanged": {
+    "load_reviewed_coarse": true,
+    "source_hash_report": true,
+    "assert_source_unchanged": true,
+    "head_model": true,
+    "preprocess": true,
+    "encode_clips": true,
+    "fuse_features": true
+  },
+  "allow_subset_metadata_mismatch_default": true,
+  "real_single_process_run_reproducibility": {
+    "head_state_bitwise_equal": true,
+    "normalization_equal": true,
+    "all_split_metrics_equal": true,
+    "best_epoch": 34,
+    "extraction_runtime": {
+      "runtime": {
+        "pid": 2062656,
+        "seed": 42,
+        "device": "cuda",
+        "cublas_workspace_config": ":4096:8",
+        "deterministic_algorithms": true,
+        "cudnn_benchmark": false,
+        "tf32": false,
+        "cuda_initialized_before_first_setup": false,
+        "torch_version": "2.15.0+cu132",
+        "cuda_version": "13.2",
+        "random_generators": [
+          "python",
+          "numpy",
+          "torch",
+          "torch.cuda (manual_seed lazy seeds all devices)"
+        ],
+        "cuda_available": true,
+        "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+        "bf16_supported": true
+      },
+      "encoder_loaded": true,
+      "sampler_version": "uniform-integer-causal-v2",
+      "pretrained": {
+        "model_id": "facebook/vjepa2-vitl-fpc64-256",
+        "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+        "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+        "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+      }
+    },
+    "training_runtime": {
+      "pid": 2062656,
+      "seed": 42,
+      "device": "cuda",
+      "cublas_workspace_config": ":4096:8",
+      "deterministic_algorithms": true,
+      "cudnn_benchmark": false,
+      "tf32": false,
+      "cuda_initialized_before_first_setup": false,
+      "torch_version": "2.15.0+cu132",
+      "cuda_version": "13.2",
+      "random_generators": [
+        "python",
+        "numpy",
+        "torch",
+        "torch.cuda (manual_seed lazy seeds all devices)"
+      ],
+      "cuda_available": true,
+      "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "bf16_supported": true
+    }
+  },
+  "real_encoder_episodes": [
+    {
+      "raw_frames": 4016,
+      "feature_shape": [
+        268,
+        4000
+      ]
+    },
+    {
+      "raw_frames": 5350,
+      "feature_shape": [
+        357,
+        4000
+      ]
+    },
+    {
+      "raw_frames": 5250,
+      "feature_shape": [
+        350,
+        4000
+      ]
+    }
+  ]
+}

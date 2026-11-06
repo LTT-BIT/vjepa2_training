@@ -1,0 +1,17 @@
+[
+  {
+    "mode": "current_only",
+    "all_final_metrics_equal": true,
+    "raw_logit_rows": 350
+  },
+  {
+    "mode": "future_only",
+    "all_final_metrics_equal": true,
+    "raw_logit_rows": 350
+  },
+  {
+    "mode": "joint",
+    "all_final_metrics_equal": true,
+    "raw_logit_rows": 350
+  }
+]

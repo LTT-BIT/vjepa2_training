@@ -1,0 +1,1252 @@
+{
+  "tag": "A",
+  "run": "/home/user/pi05/vjepa2_training/runs/tomato/experiments/current_only_seed42",
+  "prediction": {
+    "prediction_mode": "current_only",
+    "future_horizon_s": 1.0,
+    "lambda_current": 1.0,
+    "lambda_future": 0.5,
+    "stable_transition_k": 2
+  },
+  "epochs_executed": 49,
+  "best_epoch": 34,
+  "test": {
+    "prediction_mode": "current_only",
+    "future_horizon_s": 1.0,
+    "lambda_current": 1.0,
+    "lambda_future": 0.5,
+    "stable_transition_k": 2,
+    "current": {
+      "samples": 350,
+      "accuracy": 0.9771428571428571,
+      "macro_f1": 0.947796781607688,
+      "nll": 0.07348269692045757,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.9761904761904762,
+          "recall": 0.9534883720930233,
+          "f1": 0.9647058823529412,
+          "support": 43
+        },
+        "harvest": {
+          "precision": 0.9956896551724138,
+          "recall": 0.9871794871794872,
+          "f1": 0.9914163090128756,
+          "support": 234
+        },
+        "return": {
+          "precision": 0.8260869565217391,
+          "recall": 0.9047619047619048,
+          "f1": 0.8636363636363636,
+          "support": 21
+        },
+        "adjust": {
+          "precision": 0.9622641509433962,
+          "recall": 0.9807692307692307,
+          "f1": 0.9714285714285714,
+          "support": 52
+        }
+      },
+      "confusion_true_rows": [
+        [
+          41,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          231,
+          3,
+          0
+        ],
+        [
+          1,
+          1,
+          19,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          51
+        ]
+      ],
+      "return_adjust_confusions": 1,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0",
+      "per_episode": {
+        "9efc7aeb8216f65ff27d467e": {
+          "metrics": {
+            "samples": 350,
+            "accuracy": 0.9771428571428571,
+            "macro_f1": 0.947796781607688,
+            "nll": 0.07348269692045757,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9761904761904762,
+                "recall": 0.9534883720930233,
+                "f1": 0.9647058823529412,
+                "support": 43
+              },
+              "harvest": {
+                "precision": 0.9956896551724138,
+                "recall": 0.9871794871794872,
+                "f1": 0.9914163090128756,
+                "support": 234
+              },
+              "return": {
+                "precision": 0.8260869565217391,
+                "recall": 0.9047619047619048,
+                "f1": 0.8636363636363636,
+                "support": 21
+              },
+              "adjust": {
+                "precision": 0.9622641509433962,
+                "recall": 0.9807692307692307,
+                "f1": 0.9714285714285714,
+                "support": 52
+              }
+            },
+            "confusion_true_rows": [
+              [
+                41,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                231,
+                3,
+                0
+              ],
+              [
+                1,
+                1,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                51
+              ]
+            ],
+            "return_adjust_confusions": 1,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "temporal": {
+            "transitions": [
+              {
+                "frame_index": 307,
+                "boundary_timestamp_s": 10.233333333333333,
+                "from_stage": "pickup",
+                "to_stage": "harvest",
+                "first_correct_timestamp_s": 10.5,
+                "delay_s": 0.2666666666666675,
+                "missed": false,
+                "first_correct_latency_s": 0.2666666666666675,
+                "stable_transition_k": 2,
+                "first_correct_frame": 315,
+                "stable_confirmation_frame": 330,
+                "stable_confirmation_timestamp_s": 11.0,
+                "stable_transition_latency_s": 0.7666666666666675,
+                "stable_transition_miss": false
+              },
+              {
+                "frame_index": 2298,
+                "boundary_timestamp_s": 76.6,
+                "from_stage": "harvest",
+                "to_stage": "return",
+                "first_correct_timestamp_s": 77.0,
+                "delay_s": 0.4000000000000057,
+                "missed": false,
+                "first_correct_latency_s": 0.4000000000000057,
+                "stable_transition_k": 2,
+                "first_correct_frame": 2310,
+                "stable_confirmation_frame": 2325,
+                "stable_confirmation_timestamp_s": 77.5,
+                "stable_transition_latency_s": 0.9000000000000057,
+                "stable_transition_miss": false
+              },
+              {
+                "frame_index": 2474,
+                "boundary_timestamp_s": 82.46666666666667,
+                "from_stage": "return",
+                "to_stage": "adjust",
+                "first_correct_timestamp_s": 83.0,
+                "delay_s": 0.5333333333333314,
+                "missed": false,
+                "first_correct_latency_s": 0.5333333333333314,
+                "stable_transition_k": 2,
+                "first_correct_frame": 2490,
+                "stable_confirmation_frame": 2505,
+                "stable_confirmation_timestamp_s": 83.5,
+                "stable_transition_latency_s": 1.0333333333333314,
+                "stable_transition_miss": false
+              },
+              {
+                "frame_index": 3249,
+                "boundary_timestamp_s": 108.3,
+                "from_stage": "adjust",
+                "to_stage": "pickup",
+                "first_correct_timestamp_s": 109.5,
+                "delay_s": 1.2000000000000028,
+                "missed": false,
+                "first_correct_latency_s": 1.2000000000000028,
+                "stable_transition_k": 2,
+                "first_correct_frame": 3285,
+                "stable_confirmation_frame": 3300,
+                "stable_confirmation_timestamp_s": 110.0,
+                "stable_transition_latency_s": 1.7000000000000028,
+                "stable_transition_miss": false
+              },
+              {
+                "frame_index": 3582,
+                "boundary_timestamp_s": 119.4,
+                "from_stage": "pickup",
+                "to_stage": "harvest",
+                "first_correct_timestamp_s": 119.5,
+                "delay_s": 0.09999999999999432,
+                "missed": false,
+                "first_correct_latency_s": 0.09999999999999432,
+                "stable_transition_k": 2,
+                "first_correct_frame": 3585,
+                "stable_confirmation_frame": 3600,
+                "stable_confirmation_timestamp_s": 120.0,
+                "stable_transition_latency_s": 0.5999999999999943,
+                "stable_transition_miss": false
+              },
+              {
+                "frame_index": 5097,
+                "boundary_timestamp_s": 169.9,
+                "from_stage": "harvest",
+                "to_stage": "return",
+                "first_correct_timestamp_s": 170.5,
+                "delay_s": 0.5999999999999943,
+                "missed": false,
+                "first_correct_latency_s": 0.5999999999999943,
+                "stable_transition_k": 2,
+                "first_correct_frame": 5115,
+                "stable_confirmation_frame": 5130,
+                "stable_confirmation_timestamp_s": 171.0,
+                "stable_transition_latency_s": 1.0999999999999943,
+                "stable_transition_miss": false
+              }
+            ],
+            "error_intervals": [
+              {
+                "start_frame": 1740,
+                "end_frame_exclusive": 1770,
+                "start_timestamp_s": 58.0,
+                "end_timestamp_s": 59.0,
+                "wrong_anchors": 2,
+                "pairs": [
+                  {
+                    "frame_index": 1740,
+                    "truth": "harvest",
+                    "prediction": "return"
+                  },
+                  {
+                    "frame_index": 1755,
+                    "truth": "harvest",
+                    "prediction": "return"
+                  }
+                ]
+              },
+              {
+                "start_frame": 2280,
+                "end_frame_exclusive": 2295,
+                "start_timestamp_s": 76.0,
+                "end_timestamp_s": 76.5,
+                "wrong_anchors": 1,
+                "pairs": [
+                  {
+                    "frame_index": 2280,
+                    "truth": "harvest",
+                    "prediction": "return"
+                  }
+                ]
+              },
+              {
+                "start_frame": 2475,
+                "end_frame_exclusive": 2490,
+                "start_timestamp_s": 82.5,
+                "end_timestamp_s": 83.0,
+                "wrong_anchors": 1,
+                "pairs": [
+                  {
+                    "frame_index": 2475,
+                    "truth": "adjust",
+                    "prediction": "return"
+                  }
+                ]
+              },
+              {
+                "start_frame": 3255,
+                "end_frame_exclusive": 3285,
+                "start_timestamp_s": 108.5,
+                "end_timestamp_s": 109.5,
+                "wrong_anchors": 2,
+                "pairs": [
+                  {
+                    "frame_index": 3255,
+                    "truth": "pickup",
+                    "prediction": "adjust"
+                  },
+                  {
+                    "frame_index": 3270,
+                    "truth": "pickup",
+                    "prediction": "adjust"
+                  }
+                ]
+              },
+              {
+                "start_frame": 5100,
+                "end_frame_exclusive": 5115,
+                "start_timestamp_s": 170.0,
+                "end_timestamp_s": 170.5,
+                "wrong_anchors": 1,
+                "pairs": [
+                  {
+                    "frame_index": 5100,
+                    "truth": "return",
+                    "prediction": "harvest"
+                  }
+                ]
+              },
+              {
+                "start_frame": 5235,
+                "end_frame_exclusive": 5250,
+                "start_timestamp_s": 174.5,
+                "end_timestamp_s": 175.0,
+                "wrong_anchors": 1,
+                "pairs": [
+                  {
+                    "frame_index": 5235,
+                    "truth": "return",
+                    "prediction": "pickup"
+                  }
+                ]
+              }
+            ],
+            "prediction_changes": 11,
+            "false_switches": 8,
+            "false_switches_per_minute": 2.742857142857143,
+            "delay_p50_s": 0.46666666666666856,
+            "delay_p95_s": 1.0500000000000007,
+            "missed_transition_ratio": 0.0,
+            "prediction_hz": 2,
+            "time_resolution_s": 0.5,
+            "definition": "First correct anchor after true boundary, before end of that segment. False switch: prediction change between anchors with same true label. No sequence correction.",
+            "stable_transition_k": 2,
+            "stable_transition_latency_p50_s": 0.9666666666666686,
+            "stable_transition_latency_p95_s": 1.5500000000000007,
+            "stable_transition_miss_ratio": 0.0,
+            "early_false_switch": {
+              "count": 2,
+              "duration_s": 1.5,
+              "events": [
+                {
+                  "boundary_frame": 307,
+                  "to_stage": "harvest",
+                  "count": 0,
+                  "duration_s": 0,
+                  "intervals": []
+                },
+                {
+                  "boundary_frame": 2298,
+                  "to_stage": "return",
+                  "count": 2,
+                  "duration_s": 1.5,
+                  "intervals": [
+                    {
+                      "start_frame": 1740,
+                      "end_frame_exclusive": 1770,
+                      "start_timestamp_s": 58.0,
+                      "duration_s": 1.0,
+                      "predicted_stage": "return",
+                      "anchors": 2
+                    },
+                    {
+                      "start_frame": 2280,
+                      "end_frame_exclusive": 2295,
+                      "start_timestamp_s": 76.0,
+                      "duration_s": 0.5,
+                      "predicted_stage": "return",
+                      "anchors": 1
+                    }
+                  ]
+                },
+                {
+                  "boundary_frame": 2474,
+                  "to_stage": "adjust",
+                  "count": 0,
+                  "duration_s": 0,
+                  "intervals": []
+                },
+                {
+                  "boundary_frame": 3249,
+                  "to_stage": "pickup",
+                  "count": 0,
+                  "duration_s": 0,
+                  "intervals": []
+                },
+                {
+                  "boundary_frame": 3582,
+                  "to_stage": "harvest",
+                  "count": 0,
+                  "duration_s": 0,
+                  "intervals": []
+                },
+                {
+                  "boundary_frame": 5097,
+                  "to_stage": "return",
+                  "count": 0,
+                  "duration_s": 0,
+                  "intervals": []
+                }
+              ],
+              "definition": "Successor-stage prediction bursts during the immediately preceding true segment, including transient and sustained errors"
+            },
+            "wrong_stage_duration_s": 4.0,
+            "wrong_duration_definition": "Anchor-label rectangle estimate: each raw argmax held until next anchor/end; 2 Hz resolution, no smoothing"
+          },
+          "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d"
+        }
+      },
+      "per_source": {
+        "7d879f9d5d5a4be09beb55cf88591b0d": {
+          "samples": 350,
+          "accuracy": 0.9771428571428571,
+          "macro_f1": 0.947796781607688,
+          "nll": 0.07348269692045757,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9761904761904762,
+              "recall": 0.9534883720930233,
+              "f1": 0.9647058823529412,
+              "support": 43
+            },
+            "harvest": {
+              "precision": 0.9956896551724138,
+              "recall": 0.9871794871794872,
+              "f1": 0.9914163090128756,
+              "support": 234
+            },
+            "return": {
+              "precision": 0.8260869565217391,
+              "recall": 0.9047619047619048,
+              "f1": 0.8636363636363636,
+              "support": 21
+            },
+            "adjust": {
+              "precision": 0.9622641509433962,
+              "recall": 0.9807692307692307,
+              "f1": 0.9714285714285714,
+              "support": 52
+            }
+          },
+          "confusion_true_rows": [
+            [
+              41,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              231,
+              3,
+              0
+            ],
+            [
+              1,
+              1,
+              19,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              51
+            ]
+          ],
+          "return_adjust_confusions": 1,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      },
+      "temporal": {
+        "transitions": 6,
+        "delay_p50_s": 0.46666666666666856,
+        "delay_p95_s": 1.0500000000000007,
+        "missed_transition_ratio": 0.0,
+        "false_switches": 8,
+        "false_switches_per_minute": 2.742857142857143,
+        "prediction_hz": 2,
+        "time_resolution_s": 0.5,
+        "stable_transition_k": 2,
+        "first_correct_latency_p50_s": 0.46666666666666856,
+        "first_correct_latency_p95_s": 1.0500000000000007,
+        "stable_transition_latency_p50_s": 0.9666666666666686,
+        "stable_transition_latency_p95_s": 1.5500000000000007,
+        "stable_transition_miss_ratio": 0.0,
+        "early_false_switch_count": 2,
+        "early_false_switch_duration_s": 1.5,
+        "wrong_stage_duration_s": 4.0
+      },
+      "valid_samples": 350,
+      "masked_count": 0,
+      "valid_ratio": 1.0,
+      "phase_duration_strata": {
+        "short_threshold_s": 1.5,
+        "short": {
+          "samples": 0,
+          "metrics": null
+        },
+        "long": {
+          "samples": 350,
+          "metrics": {
+            "samples": 350,
+            "accuracy": 0.9771428571428571,
+            "macro_f1": 0.947796781607688,
+            "nll": 0.07348269692045757,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9761904761904762,
+                "recall": 0.9534883720930233,
+                "f1": 0.9647058823529412,
+                "support": 43
+              },
+              "harvest": {
+                "precision": 0.9956896551724138,
+                "recall": 0.9871794871794872,
+                "f1": 0.9914163090128756,
+                "support": 234
+              },
+              "return": {
+                "precision": 0.8260869565217391,
+                "recall": 0.9047619047619048,
+                "f1": 0.8636363636363636,
+                "support": 21
+              },
+              "adjust": {
+                "precision": 0.9622641509433962,
+                "recall": 0.9807692307692307,
+                "f1": 0.9714285714285714,
+                "support": 52
+              }
+            },
+            "confusion_true_rows": [
+              [
+                41,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                231,
+                3,
+                0
+              ],
+              [
+                1,
+                1,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                51
+              ]
+            ],
+            "return_adjust_confusions": 1,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        }
+      }
+    },
+    "future": null,
+    "total_anchors": 350,
+    "samples": 350,
+    "accuracy": 0.9771428571428571,
+    "macro_f1": 0.947796781607688,
+    "nll": 0.07348269692045757,
+    "label_order": [
+      "pickup",
+      "harvest",
+      "return",
+      "adjust"
+    ],
+    "per_class": {
+      "pickup": {
+        "precision": 0.9761904761904762,
+        "recall": 0.9534883720930233,
+        "f1": 0.9647058823529412,
+        "support": 43
+      },
+      "harvest": {
+        "precision": 0.9956896551724138,
+        "recall": 0.9871794871794872,
+        "f1": 0.9914163090128756,
+        "support": 234
+      },
+      "return": {
+        "precision": 0.8260869565217391,
+        "recall": 0.9047619047619048,
+        "f1": 0.8636363636363636,
+        "support": 21
+      },
+      "adjust": {
+        "precision": 0.9622641509433962,
+        "recall": 0.9807692307692307,
+        "f1": 0.9714285714285714,
+        "support": 52
+      }
+    },
+    "confusion_true_rows": [
+      [
+        41,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        231,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        51
+      ]
+    ],
+    "return_adjust_confusions": 1,
+    "missing_classes": [],
+    "macro_definition": "unweighted four-class mean, zero_division=0",
+    "per_episode": {
+      "9efc7aeb8216f65ff27d467e": {
+        "metrics": {
+          "samples": 350,
+          "accuracy": 0.9771428571428571,
+          "macro_f1": 0.947796781607688,
+          "nll": 0.07348269692045757,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9761904761904762,
+              "recall": 0.9534883720930233,
+              "f1": 0.9647058823529412,
+              "support": 43
+            },
+            "harvest": {
+              "precision": 0.9956896551724138,
+              "recall": 0.9871794871794872,
+              "f1": 0.9914163090128756,
+              "support": 234
+            },
+            "return": {
+              "precision": 0.8260869565217391,
+              "recall": 0.9047619047619048,
+              "f1": 0.8636363636363636,
+              "support": 21
+            },
+            "adjust": {
+              "precision": 0.9622641509433962,
+              "recall": 0.9807692307692307,
+              "f1": 0.9714285714285714,
+              "support": 52
+            }
+          },
+          "confusion_true_rows": [
+            [
+              41,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              231,
+              3,
+              0
+            ],
+            [
+              1,
+              1,
+              19,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              51
+            ]
+          ],
+          "return_adjust_confusions": 1,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "temporal": {
+          "transitions": [
+            {
+              "frame_index": 307,
+              "boundary_timestamp_s": 10.233333333333333,
+              "from_stage": "pickup",
+              "to_stage": "harvest",
+              "first_correct_timestamp_s": 10.5,
+              "delay_s": 0.2666666666666675,
+              "missed": false,
+              "first_correct_latency_s": 0.2666666666666675,
+              "stable_transition_k": 2,
+              "first_correct_frame": 315,
+              "stable_confirmation_frame": 330,
+              "stable_confirmation_timestamp_s": 11.0,
+              "stable_transition_latency_s": 0.7666666666666675,
+              "stable_transition_miss": false
+            },
+            {
+              "frame_index": 2298,
+              "boundary_timestamp_s": 76.6,
+              "from_stage": "harvest",
+              "to_stage": "return",
+              "first_correct_timestamp_s": 77.0,
+              "delay_s": 0.4000000000000057,
+              "missed": false,
+              "first_correct_latency_s": 0.4000000000000057,
+              "stable_transition_k": 2,
+              "first_correct_frame": 2310,
+              "stable_confirmation_frame": 2325,
+              "stable_confirmation_timestamp_s": 77.5,
+              "stable_transition_latency_s": 0.9000000000000057,
+              "stable_transition_miss": false
+            },
+            {
+              "frame_index": 2474,
+              "boundary_timestamp_s": 82.46666666666667,
+              "from_stage": "return",
+              "to_stage": "adjust",
+              "first_correct_timestamp_s": 83.0,
+              "delay_s": 0.5333333333333314,
+              "missed": false,
+              "first_correct_latency_s": 0.5333333333333314,
+              "stable_transition_k": 2,
+              "first_correct_frame": 2490,
+              "stable_confirmation_frame": 2505,
+              "stable_confirmation_timestamp_s": 83.5,
+              "stable_transition_latency_s": 1.0333333333333314,
+              "stable_transition_miss": false
+            },
+            {
+              "frame_index": 3249,
+              "boundary_timestamp_s": 108.3,
+              "from_stage": "adjust",
+              "to_stage": "pickup",
+              "first_correct_timestamp_s": 109.5,
+              "delay_s": 1.2000000000000028,
+              "missed": false,
+              "first_correct_latency_s": 1.2000000000000028,
+              "stable_transition_k": 2,
+              "first_correct_frame": 3285,
+              "stable_confirmation_frame": 3300,
+              "stable_confirmation_timestamp_s": 110.0,
+              "stable_transition_latency_s": 1.7000000000000028,
+              "stable_transition_miss": false
+            },
+            {
+              "frame_index": 3582,
+              "boundary_timestamp_s": 119.4,
+              "from_stage": "pickup",
+              "to_stage": "harvest",
+              "first_correct_timestamp_s": 119.5,
+              "delay_s": 0.09999999999999432,
+              "missed": false,
+              "first_correct_latency_s": 0.09999999999999432,
+              "stable_transition_k": 2,
+              "first_correct_frame": 3585,
+              "stable_confirmation_frame": 3600,
+              "stable_confirmation_timestamp_s": 120.0,
+              "stable_transition_latency_s": 0.5999999999999943,
+              "stable_transition_miss": false
+            },
+            {
+              "frame_index": 5097,
+              "boundary_timestamp_s": 169.9,
+              "from_stage": "harvest",
+              "to_stage": "return",
+              "first_correct_timestamp_s": 170.5,
+              "delay_s": 0.5999999999999943,
+              "missed": false,
+              "first_correct_latency_s": 0.5999999999999943,
+              "stable_transition_k": 2,
+              "first_correct_frame": 5115,
+              "stable_confirmation_frame": 5130,
+              "stable_confirmation_timestamp_s": 171.0,
+              "stable_transition_latency_s": 1.0999999999999943,
+              "stable_transition_miss": false
+            }
+          ],
+          "error_intervals": [
+            {
+              "start_frame": 1740,
+              "end_frame_exclusive": 1770,
+              "start_timestamp_s": 58.0,
+              "end_timestamp_s": 59.0,
+              "wrong_anchors": 2,
+              "pairs": [
+                {
+                  "frame_index": 1740,
+                  "truth": "harvest",
+                  "prediction": "return"
+                },
+                {
+                  "frame_index": 1755,
+                  "truth": "harvest",
+                  "prediction": "return"
+                }
+              ]
+            },
+            {
+              "start_frame": 2280,
+              "end_frame_exclusive": 2295,
+              "start_timestamp_s": 76.0,
+              "end_timestamp_s": 76.5,
+              "wrong_anchors": 1,
+              "pairs": [
+                {
+                  "frame_index": 2280,
+                  "truth": "harvest",
+                  "prediction": "return"
+                }
+              ]
+            },
+            {
+              "start_frame": 2475,
+              "end_frame_exclusive": 2490,
+              "start_timestamp_s": 82.5,
+              "end_timestamp_s": 83.0,
+              "wrong_anchors": 1,
+              "pairs": [
+                {
+                  "frame_index": 2475,
+                  "truth": "adjust",
+                  "prediction": "return"
+                }
+              ]
+            },
+            {
+              "start_frame": 3255,
+              "end_frame_exclusive": 3285,
+              "start_timestamp_s": 108.5,
+              "end_timestamp_s": 109.5,
+              "wrong_anchors": 2,
+              "pairs": [
+                {
+                  "frame_index": 3255,
+                  "truth": "pickup",
+                  "prediction": "adjust"
+                },
+                {
+                  "frame_index": 3270,
+                  "truth": "pickup",
+                  "prediction": "adjust"
+                }
+              ]
+            },
+            {
+              "start_frame": 5100,
+              "end_frame_exclusive": 5115,
+              "start_timestamp_s": 170.0,
+              "end_timestamp_s": 170.5,
+              "wrong_anchors": 1,
+              "pairs": [
+                {
+                  "frame_index": 5100,
+                  "truth": "return",
+                  "prediction": "harvest"
+                }
+              ]
+            },
+            {
+              "start_frame": 5235,
+              "end_frame_exclusive": 5250,
+              "start_timestamp_s": 174.5,
+              "end_timestamp_s": 175.0,
+              "wrong_anchors": 1,
+              "pairs": [
+                {
+                  "frame_index": 5235,
+                  "truth": "return",
+                  "prediction": "pickup"
+                }
+              ]
+            }
+          ],
+          "prediction_changes": 11,
+          "false_switches": 8,
+          "false_switches_per_minute": 2.742857142857143,
+          "delay_p50_s": 0.46666666666666856,
+          "delay_p95_s": 1.0500000000000007,
+          "missed_transition_ratio": 0.0,
+          "prediction_hz": 2,
+          "time_resolution_s": 0.5,
+          "definition": "First correct anchor after true boundary, before end of that segment. False switch: prediction change between anchors with same true label. No sequence correction.",
+          "stable_transition_k": 2,
+          "stable_transition_latency_p50_s": 0.9666666666666686,
+          "stable_transition_latency_p95_s": 1.5500000000000007,
+          "stable_transition_miss_ratio": 0.0,
+          "early_false_switch": {
+            "count": 2,
+            "duration_s": 1.5,
+            "events": [
+              {
+                "boundary_frame": 307,
+                "to_stage": "harvest",
+                "count": 0,
+                "duration_s": 0,
+                "intervals": []
+              },
+              {
+                "boundary_frame": 2298,
+                "to_stage": "return",
+                "count": 2,
+                "duration_s": 1.5,
+                "intervals": [
+                  {
+                    "start_frame": 1740,
+                    "end_frame_exclusive": 1770,
+                    "start_timestamp_s": 58.0,
+                    "duration_s": 1.0,
+                    "predicted_stage": "return",
+                    "anchors": 2
+                  },
+                  {
+                    "start_frame": 2280,
+                    "end_frame_exclusive": 2295,
+                    "start_timestamp_s": 76.0,
+                    "duration_s": 0.5,
+                    "predicted_stage": "return",
+                    "anchors": 1
+                  }
+                ]
+              },
+              {
+                "boundary_frame": 2474,
+                "to_stage": "adjust",
+                "count": 0,
+                "duration_s": 0,
+                "intervals": []
+              },
+              {
+                "boundary_frame": 3249,
+                "to_stage": "pickup",
+                "count": 0,
+                "duration_s": 0,
+                "intervals": []
+              },
+              {
+                "boundary_frame": 3582,
+                "to_stage": "harvest",
+                "count": 0,
+                "duration_s": 0,
+                "intervals": []
+              },
+              {
+                "boundary_frame": 5097,
+                "to_stage": "return",
+                "count": 0,
+                "duration_s": 0,
+                "intervals": []
+              }
+            ],
+            "definition": "Successor-stage prediction bursts during the immediately preceding true segment, including transient and sustained errors"
+          },
+          "wrong_stage_duration_s": 4.0,
+          "wrong_duration_definition": "Anchor-label rectangle estimate: each raw argmax held until next anchor/end; 2 Hz resolution, no smoothing"
+        },
+        "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d"
+      }
+    },
+    "per_source": {
+      "7d879f9d5d5a4be09beb55cf88591b0d": {
+        "samples": 350,
+        "accuracy": 0.9771428571428571,
+        "macro_f1": 0.947796781607688,
+        "nll": 0.07348269692045757,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.9761904761904762,
+            "recall": 0.9534883720930233,
+            "f1": 0.9647058823529412,
+            "support": 43
+          },
+          "harvest": {
+            "precision": 0.9956896551724138,
+            "recall": 0.9871794871794872,
+            "f1": 0.9914163090128756,
+            "support": 234
+          },
+          "return": {
+            "precision": 0.8260869565217391,
+            "recall": 0.9047619047619048,
+            "f1": 0.8636363636363636,
+            "support": 21
+          },
+          "adjust": {
+            "precision": 0.9622641509433962,
+            "recall": 0.9807692307692307,
+            "f1": 0.9714285714285714,
+            "support": 52
+          }
+        },
+        "confusion_true_rows": [
+          [
+            41,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            231,
+            3,
+            0
+          ],
+          [
+            1,
+            1,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            51
+          ]
+        ],
+        "return_adjust_confusions": 1,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0"
+      }
+    },
+    "temporal": {
+      "transitions": 6,
+      "delay_p50_s": 0.46666666666666856,
+      "delay_p95_s": 1.0500000000000007,
+      "missed_transition_ratio": 0.0,
+      "false_switches": 8,
+      "false_switches_per_minute": 2.742857142857143,
+      "prediction_hz": 2,
+      "time_resolution_s": 0.5,
+      "stable_transition_k": 2,
+      "first_correct_latency_p50_s": 0.46666666666666856,
+      "first_correct_latency_p95_s": 1.0500000000000007,
+      "stable_transition_latency_p50_s": 0.9666666666666686,
+      "stable_transition_latency_p95_s": 1.5500000000000007,
+      "stable_transition_miss_ratio": 0.0,
+      "early_false_switch_count": 2,
+      "early_false_switch_duration_s": 1.5,
+      "wrong_stage_duration_s": 4.0
+    },
+    "valid_samples": 350,
+    "masked_count": 0,
+    "valid_ratio": 1.0,
+    "phase_duration_strata": {
+      "short_threshold_s": 1.5,
+      "short": {
+        "samples": 0,
+        "metrics": null
+      },
+      "long": {
+        "samples": 350,
+        "metrics": {
+          "samples": 350,
+          "accuracy": 0.9771428571428571,
+          "macro_f1": 0.947796781607688,
+          "nll": 0.07348269692045757,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9761904761904762,
+              "recall": 0.9534883720930233,
+              "f1": 0.9647058823529412,
+              "support": 43
+            },
+            "harvest": {
+              "precision": 0.9956896551724138,
+              "recall": 0.9871794871794872,
+              "f1": 0.9914163090128756,
+              "support": 234
+            },
+            "return": {
+              "precision": 0.8260869565217391,
+              "recall": 0.9047619047619048,
+              "f1": 0.8636363636363636,
+              "support": 21
+            },
+            "adjust": {
+              "precision": 0.9622641509433962,
+              "recall": 0.9807692307692307,
+              "f1": 0.9714285714285714,
+              "support": 52
+            }
+          },
+          "confusion_true_rows": [
+            [
+              41,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              231,
+              3,
+              0
+            ],
+            [
+              1,
+              1,
+              19,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              51
+            ]
+          ],
+          "return_adjust_confusions": 1,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      }
+    },
+    "manifest_sha256": "5411cc310487941c80954c96e92ef2c55b3c0f8436f45fefae52868ab2127755",
+    "split_sha256": "ab960cd70310488f71ab8f8ff16f95838b638c705e42afb88512d68de07acf73",
+    "warnings": [
+      "Fewer than 10 source recordings; smoke-scale result only",
+      "TEST ONLY: source metadata hash mismatch allowed; see annotation.source_hashes"
+    ]
+  },
+  "latency": {
+    "measured": true,
+    "encoder_and_head_mean_ms": 87.21705650095828,
+    "encoder_and_head_p50_ms": 87.10706949932501,
+    "encoder_and_head_p95_ms": 87.59610075358069,
+    "encoder_and_head_p99_ms": 88.48596576106502,
+    "prediction_mode": "current_only",
+    "future_horizon_s": 1.0,
+    "fused_shape": [
+      1,
+      4000
+    ],
+    "visual_dimension": 3072,
+    "measured_joint_history_dimension": 928,
+    "output_shapes": {
+      "current_logits": [
+        1,
+        4
+      ],
+      "future_logits": null
+    },
+    "encoder_frozen": true,
+    "encoder_dtype": "torch.bfloat16",
+    "first_input_indices": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pretrained": {
+      "model_id": "facebook/vjepa2-vitl-fpc64-256",
+      "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+      "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+      "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+    },
+    "three_view_rgb_resize_mean_ms": 2.055248132201773,
+    "three_view_rgb_resize_p95_ms": 2.170900763303507,
+    "warmup_windows": 2,
+    "measured_windows": 20,
+    "device": "cuda:0",
+    "hardware": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "peak_gpu_bytes": 782528000,
+    "torch_version": "2.15.0+cu132",
+    "cuda_version": "13.2",
+    "scope": "Offline synchronized three-view 16-frame encoder + fusion + head. RGB conversion/resize measured separately per three-view source frame; excludes decode/I/O, ROS, other workloads. Not robot latency."
+  }
+}

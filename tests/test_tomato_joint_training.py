@@ -140,3 +140,34 @@ def test_extract_reuses_verified_features_without_loading_or_decoding_encoder(tm
     monkeypatch.setattr(model, 'decode_selected', forbidden)
     rows = tr.extract(cfg, m)
     assert all(r['performance']['reused'] for r in rows)
+
+
+def test_legacy_manifest_cache_checkpoint_evaluate_without_rewriting_locked_files(tmp_path):
+    cfg = make_config(tmp_path)
+    m = tr.prepare(cfg)
+    m['format_version'] = 1; m['sampler_version'] = ds.LEGACY_SAMPLER_VERSION
+    m['contract'].pop('sampler_version')
+    for key in ('prediction', 'split_sha256', 'external_split_sha256'): m.pop(key)
+    run = Path(cfg['output_dir']); ds.write_json(run / 'manifest.json', m)
+    (run / 'validation_receipt.json').unlink(); (run / 'validation_lock.json').unlink()
+    original_sha = ds.digest(run / 'manifest.json')
+    rows = []
+    for e in m['episodes']:
+        times, q = ds.read_state(e, cfg['joint_names']); anchors = ds.iter_phase_anchors(times)
+        history = np.stack([ds.sample_causal_indices(times, int(i), sampler_version=ds.LEGACY_SAMPLER_VERSION) for i in anchors])
+        c = tr.feature_contract(m); path = model.cache_path(tmp_path / 'old-cache', e, c, m['pretrained'])
+        key = model.feature_fingerprint(e, c, m['pretrained'])
+        model.write_cache(path, np.zeros((len(anchors), 3328), np.float32), anchors, times[anchors], history, key)
+        rows.append(dict(episode_id=e['episode_id'], path=str(path)))
+    ds.write_json(run / 'feature_index.json', dict(manifest_sha256=original_sha, pretrained=m['pretrained'], episodes=rows))
+    model.save_checkpoint(run / 'best_head.pt', model.head_model(16), np.zeros(3328, np.float32), np.ones(3328, np.float32), m, original_sha, 1, {})
+    saved = torch.load(run / 'best_head.pt', weights_only=True)
+    for key in ('prediction', 'prediction_mode', 'future_horizon_s', 'lambda_current', 'lambda_future', 'stable_transition_k', 'split_sha256'): saved.pop(key)
+    saved.update(format_version=1, sampler_version=ds.LEGACY_SAMPLER_VERSION)
+    torch.save(saved, run / 'best_head.pt')
+    checkpoint_sha = ds.digest(run / 'best_head.pt')
+    with pytest.raises(ValueError, match='full-revalidate'):
+        ev.evaluate(cfg, video=False, measure=False)
+    report, errors = ev.evaluate(cfg, video=False, measure=False, full_revalidate=True)
+    assert not errors and report['prediction_mode'] == 'current_only' and report['samples'] == 8
+    assert ds.digest(run / 'manifest.json') == original_sha and ds.digest(run / 'best_head.pt') == checkpoint_sha

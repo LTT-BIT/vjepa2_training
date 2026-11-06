@@ -200,6 +200,10 @@ def test_non30_sampler_has_explicit_integer_or_causal_fallback():
         assert len(ids) == 16 and ids[-1] == 70 and np.all(t[ids] <= t[70])
         if fps % 10 == 0:
             np.testing.assert_array_equal(ids, np.maximum(0, 70 - np.arange(15, -1, -1) * (fps // 10)))
+    t = (np.arange(600) / 30).astype(np.float32).astype(np.float64)
+    past = ds.sample_causal_indices(t, 450)
+    t[451:] += np.arange(1, 150) * .001
+    np.testing.assert_array_equal(ds.sample_causal_indices(t, 450), past)
 
 
 @pytest.mark.parametrize('horizon,offset', [(.5, 15), (1., 30), (2., 60)])

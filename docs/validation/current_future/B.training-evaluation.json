@@ -1,0 +1,1737 @@
+{
+  "prediction_mode": "future_only",
+  "future_horizon_s": 1.0,
+  "lambda_current": 1.0,
+  "lambda_future": 0.5,
+  "stable_transition_k": 2,
+  "best_epoch": 2,
+  "selection": "active lambda normalized val Macro-F1 then NLL",
+  "epochs_executed": 17,
+  "source_summary": {
+    "train": {
+      "sources": 1,
+      "episodes": 1,
+      "anchors": 357,
+      "class_counts": [
+        59,
+        201,
+        32,
+        65
+      ],
+      "current_class_counts": [
+        59,
+        201,
+        32,
+        65
+      ],
+      "future_class_counts": [
+        57,
+        201,
+        32,
+        65
+      ],
+      "future_valid": 355,
+      "future_invalid": 2
+    },
+    "val": {
+      "sources": 1,
+      "episodes": 1,
+      "anchors": 268,
+      "class_counts": [
+        34,
+        190,
+        18,
+        26
+      ],
+      "current_class_counts": [
+        34,
+        190,
+        18,
+        26
+      ],
+      "future_class_counts": [
+        32,
+        190,
+        18,
+        26
+      ],
+      "future_valid": 266,
+      "future_invalid": 2
+    },
+    "test": {
+      "sources": 1,
+      "episodes": 1,
+      "anchors": 350,
+      "class_counts": [
+        43,
+        234,
+        21,
+        52
+      ],
+      "current_class_counts": [
+        43,
+        234,
+        21,
+        52
+      ],
+      "future_class_counts": [
+        41,
+        234,
+        21,
+        52
+      ],
+      "future_valid": 348,
+      "future_invalid": 2
+    }
+  },
+  "warnings": [
+    "Fewer than 10 source recordings; smoke-scale result only",
+    "TEST ONLY: source metadata hash mismatch allowed; see annotation.source_hashes"
+  ],
+  "manifest_sha256": "810c4cc348c9a5667b1885cf19e1857ef75b9091bafba02b5a8838e1f32cda80",
+  "split_sha256": "ab960cd70310488f71ab8f8ff16f95838b638c705e42afb88512d68de07acf73",
+  "splits": {
+    "train": {
+      "prediction_mode": "future_only",
+      "future_horizon_s": 1.0,
+      "lambda_current": 1.0,
+      "lambda_future": 0.5,
+      "stable_transition_k": 2,
+      "current": null,
+      "future": {
+        "samples": 355,
+        "accuracy": 0.9661971830985916,
+        "macro_f1": 0.9566919405316254,
+        "nll": 0.11934321301979581,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.9,
+            "recall": 0.9473684210526315,
+            "f1": 0.9230769230769231,
+            "support": 57
+          },
+          "harvest": {
+            "precision": 1.0,
+            "recall": 0.9601990049751243,
+            "f1": 0.9796954314720813,
+            "support": 201
+          },
+          "return": {
+            "precision": 0.9393939393939394,
+            "recall": 0.96875,
+            "f1": 0.9538461538461539,
+            "support": 32
+          },
+          "adjust": {
+            "precision": 0.9420289855072463,
+            "recall": 1.0,
+            "f1": 0.9701492537313433,
+            "support": 65
+          }
+        },
+        "confusion_true_rows": [
+          [
+            54,
+            0,
+            0,
+            3
+          ],
+          [
+            6,
+            193,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            31,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            65
+          ]
+        ],
+        "return_adjust_confusions": 1,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0",
+        "valid_samples": 355,
+        "masked_count": 2,
+        "valid_ratio": 0.9943977591036415,
+        "per_episode": {
+          "e698ea3e9172db998088f74e": {
+            "metrics": {
+              "samples": 355,
+              "accuracy": 0.9661971830985916,
+              "macro_f1": 0.9566919405316254,
+              "nll": 0.11934321301979581,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.9,
+                  "recall": 0.9473684210526315,
+                  "f1": 0.9230769230769231,
+                  "support": 57
+                },
+                "harvest": {
+                  "precision": 1.0,
+                  "recall": 0.9601990049751243,
+                  "f1": 0.9796954314720813,
+                  "support": 201
+                },
+                "return": {
+                  "precision": 0.9393939393939394,
+                  "recall": 0.96875,
+                  "f1": 0.9538461538461539,
+                  "support": 32
+                },
+                "adjust": {
+                  "precision": 0.9420289855072463,
+                  "recall": 1.0,
+                  "f1": 0.9701492537313433,
+                  "support": 65
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  54,
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  6,
+                  193,
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  31,
+                  1
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  65
+                ]
+              ],
+              "return_adjust_confusions": 1,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            },
+            "masked_count": 2,
+            "source_recording_id": "e826c474e80547d5a3b24e5eb0f30977",
+            "anticipation": {
+              "events": [
+                {
+                  "boundary_frame": 273,
+                  "boundary_timestamp_s": 9.1,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 1538,
+                  "boundary_timestamp_s": 51.266666666666666,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 2,
+                  "ambiguous": false,
+                  "detected": true,
+                  "missed": false,
+                  "first_warning_timestamp_s": 50.5,
+                  "lead_time_s": 0.7666666666666657
+                },
+                {
+                  "boundary_frame": 1798,
+                  "boundary_timestamp_s": 59.93333333333333,
+                  "to_stage": "adjust",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 2,
+                  "ambiguous": false,
+                  "detected": true,
+                  "missed": false,
+                  "first_warning_timestamp_s": 59.0,
+                  "lead_time_s": 0.93333333333333
+                },
+                {
+                  "boundary_frame": 2771,
+                  "boundary_timestamp_s": 92.36666666666666,
+                  "to_stage": "pickup",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 3373,
+                  "boundary_timestamp_s": 112.43333333333334,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 5117,
+                  "boundary_timestamp_s": 170.56666666666666,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 2,
+                  "ambiguous": false,
+                  "detected": true,
+                  "missed": false,
+                  "first_warning_timestamp_s": 170.0,
+                  "lead_time_s": 0.5666666666666629
+                }
+              ],
+              "ambiguous_alert_anchors": 0,
+              "out_of_window_false_alarm_count": 5,
+              "out_of_window_false_alarm_duration_s": 3.0,
+              "out_of_window_false_alarms_per_minute": 1.6901408450704225,
+              "false_alarm_intervals": [
+                {
+                  "start_frame": 285,
+                  "end_frame_exclusive": 300,
+                  "start_timestamp_s": 9.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "pickup",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 1755,
+                  "end_frame_exclusive": 1770,
+                  "start_timestamp_s": 58.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 2775,
+                  "end_frame_exclusive": 2790,
+                  "start_timestamp_s": 92.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 3375,
+                  "end_frame_exclusive": 3390,
+                  "start_timestamp_s": 112.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "pickup",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 5070,
+                  "end_frame_exclusive": 5100,
+                  "start_timestamp_s": 169.0,
+                  "duration_s": 1.0,
+                  "predicted_stage": "return",
+                  "anchors": 2
+                }
+              ],
+              "valid_anchor_duration_s": 177.5,
+              "definition": "Alerts differ from oracle true current stage; supported only by a matching true transition within the fixed horizon. Multiple-boundary events are explicitly ambiguous; no online decision uses truth."
+            }
+          }
+        },
+        "per_source": {
+          "e826c474e80547d5a3b24e5eb0f30977": {
+            "samples": 355,
+            "accuracy": 0.9661971830985916,
+            "macro_f1": 0.9566919405316254,
+            "nll": 0.11934321301979581,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9,
+                "recall": 0.9473684210526315,
+                "f1": 0.9230769230769231,
+                "support": 57
+              },
+              "harvest": {
+                "precision": 1.0,
+                "recall": 0.9601990049751243,
+                "f1": 0.9796954314720813,
+                "support": 201
+              },
+              "return": {
+                "precision": 0.9393939393939394,
+                "recall": 0.96875,
+                "f1": 0.9538461538461539,
+                "support": 32
+              },
+              "adjust": {
+                "precision": 0.9420289855072463,
+                "recall": 1.0,
+                "f1": 0.9701492537313433,
+                "support": 65
+              }
+            },
+            "confusion_true_rows": [
+              [
+                54,
+                0,
+                0,
+                3
+              ],
+              [
+                6,
+                193,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                31,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                65
+              ]
+            ],
+            "return_adjust_confusions": 1,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "persistence_baselines": {
+          "oracle_current_persistence": {
+            "samples": 355,
+            "accuracy": 0.9661971830985916,
+            "macro_f1": 0.9502079850597275,
+            "nll": null,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9322033898305084,
+                "recall": 0.9649122807017544,
+                "f1": 0.9482758620689655,
+                "support": 57
+              },
+              "harvest": {
+                "precision": 0.9800995024875622,
+                "recall": 0.9800995024875622,
+                "f1": 0.9800995024875622,
+                "support": 201
+              },
+              "return": {
+                "precision": 0.9333333333333333,
+                "recall": 0.875,
+                "f1": 0.9032258064516129,
+                "support": 32
+              },
+              "adjust": {
+                "precision": 0.9692307692307692,
+                "recall": 0.9692307692307692,
+                "f1": 0.9692307692307692,
+                "support": 65
+              }
+            },
+            "confusion_true_rows": [
+              [
+                55,
+                0,
+                0,
+                2
+              ],
+              [
+                4,
+                197,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                28,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                63
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0",
+            "diagnostic_only": true,
+            "deployable": false,
+            "definition": "Oracle true current stage held as future prediction; hard labels, no probabilistic NLL"
+          }
+        },
+        "macro_f1_gain_over_oracle_persistence": 0.006483955471897951,
+        "macro_f1_gain_over_model_current_persistence": null,
+        "anticipation": {
+          "total_events": 6,
+          "ambiguous_events": 0,
+          "evaluable_events": 6,
+          "detected_events": 3,
+          "event_recall": 0.5,
+          "missed_events": 3,
+          "lead_time_p50_s": 0.7666666666666657,
+          "lead_time_p95_s": 0.9166666666666635,
+          "out_of_window_false_alarm_count": 5,
+          "out_of_window_false_alarm_duration_s": 3.0,
+          "out_of_window_false_alarms_per_minute": 1.6901408450704225,
+          "ambiguity_rule": "Events with another boundary less than horizon away are excluded from recall, retained explicitly"
+        },
+        "phase_duration_strata": {
+          "short_threshold_s": 1.5,
+          "short": {
+            "samples": 0,
+            "metrics": null
+          },
+          "long": {
+            "samples": 355,
+            "metrics": {
+              "samples": 355,
+              "accuracy": 0.9661971830985916,
+              "macro_f1": 0.9566919405316254,
+              "nll": 0.11934321301979581,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.9,
+                  "recall": 0.9473684210526315,
+                  "f1": 0.9230769230769231,
+                  "support": 57
+                },
+                "harvest": {
+                  "precision": 1.0,
+                  "recall": 0.9601990049751243,
+                  "f1": 0.9796954314720813,
+                  "support": 201
+                },
+                "return": {
+                  "precision": 0.9393939393939394,
+                  "recall": 0.96875,
+                  "f1": 0.9538461538461539,
+                  "support": 32
+                },
+                "adjust": {
+                  "precision": 0.9420289855072463,
+                  "recall": 1.0,
+                  "f1": 0.9701492537313433,
+                  "support": 65
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  54,
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  6,
+                  193,
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  31,
+                  1
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  65
+                ]
+              ],
+              "return_adjust_confusions": 1,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            }
+          }
+        }
+      },
+      "total_anchors": 357
+    },
+    "val": {
+      "prediction_mode": "future_only",
+      "future_horizon_s": 1.0,
+      "lambda_current": 1.0,
+      "lambda_future": 0.5,
+      "stable_transition_k": 2,
+      "current": null,
+      "future": {
+        "samples": 266,
+        "accuracy": 0.5150375939849624,
+        "macro_f1": 0.494810414943466,
+        "nll": 1.250784238462409,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.8275862068965517,
+            "recall": 0.75,
+            "f1": 0.7868852459016393,
+            "support": 32
+          },
+          "harvest": {
+            "precision": 0.9545454545454546,
+            "recall": 0.4421052631578947,
+            "f1": 0.60431654676259,
+            "support": 190
+          },
+          "return": {
+            "precision": 1.0,
+            "recall": 0.16666666666666666,
+            "f1": 0.2857142857142857,
+            "support": 18
+          },
+          "adjust": {
+            "precision": 0.1780821917808219,
+            "recall": 1.0,
+            "f1": 0.3023255813953488,
+            "support": 26
+          }
+        },
+        "confusion_true_rows": [
+          [
+            24,
+            0,
+            0,
+            8
+          ],
+          [
+            5,
+            84,
+            0,
+            101
+          ],
+          [
+            0,
+            4,
+            3,
+            11
+          ],
+          [
+            0,
+            0,
+            0,
+            26
+          ]
+        ],
+        "return_adjust_confusions": 11,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0",
+        "valid_samples": 266,
+        "masked_count": 2,
+        "valid_ratio": 0.9925373134328358,
+        "per_episode": {
+          "749d77f6e61499fcf5d624e6": {
+            "metrics": {
+              "samples": 266,
+              "accuracy": 0.5150375939849624,
+              "macro_f1": 0.494810414943466,
+              "nll": 1.250784238462409,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.8275862068965517,
+                  "recall": 0.75,
+                  "f1": 0.7868852459016393,
+                  "support": 32
+                },
+                "harvest": {
+                  "precision": 0.9545454545454546,
+                  "recall": 0.4421052631578947,
+                  "f1": 0.60431654676259,
+                  "support": 190
+                },
+                "return": {
+                  "precision": 1.0,
+                  "recall": 0.16666666666666666,
+                  "f1": 0.2857142857142857,
+                  "support": 18
+                },
+                "adjust": {
+                  "precision": 0.1780821917808219,
+                  "recall": 1.0,
+                  "f1": 0.3023255813953488,
+                  "support": 26
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  24,
+                  0,
+                  0,
+                  8
+                ],
+                [
+                  5,
+                  84,
+                  0,
+                  101
+                ],
+                [
+                  0,
+                  4,
+                  3,
+                  11
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  26
+                ]
+              ],
+              "return_adjust_confusions": 11,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            },
+            "masked_count": 2,
+            "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+            "anticipation": {
+              "events": [
+                {
+                  "boundary_frame": 265,
+                  "boundary_timestamp_s": 8.833333333333334,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 1674,
+                  "boundary_timestamp_s": 55.8,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 1813,
+                  "boundary_timestamp_s": 60.43333333333333,
+                  "to_stage": "adjust",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 2,
+                  "ambiguous": false,
+                  "detected": true,
+                  "missed": false,
+                  "first_warning_timestamp_s": 59.5,
+                  "lead_time_s": 0.93333333333333
+                },
+                {
+                  "boundary_frame": 2199,
+                  "boundary_timestamp_s": 73.3,
+                  "to_stage": "pickup",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 2434,
+                  "boundary_timestamp_s": 81.13333333333334,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 1,
+                  "ambiguous": false,
+                  "detected": true,
+                  "missed": false,
+                  "first_warning_timestamp_s": 81.0,
+                  "lead_time_s": 0.13333333333333997
+                },
+                {
+                  "boundary_frame": 3876,
+                  "boundary_timestamp_s": 129.2,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                }
+              ],
+              "ambiguous_alert_anchors": 0,
+              "out_of_window_false_alarm_count": 16,
+              "out_of_window_false_alarm_duration_s": 61.0,
+              "out_of_window_false_alarms_per_minute": 7.2180451127819545,
+              "false_alarm_intervals": [
+                {
+                  "start_frame": 270,
+                  "end_frame_exclusive": 300,
+                  "start_timestamp_s": 9.0,
+                  "duration_s": 1.0,
+                  "predicted_stage": "pickup",
+                  "anchors": 2
+                },
+                {
+                  "start_frame": 975,
+                  "end_frame_exclusive": 990,
+                  "start_timestamp_s": 32.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 1155,
+                  "end_frame_exclusive": 1230,
+                  "start_timestamp_s": 38.5,
+                  "duration_s": 2.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 5
+                },
+                {
+                  "start_frame": 1365,
+                  "end_frame_exclusive": 1380,
+                  "start_timestamp_s": 45.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 1395,
+                  "end_frame_exclusive": 1500,
+                  "start_timestamp_s": 46.5,
+                  "duration_s": 3.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 7
+                },
+                {
+                  "start_frame": 1515,
+                  "end_frame_exclusive": 1530,
+                  "start_timestamp_s": 50.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 1545,
+                  "end_frame_exclusive": 1560,
+                  "start_timestamp_s": 51.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 1575,
+                  "end_frame_exclusive": 1650,
+                  "start_timestamp_s": 52.5,
+                  "duration_s": 2.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 5
+                },
+                {
+                  "start_frame": 1680,
+                  "end_frame_exclusive": 1710,
+                  "start_timestamp_s": 56.0,
+                  "duration_s": 1.0,
+                  "predicted_stage": "harvest",
+                  "anchors": 2
+                },
+                {
+                  "start_frame": 1755,
+                  "end_frame_exclusive": 1785,
+                  "start_timestamp_s": 58.5,
+                  "duration_s": 1.0,
+                  "predicted_stage": "adjust",
+                  "anchors": 2
+                },
+                {
+                  "start_frame": 2205,
+                  "end_frame_exclusive": 2265,
+                  "start_timestamp_s": 73.5,
+                  "duration_s": 2.0,
+                  "predicted_stage": "adjust",
+                  "anchors": 4
+                },
+                {
+                  "start_frame": 2280,
+                  "end_frame_exclusive": 2295,
+                  "start_timestamp_s": 76.0,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 2310,
+                  "end_frame_exclusive": 2325,
+                  "start_timestamp_s": 77.0,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 2625,
+                  "end_frame_exclusive": 3030,
+                  "start_timestamp_s": 87.5,
+                  "duration_s": 13.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 27
+                },
+                {
+                  "start_frame": 3045,
+                  "end_frame_exclusive": 3570,
+                  "start_timestamp_s": 101.5,
+                  "duration_s": 17.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 35
+                },
+                {
+                  "start_frame": 3585,
+                  "end_frame_exclusive": 3990,
+                  "start_timestamp_s": 119.5,
+                  "duration_s": 13.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 27
+                }
+              ],
+              "valid_anchor_duration_s": 133.0,
+              "definition": "Alerts differ from oracle true current stage; supported only by a matching true transition within the fixed horizon. Multiple-boundary events are explicitly ambiguous; no online decision uses truth."
+            }
+          }
+        },
+        "per_source": {
+          "76354615cf9746758c5c7e6e5ab579d4": {
+            "samples": 266,
+            "accuracy": 0.5150375939849624,
+            "macro_f1": 0.494810414943466,
+            "nll": 1.250784238462409,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8275862068965517,
+                "recall": 0.75,
+                "f1": 0.7868852459016393,
+                "support": 32
+              },
+              "harvest": {
+                "precision": 0.9545454545454546,
+                "recall": 0.4421052631578947,
+                "f1": 0.60431654676259,
+                "support": 190
+              },
+              "return": {
+                "precision": 1.0,
+                "recall": 0.16666666666666666,
+                "f1": 0.2857142857142857,
+                "support": 18
+              },
+              "adjust": {
+                "precision": 0.1780821917808219,
+                "recall": 1.0,
+                "f1": 0.3023255813953488,
+                "support": 26
+              }
+            },
+            "confusion_true_rows": [
+              [
+                24,
+                0,
+                0,
+                8
+              ],
+              [
+                5,
+                84,
+                0,
+                101
+              ],
+              [
+                0,
+                4,
+                3,
+                11
+              ],
+              [
+                0,
+                0,
+                0,
+                26
+              ]
+            ],
+            "return_adjust_confusions": 11,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "persistence_baselines": {
+          "oracle_current_persistence": {
+            "samples": 266,
+            "accuracy": 0.9548872180451128,
+            "macro_f1": 0.9086611530883977,
+            "nll": null,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8823529411764706,
+                "recall": 0.9375,
+                "f1": 0.9090909090909091,
+                "support": 32
+              },
+              "harvest": {
+                "precision": 0.9789473684210527,
+                "recall": 0.9789473684210527,
+                "f1": 0.9789473684210527,
+                "support": 190
+              },
+              "return": {
+                "precision": 0.875,
+                "recall": 0.7777777777777778,
+                "f1": 0.8235294117647058,
+                "support": 18
+              },
+              "adjust": {
+                "precision": 0.9230769230769231,
+                "recall": 0.9230769230769231,
+                "f1": 0.9230769230769231,
+                "support": 26
+              }
+            },
+            "confusion_true_rows": [
+              [
+                30,
+                0,
+                0,
+                2
+              ],
+              [
+                4,
+                186,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                14,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                24
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0",
+            "diagnostic_only": true,
+            "deployable": false,
+            "definition": "Oracle true current stage held as future prediction; hard labels, no probabilistic NLL"
+          }
+        },
+        "macro_f1_gain_over_oracle_persistence": -0.4138507381449317,
+        "macro_f1_gain_over_model_current_persistence": null,
+        "anticipation": {
+          "total_events": 6,
+          "ambiguous_events": 0,
+          "evaluable_events": 6,
+          "detected_events": 2,
+          "event_recall": 0.3333333333333333,
+          "missed_events": 4,
+          "lead_time_p50_s": 0.533333333333335,
+          "lead_time_p95_s": 0.8933333333333304,
+          "out_of_window_false_alarm_count": 16,
+          "out_of_window_false_alarm_duration_s": 61.0,
+          "out_of_window_false_alarms_per_minute": 7.2180451127819545,
+          "ambiguity_rule": "Events with another boundary less than horizon away are excluded from recall, retained explicitly"
+        },
+        "phase_duration_strata": {
+          "short_threshold_s": 1.5,
+          "short": {
+            "samples": 0,
+            "metrics": null
+          },
+          "long": {
+            "samples": 266,
+            "metrics": {
+              "samples": 266,
+              "accuracy": 0.5150375939849624,
+              "macro_f1": 0.494810414943466,
+              "nll": 1.250784238462409,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.8275862068965517,
+                  "recall": 0.75,
+                  "f1": 0.7868852459016393,
+                  "support": 32
+                },
+                "harvest": {
+                  "precision": 0.9545454545454546,
+                  "recall": 0.4421052631578947,
+                  "f1": 0.60431654676259,
+                  "support": 190
+                },
+                "return": {
+                  "precision": 1.0,
+                  "recall": 0.16666666666666666,
+                  "f1": 0.2857142857142857,
+                  "support": 18
+                },
+                "adjust": {
+                  "precision": 0.1780821917808219,
+                  "recall": 1.0,
+                  "f1": 0.3023255813953488,
+                  "support": 26
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  24,
+                  0,
+                  0,
+                  8
+                ],
+                [
+                  5,
+                  84,
+                  0,
+                  101
+                ],
+                [
+                  0,
+                  4,
+                  3,
+                  11
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  26
+                ]
+              ],
+              "return_adjust_confusions": 11,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            }
+          }
+        }
+      },
+      "total_anchors": 268
+    },
+    "test": {
+      "prediction_mode": "future_only",
+      "future_horizon_s": 1.0,
+      "lambda_current": 1.0,
+      "lambda_future": 0.5,
+      "stable_transition_k": 2,
+      "current": null,
+      "future": {
+        "samples": 348,
+        "accuracy": 0.9367816091954023,
+        "macro_f1": 0.8861841914351111,
+        "nll": 0.19895271048864374,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.8571428571428571,
+            "recall": 0.8780487804878049,
+            "f1": 0.8674698795180723,
+            "support": 41
+          },
+          "harvest": {
+            "precision": 0.9910313901345291,
+            "recall": 0.9444444444444444,
+            "f1": 0.9671772428884027,
+            "support": 234
+          },
+          "return": {
+            "precision": 0.6785714285714286,
+            "recall": 0.9047619047619048,
+            "f1": 0.7755102040816326,
+            "support": 21
+          },
+          "adjust": {
+            "precision": 0.9090909090909091,
+            "recall": 0.9615384615384616,
+            "f1": 0.9345794392523364,
+            "support": 52
+          }
+        },
+        "confusion_true_rows": [
+          [
+            36,
+            0,
+            0,
+            5
+          ],
+          [
+            6,
+            221,
+            7,
+            0
+          ],
+          [
+            0,
+            2,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            50
+          ]
+        ],
+        "return_adjust_confusions": 2,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0",
+        "valid_samples": 348,
+        "masked_count": 2,
+        "valid_ratio": 0.9942857142857143,
+        "per_episode": {
+          "9efc7aeb8216f65ff27d467e": {
+            "metrics": {
+              "samples": 348,
+              "accuracy": 0.9367816091954023,
+              "macro_f1": 0.8861841914351111,
+              "nll": 0.19895271048864374,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.8571428571428571,
+                  "recall": 0.8780487804878049,
+                  "f1": 0.8674698795180723,
+                  "support": 41
+                },
+                "harvest": {
+                  "precision": 0.9910313901345291,
+                  "recall": 0.9444444444444444,
+                  "f1": 0.9671772428884027,
+                  "support": 234
+                },
+                "return": {
+                  "precision": 0.6785714285714286,
+                  "recall": 0.9047619047619048,
+                  "f1": 0.7755102040816326,
+                  "support": 21
+                },
+                "adjust": {
+                  "precision": 0.9090909090909091,
+                  "recall": 0.9615384615384616,
+                  "f1": 0.9345794392523364,
+                  "support": 52
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  36,
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  6,
+                  221,
+                  7,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  19,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  2,
+                  50
+                ]
+              ],
+              "return_adjust_confusions": 2,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            },
+            "masked_count": 2,
+            "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+            "anticipation": {
+              "events": [
+                {
+                  "boundary_frame": 307,
+                  "boundary_timestamp_s": 10.233333333333333,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 2298,
+                  "boundary_timestamp_s": 76.6,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 2,
+                  "ambiguous": false,
+                  "detected": true,
+                  "missed": false,
+                  "first_warning_timestamp_s": 76.0,
+                  "lead_time_s": 0.5999999999999943
+                },
+                {
+                  "boundary_frame": 2474,
+                  "boundary_timestamp_s": 82.46666666666667,
+                  "to_stage": "adjust",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 3249,
+                  "boundary_timestamp_s": 108.3,
+                  "to_stage": "pickup",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 3582,
+                  "boundary_timestamp_s": 119.4,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 5097,
+                  "boundary_timestamp_s": 169.9,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                }
+              ],
+              "ambiguous_alert_anchors": 0,
+              "out_of_window_false_alarm_count": 8,
+              "out_of_window_false_alarm_duration_s": 6.0,
+              "out_of_window_false_alarms_per_minute": 2.7586206896551726,
+              "false_alarm_intervals": [
+                {
+                  "start_frame": 315,
+                  "end_frame_exclusive": 330,
+                  "start_timestamp_s": 10.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "pickup",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 1365,
+                  "end_frame_exclusive": 1395,
+                  "start_timestamp_s": 45.5,
+                  "duration_s": 1.0,
+                  "predicted_stage": "return",
+                  "anchors": 2
+                },
+                {
+                  "start_frame": 1740,
+                  "end_frame_exclusive": 1770,
+                  "start_timestamp_s": 58.0,
+                  "duration_s": 1.0,
+                  "predicted_stage": "return",
+                  "anchors": 2
+                },
+                {
+                  "start_frame": 2265,
+                  "end_frame_exclusive": 2280,
+                  "start_timestamp_s": 75.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "return",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 3255,
+                  "end_frame_exclusive": 3300,
+                  "start_timestamp_s": 108.5,
+                  "duration_s": 1.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 3
+                },
+                {
+                  "start_frame": 3585,
+                  "end_frame_exclusive": 3600,
+                  "start_timestamp_s": 119.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "pickup",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 4095,
+                  "end_frame_exclusive": 4110,
+                  "start_timestamp_s": 136.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "return",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 4995,
+                  "end_frame_exclusive": 5010,
+                  "start_timestamp_s": 166.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "return",
+                  "anchors": 1
+                }
+              ],
+              "valid_anchor_duration_s": 174.0,
+              "definition": "Alerts differ from oracle true current stage; supported only by a matching true transition within the fixed horizon. Multiple-boundary events are explicitly ambiguous; no online decision uses truth."
+            }
+          }
+        },
+        "per_source": {
+          "7d879f9d5d5a4be09beb55cf88591b0d": {
+            "samples": 348,
+            "accuracy": 0.9367816091954023,
+            "macro_f1": 0.8861841914351111,
+            "nll": 0.19895271048864374,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8571428571428571,
+                "recall": 0.8780487804878049,
+                "f1": 0.8674698795180723,
+                "support": 41
+              },
+              "harvest": {
+                "precision": 0.9910313901345291,
+                "recall": 0.9444444444444444,
+                "f1": 0.9671772428884027,
+                "support": 234
+              },
+              "return": {
+                "precision": 0.6785714285714286,
+                "recall": 0.9047619047619048,
+                "f1": 0.7755102040816326,
+                "support": 21
+              },
+              "adjust": {
+                "precision": 0.9090909090909091,
+                "recall": 0.9615384615384616,
+                "f1": 0.9345794392523364,
+                "support": 52
+              }
+            },
+            "confusion_true_rows": [
+              [
+                36,
+                0,
+                0,
+                5
+              ],
+              [
+                6,
+                221,
+                7,
+                0
+              ],
+              [
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                50
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "persistence_baselines": {
+          "oracle_current_persistence": {
+            "samples": 348,
+            "accuracy": 0.9655172413793104,
+            "macro_f1": 0.9307539682539683,
+            "nll": null,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9069767441860465,
+                "recall": 0.9512195121951219,
+                "f1": 0.9285714285714286,
+                "support": 41
+              },
+              "harvest": {
+                "precision": 0.9829059829059829,
+                "recall": 0.9829059829059829,
+                "f1": 0.9829059829059829,
+                "support": 234
+              },
+              "return": {
+                "precision": 0.8947368421052632,
+                "recall": 0.8095238095238095,
+                "f1": 0.85,
+                "support": 21
+              },
+              "adjust": {
+                "precision": 0.9615384615384616,
+                "recall": 0.9615384615384616,
+                "f1": 0.9615384615384616,
+                "support": 52
+              }
+            },
+            "confusion_true_rows": [
+              [
+                39,
+                0,
+                0,
+                2
+              ],
+              [
+                4,
+                230,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                17,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                50
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0",
+            "diagnostic_only": true,
+            "deployable": false,
+            "definition": "Oracle true current stage held as future prediction; hard labels, no probabilistic NLL"
+          }
+        },
+        "macro_f1_gain_over_oracle_persistence": -0.04456977681885721,
+        "macro_f1_gain_over_model_current_persistence": null,
+        "anticipation": {
+          "total_events": 6,
+          "ambiguous_events": 0,
+          "evaluable_events": 6,
+          "detected_events": 1,
+          "event_recall": 0.16666666666666666,
+          "missed_events": 5,
+          "lead_time_p50_s": 0.5999999999999943,
+          "lead_time_p95_s": 0.5999999999999943,
+          "out_of_window_false_alarm_count": 8,
+          "out_of_window_false_alarm_duration_s": 6.0,
+          "out_of_window_false_alarms_per_minute": 2.7586206896551726,
+          "ambiguity_rule": "Events with another boundary less than horizon away are excluded from recall, retained explicitly"
+        },
+        "phase_duration_strata": {
+          "short_threshold_s": 1.5,
+          "short": {
+            "samples": 0,
+            "metrics": null
+          },
+          "long": {
+            "samples": 348,
+            "metrics": {
+              "samples": 348,
+              "accuracy": 0.9367816091954023,
+              "macro_f1": 0.8861841914351111,
+              "nll": 0.19895271048864374,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.8571428571428571,
+                  "recall": 0.8780487804878049,
+                  "f1": 0.8674698795180723,
+                  "support": 41
+                },
+                "harvest": {
+                  "precision": 0.9910313901345291,
+                  "recall": 0.9444444444444444,
+                  "f1": 0.9671772428884027,
+                  "support": 234
+                },
+                "return": {
+                  "precision": 0.6785714285714286,
+                  "recall": 0.9047619047619048,
+                  "f1": 0.7755102040816326,
+                  "support": 21
+                },
+                "adjust": {
+                  "precision": 0.9090909090909091,
+                  "recall": 0.9615384615384616,
+                  "f1": 0.9345794392523364,
+                  "support": 52
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  36,
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  6,
+                  221,
+                  7,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  19,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  2,
+                  50
+                ]
+              ],
+              "return_adjust_confusions": 2,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            }
+          }
+        }
+      },
+      "total_anchors": 350
+    }
+  }
+}

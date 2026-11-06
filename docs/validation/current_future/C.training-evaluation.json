@@ -1,0 +1,4140 @@
+{
+  "prediction_mode": "joint",
+  "future_horizon_s": 1.0,
+  "lambda_current": 1.0,
+  "lambda_future": 0.5,
+  "stable_transition_k": 2,
+  "best_epoch": 1,
+  "selection": "active lambda normalized val Macro-F1 then NLL",
+  "epochs_executed": 16,
+  "source_summary": {
+    "train": {
+      "sources": 1,
+      "episodes": 1,
+      "anchors": 357,
+      "class_counts": [
+        59,
+        201,
+        32,
+        65
+      ],
+      "current_class_counts": [
+        59,
+        201,
+        32,
+        65
+      ],
+      "future_class_counts": [
+        57,
+        201,
+        32,
+        65
+      ],
+      "future_valid": 355,
+      "future_invalid": 2
+    },
+    "val": {
+      "sources": 1,
+      "episodes": 1,
+      "anchors": 268,
+      "class_counts": [
+        34,
+        190,
+        18,
+        26
+      ],
+      "current_class_counts": [
+        34,
+        190,
+        18,
+        26
+      ],
+      "future_class_counts": [
+        32,
+        190,
+        18,
+        26
+      ],
+      "future_valid": 266,
+      "future_invalid": 2
+    },
+    "test": {
+      "sources": 1,
+      "episodes": 1,
+      "anchors": 350,
+      "class_counts": [
+        43,
+        234,
+        21,
+        52
+      ],
+      "current_class_counts": [
+        43,
+        234,
+        21,
+        52
+      ],
+      "future_class_counts": [
+        41,
+        234,
+        21,
+        52
+      ],
+      "future_valid": 348,
+      "future_invalid": 2
+    }
+  },
+  "warnings": [
+    "Fewer than 10 source recordings; smoke-scale result only",
+    "TEST ONLY: source metadata hash mismatch allowed; see annotation.source_hashes"
+  ],
+  "manifest_sha256": "46270abd142f32d125b4d62c17e3610e02f1fd0ca14348b965a2d3ddac44ff93",
+  "split_sha256": "ab960cd70310488f71ab8f8ff16f95838b638c705e42afb88512d68de07acf73",
+  "splits": {
+    "train": {
+      "prediction_mode": "joint",
+      "future_horizon_s": 1.0,
+      "lambda_current": 1.0,
+      "lambda_future": 0.5,
+      "stable_transition_k": 2,
+      "current": {
+        "samples": 357,
+        "accuracy": 0.9551820728291317,
+        "macro_f1": 0.9204623571754252,
+        "nll": 0.18455527188577606,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.9491525423728814,
+            "recall": 0.9491525423728814,
+            "f1": 0.9491525423728814,
+            "support": 59
+          },
+          "harvest": {
+            "precision": 0.9801980198019802,
+            "recall": 0.9850746268656716,
+            "f1": 0.9826302729528535,
+            "support": 201
+          },
+          "return": {
+            "precision": 1.0,
+            "recall": 0.6875,
+            "f1": 0.8148148148148148,
+            "support": 32
+          },
+          "adjust": {
+            "precision": 0.8783783783783784,
+            "recall": 1.0,
+            "f1": 0.935251798561151,
+            "support": 65
+          }
+        },
+        "confusion_true_rows": [
+          [
+            56,
+            0,
+            0,
+            3
+          ],
+          [
+            3,
+            198,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            22,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            65
+          ]
+        ],
+        "return_adjust_confusions": 6,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0",
+        "per_episode": {
+          "e698ea3e9172db998088f74e": {
+            "metrics": {
+              "samples": 357,
+              "accuracy": 0.9551820728291317,
+              "macro_f1": 0.9204623571754252,
+              "nll": 0.18455527188577606,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.9491525423728814,
+                  "recall": 0.9491525423728814,
+                  "f1": 0.9491525423728814,
+                  "support": 59
+                },
+                "harvest": {
+                  "precision": 0.9801980198019802,
+                  "recall": 0.9850746268656716,
+                  "f1": 0.9826302729528535,
+                  "support": 201
+                },
+                "return": {
+                  "precision": 1.0,
+                  "recall": 0.6875,
+                  "f1": 0.8148148148148148,
+                  "support": 32
+                },
+                "adjust": {
+                  "precision": 0.8783783783783784,
+                  "recall": 1.0,
+                  "f1": 0.935251798561151,
+                  "support": 65
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  56,
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  3,
+                  198,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  4,
+                  22,
+                  6
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  65
+                ]
+              ],
+              "return_adjust_confusions": 6,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            },
+            "temporal": {
+              "transitions": [
+                {
+                  "frame_index": 273,
+                  "boundary_timestamp_s": 9.1,
+                  "from_stage": "pickup",
+                  "to_stage": "harvest",
+                  "first_correct_timestamp_s": 10.5,
+                  "delay_s": 1.4000000000000004,
+                  "missed": false,
+                  "first_correct_latency_s": 1.4000000000000004,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 315,
+                  "stable_confirmation_frame": 330,
+                  "stable_confirmation_timestamp_s": 11.0,
+                  "stable_transition_latency_s": 1.9000000000000004,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 1538,
+                  "boundary_timestamp_s": 51.266666666666666,
+                  "from_stage": "harvest",
+                  "to_stage": "return",
+                  "first_correct_timestamp_s": 52.5,
+                  "delay_s": 1.2333333333333343,
+                  "missed": false,
+                  "first_correct_latency_s": 1.2333333333333343,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 1575,
+                  "stable_confirmation_frame": 1590,
+                  "stable_confirmation_timestamp_s": 53.0,
+                  "stable_transition_latency_s": 1.7333333333333343,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 1798,
+                  "boundary_timestamp_s": 59.93333333333333,
+                  "from_stage": "return",
+                  "to_stage": "adjust",
+                  "first_correct_timestamp_s": 60.0,
+                  "delay_s": 0.06666666666666998,
+                  "missed": false,
+                  "first_correct_latency_s": 0.06666666666666998,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 1800,
+                  "stable_confirmation_frame": 1815,
+                  "stable_confirmation_timestamp_s": 60.5,
+                  "stable_transition_latency_s": 0.56666666666667,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 2771,
+                  "boundary_timestamp_s": 92.36666666666666,
+                  "from_stage": "adjust",
+                  "to_stage": "pickup",
+                  "first_correct_timestamp_s": 93.5,
+                  "delay_s": 1.13333333333334,
+                  "missed": false,
+                  "first_correct_latency_s": 1.13333333333334,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 2805,
+                  "stable_confirmation_frame": 2850,
+                  "stable_confirmation_timestamp_s": 95.0,
+                  "stable_transition_latency_s": 2.63333333333334,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 3373,
+                  "boundary_timestamp_s": 112.43333333333334,
+                  "from_stage": "pickup",
+                  "to_stage": "harvest",
+                  "first_correct_timestamp_s": 113.0,
+                  "delay_s": 0.5666666666666629,
+                  "missed": false,
+                  "first_correct_latency_s": 0.5666666666666629,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 3390,
+                  "stable_confirmation_frame": 3405,
+                  "stable_confirmation_timestamp_s": 113.5,
+                  "stable_transition_latency_s": 1.0666666666666629,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 5117,
+                  "boundary_timestamp_s": 170.56666666666666,
+                  "from_stage": "harvest",
+                  "to_stage": "return",
+                  "first_correct_timestamp_s": 172.0,
+                  "delay_s": 1.4333333333333371,
+                  "missed": false,
+                  "first_correct_latency_s": 1.4333333333333371,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 5160,
+                  "stable_confirmation_frame": 5175,
+                  "stable_confirmation_timestamp_s": 172.5,
+                  "stable_transition_latency_s": 1.9333333333333371,
+                  "stable_transition_miss": false
+                }
+              ],
+              "error_intervals": [
+                {
+                  "start_frame": 285,
+                  "end_frame_exclusive": 315,
+                  "start_timestamp_s": 9.5,
+                  "end_timestamp_s": 10.5,
+                  "wrong_anchors": 2,
+                  "pairs": [
+                    {
+                      "frame_index": 285,
+                      "truth": "harvest",
+                      "prediction": "pickup"
+                    },
+                    {
+                      "frame_index": 300,
+                      "truth": "harvest",
+                      "prediction": "pickup"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 1545,
+                  "end_frame_exclusive": 1575,
+                  "start_timestamp_s": 51.5,
+                  "end_timestamp_s": 52.5,
+                  "wrong_anchors": 2,
+                  "pairs": [
+                    {
+                      "frame_index": 1545,
+                      "truth": "return",
+                      "prediction": "harvest"
+                    },
+                    {
+                      "frame_index": 1560,
+                      "truth": "return",
+                      "prediction": "harvest"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 1710,
+                  "end_frame_exclusive": 1800,
+                  "start_timestamp_s": 57.0,
+                  "end_timestamp_s": 60.0,
+                  "wrong_anchors": 6,
+                  "pairs": [
+                    {
+                      "frame_index": 1710,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 1725,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 1740,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 1755,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 1770,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 1785,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 2775,
+                  "end_frame_exclusive": 2805,
+                  "start_timestamp_s": 92.5,
+                  "end_timestamp_s": 93.5,
+                  "wrong_anchors": 2,
+                  "pairs": [
+                    {
+                      "frame_index": 2775,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2790,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 2820,
+                  "end_frame_exclusive": 2835,
+                  "start_timestamp_s": 94.0,
+                  "end_timestamp_s": 94.5,
+                  "wrong_anchors": 1,
+                  "pairs": [
+                    {
+                      "frame_index": 2820,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 3375,
+                  "end_frame_exclusive": 3390,
+                  "start_timestamp_s": 112.5,
+                  "end_timestamp_s": 113.0,
+                  "wrong_anchors": 1,
+                  "pairs": [
+                    {
+                      "frame_index": 3375,
+                      "truth": "harvest",
+                      "prediction": "pickup"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 5130,
+                  "end_frame_exclusive": 5160,
+                  "start_timestamp_s": 171.0,
+                  "end_timestamp_s": 172.0,
+                  "wrong_anchors": 2,
+                  "pairs": [
+                    {
+                      "frame_index": 5130,
+                      "truth": "return",
+                      "prediction": "harvest"
+                    },
+                    {
+                      "frame_index": 5145,
+                      "truth": "return",
+                      "prediction": "harvest"
+                    }
+                  ]
+                }
+              ],
+              "prediction_changes": 8,
+              "false_switches": 8,
+              "false_switches_per_minute": 2.691588785046729,
+              "delay_p50_s": 1.1833333333333371,
+              "delay_p95_s": 1.425000000000003,
+              "missed_transition_ratio": 0.0,
+              "prediction_hz": 2,
+              "time_resolution_s": 0.5,
+              "definition": "First correct anchor after true boundary, before end of that segment. False switch: prediction change between anchors with same true label. No sequence correction.",
+              "stable_transition_k": 2,
+              "stable_transition_latency_p50_s": 1.8166666666666673,
+              "stable_transition_latency_p95_s": 2.4583333333333393,
+              "stable_transition_miss_ratio": 0.0,
+              "early_false_switch": {
+                "count": 1,
+                "duration_s": 2.93333333333333,
+                "events": [
+                  {
+                    "boundary_frame": 273,
+                    "to_stage": "harvest",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 1538,
+                    "to_stage": "return",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 1798,
+                    "to_stage": "adjust",
+                    "count": 1,
+                    "duration_s": 2.93333333333333,
+                    "intervals": [
+                      {
+                        "start_frame": 1710,
+                        "end_frame_exclusive": 1800,
+                        "start_timestamp_s": 57.0,
+                        "duration_s": 2.93333333333333,
+                        "predicted_stage": "adjust",
+                        "anchors": 6
+                      }
+                    ]
+                  },
+                  {
+                    "boundary_frame": 2771,
+                    "to_stage": "pickup",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 3373,
+                    "to_stage": "harvest",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 5117,
+                    "to_stage": "return",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  }
+                ],
+                "definition": "Successor-stage prediction bursts during the immediately preceding true segment, including transient and sustained errors"
+              },
+              "wrong_stage_duration_s": 8.0,
+              "wrong_duration_definition": "Anchor-label rectangle estimate: each raw argmax held until next anchor/end; 2 Hz resolution, no smoothing"
+            },
+            "source_recording_id": "e826c474e80547d5a3b24e5eb0f30977"
+          }
+        },
+        "per_source": {
+          "e826c474e80547d5a3b24e5eb0f30977": {
+            "samples": 357,
+            "accuracy": 0.9551820728291317,
+            "macro_f1": 0.9204623571754252,
+            "nll": 0.18455527188577606,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9491525423728814,
+                "recall": 0.9491525423728814,
+                "f1": 0.9491525423728814,
+                "support": 59
+              },
+              "harvest": {
+                "precision": 0.9801980198019802,
+                "recall": 0.9850746268656716,
+                "f1": 0.9826302729528535,
+                "support": 201
+              },
+              "return": {
+                "precision": 1.0,
+                "recall": 0.6875,
+                "f1": 0.8148148148148148,
+                "support": 32
+              },
+              "adjust": {
+                "precision": 0.8783783783783784,
+                "recall": 1.0,
+                "f1": 0.935251798561151,
+                "support": 65
+              }
+            },
+            "confusion_true_rows": [
+              [
+                56,
+                0,
+                0,
+                3
+              ],
+              [
+                3,
+                198,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                22,
+                6
+              ],
+              [
+                0,
+                0,
+                0,
+                65
+              ]
+            ],
+            "return_adjust_confusions": 6,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "temporal": {
+          "transitions": 6,
+          "delay_p50_s": 1.1833333333333371,
+          "delay_p95_s": 1.425000000000003,
+          "missed_transition_ratio": 0.0,
+          "false_switches": 8,
+          "false_switches_per_minute": 2.691588785046729,
+          "prediction_hz": 2,
+          "time_resolution_s": 0.5,
+          "stable_transition_k": 2,
+          "first_correct_latency_p50_s": 1.1833333333333371,
+          "first_correct_latency_p95_s": 1.425000000000003,
+          "stable_transition_latency_p50_s": 1.8166666666666673,
+          "stable_transition_latency_p95_s": 2.4583333333333393,
+          "stable_transition_miss_ratio": 0.0,
+          "early_false_switch_count": 1,
+          "early_false_switch_duration_s": 2.93333333333333,
+          "wrong_stage_duration_s": 8.0
+        },
+        "valid_samples": 357,
+        "masked_count": 0,
+        "valid_ratio": 1.0,
+        "phase_duration_strata": {
+          "short_threshold_s": 1.5,
+          "short": {
+            "samples": 0,
+            "metrics": null
+          },
+          "long": {
+            "samples": 357,
+            "metrics": {
+              "samples": 357,
+              "accuracy": 0.9551820728291317,
+              "macro_f1": 0.9204623571754252,
+              "nll": 0.18455527188577606,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.9491525423728814,
+                  "recall": 0.9491525423728814,
+                  "f1": 0.9491525423728814,
+                  "support": 59
+                },
+                "harvest": {
+                  "precision": 0.9801980198019802,
+                  "recall": 0.9850746268656716,
+                  "f1": 0.9826302729528535,
+                  "support": 201
+                },
+                "return": {
+                  "precision": 1.0,
+                  "recall": 0.6875,
+                  "f1": 0.8148148148148148,
+                  "support": 32
+                },
+                "adjust": {
+                  "precision": 0.8783783783783784,
+                  "recall": 1.0,
+                  "f1": 0.935251798561151,
+                  "support": 65
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  56,
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  3,
+                  198,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  4,
+                  22,
+                  6
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  65
+                ]
+              ],
+              "return_adjust_confusions": 6,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            }
+          }
+        }
+      },
+      "future": {
+        "samples": 355,
+        "accuracy": 0.8929577464788733,
+        "macro_f1": 0.8202284743508653,
+        "nll": 0.40219244061557885,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.8723404255319149,
+            "recall": 0.7192982456140351,
+            "f1": 0.7884615384615384,
+            "support": 57
+          },
+          "harvest": {
+            "precision": 0.9603960396039604,
+            "recall": 0.9651741293532339,
+            "f1": 0.9627791563275434,
+            "support": 201
+          },
+          "return": {
+            "precision": 0.9444444444444444,
+            "recall": 0.53125,
+            "f1": 0.68,
+            "support": 32
+          },
+          "adjust": {
+            "precision": 0.7386363636363636,
+            "recall": 1.0,
+            "f1": 0.8496732026143791,
+            "support": 65
+          }
+        },
+        "confusion_true_rows": [
+          [
+            41,
+            0,
+            0,
+            16
+          ],
+          [
+            6,
+            194,
+            1,
+            0
+          ],
+          [
+            0,
+            8,
+            17,
+            7
+          ],
+          [
+            0,
+            0,
+            0,
+            65
+          ]
+        ],
+        "return_adjust_confusions": 7,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0",
+        "valid_samples": 355,
+        "masked_count": 2,
+        "valid_ratio": 0.9943977591036415,
+        "per_episode": {
+          "e698ea3e9172db998088f74e": {
+            "metrics": {
+              "samples": 355,
+              "accuracy": 0.8929577464788733,
+              "macro_f1": 0.8202284743508653,
+              "nll": 0.40219244061557885,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.8723404255319149,
+                  "recall": 0.7192982456140351,
+                  "f1": 0.7884615384615384,
+                  "support": 57
+                },
+                "harvest": {
+                  "precision": 0.9603960396039604,
+                  "recall": 0.9651741293532339,
+                  "f1": 0.9627791563275434,
+                  "support": 201
+                },
+                "return": {
+                  "precision": 0.9444444444444444,
+                  "recall": 0.53125,
+                  "f1": 0.68,
+                  "support": 32
+                },
+                "adjust": {
+                  "precision": 0.7386363636363636,
+                  "recall": 1.0,
+                  "f1": 0.8496732026143791,
+                  "support": 65
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  41,
+                  0,
+                  0,
+                  16
+                ],
+                [
+                  6,
+                  194,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  8,
+                  17,
+                  7
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  65
+                ]
+              ],
+              "return_adjust_confusions": 7,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            },
+            "masked_count": 2,
+            "source_recording_id": "e826c474e80547d5a3b24e5eb0f30977",
+            "anticipation": {
+              "events": [
+                {
+                  "boundary_frame": 273,
+                  "boundary_timestamp_s": 9.1,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 1538,
+                  "boundary_timestamp_s": 51.266666666666666,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 1798,
+                  "boundary_timestamp_s": 59.93333333333333,
+                  "to_stage": "adjust",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 2,
+                  "ambiguous": false,
+                  "detected": true,
+                  "missed": false,
+                  "first_warning_timestamp_s": 59.0,
+                  "lead_time_s": 0.93333333333333
+                },
+                {
+                  "boundary_frame": 2771,
+                  "boundary_timestamp_s": 92.36666666666666,
+                  "to_stage": "pickup",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 3373,
+                  "boundary_timestamp_s": 112.43333333333334,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 5117,
+                  "boundary_timestamp_s": 170.56666666666666,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                }
+              ],
+              "ambiguous_alert_anchors": 0,
+              "out_of_window_false_alarm_count": 9,
+              "out_of_window_false_alarm_duration_s": 14.0,
+              "out_of_window_false_alarms_per_minute": 3.0422535211267605,
+              "false_alarm_intervals": [
+                {
+                  "start_frame": 30,
+                  "end_frame_exclusive": 45,
+                  "start_timestamp_s": 1.0,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 285,
+                  "end_frame_exclusive": 315,
+                  "start_timestamp_s": 9.5,
+                  "duration_s": 1.0,
+                  "predicted_stage": "pickup",
+                  "anchors": 2
+                },
+                {
+                  "start_frame": 1545,
+                  "end_frame_exclusive": 1575,
+                  "start_timestamp_s": 51.5,
+                  "duration_s": 1.0,
+                  "predicted_stage": "harvest",
+                  "anchors": 2
+                },
+                {
+                  "start_frame": 1635,
+                  "end_frame_exclusive": 1650,
+                  "start_timestamp_s": 54.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 1665,
+                  "end_frame_exclusive": 1680,
+                  "start_timestamp_s": 55.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 1695,
+                  "end_frame_exclusive": 1770,
+                  "start_timestamp_s": 56.5,
+                  "duration_s": 2.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 5
+                },
+                {
+                  "start_frame": 2775,
+                  "end_frame_exclusive": 2970,
+                  "start_timestamp_s": 92.5,
+                  "duration_s": 6.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 13
+                },
+                {
+                  "start_frame": 3375,
+                  "end_frame_exclusive": 3390,
+                  "start_timestamp_s": 112.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "return",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 5130,
+                  "end_frame_exclusive": 5160,
+                  "start_timestamp_s": 171.0,
+                  "duration_s": 1.0,
+                  "predicted_stage": "harvest",
+                  "anchors": 2
+                }
+              ],
+              "valid_anchor_duration_s": 177.5,
+              "definition": "Alerts differ from oracle true current stage; supported only by a matching true transition within the fixed horizon. Multiple-boundary events are explicitly ambiguous; no online decision uses truth."
+            }
+          }
+        },
+        "per_source": {
+          "e826c474e80547d5a3b24e5eb0f30977": {
+            "samples": 355,
+            "accuracy": 0.8929577464788733,
+            "macro_f1": 0.8202284743508653,
+            "nll": 0.40219244061557885,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8723404255319149,
+                "recall": 0.7192982456140351,
+                "f1": 0.7884615384615384,
+                "support": 57
+              },
+              "harvest": {
+                "precision": 0.9603960396039604,
+                "recall": 0.9651741293532339,
+                "f1": 0.9627791563275434,
+                "support": 201
+              },
+              "return": {
+                "precision": 0.9444444444444444,
+                "recall": 0.53125,
+                "f1": 0.68,
+                "support": 32
+              },
+              "adjust": {
+                "precision": 0.7386363636363636,
+                "recall": 1.0,
+                "f1": 0.8496732026143791,
+                "support": 65
+              }
+            },
+            "confusion_true_rows": [
+              [
+                41,
+                0,
+                0,
+                16
+              ],
+              [
+                6,
+                194,
+                1,
+                0
+              ],
+              [
+                0,
+                8,
+                17,
+                7
+              ],
+              [
+                0,
+                0,
+                0,
+                65
+              ]
+            ],
+            "return_adjust_confusions": 7,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "persistence_baselines": {
+          "oracle_current_persistence": {
+            "samples": 355,
+            "accuracy": 0.9661971830985916,
+            "macro_f1": 0.9502079850597275,
+            "nll": null,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9322033898305084,
+                "recall": 0.9649122807017544,
+                "f1": 0.9482758620689655,
+                "support": 57
+              },
+              "harvest": {
+                "precision": 0.9800995024875622,
+                "recall": 0.9800995024875622,
+                "f1": 0.9800995024875622,
+                "support": 201
+              },
+              "return": {
+                "precision": 0.9333333333333333,
+                "recall": 0.875,
+                "f1": 0.9032258064516129,
+                "support": 32
+              },
+              "adjust": {
+                "precision": 0.9692307692307692,
+                "recall": 0.9692307692307692,
+                "f1": 0.9692307692307692,
+                "support": 65
+              }
+            },
+            "confusion_true_rows": [
+              [
+                55,
+                0,
+                0,
+                2
+              ],
+              [
+                4,
+                197,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                28,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                63
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0",
+            "diagnostic_only": true,
+            "deployable": false,
+            "definition": "Oracle true current stage held as future prediction; hard labels, no probabilistic NLL"
+          },
+          "model_current_persistence": {
+            "samples": 355,
+            "accuracy": 0.9323943661971831,
+            "macro_f1": 0.8909533620643487,
+            "nll": 0.2517848098745403,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8813559322033898,
+                "recall": 0.9122807017543859,
+                "f1": 0.896551724137931,
+                "support": 57
+              },
+              "harvest": {
+                "precision": 0.9603960396039604,
+                "recall": 0.9651741293532339,
+                "f1": 0.9627791563275434,
+                "support": 201
+              },
+              "return": {
+                "precision": 1.0,
+                "recall": 0.625,
+                "f1": 0.7692307692307693,
+                "support": 32
+              },
+              "adjust": {
+                "precision": 0.8783783783783784,
+                "recall": 1.0,
+                "f1": 0.935251798561151,
+                "support": 65
+              }
+            },
+            "confusion_true_rows": [
+              [
+                52,
+                0,
+                0,
+                5
+              ],
+              [
+                7,
+                194,
+                0,
+                0
+              ],
+              [
+                0,
+                8,
+                20,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                65
+              ]
+            ],
+            "return_adjust_confusions": 4,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "macro_f1_gain_over_oracle_persistence": -0.12997951070886216,
+        "macro_f1_gain_over_model_current_persistence": -0.0707248877134834,
+        "anticipation": {
+          "total_events": 6,
+          "ambiguous_events": 0,
+          "evaluable_events": 6,
+          "detected_events": 1,
+          "event_recall": 0.16666666666666666,
+          "missed_events": 5,
+          "lead_time_p50_s": 0.93333333333333,
+          "lead_time_p95_s": 0.93333333333333,
+          "out_of_window_false_alarm_count": 9,
+          "out_of_window_false_alarm_duration_s": 14.0,
+          "out_of_window_false_alarms_per_minute": 3.0422535211267605,
+          "ambiguity_rule": "Events with another boundary less than horizon away are excluded from recall, retained explicitly"
+        },
+        "phase_duration_strata": {
+          "short_threshold_s": 1.5,
+          "short": {
+            "samples": 0,
+            "metrics": null
+          },
+          "long": {
+            "samples": 355,
+            "metrics": {
+              "samples": 355,
+              "accuracy": 0.8929577464788733,
+              "macro_f1": 0.8202284743508653,
+              "nll": 0.40219244061557885,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.8723404255319149,
+                  "recall": 0.7192982456140351,
+                  "f1": 0.7884615384615384,
+                  "support": 57
+                },
+                "harvest": {
+                  "precision": 0.9603960396039604,
+                  "recall": 0.9651741293532339,
+                  "f1": 0.9627791563275434,
+                  "support": 201
+                },
+                "return": {
+                  "precision": 0.9444444444444444,
+                  "recall": 0.53125,
+                  "f1": 0.68,
+                  "support": 32
+                },
+                "adjust": {
+                  "precision": 0.7386363636363636,
+                  "recall": 1.0,
+                  "f1": 0.8496732026143791,
+                  "support": 65
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  41,
+                  0,
+                  0,
+                  16
+                ],
+                [
+                  6,
+                  194,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  8,
+                  17,
+                  7
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  65
+                ]
+              ],
+              "return_adjust_confusions": 7,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            }
+          }
+        }
+      },
+      "total_anchors": 357
+    },
+    "val": {
+      "prediction_mode": "joint",
+      "future_horizon_s": 1.0,
+      "lambda_current": 1.0,
+      "lambda_future": 0.5,
+      "stable_transition_k": 2,
+      "current": {
+        "samples": 268,
+        "accuracy": 0.753731343283582,
+        "macro_f1": 0.5075663884764884,
+        "nll": 0.5652571111407408,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.8571428571428571,
+            "recall": 0.5294117647058824,
+            "f1": 0.6545454545454545,
+            "support": 34
+          },
+          "harvest": {
+            "precision": 0.9461077844311377,
+            "recall": 0.8315789473684211,
+            "f1": 0.8851540616246498,
+            "support": 190
+          },
+          "return": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 18
+          },
+          "adjust": {
+            "precision": 0.325,
+            "recall": 1.0,
+            "f1": 0.49056603773584906,
+            "support": 26
+          }
+        },
+        "confusion_true_rows": [
+          [
+            18,
+            3,
+            0,
+            13
+          ],
+          [
+            3,
+            158,
+            0,
+            29
+          ],
+          [
+            0,
+            6,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            26
+          ]
+        ],
+        "return_adjust_confusions": 12,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0",
+        "per_episode": {
+          "749d77f6e61499fcf5d624e6": {
+            "metrics": {
+              "samples": 268,
+              "accuracy": 0.753731343283582,
+              "macro_f1": 0.5075663884764884,
+              "nll": 0.5652571111407408,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.8571428571428571,
+                  "recall": 0.5294117647058824,
+                  "f1": 0.6545454545454545,
+                  "support": 34
+                },
+                "harvest": {
+                  "precision": 0.9461077844311377,
+                  "recall": 0.8315789473684211,
+                  "f1": 0.8851540616246498,
+                  "support": 190
+                },
+                "return": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 18
+                },
+                "adjust": {
+                  "precision": 0.325,
+                  "recall": 1.0,
+                  "f1": 0.49056603773584906,
+                  "support": 26
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  18,
+                  3,
+                  0,
+                  13
+                ],
+                [
+                  3,
+                  158,
+                  0,
+                  29
+                ],
+                [
+                  0,
+                  6,
+                  0,
+                  12
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  26
+                ]
+              ],
+              "return_adjust_confusions": 12,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            },
+            "temporal": {
+              "transitions": [
+                {
+                  "frame_index": 265,
+                  "boundary_timestamp_s": 8.833333333333334,
+                  "from_stage": "pickup",
+                  "to_stage": "harvest",
+                  "first_correct_timestamp_s": 10.5,
+                  "delay_s": 1.666666666666666,
+                  "missed": false,
+                  "first_correct_latency_s": 1.666666666666666,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 315,
+                  "stable_confirmation_frame": 330,
+                  "stable_confirmation_timestamp_s": 11.0,
+                  "stable_transition_latency_s": 2.166666666666666,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 1674,
+                  "boundary_timestamp_s": 55.8,
+                  "from_stage": "harvest",
+                  "to_stage": "return",
+                  "first_correct_timestamp_s": null,
+                  "delay_s": null,
+                  "missed": true,
+                  "first_correct_latency_s": null,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": null,
+                  "stable_confirmation_frame": null,
+                  "stable_confirmation_timestamp_s": null,
+                  "stable_transition_latency_s": null,
+                  "stable_transition_miss": true
+                },
+                {
+                  "frame_index": 1813,
+                  "boundary_timestamp_s": 60.43333333333333,
+                  "from_stage": "return",
+                  "to_stage": "adjust",
+                  "first_correct_timestamp_s": 60.5,
+                  "delay_s": 0.06666666666666998,
+                  "missed": false,
+                  "first_correct_latency_s": 0.06666666666666998,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 1815,
+                  "stable_confirmation_frame": 1830,
+                  "stable_confirmation_timestamp_s": 61.0,
+                  "stable_transition_latency_s": 0.56666666666667,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 2199,
+                  "boundary_timestamp_s": 73.3,
+                  "from_stage": "adjust",
+                  "to_stage": "pickup",
+                  "first_correct_timestamp_s": null,
+                  "delay_s": null,
+                  "missed": true,
+                  "first_correct_latency_s": null,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": null,
+                  "stable_confirmation_frame": null,
+                  "stable_confirmation_timestamp_s": null,
+                  "stable_transition_latency_s": null,
+                  "stable_transition_miss": true
+                },
+                {
+                  "frame_index": 2434,
+                  "boundary_timestamp_s": 81.13333333333334,
+                  "from_stage": "pickup",
+                  "to_stage": "harvest",
+                  "first_correct_timestamp_s": 81.5,
+                  "delay_s": 0.36666666666666003,
+                  "missed": false,
+                  "first_correct_latency_s": 0.36666666666666003,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 2445,
+                  "stable_confirmation_frame": 2460,
+                  "stable_confirmation_timestamp_s": 82.0,
+                  "stable_transition_latency_s": 0.86666666666666,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 3876,
+                  "boundary_timestamp_s": 129.2,
+                  "from_stage": "harvest",
+                  "to_stage": "return",
+                  "first_correct_timestamp_s": null,
+                  "delay_s": null,
+                  "missed": true,
+                  "first_correct_latency_s": null,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": null,
+                  "stable_confirmation_frame": null,
+                  "stable_confirmation_timestamp_s": null,
+                  "stable_transition_latency_s": null,
+                  "stable_transition_miss": true
+                }
+              ],
+              "error_intervals": [
+                {
+                  "start_frame": 270,
+                  "end_frame_exclusive": 315,
+                  "start_timestamp_s": 9.0,
+                  "end_timestamp_s": 10.5,
+                  "wrong_anchors": 3,
+                  "pairs": [
+                    {
+                      "frame_index": 270,
+                      "truth": "harvest",
+                      "prediction": "pickup"
+                    },
+                    {
+                      "frame_index": 285,
+                      "truth": "harvest",
+                      "prediction": "pickup"
+                    },
+                    {
+                      "frame_index": 300,
+                      "truth": "harvest",
+                      "prediction": "pickup"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 1680,
+                  "end_frame_exclusive": 1815,
+                  "start_timestamp_s": 56.0,
+                  "end_timestamp_s": 60.5,
+                  "wrong_anchors": 9,
+                  "pairs": [
+                    {
+                      "frame_index": 1680,
+                      "truth": "return",
+                      "prediction": "harvest"
+                    },
+                    {
+                      "frame_index": 1695,
+                      "truth": "return",
+                      "prediction": "harvest"
+                    },
+                    {
+                      "frame_index": 1710,
+                      "truth": "return",
+                      "prediction": "harvest"
+                    },
+                    {
+                      "frame_index": 1725,
+                      "truth": "return",
+                      "prediction": "harvest"
+                    },
+                    {
+                      "frame_index": 1740,
+                      "truth": "return",
+                      "prediction": "harvest"
+                    },
+                    {
+                      "frame_index": 1755,
+                      "truth": "return",
+                      "prediction": "harvest"
+                    },
+                    {
+                      "frame_index": 1770,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 1785,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 1800,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 2205,
+                  "end_frame_exclusive": 2445,
+                  "start_timestamp_s": 73.5,
+                  "end_timestamp_s": 81.5,
+                  "wrong_anchors": 16,
+                  "pairs": [
+                    {
+                      "frame_index": 2205,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2220,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2235,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2250,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2265,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2280,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2295,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2310,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2325,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2340,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2355,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2370,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2385,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2400,
+                      "truth": "pickup",
+                      "prediction": "harvest"
+                    },
+                    {
+                      "frame_index": 2415,
+                      "truth": "pickup",
+                      "prediction": "harvest"
+                    },
+                    {
+                      "frame_index": 2430,
+                      "truth": "pickup",
+                      "prediction": "harvest"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 2655,
+                  "end_frame_exclusive": 2790,
+                  "start_timestamp_s": 88.5,
+                  "end_timestamp_s": 93.0,
+                  "wrong_anchors": 9,
+                  "pairs": [
+                    {
+                      "frame_index": 2655,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2670,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2685,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2700,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2715,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2730,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2745,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2760,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2775,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 2865,
+                  "end_frame_exclusive": 3000,
+                  "start_timestamp_s": 95.5,
+                  "end_timestamp_s": 100.0,
+                  "wrong_anchors": 9,
+                  "pairs": [
+                    {
+                      "frame_index": 2865,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2880,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2895,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2910,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2925,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2940,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2955,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2970,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2985,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 3225,
+                  "end_frame_exclusive": 3240,
+                  "start_timestamp_s": 107.5,
+                  "end_timestamp_s": 108.0,
+                  "wrong_anchors": 1,
+                  "pairs": [
+                    {
+                      "frame_index": 3225,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 3375,
+                  "end_frame_exclusive": 3420,
+                  "start_timestamp_s": 112.5,
+                  "end_timestamp_s": 114.0,
+                  "wrong_anchors": 3,
+                  "pairs": [
+                    {
+                      "frame_index": 3375,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3390,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3405,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 3780,
+                  "end_frame_exclusive": 4016,
+                  "start_timestamp_s": 126.0,
+                  "end_timestamp_s": 133.86666666666667,
+                  "wrong_anchors": 16,
+                  "pairs": [
+                    {
+                      "frame_index": 3780,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3795,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3810,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3825,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3840,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3855,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3870,
+                      "truth": "harvest",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3885,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3900,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3915,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3930,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3945,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3960,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3975,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3990,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 4005,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    }
+                  ]
+                }
+              ],
+              "prediction_changes": 12,
+              "false_switches": 12,
+              "false_switches_per_minute": 5.378486055776892,
+              "delay_p50_s": 0.36666666666666003,
+              "delay_p95_s": 1.5366666666666653,
+              "missed_transition_ratio": 0.5,
+              "prediction_hz": 2,
+              "time_resolution_s": 0.5,
+              "definition": "First correct anchor after true boundary, before end of that segment. False switch: prediction change between anchors with same true label. No sequence correction.",
+              "stable_transition_k": 2,
+              "stable_transition_latency_p50_s": 0.86666666666666,
+              "stable_transition_latency_p95_s": 2.0366666666666653,
+              "stable_transition_miss_ratio": 0.5,
+              "early_false_switch": {
+                "count": 2,
+                "duration_s": 2.56666666666667,
+                "events": [
+                  {
+                    "boundary_frame": 265,
+                    "to_stage": "harvest",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 1674,
+                    "to_stage": "return",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 1813,
+                    "to_stage": "adjust",
+                    "count": 1,
+                    "duration_s": 1.43333333333333,
+                    "intervals": [
+                      {
+                        "start_frame": 1770,
+                        "end_frame_exclusive": 1815,
+                        "start_timestamp_s": 59.0,
+                        "duration_s": 1.43333333333333,
+                        "predicted_stage": "adjust",
+                        "anchors": 3
+                      }
+                    ]
+                  },
+                  {
+                    "boundary_frame": 2199,
+                    "to_stage": "pickup",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 2434,
+                    "to_stage": "harvest",
+                    "count": 1,
+                    "duration_s": 1.13333333333334,
+                    "intervals": [
+                      {
+                        "start_frame": 2400,
+                        "end_frame_exclusive": 2445,
+                        "start_timestamp_s": 80.0,
+                        "duration_s": 1.13333333333334,
+                        "predicted_stage": "harvest",
+                        "anchors": 3
+                      }
+                    ]
+                  },
+                  {
+                    "boundary_frame": 3876,
+                    "to_stage": "return",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  }
+                ],
+                "definition": "Successor-stage prediction bursts during the immediately preceding true segment, including transient and sustained errors"
+              },
+              "wrong_stage_duration_s": 32.866666666666674,
+              "wrong_duration_definition": "Anchor-label rectangle estimate: each raw argmax held until next anchor/end; 2 Hz resolution, no smoothing"
+            },
+            "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4"
+          }
+        },
+        "per_source": {
+          "76354615cf9746758c5c7e6e5ab579d4": {
+            "samples": 268,
+            "accuracy": 0.753731343283582,
+            "macro_f1": 0.5075663884764884,
+            "nll": 0.5652571111407408,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8571428571428571,
+                "recall": 0.5294117647058824,
+                "f1": 0.6545454545454545,
+                "support": 34
+              },
+              "harvest": {
+                "precision": 0.9461077844311377,
+                "recall": 0.8315789473684211,
+                "f1": 0.8851540616246498,
+                "support": 190
+              },
+              "return": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 18
+              },
+              "adjust": {
+                "precision": 0.325,
+                "recall": 1.0,
+                "f1": 0.49056603773584906,
+                "support": 26
+              }
+            },
+            "confusion_true_rows": [
+              [
+                18,
+                3,
+                0,
+                13
+              ],
+              [
+                3,
+                158,
+                0,
+                29
+              ],
+              [
+                0,
+                6,
+                0,
+                12
+              ],
+              [
+                0,
+                0,
+                0,
+                26
+              ]
+            ],
+            "return_adjust_confusions": 12,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "temporal": {
+          "transitions": 6,
+          "delay_p50_s": 0.36666666666666003,
+          "delay_p95_s": 1.5366666666666653,
+          "missed_transition_ratio": 0.5,
+          "false_switches": 12,
+          "false_switches_per_minute": 5.378486055776892,
+          "prediction_hz": 2,
+          "time_resolution_s": 0.5,
+          "stable_transition_k": 2,
+          "first_correct_latency_p50_s": 0.36666666666666003,
+          "first_correct_latency_p95_s": 1.5366666666666653,
+          "stable_transition_latency_p50_s": 0.86666666666666,
+          "stable_transition_latency_p95_s": 2.0366666666666653,
+          "stable_transition_miss_ratio": 0.5,
+          "early_false_switch_count": 2,
+          "early_false_switch_duration_s": 2.56666666666667,
+          "wrong_stage_duration_s": 32.866666666666674
+        },
+        "valid_samples": 268,
+        "masked_count": 0,
+        "valid_ratio": 1.0,
+        "phase_duration_strata": {
+          "short_threshold_s": 1.5,
+          "short": {
+            "samples": 0,
+            "metrics": null
+          },
+          "long": {
+            "samples": 268,
+            "metrics": {
+              "samples": 268,
+              "accuracy": 0.753731343283582,
+              "macro_f1": 0.5075663884764884,
+              "nll": 0.5652571111407408,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.8571428571428571,
+                  "recall": 0.5294117647058824,
+                  "f1": 0.6545454545454545,
+                  "support": 34
+                },
+                "harvest": {
+                  "precision": 0.9461077844311377,
+                  "recall": 0.8315789473684211,
+                  "f1": 0.8851540616246498,
+                  "support": 190
+                },
+                "return": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 18
+                },
+                "adjust": {
+                  "precision": 0.325,
+                  "recall": 1.0,
+                  "f1": 0.49056603773584906,
+                  "support": 26
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  18,
+                  3,
+                  0,
+                  13
+                ],
+                [
+                  3,
+                  158,
+                  0,
+                  29
+                ],
+                [
+                  0,
+                  6,
+                  0,
+                  12
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  26
+                ]
+              ],
+              "return_adjust_confusions": 12,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            }
+          }
+        }
+      },
+      "future": {
+        "samples": 266,
+        "accuracy": 0.7030075187969925,
+        "macro_f1": 0.4947269471105391,
+        "nll": 0.8325698494501906,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.696969696969697,
+            "recall": 0.71875,
+            "f1": 0.7076923076923077,
+            "support": 32
+          },
+          "harvest": {
+            "precision": 1.0,
+            "recall": 0.7263157894736842,
+            "f1": 0.8414634146341463,
+            "support": 190
+          },
+          "return": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 18
+          },
+          "adjust": {
+            "precision": 0.2736842105263158,
+            "recall": 1.0,
+            "f1": 0.4297520661157025,
+            "support": 26
+          }
+        },
+        "confusion_true_rows": [
+          [
+            23,
+            0,
+            0,
+            9
+          ],
+          [
+            10,
+            138,
+            0,
+            42
+          ],
+          [
+            0,
+            0,
+            0,
+            18
+          ],
+          [
+            0,
+            0,
+            0,
+            26
+          ]
+        ],
+        "return_adjust_confusions": 18,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0",
+        "valid_samples": 266,
+        "masked_count": 2,
+        "valid_ratio": 0.9925373134328358,
+        "per_episode": {
+          "749d77f6e61499fcf5d624e6": {
+            "metrics": {
+              "samples": 266,
+              "accuracy": 0.7030075187969925,
+              "macro_f1": 0.4947269471105391,
+              "nll": 0.8325698494501906,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.696969696969697,
+                  "recall": 0.71875,
+                  "f1": 0.7076923076923077,
+                  "support": 32
+                },
+                "harvest": {
+                  "precision": 1.0,
+                  "recall": 0.7263157894736842,
+                  "f1": 0.8414634146341463,
+                  "support": 190
+                },
+                "return": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 18
+                },
+                "adjust": {
+                  "precision": 0.2736842105263158,
+                  "recall": 1.0,
+                  "f1": 0.4297520661157025,
+                  "support": 26
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  23,
+                  0,
+                  0,
+                  9
+                ],
+                [
+                  10,
+                  138,
+                  0,
+                  42
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  18
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  26
+                ]
+              ],
+              "return_adjust_confusions": 18,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            },
+            "masked_count": 2,
+            "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+            "anticipation": {
+              "events": [
+                {
+                  "boundary_frame": 265,
+                  "boundary_timestamp_s": 8.833333333333334,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 1674,
+                  "boundary_timestamp_s": 55.8,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 1813,
+                  "boundary_timestamp_s": 60.43333333333333,
+                  "to_stage": "adjust",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 2,
+                  "ambiguous": false,
+                  "detected": true,
+                  "missed": false,
+                  "first_warning_timestamp_s": 59.5,
+                  "lead_time_s": 0.93333333333333
+                },
+                {
+                  "boundary_frame": 2199,
+                  "boundary_timestamp_s": 73.3,
+                  "to_stage": "pickup",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 2434,
+                  "boundary_timestamp_s": 81.13333333333334,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 3876,
+                  "boundary_timestamp_s": 129.2,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                }
+              ],
+              "ambiguous_alert_anchors": 0,
+              "out_of_window_false_alarm_count": 15,
+              "out_of_window_false_alarm_duration_s": 36.5,
+              "out_of_window_false_alarms_per_minute": 6.7669172932330826,
+              "false_alarm_intervals": [
+                {
+                  "start_frame": 270,
+                  "end_frame_exclusive": 315,
+                  "start_timestamp_s": 9.0,
+                  "duration_s": 1.5,
+                  "predicted_stage": "pickup",
+                  "anchors": 3
+                },
+                {
+                  "start_frame": 1410,
+                  "end_frame_exclusive": 1470,
+                  "start_timestamp_s": 47.0,
+                  "duration_s": 2.0,
+                  "predicted_stage": "adjust",
+                  "anchors": 4
+                },
+                {
+                  "start_frame": 1575,
+                  "end_frame_exclusive": 1785,
+                  "start_timestamp_s": 52.5,
+                  "duration_s": 7.0,
+                  "predicted_stage": "adjust",
+                  "anchors": 14
+                },
+                {
+                  "start_frame": 2205,
+                  "end_frame_exclusive": 2295,
+                  "start_timestamp_s": 73.5,
+                  "duration_s": 3.0,
+                  "predicted_stage": "adjust",
+                  "anchors": 6
+                },
+                {
+                  "start_frame": 2310,
+                  "end_frame_exclusive": 2325,
+                  "start_timestamp_s": 77.0,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 2445,
+                  "end_frame_exclusive": 2490,
+                  "start_timestamp_s": 81.5,
+                  "duration_s": 1.5,
+                  "predicted_stage": "pickup",
+                  "anchors": 3
+                },
+                {
+                  "start_frame": 2655,
+                  "end_frame_exclusive": 2730,
+                  "start_timestamp_s": 88.5,
+                  "duration_s": 2.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 5
+                },
+                {
+                  "start_frame": 2745,
+                  "end_frame_exclusive": 2760,
+                  "start_timestamp_s": 91.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 2865,
+                  "end_frame_exclusive": 2985,
+                  "start_timestamp_s": 95.5,
+                  "duration_s": 4.0,
+                  "predicted_stage": "adjust",
+                  "anchors": 8
+                },
+                {
+                  "start_frame": 3165,
+                  "end_frame_exclusive": 3210,
+                  "start_timestamp_s": 105.5,
+                  "duration_s": 1.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 3
+                },
+                {
+                  "start_frame": 3225,
+                  "end_frame_exclusive": 3240,
+                  "start_timestamp_s": 107.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 3315,
+                  "end_frame_exclusive": 3420,
+                  "start_timestamp_s": 110.5,
+                  "duration_s": 3.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 7
+                },
+                {
+                  "start_frame": 3435,
+                  "end_frame_exclusive": 3450,
+                  "start_timestamp_s": 114.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 3615,
+                  "end_frame_exclusive": 3630,
+                  "start_timestamp_s": 120.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 3765,
+                  "end_frame_exclusive": 3990,
+                  "start_timestamp_s": 125.5,
+                  "duration_s": 7.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 15
+                }
+              ],
+              "valid_anchor_duration_s": 133.0,
+              "definition": "Alerts differ from oracle true current stage; supported only by a matching true transition within the fixed horizon. Multiple-boundary events are explicitly ambiguous; no online decision uses truth."
+            }
+          }
+        },
+        "per_source": {
+          "76354615cf9746758c5c7e6e5ab579d4": {
+            "samples": 266,
+            "accuracy": 0.7030075187969925,
+            "macro_f1": 0.4947269471105391,
+            "nll": 0.8325698494501906,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.696969696969697,
+                "recall": 0.71875,
+                "f1": 0.7076923076923077,
+                "support": 32
+              },
+              "harvest": {
+                "precision": 1.0,
+                "recall": 0.7263157894736842,
+                "f1": 0.8414634146341463,
+                "support": 190
+              },
+              "return": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 18
+              },
+              "adjust": {
+                "precision": 0.2736842105263158,
+                "recall": 1.0,
+                "f1": 0.4297520661157025,
+                "support": 26
+              }
+            },
+            "confusion_true_rows": [
+              [
+                23,
+                0,
+                0,
+                9
+              ],
+              [
+                10,
+                138,
+                0,
+                42
+              ],
+              [
+                0,
+                0,
+                0,
+                18
+              ],
+              [
+                0,
+                0,
+                0,
+                26
+              ]
+            ],
+            "return_adjust_confusions": 18,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "persistence_baselines": {
+          "oracle_current_persistence": {
+            "samples": 266,
+            "accuracy": 0.9548872180451128,
+            "macro_f1": 0.9086611530883977,
+            "nll": null,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8823529411764706,
+                "recall": 0.9375,
+                "f1": 0.9090909090909091,
+                "support": 32
+              },
+              "harvest": {
+                "precision": 0.9789473684210527,
+                "recall": 0.9789473684210527,
+                "f1": 0.9789473684210527,
+                "support": 190
+              },
+              "return": {
+                "precision": 0.875,
+                "recall": 0.7777777777777778,
+                "f1": 0.8235294117647058,
+                "support": 18
+              },
+              "adjust": {
+                "precision": 0.9230769230769231,
+                "recall": 0.9230769230769231,
+                "f1": 0.9230769230769231,
+                "support": 26
+              }
+            },
+            "confusion_true_rows": [
+              [
+                30,
+                0,
+                0,
+                2
+              ],
+              [
+                4,
+                186,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                14,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                24
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0",
+            "diagnostic_only": true,
+            "deployable": false,
+            "definition": "Oracle true current stage held as future prediction; hard labels, no probabilistic NLL"
+          },
+          "model_current_persistence": {
+            "samples": 266,
+            "accuracy": 0.7518796992481203,
+            "macro_f1": 0.4972319116325775,
+            "nll": 0.5924260304875424,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.7619047619047619,
+                "recall": 0.5,
+                "f1": 0.6037735849056604,
+                "support": 32
+              },
+              "harvest": {
+                "precision": 0.9461077844311377,
+                "recall": 0.8315789473684211,
+                "f1": 0.8851540616246498,
+                "support": 190
+              },
+              "return": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 18
+              },
+              "adjust": {
+                "precision": 0.3333333333333333,
+                "recall": 1.0,
+                "f1": 0.5,
+                "support": 26
+              }
+            },
+            "confusion_true_rows": [
+              [
+                16,
+                1,
+                0,
+                15
+              ],
+              [
+                5,
+                158,
+                0,
+                27
+              ],
+              [
+                0,
+                8,
+                0,
+                10
+              ],
+              [
+                0,
+                0,
+                0,
+                26
+              ]
+            ],
+            "return_adjust_confusions": 10,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "macro_f1_gain_over_oracle_persistence": -0.41393420597785857,
+        "macro_f1_gain_over_model_current_persistence": -0.002504964522038411,
+        "anticipation": {
+          "total_events": 6,
+          "ambiguous_events": 0,
+          "evaluable_events": 6,
+          "detected_events": 1,
+          "event_recall": 0.16666666666666666,
+          "missed_events": 5,
+          "lead_time_p50_s": 0.93333333333333,
+          "lead_time_p95_s": 0.93333333333333,
+          "out_of_window_false_alarm_count": 15,
+          "out_of_window_false_alarm_duration_s": 36.5,
+          "out_of_window_false_alarms_per_minute": 6.7669172932330826,
+          "ambiguity_rule": "Events with another boundary less than horizon away are excluded from recall, retained explicitly"
+        },
+        "phase_duration_strata": {
+          "short_threshold_s": 1.5,
+          "short": {
+            "samples": 0,
+            "metrics": null
+          },
+          "long": {
+            "samples": 266,
+            "metrics": {
+              "samples": 266,
+              "accuracy": 0.7030075187969925,
+              "macro_f1": 0.4947269471105391,
+              "nll": 0.8325698494501906,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.696969696969697,
+                  "recall": 0.71875,
+                  "f1": 0.7076923076923077,
+                  "support": 32
+                },
+                "harvest": {
+                  "precision": 1.0,
+                  "recall": 0.7263157894736842,
+                  "f1": 0.8414634146341463,
+                  "support": 190
+                },
+                "return": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1": 0.0,
+                  "support": 18
+                },
+                "adjust": {
+                  "precision": 0.2736842105263158,
+                  "recall": 1.0,
+                  "f1": 0.4297520661157025,
+                  "support": 26
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  23,
+                  0,
+                  0,
+                  9
+                ],
+                [
+                  10,
+                  138,
+                  0,
+                  42
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  18
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  26
+                ]
+              ],
+              "return_adjust_confusions": 18,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            }
+          }
+        }
+      },
+      "total_anchors": 268
+    },
+    "test": {
+      "prediction_mode": "joint",
+      "future_horizon_s": 1.0,
+      "lambda_current": 1.0,
+      "lambda_future": 0.5,
+      "stable_transition_k": 2,
+      "current": {
+        "samples": 350,
+        "accuracy": 0.9514285714285714,
+        "macro_f1": 0.8592115808455218,
+        "nll": 0.2259116555150253,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.8163265306122449,
+            "recall": 0.9302325581395349,
+            "f1": 0.8695652173913043,
+            "support": 43
+          },
+          "harvest": {
+            "precision": 1.0,
+            "recall": 0.9871794871794872,
+            "f1": 0.9935483870967742,
+            "support": 234
+          },
+          "return": {
+            "precision": 1.0,
+            "recall": 0.47619047619047616,
+            "f1": 0.6451612903225806,
+            "support": 21
+          },
+          "adjust": {
+            "precision": 0.8666666666666667,
+            "recall": 1.0,
+            "f1": 0.9285714285714286,
+            "support": 52
+          }
+        },
+        "confusion_true_rows": [
+          [
+            40,
+            0,
+            0,
+            3
+          ],
+          [
+            3,
+            231,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            10,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            52
+          ]
+        ],
+        "return_adjust_confusions": 5,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0",
+        "per_episode": {
+          "9efc7aeb8216f65ff27d467e": {
+            "metrics": {
+              "samples": 350,
+              "accuracy": 0.9514285714285714,
+              "macro_f1": 0.8592115808455218,
+              "nll": 0.2259116555150253,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.8163265306122449,
+                  "recall": 0.9302325581395349,
+                  "f1": 0.8695652173913043,
+                  "support": 43
+                },
+                "harvest": {
+                  "precision": 1.0,
+                  "recall": 0.9871794871794872,
+                  "f1": 0.9935483870967742,
+                  "support": 234
+                },
+                "return": {
+                  "precision": 1.0,
+                  "recall": 0.47619047619047616,
+                  "f1": 0.6451612903225806,
+                  "support": 21
+                },
+                "adjust": {
+                  "precision": 0.8666666666666667,
+                  "recall": 1.0,
+                  "f1": 0.9285714285714286,
+                  "support": 52
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  40,
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  3,
+                  231,
+                  0,
+                  0
+                ],
+                [
+                  6,
+                  0,
+                  10,
+                  5
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  52
+                ]
+              ],
+              "return_adjust_confusions": 5,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            },
+            "temporal": {
+              "transitions": [
+                {
+                  "frame_index": 307,
+                  "boundary_timestamp_s": 10.233333333333333,
+                  "from_stage": "pickup",
+                  "to_stage": "harvest",
+                  "first_correct_timestamp_s": 11.5,
+                  "delay_s": 1.2666666666666675,
+                  "missed": false,
+                  "first_correct_latency_s": 1.2666666666666675,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 345,
+                  "stable_confirmation_frame": 360,
+                  "stable_confirmation_timestamp_s": 12.0,
+                  "stable_transition_latency_s": 1.7666666666666675,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 2298,
+                  "boundary_timestamp_s": 76.6,
+                  "from_stage": "harvest",
+                  "to_stage": "return",
+                  "first_correct_timestamp_s": 77.0,
+                  "delay_s": 0.4000000000000057,
+                  "missed": false,
+                  "first_correct_latency_s": 0.4000000000000057,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 2310,
+                  "stable_confirmation_frame": 2325,
+                  "stable_confirmation_timestamp_s": 77.5,
+                  "stable_transition_latency_s": 0.9000000000000057,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 2474,
+                  "boundary_timestamp_s": 82.46666666666667,
+                  "from_stage": "return",
+                  "to_stage": "adjust",
+                  "first_correct_timestamp_s": 82.5,
+                  "delay_s": 0.03333333333333144,
+                  "missed": false,
+                  "first_correct_latency_s": 0.03333333333333144,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 2475,
+                  "stable_confirmation_frame": 2490,
+                  "stable_confirmation_timestamp_s": 83.0,
+                  "stable_transition_latency_s": 0.5333333333333314,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 3249,
+                  "boundary_timestamp_s": 108.3,
+                  "from_stage": "adjust",
+                  "to_stage": "pickup",
+                  "first_correct_timestamp_s": 110.0,
+                  "delay_s": 1.7000000000000028,
+                  "missed": false,
+                  "first_correct_latency_s": 1.7000000000000028,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 3300,
+                  "stable_confirmation_frame": 3315,
+                  "stable_confirmation_timestamp_s": 110.5,
+                  "stable_transition_latency_s": 2.200000000000003,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 3582,
+                  "boundary_timestamp_s": 119.4,
+                  "from_stage": "pickup",
+                  "to_stage": "harvest",
+                  "first_correct_timestamp_s": 120.0,
+                  "delay_s": 0.5999999999999943,
+                  "missed": false,
+                  "first_correct_latency_s": 0.5999999999999943,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 3600,
+                  "stable_confirmation_frame": 3615,
+                  "stable_confirmation_timestamp_s": 120.5,
+                  "stable_transition_latency_s": 1.0999999999999943,
+                  "stable_transition_miss": false
+                },
+                {
+                  "frame_index": 5097,
+                  "boundary_timestamp_s": 169.9,
+                  "from_stage": "harvest",
+                  "to_stage": "return",
+                  "first_correct_timestamp_s": 170.0,
+                  "delay_s": 0.09999999999999432,
+                  "missed": false,
+                  "first_correct_latency_s": 0.09999999999999432,
+                  "stable_transition_k": 2,
+                  "first_correct_frame": 5100,
+                  "stable_confirmation_frame": 5115,
+                  "stable_confirmation_timestamp_s": 170.5,
+                  "stable_transition_latency_s": 0.5999999999999943,
+                  "stable_transition_miss": false
+                }
+              ],
+              "error_intervals": [
+                {
+                  "start_frame": 315,
+                  "end_frame_exclusive": 345,
+                  "start_timestamp_s": 10.5,
+                  "end_timestamp_s": 11.5,
+                  "wrong_anchors": 2,
+                  "pairs": [
+                    {
+                      "frame_index": 315,
+                      "truth": "harvest",
+                      "prediction": "pickup"
+                    },
+                    {
+                      "frame_index": 330,
+                      "truth": "harvest",
+                      "prediction": "pickup"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 2340,
+                  "end_frame_exclusive": 2400,
+                  "start_timestamp_s": 78.0,
+                  "end_timestamp_s": 80.0,
+                  "wrong_anchors": 4,
+                  "pairs": [
+                    {
+                      "frame_index": 2340,
+                      "truth": "return",
+                      "prediction": "pickup"
+                    },
+                    {
+                      "frame_index": 2355,
+                      "truth": "return",
+                      "prediction": "pickup"
+                    },
+                    {
+                      "frame_index": 2370,
+                      "truth": "return",
+                      "prediction": "pickup"
+                    },
+                    {
+                      "frame_index": 2385,
+                      "truth": "return",
+                      "prediction": "pickup"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 2415,
+                  "end_frame_exclusive": 2475,
+                  "start_timestamp_s": 80.5,
+                  "end_timestamp_s": 82.5,
+                  "wrong_anchors": 4,
+                  "pairs": [
+                    {
+                      "frame_index": 2415,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2430,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2445,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 2460,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 3255,
+                  "end_frame_exclusive": 3300,
+                  "start_timestamp_s": 108.5,
+                  "end_timestamp_s": 110.0,
+                  "wrong_anchors": 3,
+                  "pairs": [
+                    {
+                      "frame_index": 3255,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3270,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    },
+                    {
+                      "frame_index": 3285,
+                      "truth": "pickup",
+                      "prediction": "adjust"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 3585,
+                  "end_frame_exclusive": 3600,
+                  "start_timestamp_s": 119.5,
+                  "end_timestamp_s": 120.0,
+                  "wrong_anchors": 1,
+                  "pairs": [
+                    {
+                      "frame_index": 3585,
+                      "truth": "harvest",
+                      "prediction": "pickup"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 5175,
+                  "end_frame_exclusive": 5190,
+                  "start_timestamp_s": 172.5,
+                  "end_timestamp_s": 173.0,
+                  "wrong_anchors": 1,
+                  "pairs": [
+                    {
+                      "frame_index": 5175,
+                      "truth": "return",
+                      "prediction": "pickup"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 5205,
+                  "end_frame_exclusive": 5220,
+                  "start_timestamp_s": 173.5,
+                  "end_timestamp_s": 174.0,
+                  "wrong_anchors": 1,
+                  "pairs": [
+                    {
+                      "frame_index": 5205,
+                      "truth": "return",
+                      "prediction": "pickup"
+                    }
+                  ]
+                },
+                {
+                  "start_frame": 5235,
+                  "end_frame_exclusive": 5250,
+                  "start_timestamp_s": 174.5,
+                  "end_timestamp_s": 175.0,
+                  "wrong_anchors": 1,
+                  "pairs": [
+                    {
+                      "frame_index": 5235,
+                      "truth": "return",
+                      "prediction": "adjust"
+                    }
+                  ]
+                }
+              ],
+              "prediction_changes": 13,
+              "false_switches": 11,
+              "false_switches_per_minute": 3.771428571428572,
+              "delay_p50_s": 0.5,
+              "delay_p95_s": 1.591666666666669,
+              "missed_transition_ratio": 0.0,
+              "prediction_hz": 2,
+              "time_resolution_s": 0.5,
+              "definition": "First correct anchor after true boundary, before end of that segment. False switch: prediction change between anchors with same true label. No sequence correction.",
+              "stable_transition_k": 2,
+              "stable_transition_latency_p50_s": 1.0,
+              "stable_transition_latency_p95_s": 2.091666666666669,
+              "stable_transition_miss_ratio": 0.0,
+              "early_false_switch": {
+                "count": 1,
+                "duration_s": 1.9666666666666686,
+                "events": [
+                  {
+                    "boundary_frame": 307,
+                    "to_stage": "harvest",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 2298,
+                    "to_stage": "return",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 2474,
+                    "to_stage": "adjust",
+                    "count": 1,
+                    "duration_s": 1.9666666666666686,
+                    "intervals": [
+                      {
+                        "start_frame": 2415,
+                        "end_frame_exclusive": 2475,
+                        "start_timestamp_s": 80.5,
+                        "duration_s": 1.9666666666666686,
+                        "predicted_stage": "adjust",
+                        "anchors": 4
+                      }
+                    ]
+                  },
+                  {
+                    "boundary_frame": 3249,
+                    "to_stage": "pickup",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 3582,
+                    "to_stage": "harvest",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  },
+                  {
+                    "boundary_frame": 5097,
+                    "to_stage": "return",
+                    "count": 0,
+                    "duration_s": 0,
+                    "intervals": []
+                  }
+                ],
+                "definition": "Successor-stage prediction bursts during the immediately preceding true segment, including transient and sustained errors"
+              },
+              "wrong_stage_duration_s": 8.5,
+              "wrong_duration_definition": "Anchor-label rectangle estimate: each raw argmax held until next anchor/end; 2 Hz resolution, no smoothing"
+            },
+            "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d"
+          }
+        },
+        "per_source": {
+          "7d879f9d5d5a4be09beb55cf88591b0d": {
+            "samples": 350,
+            "accuracy": 0.9514285714285714,
+            "macro_f1": 0.8592115808455218,
+            "nll": 0.2259116555150253,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8163265306122449,
+                "recall": 0.9302325581395349,
+                "f1": 0.8695652173913043,
+                "support": 43
+              },
+              "harvest": {
+                "precision": 1.0,
+                "recall": 0.9871794871794872,
+                "f1": 0.9935483870967742,
+                "support": 234
+              },
+              "return": {
+                "precision": 1.0,
+                "recall": 0.47619047619047616,
+                "f1": 0.6451612903225806,
+                "support": 21
+              },
+              "adjust": {
+                "precision": 0.8666666666666667,
+                "recall": 1.0,
+                "f1": 0.9285714285714286,
+                "support": 52
+              }
+            },
+            "confusion_true_rows": [
+              [
+                40,
+                0,
+                0,
+                3
+              ],
+              [
+                3,
+                231,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                10,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                52
+              ]
+            ],
+            "return_adjust_confusions": 5,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "temporal": {
+          "transitions": 6,
+          "delay_p50_s": 0.5,
+          "delay_p95_s": 1.591666666666669,
+          "missed_transition_ratio": 0.0,
+          "false_switches": 11,
+          "false_switches_per_minute": 3.771428571428572,
+          "prediction_hz": 2,
+          "time_resolution_s": 0.5,
+          "stable_transition_k": 2,
+          "first_correct_latency_p50_s": 0.5,
+          "first_correct_latency_p95_s": 1.591666666666669,
+          "stable_transition_latency_p50_s": 1.0,
+          "stable_transition_latency_p95_s": 2.091666666666669,
+          "stable_transition_miss_ratio": 0.0,
+          "early_false_switch_count": 1,
+          "early_false_switch_duration_s": 1.9666666666666686,
+          "wrong_stage_duration_s": 8.5
+        },
+        "valid_samples": 350,
+        "masked_count": 0,
+        "valid_ratio": 1.0,
+        "phase_duration_strata": {
+          "short_threshold_s": 1.5,
+          "short": {
+            "samples": 0,
+            "metrics": null
+          },
+          "long": {
+            "samples": 350,
+            "metrics": {
+              "samples": 350,
+              "accuracy": 0.9514285714285714,
+              "macro_f1": 0.8592115808455218,
+              "nll": 0.2259116555150253,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.8163265306122449,
+                  "recall": 0.9302325581395349,
+                  "f1": 0.8695652173913043,
+                  "support": 43
+                },
+                "harvest": {
+                  "precision": 1.0,
+                  "recall": 0.9871794871794872,
+                  "f1": 0.9935483870967742,
+                  "support": 234
+                },
+                "return": {
+                  "precision": 1.0,
+                  "recall": 0.47619047619047616,
+                  "f1": 0.6451612903225806,
+                  "support": 21
+                },
+                "adjust": {
+                  "precision": 0.8666666666666667,
+                  "recall": 1.0,
+                  "f1": 0.9285714285714286,
+                  "support": 52
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  40,
+                  0,
+                  0,
+                  3
+                ],
+                [
+                  3,
+                  231,
+                  0,
+                  0
+                ],
+                [
+                  6,
+                  0,
+                  10,
+                  5
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  52
+                ]
+              ],
+              "return_adjust_confusions": 5,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            }
+          }
+        }
+      },
+      "future": {
+        "samples": 348,
+        "accuracy": 0.9051724137931034,
+        "macro_f1": 0.7795840893685583,
+        "nll": 0.3734159393101091,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.7941176470588235,
+            "recall": 0.6585365853658537,
+            "f1": 0.72,
+            "support": 41
+          },
+          "harvest": {
+            "precision": 0.9742489270386266,
+            "recall": 0.9700854700854701,
+            "f1": 0.9721627408993576,
+            "support": 234
+          },
+          "return": {
+            "precision": 0.9,
+            "recall": 0.42857142857142855,
+            "f1": 0.5806451612903226,
+            "support": 21
+          },
+          "adjust": {
+            "precision": 0.7323943661971831,
+            "recall": 1.0,
+            "f1": 0.8455284552845529,
+            "support": 52
+          }
+        },
+        "confusion_true_rows": [
+          [
+            27,
+            0,
+            0,
+            14
+          ],
+          [
+            6,
+            227,
+            1,
+            0
+          ],
+          [
+            1,
+            6,
+            9,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            52
+          ]
+        ],
+        "return_adjust_confusions": 5,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0",
+        "valid_samples": 348,
+        "masked_count": 2,
+        "valid_ratio": 0.9942857142857143,
+        "per_episode": {
+          "9efc7aeb8216f65ff27d467e": {
+            "metrics": {
+              "samples": 348,
+              "accuracy": 0.9051724137931034,
+              "macro_f1": 0.7795840893685583,
+              "nll": 0.3734159393101091,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.7941176470588235,
+                  "recall": 0.6585365853658537,
+                  "f1": 0.72,
+                  "support": 41
+                },
+                "harvest": {
+                  "precision": 0.9742489270386266,
+                  "recall": 0.9700854700854701,
+                  "f1": 0.9721627408993576,
+                  "support": 234
+                },
+                "return": {
+                  "precision": 0.9,
+                  "recall": 0.42857142857142855,
+                  "f1": 0.5806451612903226,
+                  "support": 21
+                },
+                "adjust": {
+                  "precision": 0.7323943661971831,
+                  "recall": 1.0,
+                  "f1": 0.8455284552845529,
+                  "support": 52
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  27,
+                  0,
+                  0,
+                  14
+                ],
+                [
+                  6,
+                  227,
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  6,
+                  9,
+                  5
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  52
+                ]
+              ],
+              "return_adjust_confusions": 5,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            },
+            "masked_count": 2,
+            "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+            "anticipation": {
+              "events": [
+                {
+                  "boundary_frame": 307,
+                  "boundary_timestamp_s": 10.233333333333333,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 2298,
+                  "boundary_timestamp_s": 76.6,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 2474,
+                  "boundary_timestamp_s": 82.46666666666667,
+                  "to_stage": "adjust",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 2,
+                  "ambiguous": false,
+                  "detected": true,
+                  "missed": false,
+                  "first_warning_timestamp_s": 81.5,
+                  "lead_time_s": 0.9666666666666686
+                },
+                {
+                  "boundary_frame": 3249,
+                  "boundary_timestamp_s": 108.3,
+                  "to_stage": "pickup",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 3582,
+                  "boundary_timestamp_s": 119.4,
+                  "to_stage": "harvest",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                },
+                {
+                  "boundary_frame": 5097,
+                  "boundary_timestamp_s": 169.9,
+                  "to_stage": "return",
+                  "eligible_anchors": 2,
+                  "new_stage_prediction_count": 0,
+                  "ambiguous": false,
+                  "detected": false,
+                  "missed": true,
+                  "first_warning_timestamp_s": null,
+                  "lead_time_s": null
+                }
+              ],
+              "ambiguous_alert_anchors": 0,
+              "out_of_window_false_alarm_count": 11,
+              "out_of_window_false_alarm_duration_s": 11.5,
+              "out_of_window_false_alarms_per_minute": 3.793103448275862,
+              "false_alarm_intervals": [
+                {
+                  "start_frame": 30,
+                  "end_frame_exclusive": 45,
+                  "start_timestamp_s": 1.0,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 315,
+                  "end_frame_exclusive": 330,
+                  "start_timestamp_s": 10.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "pickup",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 330,
+                  "end_frame_exclusive": 345,
+                  "start_timestamp_s": 11.0,
+                  "duration_s": 0.5,
+                  "predicted_stage": "return",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 2310,
+                  "end_frame_exclusive": 2325,
+                  "start_timestamp_s": 77.0,
+                  "duration_s": 0.5,
+                  "predicted_stage": "harvest",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 2355,
+                  "end_frame_exclusive": 2370,
+                  "start_timestamp_s": 78.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 2370,
+                  "end_frame_exclusive": 2385,
+                  "start_timestamp_s": 79.0,
+                  "duration_s": 0.5,
+                  "predicted_stage": "pickup",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 2385,
+                  "end_frame_exclusive": 2445,
+                  "start_timestamp_s": 79.5,
+                  "duration_s": 2.0,
+                  "predicted_stage": "adjust",
+                  "anchors": 4
+                },
+                {
+                  "start_frame": 3255,
+                  "end_frame_exclusive": 3405,
+                  "start_timestamp_s": 108.5,
+                  "duration_s": 5.0,
+                  "predicted_stage": "adjust",
+                  "anchors": 10
+                },
+                {
+                  "start_frame": 3420,
+                  "end_frame_exclusive": 3435,
+                  "start_timestamp_s": 114.0,
+                  "duration_s": 0.5,
+                  "predicted_stage": "adjust",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 3585,
+                  "end_frame_exclusive": 3600,
+                  "start_timestamp_s": 119.5,
+                  "duration_s": 0.5,
+                  "predicted_stage": "pickup",
+                  "anchors": 1
+                },
+                {
+                  "start_frame": 5100,
+                  "end_frame_exclusive": 5115,
+                  "start_timestamp_s": 170.0,
+                  "duration_s": 0.5,
+                  "predicted_stage": "harvest",
+                  "anchors": 1
+                }
+              ],
+              "valid_anchor_duration_s": 174.0,
+              "definition": "Alerts differ from oracle true current stage; supported only by a matching true transition within the fixed horizon. Multiple-boundary events are explicitly ambiguous; no online decision uses truth."
+            }
+          }
+        },
+        "per_source": {
+          "7d879f9d5d5a4be09beb55cf88591b0d": {
+            "samples": 348,
+            "accuracy": 0.9051724137931034,
+            "macro_f1": 0.7795840893685583,
+            "nll": 0.3734159393101091,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.7941176470588235,
+                "recall": 0.6585365853658537,
+                "f1": 0.72,
+                "support": 41
+              },
+              "harvest": {
+                "precision": 0.9742489270386266,
+                "recall": 0.9700854700854701,
+                "f1": 0.9721627408993576,
+                "support": 234
+              },
+              "return": {
+                "precision": 0.9,
+                "recall": 0.42857142857142855,
+                "f1": 0.5806451612903226,
+                "support": 21
+              },
+              "adjust": {
+                "precision": 0.7323943661971831,
+                "recall": 1.0,
+                "f1": 0.8455284552845529,
+                "support": 52
+              }
+            },
+            "confusion_true_rows": [
+              [
+                27,
+                0,
+                0,
+                14
+              ],
+              [
+                6,
+                227,
+                1,
+                0
+              ],
+              [
+                1,
+                6,
+                9,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                52
+              ]
+            ],
+            "return_adjust_confusions": 5,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "persistence_baselines": {
+          "oracle_current_persistence": {
+            "samples": 348,
+            "accuracy": 0.9655172413793104,
+            "macro_f1": 0.9307539682539683,
+            "nll": null,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9069767441860465,
+                "recall": 0.9512195121951219,
+                "f1": 0.9285714285714286,
+                "support": 41
+              },
+              "harvest": {
+                "precision": 0.9829059829059829,
+                "recall": 0.9829059829059829,
+                "f1": 0.9829059829059829,
+                "support": 234
+              },
+              "return": {
+                "precision": 0.8947368421052632,
+                "recall": 0.8095238095238095,
+                "f1": 0.85,
+                "support": 21
+              },
+              "adjust": {
+                "precision": 0.9615384615384616,
+                "recall": 0.9615384615384616,
+                "f1": 0.9615384615384616,
+                "support": 52
+              }
+            },
+            "confusion_true_rows": [
+              [
+                39,
+                0,
+                0,
+                2
+              ],
+              [
+                4,
+                230,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                17,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                50
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0",
+            "diagnostic_only": true,
+            "deployable": false,
+            "definition": "Oracle true current stage held as future prediction; hard labels, no probabilistic NLL"
+          },
+          "model_current_persistence": {
+            "samples": 348,
+            "accuracy": 0.9310344827586207,
+            "macro_f1": 0.8283202557396105,
+            "nll": 0.2826636847347627,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.7346938775510204,
+                "recall": 0.8780487804878049,
+                "f1": 0.8,
+                "support": 41
+              },
+              "harvest": {
+                "precision": 0.9826839826839827,
+                "recall": 0.9700854700854701,
+                "f1": 0.9763440860215054,
+                "support": 234
+              },
+              "return": {
+                "precision": 1.0,
+                "recall": 0.42857142857142855,
+                "f1": 0.6,
+                "support": 21
+              },
+              "adjust": {
+                "precision": 0.8813559322033898,
+                "recall": 1.0,
+                "f1": 0.9369369369369369,
+                "support": 52
+              }
+            },
+            "confusion_true_rows": [
+              [
+                36,
+                0,
+                0,
+                5
+              ],
+              [
+                7,
+                227,
+                0,
+                0
+              ],
+              [
+                6,
+                4,
+                9,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                52
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          }
+        },
+        "macro_f1_gain_over_oracle_persistence": -0.15116987888541,
+        "macro_f1_gain_over_model_current_persistence": -0.04873616637105227,
+        "anticipation": {
+          "total_events": 6,
+          "ambiguous_events": 0,
+          "evaluable_events": 6,
+          "detected_events": 1,
+          "event_recall": 0.16666666666666666,
+          "missed_events": 5,
+          "lead_time_p50_s": 0.9666666666666686,
+          "lead_time_p95_s": 0.9666666666666686,
+          "out_of_window_false_alarm_count": 11,
+          "out_of_window_false_alarm_duration_s": 11.5,
+          "out_of_window_false_alarms_per_minute": 3.793103448275862,
+          "ambiguity_rule": "Events with another boundary less than horizon away are excluded from recall, retained explicitly"
+        },
+        "phase_duration_strata": {
+          "short_threshold_s": 1.5,
+          "short": {
+            "samples": 0,
+            "metrics": null
+          },
+          "long": {
+            "samples": 348,
+            "metrics": {
+              "samples": 348,
+              "accuracy": 0.9051724137931034,
+              "macro_f1": 0.7795840893685583,
+              "nll": 0.3734159393101091,
+              "label_order": [
+                "pickup",
+                "harvest",
+                "return",
+                "adjust"
+              ],
+              "per_class": {
+                "pickup": {
+                  "precision": 0.7941176470588235,
+                  "recall": 0.6585365853658537,
+                  "f1": 0.72,
+                  "support": 41
+                },
+                "harvest": {
+                  "precision": 0.9742489270386266,
+                  "recall": 0.9700854700854701,
+                  "f1": 0.9721627408993576,
+                  "support": 234
+                },
+                "return": {
+                  "precision": 0.9,
+                  "recall": 0.42857142857142855,
+                  "f1": 0.5806451612903226,
+                  "support": 21
+                },
+                "adjust": {
+                  "precision": 0.7323943661971831,
+                  "recall": 1.0,
+                  "f1": 0.8455284552845529,
+                  "support": 52
+                }
+              },
+              "confusion_true_rows": [
+                [
+                  27,
+                  0,
+                  0,
+                  14
+                ],
+                [
+                  6,
+                  227,
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  6,
+                  9,
+                  5
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  52
+                ]
+              ],
+              "return_adjust_confusions": 5,
+              "missing_classes": [],
+              "macro_definition": "unweighted four-class mean, zero_division=0"
+            }
+          }
+        }
+      },
+      "total_anchors": 350
+    }
+  }
+}

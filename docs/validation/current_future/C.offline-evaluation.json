@@ -1,0 +1,1394 @@
+{
+  "prediction_mode": "joint",
+  "future_horizon_s": 1.0,
+  "lambda_current": 1.0,
+  "lambda_future": 0.5,
+  "stable_transition_k": 2,
+  "current": {
+    "samples": 350,
+    "accuracy": 0.9514285714285714,
+    "macro_f1": 0.8592115808455218,
+    "nll": 0.2259116555150253,
+    "label_order": [
+      "pickup",
+      "harvest",
+      "return",
+      "adjust"
+    ],
+    "per_class": {
+      "pickup": {
+        "precision": 0.8163265306122449,
+        "recall": 0.9302325581395349,
+        "f1": 0.8695652173913043,
+        "support": 43
+      },
+      "harvest": {
+        "precision": 1.0,
+        "recall": 0.9871794871794872,
+        "f1": 0.9935483870967742,
+        "support": 234
+      },
+      "return": {
+        "precision": 1.0,
+        "recall": 0.47619047619047616,
+        "f1": 0.6451612903225806,
+        "support": 21
+      },
+      "adjust": {
+        "precision": 0.8666666666666667,
+        "recall": 1.0,
+        "f1": 0.9285714285714286,
+        "support": 52
+      }
+    },
+    "confusion_true_rows": [
+      [
+        40,
+        0,
+        0,
+        3
+      ],
+      [
+        3,
+        231,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        10,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        52
+      ]
+    ],
+    "return_adjust_confusions": 5,
+    "missing_classes": [],
+    "macro_definition": "unweighted four-class mean, zero_division=0",
+    "per_episode": {
+      "9efc7aeb8216f65ff27d467e": {
+        "metrics": {
+          "samples": 350,
+          "accuracy": 0.9514285714285714,
+          "macro_f1": 0.8592115808455218,
+          "nll": 0.2259116555150253,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.8163265306122449,
+              "recall": 0.9302325581395349,
+              "f1": 0.8695652173913043,
+              "support": 43
+            },
+            "harvest": {
+              "precision": 1.0,
+              "recall": 0.9871794871794872,
+              "f1": 0.9935483870967742,
+              "support": 234
+            },
+            "return": {
+              "precision": 1.0,
+              "recall": 0.47619047619047616,
+              "f1": 0.6451612903225806,
+              "support": 21
+            },
+            "adjust": {
+              "precision": 0.8666666666666667,
+              "recall": 1.0,
+              "f1": 0.9285714285714286,
+              "support": 52
+            }
+          },
+          "confusion_true_rows": [
+            [
+              40,
+              0,
+              0,
+              3
+            ],
+            [
+              3,
+              231,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              10,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              52
+            ]
+          ],
+          "return_adjust_confusions": 5,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "temporal": {
+          "transitions": [
+            {
+              "frame_index": 307,
+              "boundary_timestamp_s": 10.233333333333333,
+              "from_stage": "pickup",
+              "to_stage": "harvest",
+              "first_correct_timestamp_s": 11.5,
+              "delay_s": 1.2666666666666675,
+              "missed": false,
+              "first_correct_latency_s": 1.2666666666666675,
+              "stable_transition_k": 2,
+              "first_correct_frame": 345,
+              "stable_confirmation_frame": 360,
+              "stable_confirmation_timestamp_s": 12.0,
+              "stable_transition_latency_s": 1.7666666666666675,
+              "stable_transition_miss": false
+            },
+            {
+              "frame_index": 2298,
+              "boundary_timestamp_s": 76.6,
+              "from_stage": "harvest",
+              "to_stage": "return",
+              "first_correct_timestamp_s": 77.0,
+              "delay_s": 0.4000000000000057,
+              "missed": false,
+              "first_correct_latency_s": 0.4000000000000057,
+              "stable_transition_k": 2,
+              "first_correct_frame": 2310,
+              "stable_confirmation_frame": 2325,
+              "stable_confirmation_timestamp_s": 77.5,
+              "stable_transition_latency_s": 0.9000000000000057,
+              "stable_transition_miss": false
+            },
+            {
+              "frame_index": 2474,
+              "boundary_timestamp_s": 82.46666666666667,
+              "from_stage": "return",
+              "to_stage": "adjust",
+              "first_correct_timestamp_s": 82.5,
+              "delay_s": 0.03333333333333144,
+              "missed": false,
+              "first_correct_latency_s": 0.03333333333333144,
+              "stable_transition_k": 2,
+              "first_correct_frame": 2475,
+              "stable_confirmation_frame": 2490,
+              "stable_confirmation_timestamp_s": 83.0,
+              "stable_transition_latency_s": 0.5333333333333314,
+              "stable_transition_miss": false
+            },
+            {
+              "frame_index": 3249,
+              "boundary_timestamp_s": 108.3,
+              "from_stage": "adjust",
+              "to_stage": "pickup",
+              "first_correct_timestamp_s": 110.0,
+              "delay_s": 1.7000000000000028,
+              "missed": false,
+              "first_correct_latency_s": 1.7000000000000028,
+              "stable_transition_k": 2,
+              "first_correct_frame": 3300,
+              "stable_confirmation_frame": 3315,
+              "stable_confirmation_timestamp_s": 110.5,
+              "stable_transition_latency_s": 2.200000000000003,
+              "stable_transition_miss": false
+            },
+            {
+              "frame_index": 3582,
+              "boundary_timestamp_s": 119.4,
+              "from_stage": "pickup",
+              "to_stage": "harvest",
+              "first_correct_timestamp_s": 120.0,
+              "delay_s": 0.5999999999999943,
+              "missed": false,
+              "first_correct_latency_s": 0.5999999999999943,
+              "stable_transition_k": 2,
+              "first_correct_frame": 3600,
+              "stable_confirmation_frame": 3615,
+              "stable_confirmation_timestamp_s": 120.5,
+              "stable_transition_latency_s": 1.0999999999999943,
+              "stable_transition_miss": false
+            },
+            {
+              "frame_index": 5097,
+              "boundary_timestamp_s": 169.9,
+              "from_stage": "harvest",
+              "to_stage": "return",
+              "first_correct_timestamp_s": 170.0,
+              "delay_s": 0.09999999999999432,
+              "missed": false,
+              "first_correct_latency_s": 0.09999999999999432,
+              "stable_transition_k": 2,
+              "first_correct_frame": 5100,
+              "stable_confirmation_frame": 5115,
+              "stable_confirmation_timestamp_s": 170.5,
+              "stable_transition_latency_s": 0.5999999999999943,
+              "stable_transition_miss": false
+            }
+          ],
+          "error_intervals": [
+            {
+              "start_frame": 315,
+              "end_frame_exclusive": 345,
+              "start_timestamp_s": 10.5,
+              "end_timestamp_s": 11.5,
+              "wrong_anchors": 2,
+              "pairs": [
+                {
+                  "frame_index": 315,
+                  "truth": "harvest",
+                  "prediction": "pickup"
+                },
+                {
+                  "frame_index": 330,
+                  "truth": "harvest",
+                  "prediction": "pickup"
+                }
+              ]
+            },
+            {
+              "start_frame": 2340,
+              "end_frame_exclusive": 2400,
+              "start_timestamp_s": 78.0,
+              "end_timestamp_s": 80.0,
+              "wrong_anchors": 4,
+              "pairs": [
+                {
+                  "frame_index": 2340,
+                  "truth": "return",
+                  "prediction": "pickup"
+                },
+                {
+                  "frame_index": 2355,
+                  "truth": "return",
+                  "prediction": "pickup"
+                },
+                {
+                  "frame_index": 2370,
+                  "truth": "return",
+                  "prediction": "pickup"
+                },
+                {
+                  "frame_index": 2385,
+                  "truth": "return",
+                  "prediction": "pickup"
+                }
+              ]
+            },
+            {
+              "start_frame": 2415,
+              "end_frame_exclusive": 2475,
+              "start_timestamp_s": 80.5,
+              "end_timestamp_s": 82.5,
+              "wrong_anchors": 4,
+              "pairs": [
+                {
+                  "frame_index": 2415,
+                  "truth": "return",
+                  "prediction": "adjust"
+                },
+                {
+                  "frame_index": 2430,
+                  "truth": "return",
+                  "prediction": "adjust"
+                },
+                {
+                  "frame_index": 2445,
+                  "truth": "return",
+                  "prediction": "adjust"
+                },
+                {
+                  "frame_index": 2460,
+                  "truth": "return",
+                  "prediction": "adjust"
+                }
+              ]
+            },
+            {
+              "start_frame": 3255,
+              "end_frame_exclusive": 3300,
+              "start_timestamp_s": 108.5,
+              "end_timestamp_s": 110.0,
+              "wrong_anchors": 3,
+              "pairs": [
+                {
+                  "frame_index": 3255,
+                  "truth": "pickup",
+                  "prediction": "adjust"
+                },
+                {
+                  "frame_index": 3270,
+                  "truth": "pickup",
+                  "prediction": "adjust"
+                },
+                {
+                  "frame_index": 3285,
+                  "truth": "pickup",
+                  "prediction": "adjust"
+                }
+              ]
+            },
+            {
+              "start_frame": 3585,
+              "end_frame_exclusive": 3600,
+              "start_timestamp_s": 119.5,
+              "end_timestamp_s": 120.0,
+              "wrong_anchors": 1,
+              "pairs": [
+                {
+                  "frame_index": 3585,
+                  "truth": "harvest",
+                  "prediction": "pickup"
+                }
+              ]
+            },
+            {
+              "start_frame": 5175,
+              "end_frame_exclusive": 5190,
+              "start_timestamp_s": 172.5,
+              "end_timestamp_s": 173.0,
+              "wrong_anchors": 1,
+              "pairs": [
+                {
+                  "frame_index": 5175,
+                  "truth": "return",
+                  "prediction": "pickup"
+                }
+              ]
+            },
+            {
+              "start_frame": 5205,
+              "end_frame_exclusive": 5220,
+              "start_timestamp_s": 173.5,
+              "end_timestamp_s": 174.0,
+              "wrong_anchors": 1,
+              "pairs": [
+                {
+                  "frame_index": 5205,
+                  "truth": "return",
+                  "prediction": "pickup"
+                }
+              ]
+            },
+            {
+              "start_frame": 5235,
+              "end_frame_exclusive": 5250,
+              "start_timestamp_s": 174.5,
+              "end_timestamp_s": 175.0,
+              "wrong_anchors": 1,
+              "pairs": [
+                {
+                  "frame_index": 5235,
+                  "truth": "return",
+                  "prediction": "adjust"
+                }
+              ]
+            }
+          ],
+          "prediction_changes": 13,
+          "false_switches": 11,
+          "false_switches_per_minute": 3.771428571428572,
+          "delay_p50_s": 0.5,
+          "delay_p95_s": 1.591666666666669,
+          "missed_transition_ratio": 0.0,
+          "prediction_hz": 2,
+          "time_resolution_s": 0.5,
+          "definition": "First correct anchor after true boundary, before end of that segment. False switch: prediction change between anchors with same true label. No sequence correction.",
+          "stable_transition_k": 2,
+          "stable_transition_latency_p50_s": 1.0,
+          "stable_transition_latency_p95_s": 2.091666666666669,
+          "stable_transition_miss_ratio": 0.0,
+          "early_false_switch": {
+            "count": 1,
+            "duration_s": 1.9666666666666686,
+            "events": [
+              {
+                "boundary_frame": 307,
+                "to_stage": "harvest",
+                "count": 0,
+                "duration_s": 0,
+                "intervals": []
+              },
+              {
+                "boundary_frame": 2298,
+                "to_stage": "return",
+                "count": 0,
+                "duration_s": 0,
+                "intervals": []
+              },
+              {
+                "boundary_frame": 2474,
+                "to_stage": "adjust",
+                "count": 1,
+                "duration_s": 1.9666666666666686,
+                "intervals": [
+                  {
+                    "start_frame": 2415,
+                    "end_frame_exclusive": 2475,
+                    "start_timestamp_s": 80.5,
+                    "duration_s": 1.9666666666666686,
+                    "predicted_stage": "adjust",
+                    "anchors": 4
+                  }
+                ]
+              },
+              {
+                "boundary_frame": 3249,
+                "to_stage": "pickup",
+                "count": 0,
+                "duration_s": 0,
+                "intervals": []
+              },
+              {
+                "boundary_frame": 3582,
+                "to_stage": "harvest",
+                "count": 0,
+                "duration_s": 0,
+                "intervals": []
+              },
+              {
+                "boundary_frame": 5097,
+                "to_stage": "return",
+                "count": 0,
+                "duration_s": 0,
+                "intervals": []
+              }
+            ],
+            "definition": "Successor-stage prediction bursts during the immediately preceding true segment, including transient and sustained errors"
+          },
+          "wrong_stage_duration_s": 8.5,
+          "wrong_duration_definition": "Anchor-label rectangle estimate: each raw argmax held until next anchor/end; 2 Hz resolution, no smoothing"
+        },
+        "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d"
+      }
+    },
+    "per_source": {
+      "7d879f9d5d5a4be09beb55cf88591b0d": {
+        "samples": 350,
+        "accuracy": 0.9514285714285714,
+        "macro_f1": 0.8592115808455218,
+        "nll": 0.2259116555150253,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.8163265306122449,
+            "recall": 0.9302325581395349,
+            "f1": 0.8695652173913043,
+            "support": 43
+          },
+          "harvest": {
+            "precision": 1.0,
+            "recall": 0.9871794871794872,
+            "f1": 0.9935483870967742,
+            "support": 234
+          },
+          "return": {
+            "precision": 1.0,
+            "recall": 0.47619047619047616,
+            "f1": 0.6451612903225806,
+            "support": 21
+          },
+          "adjust": {
+            "precision": 0.8666666666666667,
+            "recall": 1.0,
+            "f1": 0.9285714285714286,
+            "support": 52
+          }
+        },
+        "confusion_true_rows": [
+          [
+            40,
+            0,
+            0,
+            3
+          ],
+          [
+            3,
+            231,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            10,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            52
+          ]
+        ],
+        "return_adjust_confusions": 5,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0"
+      }
+    },
+    "temporal": {
+      "transitions": 6,
+      "delay_p50_s": 0.5,
+      "delay_p95_s": 1.591666666666669,
+      "missed_transition_ratio": 0.0,
+      "false_switches": 11,
+      "false_switches_per_minute": 3.771428571428572,
+      "prediction_hz": 2,
+      "time_resolution_s": 0.5,
+      "stable_transition_k": 2,
+      "first_correct_latency_p50_s": 0.5,
+      "first_correct_latency_p95_s": 1.591666666666669,
+      "stable_transition_latency_p50_s": 1.0,
+      "stable_transition_latency_p95_s": 2.091666666666669,
+      "stable_transition_miss_ratio": 0.0,
+      "early_false_switch_count": 1,
+      "early_false_switch_duration_s": 1.9666666666666686,
+      "wrong_stage_duration_s": 8.5
+    },
+    "valid_samples": 350,
+    "masked_count": 0,
+    "valid_ratio": 1.0,
+    "phase_duration_strata": {
+      "short_threshold_s": 1.5,
+      "short": {
+        "samples": 0,
+        "metrics": null
+      },
+      "long": {
+        "samples": 350,
+        "metrics": {
+          "samples": 350,
+          "accuracy": 0.9514285714285714,
+          "macro_f1": 0.8592115808455218,
+          "nll": 0.2259116555150253,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.8163265306122449,
+              "recall": 0.9302325581395349,
+              "f1": 0.8695652173913043,
+              "support": 43
+            },
+            "harvest": {
+              "precision": 1.0,
+              "recall": 0.9871794871794872,
+              "f1": 0.9935483870967742,
+              "support": 234
+            },
+            "return": {
+              "precision": 1.0,
+              "recall": 0.47619047619047616,
+              "f1": 0.6451612903225806,
+              "support": 21
+            },
+            "adjust": {
+              "precision": 0.8666666666666667,
+              "recall": 1.0,
+              "f1": 0.9285714285714286,
+              "support": 52
+            }
+          },
+          "confusion_true_rows": [
+            [
+              40,
+              0,
+              0,
+              3
+            ],
+            [
+              3,
+              231,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              10,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              52
+            ]
+          ],
+          "return_adjust_confusions": 5,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      }
+    }
+  },
+  "future": {
+    "samples": 348,
+    "accuracy": 0.9051724137931034,
+    "macro_f1": 0.7795840893685583,
+    "nll": 0.3734159393101091,
+    "label_order": [
+      "pickup",
+      "harvest",
+      "return",
+      "adjust"
+    ],
+    "per_class": {
+      "pickup": {
+        "precision": 0.7941176470588235,
+        "recall": 0.6585365853658537,
+        "f1": 0.72,
+        "support": 41
+      },
+      "harvest": {
+        "precision": 0.9742489270386266,
+        "recall": 0.9700854700854701,
+        "f1": 0.9721627408993576,
+        "support": 234
+      },
+      "return": {
+        "precision": 0.9,
+        "recall": 0.42857142857142855,
+        "f1": 0.5806451612903226,
+        "support": 21
+      },
+      "adjust": {
+        "precision": 0.7323943661971831,
+        "recall": 1.0,
+        "f1": 0.8455284552845529,
+        "support": 52
+      }
+    },
+    "confusion_true_rows": [
+      [
+        27,
+        0,
+        0,
+        14
+      ],
+      [
+        6,
+        227,
+        1,
+        0
+      ],
+      [
+        1,
+        6,
+        9,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        52
+      ]
+    ],
+    "return_adjust_confusions": 5,
+    "missing_classes": [],
+    "macro_definition": "unweighted four-class mean, zero_division=0",
+    "valid_samples": 348,
+    "masked_count": 2,
+    "valid_ratio": 0.9942857142857143,
+    "per_episode": {
+      "9efc7aeb8216f65ff27d467e": {
+        "metrics": {
+          "samples": 348,
+          "accuracy": 0.9051724137931034,
+          "macro_f1": 0.7795840893685583,
+          "nll": 0.3734159393101091,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.7941176470588235,
+              "recall": 0.6585365853658537,
+              "f1": 0.72,
+              "support": 41
+            },
+            "harvest": {
+              "precision": 0.9742489270386266,
+              "recall": 0.9700854700854701,
+              "f1": 0.9721627408993576,
+              "support": 234
+            },
+            "return": {
+              "precision": 0.9,
+              "recall": 0.42857142857142855,
+              "f1": 0.5806451612903226,
+              "support": 21
+            },
+            "adjust": {
+              "precision": 0.7323943661971831,
+              "recall": 1.0,
+              "f1": 0.8455284552845529,
+              "support": 52
+            }
+          },
+          "confusion_true_rows": [
+            [
+              27,
+              0,
+              0,
+              14
+            ],
+            [
+              6,
+              227,
+              1,
+              0
+            ],
+            [
+              1,
+              6,
+              9,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              52
+            ]
+          ],
+          "return_adjust_confusions": 5,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "masked_count": 2,
+        "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+        "forecast_error_intervals": [
+          {
+            "start_frame": 30,
+            "end_frame_exclusive": 45,
+            "start_timestamp_s": 1.0,
+            "duration_s": 0.5,
+            "predicted_stage": "adjust",
+            "anchors": 1,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 60,
+            "target_end_frame_exclusive": 75
+          },
+          {
+            "start_frame": 285,
+            "end_frame_exclusive": 330,
+            "start_timestamp_s": 9.5,
+            "duration_s": 1.5,
+            "predicted_stage": "pickup",
+            "anchors": 3,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 315,
+            "target_end_frame_exclusive": 360
+          },
+          {
+            "start_frame": 330,
+            "end_frame_exclusive": 345,
+            "start_timestamp_s": 11.0,
+            "duration_s": 0.5,
+            "predicted_stage": "return",
+            "anchors": 1,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 360,
+            "target_end_frame_exclusive": 375
+          },
+          {
+            "start_frame": 2280,
+            "end_frame_exclusive": 2325,
+            "start_timestamp_s": 76.0,
+            "duration_s": 1.5,
+            "predicted_stage": "harvest",
+            "anchors": 3,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 2310,
+            "target_end_frame_exclusive": 2355
+          },
+          {
+            "start_frame": 2355,
+            "end_frame_exclusive": 2370,
+            "start_timestamp_s": 78.5,
+            "duration_s": 0.5,
+            "predicted_stage": "adjust",
+            "anchors": 1,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 2385,
+            "target_end_frame_exclusive": 2400
+          },
+          {
+            "start_frame": 2370,
+            "end_frame_exclusive": 2385,
+            "start_timestamp_s": 79.0,
+            "duration_s": 0.5,
+            "predicted_stage": "pickup",
+            "anchors": 1,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 2400,
+            "target_end_frame_exclusive": 2415
+          },
+          {
+            "start_frame": 2385,
+            "end_frame_exclusive": 2445,
+            "start_timestamp_s": 79.5,
+            "duration_s": 2.0,
+            "predicted_stage": "adjust",
+            "anchors": 4,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 2415,
+            "target_end_frame_exclusive": 2475
+          },
+          {
+            "start_frame": 3225,
+            "end_frame_exclusive": 3405,
+            "start_timestamp_s": 107.5,
+            "duration_s": 6.0,
+            "predicted_stage": "adjust",
+            "anchors": 12,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 3255,
+            "target_end_frame_exclusive": 3435
+          },
+          {
+            "start_frame": 3420,
+            "end_frame_exclusive": 3435,
+            "start_timestamp_s": 114.0,
+            "duration_s": 0.5,
+            "predicted_stage": "adjust",
+            "anchors": 1,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 3450,
+            "target_end_frame_exclusive": 3465
+          },
+          {
+            "start_frame": 3555,
+            "end_frame_exclusive": 3600,
+            "start_timestamp_s": 118.5,
+            "duration_s": 1.5,
+            "predicted_stage": "pickup",
+            "anchors": 3,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 3585,
+            "target_end_frame_exclusive": 3630
+          },
+          {
+            "start_frame": 5070,
+            "end_frame_exclusive": 5115,
+            "start_timestamp_s": 169.0,
+            "duration_s": 1.5,
+            "predicted_stage": "harvest",
+            "anchors": 3,
+            "time_axis": "forecast issue anchor",
+            "target_start_frame": 5100,
+            "target_end_frame_exclusive": 5145
+          }
+        ],
+        "forecast_error_duration_s": 16.5,
+        "anticipation": {
+          "events": [
+            {
+              "boundary_frame": 307,
+              "boundary_timestamp_s": 10.233333333333333,
+              "to_stage": "harvest",
+              "eligible_anchors": 2,
+              "new_stage_prediction_count": 0,
+              "ambiguous": false,
+              "detected": false,
+              "missed": true,
+              "first_warning_timestamp_s": null,
+              "lead_time_s": null
+            },
+            {
+              "boundary_frame": 2298,
+              "boundary_timestamp_s": 76.6,
+              "to_stage": "return",
+              "eligible_anchors": 2,
+              "new_stage_prediction_count": 0,
+              "ambiguous": false,
+              "detected": false,
+              "missed": true,
+              "first_warning_timestamp_s": null,
+              "lead_time_s": null
+            },
+            {
+              "boundary_frame": 2474,
+              "boundary_timestamp_s": 82.46666666666667,
+              "to_stage": "adjust",
+              "eligible_anchors": 2,
+              "new_stage_prediction_count": 2,
+              "ambiguous": false,
+              "detected": true,
+              "missed": false,
+              "first_warning_timestamp_s": 81.5,
+              "lead_time_s": 0.9666666666666686
+            },
+            {
+              "boundary_frame": 3249,
+              "boundary_timestamp_s": 108.3,
+              "to_stage": "pickup",
+              "eligible_anchors": 2,
+              "new_stage_prediction_count": 0,
+              "ambiguous": false,
+              "detected": false,
+              "missed": true,
+              "first_warning_timestamp_s": null,
+              "lead_time_s": null
+            },
+            {
+              "boundary_frame": 3582,
+              "boundary_timestamp_s": 119.4,
+              "to_stage": "harvest",
+              "eligible_anchors": 2,
+              "new_stage_prediction_count": 0,
+              "ambiguous": false,
+              "detected": false,
+              "missed": true,
+              "first_warning_timestamp_s": null,
+              "lead_time_s": null
+            },
+            {
+              "boundary_frame": 5097,
+              "boundary_timestamp_s": 169.9,
+              "to_stage": "return",
+              "eligible_anchors": 2,
+              "new_stage_prediction_count": 0,
+              "ambiguous": false,
+              "detected": false,
+              "missed": true,
+              "first_warning_timestamp_s": null,
+              "lead_time_s": null
+            }
+          ],
+          "ambiguous_alert_anchors": 0,
+          "out_of_window_false_alarm_count": 11,
+          "out_of_window_false_alarm_duration_s": 11.5,
+          "out_of_window_false_alarms_per_minute": 3.793103448275862,
+          "false_alarm_intervals": [
+            {
+              "start_frame": 30,
+              "end_frame_exclusive": 45,
+              "start_timestamp_s": 1.0,
+              "duration_s": 0.5,
+              "predicted_stage": "adjust",
+              "anchors": 1
+            },
+            {
+              "start_frame": 315,
+              "end_frame_exclusive": 330,
+              "start_timestamp_s": 10.5,
+              "duration_s": 0.5,
+              "predicted_stage": "pickup",
+              "anchors": 1
+            },
+            {
+              "start_frame": 330,
+              "end_frame_exclusive": 345,
+              "start_timestamp_s": 11.0,
+              "duration_s": 0.5,
+              "predicted_stage": "return",
+              "anchors": 1
+            },
+            {
+              "start_frame": 2310,
+              "end_frame_exclusive": 2325,
+              "start_timestamp_s": 77.0,
+              "duration_s": 0.5,
+              "predicted_stage": "harvest",
+              "anchors": 1
+            },
+            {
+              "start_frame": 2355,
+              "end_frame_exclusive": 2370,
+              "start_timestamp_s": 78.5,
+              "duration_s": 0.5,
+              "predicted_stage": "adjust",
+              "anchors": 1
+            },
+            {
+              "start_frame": 2370,
+              "end_frame_exclusive": 2385,
+              "start_timestamp_s": 79.0,
+              "duration_s": 0.5,
+              "predicted_stage": "pickup",
+              "anchors": 1
+            },
+            {
+              "start_frame": 2385,
+              "end_frame_exclusive": 2445,
+              "start_timestamp_s": 79.5,
+              "duration_s": 2.0,
+              "predicted_stage": "adjust",
+              "anchors": 4
+            },
+            {
+              "start_frame": 3255,
+              "end_frame_exclusive": 3405,
+              "start_timestamp_s": 108.5,
+              "duration_s": 5.0,
+              "predicted_stage": "adjust",
+              "anchors": 10
+            },
+            {
+              "start_frame": 3420,
+              "end_frame_exclusive": 3435,
+              "start_timestamp_s": 114.0,
+              "duration_s": 0.5,
+              "predicted_stage": "adjust",
+              "anchors": 1
+            },
+            {
+              "start_frame": 3585,
+              "end_frame_exclusive": 3600,
+              "start_timestamp_s": 119.5,
+              "duration_s": 0.5,
+              "predicted_stage": "pickup",
+              "anchors": 1
+            },
+            {
+              "start_frame": 5100,
+              "end_frame_exclusive": 5115,
+              "start_timestamp_s": 170.0,
+              "duration_s": 0.5,
+              "predicted_stage": "harvest",
+              "anchors": 1
+            }
+          ],
+          "valid_anchor_duration_s": 174.0,
+          "definition": "Alerts differ from oracle true current stage; supported only by a matching true transition within the fixed horizon. Multiple-boundary events are explicitly ambiguous; no online decision uses truth."
+        }
+      }
+    },
+    "per_source": {
+      "7d879f9d5d5a4be09beb55cf88591b0d": {
+        "samples": 348,
+        "accuracy": 0.9051724137931034,
+        "macro_f1": 0.7795840893685583,
+        "nll": 0.3734159393101091,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.7941176470588235,
+            "recall": 0.6585365853658537,
+            "f1": 0.72,
+            "support": 41
+          },
+          "harvest": {
+            "precision": 0.9742489270386266,
+            "recall": 0.9700854700854701,
+            "f1": 0.9721627408993576,
+            "support": 234
+          },
+          "return": {
+            "precision": 0.9,
+            "recall": 0.42857142857142855,
+            "f1": 0.5806451612903226,
+            "support": 21
+          },
+          "adjust": {
+            "precision": 0.7323943661971831,
+            "recall": 1.0,
+            "f1": 0.8455284552845529,
+            "support": 52
+          }
+        },
+        "confusion_true_rows": [
+          [
+            27,
+            0,
+            0,
+            14
+          ],
+          [
+            6,
+            227,
+            1,
+            0
+          ],
+          [
+            1,
+            6,
+            9,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            52
+          ]
+        ],
+        "return_adjust_confusions": 5,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0"
+      }
+    },
+    "persistence_baselines": {
+      "oracle_current_persistence": {
+        "samples": 348,
+        "accuracy": 0.9655172413793104,
+        "macro_f1": 0.9307539682539683,
+        "nll": null,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.9069767441860465,
+            "recall": 0.9512195121951219,
+            "f1": 0.9285714285714286,
+            "support": 41
+          },
+          "harvest": {
+            "precision": 0.9829059829059829,
+            "recall": 0.9829059829059829,
+            "f1": 0.9829059829059829,
+            "support": 234
+          },
+          "return": {
+            "precision": 0.8947368421052632,
+            "recall": 0.8095238095238095,
+            "f1": 0.85,
+            "support": 21
+          },
+          "adjust": {
+            "precision": 0.9615384615384616,
+            "recall": 0.9615384615384616,
+            "f1": 0.9615384615384616,
+            "support": 52
+          }
+        },
+        "confusion_true_rows": [
+          [
+            39,
+            0,
+            0,
+            2
+          ],
+          [
+            4,
+            230,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            17,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            50
+          ]
+        ],
+        "return_adjust_confusions": 2,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0",
+        "diagnostic_only": true,
+        "deployable": false,
+        "definition": "Oracle true current stage held as future prediction; hard labels, no probabilistic NLL"
+      },
+      "model_current_persistence": {
+        "samples": 348,
+        "accuracy": 0.9310344827586207,
+        "macro_f1": 0.8283202557396105,
+        "nll": 0.2826636847347627,
+        "label_order": [
+          "pickup",
+          "harvest",
+          "return",
+          "adjust"
+        ],
+        "per_class": {
+          "pickup": {
+            "precision": 0.7346938775510204,
+            "recall": 0.8780487804878049,
+            "f1": 0.8,
+            "support": 41
+          },
+          "harvest": {
+            "precision": 0.9826839826839827,
+            "recall": 0.9700854700854701,
+            "f1": 0.9763440860215054,
+            "support": 234
+          },
+          "return": {
+            "precision": 1.0,
+            "recall": 0.42857142857142855,
+            "f1": 0.6,
+            "support": 21
+          },
+          "adjust": {
+            "precision": 0.8813559322033898,
+            "recall": 1.0,
+            "f1": 0.9369369369369369,
+            "support": 52
+          }
+        },
+        "confusion_true_rows": [
+          [
+            36,
+            0,
+            0,
+            5
+          ],
+          [
+            7,
+            227,
+            0,
+            0
+          ],
+          [
+            6,
+            4,
+            9,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            52
+          ]
+        ],
+        "return_adjust_confusions": 2,
+        "missing_classes": [],
+        "macro_definition": "unweighted four-class mean, zero_division=0"
+      }
+    },
+    "forecast_error_duration_s": 16.5,
+    "macro_f1_gain_over_oracle_persistence": -0.15116987888541,
+    "macro_f1_gain_over_model_current_persistence": -0.04873616637105227,
+    "anticipation": {
+      "total_events": 6,
+      "ambiguous_events": 0,
+      "evaluable_events": 6,
+      "detected_events": 1,
+      "event_recall": 0.16666666666666666,
+      "missed_events": 5,
+      "lead_time_p50_s": 0.9666666666666686,
+      "lead_time_p95_s": 0.9666666666666686,
+      "out_of_window_false_alarm_count": 11,
+      "out_of_window_false_alarm_duration_s": 11.5,
+      "out_of_window_false_alarms_per_minute": 3.793103448275862,
+      "ambiguity_rule": "Events with another boundary less than horizon away are excluded from recall, retained explicitly"
+    },
+    "phase_duration_strata": {
+      "short_threshold_s": 1.5,
+      "short": {
+        "samples": 0,
+        "metrics": null
+      },
+      "long": {
+        "samples": 348,
+        "metrics": {
+          "samples": 348,
+          "accuracy": 0.9051724137931034,
+          "macro_f1": 0.7795840893685583,
+          "nll": 0.3734159393101091,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.7941176470588235,
+              "recall": 0.6585365853658537,
+              "f1": 0.72,
+              "support": 41
+            },
+            "harvest": {
+              "precision": 0.9742489270386266,
+              "recall": 0.9700854700854701,
+              "f1": 0.9721627408993576,
+              "support": 234
+            },
+            "return": {
+              "precision": 0.9,
+              "recall": 0.42857142857142855,
+              "f1": 0.5806451612903226,
+              "support": 21
+            },
+            "adjust": {
+              "precision": 0.7323943661971831,
+              "recall": 1.0,
+              "f1": 0.8455284552845529,
+              "support": 52
+            }
+          },
+          "confusion_true_rows": [
+            [
+              27,
+              0,
+              0,
+              14
+            ],
+            [
+              6,
+              227,
+              1,
+              0
+            ],
+            [
+              1,
+              6,
+              9,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              52
+            ]
+          ],
+          "return_adjust_confusions": 5,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      }
+    }
+  },
+  "total_anchors": 350,
+  "manifest_sha256": "46270abd142f32d125b4d62c17e3610e02f1fd0ca14348b965a2d3ddac44ff93",
+  "split_sha256": "ab960cd70310488f71ab8f8ff16f95838b638c705e42afb88512d68de07acf73",
+  "warnings": [
+    "Fewer than 10 source recordings; smoke-scale result only",
+    "TEST ONLY: source metadata hash mismatch allowed; see annotation.source_hashes"
+  ]
+}

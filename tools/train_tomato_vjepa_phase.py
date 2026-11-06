@@ -276,6 +276,12 @@ def extract(config, manifest):
         rows.append(dict(episode_id=e['episode_id'], path=str(path), performance=performance))
     ds.write_json(run / 'feature_index.json', dict(manifest_sha256=ds.digest(run / 'manifest.json'),
                                                  pretrained=provenance, episodes=rows))
+    try:
+        from .tomato_runtime import hardware_report
+    except ImportError:
+        from tomato_runtime import hardware_report
+    ds.write_json(run / 'extraction_runtime.json', dict(runtime=hardware_report(), encoder_loaded=encoder is not None,
+                                                       sampler_version=manifest['sampler_version'], pretrained=provenance))
     ds.status(run, 'features_complete', episodes=len(rows))
     return rows
 

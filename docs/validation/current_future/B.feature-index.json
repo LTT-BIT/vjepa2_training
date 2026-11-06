@@ -1,0 +1,32 @@
+{
+  "manifest_sha256": "810c4cc348c9a5667b1885cf19e1857ef75b9091bafba02b5a8838e1f32cda80",
+  "pretrained": {
+    "model_id": "facebook/vjepa2-vitl-fpc64-256",
+    "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+    "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+    "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+  },
+  "episodes": [
+    {
+      "episode_id": "749d77f6e61499fcf5d624e6",
+      "path": "/home/user/pi05/vjepa2_training/runs/tomato/experiments/shared_feature_cache/82b3cfa1070e6283fbcf2c7f1ef3a5132fb90d407bc1017255e29211e83f7fac.npz",
+      "performance": {
+        "reused": true
+      }
+    },
+    {
+      "episode_id": "e698ea3e9172db998088f74e",
+      "path": "/home/user/pi05/vjepa2_training/runs/tomato/experiments/shared_feature_cache/da4e3e6636fb963b8f608c27f9db278cc1d220dacb5631e12f43aae577a9d224.npz",
+      "performance": {
+        "reused": true
+      }
+    },
+    {
+      "episode_id": "9efc7aeb8216f65ff27d467e",
+      "path": "/home/user/pi05/vjepa2_training/runs/tomato/experiments/shared_feature_cache/1d7d137d7b324d3019ac721a046e3adfa2098e23acd9c9a0bd5df3b2e9b45184.npz",
+      "performance": {
+        "reused": true
+      }
+    }
+  ]
+}

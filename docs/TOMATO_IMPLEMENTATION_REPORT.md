@@ -1,5 +1,7 @@
 # 番茄四阶段分类器实施报告（2026-11-06，Asia/Shanghai）
 
+> **历史报告说明**：下文保留首次实施（截至 5dafbe2）的真实审计事实。基线 11d2b57 之后的三模式、P1-1～P1-4 修复、真实 Encoder/三条样本 smoke 及实际评估，见 [本轮三模式报告](TOMATO_CURRENT_FUTURE_JOINT_REPORT.md)。本轮未改变 11d2b57 的元数据豁免策略；目前已有真实训练和回放，不能将下文早期“缺权重/未训练”作为本轮状态。
+
 代码与合成测试已按四阶段实施；**真实番茄训练和模型评估未执行**。所有修改和提交仅在本地 `feat/tomato-four-stage`，没有 push、PR、数据发布或部署。分类固定为 pickup、harvest、return、adjust；没有实现 Agent、Prompt Manager、π0.5、RTC/T3、ROS 或真机控制。
 
 ## 基线和分阶段结果

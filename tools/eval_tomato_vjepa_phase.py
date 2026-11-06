@@ -41,70 +41,115 @@ def replay_schedule(length, anchors):
     return np.searchsorted(anchors, np.arange(length), side='right') - 1
 
 
-def render_replay(episode, rows, output):
-    import av
-    import cv2
-    output = Path(output)
-    output.parent.mkdir(parents=True, exist_ok=True)
+def frame_timeline(episode, rows, prediction=None):
+    prediction = ds.prediction_contract(prediction or dict(prediction_mode=rows[0].get('prediction_mode', 'current_only')))
+    names = ds.active_heads(prediction['prediction_mode'])
     anchors = np.array([r['frame_index'] for r in rows], dtype=np.int64)
     schedule = replay_schedule(episode['length'], anchors)
-    if list(anchors) != episode['anchors'] or any(r['last_input_frame'] > r['frame_index'] for r in rows):
+    if anchors.tolist() != episode['anchors'] or any(r['last_input_frame'] > r['frame_index'] for r in rows):
         raise ValueError('Replay prediction grid/future-input mismatch')
+    times = np.array([r['timestamp_s'] for r in rows])
+    current = metrics.temporal_report(episode, anchors, times, np.array([r['current_stage_id'] for r in rows]), prediction['stable_transition_k']) if 'current' in names else None
+    targets = ds.build_phase_targets(anchors, episode['annotation']['segments'], episode['length'], episode['fps'], prediction['future_horizon_s'])
+    future = metrics.future_anticipation(dict(episode=episode, times=times, **targets),
+                                        np.array([r['future_stage_id'] for r in rows]), prediction['future_horizon_s']) if 'future' in names else None
+    events = dict(current=current, future=future)
+    def generate():
+        for i, pos in enumerate(schedule):
+            row = rows[int(pos)]
+            true_id = ds.label_at_frame(episode['annotation']['segments'], i)
+            trace = dict(frame_index=i, timestamp_s=i / episode['fps'], current_true_stage=ds.LABELS[true_id],
+                         true_stage=ds.LABELS[true_id], prediction_mode=prediction['prediction_mode'],
+                         prediction_held=i != row['frame_index'], prediction_frame=row['frame_index'],
+                         prediction_timestamp_s=row['timestamp_s'], last_input_frame=row['last_input_frame'],
+                         current_first_correct_events=[], current_stable_confirmation_events=[], future_warning_events=[])
+            if current:
+                for event in current['transitions']:
+                    if event.get('first_correct_frame') == i: trace['current_first_correct_events'].append(event['frame_index'])
+                    if event['stable_confirmation_frame'] == i: trace['current_stable_confirmation_events'].append(event['frame_index'])
+            if future:
+                for event in future['events']:
+                    if event['first_warning_timestamp_s'] is not None and i == row['frame_index'] and abs(event['first_warning_timestamp_s'] - row['timestamp_s']) < 1e-7:
+                        trace['future_warning_events'].append(dict(boundary_frame=event['boundary_frame'], lead_time_s=event['lead_time_s']))
+            for name in names:
+                trace[name + '_stage'] = row[name + '_stage']
+                trace[name + '_probabilities'] = row[name + '_probabilities']
+            if 'current' in names:
+                trace['stage'] = row['current_stage']
+                trace['current_wrong'] = row['current_stage'] != trace['current_true_stage']
+            if 'future' in names:
+                # A HELD forecast keeps its ORIGINAL anchor+delta target, not frame_i+delta.
+                trace.update(future_target_frame=row['future_target_frame'], future_target_time_s=row['future_target_time_s'],
+                             requested_future_time_s=row['timestamp_s'] + prediction['future_horizon_s'],
+                             future_valid=row['future_valid'], future_true_stage=row['future_true_stage'],
+                             future_target_status='AVAILABLE' if row['future_valid'] else 'TARGET_UNAVAILABLE')
+            yield trace
+    return generate(), events
+
+
+def render_replay(episode, rows, output, prediction=None):
+    import av
+    import cv2
+    prediction = ds.prediction_contract(prediction or dict(prediction_mode=rows[0].get('prediction_mode', 'current_only')))
+    mode = prediction['prediction_mode']; names = ds.active_heads(mode)
+    timeline, events = frame_timeline(episode, rows, prediction)
+    output = Path(output); output.parent.mkdir(parents=True, exist_ok=True)
     tmp = output.with_name(output.stem + '.tmp.mp4')
-    w, h = 768, 476
+    w, h = 768, (476 if mode == 'current_only' else 520 if mode == 'future_only' else 680)
     writer = cv2.VideoWriter(str(tmp), cv2.VideoWriter_fourcc(*'mp4v'), episode['fps'], (w, h))
-    if not writer.isOpened():
-        raise RuntimeError('Replay VideoWriter unavailable; model evaluation remains separately saved')
+    if not writer.isOpened(): raise RuntimeError('Replay VideoWriter unavailable; numeric evaluation retained')
     traces = output.with_suffix('.frames.jsonl')
+    ds.write_json(output.with_suffix('.events.json'), events)
+    def text(image, line, y, color=(230, 230, 230), scale=.48):
+        cv2.putText(image, line, (10, y), cv2.FONT_HERSHEY_SIMPLEX, scale, color, 1)
     try:
         with ExitStack() as stack, traces.open('w') as trace:
             containers = [stack.enter_context(av.open(p)) for p in episode['videos']]
             decoders = [iter(c.decode(video=0)) for c in containers]
-            for i, pos in enumerate(schedule):
-                row = rows[int(pos)]
+            for item in timeline:
+                i = item['frame_index']
                 image = np.full((h, w, 3), 24, dtype=np.uint8)
                 for camera, decoder in enumerate(decoders):
-                    try:
-                        frame = next(decoder)
-                    except StopIteration as exc:
-                        raise ValueError('Replay video ended early') from exc
+                    try: frame = next(decoder)
+                    except StopIteration as exc: raise ValueError('Replay video ended early') from exc
                     tile = cv2.resize(frame.to_ndarray(format='bgr24'), (256, 256), interpolation=cv2.INTER_AREA)
                     image[:256, camera * 256:(camera + 1) * 256] = tile
                     cv2.putText(image, ds.CAMERAS[camera], (camera * 256 + 8, 24), cv2.FONT_HERSHEY_SIMPLEX, .6, (255, 255, 255), 2)
-                true_id = ds.label_at_frame(episode['annotation']['segments'], i)
-                held = i != row['frame_index']
-                lines = [f'Held-out {episode["episode_index"]} | frame {i} | {i / episode["fps"]:.3f}s',
-                         f'True: {ds.LABELS[true_id]} | predicted: {row["stage"]}',
-                         f'{"HELD" if held else "NEW"} prediction from frame {row["frame_index"]}; last input {row["last_input_frame"]}']
-                for k, line in enumerate(lines):
-                    cv2.putText(image, line, (10, 282 + k * 26), cv2.FONT_HERSHEY_SIMPLEX, .55, (230, 230, 230), 1)
-                for k, label in enumerate(ds.LABELS):
-                    y = 362 + k * 26
-                    p = row['probabilities'][label]
-                    cv2.putText(image, f'{label:8s} {p:.3f}', (10, y), cv2.FONT_HERSHEY_SIMPLEX, .55, (220, 220, 220), 1)
-                    cv2.rectangle(image, (205, y - 12), (205 + int(p * 540), y), (200, 140, 60), -1)
+                text(image, f'Held-out {episode["episode_index"]} | {mode} | frame {i} | t={item["timestamp_s"]:.3f}s', 280)
+                text(image, f'True current: {item["current_true_stage"]}', 304)
+                text(image, f'{"HELD" if item["prediction_held"] else "NEW"} from anchor {item["prediction_frame"]} ({item["prediction_timestamp_s"]:.3f}s); last input {item["last_input_frame"]}', 328)
+                for name in names:
+                    if name == 'current':
+                        top, bars = 350, 374 if mode == 'joint' else 362
+                        text(image, f'CURRENT at anchor: {item["current_stage"]}', top, (130, 240, 160))
+                    else:
+                        top = 482 if mode == 'joint' else 350
+                        bars = top + 50
+                        text(image, f'FUTURE: predicted stage at anchor + {prediction["future_horizon_s"]:.3f}s = {item["future_stage"]}', top, (240, 200, 100))
+                        target = f't={item["future_target_time_s"]:.3f}s true={item["future_true_stage"]}' if item['future_valid'] else 'TARGET_UNAVAILABLE (not scored)'
+                        text(image, 'Forecast target: ' + target, top + 24, (240, 200, 100))
+                    for k, label in enumerate(ds.LABELS):
+                        y = bars + k * 26; prob = item[name + '_probabilities'][label]
+                        text(image, f'{label:8s} {prob:.3f}', y)
+                        cv2.rectangle(image, (205, y - 12), (205 + int(prob * 540), y), (200, 140, 60), -1)
+                if mode == 'joint':
+                    text(image, f'Stable K={prediction["stable_transition_k"]}: evaluation only; raw argmax/probabilities shown', 654, scale=.45)
                 writer.write(image)
                 if i in (0, episode['length'] // 2, episode['length'] - 1):
-                    if not cv2.imwrite(str(output.with_name(output.stem + f'.frame_{i}.png')), image):
-                        raise RuntimeError('Replay preview save failed')
-                trace.write(json.dumps(dict(frame_index=i, timestamp_s=i / episode['fps'],
-                                            true_stage=ds.LABELS[true_id], stage=row['stage'],
-                                            prediction_held=held, prediction_frame=row['frame_index'],
-                                            last_input_frame=row['last_input_frame'])) + '\n')
+                    if not cv2.imwrite(str(output.with_name(output.stem + f'.frame_{i}.png')), image): raise RuntimeError('Preview save failed')
+                trace.write(json.dumps(item, allow_nan=False) + '\n')
             for decoder in decoders:
-                if next(decoder, None) is not None:
-                    raise ValueError('Replay video has unexpected extra frames')
+                if next(decoder, None) is not None: raise ValueError('Replay video has unexpected extra frames')
         writer.release()
-        with av.open(str(tmp)) as container:
-            count = sum(1 for _ in container.decode(video=0))
-        if count != episode['length']:
-            raise ValueError('Replay output frame count mismatch')
+        with av.open(str(tmp)) as container: count = sum(1 for _ in container.decode(video=0))
+        if count != episode['length']: raise ValueError('Replay output frame count mismatch')
         tmp.replace(output)
     except Exception:
-        writer.release(); tmp.unlink(missing_ok=True)
-        raise
-    return dict(path=str(output), frames=count, fps=episode['fps'], probabilities='raw four-class softmax',
-                stale_predictions='explicit HELD/NEW flag', cameras=list(ds.CAMERAS))
+        writer.release(); tmp.unlink(missing_ok=True); raise
+    return dict(path=str(output), frames=count, fps=episode['fps'], prediction_mode=mode,
+                future_horizon_s=prediction['future_horizon_s'], probabilities='raw active-head softmax',
+                stale_predictions='HELD keeps original anchor and future target', cameras=list(ds.CAMERAS),
+                timeline_path=str(traces), events_path=str(output.with_suffix('.events.json')))
 
 
 def benchmark(config, episode, saved, head, windows=20):
@@ -123,13 +168,15 @@ def benchmark(config, episode, saved, head, windows=20):
     if device.type == 'cuda':
         torch.cuda.reset_peak_memory_stats(device)
     durations = []
+    if encoder.training or any(p.requires_grad for p in encoder.parameters()):
+        raise ValueError('Benchmark encoder is not frozen/eval')
     for k, ids in enumerate(histories):
         if device.type == 'cuda':
             torch.cuda.synchronize(device)
         start = time.perf_counter()
         rgb = np.stack([[np.stack([v[int(j)] for j in ids]) for v in views]])
         x = model.fuse_features(encoder, rgb, q[ids][None])
-        model.predict_heads(head, x, saved['mean'], saved['std'])
+        output = model.predict_heads(head, x, saved['mean'], saved['std'])
         if device.type == 'cuda':
             torch.cuda.synchronize(device)
         if k >= 2:
@@ -137,7 +184,14 @@ def benchmark(config, episode, saved, head, windows=20):
     # Same selected source frames for all three cameras; sum actual RGB/resize work by frame.
     three_view_prep = np.array(prep_ms).reshape(3, -1).sum(axis=0)
     return dict(measured=True, encoder_and_head_mean_ms=float(np.mean(durations)),
+                encoder_and_head_p50_ms=float(np.percentile(durations, 50)),
                 encoder_and_head_p95_ms=float(np.percentile(durations, 95)),
+                encoder_and_head_p99_ms=float(np.percentile(durations, 99)),
+                prediction_mode=saved['prediction_mode'], future_horizon_s=saved['future_horizon_s'],
+                fused_shape=list(x.shape), visual_dimension=3072, measured_joint_history_dimension=16 * q.shape[1],
+                output_shapes={name: list(z.shape) if z is not None else None for name, z in output.items()},
+                encoder_frozen=True, encoder_dtype=str(next(encoder.parameters()).dtype),
+                first_input_indices=histories[0].tolist(), pretrained=provenance,
                 three_view_rgb_resize_mean_ms=float(three_view_prep.mean()),
                 three_view_rgb_resize_p95_ms=float(np.percentile(three_view_prep, 95)),
                 warmup_windows=2, measured_windows=len(durations), device=str(device),
@@ -181,7 +235,7 @@ def evaluate(config, episode_id=None, video=True, measure=True, windows=20, full
     errors = []
     if video:
         try:
-            ds.write_json(out / 'replay.json', render_replay(e, selected_rows, out / f'{e["episode_id"]}.mp4'))
+            ds.write_json(out / 'replay.json', render_replay(e, selected_rows, out / f'{e["episode_id"]}.mp4', prediction))
         except Exception as exc:
             errors.append(dict(component='replay', error=f'{type(exc).__name__}: {exc}'))
     latency = dict(measured=False, reason='Explicitly skipped')
@@ -211,7 +265,7 @@ def summarize_cv(root):
         if not cv['folds'] or cv['folds'] != len(paths):
             raise ValueError('Incomplete CV fold collection')
         ids = {e['source_recording_id'] for e in m['episodes']}
-        identity = (m['contract'], sorted((e['episode_id'], e['annotation']['sha256']) for e in m['episodes']))
+        identity = (m['contract'], m.get('prediction'), sorted((e['episode_id'], e['annotation']['sha256']) for e in m['episodes']))
         if reference is not None and identity != reference:
             raise ValueError('CV folds have different inputs/labels/configuration')
         reference = identity
@@ -224,10 +278,14 @@ def summarize_cv(root):
         values.append(dict(fold_index=cv['fold_index'], path=str(path), test=ds.read_json(path)['splits']['test']))
     if len(tested) != len(set(tested)) or set(tested) != expected or len({v['fold_index'] for v in values}) != len(paths):
         raise ValueError('CV test source coverage/leakage/fold duplication')
-    summary = dict(folds=values, aggregation='unweighted across grouped folds; std ddof=0',
-                   metrics={k: dict(mean=float(np.mean([v['test'][k] for v in values])),
-                                    std=float(np.std([v['test'][k] for v in values])))
-                            for k in ('accuracy', 'macro_f1', 'nll')})
+    mode = values[0]['test'].get('prediction_mode', 'current_only')
+    heads = {}
+    for name in ds.active_heads(mode):
+        reports = [v['test'].get(name, v['test']) for v in values]
+        heads[name] = {k: dict(mean=float(np.mean([r[k] for r in reports])),
+                              std=float(np.std([r[k] for r in reports]))) for k in ('accuracy', 'macro_f1', 'nll')}
+    summary = dict(folds=values, prediction_mode=mode, heads=heads, aggregation='unweighted across grouped folds; std ddof=0')
+    if mode == 'current_only': summary['metrics'] = heads['current']
     ds.ensure_output_outside_sources(root, protected_roots, annotation_paths)
     ds.write_json(Path(root) / 'cv_summary.json', summary)
     return summary

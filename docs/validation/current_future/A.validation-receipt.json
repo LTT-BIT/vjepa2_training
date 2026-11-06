@@ -1,0 +1,13 @@
+{
+  "format_version": 1,
+  "validator": "tomato-full-source-media-v2",
+  "manifest_sha256": "5411cc310487941c80954c96e92ef2c55b3c0f8436f45fefae52868ab2127755",
+  "split_file_sha256": "ab960cd70310488f71ab8f8ff16f95838b638c705e42afb88512d68de07acf73",
+  "sampler_version": "uniform-integer-causal-v2",
+  "full_media_validation": true,
+  "episode_fingerprints": {
+    "749d77f6e61499fcf5d624e6": "e01e57db4996ef45a1180d6699bb3ab1efa63fe086e9a9321bede325666a658b",
+    "e698ea3e9172db998088f74e": "02c71036b237a9a4af375d2e649d9a796584f69b58152c34f2e778214d1302bd",
+    "9efc7aeb8216f65ff27d467e": "af31de8dac660199d4abf16869ac9eb10e879768a861575c29a2b6348339bae0"
+  }
+}
