@@ -55,10 +55,10 @@ def make_episode(root, index=0, source=None, length=120):
     return e, ann, names
 
 
-def make_config(tmp_path, count=3):
+def make_config(tmp_path, count=3, length=120):
     rows = []
     for i in range(count):
-        e, ann, names = make_episode(tmp_path / f'data-{i}', i)
+        e, ann, names = make_episode(tmp_path / f'data-{i}', i, length=length)
         rows.append(dict(dataset_root=e['dataset_root'], episode_index=i,
                          coarse_annotation=str(ann), variant='normal'))
     index = tmp_path / 'index.json'

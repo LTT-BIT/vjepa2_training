@@ -37,6 +37,11 @@ def fingerprint(value):
                                      separators=(',', ':')).encode()).hexdigest()
 
 
+def json_file_sha256(value):
+    """SHA of the exact bytes emitted by write_json, used before locking split.json."""
+    return hashlib.sha256((json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + '\n').encode()).hexdigest()
+
+
 def read_json(path):
     return json.loads(Path(path).read_text())
 

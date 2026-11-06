@@ -110,14 +110,14 @@ def render_replay(episode, rows, output):
 def benchmark(config, episode, saved, head, windows=20):
     if windows < 2:
         raise ValueError('benchmark windows must be >= 2')
-    encoder, provenance = model.load_encoder(config['pretrained_dir'], config['device'])
+    encoder, provenance = model.load_encoder(config['pretrained_dir'], config['device'], config['seed'])
     if provenance != saved['pretrained']:
         raise ValueError('Benchmark encoder/checkpoint provenance mismatch')
     times, q = ds.read_state(episode, saved['joint_names'], saved['contract']['joint_mode'])
     anchors = ds.iter_phase_anchors(times)[:windows + 2]
     if len(anchors) < 4:
         raise ValueError('At least four anchor windows required for latency measurements')
-    histories = [ds.sample_causal_indices(times, int(i)) for i in anchors]
+    histories = [ds.sample_causal_indices(times, int(i), sampler_version=saved['sampler_version']) for i in anchors]
     views, prep_ms = model.decode_selected(episode, np.unique(histories))
     device = next(encoder.parameters()).device
     if device.type == 'cuda':
@@ -129,7 +129,7 @@ def benchmark(config, episode, saved, head, windows=20):
         start = time.perf_counter()
         rgb = np.stack([[np.stack([v[int(j)] for j in ids]) for v in views]])
         x = model.fuse_features(encoder, rgb, q[ids][None])
-        model.predict_logits(head, x, saved['mean'], saved['std'])
+        model.predict_heads(head, x, saved['mean'], saved['std'])
         if device.type == 'cuda':
             torch.cuda.synchronize(device)
         if k >= 2:
@@ -147,28 +147,33 @@ def benchmark(config, episode, saved, head, windows=20):
                 scope='Offline synchronized three-view 16-frame encoder + fusion + head. RGB conversion/resize measured separately per three-view source frame; excludes decode/I/O, ROS, other workloads. Not robot latency.')
 
 
-def evaluate(config, episode_id=None, video=True, measure=True, windows=20):
+def evaluate(config, episode_id=None, video=True, measure=True, windows=20, full_revalidate=False):
     config = dict(config)
-    generated = Path(config['output_dir']) / 'annotation_index.json'
-    manifest_path = Path(config['output_dir']) / 'manifest.json'
-    if generated.is_file() and manifest_path.is_file():
-        if ds.digest(generated) == ds.read_json(manifest_path)['annotation_index_sha256']:
-            config['annotation_index'] = str(generated)
-    manifest = trainer.load_locked_manifest(config)
+    trainer.recover_run_index(config)
+    manifest = trainer.load_locked_manifest(config, full_revalidate)
+    trainer.initialize_runtime(config)
+    prediction = ds.prediction_contract(manifest.get('prediction', {}))
     e = held_out_episode(manifest, episode_id)
     run = Path(config['output_dir'])
     out = run / 'offline_eval'
     out.mkdir(parents=True, exist_ok=True)
-    saved, head = model.load_checkpoint(run / 'best_head.pt', ds.digest(run / 'manifest.json'), config['device'])
+    saved, head = model.load_checkpoint(run / 'best_head.pt', ds.digest(run / 'manifest.json'), config['device'],
+                                        split_sha256=manifest.get('split_sha256'))
+    if saved['prediction'] != prediction or saved['sampler_version'] != manifest['sampler_version']:
+        raise ValueError('Checkpoint/manifest prediction or sampler contract mismatch')
     entries = trainer.load_training_arrays(config, manifest)
     test = entries['test']
     x = np.concatenate([r['features'] for r in test])
-    logits = model.predict_logits(head, x, saved['mean'], saved['std'])
-    report = metrics.evaluate_entries(test, logits)
+    logits = model.predict_heads(head, x, saved['mean'], saved['std'])
+    report = metrics.evaluate_heads(test, logits, prediction)
+    report.update(manifest_sha256=ds.digest(run / 'manifest.json'), split_sha256=manifest.get('split_sha256'),
+                  warnings=manifest['warnings'])
     rows, offset = [], 0
     for r in test:
         n = len(r['labels'])
-        rows += trainer.prediction_rows(r, metrics.probabilities(logits[offset:offset + n]), 'test')
+        part = {name: logits[name + '_logits'][offset:offset + n] if logits[name + '_logits'] is not None else None for name in ('current', 'future')}
+        probs = {name: metrics.probabilities(z) if z is not None else None for name, z in part.items()}
+        rows += trainer.prediction_rows(r, probs, 'test', prediction, part)
         offset += n
     trainer.write_predictions(out, rows)
     ds.write_json(out / 'evaluation.json', report)
@@ -233,6 +238,9 @@ def main(argv=None):
     p.add_argument('--config')
     p.add_argument('--episode-id')
     p.add_argument('--device', choices=['cpu', 'cuda'])
+    p.add_argument('--output-dir')
+    p.add_argument('--full-revalidate', action='store_true')
+    trainer.add_prediction_arguments(p)
     p.add_argument('--no-video', action='store_true')
     p.add_argument('--skip-benchmark', action='store_true')
     p.add_argument('--benchmark-windows', type=int, default=20)
@@ -246,6 +254,8 @@ def main(argv=None):
     if not a.config:
         p.error('--config required')
     cfg = ds.load_config(a.config)
+    trainer.apply_prediction_overrides(cfg, a)
+    if a.output_dir: cfg['output_dir'] = str(Path(a.output_dir).expanduser().resolve())
     if a.device:
         cfg['device'] = a.device
     if a.cv_folds is not None or a.cv_fold_index is not None:
@@ -253,7 +263,7 @@ def main(argv=None):
             p.error('Provide both CV flags')
         cfg['cv_folds'], cfg['cv_fold_index'] = a.cv_folds, a.cv_fold_index
         cfg['output_dir'] = str(Path(cfg['output_dir']) / f'cv{a.cv_folds}' / f'fold_{a.cv_fold_index}')
-    _, errors = evaluate(cfg, a.episode_id, not a.no_video, not a.skip_benchmark, a.benchmark_windows)
+    _, errors = evaluate(cfg, a.episode_id, not a.no_video, not a.skip_benchmark, a.benchmark_windows, a.full_revalidate)
     return 2 if errors else 0
 
 

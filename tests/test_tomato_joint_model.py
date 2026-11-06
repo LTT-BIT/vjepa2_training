@@ -26,7 +26,7 @@ def test_modes_parameter_shapes_roundtrip_and_inactive_heads(tmp_path, mode, par
     mu, sigma = np.zeros(3328, np.float32), np.ones(3328, np.float32)
     path = tmp_path / 'new.pt'
     model.save_checkpoint(path, head, mu, sigma, manifest, 'manifest', 1, {})
-    saved, loaded = model.load_checkpoint(path, 'manifest', split_sha256=ds.fingerprint(manifest['splits']))
+    saved, loaded = model.load_checkpoint(path, 'manifest', split_sha256=manifest['split_sha256'])
     assert saved['format_version'] == 2 and saved['prediction_mode'] == mode
     before, after = model.predict_heads(head, x, mu, sigma), model.predict_heads(loaded, x, mu, sigma)
     for key in before:

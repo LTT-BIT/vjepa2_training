@@ -113,3 +113,35 @@ def evaluate_entries(entries, logits):
                                 false_switches=false_switches, false_switches_per_minute=false_switches / (duration / 60),
                                 prediction_hz=2, time_resolution_s=.5))
     return result
+
+
+def evaluate_heads(entries, logits, config):
+    try:
+        from .tomato_dataset import prediction_contract, active_heads
+    except ImportError:
+        from tomato_dataset import prediction_contract, active_heads
+    prediction = prediction_contract(config)
+    report = dict(**prediction, current=None, future=None,
+                  total_anchors=sum(len(r['anchors']) for r in entries))
+    for name in active_heads(prediction['prediction_mode']):
+        z = logits[name + '_logits']
+        labels = np.concatenate([r[name + '_labels'] for r in entries])
+        mask = np.ones(len(labels), dtype=bool) if name == 'current' else np.concatenate([r['future_valid_mask'] for r in entries])
+        summary = scores(z[mask], labels[mask])
+        summary.update(valid_samples=int(mask.sum()), masked_count=int((~mask).sum()), valid_ratio=float(mask.mean()))
+        if name == 'current':
+            summary = {**evaluate_entries(entries, z), **summary}
+        else:
+            per_episode, sources, offset = {}, {}, 0
+            for r in entries:
+                n = len(r['anchors']); keep = r['future_valid_mask']; part = z[offset:offset + n][keep]; y = r['future_labels'][keep]
+                e = r['episode']
+                per_episode[e['episode_id']] = dict(metrics=scores(part, y) if len(y) else None,
+                                                    masked_count=int((~keep).sum()), source_recording_id=e['source_recording_id'])
+                if len(y): sources.setdefault(e['source_recording_id'], []).append((part, y))
+                offset += n
+            summary.update(per_episode=per_episode, per_source={g: scores(np.concatenate([p[0] for p in a]), np.concatenate([p[1] for p in a])) for g, a in sources.items()})
+        report[name] = summary
+    if prediction['prediction_mode'] == 'current_only':
+        report.update(report['current'])  # Existing current-only report readers retain their fields.
+    return report

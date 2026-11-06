@@ -17,7 +17,8 @@ def initialize_runtime(config):
     os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG', ':4096:8')
     import torch
     initialized = torch.cuda.is_initialized()
-    if initialized and (_STATE is None or _STATE['pid'] != os.getpid()):
+    if initialized and (_STATE is None or _STATE['pid'] != os.getpid()
+                        or _STATE['cublas_workspace_config'] != os.environ['CUBLAS_WORKSPACE_CONFIG']):
         raise RuntimeError('CUDA was initialized before tomato deterministic setup; launch a fresh process')
     seed = config.get('seed', 42)
     random.seed(seed)
