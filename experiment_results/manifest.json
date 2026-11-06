@@ -1,0 +1,4038 @@
+{
+  "schema_version": 1,
+  "dataset": "/home/descfly/Convert_data/outputs/lemon_move_wrist_reset_20261008",
+  "annotations": "/home/descfly/Downloads/phase_annotations_v3_clean.json",
+  "annotations_sha256": "a6db83c33f02c9054f75adcc7dbfca755eafbc02d34fc81c73e61a074ea06f29",
+  "model_id": "facebook/vjepa2-vitl-fpc64-256",
+  "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+  "clip_frames": 16,
+  "image_size": 256,
+  "stride_frames": 5,
+  "joint_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "cameras": [
+    "cam0",
+    "cam1",
+    "cam2"
+  ],
+  "joints": [
+    "left_shoulder_pan_joint.position",
+    "left_shoulder_lift_joint.position",
+    "left_elbow_joint.position",
+    "left_wrist_1_joint.position",
+    "left_wrist_2_joint.position",
+    "left_wrist_3_joint.position",
+    "right_shoulder_pan_joint.position",
+    "right_shoulder_lift_joint.position",
+    "right_elbow_joint.position",
+    "right_wrist_1_joint.position",
+    "right_wrist_2_joint.position",
+    "right_wrist_3_joint.position"
+  ],
+  "labels": [
+    "establish_left_support",
+    "align_scoop",
+    "scoop_lemon",
+    "move_to_cup",
+    "pour",
+    "task_complete"
+  ],
+  "boundaries": [
+    "left_support_ready_s",
+    "scoop_ready_s",
+    "lemon_supported_s",
+    "pour_ready_s",
+    "task_complete_s"
+  ],
+  "episodes": [
+    {
+      "episode": 0,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode1",
+      "frames": 279,
+      "video_sha256": [
+        "00e9456233dbc042423307570f91d30c2aba27fce9bd27a7b6a9a11fcf62c3a7",
+        "e96534c3784690b8f0fa5997919480257eda265ca582ecef2e1bc2a937ddc024",
+        "cebfd6af3afa04b6b0c69d8fbc9f86ee1540e376bc7b9c970d297ad089a12663"
+      ],
+      "boundaries": [
+        7.5,
+        13.5,
+        18.5,
+        21.5,
+        26.5
+      ],
+      "parquet_sha256": "ab8dcc55ee89e5101c0a22b034959d237aa5cb77003e9ea88b30090898c273b2",
+      "split": "train"
+    },
+    {
+      "episode": 1,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode2",
+      "frames": 697,
+      "video_sha256": [
+        "161cc7d661912e69c85ae8f99cd4ab72a17694652cc20eb4f8e59c3e63a94b2e",
+        "3935aa6bafc8edd122368217e65a6f84df319a2282f8fe7a3d60699ed455879d",
+        "31fda718a2064788ccf279928abf4efecebb71ae29ccf8f9661e3af9f24d8b9f"
+      ],
+      "boundaries": [
+        38.2,
+        38.3,
+        46.3,
+        52.3,
+        64.3
+      ],
+      "parquet_sha256": "8f0f5eea12a334556c535f62f99a92cf5a3ec0e96fb4628022b7844e9a3e9750",
+      "split": "train"
+    },
+    {
+      "episode": 2,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode3",
+      "frames": 521,
+      "video_sha256": [
+        "32ee7910b182c170c2ca0741b3501a7641784bd8134edcbe44c0cfb86afd3a8c",
+        "276f9b8790d88d5ff15384f433ee7771ac5c717e4b439270b99a90e462bc758a",
+        "2c3f410865d8e1044370e2dedb50b69d822b1840a20180932f02ec7107a451f4"
+      ],
+      "boundaries": [
+        12.4,
+        25.4,
+        34.4,
+        40.4,
+        47.4
+      ],
+      "parquet_sha256": "add3eb1ba7a22bfb1e9c57edce26f3faeb99d43cbe6de52d4f50e36c94794f87",
+      "split": "train"
+    },
+    {
+      "episode": 3,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode4",
+      "frames": 547,
+      "video_sha256": [
+        "5b3d0e88e962fc92816a3b22f260c0fcdbf6041433b1507f9f6c907be8cf0b72",
+        "5284512a8f00b4d8c5778dfe237166da664d06490f396f85e47b5b62a8a2b17e",
+        "a287cecb641bb4bf117241d81f5ec775d37705d411ba73dcddf64356a9ba170c"
+      ],
+      "boundaries": [
+        11.7,
+        25.7,
+        35.7,
+        42.7,
+        48.7
+      ],
+      "parquet_sha256": "a1ad04154c7ff5936a2a5fbaa5da94b4df127f1054cd1e03168ca3a6f2a49c74",
+      "split": "train"
+    },
+    {
+      "episode": 4,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode5",
+      "frames": 499,
+      "video_sha256": [
+        "b2afc10c374950967158bd3bb30ab8bc452acf9c0e5bdb4c5152452bf326012e",
+        "b94d7b655d0e8ec15648810310dbf8ad19acf7c2bbdead163477fea67ba4ba3f",
+        "f21b414bbd7b690e12e7d5139c14f68412c1545c3b8f36ae5c6d1962c9f876f1"
+      ],
+      "boundaries": [
+        9.7,
+        22.7,
+        33.7,
+        38.7,
+        43.7
+      ],
+      "parquet_sha256": "6373affcf67ba20cd082b0ef06569df3cb6127fbdf7346c3ac8ca9e776364c63",
+      "split": "train"
+    },
+    {
+      "episode": 5,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode6",
+      "frames": 507,
+      "video_sha256": [
+        "efb5383d4ac659acdbe79d4b7729d50a7199304ef5fd7517253db68cf765b870",
+        "99873298e0559919d4a356d888a6ec3c82e68770466e42d728c934dd6c800a23",
+        "1649cd1d088e04289fe134796e8475d081f71fb7df14256a83b44ab9c5c38db1"
+      ],
+      "boundaries": [
+        6.5,
+        23.8,
+        32.8,
+        36.8,
+        43.8
+      ],
+      "parquet_sha256": "5dfdd8e041b9df474821112aa99b221c9556d5ba9249bdeedc8cac74a186edae",
+      "split": "train"
+    },
+    {
+      "episode": 6,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode7",
+      "frames": 538,
+      "video_sha256": [
+        "af3c1a7b1a1cacb30521f9bf32d6d988e4cebcaa21a3cedf4a065f6281e98da0",
+        "7437a2656a60b2ca528ac1f553b70267b8ceb2b84be841eae15aef911c01151d",
+        "d5311989bd74446c2420c7a7c3df51774bf10a97acb544c98da5c53e2e368e3a"
+      ],
+      "boundaries": [
+        7.6,
+        24.8,
+        34.8,
+        39.6,
+        45.9
+      ],
+      "parquet_sha256": "636e569b5c6e2ec44ec38a9ddca2aa5c268f268fa4495a7b503a8bf6b60674f9",
+      "split": "train"
+    },
+    {
+      "episode": 7,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode8",
+      "frames": 698,
+      "video_sha256": [
+        "12222ef10d4a9aa290fa68f3fbada3570f7e09d8a4735b55e2059070899028a9",
+        "b3370b3a13fc9d4075a8a56773b62d3d4d028a9719055b0ca5add5d15dcc8c17",
+        "04a4a3484106c52138f03e02f12124005bb68f6f0663679d302a5628a7d82173"
+      ],
+      "boundaries": [
+        6.2,
+        33.4,
+        47.4,
+        57.4,
+        64.4
+      ],
+      "parquet_sha256": "d336e54e1f671091318556a4c0609f4808a51e785ddd43d8bf26a37a02844930",
+      "split": "train"
+    },
+    {
+      "episode": 8,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode9",
+      "frames": 513,
+      "video_sha256": [
+        "71cbbe160044111b5d21c8f9f83bb4418eafa1197b32b966a76ffe4196cf7009",
+        "df4fe8408315a828e4885378d94585bd0224a1721219daa8c63b74bb7c47bf9d",
+        "a0cffbb00f5276decc0ee0d966918f1eb08f3e4acb85fab3fde4062cec4524eb"
+      ],
+      "boundaries": [
+        5.3,
+        23.5,
+        34.5,
+        39.5,
+        44.9
+      ],
+      "parquet_sha256": "50f75a55bb7c90d74ec3481852ccc66021008700249ab8725d60bb76cbca20c4",
+      "split": "train"
+    },
+    {
+      "episode": 9,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode10",
+      "frames": 416,
+      "video_sha256": [
+        "1470576542adbabe944caa6a083eb6f27b1c821dfd38a0180df2c811429e49ef",
+        "f4c15c91825d064faa93cd2da72009ffa8f0c1739a3939d28d8207dfca482991",
+        "304cf50bca646ba5372c7d581926e8c9a65094a5bcef654c4f8131b26dcbc12a"
+      ],
+      "boundaries": [
+        3.2,
+        17.0,
+        25.3,
+        30.5,
+        35.5
+      ],
+      "parquet_sha256": "f0f6dd4c2f4b1b0882c9942c8b9c38df146fee60d623b4e117a018b7a2159ea5",
+      "split": "train"
+    },
+    {
+      "episode": 10,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode11",
+      "frames": 371,
+      "video_sha256": [
+        "7b559b1cbcc670ddd686466a64b4e4d0544fdc4cb1d6ec37c46356a910a403f5",
+        "b597286e3bde31d9859e6c572dc4e20f79c41f8a8e6a583e6cd115e216b5c11b",
+        "d8412c3a243ce4d4d1f9c8b30201b099fc6e26cbadfd448b6c2dcffe31ad2c8f"
+      ],
+      "boundaries": [
+        4.1,
+        16.9,
+        23.3,
+        27.9,
+        30.4
+      ],
+      "parquet_sha256": "61d2c983f353e61d5e8855b58906b1c67d46a8768a2fd33b92166d88083473b0",
+      "split": "train"
+    },
+    {
+      "episode": 11,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode12",
+      "frames": 576,
+      "video_sha256": [
+        "dd42d828c71370c8d249d556d4724f9adcfe67b85c1772aac534f645795c89a1",
+        "4415a1870e676facbb9c8205730cfc1664df85becd0b534a5803ba4c9622705e",
+        "a0927aba65f92368f8f9f979e531001af093758efa93e81e5bfec3ab7ae09162"
+      ],
+      "boundaries": [
+        4.5,
+        32.7,
+        43.5,
+        46.6,
+        50.8
+      ],
+      "parquet_sha256": "d59e2da2564d9ef9e5f1c62544e208adc56eec915bb35f7597eb677676746f8c",
+      "split": "train"
+    },
+    {
+      "episode": 12,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode13",
+      "frames": 494,
+      "video_sha256": [
+        "77c56ce68e60845fdbb9378581eb90d4655e4ec67e9bb5375ef728958c3c874e",
+        "66ccf16f751dd0802f9435ecedb24276e0d4da393a5b69499ac5ea67e4895915",
+        "9a976905f6a6880ddfb391c8d3b53854bbf803ca0271f89b5e7b42f79211f752"
+      ],
+      "boundaries": [
+        5.3,
+        20.8,
+        27.8,
+        32.8,
+        41.1
+      ],
+      "parquet_sha256": "09a8464f2405c6326b016795ae88cbdb134c546a244721ee0cec8850362ff8d8",
+      "split": "train"
+    },
+    {
+      "episode": 13,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode14",
+      "frames": 492,
+      "video_sha256": [
+        "fc259a43c672b072b15578e74f429d386b027806dd160e139ba171ccec7442e1",
+        "11930d63bd9daef24ac974553b67369645b01732524d081856add8866aaba995",
+        "a7ca28503142dd7366421f58aeafed42cdf1f62666d9ff90ae374835ce1a88c0"
+      ],
+      "boundaries": [
+        6.9,
+        20.1,
+        28.1,
+        34.3,
+        36.2
+      ],
+      "parquet_sha256": "9fd2b9e2830908d19d908459b39856976edd09d32ef8901542781373de5993c6",
+      "split": "val"
+    },
+    {
+      "episode": 14,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode15",
+      "frames": 525,
+      "video_sha256": [
+        "f1bcf5da901c4f1ae2b883b62f0b62a9299a8a4ce4be3e6ed6b7a589c22ff545",
+        "028dcb859efce9de13b43ef8b6e2700fb4e711255b4d4b5633f546b7e796e9e9",
+        "f51429d3c66e49ddcee006ed5566434a78c0d3d580f3ca9e3aa33ba1e6d91d19"
+      ],
+      "boundaries": [
+        5.0,
+        18.3,
+        27.3,
+        31.5,
+        39.5
+      ],
+      "parquet_sha256": "85ab805c96672794b26ce6a78ad46b9bd7925f01d3875566ca38c514923601d8",
+      "split": "train"
+    },
+    {
+      "episode": 15,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode16",
+      "frames": 334,
+      "video_sha256": [
+        "f8a5c6a1816a4291cd6b3316fdb28d1cf1143c81b10e90d8e71c88a7601ca260",
+        "bfa41fc5bc3906748aad84ab26fd5812c720f2ecedc793f8b1ef8fe3bc0fe1a4",
+        "ee6171ca9ef9760679d7c86784621096663a089ff527c7ab14d659d362cd89ce"
+      ],
+      "boundaries": [
+        5.2,
+        13.5,
+        20.5,
+        24.0,
+        29.6
+      ],
+      "parquet_sha256": "09b7770ffcab966895f557484690b841595fa9282f1d77831d33ca1a5af0d292",
+      "split": "train"
+    },
+    {
+      "episode": 17,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode17",
+      "frames": 352,
+      "video_sha256": [
+        "2702e3e47ec5bf7f25a9649f9eefced6a53e9d28722acb2606d37463f9bf46c4",
+        "0878d38255e3c5632229fa20ab2c3862ab618c22bdf70e6a67fd9f5ccc06d4fb",
+        "8a41f0d052c3255921f71abda56ee660b372c8e19b0c120d21dc92787247b05a"
+      ],
+      "boundaries": [
+        6.2,
+        13.4,
+        18.1,
+        20.2,
+        31.4
+      ],
+      "parquet_sha256": "db553bbc37f2c78bdf8a078c0867625328ee629d152da0cda5a9fee7373a0f4d",
+      "split": "train"
+    },
+    {
+      "episode": 18,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode18",
+      "frames": 289,
+      "video_sha256": [
+        "b037c88b1bf76b91a444c3adb0a46f79c4997bad9768301b3e4e8eb9d4ffd7b0",
+        "313bcb64d689ee056d057eccfc5e32459b01af2f59e720277d0f88492a96c290",
+        "61507906ca363750c4cc6d5ecf6f3d95269ee2cf5acbd46f1937f0a96a126d04"
+      ],
+      "boundaries": [
+        4.8,
+        12.4,
+        17.0,
+        21.2,
+        24.9
+      ],
+      "parquet_sha256": "977199f7b4268e871299ba52122493a9ca7dea934e8cb5deb1a772cb38801f9b",
+      "split": "train"
+    },
+    {
+      "episode": 19,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode19",
+      "frames": 335,
+      "video_sha256": [
+        "700446b9747fc1deb4e1b65480e47bffd99ca9107bd47c8aa3aa847bc59a8daf",
+        "895408806ba7edaeab60776d1f389805ae525755549114e40d69d3090d5ebe0a",
+        "c7350237e602968ffee0a6e5dac65eb6afbb8c627b1da0aed468939d27cf1ffd"
+      ],
+      "boundaries": [
+        7.2,
+        15.4,
+        20.1,
+        24.3,
+        30.1
+      ],
+      "parquet_sha256": "b098ffcc4879fc1e591312a3febd484572a4fa6fbb2c365475c97cda7157c07b",
+      "split": "train"
+    },
+    {
+      "episode": 20,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode20",
+      "frames": 338,
+      "video_sha256": [
+        "f67f987bfc00342757bf5f0e5de5ce5a5105ded70f24fcddc48c4027c948d0f9",
+        "177cdde7477651ca206d847630c3d94c96fba511b38c16f00b003faf8414bc91",
+        "36db07f939f4e928d8ba80ce0b998114e452911c5583e93db224cb0e520e4979"
+      ],
+      "boundaries": [
+        6.4,
+        13.6,
+        20.1,
+        23.0,
+        29.9
+      ],
+      "parquet_sha256": "a3c217871b5bbee4532007d2d4cdb9a51db26458115c14ab5e091d2006ab3545",
+      "split": "train"
+    },
+    {
+      "episode": 21,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode21",
+      "frames": 317,
+      "video_sha256": [
+        "affe6e71db859f8f9d71d8e0e1fe4efcd9715d39efe605b5613087708e2ce88c",
+        "f5a1ec91caf6c1718702aadd5696a90eff47a0bc2496e7c27afb41f28dd6a676",
+        "d98d94d7483f0334b7949829c262926a384f5dd95a350cb6f26036303ac33e30"
+      ],
+      "boundaries": [
+        6.3,
+        15.5,
+        19.2,
+        22.4,
+        27.6
+      ],
+      "parquet_sha256": "7f3a29d12c761706a93e0279ea3aeaeb246e78e4e0c60f1032157357ec9137b4",
+      "split": "train"
+    },
+    {
+      "episode": 23,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode22",
+      "frames": 345,
+      "video_sha256": [
+        "40449907edde6ae573b6c991758deb5505abd2367f93081fcb3d523cd8c1a2d7",
+        "ac744e582e71962df9478422dc8605d0eb3682a746d93128ad54a0a7d7c7ee19",
+        "06af58d179eb520712f85d8de409308429503ed0e15fcfb5bef4d292a83392e9"
+      ],
+      "boundaries": [
+        6.5,
+        14.3,
+        19.8,
+        23.0,
+        31.0
+      ],
+      "parquet_sha256": "0c4e172f5f2cd21b05abb7e17116f6f530203684b1f550aca61bdf1dad4cc5ac",
+      "split": "train"
+    },
+    {
+      "episode": 24,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode23",
+      "frames": 335,
+      "video_sha256": [
+        "d1cdf0cb2d0b442d81865e61093c7c1a494a44533fd1f8537ae7e7fdecea2168",
+        "f786c0b8cce037eeea83318e221441c0d81d8311da0be43f9be66bc6977c3dc1",
+        "8d2e5355d2d8c66c829455d029d23cb77fbe2dc597a84ea3acc1d4c694a03c56"
+      ],
+      "boundaries": [
+        8.7,
+        16.0,
+        21.0,
+        24.3,
+        30.1
+      ],
+      "parquet_sha256": "f946f861bbd19527d4a6bb98edffb3c71a20d40f55afd59daec92ba14feb3ecf",
+      "split": "train"
+    },
+    {
+      "episode": 25,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode24",
+      "frames": 303,
+      "video_sha256": [
+        "7d0510e04fcc1463ff8ab7214960d6a7204a8a4972ebbcfd2f54152f4d207996",
+        "42110709985c6ea43c8c388842c941f1555d9525fd81b4066e3812a8484aa500",
+        "d3f43e6e301282e8892e5b1fc9f82768c10f23a9551bd1ad7b7db3f5c4e90543"
+      ],
+      "boundaries": [
+        6.2,
+        12.9,
+        17.2,
+        20.6,
+        25.8
+      ],
+      "parquet_sha256": "93f03237253ac5c05f6cd56c9c27266df2008975783b6695588a34f3d7cfc178",
+      "split": "train"
+    },
+    {
+      "episode": 26,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode25",
+      "frames": 388,
+      "video_sha256": [
+        "6ef26dab31f8f9ba6e18f38c4f87606f53109982a11b117ea4436330376a9890",
+        "6142fb2bd5e7368f95145d1f4d6f01ef6435e7731d79c06a3b28a02f2e535c79",
+        "b620fd07dbe12a3fceb83d4c33cdd051cca479be1decc2274ed509a81e478a87"
+      ],
+      "boundaries": [
+        7.9,
+        18.8,
+        22.0,
+        26.5,
+        34.2
+      ],
+      "parquet_sha256": "ed31550ebd1cc84db84e0253061904bd7452d7a2aabb4c23aefdd8e5e368eb3f",
+      "split": "train"
+    },
+    {
+      "episode": 27,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode26",
+      "frames": 339,
+      "video_sha256": [
+        "776ca03a21d16309dd84ad1008521ef94aadf6683109a4c04e990ed439b7ebad",
+        "a33d1f4c5a6baf2bedf3bf761f479d98cd717f0bc6d3dda83cb7c0c32a7625ab",
+        "779ea6bd9a4ee49494f4b982700972ae772e54f05cac0e416f886e5f022f3290"
+      ],
+      "boundaries": [
+        10.6,
+        18.5,
+        22.0,
+        25.6,
+        30.2
+      ],
+      "parquet_sha256": "ce1d35992907230c00c598a7acdb1cc59970bda3dacb157348da1b7558bb2391",
+      "split": "train"
+    },
+    {
+      "episode": 28,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode27",
+      "frames": 279,
+      "video_sha256": [
+        "431b6dd81f09da495a57a8564c1c10db84ffc6931aca5167f9ff1b8ac0093352",
+        "3c20c1a9b1abc5494289bfaff95e63e0b6e2d594e949ce0f972f63f2e7001f72",
+        "27c2ba32d204ef281e2b1a10c5d653df94377e1fef86d979a9922fa4ea488c38"
+      ],
+      "boundaries": [
+        7.2,
+        14.4,
+        19.0,
+        22.3,
+        25.0
+      ],
+      "parquet_sha256": "17aeab237226c2a68d951b663eeeb0f9fa4ce00fc3f5c0503d98cc1b1c13bb37",
+      "split": "train"
+    },
+    {
+      "episode": 29,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode28",
+      "frames": 325,
+      "video_sha256": [
+        "5814bee92731c829028308ded78fb1d2f0dc8930bea5d6404e6518361e909c1f",
+        "35644d34f235284d15e01088a8aa64570b7306b5943ed846ac0d97e07079412e",
+        "03f8ebbd31d9182ee07832bce7333e9d62b76f31b9c91ca65427a48dae9f4ed5"
+      ],
+      "boundaries": [
+        8.9,
+        17.1,
+        22.0,
+        26.3,
+        29.1
+      ],
+      "parquet_sha256": "d185b781baf046671a1a63c8d227546f461e16455c06d6277622ba70e5cee2bd",
+      "split": "train"
+    },
+    {
+      "episode": 30,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode29",
+      "frames": 294,
+      "video_sha256": [
+        "1fa083584c3bff47f2ebd454e8c057dbe0c61582bcf4bf299dee7eda9b3f41a7",
+        "3586344ab60c529d089ead9a0c0703abeb5115ae53656f25c8b78a3080c65eef",
+        "d75f2f655383913d5ba028a5845108982bd37f7f992b68e3af2fe9f0024c7110"
+      ],
+      "boundaries": [
+        8.3,
+        15.7,
+        19.2,
+        21.5,
+        24.7
+      ],
+      "parquet_sha256": "293baf87311b735c81819fd857ea419b8a9f799b06e879736eac2a38e5f06492",
+      "split": "val"
+    },
+    {
+      "episode": 31,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode30",
+      "frames": 313,
+      "video_sha256": [
+        "972076af4f51f170c08fe1d1061b3fe2450ffb7c85fb58064cfec6bd5091d4bb",
+        "da50c005a7601e206f18d8366179e520ec4ffe8a5dc926d798594f2b54ea945c",
+        "7817b78d5112367a67693c0717b095df8e17febeb9b0e36671bcd18d82c53056"
+      ],
+      "boundaries": [
+        8.8,
+        15.8,
+        19.5,
+        23.8,
+        27.2
+      ],
+      "parquet_sha256": "68908f7a1df6c4949e8a67595b3f44449fd3aedb734b1ac6dd5791684db94168",
+      "split": "train"
+    },
+    {
+      "episode": 33,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode31",
+      "frames": 334,
+      "video_sha256": [
+        "bb58f4fee428d43f24ebad6c988dfca736736be90759024b616d36f50f0cdef3",
+        "e101fb9149365125a8ea7e1b70784f7a2ee7da4829ee3869d35c3dfd5001dbf1",
+        "18a3602501f7928d6aa6d1062d32254ad0e2fe88caaf18635d3ad936cfb0694b"
+      ],
+      "boundaries": [
+        6.8,
+        17.1,
+        20.9,
+        24.2,
+        29.4
+      ],
+      "parquet_sha256": "3af3ae84482314404547decdd24268749451b441a0bbc4d5c35ea6e9be53d06d",
+      "split": "train"
+    },
+    {
+      "episode": 34,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode32",
+      "frames": 379,
+      "video_sha256": [
+        "c6c5931f538811eb287f421a3449ae8d47a16e3b8def511475917c1c701d1d82",
+        "088f22d9e170e1036ede073218fed22f133c7abd6e0d1bd27d3ceb570bffed33",
+        "9a5fd4f836cdb370e64ebe33d59a6b6472ab01fae70e2adc9c2584e7ae33fb9e"
+      ],
+      "boundaries": [
+        10.5,
+        17.3,
+        21.2,
+        23.7,
+        33.7
+      ],
+      "parquet_sha256": "aed430471dbfb6144cbd85e8ad389e5adcd504fbb337bbf42d6d9a3ce83e7311",
+      "split": "train"
+    },
+    {
+      "episode": 35,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode33",
+      "frames": 361,
+      "video_sha256": [
+        "e6bb4e6eef105a878fcda40a0e486ea0e3522a2980ffeaf8c2baa7c480b7526d",
+        "06509208a16d6438aa3c190c5b570d95fcd66b8fb6aedd41c215467014a25869",
+        "34a54c65dd087693806173f3d0282972aca3b72ac56c16f496078c5ba3d970d1"
+      ],
+      "boundaries": [
+        7.3,
+        15.5,
+        18.6,
+        22.0,
+        31.8
+      ],
+      "parquet_sha256": "5779364f5792d0326de9becfd5adbaf767af1966a0f4f4927dc6d23ba9330517",
+      "split": "train"
+    },
+    {
+      "episode": 36,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode34",
+      "frames": 274,
+      "video_sha256": [
+        "095be492e8c8026329e0c9a311d227d2fd20ae5df329d7d8545b302b547a233a",
+        "c69d0af023c33fe41cf50be1bccce2a3591e595639e5e353a87d2053230bb907",
+        "a65f9b8d3ec71b6c5728bfa9977762ae6afd9b434d1d5b730cca515a5fdf5288"
+      ],
+      "boundaries": [
+        4.4,
+        11.7,
+        16.9,
+        19.4,
+        23.6
+      ],
+      "parquet_sha256": "1a8fa6bbb97c4a4a9d730ef9e16f8d65fdef4ec39064781b08874584c2e438e2",
+      "split": "train"
+    },
+    {
+      "episode": 37,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode35",
+      "frames": 285,
+      "video_sha256": [
+        "dba4c1719d5bb3571b1dcff03444faf12187e8d1cfd3c68f2f7a0e26b6649ae8",
+        "622200a12610cac2fe87bb6d6f6f6cfa0bdc9db680d8751a9866cdfb14e467ac",
+        "3d661fed49ad5cb17fe722d95be098d9eb306951b281abd3e6700269a382ba10"
+      ],
+      "boundaries": [
+        4.2,
+        13.3,
+        17.0,
+        20.6,
+        24.7
+      ],
+      "parquet_sha256": "6777a13a9928534a3fa60c0b05ba15f983e5f61981be1bc962ab44468495fbf0",
+      "split": "train"
+    },
+    {
+      "episode": 40,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode37",
+      "frames": 308,
+      "video_sha256": [
+        "f85a48d9143b1d9871609a45fbbc6f7a39fb2fad998772a192c5f59b4db17b41",
+        "a0b452384c7c53354d012425389d03392f179859a2de6f129a0fb4e6e4597e4f",
+        "204c6d2269b1d37e9a57915fb7f4db97d393dc1d2ad60d9633b6faad0fce7342"
+      ],
+      "boundaries": [
+        6.2,
+        15.3,
+        18.3,
+        22.1,
+        27.3
+      ],
+      "parquet_sha256": "8552220435c9b260932a709e3f3b937ec7f838d8d1ab28dc2024f4d58bc9b838",
+      "split": "train"
+    },
+    {
+      "episode": 41,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode38",
+      "frames": 301,
+      "video_sha256": [
+        "1882a05ba167f31c1c623b78efd17ecc70355ba4cc3e67499066ebe2db535650",
+        "96831d098650e3043968eccf8563e027617cd13b66fa4afe009c38e88fa6aa5b",
+        "9a54c90ab7a7097d44c137ef36956bac18c53fb81af8881ce1044dbdf92a2b9d"
+      ],
+      "boundaries": [
+        6.1,
+        14.5,
+        17.7,
+        20.3,
+        26.3
+      ],
+      "parquet_sha256": "70e04e9d0dad03a141a584bbf0ad6e6210d71f18844d481938c592409c646775",
+      "split": "train"
+    },
+    {
+      "episode": 42,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode39",
+      "frames": 303,
+      "video_sha256": [
+        "83e0e8c7c6cb7563c67292a940b01ae5c07b0ac1b071e968e50b93d3954bbf1a",
+        "699a5a4400c224e4e3d159111379c7b724c7951f89c17eaf3201abbda897f5bc",
+        "cd41049be5b1dd4339229c9872bcf683d986de73fde8d316667e2cc6047569d8"
+      ],
+      "boundaries": [
+        5.6,
+        13.0,
+        16.7,
+        20.3,
+        26.4
+      ],
+      "parquet_sha256": "7301f7d4f5b992192bd953849f0c1d5a5ae7088a6b3b2c3eeb7012870f45edf1",
+      "split": "train"
+    },
+    {
+      "episode": 43,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode40",
+      "frames": 297,
+      "video_sha256": [
+        "eddc10d65ba0f3da9330d71e5ea1b67c2e3b193e72127b778ee522efdbfba295",
+        "7e0cdd00025b5d60d307e128200ee757f697fc6120f51a5f73393ade851dd46f",
+        "2e47fb341b2944eb7a43dade47a3f02479e9786e04865cb0bce1bc78ef5f46d6"
+      ],
+      "boundaries": [
+        5.8,
+        13.0,
+        15.9,
+        19.7,
+        25.5
+      ],
+      "parquet_sha256": "95a020a2ad3e3661ebc6dd66dcfcaa0f23f0dbb4f8fa971a30c883edb88ca531",
+      "split": "val"
+    },
+    {
+      "episode": 44,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode41",
+      "frames": 433,
+      "video_sha256": [
+        "bdc38f76a877dc986a405ed8e4bf7d1e6729f49f4f240aa54968ca6c6a4d02d5",
+        "62c208a8ab923d5fd4ff641edf51832c516f55622cfe0ad4707154dd008f406b",
+        "07a8c03b5c0b6b538e8c11774d13da4772ada5e4b7454344f3bb725800821850"
+      ],
+      "boundaries": [
+        5.5,
+        14.4,
+        18.1,
+        22.2,
+        37.5
+      ],
+      "parquet_sha256": "f31b5eec80532fbaff8866178c12582fe935c97b92efc2a7c3d926436d69702a",
+      "split": "train"
+    },
+    {
+      "episode": 45,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode42",
+      "frames": 386,
+      "video_sha256": [
+        "04a5a8972c714475c0f7170f9a0623999d13f42803fa8300f360cab376135945",
+        "8868bf3f3f0af721b7b94023a43b8197dcb0b33af74794f9b8e3302fbcb546f0",
+        "8410e466aef2e10d21a5af61a9200fb42107273a0593cc0bdac7597c20c42d15"
+      ],
+      "boundaries": [
+        10.1,
+        21.2,
+        26.0,
+        30.1,
+        34.9
+      ],
+      "parquet_sha256": "e815c9937dbee37414af72ae312f01dc71a2c03985d5079517183649cac33ed0",
+      "split": "train"
+    },
+    {
+      "episode": 46,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode43",
+      "frames": 338,
+      "video_sha256": [
+        "7d07eb82684238f61dfb3b1b2751baf2a85af48a8cece39e629dfcfc26291505",
+        "201dc0499aff2f647ec7184c4e012bdc24411874ec1e4a785cf2ba38434079bf",
+        "ea7e275d914901927f4a42f743126a9f4669987a81b9e6fa3961d240f31ddf6b"
+      ],
+      "boundaries": [
+        9.2,
+        16.3,
+        20.1,
+        22.6,
+        30.2
+      ],
+      "parquet_sha256": "f0f66d3c77d8ad72a0ea3305775e881cf44987d0fbd4d8ac4748d2f8e3a32ffe",
+      "split": "train"
+    },
+    {
+      "episode": 47,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode44",
+      "frames": 514,
+      "video_sha256": [
+        "a725f464f2e39b384434974e608beabe51d3c3e9472795a5573301e53918ec83",
+        "b0a41670d89cd09d2e027f6eae492483e519592e51d9ea67e68fc32d1a99c53f",
+        "c5d464ccacd0a395ad3f0ae8512f6496d06275e9f58d87398f38757b957f95f4"
+      ],
+      "boundaries": [
+        11.2,
+        24.5,
+        30.3,
+        37.3,
+        39.6
+      ],
+      "parquet_sha256": "1ac8d904b88c2ff04940e60dcb38d08477ba2d810cfb1918b27570b02e83352a",
+      "split": "train"
+    },
+    {
+      "episode": 48,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode45",
+      "frames": 492,
+      "video_sha256": [
+        "9c37422fceae7b1529873cb7ca36958aeb057c9b2770cdd128f910278b043f85",
+        "02a56fe503d262b73abd4403d1f51d470fdd9904bee1b5c4be26cdb7593073b5",
+        "38cfb50a1177474cb6983da52af1933b46cf1613a8c3d3764e9c474069551432"
+      ],
+      "boundaries": [
+        6.7,
+        28.4,
+        35.7,
+        40.7,
+        44.6
+      ],
+      "parquet_sha256": "24e97c9df74c1853c15a5f8479901d672904ffccb4feab87775bf41b75a33a25",
+      "split": "train"
+    },
+    {
+      "episode": 49,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode46",
+      "frames": 472,
+      "video_sha256": [
+        "1922981b480061a12bbd123203877e66132e9717ec3f6e91ba2218be757b709d",
+        "ef2fb50795f6af19f0c2ab92c91f54e5f0945a697265ac0a102ca35837412048",
+        "044c7422d956eb212001fff5e196ddac6cf4eb3fb626ce381449e6530134128d"
+      ],
+      "boundaries": [
+        6.4,
+        19.2,
+        27.5,
+        34.4,
+        40.7
+      ],
+      "parquet_sha256": "1f2492b1934fad1c8a0c27a1c17f1c0a7dfbb2b86e70367e1bea0819c95b03e2",
+      "split": "train"
+    },
+    {
+      "episode": 50,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode47",
+      "frames": 392,
+      "video_sha256": [
+        "7ce3fb6e34cdbdd96aba5ec12cd5fc193e947d952190295bb064a8b83d2a4a95",
+        "8db308fbf53b989918509ca1e9f2ecb2772b0280669db78a0024520461c3c2fe",
+        "bcc6ccb77be3fb37169eb72b89fe6a6962015de73ec6abe1c362bd43a5c5e2ce"
+      ],
+      "boundaries": [
+        3.1,
+        16.2,
+        22.9,
+        26.2,
+        33.8
+      ],
+      "parquet_sha256": "0c8beda0e5c37f06f269b3e9338967e46018672fac10febc7ac7d2bae3e9e606",
+      "split": "train"
+    },
+    {
+      "episode": 52,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode49",
+      "frames": 662,
+      "video_sha256": [
+        "2c2c9b75ed68f85d9a5bcb38dbb5bf76b674f257033e454c23874ac140e6b175",
+        "5d50d2c08210c00cc3d7fc5b23083e63affd4f7b3ab36a4be0e0eadf9ffb3a27",
+        "51cca285505521d90007561cb902b734342bd7da97de1a7605d7649799d2b3df"
+      ],
+      "boundaries": [
+        11.9,
+        29.9,
+        38.4,
+        45.5,
+        59.0
+      ],
+      "parquet_sha256": "1b09e4fab69ed8a6e2d9524778b5948312a2a4efe9449c1734b526292ce27877",
+      "split": "val"
+    },
+    {
+      "episode": 53,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode50",
+      "frames": 433,
+      "video_sha256": [
+        "e40604d466e54c605b1307e2fc05be56fc45b0845b00f8eeadc3fb74296a4d25",
+        "b89d844c506a58f95b806612ab537009cc7002a21703ab2355fb6aec0bcc3d92",
+        "efb4f4b27cad5101c015c52c18034379a19e1ba8fb48af8103fe6e54ade19b97"
+      ],
+      "boundaries": [
+        8.7,
+        20.1,
+        26.4,
+        32.6,
+        37.0
+      ],
+      "parquet_sha256": "64439e031e9b93b64d6fdde8b39b935b885cbbb9dd4c8d6b9916b410832e4b76",
+      "split": "train"
+    },
+    {
+      "episode": 54,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode51",
+      "frames": 502,
+      "video_sha256": [
+        "00005a3bed41e2f17809ab0046182d15e03555b72bb8d8eca8ea81e7e4a232a7",
+        "5a889de646b438e39142c6b3e2dec1fd59e3637a9de257ed1aca22c8074b6fe5",
+        "61e95f9c99ec8955b5900b8e725498e83e9d773799b57438ce81f38d9c378af2"
+      ],
+      "boundaries": [
+        7.1,
+        22.8,
+        29.8,
+        34.4,
+        42.8
+      ],
+      "parquet_sha256": "f070b5efe465d44aa5e005509d400e663ba0e6aaaa0313892fb565e8331064a6",
+      "split": "train"
+    },
+    {
+      "episode": 55,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode52",
+      "frames": 569,
+      "video_sha256": [
+        "6f54d9a76382a405b6b1eda7eb0935f3b2137b44f0336a014b78bbed8d17888b",
+        "c2d8efe29054ae31007de3dfd035af089036939293247c173499443d8812fc2a",
+        "341bfc5103ef1b1f3c4accde8f8befc82759ecbd32d8b9f0f58aa990cb8700df"
+      ],
+      "boundaries": [
+        8.3,
+        22.7,
+        26.2,
+        35.2,
+        45.3
+      ],
+      "parquet_sha256": "eeb1366021858a1f1972ac31e9a8a6811b43333ad24c319373c1e4bc01e235a5",
+      "split": "train"
+    },
+    {
+      "episode": 56,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode53",
+      "frames": 404,
+      "video_sha256": [
+        "43e933fd293a22bde53fdefd4c4cebb74d49f755c7f787321a66f9b87678da63",
+        "b30b9fcac19d656333d8819ab68899b3b175b6f79f36ad318080d90c9d4af156",
+        "7fdab95e27604e86cbeb10b96bc441db8b1da5f5483dd323c8bba60d66e1eeca"
+      ],
+      "boundaries": [
+        6.3,
+        20.1,
+        25.5,
+        29.2,
+        32.2
+      ],
+      "parquet_sha256": "1a804cd5e1d0fba1262c5cd0dc624d5e7be17d1a9238a7709b2b2d44a64c38ba",
+      "split": "val"
+    },
+    {
+      "episode": 57,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode54",
+      "frames": 492,
+      "video_sha256": [
+        "d727682cf281ac317388071a8abe085b269da361d1ed2ad4229fd4ef683498f6",
+        "25f77682027732d4783ad09fd2e3e15d16331d1ad70e3148474cd52941e58c08",
+        "20d4fe26cebd36ff39192beb6ae8e44b5e7d9b56a3edbd97160cdc3ae49277df"
+      ],
+      "boundaries": [
+        13.1,
+        24.7,
+        29.6,
+        36.3,
+        41.4
+      ],
+      "parquet_sha256": "07e9ea93598e01d1561fdc4fc2427520318d086942aab3adab0d514177fce2ad",
+      "split": "train"
+    },
+    {
+      "episode": 58,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode55",
+      "frames": 506,
+      "video_sha256": [
+        "7d7e1e94e6f10a72022ae503721bb44f54ac4dea30941b2a44c06a7590b85399",
+        "477cbdf3351106810d9d8ac7ab5bb55920430e150f796598ea580b58098dceb7",
+        "049eac99610d89bfb1cd0c7817b676c211f0130b46337912fb7ea39ba065b7d8"
+      ],
+      "boundaries": [
+        6.9,
+        22.9,
+        28.2,
+        34.9,
+        37.6
+      ],
+      "parquet_sha256": "04ac4f5d72151f560c5c757102d2e3acc326b65df7c0a3eca96793d41b0e13d4",
+      "split": "test"
+    },
+    {
+      "episode": 59,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode56",
+      "frames": 493,
+      "video_sha256": [
+        "dd400b8911aaaabf1e2c987b1a2c708ea3439b876161f8c45c063c30081bd3f8",
+        "34caaac8b0eb5a37a69db547cacc3944ad47856f78ac7de28703d2433e3a9df2",
+        "2be390c99fa3165b13104769f12a35609daaf5fd4c495c8adbf31d8a0bd55511"
+      ],
+      "boundaries": [
+        4.8,
+        27.6,
+        33.6,
+        39.3,
+        41.7
+      ],
+      "parquet_sha256": "c8f5ffa9b2334ca1c689170f0edb51b6c197c5513fac897d9644019ca71ea442",
+      "split": "test"
+    },
+    {
+      "episode": 62,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode58",
+      "frames": 642,
+      "video_sha256": [
+        "a2d2c4fbb97b540bb9c32e8f6b7ab5e0db41c70009026412c4b4ea9413cbf70f",
+        "ae2266d8b7d5418f255b0aebcae392b6780aa798081aeb2b8194a5d381e7c0b8",
+        "fc362f013d716a902d893b65afe7014591077138293370055c128f7ff5e5a2fa"
+      ],
+      "boundaries": [
+        12.9,
+        31.4,
+        34.7,
+        44.8,
+        56.0
+      ],
+      "parquet_sha256": "d9e5e59bf821895c4e1c18d06fa7044209a521afcc80ae3213c73b82c87956c6",
+      "split": "val"
+    },
+    {
+      "episode": 63,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode59",
+      "frames": 382,
+      "video_sha256": [
+        "4438edec32e388c73d971b6975cd6c6ce9c7d4dcac082eca7be66a4f394ecbec",
+        "7f03ece43397d4a833f11a9f929e85a916182f92e2a08e220386cf0ff90b3edd",
+        "ca8f445d278565bb3dd0ffc1614484a8f333d45ee5ad6bf60beb97c032f77edd"
+      ],
+      "boundaries": [
+        5.7,
+        16.0,
+        19.1,
+        24.9,
+        33.6
+      ],
+      "parquet_sha256": "bfe2e7bf576ff0a062a4bf649fdb8c49eb9869bef0cfe4ac8791321701dd2eec",
+      "split": "train"
+    },
+    {
+      "episode": 65,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode60",
+      "frames": 271,
+      "video_sha256": [
+        "6a823a71b6e836a230668f946789a838e757fb7b192e275ce9d70b6addf5e038",
+        "9b46cc484a539b6070727ab07c8d9a919fd85a677afc1c0111e4fe4cc6ed0601",
+        "4ba7f7e26ce295f8b85d3738023a0d4f586902e17d9fa79adcd3ca25057bd063"
+      ],
+      "boundaries": [
+        2.9,
+        11.2,
+        14.1,
+        19.5,
+        22.2
+      ],
+      "parquet_sha256": "3f4fa94aec13d45a87b6241d70df78af0285f982fe135dfc539342a85599a118",
+      "split": "train"
+    },
+    {
+      "episode": 66,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode61",
+      "frames": 262,
+      "video_sha256": [
+        "59534add231520dcdaf5d38b4199c71a6eab1658cd85ac24b637a5f287dce11a",
+        "f30ddef8157495903848b68e53090c0ba523cc965c26dfff9243f83fe1d79a01",
+        "be66ca0262fa58ad4836c25e980ee1dd5b3eccf39af856ebc7e9f10fb422fe10"
+      ],
+      "boundaries": [
+        7.5,
+        15.5,
+        17.1,
+        21.3,
+        23.2
+      ],
+      "parquet_sha256": "545f0b4c76ae7fae31320839f31f3fabb3b93ac3d3e63d587ee3ca27a99a3fad",
+      "split": "train"
+    },
+    {
+      "episode": 67,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode62",
+      "frames": 281,
+      "video_sha256": [
+        "1845fc2c75d0988d3e5692c52400db32a78e6f13e548c7c6ac1c7dc282756e9b",
+        "a41abfa5a46dd67e4fc54201235058499f0f0119fc7dfb53528dfa48dda8988a",
+        "62d17af73585b40a2854f61829b23ff225a00fd6eefa55fca2820e9553649749"
+      ],
+      "boundaries": [
+        4.7,
+        14.9,
+        17.4,
+        22.6,
+        25.4
+      ],
+      "parquet_sha256": "49f6847899494ecb7be44c1e42d1a06625b63f1e3d0cb3dce0f1c8cebb2ed3f8",
+      "split": "train"
+    },
+    {
+      "episode": 68,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode63",
+      "frames": 285,
+      "video_sha256": [
+        "185f4540c1eb3d036dfeff95fea325d2abddd1e5ed63c33687794a91caae2276",
+        "c1a64a70153befc6eb9cec2a90ed636a9fb500dee9934a415e7df4ceae40dabe",
+        "b4338604f5ad0dbbb238a3546c5bfeedf8b77ceabd2790967fc427fc24812472"
+      ],
+      "boundaries": [
+        4.6,
+        14.0,
+        15.6,
+        19.2,
+        25.4
+      ],
+      "parquet_sha256": "1d9f9bdcb60eb6f37600b78a511ec3410e6328759c79d47ae81872bcc0c9ef53",
+      "split": "train"
+    },
+    {
+      "episode": 69,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode64",
+      "frames": 342,
+      "video_sha256": [
+        "88c073bc3ddff96fc893371a72ffeb08f744d39279322366e96d400eee97a49a",
+        "8fec3d8f88abeb91067dd99567a2d67bb5603302f79504e40c7153facc9230f3",
+        "094fd9b2f3619dcc7be9ebaaeec002456637e0aa8af324879fdb5407cec4c2ae"
+      ],
+      "boundaries": [
+        12.4,
+        21.4,
+        24.1,
+        27.5,
+        31.2
+      ],
+      "parquet_sha256": "73ae7f09572f07d7f063ae2be0464e689241ae3699b46c368990ea35c1f79b8d",
+      "split": "val"
+    },
+    {
+      "episode": 70,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode65",
+      "frames": 299,
+      "video_sha256": [
+        "7835713ea4dd7dc3b897af8ff93510e7d112c70d92163efe6c31214cbf6a24da",
+        "29882843e5cf23e8a62b87a067fc755ff2d400abdd515fb8d59d369cecc7d779",
+        "dca2fddc0c74a1326a2e35c767d23c899520fd6fb689d5f8604621a977ef04c7"
+      ],
+      "boundaries": [
+        6.0,
+        14.9,
+        16.7,
+        20.1,
+        26.2
+      ],
+      "parquet_sha256": "8756fd912817f15311bf89dbdfc6af586152e5397aee291c56909258285f6f47",
+      "split": "val"
+    },
+    {
+      "episode": 71,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode66",
+      "frames": 320,
+      "video_sha256": [
+        "c4cc837af54389de009b9f9247a9e5adcfa53e198bf2391d68947e15a8c69107",
+        "098b31aca242acda698d8911ace6c1fb221677082a8dfaa34c32b9f9f10bf41b",
+        "5733fe8a0acabb0326f3de52b9ad560e0562d8281343c9baba450ef72e0636e1"
+      ],
+      "boundaries": [
+        10.3,
+        19.6,
+        22.6,
+        25.4,
+        29.0
+      ],
+      "parquet_sha256": "a8c023afe1967bcf811f1f225ae5c35b95f55bb8f1950c768793d1a2fd898880",
+      "split": "train"
+    },
+    {
+      "episode": 72,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode69",
+      "frames": 361,
+      "video_sha256": [
+        "2fb207a1dfe280a747446ebff1aaa92fb4d9a016a838c989aa7d56b7ea618d6f",
+        "12f32f36071146f2566f349c5694710319b7e61d28a5e51559bd35f586a8fe51",
+        "4471d544491974449fa2c317e300a49b9b7e7caa30a5f628a553534e8e37f2e1"
+      ],
+      "boundaries": [
+        10.6,
+        18.6,
+        25.6,
+        30.6,
+        33.6
+      ],
+      "parquet_sha256": "1b3288642ef80dbbffc10d4cf9c5bcff01f2bfdf9b2d6100eb49b644c2808842",
+      "split": "train"
+    },
+    {
+      "episode": 73,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode70",
+      "frames": 355,
+      "video_sha256": [
+        "d15ae4439d781636ff008a5d55051ecf044758784b2aae1ee3428c66b556624f",
+        "d0ce365b72cf861ca18ff4d801800683d504b4e1408f529b9d192a69c60bc9bf",
+        "b0e95808843bf9d145e7d33d5e083e3b9148099dd5d19ec4f104e92769ced731"
+      ],
+      "boundaries": [
+        10.7,
+        18.6,
+        24.9,
+        28.0,
+        32.5
+      ],
+      "parquet_sha256": "9e116faab287873318a7c004d8febe243918df6cc6024ab8b6ba6d8aff779f37",
+      "split": "train"
+    },
+    {
+      "episode": 74,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode71",
+      "frames": 373,
+      "video_sha256": [
+        "f1f8bafe7194fca93043d2c247a276b3490636bb6607228fad6450867c9c1540",
+        "bbb0827bd292c6c2f75edced6d09694a5adeb67d36c590a2a0a34afc2cd9ad66",
+        "e06d329f6ffb69d2afda6c8b8a377d1ddd6f652c2b515122a69be940c76d3a1e"
+      ],
+      "boundaries": [
+        10.3,
+        17.3,
+        24.0,
+        27.2,
+        34.4
+      ],
+      "parquet_sha256": "8ff3bedacd1bf5d7cb583cf252f50b1589558458a8966c6069203de545c194e8",
+      "split": "val"
+    },
+    {
+      "episode": 75,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode72",
+      "frames": 310,
+      "video_sha256": [
+        "ece37de51f1e795b23fadefe7abd9546554a8264b49c5241bd30a36ecc48cea4",
+        "74e10a5ad42a9cb9b7edf944810aa9aa2d8b63b9c91275e190569c2b97fe622a",
+        "502ff106803e21d54f0c56a17ff89d9a3a269df3a62113dfd40357eb50a180d4"
+      ],
+      "boundaries": [
+        11.2,
+        17.2,
+        22.8,
+        26.0,
+        28.4
+      ],
+      "parquet_sha256": "4805744ad1eeb0f5a8e6dde1a42b70f5d8f0a559c59b0a3c710a09967a19fc8c",
+      "split": "train"
+    },
+    {
+      "episode": 76,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode73",
+      "frames": 337,
+      "video_sha256": [
+        "961c3e1014c22053a3222e48f8fe6675ae8d8387fe0960fb5a87b24ca8cccfd9",
+        "3dd1dc034dad2567e6adcbcb6909b67eeaff701f4d7b07166fedff89b9e0b23f",
+        "95bed3bcdbce334b2e85be3e5a167119891a5eb7c5e7672dd302b8488eea3612"
+      ],
+      "boundaries": [
+        10.3,
+        19.1,
+        24.8,
+        28.0,
+        30.6
+      ],
+      "parquet_sha256": "b2cb45049a61483c185841f6ed8058dda93186ae09481526b1c6fb864465e10c",
+      "split": "train"
+    },
+    {
+      "episode": 77,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode74",
+      "frames": 333,
+      "video_sha256": [
+        "205838ee24f8e7950ebe810e708f4f110a5dc3cea86a66c707b2339f4b125cb3",
+        "5a49a200281c7da940da5c069a6cc6968d5c29672ed065ba08094ffeaed1cc91",
+        "9785e14a9722322bf30bfbc3face5ed9a93631e8d5f5994636c80800eb050489"
+      ],
+      "boundaries": [
+        9.4,
+        18.4,
+        24.4,
+        27.4,
+        30.4
+      ],
+      "parquet_sha256": "3f024838fa8167c0bf0fff6ece42e8dbb7bda2ad57afb41aae8bcfa1f6f914f5",
+      "split": "train"
+    },
+    {
+      "episode": 78,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode75",
+      "frames": 289,
+      "video_sha256": [
+        "af37ea143452c9b430f9fad681ee89adacf6ab83de5382525b3eccea0739c97e",
+        "66e399c86dd89d60d7355e3a7e6ab8b7ecc11aa7c5021fb29fa2e64d217b99c1",
+        "a2b10dfa013cb3bbba6e6811c5f46a3c1c00b7ab0cb6384c4dcacccf190b7b5f"
+      ],
+      "boundaries": [
+        8.6,
+        15.6,
+        20.6,
+        23.6,
+        26.1
+      ],
+      "parquet_sha256": "4d9422499241a11e6d1931d1e775f249e51e1b6a558e7785e9602ccf7fab94db",
+      "split": "train"
+    },
+    {
+      "episode": 79,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode76",
+      "frames": 320,
+      "video_sha256": [
+        "7ca3855ff2036d01f6d234eb18cb3d22bf07c029df160a7654027556bf0c0087",
+        "19e489f3a02f2ad4ac9c93cac91de38c3d34e9b863997e941183287714b65d77",
+        "7da77d063d5d551a9c3fb5479e955f3c47b2944c3677e207cd11847433151862"
+      ],
+      "boundaries": [
+        9.3,
+        16.3,
+        21.3,
+        24.3,
+        29.4
+      ],
+      "parquet_sha256": "4767cf41773dedd79dfc6344008e3f07abf113c84c5549f6d76d95667be5b82b",
+      "split": "val"
+    },
+    {
+      "episode": 80,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode77",
+      "frames": 338,
+      "video_sha256": [
+        "3dd70d7986ee0b45c3161f669059376e9ab743e8eda63b2b8c0f558a68dfe1bb",
+        "078dc8dd8ccfa122af6db00e99ef2c7372d7ea40e6d28fefc12d07cc121e168b",
+        "0c0aaca4cc5751b86547fbc742d5d04331526f2bc5b089bc68b4132ac62ab33b"
+      ],
+      "boundaries": [
+        12.4,
+        18.4,
+        24.4,
+        27.4,
+        30.4
+      ],
+      "parquet_sha256": "923f01716d572bab34ff02449db05e4306f5aa2bda15ef9b0373baff457f9eca",
+      "split": "train"
+    },
+    {
+      "episode": 81,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode78",
+      "frames": 340,
+      "video_sha256": [
+        "5305c752d5e03f80b653e428054fd9973804301b32de5a97ff76b3de230c46e5",
+        "493a9dbcc86a889ef76609f20a5df93b2f5468a466b263fa2211ba3527786b8b",
+        "3352e881e609d943ee4cfd6c669821b00bfd6b9c419f8bf0b31f73e82b118810"
+      ],
+      "boundaries": [
+        9.4,
+        15.4,
+        22.4,
+        25.4,
+        31.4
+      ],
+      "parquet_sha256": "d9be3ba8cc1bebb9869c1cc2279a5ed27104b97ae2ef207acd99c3fa31ce6592",
+      "split": "train"
+    },
+    {
+      "episode": 82,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode79",
+      "frames": 313,
+      "video_sha256": [
+        "319f872cb375bfd81887e533d71fadb4beeae5098c3a81fe0219e8a33bd5c4d0",
+        "06bce9d3970807189f0cfa073cf9c37f93f84595046678f18371b9edefa3c51a",
+        "f2d66f9cc6f1d976da2c53dcdeb64046c5736fdab91dcb4a26577e465b575c36"
+      ],
+      "boundaries": [
+        10.5,
+        16.5,
+        21.5,
+        23.2,
+        28.6
+      ],
+      "parquet_sha256": "ab9ed3cf8fa951ebea0db4de9f8c8822cd26592efb34884c073650f5b1600df3",
+      "split": "train"
+    },
+    {
+      "episode": 83,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode80",
+      "frames": 343,
+      "video_sha256": [
+        "1f3298a84d5df267e0edf69f94a68225a51d7fcaf4805e36ecbe906732403bd1",
+        "ac6c9d799cb5d7e9f6e9351780856615193c40b8e9a38031e712b3446365ad37",
+        "d48a8637389fafa6ca439456cbe33b52156c961a6ef0546411ac0143bbfbaf56"
+      ],
+      "boundaries": [
+        13.3,
+        20.3,
+        26.8,
+        29.1,
+        31.3
+      ],
+      "parquet_sha256": "478dd9ed77ac393b5be12e720fa7a8fca343a9295e84fef12a3f4b332deff631",
+      "split": "train"
+    },
+    {
+      "episode": 84,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode81",
+      "frames": 300,
+      "video_sha256": [
+        "4cdde395f5ed086a6520a78914c9c3c1a218e758c0f215d8b62603466ae18ce8",
+        "17a6803549a4cba6eb548456803a1de19ba66666a80e04362f562746e082d972",
+        "b511bf3abd40ddeacab7f8d2141cc4631de885cbe13e8938ba068fd7805a861a"
+      ],
+      "boundaries": [
+        8.4,
+        15.4,
+        21.4,
+        24.4,
+        27.4
+      ],
+      "parquet_sha256": "807231967b2ac00a196774898d99fc885e66296e4b04ee2d4be4b9d63bfa6831",
+      "split": "train"
+    },
+    {
+      "episode": 85,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode82",
+      "frames": 382,
+      "video_sha256": [
+        "13869fcfb112eebea6115d1eb4cdc4717f3a2b88d59059a4196ba25c544db312",
+        "4c134b0f29ac7da8dc599f6e97e08fc20018fe04697ab12cc8b43c1fe2d97c8f",
+        "aae4c1c7a01029f6944d234feb67d1dcce8b8dcf9ef3ad61cda4e57f3e437f79"
+      ],
+      "boundaries": [
+        10.6,
+        19.6,
+        26.6,
+        29.6,
+        35.6
+      ],
+      "parquet_sha256": "d8260fc24f0d549e809726d256fdc296ff3c3d757d239f682f5d77d0f34916c2",
+      "split": "val"
+    },
+    {
+      "episode": 86,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode83",
+      "frames": 322,
+      "video_sha256": [
+        "d3463d02dc327e041f72064adb9c9ab0941e42d43a6504a0681b554491f042ca",
+        "ce697bfa1b6970db9d5af48c3e8a66a9d86397b1c0359832380b697f6c8f48e4",
+        "ff81d7325ddeb9f48346405b0a0baa66a16f3ab46cf9be18021e080e60c581e5"
+      ],
+      "boundaries": [
+        9.3,
+        15.3,
+        19.7,
+        22.9,
+        28.9
+      ],
+      "parquet_sha256": "fba2925f2038a4d0e1996f440e557095fab6899a1c06d1070502d70f75dbed5e",
+      "split": "test"
+    },
+    {
+      "episode": 87,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode84",
+      "frames": 360,
+      "video_sha256": [
+        "a4e6cc3acbebc3a737dc9b1dd5722e600b37a4c8150ec55581be665ca88e0e7d",
+        "b4a9f9c8fef46339b62b50fb4edd1227e669c37662767c11825c1bc536708e0f",
+        "a5af49539853634129ab690874568944556e875d301ece4fac01537de9d3efbf"
+      ],
+      "boundaries": [
+        10.3,
+        19.3,
+        26.3,
+        29.3,
+        33.3
+      ],
+      "parquet_sha256": "ed854b579bbfae4a3d8464848a021da8d07fc4948f4ef3cd9125ac08d5b95ae0",
+      "split": "train"
+    },
+    {
+      "episode": 88,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode85",
+      "frames": 328,
+      "video_sha256": [
+        "4347a2948f3cd97026f875e6433cc3c1fc7cd64808ae570292f9c924d34c005f",
+        "62c48e6ceb99b186a034d37d7b0f76a8e9d7b7bcf2a291a830580126979bb7c7",
+        "c797c6fddd1e74f7a3bf1349a67759f4cad5cee84d21ab10adfcdcb8312a80d2"
+      ],
+      "boundaries": [
+        11.1,
+        18.1,
+        25.1,
+        27.1,
+        30.1
+      ],
+      "parquet_sha256": "806929b98bb3e868123cebb355cff5ea378845d43dbef15374318996b165625d",
+      "split": "train"
+    },
+    {
+      "episode": 90,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode87",
+      "frames": 355,
+      "video_sha256": [
+        "e486bcf20c85630dc8a2c00335e855de3e261295dec3c267b2f309462d10d89f",
+        "8932ace512ba91235342db467a7e83e5b88968c3680d630b44e49624cc3b07ae",
+        "dcaf27a824a5ddf60a35c33df7dbf6ad30cb3bd1b695532f6d61596ac29671cc"
+      ],
+      "boundaries": [
+        10.3,
+        20.3,
+        24.3,
+        27.3,
+        33.3
+      ],
+      "parquet_sha256": "de26a40637170679e1fbcab496d5c4f5bb10dfcb36255ec6e1e3a1847775d207",
+      "split": "train"
+    },
+    {
+      "episode": 91,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode88",
+      "frames": 389,
+      "video_sha256": [
+        "319ba0192208f3e22a29ec7cc3fb9b4dff1c8e1cde18826d711bb0e5ad91e345",
+        "100764560cba187767644dc688da9b46d10359c6e5378e2633ff091a9f50fefa",
+        "2ef2a7d9bf8eb1da83d251f6ba5d31942ec929412b02fd70045dbf63beafc152"
+      ],
+      "boundaries": [
+        12.9,
+        22.9,
+        27.9,
+        30.9,
+        35.9
+      ],
+      "parquet_sha256": "9a9baa356fc4dd1c375189d64fd105af552356299af8362dea8c7581de6403a6",
+      "split": "train"
+    },
+    {
+      "episode": 93,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode90",
+      "frames": 330,
+      "video_sha256": [
+        "f3a1172f456f1f5f3dfbc99c98932b617448080a7321a7b47e5d17a457ec877b",
+        "36b964bc0aea8ab9dfb841139f6bf9d21ff046f8f40948deeeb70372ace5d704",
+        "18a15ccd74479cae54d73a96a27b612fbc7ccc93b98a3d8a6140e2ed48790bd8"
+      ],
+      "boundaries": [
+        10.8,
+        16.9,
+        23.9,
+        26.9,
+        29.9
+      ],
+      "parquet_sha256": "685bcf5adf89bd5d6d9664dfa93800d9210f3f8fedfc66d4d740cefc5dfa1119",
+      "split": "test"
+    },
+    {
+      "episode": 94,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode91",
+      "frames": 342,
+      "video_sha256": [
+        "952819aa8ef66b0e9f51c9d1419b9b36fdd612e83c9fd6f6531f868e1b9e3b85",
+        "8ca54b15626573a62e67ecab398d0a0de300d3a209efa8a30c899ab659c6f14a",
+        "60415b78bf7ff75cd9702108a678f8457514ceeaa48fdd6d076fc3f34d416bef"
+      ],
+      "boundaries": [
+        13.4,
+        19.4,
+        24.4,
+        27.9,
+        31.5
+      ],
+      "parquet_sha256": "8943888ba5f835803d29d402d207f09ae0dc71662422f5c1937df8138fdac70c",
+      "split": "train"
+    },
+    {
+      "episode": 95,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode92",
+      "frames": 331,
+      "video_sha256": [
+        "f7aea308d60e48de5ce02a9f6ebdcc53fc6fcddd460008c27e988d770f24817c",
+        "7b728e5c1200ab1f479de8dffb79527727fe6eed55cbbcb205a5453db8e91e2a",
+        "da95e6a485b6f3c4188ccb74178e20e2f20854a765748d6b0260f3b264ccb456"
+      ],
+      "boundaries": [
+        10.6,
+        18.6,
+        22.6,
+        25.6,
+        30.6
+      ],
+      "parquet_sha256": "d0c457367bc0a91691c55dd82025a6ada050358306d98e6c37f4707609f60d9a",
+      "split": "train"
+    },
+    {
+      "episode": 96,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode93",
+      "frames": 306,
+      "video_sha256": [
+        "26de79d76a1604f40f4d481275da9021c53f9eb447d33e728232858e9bc7f1d1",
+        "fac2bddfed699e8b560756b6cdf5959c9bfc9ae08c10ceb19a254a93b6d4eb52",
+        "347560b06055bedbcdabff2ff925ec0e51cf17d6cae43933c7315613757908ba"
+      ],
+      "boundaries": [
+        11.0,
+        17.0,
+        20.4,
+        24.7,
+        27.9
+      ],
+      "parquet_sha256": "089ac2b067689f0906bc9d4fdbe1a362e6d48fca95ca6e1c1a0003778c7da96f",
+      "split": "test"
+    },
+    {
+      "episode": 97,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode94",
+      "frames": 303,
+      "video_sha256": [
+        "6b65656bbccee66a6cfa4aae3233d55be91e33bfa94f823389e35ccd9cc7d6b7",
+        "87bfe01cfd89ec47850ac1d4fc34be33678db77d5dde2dc1752bcf237582b0ba",
+        "3a2d408d078988e5759aa7a9feb4caf81ff5f929e271c262f9641728457d51c9"
+      ],
+      "boundaries": [
+        9.2,
+        16.2,
+        20.2,
+        25.2,
+        27.9
+      ],
+      "parquet_sha256": "a72d909906c47461116feddd1ac315dfc6fc03515ef5eaa82c06d4155e58f1f4",
+      "split": "train"
+    },
+    {
+      "episode": 99,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode96",
+      "frames": 323,
+      "video_sha256": [
+        "67797dbf6d3ea343937cc2ffe90bc7ed46d5f1a519de404c52b8a3389f518ace",
+        "d83257f29b9c99d8757bfad5d53d8a4a2e1bb85b429f45cd6aeb760541a00fc5",
+        "c32ba2b9d737da85b71d6cbbde4399d517b09e21c520a927ef6a4c475dac63d3"
+      ],
+      "boundaries": [
+        11.3,
+        16.4,
+        22.4,
+        25.4,
+        28.4
+      ],
+      "parquet_sha256": "6097b8a689a1aa3509e897a35985d19822ab7bf3c2035b1d4dc45a7b935df4f9",
+      "split": "train"
+    },
+    {
+      "episode": 100,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode97",
+      "frames": 332,
+      "video_sha256": [
+        "58cd7a316951e6be4deba908fbab2fb95aae306ff0097efa86c91eef93f19e4d",
+        "2eb88f260c4bf16d6a216930a7a0c5697f5979fc70720480f7d8c09004089d27",
+        "2ee05f713cecf2f02e864b94e720e09d3f8bcee1a5c2884d5897dd03a2792027"
+      ],
+      "boundaries": [
+        10.6,
+        16.7,
+        23.6,
+        26.6,
+        30.1
+      ],
+      "parquet_sha256": "1773da360be8d614ed99a53eaed616f1873946ec8758eb46f35406e3159a7c6f",
+      "split": "train"
+    },
+    {
+      "episode": 102,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode99",
+      "frames": 365,
+      "video_sha256": [
+        "f4d780707234968354b808e5ca86ed87f4a979ef030d4ec52ebaeaadea1e1b91",
+        "63ab50a01216dc21723531978780cfd793d59dda96b0f76728d62717779264a3",
+        "0c6fc825e5b575f68132a2e3501d857495a810915fcae71b6b2f03840bbcc31a"
+      ],
+      "boundaries": [
+        12.0,
+        19.0,
+        23.0,
+        26.0,
+        33.0
+      ],
+      "parquet_sha256": "db5d059d2d428dd4234ee5e2e6bf412c010225c5ba40b566be1de60c89cfc3d8",
+      "split": "test"
+    },
+    {
+      "episode": 103,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode100",
+      "frames": 338,
+      "video_sha256": [
+        "b06e758143304d6491978b8251c04bc55d2de708e1c19c4e46a738fa3732389b",
+        "0675c11a9090023457706c8a005904a2b05ef8a0e536bb19d4f3aca3cf3d2d85",
+        "9ad8fba1a05d4abb6b3cc4810a74d2944d222e92733765614b4cd424848c81df"
+      ],
+      "boundaries": [
+        9.4,
+        19.7,
+        22.9,
+        25.8,
+        30.5
+      ],
+      "parquet_sha256": "f92128fc718290d72b6b927919395a4e1d31f2394f97252677616f9a5d8fddaf",
+      "split": "val"
+    },
+    {
+      "episode": 104,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode101",
+      "frames": 278,
+      "video_sha256": [
+        "6ee700ab51c125df3eacfbf685ab4ad0bc7838dd7cad672d47059a168c19d24f",
+        "e2815dbebfb0454e552b9620a49b4133d3ff9fa9b5b5bc7af3dae89ca4e71450",
+        "c02838013e03a04012c4ffe7f003e60db8bc71be7dfd5ac88743c7979e543fcb"
+      ],
+      "boundaries": [
+        9.3,
+        16.8,
+        19.7,
+        21.9,
+        24.9
+      ],
+      "parquet_sha256": "d2af1745d3cdf2bfca94a906f904d3d2190d6d1a60687c4fc00f7ec79ff66511",
+      "split": "test"
+    },
+    {
+      "episode": 105,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode102",
+      "frames": 407,
+      "video_sha256": [
+        "f634368abae03fd934b33294162d139e159a63b9df10df659584b03c0f76806c",
+        "e4f38aa44dae24601be223090623a39d3237a1711c0f324c76376e4e3f433a39",
+        "a3ad4c33b0f0e8848f9416be34837c8c60e8365de6df77625361b9b4f3238ecc"
+      ],
+      "boundaries": [
+        15.0,
+        24.4,
+        29.0,
+        33.1,
+        37.9
+      ],
+      "parquet_sha256": "50f8c80c00d5304c08085e8309902e37c8ca555e93afe0c30b2c09833737c43f",
+      "split": "train"
+    },
+    {
+      "episode": 107,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode104",
+      "frames": 385,
+      "video_sha256": [
+        "b4a52395d42cafd81ba3fe64d1614fc11ea96ce4d52961a23c62b02b4fa63112",
+        "0e30a8a8dabb5a6b01adab2e4f86ef13bdd3a79de63c301a55518a23348fbeda",
+        "5b6b6cd70843acdf8d68f88abd41519bc991e64070b982804734b96496e38018"
+      ],
+      "boundaries": [
+        10.2,
+        20.2,
+        26.6,
+        30.7,
+        34.7
+      ],
+      "parquet_sha256": "97121160b7a67cc7e534062f60489931430d11b379cc36c71064784948241969",
+      "split": "test"
+    },
+    {
+      "episode": 108,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode105",
+      "frames": 349,
+      "video_sha256": [
+        "29ffec3f56fafeebd8c74b4689f418eec897f7bea6e22bea952bbec0c536a19e",
+        "0e736c1598b8e6f0041cf7c61acd8439d6ca6c6d8386d637ba5a794eb4ff2a28",
+        "e0b23c95f3fbef4e5b54547dea8c6ef1725162bb5485adb4a6e874d6bcf74e77"
+      ],
+      "boundaries": [
+        10.3,
+        18.4,
+        23.4,
+        25.1,
+        30.7
+      ],
+      "parquet_sha256": "0c34fa8591c95a34e6dc95d74f9b4b6c82e77ccb01efc6f21cb2c48928fa3f2f",
+      "split": "train"
+    },
+    {
+      "episode": 109,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode106",
+      "frames": 381,
+      "video_sha256": [
+        "c2ff9d3dd36afd7bc9c5cb46a7ff4a886cb68dc9be049ed2b9a48a62f9b67c9a",
+        "fe8d21e4cc6fa3a950fbb5cf825c0e043e91d38f180cab9b09e05dd03c10bd24",
+        "a75d36f71b613e1e8c7c167d51f90d5c34ef5b7030267ea95743eae543bc0ab1"
+      ],
+      "boundaries": [
+        11.3,
+        22.2,
+        27.3,
+        31.3,
+        34.3
+      ],
+      "parquet_sha256": "418e44b846aba252f20b38a66075e3f9eaa25b3a3d705267a52c602210812b28",
+      "split": "train"
+    },
+    {
+      "episode": 110,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode107",
+      "frames": 333,
+      "video_sha256": [
+        "dc1213f9a6a5fcd66f045faf767e92a0a20fc733795cbe4690d3642c1770bdd3",
+        "2824f36a40e0d7b68cbab1d57517f25d414ed415bf301370e030f076d39a204c",
+        "4a799868215b905f566f41a922f9c04463b80977188d0dbe34fe4d75440fee22"
+      ],
+      "boundaries": [
+        9.2,
+        19.4,
+        23.4,
+        26.4,
+        29.4
+      ],
+      "parquet_sha256": "91bca5ba7b195f1265c12c9efdca584199f77ab7bbd42aedf83c813ebc41ec8c",
+      "split": "train"
+    },
+    {
+      "episode": 111,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode108",
+      "frames": 369,
+      "video_sha256": [
+        "8e9c3b87bc33cbcc5b1270f67123591377512e67272bfdc57b91871d10002370",
+        "f4f6f522233481aa178a7cdafddbeddfa229f700824d164a5bdf284f40051b93",
+        "29f19220e52752e6ba0838a5644b4df9ee1f3fca8410cc0e3d39d9f79e665311"
+      ],
+      "boundaries": [
+        11.2,
+        20.4,
+        26.4,
+        30.4,
+        33.8
+      ],
+      "parquet_sha256": "066f0cbd35aec5017708452e2310e2b56ed0951560ffcff740eeca62f0c12047",
+      "split": "train"
+    },
+    {
+      "episode": 112,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode109",
+      "frames": 349,
+      "video_sha256": [
+        "d8d6f5ac15abbecf257e8c0e66f6f8726ba059459c893427a415ae359bf462ce",
+        "a9356548d88f9bcad3bf0cbb20bf67735a013a250f59e6f8d92d97ac6cf4df4d",
+        "cfaf29da353d698c0e4568ea96704b1efa91abd07a95a99419599205773b1522"
+      ],
+      "boundaries": [
+        12.5,
+        20.2,
+        25.3,
+        27.5,
+        32.0
+      ],
+      "parquet_sha256": "888bf94380884ac7acd068d2fb9728a94245d96700e03e94321eba61f60b5c7d",
+      "split": "train"
+    },
+    {
+      "episode": 113,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode110",
+      "frames": 306,
+      "video_sha256": [
+        "e0b87f1047ea58393a9c997a2881c855e9f19a500341850261c222d93ba04f6e",
+        "0b697aa3662c31a3e7b0061eb6c745f3f99c9c7c0542f84f49a0ebc15eb1db3f",
+        "0d378a9474264e9ec7ea098830daf5ca0eed60df298f0d12a244a8e496353ce3"
+      ],
+      "boundaries": [
+        8.7,
+        15.7,
+        21.7,
+        24.0,
+        27.2
+      ],
+      "parquet_sha256": "d03658e136a18bd94271cab93d2cbb020d3fb50de0946e76ceed91ced7b7324c",
+      "split": "train"
+    },
+    {
+      "episode": 114,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode111",
+      "frames": 305,
+      "video_sha256": [
+        "9e71d6ccd97fa209f83c95e6d8262626478def7d4ab4dc0a82b1d7b5fc3fa0cb",
+        "34dfd3fc693aa66f3b2080a808e809d1dd925941293c9d5ebdbda294d2c02f42",
+        "51b7d0a617a52a205573215177cd9969264c2d856968a2b4595ceb377d391690"
+      ],
+      "boundaries": [
+        9.4,
+        15.4,
+        20.1,
+        23.9,
+        27.0
+      ],
+      "parquet_sha256": "9dddf304dfa53e821e4b147f5eeb48e86d9d4106e5e589affd39a37f871c639e",
+      "split": "test"
+    },
+    {
+      "episode": 115,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode112",
+      "frames": 332,
+      "video_sha256": [
+        "6356bb598a6f79cb3de71a909bb94a26842b1d9b7ddd4852bb34be4728ef2ccd",
+        "bbb5ef78c5a83a3a530583e418d1c76ec6b41e0618d600c264a8d0701d76bfb4",
+        "88dd29b869893117e9cddf6f482039b842ae837735b610e1e6b172c8958375f2"
+      ],
+      "boundaries": [
+        9.6,
+        17.3,
+        21.6,
+        26.1,
+        30.2
+      ],
+      "parquet_sha256": "9617978744155c17147db5ca60dfcc202db5da7ca00f12257b867715a5777690",
+      "split": "train"
+    },
+    {
+      "episode": 116,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode113",
+      "frames": 343,
+      "video_sha256": [
+        "386679978670d7ec3d499d6c50f93a04566f1810f7af96b9437f418d52d83396",
+        "62ba0f924405fbb89b257f8318973db4972ec5b645df9e7d6062db809bb64834",
+        "486e609a899167387eaea4a302d143ef22293724ff6a363719548762e6962630"
+      ],
+      "boundaries": [
+        6.6,
+        18.6,
+        22.6,
+        28.1,
+        31.1
+      ],
+      "parquet_sha256": "f2919a5e8f0f352dfb435824d0d866d8920bffa3ba100a7c11bc6775f8feb605",
+      "split": "val"
+    },
+    {
+      "episode": 117,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode114",
+      "frames": 324,
+      "video_sha256": [
+        "7d70a5173214c80677c1a822ffb6e59e2be10be8797bab2afb8c8f4457a9381a",
+        "971a08f59f477a7a9738d60ed26436b65c7fb0a60574d86745fad30695d9860b",
+        "4b80c1b57daf32586df34852e5dc1052a76e876d7ceb9f7cd413ada8c8c2b847"
+      ],
+      "boundaries": [
+        9.5,
+        18.5,
+        22.5,
+        26.5,
+        28.5
+      ],
+      "parquet_sha256": "62ebdc7a70453dfecc420cf6268f9806a75113584a7aed91c6eaf3afdf227843",
+      "split": "train"
+    },
+    {
+      "episode": 118,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode115",
+      "frames": 298,
+      "video_sha256": [
+        "7cb4f506c703da0bed630aa0e856f81de8e10304e21aca21ddd60a7cf1a8fca5",
+        "121469e6a26180b3dd849a7deb0e5c52e7a9e17383106f5f77763d9fee7692e6",
+        "e9aa26a60c3601f1fcc584a6f4617dc6aa588ab38a92b161f6eaba83474acf34"
+      ],
+      "boundaries": [
+        6.3,
+        14.6,
+        19.3,
+        24.3,
+        26.8
+      ],
+      "parquet_sha256": "598f7d5723c37d13e50656975fafbd420a5b5f3dab39a1cf72f0a629879d972b",
+      "split": "train"
+    },
+    {
+      "episode": 119,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode116",
+      "frames": 346,
+      "video_sha256": [
+        "56ce3e86e3d3553e53c48ed5f400bfe711aa16db6608db8219bb384f46514b03",
+        "1cf32363813610d92a164d4665f35db1954ed3ea8b3455c5c8e77fd5e7480da4",
+        "88c480cfba7c26f3f7beec3aac1f181306eb045b4d9e4990585860fc73254e8f"
+      ],
+      "boundaries": [
+        10.4,
+        20.4,
+        23.8,
+        28.0,
+        31.0
+      ],
+      "parquet_sha256": "038fda7caa36285e222cbafba2219b339eccbea974c6bbd9c5d3bb5870a04eaa",
+      "split": "train"
+    },
+    {
+      "episode": 120,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode117",
+      "frames": 327,
+      "video_sha256": [
+        "f322bf863e19dda9fd20d67b0eb4ee0a6fe9a2e95a5a36726582c44db1503891",
+        "9803f0bfbeccff9bb57e3759a64b6dfaf22334a4c712e7258c151a0bbc95d2b0",
+        "4cecffd523197a9d3d36ce7af58022345957aeaf4c4289cd70f7ed764030a0c9"
+      ],
+      "boundaries": [
+        9.3,
+        16.3,
+        19.3,
+        24.3,
+        29.3
+      ],
+      "parquet_sha256": "0fff8b01bdfbb7b509adaee78edd73fce63773854dc67b8468ec865a092a4914",
+      "split": "train"
+    },
+    {
+      "episode": 121,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode118",
+      "frames": 328,
+      "video_sha256": [
+        "1589bd054f1bf7b592bfa86ec4e8517173ffc75551578ad6a4939b6a40d932cb",
+        "de1b2db794877bb58f9164839992ad0be13237ad38a89241a4f634800181694f",
+        "7ad8640c40e4e75c11786b645e326f2d5db8e566a1bcbd4aff1d8ec457a64471"
+      ],
+      "boundaries": [
+        11.4,
+        18.4,
+        21.4,
+        25.4,
+        29.4
+      ],
+      "parquet_sha256": "b01649d6611067ca23212fcd420c372c465a5a87e2a60e23a864f6400d50eebe",
+      "split": "train"
+    },
+    {
+      "episode": 122,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode119",
+      "frames": 339,
+      "video_sha256": [
+        "0b7b39d27aa2d99922927a8806a251f0f7c753fbe74ca4bfad255af490176032",
+        "976bf0ba54c3808b7acceff5771b13f6d8fe6d2cac88e663b0d092344b46b4c2",
+        "2b85eccb1f56a789c03b7828a11bc172ccb8cc3723933dfbf780ce960197fc4e"
+      ],
+      "boundaries": [
+        9.5,
+        20.5,
+        25.5,
+        28.4,
+        30.4
+      ],
+      "parquet_sha256": "f1e17a57fdb7f8f09535c67d30d856f8556601de13ea52ec7b3b1c68dcd292b4",
+      "split": "test"
+    },
+    {
+      "episode": 123,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode120",
+      "frames": 340,
+      "video_sha256": [
+        "822d1366c2ffdd963527ea9aa5fc6283851698e2b97f684939e11b7ac32beae5",
+        "bbb7ddce77485983eedc7ebb04dfdb76fb772e650c9ce2acf89444dc0cb3a91c",
+        "21cdba32c3af6e74fa75ee9d829b6e874d56348e4e54478f84fd2f7d1509ad3c"
+      ],
+      "boundaries": [
+        11.0,
+        21.5,
+        25.5,
+        28.5,
+        31.5
+      ],
+      "parquet_sha256": "21e93a7ff1ce89a08d2731076352854f601afed8f0096872413b816ef969f21a",
+      "split": "train"
+    },
+    {
+      "episode": 124,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode121",
+      "frames": 296,
+      "video_sha256": [
+        "c2b79b8f1e216a49e4bd5464b593d5322ee92baa301507cb24577b1654df8862",
+        "67aab424b2ae747130f2524c28c56aa477be7f2d3dc4fc48cfb4b106ae8f2d81",
+        "ebeb7c594c166ec4ff4a63dda1f63d54b6b25e60db4f11ecdff5b279332dfdeb"
+      ],
+      "boundaries": [
+        10.1,
+        17.1,
+        20.2,
+        23.2,
+        26.7
+      ],
+      "parquet_sha256": "267684e2899f802f25c08b8b5658d9e31e8ddce7ebb79bf1380f54052ecc52bf",
+      "split": "train"
+    },
+    {
+      "episode": 125,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode122",
+      "frames": 375,
+      "video_sha256": [
+        "d7031425de5654f182ca29f5e005f35956db979796be2fb0c01afefd1e16f267",
+        "d9af1f42600771b14f884d41bfd9426b8cf6778009d76d5bc84b92be3fd73053",
+        "f1a467b3a61bf703295684e6e21be6de2636784ee2324de1fbaae2407e842582"
+      ],
+      "boundaries": [
+        14.5,
+        22.6,
+        27.6,
+        30.6,
+        34.0
+      ],
+      "parquet_sha256": "330e362fb53b385860ab5e41c9c9b1ea912a17a816a1725c08892197ea171cca",
+      "split": "train"
+    },
+    {
+      "episode": 126,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode123",
+      "frames": 317,
+      "video_sha256": [
+        "a016ac55303ffd213fbb2501bf43aa0cf381ef94769d53c7b23ea7b1403bbd25",
+        "4f144a1c747458b579f03e46535011288b0579ba7a1f4422e65f3138a7698c1e",
+        "438d695a704a6ccd793c9df206e46fe7784e5c6e0f7ecd9b4de64d4541545720"
+      ],
+      "boundaries": [
+        7.8,
+        14.8,
+        17.8,
+        20.8,
+        27.5
+      ],
+      "parquet_sha256": "6fa0cefeaea8d50f36e3e790b7ebc233d3f325af9d9b485ce3606c8c6810611c",
+      "split": "train"
+    },
+    {
+      "episode": 127,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode124",
+      "frames": 358,
+      "video_sha256": [
+        "5ebfb522040826d59eac73382d00defd86f6bfe809ec9e192294bf311339a06b",
+        "23f2a89fcbd48bdb141528ac5b9fa356728ab7f2c1594dc337a4d508344bee62",
+        "b29f28099fa99e6b32f66a933f21ce8e702fc794257980d02f2570a3b2ce89c3"
+      ],
+      "boundaries": [
+        10.3,
+        21.8,
+        26.0,
+        30.0,
+        32.2
+      ],
+      "parquet_sha256": "0518a5c23af917d5bfc8ab88b0f2409d8615678316b046291ba72d1bffc00d3a",
+      "split": "train"
+    },
+    {
+      "episode": 128,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode125",
+      "frames": 324,
+      "video_sha256": [
+        "676738a74b07fe51707da5e9f2d5806bdbe365adb5e8971a1e9712df8be65faf",
+        "309f0939bb841058f2c4089a73c1e8bda39fc02cdd0f959b5a60cf60d2f59d3e",
+        "8d50a6b4379282a9c96c5ea73ccced402977f1e5a71a5f14defe59ecefe2a658"
+      ],
+      "boundaries": [
+        9.4,
+        17.4,
+        20.9,
+        23.9,
+        29.9
+      ],
+      "parquet_sha256": "9ae3df9b30b98cbe0651e33d5fae0f0502aef6ce48c522f572b1d2e124d7bf5d",
+      "split": "train"
+    },
+    {
+      "episode": 129,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode126",
+      "frames": 331,
+      "video_sha256": [
+        "23ce6a76cabd7c24dfd7368f1e0e28fd717ef5c5231e5401be869c288f9a1529",
+        "b292084810180c5e3e9681d88716a594fb17a9075ed3f49948a5b7363e9bf95d",
+        "440151c9645c71f6ea3f2b03cbd0e1ea512ac8ddddbb95b226adc81edfa63ebd"
+      ],
+      "boundaries": [
+        10.5,
+        20.5,
+        23.5,
+        27.5,
+        30.5
+      ],
+      "parquet_sha256": "6da157f09a5bb29c3670649f44eb203b6a78287c554a651d888118893721a05d",
+      "split": "train"
+    },
+    {
+      "episode": 130,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode127",
+      "frames": 362,
+      "video_sha256": [
+        "8b8b70e510c9e70ca0fc43ffa1f57ebd1af334627e387dde4bff130b983104de",
+        "8dcc201bd51f605fba2fe2cb27c3261bb5c583caf4974fd9fac0b87ae6195746",
+        "931113affa365e68deb88bfb0a088ddec96393ded156d856ade94fab8017c415"
+      ],
+      "boundaries": [
+        10.4,
+        21.4,
+        26.4,
+        30.4,
+        33.8
+      ],
+      "parquet_sha256": "ef7b4329bd6b52336b28ea53a3275d976ecc5f234ade1a2c002b0d78c4d289af",
+      "split": "val"
+    },
+    {
+      "episode": 131,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode128",
+      "frames": 319,
+      "video_sha256": [
+        "7ee6bc21047bada732f87b1cb5f3c6619ac4f3fa862e33d95f09244aed54dcda",
+        "851083f552cb5d5e040f011186087fef3600cc75872b4a748786908e0e6f642a",
+        "2cd9b101f8a084ec2a4f6dc13da552a12ff6bbb86d6b916b7a287b726e7d4000"
+      ],
+      "boundaries": [
+        10.2,
+        17.2,
+        19.5,
+        21.5,
+        30.5
+      ],
+      "parquet_sha256": "7f3fcd68dc0163b1c568f7b23c124013f5f72240c4f9c4572a8231dbacbca13c",
+      "split": "train"
+    },
+    {
+      "episode": 132,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode129",
+      "frames": 332,
+      "video_sha256": [
+        "1ba1157cebd1853f7d81ae41a20ad023c565770ddcb8626259d6e6fb1f2215ff",
+        "5edab01b72e6bf0870de1566b7eabb00a52a7191cb9109c90ee83bbcbe6305bb",
+        "e67197b19403a39a8a4748f101aae23b92ff3e54574dbccc2f7a8ca756440db6"
+      ],
+      "boundaries": [
+        9.3,
+        17.3,
+        21.9,
+        24.4,
+        30.4
+      ],
+      "parquet_sha256": "3f461f7f8dc52dd864d54ecfbfa024686ddc9100db9c2eb5dd91774145eb42e5",
+      "split": "train"
+    },
+    {
+      "episode": 133,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode130",
+      "frames": 347,
+      "video_sha256": [
+        "e01974a9ad1edea978ebdfec25ad5b423c74e2f9f4989fff92269338f8e79b3d",
+        "f5bb7a97c5b82477dd33b97185530dcf58b017444f4b48c42abb5b6017df7da3",
+        "1a8ea286124095a23758577c7c9f8807c9fa422ffc769ad2d50ed0e986472c68"
+      ],
+      "boundaries": [
+        8.6,
+        18.6,
+        22.6,
+        26.6,
+        31.6
+      ],
+      "parquet_sha256": "398862d323ec55ab3a4baee8c265b6b7dfbc1f602a9158e0432bcb86fa6df5bd",
+      "split": "train"
+    },
+    {
+      "episode": 134,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode131",
+      "frames": 270,
+      "video_sha256": [
+        "2a1887dbe1146696a2de907ac9632aae0f92060e5d01b8d330e52223fe59a351",
+        "32e9a055bbb7c0e113333546831821ad50217237aa3fadaa79f1a377a8e8b415",
+        "8577588722d2f31f71421986e9b951df494f17e8eb3b464d145eef37eacbea85"
+      ],
+      "boundaries": [
+        8.9,
+        16.2,
+        19.6,
+        21.8,
+        23.8
+      ],
+      "parquet_sha256": "647aef4ae6bdb940afdbe91d91371357cc0087baa59f02310cf40ca341144b0c",
+      "split": "train"
+    },
+    {
+      "episode": 135,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode132",
+      "frames": 333,
+      "video_sha256": [
+        "0b370f0e4edddea9dc8e04d485fd46551bb0b6cbe254647b19a1df297727c0c9",
+        "b8bf9254e13ff6341ac803a1762662dcc0c69a69e1a157a6aa05dea2466e0ab6",
+        "a28a46fa5dcde8a32f53c3acd86e34d28c2362688f93ac91b80a8fc5e51d9324"
+      ],
+      "boundaries": [
+        14.3,
+        19.5,
+        23.5,
+        26.4,
+        31.2
+      ],
+      "parquet_sha256": "56ac15e062e9d659e4680f3eb9b74128095f9ec6d1f69342e681f8cd02d28fdf",
+      "split": "test"
+    },
+    {
+      "episode": 136,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode133",
+      "frames": 369,
+      "video_sha256": [
+        "b8ea29d9facdefd13cd052ed33943855ff5b480f91d7641cb65fcd527d48340f",
+        "be0623a50041acad23443432ad8d169c407f16ef67a291e13114f6dc58ec76a7",
+        "843982f8573c1852cc253238a69e9aa15542f3ea3fa63a7fedae8b56edc9f3a4"
+      ],
+      "boundaries": [
+        9.4,
+        20.4,
+        26.9,
+        32.0,
+        34.4
+      ],
+      "parquet_sha256": "ed2884201b97f07a8b880b7e0857334273fa45b4a31634284bfd121e4ac43db9",
+      "split": "test"
+    },
+    {
+      "episode": 137,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode134",
+      "frames": 323,
+      "video_sha256": [
+        "0077a5d914a6ce2f37813078714776c3396949ad99b81b1ba05deda06390912b",
+        "1bc840d9c27b8fd18ebd1f55e18bbdd17a688f74770b77d65cf18c9554e6359c",
+        "e2b815362ea43c9c6fc5850280e61e946c9ba906b02a4f0aa58639a610284792"
+      ],
+      "boundaries": [
+        12.3,
+        20.3,
+        24.3,
+        26.3,
+        29.3
+      ],
+      "parquet_sha256": "05a4053771fa6faa913d43fba91e78552434056e121c2cf0a5a502ff9d6bd1c2",
+      "split": "train"
+    },
+    {
+      "episode": 138,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode135",
+      "frames": 372,
+      "video_sha256": [
+        "026b8dd318aab32eac49bc21ea9a1ec7f63d169323cd384852bb4300298bdc2b",
+        "da525e0de2f6e0be34974bd8b4dedc0fe7cc7db59a86cfc3cdc5cc513eb7ddd5",
+        "0d3cb6cc1e4a23e4f9049f70ca28a298cbf45d7dfd420f16c395eb95e07202fc"
+      ],
+      "boundaries": [
+        13.5,
+        22.9,
+        26.0,
+        30.5,
+        34.1
+      ],
+      "parquet_sha256": "9f243a93d0df2ebe1bab2410819fce778bf538df6dc73939ce5c4c6270efd49c",
+      "split": "train"
+    },
+    {
+      "episode": 139,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode136",
+      "frames": 292,
+      "video_sha256": [
+        "93f4a60cbb59c89ced2c82dc109aa41cc046d88dcb5b3612fe65f867236a2a1c",
+        "9c5d3a8bbab322ec9dede1f286a2ffd6fae714ddaacf313ce02f56410710e614",
+        "027824b5dcf1a45de87e163517aaddc8c0da8d1c3586f7db09e442d39a70babb"
+      ],
+      "boundaries": [
+        10.3,
+        17.3,
+        20.3,
+        23.3,
+        27.3
+      ],
+      "parquet_sha256": "20892c3a13a9e0fdb17ebb6d2aff7b66702099ce2dc8512311a4a1faa0c526c5",
+      "split": "train"
+    },
+    {
+      "episode": 140,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode137",
+      "frames": 322,
+      "video_sha256": [
+        "1c2836e9d23b9d92979e8e29ef89aa4d974d5729415eaffc404c21e619e03fdf",
+        "111b0bb760563109f7f2ba9786d1eed63bc321cb62027dba149ae323f477dc1c",
+        "cafa488dea5e27d265432be3c219a9e61fe9ecd119ff8b0fe2370d48e3f81d98"
+      ],
+      "boundaries": [
+        7.4,
+        17.3,
+        22.4,
+        26.4,
+        29.8
+      ],
+      "parquet_sha256": "c499c3b1366d0af66963610071b39a6eab30f0da38443f045bdb30a0b588ba10",
+      "split": "train"
+    },
+    {
+      "episode": 141,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode138",
+      "frames": 327,
+      "video_sha256": [
+        "9fb885b7c575e2db48354377702c06279632e619b13b088aefb98a41db11dee2",
+        "2625460d5ffdcf75530b2dbc5e0c8a49d10c0243d47eb0224966083fdbbd06b1",
+        "bad62dfdac4316f0bc15483d9df78ad61e723fd3302a07e1f33e2ad326f53c24"
+      ],
+      "boundaries": [
+        11.3,
+        20.7,
+        23.8,
+        26.0,
+        30.1
+      ],
+      "parquet_sha256": "4e2f02943b85a236b37ffb66bfe5e6bf0422345d144e5d5d998bfc4cdd671472",
+      "split": "test"
+    },
+    {
+      "episode": 142,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode139",
+      "frames": 319,
+      "video_sha256": [
+        "536697754fb649e53fcd40b141eedad55a2c616b0ff17720707438bca3b88545",
+        "ee25734ff3e3780714bd85a57256bf88f5eefc3aff427bb0cb105c81e90b9568",
+        "f2949dbfd2f7313f82550d94ff2c489008cc257934f01b7555022935268b0681"
+      ],
+      "boundaries": [
+        11.4,
+        20.4,
+        23.5,
+        26.0,
+        29.6
+      ],
+      "parquet_sha256": "be2a123a655d04a98285c4e6cf4dd8ad92438514378036a7e3b11353f97d3bdd",
+      "split": "train"
+    },
+    {
+      "episode": 143,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode140",
+      "frames": 387,
+      "video_sha256": [
+        "06f6ebf9ecb61c787aa9a37b495eb59a284bb56e1b1aa75e90329a1c9b97e93d",
+        "18b293e51152e67517f7c87259ee0f79a9384d159eae10d0fcce1fe1b90d5e0d",
+        "92b8cbb46ffc31a28d726a23ede55ec43af08ad484236e531f34445b5d820c0f"
+      ],
+      "boundaries": [
+        11.1,
+        21.1,
+        27.0,
+        31.0,
+        35.0
+      ],
+      "parquet_sha256": "138765356b6e1f525e807e12b49cf09ff85dd9a1c3879b3f3b6f756cf2bbf6f1",
+      "split": "val"
+    },
+    {
+      "episode": 144,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode141",
+      "frames": 275,
+      "video_sha256": [
+        "beb9ab6cb57f159b884f68f3186e89fd109e9a1e3f267ef172d9931668a3fc43",
+        "97fd3142015aea1623c8bc2d85030ecae94fca8a350924be9b15b81d474460da",
+        "8f7c13b88fc76d59656875ccc413513430587f0799d8e7a8e9e6b51b950da373"
+      ],
+      "boundaries": [
+        9.6,
+        17.0,
+        20.2,
+        22.2,
+        25.2
+      ],
+      "parquet_sha256": "a76aece6956dd2a88499340b1daa9605a6440121770c078d6d4ea205f0ecb37c",
+      "split": "train"
+    },
+    {
+      "episode": 145,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode142",
+      "frames": 343,
+      "video_sha256": [
+        "650a29df1def1d692fedcb8b79431b154efcce4d0949b273771f63dd502e33d2",
+        "8dfee3ee4b9924cc0b1f3ee4ec2f6b814e680e853cf818900d8ed6d701dd1357",
+        "65a05e657e2e61021992dab7ae78ddccb5683ea21a6280c5839c5d4daa12f8ae"
+      ],
+      "boundaries": [
+        12.8,
+        20.5,
+        24.7,
+        27.7,
+        31.7
+      ],
+      "parquet_sha256": "3c7fa5e6a861eea82634b5f5ea77f116e9203e490f6f7c2759370db7dbd7cb91",
+      "split": "val"
+    },
+    {
+      "episode": 146,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode143",
+      "frames": 293,
+      "video_sha256": [
+        "bbb1f17b8169ef9163feb6688575425d20c544a8fee1e0ddf7c5f4d2684d6695",
+        "21725f93ddf485a9a73efb3e26bc02d4b7ff96f2396a4cb691b4dd6e60e1df34",
+        "90c5c9f12098e996603f9546917a7d79deec59a7b989bfcfbc89597da9457066"
+      ],
+      "boundaries": [
+        9.4,
+        15.6,
+        20.0,
+        22.1,
+        26.3
+      ],
+      "parquet_sha256": "7403f07d63f5b454f28adbbb452565537efcdf882ba3fd7d4952678383b399ad",
+      "split": "train"
+    },
+    {
+      "episode": 147,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode144",
+      "frames": 325,
+      "video_sha256": [
+        "927e4973a0f3b57156df99deebbb5eb3577905e3365edafb72a87a6a9c13bf19",
+        "d4a748de3c49b3a2bf4489cebbebf02605ef198b4c54eea3866719b649d2093d",
+        "4c8698df48c0b83f61bccc20061a40da58d6517a4c1c5bb39f522f939c60fae9"
+      ],
+      "boundaries": [
+        11.4,
+        20.0,
+        23.4,
+        27.5,
+        29.8
+      ],
+      "parquet_sha256": "9c3e4aef4462f45ca5d8630e6f0e9def1b1b8360b69be81fbd4b943efc948d62",
+      "split": "train"
+    },
+    {
+      "episode": 148,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode145",
+      "frames": 343,
+      "video_sha256": [
+        "d9c3a29dd6a659caa03b72f9c6201973749922e581fe61e5a56b5ee887cf3290",
+        "b5fbe27c5566b8a8042463f1cc589b6c7c27581ac9fd570124f44cf1a17b6ab2",
+        "cbb54163338ce26ceddc0ac53314fe0bb2f40d6ce5bc425336a96cc3d1a7c0c9"
+      ],
+      "boundaries": [
+        10.3,
+        19.7,
+        25.7,
+        28.5,
+        31.7
+      ],
+      "parquet_sha256": "c0b389ce93a5cab527fb1cb3d621397d1745004e53fafcf88acea9da3114d122",
+      "split": "train"
+    },
+    {
+      "episode": 149,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode146",
+      "frames": 283,
+      "video_sha256": [
+        "608aff0120a22dc06085fbb47fa7b9d3729595fd13a8f7d3722c9d0c9287ee56",
+        "bb121b2bbf22f03e6b59089e76afab96c7a5f071c3fcfbd6ae6dbf5a2a019b7a",
+        "2926adb336bd1148fe2063a50594399b9932cfe6b616ca76dd2eb8395139e7ed"
+      ],
+      "boundaries": [
+        7.4,
+        16.6,
+        19.3,
+        22.2,
+        25.2
+      ],
+      "parquet_sha256": "2ea8524a895487330ce9500ba50b407e0ee4641100b942054c945003ed5e05e4",
+      "split": "train"
+    },
+    {
+      "episode": 150,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode147",
+      "frames": 324,
+      "video_sha256": [
+        "cd59791e4820856e463228f8efa6e57b0f833dc20483892ae740dbd9a7da5b30",
+        "22c021101e84dc35c6f69e69e1c1b61cc97a66870ea1712763e9d1290ef7b07a",
+        "fa6d0fbb5830900345a88259d410ea81019cbcb5a2ed7101792048fe8a363c53"
+      ],
+      "boundaries": [
+        8.4,
+        17.3,
+        20.3,
+        23.3,
+        28.9
+      ],
+      "parquet_sha256": "97c8293b9e11da70cc4a30fae1b0efe9f5ca448cc5916695e70925ad3fb3e36c",
+      "split": "train"
+    },
+    {
+      "episode": 151,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode148",
+      "frames": 350,
+      "video_sha256": [
+        "af6466b66f6f160817fbbc97d62ba06e7353a2af28604d508c6032acb8387de6",
+        "8bcdd0d36c7e534dbebae40a34cf6abe533b5b3e925be6eb2cae7548b6d86a63",
+        "56a621f3cfbeedbc065cb5cb3e372de9fbb16565051dbb442952b04d35dde140"
+      ],
+      "boundaries": [
+        13.0,
+        20.9,
+        24.9,
+        28.9,
+        31.9
+      ],
+      "parquet_sha256": "120400b132e4b539eda01e70f5fe6c66ffddb80863899c311e3a92a1a209cdf0",
+      "split": "train"
+    },
+    {
+      "episode": 152,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode149",
+      "frames": 341,
+      "video_sha256": [
+        "4641b82d99595676b4db510287628ebde59b0490d1e78286736293d841c70feb",
+        "5caa1060881d2dbb22b99e799576de7170c30a1406e6091bac264d8163a63b04",
+        "97fc96d2cab08e01d7749bf76356b04f64ca8105813bc88f366cc6e3e636ee07"
+      ],
+      "boundaries": [
+        10.9,
+        21.0,
+        24.3,
+        28.3,
+        31.2
+      ],
+      "parquet_sha256": "0c4002753ab93f68b1fcdb4de147df1b0693f421870e634163ff17ade07db553",
+      "split": "train"
+    },
+    {
+      "episode": 153,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode150",
+      "frames": 307,
+      "video_sha256": [
+        "5f3ae466937405ae785f2b00d388a0f96c345c315854fb65589120c6e8ca0085",
+        "08bd3a7726240480d0ac0ffb9eba38c98afb1bdcd96fea8b27b779e3cd8eb4c1",
+        "c5a9418f4ff9c1cfa1fac37431784319a7bfabc7c0f79f7967527a9e7e9fb0ca"
+      ],
+      "boundaries": [
+        9.5,
+        19.0,
+        22.7,
+        24.4,
+        28.0
+      ],
+      "parquet_sha256": "1f9d91e2c9c31d47e5f678d45f65a523c23442a1a2b0a3a5fbbb2f55045da476",
+      "split": "train"
+    },
+    {
+      "episode": 154,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode151",
+      "frames": 310,
+      "video_sha256": [
+        "dbaf3c57339d642a91df4f4330cb8e8cba2ef3578cff76d57dc50f73373d5f98",
+        "1139ab8cc5011a1175f772cfb7020ac34d820f670a6ca9420baab7cf592833e0",
+        "53c04d5daea12b53e61a95fc3581502fafbf653c017c501472721bdb962d9af7"
+      ],
+      "boundaries": [
+        9.4,
+        17.4,
+        22.5,
+        24.7,
+        27.7
+      ],
+      "parquet_sha256": "7d40d3a7036269283a3dc31c908094537436ccb9679f9b52bf727be375af2bb5",
+      "split": "train"
+    },
+    {
+      "episode": 155,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode152",
+      "frames": 307,
+      "video_sha256": [
+        "7553a7ae21c6bbf0c0c654668bc33394de2a3663c7badb4e3768b65f8f09a104",
+        "b551c8500e7488ceb9276d8213e39992e555039017a036d33cd083887fe11102",
+        "f83305ec52f48ac10b596f620e78e7e7557a36d8f648977e902711c4dc673d5b"
+      ],
+      "boundaries": [
+        8.4,
+        17.4,
+        21.9,
+        24.9,
+        27.9
+      ],
+      "parquet_sha256": "a2421c42ef7656a909b1375147f7e0e9183d783dde176d4f6b53dd28d36dde1f",
+      "split": "train"
+    },
+    {
+      "episode": 156,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode153",
+      "frames": 284,
+      "video_sha256": [
+        "38b530e9429ec24fb5569b159fd617fd3e484a2391cb4ec5b1a810c1a2922dba",
+        "34cd13ab2275eef04f59c4b5a64b506b6e44fd766ba46ed65060c9e4e12f56c3",
+        "3ec54f8698368471992ac3f058d36b16c0be56a452fee59ac38e9ff093897358"
+      ],
+      "boundaries": [
+        8.4,
+        18.4,
+        21.3,
+        23.0,
+        25.7
+      ],
+      "parquet_sha256": "55660b6bc7e8e3aac454df11574ff9479fd203e12a03a802ecb67f266d8ea674",
+      "split": "train"
+    },
+    {
+      "episode": 157,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode154",
+      "frames": 342,
+      "video_sha256": [
+        "a09811673b4c52934d90854bdf22f2ceb035bb0ee49a3fdb98e8cdb8492cb21e",
+        "be57e2981ff03fd68f3b2e1a1ac794526087578a7f25653d3716d1c4193ab277",
+        "d609201d253888087f6a0dfc7eac4a8e18859d33dc2536882f41fe0873da7860"
+      ],
+      "boundaries": [
+        9.5,
+        20.5,
+        25.2,
+        28.4,
+        31.4
+      ],
+      "parquet_sha256": "c8e544207533ed00a6484247caf1dd8b02aae0935dad5daef555a4bf8c838fde",
+      "split": "val"
+    },
+    {
+      "episode": 158,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode155",
+      "frames": 471,
+      "video_sha256": [
+        "b8b7314cd88343ff6c245bc0f25349e9551462b1cb708a136341dce5cf719ed9",
+        "5698c9b1f211edcb4d42291cf24a33de3707e7328e0d552640d9e28e58645666",
+        "e6eb491f55028e8b811fd272f2ea686135f552afa7eb79adb429d2fda62b629f"
+      ],
+      "boundaries": [
+        10.1,
+        18.8,
+        40.2,
+        41.8,
+        44.9
+      ],
+      "parquet_sha256": "0d7ced17af0328dba4bfcaf8fd7982ca700b6151c14c315eb907167b3bff9a8d",
+      "split": "test"
+    },
+    {
+      "episode": 159,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode156",
+      "frames": 310,
+      "video_sha256": [
+        "cbbc1577469f927dcd7fa7ff733d51aa2f7d7e73065e000a31ed1d96a722dd06",
+        "6815bd11b25a9a40ad7292a72657c84fb0a51d64d10fccd8cb74191af0e91bab",
+        "1befef5489a1902cd31081b40aa7895b1dd19c53454635b4df2927f89579152c"
+      ],
+      "boundaries": [
+        8.6,
+        17.2,
+        21.2,
+        23.7,
+        28.3
+      ],
+      "parquet_sha256": "659f503539b68625d830d05355a8bf574ad3112b664f5700f58cf03feb8778be",
+      "split": "train"
+    },
+    {
+      "episode": 160,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode157",
+      "frames": 348,
+      "video_sha256": [
+        "99059415bcde7e62b870cfbc0102d49cc47d64d6ecdc79f09f7f209787b3e28e",
+        "27af83b199caba36da1bd85669a7cdc4f9dd4841aada10ff9f992d37af830477",
+        "e8e2487d42541f1a1f157fcb2af235f7969648c3bee31218f5bc80ea036ef145"
+      ],
+      "boundaries": [
+        7.1,
+        15.7,
+        23.8,
+        26.6,
+        31.8
+      ],
+      "parquet_sha256": "6806047512ebeaf3c4f7e63d8d45296578dab98e4344f523339b7fc1699a2436",
+      "split": "train"
+    },
+    {
+      "episode": 161,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode158",
+      "frames": 443,
+      "video_sha256": [
+        "1cf69e9dc357de08cc6b5df58a494039b1a3477215e0d885b7b3ae50350a1c9e",
+        "a4c53613c89d5205515fdc6c267ae804d318bfa341c7f37276ea16014cd52434",
+        "ec4bba43a69c9b740655e803beb6ad0a21ed47b64d487a3f178abb8dfcc540ce"
+      ],
+      "boundaries": [
+        9.3,
+        19.3,
+        35.3,
+        37.5,
+        41.4
+      ],
+      "parquet_sha256": "e321d437d61b318ff9ed230fb130193e3a555085d5c2c8b4e027077f7da97ceb",
+      "split": "test"
+    },
+    {
+      "episode": 162,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode159",
+      "frames": 344,
+      "video_sha256": [
+        "b4774e439f78fa63779e487bda91e51d112b1c8ad203bde1b03f98d6048e720b",
+        "a8a23207777d94b7fb54e8b5b3bb72d2d4ac7d6d7ffb6fdbce52658105eeec24",
+        "7d7edbb544196b3d101ba50e7b89d0794065a0942391a30598f176f04fbc7bac"
+      ],
+      "boundaries": [
+        11.0,
+        20.6,
+        23.8,
+        26.2,
+        30.9
+      ],
+      "parquet_sha256": "4b3e48cc98f45553fad9ddb6ba215d623386e769a07eb0414b4ef86fd0338792",
+      "split": "train"
+    },
+    {
+      "episode": 163,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode160",
+      "frames": 300,
+      "video_sha256": [
+        "91188f66208f10602ea1485b1b42e457a4f51bd665db35cdf3c78da7398977e3",
+        "e3cfefd2bbefad42060baae5ae3310b86c6c098fdba8e5bbc0e4bb4f7d48048b",
+        "25fb89c329e507b42e4bce2d0dc2e20c0e5366c8b30995ef6a6236c6df693f46"
+      ],
+      "boundaries": [
+        8.5,
+        15.7,
+        20.0,
+        23.0,
+        27.0
+      ],
+      "parquet_sha256": "839ccebe293a96847b9318c9d42c168a0b0fdcdb0ef5830d28d1ce0e1e797bab",
+      "split": "train"
+    },
+    {
+      "episode": 164,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode161",
+      "frames": 334,
+      "video_sha256": [
+        "50b4e4613d3df6cced0167bae3255d90b87d4861902f0c1077f53058b9daeb8f",
+        "d11220af7a6ad1d8b9a4101a1217a70618b1166a25fb990825e207c83b9bb1db",
+        "1cf99348145d101f8575c9e2a20ce12a44b9deee52785028eadc08f26b322a07"
+      ],
+      "boundaries": [
+        10.4,
+        20.2,
+        24.3,
+        27.7,
+        30.9
+      ],
+      "parquet_sha256": "cc6fc229679aa6d67b84ea9db0e6e657de3351edb300b4b44ca39448d72fd21e",
+      "split": "train"
+    },
+    {
+      "episode": 165,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode162",
+      "frames": 304,
+      "video_sha256": [
+        "be1ad035da4a041b8084ac769e133123a5639c0ead69264024238678a21006d0",
+        "60b00335693efca4112db8caa879ecfa08ed47ec994832a4942328c9c7723178",
+        "2d83d8c76034ee726648766fc3f849a49858af9dc0c3f520a37d098835e9f5ec"
+      ],
+      "boundaries": [
+        8.5,
+        15.8,
+        21.5,
+        24.8,
+        27.8
+      ],
+      "parquet_sha256": "ef295e291d7bdf005d286b16fdffea46f4c3e729b267c9cef56fd6a3cefc97ce",
+      "split": "val"
+    },
+    {
+      "episode": 166,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode163",
+      "frames": 330,
+      "video_sha256": [
+        "174b57caff28fe81784426e346602c2a33f3ac1beb3cfa4ff823c90ff4f89ef9",
+        "863b339ad1a834c12a037a39be71e7d7284840401788b00e37d1a9748f0067c8",
+        "2e1966488cdf57d6a8791474e1ac2270527d69703c8384fabf75fc9462ce5489"
+      ],
+      "boundaries": [
+        9.6,
+        19.7,
+        24.7,
+        27.7,
+        30.7
+      ],
+      "parquet_sha256": "6ebff9aea0b5992d58e2d49e0c2e4c352d935e0613351c326a1fa3133e10a9c9",
+      "split": "train"
+    },
+    {
+      "episode": 167,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode164",
+      "frames": 317,
+      "video_sha256": [
+        "d48c3c6c312ff0008ae544ba4f6c53dccba5c774e6228a4cac691add006d282f",
+        "ef0f7034a3d80e286faeeb0f668a9bdd7b9c8512041356fbeaf68407c6e71f5c",
+        "94292c36f081810a09182b98c5b5650de8ce2c908cf787486f81de729ba1449b"
+      ],
+      "boundaries": [
+        7.5,
+        15.0,
+        19.5,
+        22.5,
+        29.1
+      ],
+      "parquet_sha256": "c8b4e3f3ed7113530b7df69a4d29a6c6d084e7537e33650213153c37f12a08dc",
+      "split": "train"
+    },
+    {
+      "episode": 168,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode165",
+      "frames": 292,
+      "video_sha256": [
+        "6a61ab470fcca70ab563c9807891c8daf3b2041619477d579db75d1dfb2a1ba5",
+        "0cf972260dc27982232681fddd5bb9b724e1e7454c14c25a543ffe71e9bd863d",
+        "c8e62b3c82a6a4d37c2b1d78f7824f2986bb3dc56118ae4138b0989e355dd1d0"
+      ],
+      "boundaries": [
+        7.8,
+        14.1,
+        17.2,
+        20.7,
+        26.3
+      ],
+      "parquet_sha256": "1fc1c403d5d6e50ef7655ac8e441b1e143f2274702cfc8b374d9f80ae0a228ac",
+      "split": "train"
+    },
+    {
+      "episode": 169,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode166",
+      "frames": 295,
+      "video_sha256": [
+        "e7ffb740da431b584994d3a92c3c109c158e5d4371307029d328c030ca01abce",
+        "bd4d45e89407b86c63aece7505630bfcac825d8a5c4768d974776eff6ff0ec95",
+        "60002786fa457e1b25071f02f36948c9223e50a516665aef03b8dbb1f3fb4f4a"
+      ],
+      "boundaries": [
+        8.3,
+        17.3,
+        20.2,
+        22.6,
+        27.1
+      ],
+      "parquet_sha256": "84239a2f7e60bba724a108425cfdf529c20d6815919b44ef11ea53e8a0dec5b8",
+      "split": "test"
+    },
+    {
+      "episode": 170,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode167",
+      "frames": 336,
+      "video_sha256": [
+        "34fa7f85ef2421546935995b04ec8eb7fcb395e5c789aedb0eb8effc9bfb5059",
+        "b94c9a605e2c7d38e3e3232f83c9c16510b78bc4feb7d130277b09346b315281",
+        "cd23ae48f2b4da46db587843b351e487dc8e224d4e4a78c3c6ac3df6a341efb8"
+      ],
+      "boundaries": [
+        9.2,
+        19.0,
+        23.0,
+        26.2,
+        31.2
+      ],
+      "parquet_sha256": "1bdb07acb4db3b695fa39998434c50c2d4fd8272dfbcb815904582729b8c1f39",
+      "split": "train"
+    },
+    {
+      "episode": 171,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode168",
+      "frames": 341,
+      "video_sha256": [
+        "77dad4969358f232f0d52db7931f921c8155ed1b4175aa3567f91420e3805f7d",
+        "7af48555e23bd4e5d5c66e6aa2acfbac0cf415d2e9e04b004640f877950a3096",
+        "adf55f03660158941bb94b3b835a630798e4ef5c44f41603bbf4ac714982ae97"
+      ],
+      "boundaries": [
+        10.3,
+        19.3,
+        25.4,
+        28.4,
+        31.4
+      ],
+      "parquet_sha256": "ea8c46e5c2d7aa291c48a6025cdc44c5fd428e0dba643af253fcba269fe7d2ff",
+      "split": "train"
+    },
+    {
+      "episode": 172,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode169",
+      "frames": 340,
+      "video_sha256": [
+        "62a7b62574c63803a3f3dd98fc17e5d2d0d73ed2fc521039be6d705bcd091dc5",
+        "02aceed94b62bb02faae7be6e0cb3d1dc5117386fd62c2e24dc59b70dc878f46",
+        "2bfe2c417882ec0ba2f3ffb8eb4e61636bf3325b503af6865e2af13de61cb09b"
+      ],
+      "boundaries": [
+        9.9,
+        19.9,
+        24.9,
+        28.0,
+        31.6
+      ],
+      "parquet_sha256": "f9d0000e31a76741e5cdba9d975e7e22ad0a921d042049d79992e440e4878227",
+      "split": "train"
+    },
+    {
+      "episode": 173,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode170",
+      "frames": 285,
+      "video_sha256": [
+        "5214531abd5cfe7254fc011ccc2ddc2a090c2a04f686e31383bb00982c2a7221",
+        "1d2a717b6b7e81a5d21b51eee638e7c3ed4a3e323eeaf024895dd6af393c0915",
+        "d6e845a626a22724363fc3b9264d732aee1447cffcd4bb9c132dc94d9e8f7547"
+      ],
+      "boundaries": [
+        7.2,
+        17.4,
+        20.7,
+        22.7,
+        26.2
+      ],
+      "parquet_sha256": "3a35179c81caf5a2a83756772bcec79a510812f9094c4a060252e820adb7db9d",
+      "split": "train"
+    },
+    {
+      "episode": 174,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode171",
+      "frames": 284,
+      "video_sha256": [
+        "f9f002f15942f0b2df403c92c1fec7df100c48033391015fc9ebd39260cd2533",
+        "59ec41dd7fa0e7c937799abce4e0b77adcbf035c6334d18038b09541c6656815",
+        "4a15cbb8596fcc8129e7c2131ee7c73f121d587c51cceca3799ae60e9c545c37"
+      ],
+      "boundaries": [
+        9.3,
+        18.4,
+        21.6,
+        23.7,
+        26.1
+      ],
+      "parquet_sha256": "379da0cd589fbcf8b94bfb577d268795ec658081bb26386857bc23a2e6611884",
+      "split": "train"
+    },
+    {
+      "episode": 175,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode172",
+      "frames": 327,
+      "video_sha256": [
+        "4e3c5d782f5dc472fb3fcccac87c8ce3a8d189bc574987f5892fe9046dd69592",
+        "65f43a27ef79fb3aef6510cd41e7876ec567edfd07911ac3c94390fd45fc8a53",
+        "41efe046585c084a349d9694f47861647c29dce2a713c7d1c91dc91aeefb593e"
+      ],
+      "boundaries": [
+        11.9,
+        20.6,
+        24.1,
+        26.5,
+        30.2
+      ],
+      "parquet_sha256": "aa1163505d6919cb9f1711aa5e41d2eaa8b0c88a801cc419e4b45862f968628d",
+      "split": "test"
+    },
+    {
+      "episode": 176,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode173",
+      "frames": 318,
+      "video_sha256": [
+        "a0c26ac4997108b96ed0903e20bcc1413a2032a5faef75cafb22954db18a5bd7",
+        "042126fbedcb245e87b449fd61c1adc6a0b2ab7c677232a862b296b742d8b17d",
+        "061fc6cf040eb8d0f4b840e00a8dbfa0c7d532852cac37fa9c42e4f1a8d18527"
+      ],
+      "boundaries": [
+        8.8,
+        19.7,
+        23.4,
+        25.7,
+        29.2
+      ],
+      "parquet_sha256": "c6b2a5493ec324180c2d6fdf4794cfb3d8447ebab1768f85d69debb362156546",
+      "split": "train"
+    },
+    {
+      "episode": 177,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode174",
+      "frames": 290,
+      "video_sha256": [
+        "09b52ae082070fd98b5b28720ee922e5e19df99befc046bc05db67a7cd01934f",
+        "2f3787d88ea41e2f12437aeda2c1da9bc59eb7dd4d12efadcff298c546d1c384",
+        "97b2b5a61cb7da6a07a2a4578c0d2526f01318fcdb5833da440c7cae668b4d88"
+      ],
+      "boundaries": [
+        8.4,
+        18.3,
+        22.1,
+        24.2,
+        27.3
+      ],
+      "parquet_sha256": "759d0c679fef779057a761b8ad1feb62a4a00a68048e3df703ada1e0ea9b41a4",
+      "split": "train"
+    },
+    {
+      "episode": 179,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode176",
+      "frames": 308,
+      "video_sha256": [
+        "79ccdb7085579d19d9b83037702d10246926b0ed1eb3e20ec57c30c6ac092938",
+        "f4b605788256c5a1539d752c069f04e82426817f9c0615c2fd719ff78172c692",
+        "a13b038835cae8abcbd5d9c7bdb8272705a40c1397f33e9d4b3b3193ef4e4df0"
+      ],
+      "boundaries": [
+        8.3,
+        15.9,
+        21.2,
+        24.0,
+        27.1
+      ],
+      "parquet_sha256": "04c813da69aa841dc346be74c2e199052a7dfcd43f2b9d8ba8201186f9296740",
+      "split": "train"
+    },
+    {
+      "episode": 180,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode177",
+      "frames": 442,
+      "video_sha256": [
+        "2cd4beabbbc1045f367eb8c1cf3c063ddddb92e2480cf8e5ae8939e57a40d619",
+        "92ed28bc2fb688213b5aca245f2f5c3c38109a237bb7ef71313059c04a8e5fce",
+        "0bc7d6b9896e42414796c7aa26b2f1cb1d5cf7127141f803c3828d74a3268671"
+      ],
+      "boundaries": [
+        8.5,
+        16.3,
+        33.6,
+        36.8,
+        41.6
+      ],
+      "parquet_sha256": "fd4edaa613c6c912eb058e36f97d16fb928999367f0b9d1b84a74dbe08722701",
+      "split": "train"
+    },
+    {
+      "episode": 181,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode178",
+      "frames": 349,
+      "video_sha256": [
+        "071089032175c4998e08a6442f40df1e59346b02b26c11714cb0931c7d52a063",
+        "99ba04ffdf6348b5e0b186ff59dd6e351183e2d147bd87998a524e6c91234685",
+        "188bd6f2a1ff62e03eedc87ccf13a55ea1782cc83a42dbe185c4655e4d68f91c"
+      ],
+      "boundaries": [
+        9.3,
+        18.4,
+        23.1,
+        24.7,
+        30.6
+      ],
+      "parquet_sha256": "52163fe6273652c094e20bad78550d1c57d25ebe51bd8634f3641835b1067d42",
+      "split": "test"
+    },
+    {
+      "episode": 182,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode179",
+      "frames": 302,
+      "video_sha256": [
+        "5face713b8735d50245493e73185e3f6f7ccd0a505f80241b0ee9fa56f9702fc",
+        "e98d422585b4575b9c7ca532cdac9219074a36aff64792bb3d156ff1ed61c58d",
+        "be52b73d2efff4fb94de4d1c0b8baf58ab3bfd840489761a68f1fb9db9af61da"
+      ],
+      "boundaries": [
+        7.4,
+        16.7,
+        22.0,
+        24.2,
+        28.1
+      ],
+      "parquet_sha256": "7d9f8bd78e6d27230546c97187e57bb9a42983bf21dec962c2bbce394bab41f8",
+      "split": "train"
+    },
+    {
+      "episode": 183,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode180",
+      "frames": 339,
+      "video_sha256": [
+        "e4338c8680b620e7229692be66a30064916609d4c866d8f311481fad5438484d",
+        "80d6538d4833596b5102e630d99f15efac1e98ad67256d4eabe8a8dae42a8a49",
+        "641c8e9b9de28cab03b020ae6e98cdb32e36c104ae70d3f2ac137b821910f2e4"
+      ],
+      "boundaries": [
+        8.7,
+        21.0,
+        25.0,
+        28.2,
+        31.7
+      ],
+      "parquet_sha256": "8f6b75740b6304e33f964c6c8c4f896b62a1aa1fc315d9f9c90b448343fbc629",
+      "split": "train"
+    },
+    {
+      "episode": 184,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode181",
+      "frames": 298,
+      "video_sha256": [
+        "a533f14b58e5ac2da89ee3afb89a318b8013de95103b4af7de725e081ab31888",
+        "1456ed457a69dbceb4a538634b98a8ffcca907cd7228feb44b3201fb39ea59c2",
+        "798a7b629d2c1b32ca0ab680137bd9259143ef128d44a36f3ffd82b19f4bfb10"
+      ],
+      "boundaries": [
+        9.5,
+        18.0,
+        21.7,
+        23.5,
+        27.3
+      ],
+      "parquet_sha256": "2ada875e7b4be41ac2d59f6190c007665a23fee5d8cecf5211ac26767bbf15ca",
+      "split": "val"
+    },
+    {
+      "episode": 185,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode182",
+      "frames": 306,
+      "video_sha256": [
+        "14ec669ea9658abfe324a32aee9211c84a9f50328c4dce140faeefebb63ad3a4",
+        "4148759142b7e69ea52caee1196563a1c13a63273ef52f29d7b85193de39e464",
+        "7ddfa8bf9eef66f5180105e6db3283264384e5d2b3ba25f96a2589fb05649fb3"
+      ],
+      "boundaries": [
+        7.4,
+        17.6,
+        21.9,
+        25.2,
+        27.8
+      ],
+      "parquet_sha256": "8933f062fd4e98aeb52abe3ab631e5ed5a0636a6864a243c04d6a2fb45faebff",
+      "split": "train"
+    },
+    {
+      "episode": 186,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode183",
+      "frames": 320,
+      "video_sha256": [
+        "66eb0b85984ff9ced3de63a91458b444dc6c1baf081f8773a20a1fc2e3b9a177",
+        "7cf7b42680af632b6fae70790c1e9442f6fde0834531ec01e72e2947af931ffc",
+        "d3ab35b0a7f744aaad4afe5f898c1cb3fab3f825e3b92afaa0c5ed547aaeb5ca"
+      ],
+      "boundaries": [
+        9.3,
+        19.6,
+        22.8,
+        24.9,
+        30.2
+      ],
+      "parquet_sha256": "06628203775dcc3f4c922e70d0b9c1324b3050265d199ad81da80a125517bdea",
+      "split": "train"
+    },
+    {
+      "episode": 187,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode184",
+      "frames": 278,
+      "video_sha256": [
+        "9da35862dbfb3e60516449c22135c39546f5d01770db5a2b5a6f9a04e41c5974",
+        "fc9f0f8f27ddc66561c8006f262807828c1acc6035a3afea56d2e16fd02472b9",
+        "0781370e73a32604c5ee99c45c97b46ca832b8a39fbc2922b1353241ee8190c5"
+      ],
+      "boundaries": [
+        9.2,
+        15.9,
+        19.9,
+        21.7,
+        25.4
+      ],
+      "parquet_sha256": "09f0d6285d74e50605733d6190393bba3226770e7c94a8f5ee78c118cab087be",
+      "split": "train"
+    },
+    {
+      "episode": 188,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode185",
+      "frames": 304,
+      "video_sha256": [
+        "0cf145e575992afc559e56a77c245394c39d92555014b194e7e0cadc4348ef2c",
+        "a3a277fe7e711aa5f16e1a810acdeaaffe005117ad1862a1e9da01f643f96890",
+        "bada647695cac48385b2f9f04b88b8b1c8fb2dded91ff0677afef2e7dd3e4751"
+      ],
+      "boundaries": [
+        9.3,
+        17.1,
+        20.9,
+        23.9,
+        27.9
+      ],
+      "parquet_sha256": "c62d915d3524ee304e3eb8b94766deddb16c523e4646a38472d6c2ee436515f4",
+      "split": "train"
+    },
+    {
+      "episode": 189,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode186",
+      "frames": 319,
+      "video_sha256": [
+        "3f894c04a712bfda457a773b931d7af924a7708e05830dfbb39e0724611ce22c",
+        "7d8b6e0ba00128de0aa5a652d5ce94fa3c4aa10fb6e61a0bd1d125da905a8798",
+        "0678923ecddd6ea1f2860c597ff6137ef63fffad6574688a55813feb4d89c5f7"
+      ],
+      "boundaries": [
+        9.3,
+        15.4,
+        21.0,
+        24.1,
+        29.2
+      ],
+      "parquet_sha256": "19b4e830d799e5192ce98e9e76aeda122efd0668e2f2ca5fc810330740b9f315",
+      "split": "train"
+    },
+    {
+      "episode": 190,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode187",
+      "frames": 333,
+      "video_sha256": [
+        "4ba78e30e739b57b4acf8dcbebae65c2e35e7d700cd2acfd3fa5136d49629abe",
+        "c8f2047edf9e2dad797d946bc6e8acb3cb415d080891d364ecff09ed931e398c",
+        "b067eb877cb07300787e983f2462363b3c67c5ba933ff279bdcc0f0ce875e4c0"
+      ],
+      "boundaries": [
+        9.9,
+        19.2,
+        23.4,
+        26.2,
+        30.2
+      ],
+      "parquet_sha256": "e60960c887809178210f263b00e27a68e4ebf85389fb778aa270067fd41ad472",
+      "split": "train"
+    },
+    {
+      "episode": 191,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode188",
+      "frames": 260,
+      "video_sha256": [
+        "5f7eb26ba0a3de8e6a2c3d1adb0adaf6a0e1512d5ded25691ca1635fa3c916a0",
+        "1cee18a17e12c1884c6df3cf83fc699c12696694922307356080f68b8b740247",
+        "cf2df51f1a34232a7b4906aa4179de626222d8d48fe09de9b24c696e4ab8742a"
+      ],
+      "boundaries": [
+        8.3,
+        16.0,
+        19.2,
+        21.5,
+        23.7
+      ],
+      "parquet_sha256": "c995814dd922857cd29ec75b3273ced2a233b830f92c4b21f2b4b253a6f1b98a",
+      "split": "train"
+    },
+    {
+      "episode": 192,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode189",
+      "frames": 292,
+      "video_sha256": [
+        "cbef226a9b589f86cea8ecd911bf2dcca5bf4abadb0dad8edd1b1b4f9b902862",
+        "6c6cd1a6e91530e6c9efa0d1c9b6148c5f0f7be11dc6f885ffdc9ce2e947f09c",
+        "3a1655604d9cc9943801a8e8a178b8d358d4eb491b5579485006bbfc3a12528c"
+      ],
+      "boundaries": [
+        8.3,
+        16.0,
+        19.8,
+        22.2,
+        26.2
+      ],
+      "parquet_sha256": "b532c53dc7c48469432712a01dbdf6b888515ad7539b8e92d98320f070f0dce3",
+      "split": "train"
+    },
+    {
+      "episode": 193,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode190",
+      "frames": 356,
+      "video_sha256": [
+        "168017745820a0b5fd615b0b877b2e3b5f0a82fc3f95dae915be894f902f931e",
+        "63d5c19c32845b73e44802a284da42ecf53c71432fad97752339641d2ae2ba26",
+        "d1e001de8d8e91af3c11b8f2881cc62746bb86ebac7d3207f4a5351229e99371"
+      ],
+      "boundaries": [
+        10.3,
+        21.6,
+        25.7,
+        28.0,
+        32.7
+      ],
+      "parquet_sha256": "28095d2d62d233164c6016c892dde03d6688da5478663080c72f273d842c3b21",
+      "split": "train"
+    },
+    {
+      "episode": 194,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode191",
+      "frames": 334,
+      "video_sha256": [
+        "84256a2664ba04c7ea4aa51356ea23733c4934f32b1a90f8a75caf4fe13e9006",
+        "0f54d9a14ca2a55046756a60681bc1ffaa8d34b380193a6c764108974f1845b3",
+        "a171a28f896a0cae2586a5288f4345f0ade8233e53104e6ff99e9911a8cb4796"
+      ],
+      "boundaries": [
+        10.7,
+        16.2,
+        22.4,
+        24.7,
+        30.1
+      ],
+      "parquet_sha256": "d016f252b891d9caab26b6abea6771648892f63dd9da84af93628b09e9b9c8cb",
+      "split": "test"
+    },
+    {
+      "episode": 195,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode192",
+      "frames": 325,
+      "video_sha256": [
+        "ef636a9116516de1517475051047359904c91bfadf74d6a5e4534f78ad78e15e",
+        "174315f94c12917ed485d67d825479ad9203ff802cd07955e1b2b5ce40ee24f3",
+        "0f1daed66937cc75832ec0904ceb3af52ffaa605bb0a4f0aae295121bed30eef"
+      ],
+      "boundaries": [
+        8.3,
+        18.4,
+        22.6,
+        25.4,
+        30.1
+      ],
+      "parquet_sha256": "26c44a0c72fcc0b0363174edd037ae1da186232c84325ffa423620410ed1a27a",
+      "split": "train"
+    },
+    {
+      "episode": 196,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode193",
+      "frames": 324,
+      "video_sha256": [
+        "9d371b35f05d06c3413dd6b19b3edfa042b29677395e66d316969cdae7abc5ad",
+        "58c34de9a730f1ee1b3afabb0617f027817fc4913dc8555ed5fa50568481f11c",
+        "b94d0a2575e897486ca6a8292ff913499af47ac64b446222c65a43ec65db119b"
+      ],
+      "boundaries": [
+        9.3,
+        15.7,
+        22.5,
+        25.2,
+        29.5
+      ],
+      "parquet_sha256": "0aaec27046ba96b0ebbca9689e10f7a4957d753a30e19324aa1a0f642bbbda26",
+      "split": "train"
+    },
+    {
+      "episode": 197,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode194",
+      "frames": 339,
+      "video_sha256": [
+        "4256aa25e8e2ef80b354c31f0281d4c610471ef34a8324096342e0a7e204f77b",
+        "69a5858cbaad0bdca6db7be199352712435e9a7d39235f978efc579ef383987d",
+        "22ac08f878ea56ff6485f77d457993c7663d6fcdf60ae9b5ce784f3accf207ad"
+      ],
+      "boundaries": [
+        9.3,
+        19.2,
+        24.8,
+        26.7,
+        31.0
+      ],
+      "parquet_sha256": "31653968ece7642bc6e6d82e14a36c3214e8b925edbb4c932a86b648149545c0",
+      "split": "train"
+    },
+    {
+      "episode": 198,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode195",
+      "frames": 291,
+      "video_sha256": [
+        "ba5b0319b11d3494a7f6d1c23f0b08ac61a497d957294cdf4478a1d2b9d9ff19",
+        "c8fa63d3a3176d161e28ce4c1c646d43093657e8b48d75a8f977e8a773f05052",
+        "713d3e01062e2adb6856d9178387867cd33e54fffeabaedd8ccc0a8b1915696a"
+      ],
+      "boundaries": [
+        9.4,
+        17.4,
+        21.7,
+        23.6,
+        26.8
+      ],
+      "parquet_sha256": "ca6e95afb124e3f45669f2ececed849ac3dc5623d65ebf25a41926aed49c9a14",
+      "split": "test"
+    },
+    {
+      "episode": 199,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode196",
+      "frames": 361,
+      "video_sha256": [
+        "9aa2a0f886999c2cd9889fc0dbaab4b71fc21de4bea83fed9d7ddaf4df5b08c6",
+        "b9e3b0687e9f08cf3103ff93d192475db96b194cfbc034c05c85d7f5cae3b576",
+        "db2807984f712884788c3648a1d3eff6b4e655dce0c9c2feeb3f245312114f96"
+      ],
+      "boundaries": [
+        9.3,
+        21.1,
+        24.7,
+        29.1,
+        33.1
+      ],
+      "parquet_sha256": "ad6f81a1431955944a4c7a97ae03e4814d7d130c248f9da932244eefe4a36d17",
+      "split": "train"
+    },
+    {
+      "episode": 200,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode197",
+      "frames": 282,
+      "video_sha256": [
+        "201964f4c5984d6de66afb04f10f9996867d8e94d497e75e529aecb617fd3c40",
+        "d1a109833452740091d4289b8e6e6c8a10919060c34c1e852b51f0d0967b99b1",
+        "e3f2f891b622218a6b9f2727acbaeb6cf730f88099a3b5c2a8d3ce40b35ce052"
+      ],
+      "boundaries": [
+        6.7,
+        16.5,
+        19.6,
+        22.6,
+        25.6
+      ],
+      "parquet_sha256": "d545520c5326d3b6893269eef0acf6275c41456836ccc8c334e0068ff834a323",
+      "split": "train"
+    },
+    {
+      "episode": 201,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode198",
+      "frames": 273,
+      "video_sha256": [
+        "505538082635e4ac816803b6a36add632fc0d57635635134efb5e63203c682d5",
+        "f675d5f727197f29915522ddb5c8800e9e840fa17c71e9a3df3c1c8fd9e77512",
+        "d343fa544bc1247339201facda9952b94696275b8e35579622dbfa1bda0ce949"
+      ],
+      "boundaries": [
+        9.4,
+        16.2,
+        19.4,
+        21.0,
+        24.8
+      ],
+      "parquet_sha256": "90c610c4f642088609ad9e4315a774f24439d3dbafe9f033a7f9c791b935a10a",
+      "split": "train"
+    },
+    {
+      "episode": 202,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode199",
+      "frames": 306,
+      "video_sha256": [
+        "6279840ed49d7938035e7481aa734a727bd87029d487f8eee2e5d091fc901742",
+        "254563467ed054cc3bfd56b019aad0660fcdf3f8a37f237b80a1f17e20e22832",
+        "91e3cae206528fe4250f4f5705844c117f89b445544bdd7777e8aae7f65c4932"
+      ],
+      "boundaries": [
+        10.3,
+        18.4,
+        22.5,
+        25.0,
+        28.1
+      ],
+      "parquet_sha256": "8f3337ad29bf6db72077b324e1dc77a41e0d27f75b507c2c49287794ce6b5f76",
+      "split": "train"
+    },
+    {
+      "episode": 203,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode200",
+      "frames": 281,
+      "video_sha256": [
+        "fa31651cb34541d94543e04e074c44e4018885d50ccb818855737af8dead0869",
+        "bd332957e4dbfd32eb95ec9b5256fb2706e1e2e3f9499ac1cdeeb9b701795fa4",
+        "ddf5ce70f6b77061fd9a99f3edd873fd731b9e1f5a6aa85b89637097ecff00f2"
+      ],
+      "boundaries": [
+        7.8,
+        15.7,
+        19.0,
+        21.3,
+        25.3
+      ],
+      "parquet_sha256": "fd0695a3b0216ad4eb1c9f48f2755deed191913e053b936097492f195f69cc4f",
+      "split": "test"
+    },
+    {
+      "episode": 204,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode201",
+      "frames": 319,
+      "video_sha256": [
+        "b7f32c8bd8f92ec0ba8cf297c94c07be94b231527b1fc180c63666ebf0c50839",
+        "cc9b9cd7bffccddfdbe0b8c47549efbe29a6e16af37444458835b73ef215760d",
+        "397ad84b242c117a2103cd3d4ad765e211b7e7d41e3ca6ffbc12785fc3483665"
+      ],
+      "boundaries": [
+        8.9,
+        16.7,
+        20.9,
+        23.9,
+        28.4
+      ],
+      "parquet_sha256": "05b483c9d9e861e8092ca59e95e27eaaf469ad5a7219e880ea340d863a094637",
+      "split": "train"
+    },
+    {
+      "episode": 205,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode202",
+      "frames": 350,
+      "video_sha256": [
+        "9a4cc7437582b313db7797b0e22b2417c857bf02050d374c4f859b0628a63817",
+        "e69820035374ca4ce10e89ae99963dd98cc64b6b325ff5eb2e1dd71310869cf0",
+        "efbd6e677644cfceb0078ff39f856f4198b55529f2a7143d912bae0fa833da77"
+      ],
+      "boundaries": [
+        9.9,
+        20.2,
+        24.8,
+        28.4,
+        32.5
+      ],
+      "parquet_sha256": "636018e1ceb583a1cc2920595ebc326269ac169b9957943918d868df458e9a64",
+      "split": "train"
+    },
+    {
+      "episode": 206,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode203",
+      "frames": 315,
+      "video_sha256": [
+        "cbbcb99ef19d65756bbce853ece4dd6dbe42683d261946ac0e9957713f744a4c",
+        "0f78ed93a616824b350c7f73de02770073c9a2dffbdf77e8ba511b1a41ea4351",
+        "4fc2df57b35c1182534adcc529e4d23c2891b67fb34d4ff3d48a58d8e1fb87ff"
+      ],
+      "boundaries": [
+        9.2,
+        15.2,
+        18.9,
+        22.0,
+        28.6
+      ],
+      "parquet_sha256": "661b1a86a731393729588077ead7cd35f063f3662906254466a56366cf1c7a30",
+      "split": "train"
+    },
+    {
+      "episode": 207,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode204",
+      "frames": 309,
+      "video_sha256": [
+        "227351080dea4eb02025f6e9f9d8805fc9e757368d80e7f50a639266a6ade9fd",
+        "8675eef619b886573d87693ba10b37cb6a953a6ddfc295b57e7086c85befef98",
+        "3d9a8532894fd375d34b42abf642f9e583ddf9f52f424bdca52c3040fa6130a6"
+      ],
+      "boundaries": [
+        8.4,
+        17.0,
+        21.9,
+        24.6,
+        28.2
+      ],
+      "parquet_sha256": "6002769f6f5f5dcfc26498babde87eeac1f65160c09e66c1a376dc4470f6f220",
+      "split": "train"
+    },
+    {
+      "episode": 208,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode205",
+      "frames": 355,
+      "video_sha256": [
+        "b477c05c087cfae7bb4418a0bdfe6d425caab5387e4db4646c814b5c50dd3fad",
+        "04e592c4ed30f12548370bf0286f224594fce5690cd19f5a122eb2ef86312107",
+        "67e5c36a90af04f38ba46c8bf617b0d62f5f4573433a496f3fa89f973870e213"
+      ],
+      "boundaries": [
+        8.9,
+        22.5,
+        26.2,
+        30.3,
+        33.0
+      ],
+      "parquet_sha256": "6fe8c0d511cf5afd5b485fe7310285f3be5513c10c965b4ae7b2f8f099358d85",
+      "split": "train"
+    },
+    {
+      "episode": 209,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode206",
+      "frames": 328,
+      "video_sha256": [
+        "71364e6e6e06a511533177c10b1bba3c860c9f9e385eb6fde9fb68b2fa3d4da5",
+        "66b8fb020b8780fd0a37de2ace5ef41a06caaa1fc6da945c03ff7e1beddccdac",
+        "192106f9d14fbcb288082743ac7c7a9b2bbfaee67c8467e711c9a29622c59a44"
+      ],
+      "boundaries": [
+        10.8,
+        21.3,
+        25.7,
+        27.2,
+        30.4
+      ],
+      "parquet_sha256": "9f150642295c815b1796f8541156bd41869ba754de24b6bb8474e5e09f5fe57e",
+      "split": "train"
+    },
+    {
+      "episode": 210,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode207",
+      "frames": 329,
+      "video_sha256": [
+        "85690ec91103988015a37bcec8e4e11b21dd57b272e395481eb4016100e5b6b2",
+        "f8050c02e44025878629ddb5360e9b1352f088074f15364c6056ba229dcf904e",
+        "9bce6e1d8d5a707074753f03f38543a813be6cbf26e8faaf514fc0518803228e"
+      ],
+      "boundaries": [
+        10.3,
+        18.7,
+        23.3,
+        28.2,
+        30.3
+      ],
+      "parquet_sha256": "887a2a77993115d000f929c4e6bab701d8a7e7eab47a9311d0f3153a392875b6",
+      "split": "train"
+    },
+    {
+      "episode": 211,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode208",
+      "frames": 342,
+      "video_sha256": [
+        "a8f42ff4da9b71754af147917b63f36dad73a92788728aebf319359eb1506b25",
+        "a123a725b7d6e1e07926aea7342166653542fe31f75cd48514566ef097038158",
+        "039cb06665462f2b3b13931714391fd1360aa59f8f0dc091d6946b4b6d547c7a"
+      ],
+      "boundaries": [
+        9.9,
+        19.4,
+        23.4,
+        26.0,
+        30.5
+      ],
+      "parquet_sha256": "377e28dd100ef39e45ff9ec06eb89b700283ce38e010bfb0b226a9fa8698bd77",
+      "split": "train"
+    },
+    {
+      "episode": 212,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode209",
+      "frames": 298,
+      "video_sha256": [
+        "e953a4a17fa9319b86735b500eb2df71e1ea5f382f5c66eacada46a1ed44279b",
+        "256012d0357dd55ac9b23332994c6586ef36e7440f9d582f3bdc11e1c9b48bd4",
+        "7957496ba5b585e7910efcd61f912d3432d51bcd2944e9cd53f06ff8a1df043d"
+      ],
+      "boundaries": [
+        7.9,
+        15.3,
+        19.6,
+        22.6,
+        26.9
+      ],
+      "parquet_sha256": "191aeadc830647219045d68c4783ca24aab4bccf09b8b1056e915518e6c82c85",
+      "split": "train"
+    },
+    {
+      "episode": 213,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode210",
+      "frames": 329,
+      "video_sha256": [
+        "16304ce04bf3ca830188a5e868150ecbae9bbaa7aa35b82c4c495404dee791df",
+        "98a4f87ef9d74261f8ce17f8f85348a5dc680318410bfeec3f4ef404a594e24b",
+        "b3c4b39efbb1a4c895b915903e23067714a3a639282fa9985bdd266236602b27"
+      ],
+      "boundaries": [
+        10.0,
+        16.9,
+        22.0,
+        25.2,
+        29.6
+      ],
+      "parquet_sha256": "696d856ec98e1e236042f21168701cd77587cb0940aaf6d09677ff81d510cf18",
+      "split": "train"
+    },
+    {
+      "episode": 214,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode211",
+      "frames": 290,
+      "video_sha256": [
+        "9fdaf22a05be313e835a7091e501514820fa5758d356e91fe5c1d7bf76f855e3",
+        "b8089031777f8da085301d765d39c356033abc6d245caebbde9ee1ddfe3d2a9c",
+        "5d741224c3766ad5ee7410e40cb1fbb858ac0e93b744c2db81e3040139be5445"
+      ],
+      "boundaries": [
+        8.8,
+        17.4,
+        20.5,
+        23.5,
+        25.7
+      ],
+      "parquet_sha256": "4450abe559f94eac494141b6ca33b56137b5eab3f0e11eec528ffb583a07dd54",
+      "split": "val"
+    },
+    {
+      "episode": 215,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode212",
+      "frames": 338,
+      "video_sha256": [
+        "5c2c5852fc2f70d033173542f53588582c3cd57e1c70c96a88e98f8ead3a5a9b",
+        "4ce44b52c4a0c3091ea9caa364b59a7c6d2f0da63412cfbe0d26224cfdefdafb",
+        "a3b1c2d6ebc8d68b81a82f3b1f99a14a74b553cdd7125fa121b0ab1b37417d75"
+      ],
+      "boundaries": [
+        11.1,
+        18.0,
+        21.9,
+        27.7,
+        31.1
+      ],
+      "parquet_sha256": "a4d061b49c7802dace6849ed8620ffdc80bc0f692b2bcbccbf3f3d39ae26913b",
+      "split": "val"
+    },
+    {
+      "episode": 216,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode213",
+      "frames": 298,
+      "video_sha256": [
+        "3bf71b2a0c19e0d4e484a9b332ba95921d69715a5021dbd1e8ec2695074e8592",
+        "2197256d4b8ee6289e9d81b81bfc95ff63bbf4e144123b368bd11b2ef9d07f51",
+        "7bade995c954f55d4ba04c9f5e76447c28e095de43b9f4c1bc91400e556deb11"
+      ],
+      "boundaries": [
+        8.7,
+        19.0,
+        22.1,
+        25.1,
+        27.2
+      ],
+      "parquet_sha256": "f7c2ef3e131c2d629b922484d78ea47e816eb31cca6812609e4b303f562b3f20",
+      "split": "train"
+    },
+    {
+      "episode": 217,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode214",
+      "frames": 307,
+      "video_sha256": [
+        "e609fd543a5b61bdd0a741ef7aa4a1506f07376a44e9081ac5d8ef8393cad5aa",
+        "3b8ee82fc832cb1a44162b65d08fd871b2bc4883b136b188f9180693d6898d8e",
+        "532eebd654bd689668db02b5d1cdf108a2931f678d584c1d385428d1b9fd8e0a"
+      ],
+      "boundaries": [
+        9.4,
+        18.1,
+        22.2,
+        24.5,
+        27.6
+      ],
+      "parquet_sha256": "7ae5f084987fd35f64d697c2f75f30f29c049671ff113adf0668662dfd9bf2bf",
+      "split": "train"
+    },
+    {
+      "episode": 218,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode215",
+      "frames": 327,
+      "video_sha256": [
+        "3457f1f8c4bf65731cdbd33c988d7e465689ae42e3d3e2f382f6982e37c59626",
+        "1652053ef3bef267102686a679059861b8c44edaa36e0497303bcce86fde4ac4",
+        "3f820d5428a5da0555c10d06482017d9e16f637f3e225a3c3bf289fd08682f55"
+      ],
+      "boundaries": [
+        10.2,
+        18.3,
+        22.4,
+        25.4,
+        30.0
+      ],
+      "parquet_sha256": "eda7cf5f604488d1b1ca6bb756d0896ae1ba8b08fd2452d0db98974d4c1eec5e",
+      "split": "train"
+    },
+    {
+      "episode": 219,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode216",
+      "frames": 293,
+      "video_sha256": [
+        "83092a4adaf26788e1cca88991ac1da38b4ef613608d159a524b003fe2630c41",
+        "d5909cc15084f075cf910b36d756dba3c7ddd59d2b194cd33846ec3da4f1bba4",
+        "65604079a2bc21771db122f551d5e88f4107562805f693d754b3719bdd0fd3c5"
+      ],
+      "boundaries": [
+        9.4,
+        18.2,
+        21.5,
+        22.7,
+        26.7
+      ],
+      "parquet_sha256": "2f8620a698826f23914ed33d557c8a072c6ca8b84dd15a86600da3ea4a877b87",
+      "split": "train"
+    },
+    {
+      "episode": 220,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode217",
+      "frames": 290,
+      "video_sha256": [
+        "ea665cd2e92df312e3dd7ffba5c5db25f234ae7755eea293cbe8d5b8473c729e",
+        "22d22bcdb7ba668066538fac03792c8e2eb58f71d1ad95cc268f4dd59291f2fd",
+        "9cb8c97d1a7b4e3ed4fb3380205c8fec009a2702c06c4e3b19da0a7ad0c45d39"
+      ],
+      "boundaries": [
+        7.7,
+        16.3,
+        20.2,
+        22.6,
+        25.8
+      ],
+      "parquet_sha256": "560cc1de1017162d1d30843843357f2cd58618a81458d57f48c614c1071b7848",
+      "split": "train"
+    },
+    {
+      "episode": 221,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode218",
+      "frames": 361,
+      "video_sha256": [
+        "061cad8f6fdc6b71f8cff97d03b5a9f065885dd1d49027e81799df3c7f6c456e",
+        "8a30a56cdad24545c9139a2808bf15d7d752f6abd50542512e59dad92fc14543",
+        "03c8ea5c5cc68fa26853a4c9bc4a832f659afd622a99f18440f226b07b721b90"
+      ],
+      "boundaries": [
+        15.3,
+        23.4,
+        26.9,
+        29.0,
+        33.7
+      ],
+      "parquet_sha256": "570191bf90d2ecf6078f4958d2781ad416c07e478892309426820a94d7e9ab4a",
+      "split": "train"
+    },
+    {
+      "episode": 222,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode219",
+      "frames": 299,
+      "video_sha256": [
+        "5cabbb9636d2ed0a6fdf6bcb167687fd82e1f4c58d2468934bb13e5e9f5c117a",
+        "560ccc4f1c65594c7eea610ad8a1896f0a41688d8f1f24fe271264b4595952d2",
+        "578ad0cfbaaca357db67b1f24e658e95606ddd5166beff6caf1bc7ba95b64c9d"
+      ],
+      "boundaries": [
+        7.9,
+        17.8,
+        21.9,
+        23.4,
+        27.4
+      ],
+      "parquet_sha256": "3a8ef07f1ed805b67e7a5b1fa59e7663f2795c3f01b3385eb8918b8e541d8b90",
+      "split": "train"
+    },
+    {
+      "episode": 223,
+      "source": "/home/descfly/Convert_data/staging/wrist_reset_20261008/episode220",
+      "frames": 348,
+      "video_sha256": [
+        "81e59613fd38b5437a54ea4cccf992456763d3ea97b3161d2584660f5b8081d0",
+        "bc3436ace2f04324ffc58a6b7b338a0c51b80afb1766db5294234c935f68c0bd",
+        "063f3b627a39759c69c4c6d90ec1feade461cb54e5e3bcf5db080c847f045c02"
+      ],
+      "boundaries": [
+        9.1,
+        21.5,
+        26.5,
+        29.7,
+        32.7
+      ],
+      "parquet_sha256": "cb27365e4432e578db753fbd039a9872d044a461e136c82176987ff4997b7cee",
+      "split": "train"
+    }
+  ],
+  "demo_episode": 58,
+  "seed": 42,
+  "causal": true,
+  "window_padding": "repeat first observed frame",
+  "normalization": "train split only",
+  "split_method": "original recording grouped 80/10/10"
+}

@@ -1,0 +1,32 @@
+{
+  "model": "V-JEPA 2 ViT-L/16",
+  "hf_id": "facebook/vjepa2-vitl-fpc64-256",
+  "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+  "pretrained_sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+  "frozen": "entire pretrained encoder",
+  "trained": "3264->256->6 phase head only",
+  "image_size": [
+    256,
+    256
+  ],
+  "resize": "full field of view, no center crop",
+  "image_normalization": "ImageNet mean/std",
+  "clip_frames": 16,
+  "causal": true,
+  "source_fps": 10,
+  "prediction_hz": 2,
+  "robot": "16x12 measured arm joint positions",
+  "dropout": 0.3,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "batch_size": 128,
+  "max_epochs": 100,
+  "early_stop_patience": 15,
+  "selection": "validation Macro F1, validation NLL as tie-break",
+  "seed": 42,
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "torch": "2.7.1+cu128",
+  "transformers": "4.53.2",
+  "gpu": "NVIDIA GeForce RTX 5090"
+}
