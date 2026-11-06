@@ -84,6 +84,9 @@ def prepare(config):
                     sampler_version=ds.SAMPLER_VERSION, episodes=episodes, splits=splits, summary=summaries,
                     warnings=['Fewer than 10 source recordings; smoke-scale result only'] if len({e['source_recording_id'] for e in episodes}) < 10 else [],
                     label_order=list(ds.LABELS), causal=True, normalization='train-only',
+                    pretrained=dict(model_id=ds.MODEL_ID, revision=ds.REVISION,
+                                    sha256='25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b',
+                                    config_sha256='3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9'),
                     model_weights_sha256='25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b')
     for name, value in (('manifest.json', manifest), ('split.json', splits)):
         p = run / name
@@ -106,6 +109,29 @@ def load_locked_manifest(config):
     return current
 
 
+def extract(config, manifest):
+    try:
+        from . import tomato_phase_model as model
+    except ImportError:
+        import tomato_phase_model as model
+    run = Path(config['output_dir'])
+    cache_dir = Path(config.get('feature_cache_dir', run.parent / 'feature_cache')).resolve()
+    ds.ensure_output_outside_sources(cache_dir, [e['dataset_root'] for e in manifest['episodes']],
+                                    [e['annotation']['path'] for e in manifest['episodes']])
+    encoder, provenance = model.load_encoder(config['pretrained_dir'], config['device'])
+    if provenance != manifest['pretrained']:
+        raise ValueError('Verified encoder does not match locked manifest')
+    rows = []
+    for e in manifest['episodes']:
+        ds.status(run, 'extracting', episode_id=e['episode_id'], completed=len(rows), total=len(manifest['episodes']))
+        path, performance = model.extract_episode(encoder, e, manifest['contract'], provenance, cache_dir, config['batch_windows'])
+        rows.append(dict(episode_id=e['episode_id'], path=str(path), performance=performance))
+    ds.write_json(run / 'feature_index.json', dict(manifest_sha256=ds.digest(run / 'manifest.json'),
+                                                 pretrained=provenance, episodes=rows))
+    ds.status(run, 'features_complete', episodes=len(rows))
+    return rows
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('command', choices=['prepare', 'extract', 'train'])
@@ -118,16 +144,19 @@ def main(argv=None):
         config['device'] = a.device
     if a.batch_windows:
         config['batch_windows'] = a.batch_windows
+    selections = ds.load_annotation_index(config['annotation_index'])
+    out = ds.ensure_output_outside_sources(config['output_dir'], [r['dataset_root'] for r in selections],
+                                           [r['coarse_annotation'] for r in selections])
+    out.mkdir(parents=True, exist_ok=True)
     try:
         if a.command == 'prepare':
             prepare(config)
+        elif a.command == 'extract':
+            extract(config, load_locked_manifest(config))
         else:
             raise RuntimeError('Extraction/training is implemented in the next implementation stage')
     except Exception as exc:
-        # Only write after output isolation has been established by prepare.
-        out = Path(config['output_dir'])
-        if (out / 'manifest.json').exists() or (out / 'prepare_rejections.json').exists():
-            ds.status(out, 'failed', command=a.command, error=f'{type(exc).__name__}: {exc}')
+        ds.status(out, 'failed', command=a.command, error=f'{type(exc).__name__}: {exc}')
         raise
 
 
