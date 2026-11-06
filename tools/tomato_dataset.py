@@ -120,6 +120,7 @@ def load_config(path):
         cfg.setdefault(k, 3e-4 if k == 'learning_rate' else .01)
         if not np.isfinite(cfg[k]) or cfg[k] <= 0:
             raise ValueError(f'{k} must be positive finite')
+    cfg.update(prediction_contract(cfg))
     return cfg
 
 

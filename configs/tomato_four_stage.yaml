@@ -19,6 +19,11 @@ image_size: 256
 history_frames: 16
 history_sample_hz: 10
 prediction_hz: 2
+prediction_mode: joint
+future_horizon_s: 1.0
+lambda_current: 1.0
+lambda_future: 0.5
+stable_transition_k: 2
 labels:
 - pickup
 - harvest

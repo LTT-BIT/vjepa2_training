@@ -43,7 +43,12 @@ def verify_pretrained(directory):
                 config_sha256=ds.digest(directory / 'config.json'))
 
 
-def load_encoder(directory, device='cuda'):
+def load_encoder(directory, device='cuda', seed=42):
+    try:
+        from .tomato_runtime import initialize_runtime
+    except ImportError:
+        from tomato_runtime import initialize_runtime
+    initialize_runtime(dict(device=device, seed=seed))
     provenance = verify_pretrained(directory)
     if device.startswith('cuda'):
         if not torch.cuda.is_available():
@@ -87,6 +92,64 @@ def head_model(joint_dimension):
         raise ValueError('Verified positive joint dimension required')
     return nn.Sequential(nn.Linear(3072 + 16 * joint_dimension, 256), nn.GELU(),
                          nn.Dropout(.3), nn.Linear(256, 4))
+
+
+class JointHead(nn.Module):
+    def __init__(self, joint_dimension):
+        super().__init__()
+        # Preserve the baseline trunk/current initialization order exactly.
+        baseline = head_model(joint_dimension)
+        self.trunk = nn.Sequential(*list(baseline.children())[:3])
+        self.current = baseline[3]
+        self.future = nn.Linear(256, 4)
+        self.prediction_mode = 'joint'
+
+    def forward(self, features):
+        shared = self.trunk(features)
+        return dict(current_logits=self.current(shared), future_logits=self.future(shared))
+
+
+def joint_head_model(joint_dimension):
+    return JointHead(joint_dimension)
+
+
+def mode_head_model(joint_dimension, prediction_mode='current_only'):
+    ds.active_heads(prediction_mode)
+    head = joint_head_model(joint_dimension) if prediction_mode == 'joint' else head_model(joint_dimension)
+    head.prediction_mode = prediction_mode
+    return head
+
+
+def forward_heads(head, features, prediction_mode=None):
+    mode = prediction_mode or getattr(head, 'prediction_mode', 'current_only')
+    ds.active_heads(mode)
+    output = head(features)
+    if mode == 'joint':
+        if not isinstance(output, dict) or set(output) != {'current_logits', 'future_logits'}:
+            raise ValueError('Joint mode requires two trained heads')
+        return output
+    return dict(current_logits=output if mode == 'current_only' else None,
+                future_logits=output if mode == 'future_only' else None)
+
+
+def supervision_loss(outputs, current_labels, future_labels, future_valid_mask, weights, config):
+    cfg = ds.prediction_contract(config)
+    active = ds.active_heads(cfg['prediction_mode'])
+    losses = dict(current=None, future=None)
+    for name in active:
+        logits = outputs[name + '_logits']
+        if logits is None:
+            raise ValueError(f'Missing trained {name} logits')
+        labels = current_labels if name == 'current' else future_labels
+        if name == 'future':
+            if not future_valid_mask.any():
+                raise ValueError('No valid future supervision; cannot use a zero future loss')
+            logits, labels = logits[future_valid_mask], labels[future_valid_mask]
+        losses[name] = nn.functional.cross_entropy(logits, labels, weight=weights[name])
+    total = sum(cfg['lambda_' + h] * losses[h] for h in active) / sum(cfg['lambda_' + h] for h in active)
+    if not torch.isfinite(total):
+        raise ValueError('Nonfinite supervised loss')
+    return total, losses
 
 
 def feature_fingerprint(episode, contract, provenance):
@@ -217,7 +280,10 @@ def extract_episode(encoder, episode, contract, provenance, directory, batch_win
 
 def save_checkpoint(path, head, mean, std, manifest, manifest_sha256, epoch, validation):
     c = manifest['contract']
-    payload = dict(format_version=1, label_order=list(ds.LABELS), joint_names=c['joint_names'],
+    prediction = ds.prediction_contract(manifest.get('prediction', c))
+    payload = dict(format_version=2, prediction=prediction, **prediction,
+                   split_sha256=manifest.get('split_sha256', ds.fingerprint(manifest['splits'])),
+                   label_order=list(ds.LABELS), joint_names=c['joint_names'],
                    joint_dimension=len(c['joint_names']), dimension=3072 + 16 * len(c['joint_names']),
                    contract=c, sampler_version=ds.SAMPLER_VERSION,
                    pretrained=manifest['pretrained'], feature_version=FEATURE_VERSION,
@@ -230,15 +296,30 @@ def save_checkpoint(path, head, mean, std, manifest, manifest_sha256, epoch, val
     tmp.replace(path)
 
 
-def load_checkpoint(path, manifest_sha256=None, device='cpu'):
+def load_checkpoint(path, manifest_sha256=None, device='cpu', split_sha256=None):
     saved = torch.load(path, map_location='cpu', weights_only=True)
-    if (saved.get('format_version') != 1 or saved.get('label_order') != list(ds.LABELS)
-            or saved.get('sampler_version') != ds.SAMPLER_VERSION or saved.get('feature_version') != FEATURE_VERSION
+    version = saved.get('format_version')
+    if (version not in (1, 2) or saved.get('label_order') != list(ds.LABELS)
+            or saved.get('sampler_version') not in (ds.SAMPLER_VERSION, ds.LEGACY_SAMPLER_VERSION)
+            or saved.get('feature_version') != FEATURE_VERSION
             or saved.get('contract', {}).get('model_id') != ds.MODEL_ID
             or saved.get('contract', {}).get('model_revision') != ds.REVISION
             or saved.get('pretrained', {}).get('sha256') != WEIGHTS_SHA256
             or saved.get('pretrained', {}).get('config_sha256') != CONFIG_SHA256):
         raise ValueError('Not a compatible tomato four-class V-JEPA 2 checkpoint')
+    if version == 1:
+        prediction = ds.prediction_contract(dict(prediction_mode='current_only'))
+        if saved.get('prediction_mode', 'current_only') != 'current_only':
+            raise ValueError('Legacy v1 can only represent current_only')
+    else:
+        prediction = ds.prediction_contract(saved['prediction'])
+        if (any(saved.get(k) != v for k, v in prediction.items())
+                or saved['sampler_version'] != ds.SAMPLER_VERSION
+                or not isinstance(saved.get('split_sha256'), str) or len(saved['split_sha256']) != 64):
+            raise ValueError('Checkpoint prediction/sampler/split contract mismatch')
+        if split_sha256 is not None and saved['split_sha256'] != split_sha256:
+            raise ValueError('Checkpoint/split hash mismatch')
+    saved.update(prediction=prediction, **prediction)
     for k, value in dict(cameras=list(ds.CAMERAS), labels=list(ds.LABELS), history_frames=16,
                          history_sample_hz=10, prediction_hz=2, image_size=256,
                          robot='sharpa', variant='normal').items():
@@ -253,7 +334,7 @@ def load_checkpoint(path, manifest_sha256=None, device='cpu'):
             or not torch.isfinite(saved['mean']).all() or not torch.isfinite(saved['std']).all()
             or torch.any(saved['std'] <= 0)):
         raise ValueError('Invalid checkpoint dimensions/normalization')
-    head = head_model(d).to(device).eval()
+    head = mode_head_model(d, prediction['prediction_mode']).to(device).eval()
     head.load_state_dict(saved['head'])
     if any(not torch.isfinite(p).all() for p in head.parameters()):
         raise ValueError('Nonfinite checkpoint parameters')
@@ -262,6 +343,8 @@ def load_checkpoint(path, manifest_sha256=None, device='cpu'):
 
 @torch.inference_mode()
 def predict_logits(head, features, mean, std, batch_size=512):
+    if getattr(head, 'prediction_mode', 'current_only') != 'current_only':
+        raise ValueError('Use predict_heads for future_only/joint; logits must retain time semantics')
     device = next(head.parameters()).device
     x = np.asarray(features, dtype=np.float32)
     mu, sigma = torch.as_tensor(mean).to(device).float(), torch.as_tensor(std).to(device).float()
@@ -270,3 +353,24 @@ def predict_logits(head, features, mean, std, batch_size=512):
     head.eval()
     return torch.cat([head((torch.from_numpy(a).to(device) - mu) / sigma)
                       for a in np.array_split(x, max(1, int(np.ceil(len(x) / batch_size))))]).cpu().numpy()
+
+
+@torch.inference_mode()
+def predict_heads(head, features, mean, std, batch_size=512):
+    device = next(head.parameters()).device
+    x = np.asarray(features, dtype=np.float32)
+    mu, sigma = torch.as_tensor(mean).to(device).float(), torch.as_tensor(std).to(device).float()
+    if (x.ndim != 2 or not len(x) or x.shape[1] != mu.numel() or not np.isfinite(x).all()
+            or sigma.shape != mu.shape or not torch.isfinite(sigma).all() or torch.any(sigma <= 0)):
+        raise ValueError('Invalid fused features/normalization')
+    outputs = dict(current_logits=[], future_logits=[])
+    head.eval()
+    for a in np.array_split(x, max(1, int(np.ceil(len(x) / batch_size)))):
+        part = forward_heads(head, (torch.from_numpy(a).to(device) - mu) / sigma)
+        for name, value in part.items():
+            if value is not None:
+                outputs[name].append(value.cpu())
+    result = {name: torch.cat(parts).numpy() if parts else None for name, parts in outputs.items()}
+    if any(z is not None and (z.shape != (len(x), 4) or not np.isfinite(z).all()) for z in result.values()):
+        raise ValueError('Invalid four-class logits')
+    return result

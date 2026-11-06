@@ -13,6 +13,11 @@ except ImportError:
 
 import numpy as np
 
+try:
+    from .tomato_runtime import initialize_runtime
+except ImportError:
+    from tomato_runtime import initialize_runtime
+
 
 def grouped_split(episodes, seed=42, explicit=None):
     groups = sorted({e['source_recording_id'] for e in episodes})
@@ -140,6 +145,7 @@ def load_locked_manifest(config):
 
 
 def extract(config, manifest):
+    initialize_runtime(config)
     try:
         from . import tomato_phase_model as model
     except ImportError:
@@ -148,7 +154,7 @@ def extract(config, manifest):
     cache_dir = Path(config.get('feature_cache_dir', run.parent / 'feature_cache')).resolve()
     ds.ensure_output_outside_sources(cache_dir, [e['dataset_root'] for e in manifest['episodes']],
                                     [e['annotation']['path'] for e in manifest['episodes']])
-    encoder, provenance = model.load_encoder(config['pretrained_dir'], config['device'])
+    encoder, provenance = model.load_encoder(config['pretrained_dir'], config['device'], config['seed'])
     if provenance != manifest['pretrained']:
         raise ValueError('Verified encoder does not match locked manifest')
     rows = []
@@ -209,6 +215,7 @@ def fit_training_statistics(features, labels):
 
 
 def train(config, manifest):
+    initialize_runtime(config)
     import torch
     from torch import nn
     try:
@@ -227,17 +234,8 @@ def train(config, manifest):
               for s, parts in entries.items()}
     x, y = arrays['train']
     mean, std, weight = fit_training_statistics(x, y)
-    torch.manual_seed(config['seed'])
-    random.seed(config['seed'])
     rng = np.random.default_rng(config['seed'])
-    torch.use_deterministic_algorithms(True)
     device = config['device']
-    if device == 'cuda':
-        if not torch.cuda.is_available():
-            raise RuntimeError('CUDA unavailable; select --device cpu explicitly')
-        # cuBLAS needs deterministic workspace set before CUDA kernels are initialized.
-        import os
-        os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG', ':4096:8')
     head = model.head_model(len(manifest['contract']['joint_names'])).to(device)
     optimizer = torch.optim.AdamW(head.parameters(), lr=config['learning_rate'], weight_decay=config['weight_decay'])
     class_weight = torch.from_numpy(weight).to(device)
@@ -401,6 +399,8 @@ def main(argv=None):
                                            [r['coarse_annotation'] for r in selections])
     out.mkdir(parents=True, exist_ok=True)
     try:
+        if a.command != 'prepare':
+            initialize_runtime(config)
         if a.command == 'run':
             manifest = prepare(config)
             extract(config, manifest)
