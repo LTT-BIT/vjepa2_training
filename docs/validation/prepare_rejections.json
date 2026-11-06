@@ -1,0 +1,32 @@
+{
+  "accepted": 0,
+  "rejected": [
+    {
+      "selection": {
+        "dataset_root": "/home/user/pi05/sharpa_1103_normal_000000-000002_20261106-160943/1103_620_642_normal_lerobot",
+        "episode_index": 0,
+        "coarse_annotation": "/home/user/pi05/sharpa_1103_normal_000000-000002_20261106-160943/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+        "variant": "normal"
+      },
+      "error": "ValueError: Annotation source SHA256 mismatch: meta/info.json, meta/episodes.jsonl"
+    },
+    {
+      "selection": {
+        "dataset_root": "/home/user/pi05/sharpa_1103_normal_000000-000002_20261106-160943/1103_620_642_normal_lerobot",
+        "episode_index": 1,
+        "coarse_annotation": "/home/user/pi05/sharpa_1103_normal_000000-000002_20261106-160943/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+        "variant": "normal"
+      },
+      "error": "ValueError: Annotation source SHA256 mismatch: meta/info.json, meta/episodes.jsonl"
+    },
+    {
+      "selection": {
+        "dataset_root": "/home/user/pi05/sharpa_1103_normal_000000-000002_20261106-160943/1103_620_642_normal_lerobot",
+        "episode_index": 2,
+        "coarse_annotation": "/home/user/pi05/sharpa_1103_normal_000000-000002_20261106-160943/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+        "variant": "normal"
+      },
+      "error": "ValueError: Annotation source SHA256 mismatch: meta/info.json, meta/episodes.jsonl"
+    }
+  ]
+}

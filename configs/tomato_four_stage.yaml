@@ -6,6 +6,7 @@ model_revision: b3c1679b7c34d3255ef3547f27c7b226aefab26f
 pretrained_dir: ../pretrained/vjepa2-vitl-fpc64-256
 annotation_index: ../runs/tomato/annotation_index.json
 output_dir: ../runs/tomato/baseline
+feature_cache_dir: ../runs/tomato/feature_cache
 robot: sharpa
 variant: normal
 cameras:

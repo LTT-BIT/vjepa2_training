@@ -1,0 +1,6 @@
+{
+  "stage": "failed",
+  "updated_at": "2026-11-06T09:20:34.633159+00:00",
+  "command": "prepare",
+  "error": "ValueError: 3 invalid selected episode(s); see /home/user/pi05/vjepa2_training/runs/tomato/environment/sample_prepare/prepare_rejections.json; no training manifest produced"
+}

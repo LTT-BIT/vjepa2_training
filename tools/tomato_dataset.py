@@ -93,7 +93,9 @@ def load_config(path):
         raise ValueError('Explicit joint_mode arms-and-hands or arms-only required')
     if not cfg.get('joint_names'):
         raise ValueError('Explicit nonempty joint_names whitelist required')
-    for key in ('pretrained_dir', 'annotation_index', 'output_dir'):
+    for key in ('pretrained_dir', 'annotation_index', 'output_dir', 'feature_cache_dir', 'split_file'):
+        if key not in cfg:
+            continue
         p = Path(cfg[key]).expanduser()
         cfg[key] = str((path.parent / p).resolve() if not p.is_absolute() else p.resolve())
     cfg.setdefault('seed', 42)
@@ -107,13 +109,18 @@ def load_config(path):
     for k in ('batch_windows', 'batch_size', 'epochs', 'patience'):
         if type(cfg[k]) is not int or cfg[k] < 1:
             raise ValueError(f'{k} must be positive integer')
+    for k in ('learning_rate', 'weight_decay'):
+        cfg.setdefault(k, 3e-4 if k == 'learning_rate' else .01)
+        if not np.isfinite(cfg[k]) or cfg[k] <= 0:
+            raise ValueError(f'{k} must be positive finite')
     return cfg
 
 
 def resolve_joint_schema(meta_info, configured_joint_names, joint_mode='arms-and-hands'):
     state = meta_info['features']['observation.state']
     names = state.get('names')
-    if not isinstance(names, list) or len(names) != len(set(names)) or state['shape'] != [len(names)]:
+    if (state.get('dtype') != 'float32' or not isinstance(names, list)
+            or len(names) != len(set(names)) or state['shape'] != [len(names)]):
         raise ValueError('Invalid or duplicate state schema names/shape')
     selected = list(configured_joint_names)
     if not selected or len(selected) != len(set(selected)):
@@ -189,6 +196,9 @@ def load_episode_info(dataset_root, episode_index):
         raise ValueError('Only normal accepted')
     if (root / 'processing/speedup.json').exists() or 'speedup' in root.name.lower():
         raise ValueError('speedup is excluded from first experiment')
+    mapping = root / f'processing/episode_{episode_index:06d}.json'
+    if mapping.exists() and 'action_source_index' in read_json(mapping):
+        raise ValueError('speedup source/action frame mapping excluded even under renamed paths')
     return dict(dataset_root=str(root), episode_index=episode_index, episode_id=fingerprint([str(root), episode_index])[:24],
                 length=entry['length'], fps=fps, source_recording_id=source, entry=entry,
                 info=info, parquet=str(parquet), videos=list(map(str, videos)), camera_keys=keys)
@@ -197,7 +207,10 @@ def load_episode_info(dataset_root, episode_index):
 def read_state(episode, joint_names, joint_mode='arms-and-hands'):
     import pyarrow.parquet as pq
     cols = resolve_joint_schema(episode['info'], joint_names, joint_mode)
-    table = pq.read_table(episode['parquet'], columns=['timestamp', 'frame_index', 'episode_index', 'observation.state'])
+    columns = ['timestamp', 'frame_index', 'episode_index', 'observation.state']
+    if 'source_timestamp_ns' in pq.read_schema(episode['parquet']).names:
+        columns.append('source_timestamp_ns')
+    table = pq.read_table(episode['parquet'], columns=columns)
     times = table['timestamp'].to_numpy().astype(np.float64)
     state = np.asarray(table['observation.state'].to_pylist(), dtype=np.float32)
     n, fps = episode['length'], episode['fps']
@@ -207,6 +220,14 @@ def read_state(episode, joint_names, joint_mode='arms-and-hands'):
     if (not np.array_equal(table['frame_index'].to_numpy(), np.arange(n))
             or not np.all(table['episode_index'].to_numpy() == episode['episode_index'])):
         raise ValueError('Parquet frame/episode index mismatch')
+    if 'source_timestamp_ns' in table.column_names:
+        source_times = table['source_timestamp_ns'].to_numpy()
+        if (not np.issubdtype(source_times.dtype, np.integer) or np.any(np.diff(source_times) <= 0)
+                or not np.allclose((source_times - source_times[0]) / 1e9, times, atol=1e-4, rtol=0)):
+            raise ValueError('Normal source observation timestamp discontinuity/speedup detected')
+        for k, actual in (('source_start_ns', source_times[0]), ('source_end_ns', source_times[-1])):
+            if k in episode['entry'] and abs(episode['entry'][k] - int(actual)) > 2:
+                raise ValueError(f'Original recording {k} mismatch')
     if state.shape != (n, len(episode['info']['features']['observation.state']['names'])):
         raise ValueError('State array/schema dimension mismatch')
     q = state[:, cols]
@@ -250,15 +271,19 @@ def source_hash_report(annotation, episode):
 def load_reviewed_coarse(annotation_path, episode_metadata):
     path = Path(annotation_path).expanduser().resolve(strict=True)
     doc = read_json(path)
+    saved_at = doc.get('saved_at')
     if (doc.get('stage') != 'coarse' or doc.get('schema_version') != 2
             or type(doc.get('revision')) is not int or doc['revision'] < 1
-            or not doc.get('saved_at') or doc.get('inherited') is not False
+            or type(saved_at) not in (int, float) or not np.isfinite(saved_at) or saved_at <= 0
+            or doc.get('inherited') is not False
             or doc.get('draft') is True or doc.get('status') in ('draft', 'unpublished', 'needs_review')
             or doc.get('published') is False):
         raise ValueError('Explicit saved/published coarse revision required; no draft/inherited truth')
     if doc.get('excluded_from_training') or doc.get('outcome') in ('failure', 'incomplete'):
         raise ValueError('Explicitly excluded/abnormal episode requires human disposition')
     source = doc.get('source', {})
+    if type(source.get('episode_index')) is not int or type(source.get('length')) is not int:
+        raise ValueError('Invalid coarse source episode/length field types')
     for key in ('episode_index', 'length', 'fps', 'source_recording_id'):
         if source.get(key) != episode_metadata[key]:
             raise ValueError(f'Coarse source {key} mismatch')
@@ -272,6 +297,7 @@ def load_reviewed_coarse(annotation_path, episode_metadata):
         raise ValueError('Annotation source SHA256 mismatch: ' + ', '.join(mismatches))
     return dict(path=str(path), sha256=digest(path), revision=doc['revision'], saved_at=doc['saved_at'],
                 source=source, segments=doc['segments'], source_hashes=hashes,
+                behavior_evidence={k: doc[k] for k in ('note', 'outcome', 'review_events', 'training_review') if k in doc},
                 behavior_review='coarse is phase truth only; action success not inferred')
 
 

@@ -1,0 +1,42 @@
+{
+  "raw_data_only": true,
+  "encoder_executed": false,
+  "eligible_for_training": false,
+  "reason": "annotation metadata SHA256 mismatch",
+  "episode_index": 0,
+  "anchor": 450,
+  "input_indices": [
+    405,
+    407,
+    411,
+    413,
+    417,
+    420,
+    422,
+    426,
+    428,
+    432,
+    435,
+    437,
+    441,
+    443,
+    447,
+    450
+  ],
+  "last_input_frame": 450,
+  "rgb_shape": [
+    3,
+    16,
+    256,
+    256,
+    3
+  ],
+  "rgb_dtype": "uint8",
+  "joint_shape": [
+    16,
+    58
+  ],
+  "joint_finite": true,
+  "variable_position_channels": 58,
+  "expected_fused_dimension": 4000
+}

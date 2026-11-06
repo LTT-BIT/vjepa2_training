@@ -111,6 +111,9 @@ def test_cache_invalidates_media_not_labels_and_rejects_corruption(tmp_path):
     assert model.feature_fingerprint(e, c, provenance) != model.feature_fingerprint(e, changed_c, provenance)
     changed_p = {**provenance, 'sha256': 'changed'}
     assert model.feature_fingerprint(e, c, provenance) != model.feature_fingerprint(e, c, changed_p)
+    changed_schema = copy.deepcopy(e)
+    changed_schema['info']['features']['observation.state']['names'].reverse()
+    assert model.feature_fingerprint(e, c, provenance) != model.feature_fingerprint(changed_schema, c, provenance)
     with path.open('ab') as f:
         f.write(b'corrupt')
     with pytest.raises(ValueError, match='content'):

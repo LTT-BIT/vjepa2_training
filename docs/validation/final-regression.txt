@@ -1,0 +1,89 @@
+F.....FF.ss.................................................             [100%]
+==================================== ERRORS ====================================
+______________ ERROR collecting tests/test_lemon_doubao_vjepa.py _______________
+ImportError while importing test module '/home/user/pi05/vjepa2_training/tests/test_lemon_doubao_vjepa.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_lemon_doubao_vjepa.py:10: in <module>
+    from tools import run_lemon_doubao_vjepa as pipeline
+tools/run_lemon_doubao_vjepa.py:15: in <module>
+    from tools import annotate_lemon_doubao as doubao
+E   ImportError: cannot import name 'annotate_lemon_doubao' from 'tools' (unknown location)
+=================================== FAILURES ===================================
+________________________ test_converted_video_alignment ________________________
+
+    def test_converted_video_alignment():
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            video, csv, output = (root / name for name in ('head.mp4', 'phase.csv', 'annotated.mp4'))
+            writer = cv2.VideoWriter(str(video), cv2.VideoWriter_fourcc(*'mp4v'), 10, (1280, 800))
+            assert writer.isOpened()
+            for value in (40, 180):
+                writer.write(np.full((800, 1280, 3), value, dtype=np.uint8))
+            writer.release()
+            command = [sys.executable, str(Path(__file__).with_name('annotate_lemon_phase_video.py')),
+                       '--video', str(video), '--csv', str(csv), '--output', str(output), '--title', 'episode-test']
+            header = 'time_s,phase,p0,p1,p2,p3,p4\n'
+            csv.write_text(header + '0,0,1,0,0,0,0\n')
+            result = subprocess.run(command, capture_output=True, text=True)
+>           assert result.returncode and 'frame counts differ' in result.stderr
+E           assert (2 and 'frame counts differ' in "/home/user/pi05/vjepa2_training/.venv-tomato/bin/python: can't open file '/home/user/pi05/vjepa2_training/tests/annotate_lemon_phase_video.py': [Errno 2] No such file or directory\n")
+E            +  where 2 = CompletedProcess(args=['/home/user/pi05/vjepa2_training/.venv-tomato/bin/python', '/home/user/pi05/vjepa2_training/tes...pen file '/home/user/pi05/vjepa2_training/tests/annotate_lemon_phase_video.py': [Errno 2] No such file or directory\n").returncode
+E            +  and   "/home/user/pi05/vjepa2_training/.venv-tomato/bin/python: can't open file '/home/user/pi05/vjepa2_training/tests/annotate_lemon_phase_video.py': [Errno 2] No such file or directory\n" = CompletedProcess(args=['/home/user/pi05/vjepa2_training/.venv-tomato/bin/python', '/home/user/pi05/vjepa2_training/tes...pen file '/home/user/pi05/vjepa2_training/tests/annotate_lemon_phase_video.py': [Errno 2] No such file or directory\n").stderr
+
+tests/test_annotate_lemon_phase_video.py:26: AssertionError
+_____________________ test_boundaries_and_causal_alignment _____________________
+
+    def test_boundaries_and_causal_alignment():
+        assert phase.labels_at([0, .9, 1, 2, 3, 4, 5], [1, 2, 3, 4]).tolist() == [0, 0, 1, 2, 3, 4, 4]
+        with pytest.raises(ValueError):
+            phase.labels_at([0], [1, 3, 2, 4])
+        with pytest.raises(ValueError):
+            phase.labels_at([0], [1, 2, 3, np.nan])
+        index, valid = phase.causal_indices(np.array([9, 10, 14, 20, 26]), np.array([10, 20]), 5)
+        assert index.tolist() == [-1, 0, 0, 1, 1]
+        assert valid.tolist() == [False, True, True, True, False]
+>       assert phase.labels_at([0, 1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5]).tolist() == [0, 1, 2, 3, 4, 5, 5]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_lemon_phase_model.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+times = [0, 1, 2, 3, 4, 5, ...], boundaries = [1, 2, 3, 4, 5]
+
+    def labels_at(times, boundaries):
+        b = np.asarray(boundaries, dtype=np.float64)
+        if b.shape != (4,) or not np.isfinite(b).all() or b[0] < 0 or np.any(np.diff(b) <= 0):
+>           raise ValueError('Four finite, strictly increasing, nonnegative boundaries required')
+E           ValueError: Four finite, strictly increasing, nonnegative boundaries required
+
+tools/lemon_phase_model.py:41: ValueError
+_________________ test_v3_manifest_group_split_and_exclusions __________________
+
+tmp_path = PosixPath('/tmp/pytest-of-user/pytest-99/test_v3_manifest_group_split_a0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7ad2d1a97b30>
+
+    def test_v3_manifest_group_split_and_exclusions(tmp_path, monkeypatch):
+        records = tmp_path / 'conversion/records'
+        records.mkdir(parents=True)
+        rows = []
+        for i in range(12):
+            video = phase.episode_paths(tmp_path, i)[0][0]
+            video.parent.mkdir(parents=True, exist_ok=True)
+            video.write_bytes(b'video')
+            rows.append(dict(episode_index=i, video_path=str(video), video_sha256=hashlib.sha256(b'video').hexdigest(),
+>                            frame_count=7, status='complete', frame_indices=dict(zip(phase.V3_BOUNDARIES, range(1, 6))),
+                                                                                      ^^^^^^^^^^^^^^^^^^^
+                             **dict(zip(phase.V3_BOUNDARIES, range(1, 6)))))
+E           AttributeError: module 'tools.lemon_phase_model' has no attribute 'V3_BOUNDARIES'. Did you mean: 'BOUNDARIES'?
+
+tests/test_lemon_phase_model.py:40: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_annotate_lemon_phase_video.py::test_converted_video_alignment
+FAILED tests/test_lemon_phase_model.py::test_boundaries_and_causal_alignment
+FAILED tests/test_lemon_phase_model.py::test_v3_manifest_group_split_and_exclusions
+ERROR tests/test_lemon_doubao_vjepa.py
+3 failed, 55 passed, 2 skipped, 1 error in 3.30s

@@ -1,0 +1,7 @@
+{
+  "real_encoder_executed": false,
+  "real_training_executed": false,
+  "error": "FileNotFoundError: Missing pinned pretrained artifact: pretrained/vjepa2-vitl-fpc64-256/config.json",
+  "required_sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+  "required_config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+}

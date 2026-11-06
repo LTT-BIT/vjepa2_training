@@ -141,3 +141,42 @@ def test_protected_outputs_and_no_speedup(tmp_path):
     ds.write_json(p, [dict(dataset_root=e['dataset_root'], episode_index=0, coarse_annotation='x', variant='speedup')])
     with pytest.raises(ValueError, match='speedup'):
         ds.load_annotation_index(p)
+
+
+def test_missing_observed_hands_requires_explicit_arms_only(tmp_path):
+    e, _, names = make_episode(tmp_path / 'data', length=12)
+    info = copy.deepcopy(e['info'])
+    info['features']['observation.state'].update(names=names[:14], shape=[14])
+    with pytest.raises(ValueError, match='arms-only'):
+        ds.resolve_joint_schema(info, names[:14])
+    assert len(ds.resolve_joint_schema(info, names[:14], 'arms-only')) == 14
+
+
+def test_source_timestamp_gap_and_speedup_mapping_are_rejected(tmp_path):
+    e, _, names = make_episode(tmp_path / 'data', length=12)
+    table = pq.read_table(e['parquet']).to_pydict()
+    stamps = (np.arange(12) / 30 * 1e9).astype(np.int64) + 100
+    stamps[5] += 10_000_000
+    table['source_timestamp_ns'] = stamps
+    pq.write_table(pa.table(table), e['parquet'])
+    with pytest.raises(ValueError, match='source observation'):
+        ds.read_state(e, names)
+    ds.write_json(tmp_path / 'data/processing/episode_000000.json', {'action_source_index': [1, 2]})
+    with pytest.raises(ValueError, match='speedup'):
+        ds.load_episode_info(tmp_path / 'data', 0)
+
+
+def test_actual_video_pts_offset_is_rejected(tmp_path):
+    import av
+    from fractions import Fraction
+    e, _, names = make_episode(tmp_path / 'data', length=12)
+    with av.open(e['videos'][0], mode='w') as c:
+        stream = c.add_stream('mpeg4', rate=30)
+        stream.width, stream.height, stream.pix_fmt = 32, 32, 'yuv420p'
+        for i in range(12):
+            frame = av.VideoFrame.from_ndarray(np.zeros((32, 32, 3), dtype=np.uint8), format='rgb24')
+            frame.pts = i + 1; frame.time_base = Fraction(1, 30)
+            for packet in stream.encode(frame): c.mux(packet)
+        for packet in stream.encode(): c.mux(packet)
+    with pytest.raises(ValueError, match='PTS/Parquet'):
+        ds.validate_source_and_media(e, names)

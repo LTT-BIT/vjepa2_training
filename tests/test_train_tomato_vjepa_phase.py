@@ -143,3 +143,52 @@ def test_new_annotation_rebuilds_y_and_reuses_only_features(tmp_path):
                        pretrained=new['pretrained'], episodes=old_paths))
     entries = tr.load_training_arrays(cfg, new)
     assert all(r['labels'][1] == 1 for parts in entries.values() for r in parts)
+
+
+def test_prepare_rejects_cross_dataset_schema_reorder(tmp_path):
+    cfg = make_config(tmp_path)
+    row = ds.read_json(cfg['annotation_index'])[1]
+    p = Path(row['dataset_root']) / 'meta/info.json'
+    info = ds.read_json(p)
+    info['features']['observation.state']['names'].reverse()
+    ds.write_json(p, info)
+    ann = ds.read_json(row['coarse_annotation'])
+    ann['source']['sha256']['meta/info.json'] = ds.digest(p)
+    ds.write_json(row['coarse_annotation'], ann)
+    with pytest.raises(ValueError, match='invalid selected'):
+        tr.prepare(cfg)
+    report = ds.read_json(Path(cfg['output_dir']) / 'prepare_rejections.json')
+    assert any('Inconsistent full state schema' in r['error'] for r in report['rejected'])
+
+
+def test_prepare_reports_missing_class_fold_without_inventing_samples(tmp_path):
+    cfg = make_config(tmp_path)
+    for row in ds.read_json(cfg['annotation_index']):
+        ann = ds.read_json(row['coarse_annotation'])
+        ann['segments'][-1]['label'] = 'harvest'
+        ds.write_json(row['coarse_annotation'], ann)
+    with pytest.raises(ValueError, match='missing four-class'):
+        tr.prepare(cfg)
+    assert not (Path(cfg['output_dir']) / 'manifest.json').exists()
+
+
+def test_prepare_runs_when_torch_and_transformers_imports_are_forbidden(tmp_path):
+    import subprocess
+    import sys
+    cfg = make_config(tmp_path)
+    path = tmp_path / 'cpu-config.json'; ds.write_json(path, cfg)
+    code = '''
+import sys,json
+class BlockModelImports:
+    def find_spec(self, fullname, path=None, target=None):
+        if fullname.split('.')[0] in ('torch', 'transformers'):
+            raise AssertionError('prepare imported model dependency: ' + fullname)
+sys.meta_path.insert(0, BlockModelImports())
+from tools.train_tomato_vjepa_phase import prepare
+m = prepare(json.load(open(sys.argv[1])))
+assert len(m['episodes']) == 3
+print('CPU_PREPARE_WITHOUT_MODEL_IMPORTS_OK')
+'''
+    result = subprocess.run([sys.executable, '-c', code, str(path)], cwd=ds.REPO, capture_output=True, text=True)
+    assert result.returncode == 0, result.stderr
+    assert 'CPU_PREPARE_WITHOUT_MODEL_IMPORTS_OK' in result.stdout

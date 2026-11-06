@@ -1,0 +1,180 @@
+{
+  "baseline": "6a6df2f89e81bd1c47471f3a3eb306d6180ac977",
+  "baseline_files_unchanged": [
+    "README.md",
+    "SHA256SUMS",
+    "annotations/phase_annotations_v3_clean.json",
+    "experiment_results/README.md",
+    "experiment_results/RESULTS.md",
+    "experiment_results/best_head.pt",
+    "experiment_results/evaluation.json",
+    "experiment_results/manifest.json",
+    "experiment_results/test_episode_000058_phases.mp4",
+    "experiment_results/training_config.json",
+    "tests/test_annotate_lemon_phase_video.py",
+    "tests/test_lemon_doubao_vjepa.py",
+    "tests/test_lemon_phase_model.py",
+    "tests/test_lemon_vjepa_phase.py",
+    "tools/annotate_lemon_phase_video.py",
+    "tools/download_pretrained.py",
+    "tools/lemon_phase_model.py",
+    "tools/run_lemon_doubao_vjepa.py",
+    "tools/serve_lemon_phase_agent.py",
+    "tools/train_lemon_vjepa_phase.py",
+    "tools/train_source_snapshot.py"
+  ],
+  "raw_package_sha256_checks": [
+    {
+      "path": "1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "matched": true,
+      "sha256": "554d6a272a5d61005784a650a95784bc87f5639ef91dcd3f5fbdd05abb3f97b4"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+      "matched": true,
+      "sha256": "0b1f347687c92deab87027ed2ed08fde44a4414a75a58d971831cb17f7e066f4"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "matched": true,
+      "sha256": "df1a34e626cbfee6183e7560a6b111ef2b465f9d9938830c8f783e07d2b96855"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/annotations/subtasks/fine/episode_000000.json",
+      "matched": true,
+      "sha256": "2e29b1d1cd1c996f4b360596ffc4e98f4ccf0d8bc5c24f34ca9eaa99fdb433f4"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/annotations/subtasks/fine/episode_000001.json",
+      "matched": true,
+      "sha256": "9190091019863e7032ce62f353cec10f4ad98551420d78769d553170d3adc59a"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/annotations/subtasks/fine/episode_000002.json",
+      "matched": true,
+      "sha256": "11329feaf85f182376f1c9738c33b6a44aeb2bc0053020f4670d4fe932b6d826"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/data/chunk-000/episode_000000.parquet",
+      "matched": true,
+      "sha256": "dc91046b1caea319bbdc23f3d56c7ca557e997ff7b9cae24937d7c58aaf9de01"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/data/chunk-000/episode_000001.parquet",
+      "matched": true,
+      "sha256": "a7b03bc376c3015fcc3ac49c122a477ac08c27acf3d868db06a7aa0b1efcedb1"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/data/chunk-000/episode_000002.parquet",
+      "matched": true,
+      "sha256": "765a7e45dfde724724c5f663131bcd72d56a9f3084c3566dc0bf8941e31c0822"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/meta/episodes.jsonl",
+      "matched": true,
+      "sha256": "bf320d4427dde0b8bad1f9099e5ad1717d731c45015b6c21824eeef4e3db09c5"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/meta/episodes_stats.jsonl",
+      "matched": true,
+      "sha256": "0a4aa8dbdaca0fef9edf510d3f7d6ee849a5134c2f5a74f4d1cac26118402b20"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/meta/info.json",
+      "matched": true,
+      "sha256": "72a2eb0105aa7411de8a0a305f4f5d73df7f957173f7df17bd5f3cc8d6939699"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/meta/stats.json",
+      "matched": true,
+      "sha256": "fa5ab85f7e231d95dd4ef8d311f9c75073c722f180c205d8d7c6980fa4c7c61a"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/meta/tasks.jsonl",
+      "matched": true,
+      "sha256": "215abb61c0958b797f694ac2f029d5cccbde8b87b553837548165cf7a130361c"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam0/episode_000000.mp4",
+      "matched": true,
+      "sha256": "0cacd52d242adc33e90e376840099f51a480a49719da2c4b8decd73cab8f2f1c"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam0/episode_000001.mp4",
+      "matched": true,
+      "sha256": "2b9b899a949cbc2182a2084c6c9600ea4956ab459b1eedf5609037925930c183"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam0/episode_000002.mp4",
+      "matched": true,
+      "sha256": "a0cd151e5ae85c377d26249ee61a545f819eb824cd40d055a82c57998f4acffc"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam1/episode_000000.mp4",
+      "matched": true,
+      "sha256": "bf15360b9312ffe717318e8b7db076c241a57e85ce1a806c652957f6db9b64ef"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam1/episode_000001.mp4",
+      "matched": true,
+      "sha256": "20ee71de590a370483c7c4507db0ec149e45f6f2094c2076f9850902047f8ba9"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam1/episode_000002.mp4",
+      "matched": true,
+      "sha256": "2e7bbf4f47ceb87f7ac86f86b9681430119e10092b639468f111d658cb3cbe74"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam2/episode_000000.mp4",
+      "matched": true,
+      "sha256": "6b772384b4e634967b91391a6f9afae5041c7032668a407248bca4decf7c2570"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam2/episode_000001.mp4",
+      "matched": true,
+      "sha256": "a9feb167e598d3fe7ba896e2d9391705c04370050de37993c9050e7e0d208826"
+    },
+    {
+      "path": "1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam2/episode_000002.mp4",
+      "matched": true,
+      "sha256": "90d88bd6229497013c93c950f7a9eee26d6d457f4cc52dc5befdcc86d4fd3f6e"
+    },
+    {
+      "path": "provenance/export-manifest.json",
+      "matched": true,
+      "sha256": "7157c086e176ba3efa98f985041b4de7a0fc88a39fa05769434d6252b5d538f2"
+    },
+    {
+      "path": "provenance/original-info.json",
+      "matched": true,
+      "sha256": "bd5a47912a02c6386a2f5e7dd7c16386c9ad020515260dd7d278eba38665aee0"
+    },
+    {
+      "path": "provenance/source-cache-receipt.json",
+      "matched": true,
+      "sha256": "1754645fed773fd2077354b85957f49f22566a04e03dc5d0168e21fded0f2b70"
+    },
+    {
+      "path": "说明.md",
+      "matched": true,
+      "sha256": "85ebcecf52e8f4eb467f65dfc577dc9b26c820de212951e18c268a41b61b97ba"
+    }
+  ],
+  "raw_package_checks_passed": 27,
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "bf16_supported": true,
+  "dependencies": {
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "transformers": "5.22.1",
+    "numpy": "1.26.4",
+    "pyarrow": "19.0.1",
+    "av": "19.0.2",
+    "pytest": "9.2.0",
+    "PyYAML": "6.0.3",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "2.4.0"
+  },
+  "opencv_version": "4.6.0"
+}

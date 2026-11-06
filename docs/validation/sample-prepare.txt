@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/user/pi05/vjepa2_training/tools/train_tomato_vjepa_phase.py", line 368, in <module>
+    main()
+  File "/home/user/pi05/vjepa2_training/tools/train_tomato_vjepa_phase.py", line 357, in main
+    prepare(config)
+  File "/home/user/pi05/vjepa2_training/tools/train_tomato_vjepa_phase.py", line 86, in prepare
+    raise ValueError(f'{len(rejected)} invalid selected episode(s); see {run / "prepare_rejections.json"}; no training manifest produced')
+ValueError: 3 invalid selected episode(s); see /home/user/pi05/vjepa2_training/runs/tomato/environment/sample_prepare/prepare_rejections.json; no training manifest produced

@@ -339,7 +339,9 @@ def main(argv=None):
     config = ds.load_config(a.config)
     if a.device:
         config['device'] = a.device
-    if a.batch_windows:
+    if a.batch_windows is not None:
+        if a.batch_windows <= 0:
+            p.error('--batch-windows must be positive')
         config['batch_windows'] = a.batch_windows
     if a.cv_folds is not None or a.cv_fold_index is not None:
         if a.cv_folds is None or a.cv_fold_index is None:

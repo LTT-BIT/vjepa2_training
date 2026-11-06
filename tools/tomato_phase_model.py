@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 import time
+import uuid
 
 import numpy as np
 import torch
@@ -91,6 +92,7 @@ def head_model(joint_dimension):
 def feature_fingerprint(episode, contract, provenance):
     return ds.fingerprint(dict(input_sha256=episode['input_sha256'], cameras=contract['cameras'],
                                camera_keys=episode['camera_keys'], joint_names=contract['joint_names'],
+                               state_schema=episode['info']['features']['observation.state'], fps=episode['fps'],
                                joint_mode=contract['joint_mode'], history_frames=16, history_sample_hz=10,
                                prediction_hz=2, sampler=ds.SAMPLER_VERSION, image_size=256,
                                pooling='last_hidden_state.mean(dim=1)', preprocessing=FEATURE_VERSION,
@@ -98,7 +100,9 @@ def feature_fingerprint(episode, contract, provenance):
 
 
 def assert_source_unchanged(episode):
-    for rel, expected in episode['input_sha256'].items():
+    expected_hashes = {**episode.get('annotation', {}).get('source', {}).get('sha256', {}),
+                       **episode['input_sha256']}
+    for rel, expected in expected_hashes.items():
         if ds.digest(ds.safe_source_path(episode['dataset_root'], rel)) != expected:
             raise ValueError(f'Source changed since manifest: {rel}')
 
@@ -145,7 +149,7 @@ def cache_path(directory, episode, contract, provenance):
 def write_cache(path, features, anchors, times, histories, key):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix('.tmp.npz')
+    tmp = path.with_name(path.stem + '.' + uuid.uuid4().hex + '.tmp.npz')
     np.savez_compressed(tmp, features=features, anchors=anchors, times=times,
                         input_indices=histories, fingerprint=np.array(key))
     tmp.replace(path)
@@ -232,8 +236,14 @@ def load_checkpoint(path, manifest_sha256=None, device='cpu'):
             or saved.get('sampler_version') != ds.SAMPLER_VERSION or saved.get('feature_version') != FEATURE_VERSION
             or saved.get('contract', {}).get('model_id') != ds.MODEL_ID
             or saved.get('contract', {}).get('model_revision') != ds.REVISION
-            or saved.get('pretrained', {}).get('sha256') != WEIGHTS_SHA256):
+            or saved.get('pretrained', {}).get('sha256') != WEIGHTS_SHA256
+            or saved.get('pretrained', {}).get('config_sha256') != CONFIG_SHA256):
         raise ValueError('Not a compatible tomato four-class V-JEPA 2 checkpoint')
+    for k, value in dict(cameras=list(ds.CAMERAS), labels=list(ds.LABELS), history_frames=16,
+                         history_sample_hz=10, prediction_hz=2, image_size=256,
+                         robot='sharpa', variant='normal').items():
+        if saved['contract'].get(k) != value:
+            raise ValueError(f'Checkpoint task/sampling contract mismatch: {k}')
     if manifest_sha256 is not None and saved['manifest_sha256'] != manifest_sha256:
         raise ValueError('Checkpoint/manifest hash mismatch')
     d = len(saved['joint_names'])
@@ -254,7 +264,7 @@ def load_checkpoint(path, manifest_sha256=None, device='cpu'):
 def predict_logits(head, features, mean, std, batch_size=512):
     device = next(head.parameters()).device
     x = np.asarray(features, dtype=np.float32)
-    mu, sigma = torch.as_tensor(mean).to(device), torch.as_tensor(std).to(device)
+    mu, sigma = torch.as_tensor(mean).to(device).float(), torch.as_tensor(std).to(device).float()
     if x.ndim != 2 or x.shape[1] != mu.numel() or not len(x) or not np.isfinite(x).all():
         raise ValueError('Invalid fused prediction features')
     head.eval()
