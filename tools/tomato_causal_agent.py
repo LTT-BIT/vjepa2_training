@@ -44,6 +44,9 @@ class CausalVideoAgent:
   names=list(joint_names);q=np.asarray(joints,np.float32);ts=np.asarray(history_timestamps,float)
   if len(names)!=58 or len(set(names))!=58 or set(names)!=set(self.names) or q.shape!=(16,58):raise ValueError('58 named positions required')
   if ts.shape!=(16,) or not np.isfinite(ts).all() or np.any(np.diff(ts)<0) or np.any(ts>timestamp+1e-6) or abs(ts[-1]-timestamp)>1e-4:raise ValueError('Causal history timestamps required')
+  rate=self.saved['input_schema'].get('history_sample_hz',10)
+  expected=np.maximum(ts[0],timestamp-np.arange(15,-1,-1)/rate)
+  if np.any(ts>expected+1e-4) or np.any(ts<expected-1/30-1e-4):raise ValueError('History sampling times differ from checkpoint contract')
   if self.session.last_time is not None and timestamp<=self.session.last_time:raise ValueError('Fresh monotonic observation required')
   if self.saved['spec']['context']>1 and self.session.last_time is not None:
    gap=timestamp-self.session.last_time

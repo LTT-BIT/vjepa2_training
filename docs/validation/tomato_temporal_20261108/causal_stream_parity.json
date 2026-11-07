@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "real_observations": 100,
+  "max_abs_logit_error": {
+    "current": 2.384185791015625e-06,
+    "future": 2.86102294921875e-06
+  },
+  "scope": "Real cached Episode, strict context4 FIFO vs batched causal gather; no future windows."
+}

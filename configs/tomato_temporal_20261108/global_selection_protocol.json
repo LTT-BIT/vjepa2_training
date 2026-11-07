@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "horizon_s": 1.5,
+  "selection_split": "original validation10",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "representative_seed": 42,
+  "candidates": [
+    "prior_independent_h15",
+    "mlp_h15",
+    "loss11",
+    "gru",
+    "split",
+    "velocity",
+    "mlp_16x5",
+    "hybrid_new_future",
+    "ensemble_half"
+  ],
+  "fixed_operating_point": {
+    "current_threshold": 0.5,
+    "current_confirmations": 2,
+    "future_threshold": 0.5,
+    "future_confirmations": 2
+  },
+  "current_reference_family": "matched-horizon mlp_h15",
+  "current_reference_mean_f1": 0.970315210708495,
+  "gates": {
+    "current_macro_f1_drop_max": 0.005,
+    "current_boundary_recall_min": 0.9,
+    "current_delay_p95_s_max": 1.5,
+    "future_boundary_recall_min": 0.8,
+    "future_false_per_minute_max": 1.0
+  },
+  "ranking": "Feasible first, then mean future recall - .1 false events/min + .01 current F1; lexical tie-break.",
+  "stable_default": "Original Joint seed42 remains OpenPI default; no deployment this round.",
+  "preregistration": "Same stage2 rule extended explicitly to fully specified long-history and Current-specific confirmation before their results exist.",
+  "test_used": false,
+  "no_independent_generalization_claim": true
+}

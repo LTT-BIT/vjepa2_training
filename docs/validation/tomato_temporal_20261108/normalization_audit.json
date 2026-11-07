@@ -1,0 +1,773 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "mlp_h15",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "loss11",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "loss12",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "focal",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "boundary_aux",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "gru",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "tcn",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "gated",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "velocity",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "split",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "vision_only",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "state_only",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "mlp_h15",
+      "seed": 43,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "mlp_h15",
+      "seed": 44,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "loss11",
+      "seed": 43,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "loss11",
+      "seed": 44,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "gru",
+      "seed": 43,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "gru",
+      "seed": 44,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "split",
+      "seed": 43,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "split",
+      "seed": 44,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "mlp_h15_fold0",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 57,
+      "val_sources": 29,
+      "split_sha256": "91334c33241fb0c8f21908198a1d1bf7e7ca2721e805fe6b9e017440217deee5"
+    },
+    {
+      "name": "split_fold0",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 57,
+      "val_sources": 29,
+      "split_sha256": "91334c33241fb0c8f21908198a1d1bf7e7ca2721e805fe6b9e017440217deee5"
+    },
+    {
+      "name": "mlp_h15_fold1",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 57,
+      "val_sources": 29,
+      "split_sha256": "50e21a9156d21793ed06f12063e4d7d88d887e9df14b33608113c38a32c04413"
+    },
+    {
+      "name": "split_fold1",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 57,
+      "val_sources": 29,
+      "split_sha256": "50e21a9156d21793ed06f12063e4d7d88d887e9df14b33608113c38a32c04413"
+    },
+    {
+      "name": "mlp_h15_fold2",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 58,
+      "val_sources": 28,
+      "split_sha256": "2e31525e5740289b192bb7fd3574f50684d4b4627634d6ba54b354bdf6fa11c5"
+    },
+    {
+      "name": "split_fold2",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 58,
+      "val_sources": 28,
+      "split_sha256": "2e31525e5740289b192bb7fd3574f50684d4b4627634d6ba54b354bdf6fa11c5"
+    },
+    {
+      "name": "velocity",
+      "seed": 43,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "velocity",
+      "seed": 44,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "split_sha256": "6c7afc600a2e55e084ae44f88c3acaeb65b1770c30cf61206e0214cbf0ca5762"
+    },
+    {
+      "name": "mlp_16x5_s42",
+      "seed": 42,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "feature_history": "16x5Hz"
+    },
+    {
+      "name": "mlp_16x5_s43",
+      "seed": 43,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "feature_history": "16x5Hz"
+    },
+    {
+      "name": "mlp_16x5_s44",
+      "seed": 44,
+      "train_only_statistics_exact": true,
+      "train_sources": 76,
+      "val_sources": 10,
+      "feature_history": "16x5Hz"
+    }
+  ],
+  "long_history": [
+    {
+      "episode_id": "0b509210e606316087c5ed7d",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "d938345f0db852ae20b36b697060e237df23fde122f047934bee57d3183d4ad3"
+    },
+    {
+      "episode_id": "4b9725d5a798ea8ae1ea0e69",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "a1cf07819e11655794dd85c62865ee805f8a285cb088497eea8467ab85096456"
+    },
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "032a9e8f7356a47f17a075054f750a3a536d948c77d80c64695ee3f89d6350e8"
+    },
+    {
+      "episode_id": "8ade504fe3d1e43060e7ed6f",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "2f17d6737d3c9341b5330d712a78825906bca221ba3f8c20d336bd89186dbe7d"
+    },
+    {
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "9e13f882622998200d0fbabb8c96414925487be2a1e38b6f87a2bf9ab7f71c9f"
+    },
+    {
+      "episode_id": "085f066dd8fed481bc79db0e",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "716a6107eed5847cfd51008150004b652dd7163bc36f6f3f3f6572b0ef919738"
+    },
+    {
+      "episode_id": "9c9c0e8ab7577ddfda0e3b7c",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "c565342c67fb9e79a005fb7723d8153b7bc4d4bc1509e37554bba6d07b29f7bb"
+    },
+    {
+      "episode_id": "d07358493ee75a94905924f0",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "02b10f5af5446db037a2b332b06cceec54681271664a50d099261513a929ccc7"
+    },
+    {
+      "episode_id": "103a8a84aaf072aa2fe0b703",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "77af428a0e2ff07267a1ae6f5e8add713a96b86653c24c027389002d1bdf1dd6"
+    },
+    {
+      "episode_id": "d1bea10cbee2dcf0a031297f",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "bf39432beed2d98029d70357f173beb49cec1b73cd07daf56b50412d7768b5da"
+    },
+    {
+      "episode_id": "f6b755a9ea4607d8c2cc21d7",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "77bfd18947cd429317cdec34e3eae6ef8afd067d2ad5535a9f930c88db6b4663"
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "b9af55792ac13fdeecd25d1a0c7d1d37878aab42ec66b7a063c21d116154fd58"
+    },
+    {
+      "episode_id": "344622e0733da880525eec9b",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "70db28dd5538ac2b78a1bb3ad6ab43823b96bce8c343484b4a94a36d0451db4d"
+    },
+    {
+      "episode_id": "ff4170cf447a7d7367a9cf4e",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "b593d12b6eda0f983da649f07ab09e54e7bd4b8289b7303c135af5c76c099b95"
+    },
+    {
+      "episode_id": "d72a1dc017f3ae8ed1a433e1",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "956f391587f3545b982dfed954223af13a056e1b7d22316d6c5453ecc5c9250f"
+    },
+    {
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "685a51f4867f2fb07fde925ebb5de5f47c1ec1d7c9cbd7a377243ea777e79244"
+    },
+    {
+      "episode_id": "2949e71f692973e6db8b3af8",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "e9155527c428544cbdea16d5f26cadaf65a7d3b2efaccb198afac188d27e6886"
+    },
+    {
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "478096d902ce99e0552ebd84001c3be150a484c349d512234bb836105161d6c8"
+    },
+    {
+      "episode_id": "3f1099b1a9f1e73f50cc8e69",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "96019586b77d27142b6cf1940af3e6098d2c109a1e7133e63bf580a191960705"
+    },
+    {
+      "episode_id": "d181578c7dec775708be158e",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "2aab283a0bd9c7bd39c5f2540fcd88d86cccd9b5c55b7f25d56bcc44d09cfce2"
+    },
+    {
+      "episode_id": "7eb896d2ddfc03a18e8b6cdb",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "2ece5162611d56595c406f313a079769d1999ce3d563c917127f6a4bac14ff8a"
+    },
+    {
+      "episode_id": "c88604cfdfe181263bb04bd9",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "2ed424685ede504cba2fa8d9628608ef0aad22a7bc6e8ac0cf329c0e6631d4f9"
+    },
+    {
+      "episode_id": "7d3563e229737ee222cdea43",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "820c32f96615476f3e2a58c61feb20ef255382e3ad8bd3100579956d152730fc"
+    },
+    {
+      "episode_id": "63242061de4993d281f7e41f",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "e1c9e0490f75c685363875046e72df2b41a3fa675f47a3c6100859aeb46a9415"
+    },
+    {
+      "episode_id": "67e1ef837772900ad398f54a",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "981394e3af0f73471592579386290b4a86015042f95694db584f581e0ed574df"
+    },
+    {
+      "episode_id": "ed68fecbe1e0ad9233f0b7e3",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "919e6b64002d3918df24b3b4bd8cf45ddfd05687fbb75a19389a7715cbdbb22b"
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "6e31e87b6d1e5c1bc8e730721314e327a20940cca3eea00112be49e79717de6e"
+    },
+    {
+      "episode_id": "9f21d91289b732800d9e8659",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "4764c4543d58dfbcd1bb0e8336a879eb5fa83a73f44b688edc8057270afd8902"
+    },
+    {
+      "episode_id": "de33521b3d36212c2f4fc651",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "e22f8e2000d0b24879afe21b56727c55312d4b88524aaef0849b5789252fe726"
+    },
+    {
+      "episode_id": "dbe7c3fd1f63c53dd300df07",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "8f754302c07dae9ff89d17e40f37dd2e4f63d1672b3c9c4c91df384be4f9d9d4"
+    },
+    {
+      "episode_id": "b1455b4921f8a1c35562c08c",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "0987624811323327f27fb44298d168caf030884fb3773c0ea161c138f9a305be"
+    },
+    {
+      "episode_id": "b8fe452a236b169213200aa2",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "d062bb7c44e0c117dd016b5545c9c456085d3d986bf0a788005bf50c2db62a19"
+    },
+    {
+      "episode_id": "8432adc20e1292edecedeb42",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "9cf22b3eeade2a09f187ecc4a381ace82939e3ed11c32f57eb90114b85fa45ba"
+    },
+    {
+      "episode_id": "4c9ff33b07c0820e6aba1e54",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "c736b52a90e0f53c638829f3b1031e7f574cf565c33a2bd29b33644416f66e8f"
+    },
+    {
+      "episode_id": "9b6a525ea6d7921f8c103e91",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "c54658f4f399779ec8050414e0669c84fb7f563ab32b0b007798f8f036fea89b"
+    },
+    {
+      "episode_id": "1d4c5ee4582ce6410382e380",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "dcf899161279e5c5f2c84efe33889193c8c08c82d449afd044586aa4dbffa7d1"
+    },
+    {
+      "episode_id": "a39c9672d4e8a8ae72caed2a",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "81cbd853039a7fcf8eb0202228b96b150ad91ae5ca1afbb8e4f2b1a8a5a41c4c"
+    },
+    {
+      "episode_id": "15820aaaae4a64d0e4580be9",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "4cd6fe32cf176365f7fa103b8bda830871087fc4911097614ec8e006e7cc4d80"
+    },
+    {
+      "episode_id": "cee68551ce98f618fba875f7",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "fb838ff6fc7ea8b1eea5c26fdec877e23fd4ef01c9449bed777b8688e2c6d6e3"
+    },
+    {
+      "episode_id": "073a1eb5be5d51450840a443",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "3c0f92eaaa37edc5d65406cda92fc5adc21188d74e6367c8481f562159275a10"
+    },
+    {
+      "episode_id": "97c75a6f3542d9376afe601c",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "3ffdcd9a93bac6bd2d44a3e33121762a5bba87b2dfe7dbc083579c44b88cccba"
+    },
+    {
+      "episode_id": "230e8c6ed49b9b37c8acce18",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "0f4cc8be08f9a5f9a18f228bde5870fc498e7c7b57095a060fe6841decc79baa"
+    },
+    {
+      "episode_id": "b2eca7ff88a204b94a54f9ad",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "e47d41acfc5e7317f9489dac67a0e6388a648b0a6cfe8f2a1fa3d9863ec85160"
+    },
+    {
+      "episode_id": "b511575e467a89f83439d27b",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "f9c907a53f1d7d440ff045248b3651f5ce9829cd776748091101e59e977f8439"
+    },
+    {
+      "episode_id": "b061c777f9dffefec63764ad",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "6971b796fcccec2cb64af75f702abf220cf5d2b568db48aa5ec438155c3bca07"
+    },
+    {
+      "episode_id": "e2152a831799c3d337126635",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "13c6b557e9769a9bc92b62e4c6acdd3a101d73725dc8396a4f803bcc5d729127"
+    },
+    {
+      "episode_id": "d389af5083c2be3171413850",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "c687b555c10ac5cf0b26bf31f5774d3a54b27c32b333a2fceea9b7080c5d5b1a"
+    },
+    {
+      "episode_id": "ca784332e44d979f99018a52",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "6367bfe237c7b2d9f9e13e5d323adb9ebfb45279a6139a936bc2910d27d5c55a"
+    },
+    {
+      "episode_id": "e1ec4ab1d4f49e5af9ceeecc",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "1d7ab5471fc191a6e0b43fcac11622a9757abc02408ab03b8627e6dbf1b67411"
+    },
+    {
+      "episode_id": "fd6dfb44c2138b3055a6d6c1",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "e046116a51510c4fd02c4e6eb88b5240b29445386d656728160c0e8f602d1f7e"
+    },
+    {
+      "episode_id": "06bd3a309be22e14f6be9f6f",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "882c1d8f55bec7bd2e5e8aa82fc8ce2b339f9e9e46e9d98ad68aa6e12d36f394"
+    },
+    {
+      "episode_id": "e3adedca7fbd8c8793dcd441",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "2ff454515b63f2f4445b96749b9818f9e51f4bb528a0d27ac2be1e6858b94843"
+    },
+    {
+      "episode_id": "6f4bafb382eecb2e2bdc528b",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "6aa0ed411ae9ce8aa6fbe18a0092b656af583221dccb2294749196670e1833bb"
+    },
+    {
+      "episode_id": "3e40d77b8301aa4141042ffe",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "83c2d94adf8df7b95ab09e75ae6f26bdc9aa8aff98d072d2664ddee1ef9ec371"
+    },
+    {
+      "episode_id": "24f5f11d06768bae4e8ff1de",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "c565f98a1f838d20dc63cd25a5d9404e60b8705cf88314c91cdda092580facc7"
+    },
+    {
+      "episode_id": "e00eabcc5afc0a1fb422e819",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "e72841b5ce06d6e6b868cd054553032352e332292a40ce10efd95982d24100fa"
+    },
+    {
+      "episode_id": "fb5a964ebdb9c086f6d999a0",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "5ed870bcde918c739c5d75a0e9b0967ddf5a7a0e5ffa06ceb97e835ac05941c2"
+    },
+    {
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "2bc0640939a20418cefc56c86c9cf30b4586f8dec8afdf3061bc200f7c05ffb4"
+    },
+    {
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "821cc961eec346922ff2c868f89f5a7900c7ccd05caf085b17856f2510f38ae1"
+    },
+    {
+      "episode_id": "9431fc081de9f2159ad3b663",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "6df45be6dd14a5eae57075ac8d3005a3682c74939a8e4fb855b57b8f3b9a8bc3"
+    },
+    {
+      "episode_id": "fbc5ac1495fc613cd02214df",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "304c4922f662f7ba1dd7033ccc7df967642541bab0993ece1d9df6475cf46802"
+    },
+    {
+      "episode_id": "a6e2dd33f14a2e356e8652af",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "a97255f77e9a6adaeec2ae47ea8e738284dafeb411e1bd9190d557997aba115f"
+    },
+    {
+      "episode_id": "28cca87cdffd5bdf45603c13",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "69075034223b0aa7eb4719839c4b06d1aefb0bc4dce92d2c2a22e64ffbc893d8"
+    },
+    {
+      "episode_id": "1cd23a36e2494854403af270",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "d787eb8df3af9392431160b58caf82edbe592506d6ab4108045e26f59ccbc79e"
+    },
+    {
+      "episode_id": "d960895f8962550cb7520398",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "aec03b0f710d62cad9cc8f495efccba6623185464a14856511414c6dcd2cfed4"
+    },
+    {
+      "episode_id": "3e21882f6ad765c8134e8042",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "05b23181608b98a1dfd76f8cb47df2af35dc0eed37cf35bd872b07b532daf0af"
+    },
+    {
+      "episode_id": "35b98fead313ad3adb9e2263",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "b77cb9ffc26c347caa0e16eb3d4a16697f23e2b833832240f7b2c03c865b3e7d"
+    },
+    {
+      "episode_id": "27a8a232843038617b0882e6",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "411e1dc081b75d0335317cfb3715044441dbf29486d775d7b9406bf30c669e91"
+    },
+    {
+      "episode_id": "97fc506c9bd49bf5a3cbe879",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "2334d0448dc18358e4001d78e22e254264a84cda074dbe67f6b18f1069461bd3"
+    },
+    {
+      "episode_id": "c2ab0294242e464ac8d8b6c5",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "022e83bf18b61eeffdaf308c8166161bede36f0e5c80e9b54b7bab6c4a9569d5"
+    },
+    {
+      "episode_id": "42fdcb9b923d9a6ed5df8625",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "76d13e15fe80ae4c88d05c0d5c42eab76cb23dc7fbf282c308eed876e4f3f522"
+    },
+    {
+      "episode_id": "5c169e31b2d5c4ba6af1152b",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "09115e369d1e3a2b53ed57831ebd6af3458c4dcd6a5571ff87c2e26f2f2e0ca9"
+    },
+    {
+      "episode_id": "11e2f1fe404b5eeca714c786",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "4e10bcdda2206a1d1499c75e51385e316233b3304ebc99c35d5d4ba602b9c058"
+    },
+    {
+      "episode_id": "ae8648d89618a1cc243fd08e",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "22d141c0456d0f1f531e980205a9340a6c1902d73b47bd2edef2598d6d098da0"
+    },
+    {
+      "episode_id": "b961a9f4fb17a36a803b1a81",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "97d82e88d21a6bb65029cbdca0972fa2a4c3230018815eaa945d3c800afc29da"
+    },
+    {
+      "episode_id": "ac4f2f10de4532e9dab3017d",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "0b8277a406c82d985210a59fb273976049022ca197e955912615dba3ba08c3fa"
+    },
+    {
+      "episode_id": "00c45ede978c60868ef794d5",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "e3f4d415df2c6e6fdd71f9e79696527d70e8a1ae5c8d61c58de3efbb6e767904"
+    },
+    {
+      "episode_id": "134ac3106b3dc875a778e01f",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "b6b196fea707950619b726cbc1a9f3b2050b048c284465f819a95d9ed834174c"
+    },
+    {
+      "episode_id": "ff10daee7cfe93395fea8669",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "b09939d8209a9d090d778bed3b65d522ff223464fb410632bcee04eef9a526b2"
+    },
+    {
+      "episode_id": "5049c3974e64cbcd114c66fb",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "d11513f64bc54a0898a70bbb1a49644d531bb5e17621c74b74d64de8d5d62e77"
+    },
+    {
+      "episode_id": "ba1ce3010a03ead623453a51",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "07c53f2872b7213104eec2fcf3603ccb214d5ea06a2aee48e9510532b368453f"
+    },
+    {
+      "episode_id": "f03638673202370a5d2581c1",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "02bb10961e11cbe94ac975ad51f23ef9e101ec7aaa07ed6306a6c3ee62edda85"
+    },
+    {
+      "episode_id": "e80436dea962fa58288fd8f9",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "a63952d70b0313b7ad436842e4d09d80d50dcc793f11c1e26c3e74cc9b5ec970"
+    },
+    {
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "e79b8d88d6eafb670de5fdf83236e48358374835240c6dd1309710feec437186"
+    },
+    {
+      "episode_id": "8b8c1da3e272c90d0725c677",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "7ad21a7574756c7ca8f0c8aaf95b68b3045ecf0103a014cbfa396b52c35f3975"
+    },
+    {
+      "episode_id": "ec2a42cb31563737fc34db99",
+      "position_order_exact": true,
+      "causal": true,
+      "cache_sha256": "49b0a6f36a8f2a7fc74db8d1648a6767ee064b04bcfe009bfdb46a4dab225b4d"
+    }
+  ],
+  "no_test_sources_in_training": true,
+  "mean_std_exact": true
+}

@@ -1,0 +1,8 @@
+{
+  "folds": 3,
+  "group": "original source_recording_id",
+  "fold_seed": 20261108,
+  "training_seed": 42,
+  "criterion": "Run if long-history mean Current or Future F1 exceeds matched10Hz MLP by .002, or mean online rank exceeds it by .02; otherwise skip.",
+  "scope": "Diagnostic grouped CV on86 train+validation recordings, never original8 test sources; fixed-split final candidates already use3 seeds."
+}

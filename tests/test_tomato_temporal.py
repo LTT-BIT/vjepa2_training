@@ -90,6 +90,7 @@ def test_runtime_one_encoder_and_rejects_wrong_cadence_or_schema(tmp_path,monkey
  out=instance.predict(None,q,instance.names,times,timestamp=100.,observation_id='a',session_id='s')
  assert len(calls)==1 and len(out['future_probabilities'])==4
  with pytest.raises(ValueError,match='higher-rate'):instance.predict(None,q,instance.names,times+.2,timestamp=100.2,observation_id='b',session_id='s')
+ with pytest.raises(ValueError,match='sampling times'):instance.predict(None,q,instance.names,100.5-np.arange(15,-1,-1)/5,timestamp=100.5,observation_id='c',session_id='s')
  assert len(calls)==1
  payload['input_schema']['joint_names'][0]='wrong.position';torch.save(payload,path)
  with pytest.raises(ValueError,match='name/order'):agent.load_checked(path)
@@ -103,3 +104,25 @@ def test_probability_mixture_is_exact_and_preserves_current():
  with torch.inference_mode():
   z=head(x);expected=(f(x).softmax(-1)+new(x[:,None])['future_logits'].softmax(-1))*.5
   torch.testing.assert_close(z['current_logits'],c(x));torch.testing.assert_close(z['future_logits'].softmax(-1),expected)
+
+
+def test_binary_average_precision_handles_tied_scores():
+ from tools.train_tomato_temporal import binary_scores
+ y=np.array([1,0,1,0])
+ tied=binary_scores(np.full(4,.5),y)
+ assert tied['average_precision']==pytest.approx(.5) and tied['roc_auc']==pytest.approx(.5)
+ perfect=binary_scores(np.array([.9,.1,.8,.2]),y)
+ assert perfect['average_precision']==1 and perfect['roc_auc']==1
+
+
+def test_available_warning_excludes_results_delivered_after_boundary():
+ from tools.select_tomato_temporal import availability
+ def event(time):
+  return dict(per_episode={'e':dict(events=[dict(time=time,previous=0,label=1)],
+   boundaries=[dict(time=2.,end=4.,previous=0,label=1)],duration_s=5.)})
+ assert availability(event(1.98),'future',1.,.05)['recall']==0
+ # Processing delay must not rescue a forecast outside its input-time horizon.
+ assert availability(event(.99),'future',1.,.05)['recall']==0
+ valid=availability(event(1.1),'future',1.,.05)
+ assert valid['recall']==1 and valid['lead_p50_s']==pytest.approx(.85)
+ assert availability(event(2.),'current',1.,.05)['delay_p95_s']==pytest.approx(.05)

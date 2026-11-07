@@ -1,0 +1,11 @@
+{
+  "selection": "Best Current-F1 fusion pilot (velocity seed42) receives seeds43/44; seed42 reused read-only.",
+  "objective": "Current-specific confirmation, separate from previously locked forecast-oriented fusion selection.",
+  "fixed_training_recipe": "Same Joint .5 Future weight,1.5s target,100 epochs/patience15; does not retune selected epoch for Current.",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "test_used": false
+}

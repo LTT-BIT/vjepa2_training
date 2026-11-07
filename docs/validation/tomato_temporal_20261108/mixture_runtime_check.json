@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "response": {
+    "protocol": "tomato-stage-prediction-v1",
+    "model_version": "20dbf9993a3175f3ef4636a68faeff6ce395929c2acc63d5f1fe3da9455028ef",
+    "observation_id": "mixture0",
+    "session_id": "mixture",
+    "input_timestamp": 1794081882.0933208,
+    "result_timestamp": 1794081882.1535501,
+    "labels": [
+      "pickup",
+      "harvest",
+      "return",
+      "adjust"
+    ],
+    "future_horizon_s": 1.5,
+    "prediction_mode": "joint",
+    "valid": true,
+    "error": null,
+    "current_logits": [
+      13.17435073852539,
+      1.301288366317749,
+      -8.392528533935547,
+      -2.6465606689453125
+    ],
+    "current_probabilities": [
+      0.9999928892059256,
+      6.9757585531727135e-06,
+      4.3015032157204314e-10,
+      1.3460537084174595e-07
+    ],
+    "future_logits": [
+      -0.0004147555155213922,
+      -7.794547080993652,
+      -18.816761016845703,
+      -12.822450637817383
+    ],
+    "future_probabilities": [
+      0.9995853184600958,
+      0.00041197532836285934,
+      6.7295266581630445e-09,
+      2.699482014484964e-06
+    ],
+    "latency_ms": 60.2266788482666
+  },
+  "prompt_context": {
+    "phase": "pickup_1",
+    "phase_index": 0,
+    "action_class": "pickup",
+    "prompt": "Right hand grasps and lifts the truss to the center",
+    "version": 0,
+    "input_timestamp": 1794081882.0933208,
+    "changed": false,
+    "reason": "hold_current_phase",
+    "source": "vjepa2",
+    "future_warning": null,
+    "session_id": "mixture",
+    "model_version": "20dbf9993a3175f3ef4636a68faeff6ce395929c2acc63d5f1fe3da9455028ef",
+    "observation_id": "mixture0",
+    "confidence": 0.9999928892059256,
+    "needs_review": false,
+    "task_complete": false
+  },
+  "robot_connected": false
+}

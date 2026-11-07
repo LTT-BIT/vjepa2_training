@@ -1,0 +1,12 @@
+{
+  "windows": 25066,
+  "recordings": 86,
+  "reused_recordings": 7,
+  "new_run_wall_s": 1725.085397748997,
+  "prior_completed_wall_s": 187.5146404939951,
+  "total_recorded_encode_s": 1182.5879877750122,
+  "total_recorded_decode_s": 686.6735824550196,
+  "compressed_cache_bytes": 181809980,
+  "extraction_peak_allocated_bytes": 3360282624,
+  "scope": "Two preserved extraction attempts; completed-cache work counted once; interrupted unfinished window work not estimated."
+}

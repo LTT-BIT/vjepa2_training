@@ -1,0 +1,119 @@
+{
+  "results": {
+    "mlp_h15": {
+      "current": {
+        "mean_equal_episode_f1_delta": -0.004140101002426137,
+        "ci95": [
+          -0.008785433096214186,
+          0.0011918270118755805
+        ]
+      },
+      "future": {
+        "mean_equal_episode_f1_delta": 0.00019395339041568342,
+        "ci95": [
+          -0.006690866943505092,
+          0.0072409056262171595
+        ]
+      }
+    },
+    "loss11": {
+      "current": {
+        "mean_equal_episode_f1_delta": -0.00351431252246794,
+        "ci95": [
+          -0.008594538350282399,
+          0.0011266972414417098
+        ]
+      },
+      "future": {
+        "mean_equal_episode_f1_delta": -0.0028500405742912975,
+        "ci95": [
+          -0.007684871334790576,
+          0.0015612229775594701
+        ]
+      }
+    },
+    "gru": {
+      "current": {
+        "mean_equal_episode_f1_delta": -0.00998976139386217,
+        "ci95": [
+          -0.01889286722702937,
+          -0.0031841987055020613
+        ]
+      },
+      "future": {
+        "mean_equal_episode_f1_delta": -0.003987418398507874,
+        "ci95": [
+          -0.008600070175212308,
+          0.0018936926074995285
+        ]
+      }
+    },
+    "split": {
+      "current": {
+        "mean_equal_episode_f1_delta": -0.00904003279759748,
+        "ci95": [
+          -0.01588777800542489,
+          -0.0020779445337065347
+        ]
+      },
+      "future": {
+        "mean_equal_episode_f1_delta": -0.0031917094286925685,
+        "ci95": [
+          -0.010912963689738327,
+          0.0035566907025141774
+        ]
+      }
+    },
+    "velocity": {
+      "current": {
+        "mean_equal_episode_f1_delta": -0.0011486363023854938,
+        "ci95": [
+          -0.005404385597956731,
+          0.0033419869488853404
+        ]
+      },
+      "future": {
+        "mean_equal_episode_f1_delta": 0.0007817734799338746,
+        "ci95": [
+          -0.004205120067912807,
+          0.005569282659841267
+        ]
+      }
+    },
+    "mlp_16x5": {
+      "current": {
+        "mean_equal_episode_f1_delta": -0.002710459699323423,
+        "ci95": [
+          -0.00952678705325234,
+          0.004126266258074755
+        ]
+      },
+      "future": {
+        "mean_equal_episode_f1_delta": -0.016728499607183332,
+        "ci95": [
+          -0.030116316226303123,
+          -0.006273931581534159
+        ]
+      }
+    },
+    "ensemble_half": {
+      "current": {
+        "mean_equal_episode_f1_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "future": {
+        "mean_equal_episode_f1_delta": 0.0020567708678868846,
+        "ci95": [
+          -0.002655284488501502,
+          0.006238026811189806
+        ]
+      }
+    }
+  },
+  "replicates": 5000,
+  "seed": 20261108,
+  "warning": "Exploratory reused10-validation-source cluster bootstrap after candidate search; no independent confirmation, fixed four-class macro includes absent classes as zero."
+}

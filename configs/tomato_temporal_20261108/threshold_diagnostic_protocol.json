@@ -1,0 +1,23 @@
+{
+  "scope": "Secondary validation sensitivity, does not replace locked global fixed-point selection",
+  "thresholds": [
+    0.5,
+    0.65,
+    0.8,
+    0.9
+  ],
+  "confirmations": [
+    1,
+    2
+  ],
+  "independent_current_future_points": true,
+  "gates": {
+    "current_macro_f1_drop_max": 0.005,
+    "current_boundary_recall_min": 0.9,
+    "current_delay_p95_s_max": 1.5,
+    "future_boundary_recall_min": 0.8,
+    "future_false_per_minute_max": 1.0
+  },
+  "before_long_history_validation_results": true,
+  "test_used": false
+}

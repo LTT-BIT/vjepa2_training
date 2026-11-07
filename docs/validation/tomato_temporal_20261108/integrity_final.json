@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "first_campaign": {
+    "passed": true,
+    "frozen_files": 423,
+    "freeze_sha256": "1fb94f9b3aafdf6131dd55b37150fc4a115d023b119167918899eea253757c49"
+  },
+  "previous_campaign_and_first_temporal_attempt": {
+    "passed": true,
+    "files": 868,
+    "sha256": "2bdd43af1a214c8dc3e4e8c5b77035a9762db811480ea481f6285248309b118e"
+  },
+  "second_stage_source_baseline_unchanged": true,
+  "original_locked_dataset_revalidated": true,
+  "official_weights": {
+    "model_id": "facebook/vjepa2-vitl-fpc64-256",
+    "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+    "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+    "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+  },
+  "openpi_head": "33ce417344b22ecd66e362e5daab6946fab439ae",
+  "openpi_clean": true,
+  "environment": {
+    "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+    "torch": "2.7.1+cu128",
+    "numpy": "1.26.4",
+    "transformers": "4.56.2",
+    "av": "17.0.0",
+    "pyarrow": "19.0.1",
+    "cuda": "12.8"
+  },
+  "robot_control_started": false,
+  "rtc_changed": false,
+  "openpi_trained": false
+}

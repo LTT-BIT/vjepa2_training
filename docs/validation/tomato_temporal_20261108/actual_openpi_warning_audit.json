@@ -1,0 +1,4501 @@
+{
+  "results": [
+    {
+      "name": "independent_h15",
+      "seed": 42,
+      "horizon_s": 1.5,
+      "boundaries": 56,
+      "any_correct_warning_hits": 47,
+      "any_correct_warning_recall": 0.8392857142857143,
+      "miss_rate": 0.1607142857142857,
+      "conditional_lead_p50_s": 1.0666666666666664,
+      "warning_windows": 207,
+      "false_warning_windows": 95,
+      "false_warning_window_categories": {
+        "late_after_boundary": 75,
+        "premature_beyond_horizon": 20,
+        "wrong_progress_or_missing_target": 0
+      },
+      "false_warning_window_fraction": 0.45893719806763283,
+      "false_warning_rising_events": 23,
+      "warning_rising_events": 66,
+      "false_warning_rising_per_minute": 0.9623430962343097,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 8.833333333333334,
+              "detected": true,
+              "lead_s": 1.333333333333334
+            },
+            {
+              "phase": 2,
+              "time": 55.8,
+              "detected": true,
+              "lead_s": 0.7999999999999972
+            },
+            {
+              "phase": 3,
+              "time": 60.43333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 73.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 81.13333333333334,
+              "detected": true,
+              "lead_s": 0.13333333333333997
+            },
+            {
+              "phase": 6,
+              "time": 129.2,
+              "detected": true,
+              "lead_s": 1.1999999999999886
+            }
+          ],
+          "warning_windows": 17,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 7.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 55.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 60.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 71.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 81.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 128.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 10.233333333333333,
+              "detected": true,
+              "lead_s": 1.2333333333333325
+            },
+            {
+              "phase": 2,
+              "time": 76.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 3,
+              "time": 82.46666666666667,
+              "detected": true,
+              "lead_s": 0.9666666666666686
+            },
+            {
+              "phase": 4,
+              "time": 108.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 119.4,
+              "detected": true,
+              "lead_s": 0.4000000000000057
+            },
+            {
+              "phase": 6,
+              "time": 169.9,
+              "detected": true,
+              "lead_s": 0.4000000000000057
+            }
+          ],
+          "warning_windows": 20,
+          "false_warning_windows": 11,
+          "warning_rising_events": [
+            {
+              "time": 8.5,
+              "phase": 1,
+              "correct": false
+            },
+            {
+              "time": 76.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 81.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 108.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 119.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 169.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.566666666666666,
+              "detected": true,
+              "lead_s": 1.0666666666666664
+            },
+            {
+              "phase": 2,
+              "time": 73.86666666666666,
+              "detected": true,
+              "lead_s": 0.86666666666666
+            },
+            {
+              "phase": 3,
+              "time": 80.8,
+              "detected": true,
+              "lead_s": 1.2999999999999972
+            },
+            {
+              "phase": 4,
+              "time": 99.16666666666667,
+              "detected": true,
+              "lead_s": 1.1666666666666714
+            },
+            {
+              "phase": 5,
+              "time": 113.6,
+              "detected": true,
+              "lead_s": 1.0999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 175.56666666666666,
+              "detected": true,
+              "lead_s": 0.5666666666666629
+            }
+          ],
+          "warning_windows": 33,
+          "false_warning_windows": 18,
+          "warning_rising_events": [
+            {
+              "time": 6.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 73.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 74.0,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 77.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 96.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 98.0,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 101.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 110.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 112.0,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 175.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "61c420843f11ca54bfe804ee": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 9.566666666666666,
+              "detected": true,
+              "lead_s": 1.0666666666666664
+            },
+            {
+              "phase": 2,
+              "time": 71.0,
+              "detected": true,
+              "lead_s": 1.0
+            },
+            {
+              "phase": 3,
+              "time": 77.6,
+              "detected": true,
+              "lead_s": 1.0999999999999943
+            },
+            {
+              "phase": 4,
+              "time": 90.73333333333333,
+              "detected": true,
+              "lead_s": 1.2333333333333343
+            },
+            {
+              "phase": 5,
+              "time": 100.66666666666667,
+              "detected": true,
+              "lead_s": 1.1666666666666714
+            },
+            {
+              "phase": 6,
+              "time": 138.63333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333258
+            }
+          ],
+          "warning_windows": 23,
+          "false_warning_windows": 7,
+          "warning_rising_events": [
+            {
+              "time": 8.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 70.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 76.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 89.5,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 99.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 138.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.366666666666666,
+              "detected": true,
+              "lead_s": 1.3666666666666663
+            },
+            {
+              "phase": 2,
+              "time": 57.6,
+              "detected": true,
+              "lead_s": 1.1000000000000014
+            },
+            {
+              "phase": 3,
+              "time": 62.8,
+              "detected": true,
+              "lead_s": 1.2999999999999972
+            },
+            {
+              "phase": 4,
+              "time": 90.83333333333333,
+              "detected": true,
+              "lead_s": 0.8333333333333286
+            },
+            {
+              "phase": 5,
+              "time": 99.1,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 136.96666666666667,
+              "detected": true,
+              "lead_s": 0.9666666666666686
+            }
+          ],
+          "warning_windows": 26,
+          "false_warning_windows": 11,
+          "warning_rising_events": [
+            {
+              "time": 6.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 51.0,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 56.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 61.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 90.0,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 98.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 134.5,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 136.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.0,
+              "detected": true,
+              "lead_s": 1.5
+            },
+            {
+              "phase": 2,
+              "time": 62.96666666666667,
+              "detected": true,
+              "lead_s": 1.4666666666666686
+            },
+            {
+              "phase": 3,
+              "time": 66.23333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 96.26666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 106.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 175.4,
+              "detected": true,
+              "lead_s": 0.4000000000000057
+            }
+          ],
+          "warning_windows": 18,
+          "false_warning_windows": 9,
+          "warning_rising_events": [
+            {
+              "time": 5.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 61.0,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 67.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 94.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 98.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 106.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 175.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "ca784332e44d979f99018a52": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 6.3,
+              "detected": true,
+              "lead_s": 0.7999999999999998
+            },
+            {
+              "phase": 2,
+              "time": 32.0,
+              "detected": true,
+              "lead_s": 1.5
+            }
+          ],
+          "warning_windows": 9,
+          "false_warning_windows": 4,
+          "warning_rising_events": [
+            {
+              "time": 5.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 29.5,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 30.5,
+              "phase": 2,
+              "correct": true
+            }
+          ]
+        },
+        "a8b23394b642f0bb769a0391": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.5,
+              "detected": true,
+              "lead_s": 1.5
+            },
+            {
+              "phase": 2,
+              "time": 37.13333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333329
+            },
+            {
+              "phase": 3,
+              "time": 40.13333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333329
+            },
+            {
+              "phase": 4,
+              "time": 64.96666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.46666666666667,
+              "detected": true,
+              "lead_s": 0.46666666666666856
+            },
+            {
+              "phase": 6,
+              "time": 86.7,
+              "detected": true,
+              "lead_s": 0.7000000000000028
+            }
+          ],
+          "warning_windows": 17,
+          "false_warning_windows": 7,
+          "warning_rising_events": [
+            {
+              "time": 4.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 36.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 39.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 65.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 70.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 86.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "6d46f3c8c5c61bd2c6d22973": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.6,
+              "detected": true,
+              "lead_s": 1.0999999999999996
+            },
+            {
+              "phase": 2,
+              "time": 91.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 3,
+              "time": 104.33333333333333,
+              "detected": true,
+              "lead_s": 1.3333333333333286
+            },
+            {
+              "phase": 4,
+              "time": 127.0,
+              "detected": true,
+              "lead_s": 1.5
+            },
+            {
+              "phase": 5,
+              "time": 139.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 6,
+              "time": 270.1,
+              "detected": true,
+              "lead_s": 1.1000000000000227
+            }
+          ],
+          "warning_windows": 23,
+          "false_warning_windows": 12,
+          "warning_rising_events": [
+            {
+              "time": 6.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 103.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 104.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 106.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 125.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 140.0,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 262.5,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 269.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.0,
+              "detected": true,
+              "lead_s": 1.0
+            },
+            {
+              "phase": 2,
+              "time": 44.833333333333336,
+              "detected": true,
+              "lead_s": 1.3333333333333357
+            },
+            {
+              "phase": 3,
+              "time": 47.93333333333333,
+              "detected": true,
+              "lead_s": 1.43333333333333
+            },
+            {
+              "phase": 4,
+              "time": 64.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.9,
+              "detected": true,
+              "lead_s": 1.4000000000000057
+            },
+            {
+              "phase": 6,
+              "time": 89.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            }
+          ],
+          "warning_windows": 21,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 4.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 43.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 46.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 65.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 69.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 89.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        }
+      },
+      "definition": "Actual provider level warning: threshold.8, expected next ordered phase, no Future confirmation; Current needs2 confirmations. Boundary recall means any correctly targeted level warning within horizon. Overlong warnings accumulate false windows; rising-event count is reported separately. Input-time basis."
+    },
+    {
+      "name": "independent_h15",
+      "seed": 43,
+      "horizon_s": 1.5,
+      "boundaries": 56,
+      "any_correct_warning_hits": 45,
+      "any_correct_warning_recall": 0.8035714285714286,
+      "miss_rate": 0.1964285714285714,
+      "conditional_lead_p50_s": 1.0,
+      "warning_windows": 196,
+      "false_warning_windows": 97,
+      "false_warning_window_categories": {
+        "late_after_boundary": 81,
+        "premature_beyond_horizon": 16,
+        "wrong_progress_or_missing_target": 0
+      },
+      "false_warning_window_fraction": 0.49489795918367346,
+      "false_warning_rising_events": 22,
+      "warning_rising_events": 63,
+      "false_warning_rising_per_minute": 0.9205020920502093,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 8.833333333333334,
+              "detected": true,
+              "lead_s": 1.333333333333334
+            },
+            {
+              "phase": 2,
+              "time": 55.8,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 3,
+              "time": 60.43333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 73.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 81.13333333333334,
+              "detected": true,
+              "lead_s": 0.63333333333334
+            },
+            {
+              "phase": 6,
+              "time": 129.2,
+              "detected": true,
+              "lead_s": 1.1999999999999886
+            }
+          ],
+          "warning_windows": 16,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 7.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 56.0,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 60.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 71.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 80.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 128.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 10.233333333333333,
+              "detected": true,
+              "lead_s": 1.2333333333333325
+            },
+            {
+              "phase": 2,
+              "time": 76.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 3,
+              "time": 82.46666666666667,
+              "detected": true,
+              "lead_s": 0.9666666666666686
+            },
+            {
+              "phase": 4,
+              "time": 108.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 119.4,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 6,
+              "time": 169.9,
+              "detected": true,
+              "lead_s": 1.4000000000000057
+            }
+          ],
+          "warning_windows": 20,
+          "false_warning_windows": 10,
+          "warning_rising_events": [
+            {
+              "time": 9.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 76.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 81.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 108.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 119.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 168.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.566666666666666,
+              "detected": true,
+              "lead_s": 0.5666666666666664
+            },
+            {
+              "phase": 2,
+              "time": 73.86666666666666,
+              "detected": true,
+              "lead_s": 0.86666666666666
+            },
+            {
+              "phase": 3,
+              "time": 80.8,
+              "detected": true,
+              "lead_s": 1.2999999999999972
+            },
+            {
+              "phase": 4,
+              "time": 99.16666666666667,
+              "detected": true,
+              "lead_s": 1.1666666666666714
+            },
+            {
+              "phase": 5,
+              "time": 113.6,
+              "detected": true,
+              "lead_s": 1.0999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 175.56666666666666,
+              "detected": true,
+              "lead_s": 0.5666666666666629
+            }
+          ],
+          "warning_windows": 30,
+          "false_warning_windows": 16,
+          "warning_rising_events": [
+            {
+              "time": 7.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 73.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 78.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 97.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 98.0,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 110.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 175.0,
+              "phase": 6,
+              "correct": true
+            },
+            {
+              "time": 176.0,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        },
+        "61c420843f11ca54bfe804ee": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 9.566666666666666,
+              "detected": true,
+              "lead_s": 1.0666666666666664
+            },
+            {
+              "phase": 2,
+              "time": 71.0,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 3,
+              "time": 77.6,
+              "detected": true,
+              "lead_s": 1.0999999999999943
+            },
+            {
+              "phase": 4,
+              "time": 90.73333333333333,
+              "detected": true,
+              "lead_s": 1.2333333333333343
+            },
+            {
+              "phase": 5,
+              "time": 100.66666666666667,
+              "detected": true,
+              "lead_s": 1.1666666666666714
+            },
+            {
+              "phase": 6,
+              "time": 138.63333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333258
+            }
+          ],
+          "warning_windows": 23,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 8.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 70.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 76.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 89.5,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 99.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 138.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.366666666666666,
+              "detected": true,
+              "lead_s": 0.8666666666666663
+            },
+            {
+              "phase": 2,
+              "time": 57.6,
+              "detected": true,
+              "lead_s": 1.1000000000000014
+            },
+            {
+              "phase": 3,
+              "time": 62.8,
+              "detected": true,
+              "lead_s": 1.2999999999999972
+            },
+            {
+              "phase": 4,
+              "time": 90.83333333333333,
+              "detected": true,
+              "lead_s": 0.8333333333333286
+            },
+            {
+              "phase": 5,
+              "time": 99.1,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 6,
+              "time": 136.96666666666667,
+              "detected": true,
+              "lead_s": 0.46666666666666856
+            }
+          ],
+          "warning_windows": 25,
+          "false_warning_windows": 13,
+          "warning_rising_events": [
+            {
+              "time": 6.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 56.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 61.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 90.0,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 99.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 134.5,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 136.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.0,
+              "detected": true,
+              "lead_s": 1.5
+            },
+            {
+              "phase": 2,
+              "time": 62.96666666666667,
+              "detected": true,
+              "lead_s": 1.4666666666666686
+            },
+            {
+              "phase": 3,
+              "time": 66.23333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 96.26666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 106.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 175.4,
+              "detected": true,
+              "lead_s": 0.4000000000000057
+            }
+          ],
+          "warning_windows": 19,
+          "false_warning_windows": 10,
+          "warning_rising_events": [
+            {
+              "time": 5.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 61.0,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 66.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 98.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 106.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 175.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "ca784332e44d979f99018a52": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 6.3,
+              "detected": true,
+              "lead_s": 0.7999999999999998
+            },
+            {
+              "phase": 2,
+              "time": 32.0,
+              "detected": true,
+              "lead_s": 1.5
+            }
+          ],
+          "warning_windows": 8,
+          "false_warning_windows": 3,
+          "warning_rising_events": [
+            {
+              "time": 5.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 29.5,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 30.5,
+              "phase": 2,
+              "correct": true
+            }
+          ]
+        },
+        "a8b23394b642f0bb769a0391": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.5,
+              "detected": true,
+              "lead_s": 1.0
+            },
+            {
+              "phase": 2,
+              "time": 37.13333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333329
+            },
+            {
+              "phase": 3,
+              "time": 40.13333333333333,
+              "detected": true,
+              "lead_s": 0.13333333333333286
+            },
+            {
+              "phase": 4,
+              "time": 64.96666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.46666666666667,
+              "detected": true,
+              "lead_s": 0.46666666666666856
+            },
+            {
+              "phase": 6,
+              "time": 86.7,
+              "detected": true,
+              "lead_s": 0.7000000000000028
+            }
+          ],
+          "warning_windows": 18,
+          "false_warning_windows": 10,
+          "warning_rising_events": [
+            {
+              "time": 4.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 36.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 40.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 52.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 63.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 65.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 70.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 86.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "6d46f3c8c5c61bd2c6d22973": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.6,
+              "detected": true,
+              "lead_s": 0.5999999999999996
+            },
+            {
+              "phase": 2,
+              "time": 91.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 3,
+              "time": 104.33333333333333,
+              "detected": true,
+              "lead_s": 1.3333333333333286
+            },
+            {
+              "phase": 4,
+              "time": 127.0,
+              "detected": true,
+              "lead_s": 1.5
+            },
+            {
+              "phase": 5,
+              "time": 139.3,
+              "detected": true,
+              "lead_s": 0.30000000000001137
+            },
+            {
+              "phase": 6,
+              "time": 270.1,
+              "detected": true,
+              "lead_s": 1.1000000000000227
+            }
+          ],
+          "warning_windows": 18,
+          "false_warning_windows": 10,
+          "warning_rising_events": [
+            {
+              "time": 7.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 103.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 125.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 127.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 139.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 262.5,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 269.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.0,
+              "detected": true,
+              "lead_s": 1.0
+            },
+            {
+              "phase": 2,
+              "time": 44.833333333333336,
+              "detected": true,
+              "lead_s": 0.8333333333333357
+            },
+            {
+              "phase": 3,
+              "time": 47.93333333333333,
+              "detected": true,
+              "lead_s": 1.43333333333333
+            },
+            {
+              "phase": 4,
+              "time": 64.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.9,
+              "detected": true,
+              "lead_s": 1.4000000000000057
+            },
+            {
+              "phase": 6,
+              "time": 89.6,
+              "detected": false,
+              "lead_s": null
+            }
+          ],
+          "warning_windows": 19,
+          "false_warning_windows": 9,
+          "warning_rising_events": [
+            {
+              "time": 4.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 44.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 46.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 65.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 69.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 90.0,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        }
+      },
+      "definition": "Actual provider level warning: threshold.8, expected next ordered phase, no Future confirmation; Current needs2 confirmations. Boundary recall means any correctly targeted level warning within horizon. Overlong warnings accumulate false windows; rising-event count is reported separately. Input-time basis."
+    },
+    {
+      "name": "independent_h15",
+      "seed": 44,
+      "horizon_s": 1.5,
+      "boundaries": 56,
+      "any_correct_warning_hits": 45,
+      "any_correct_warning_recall": 0.8035714285714286,
+      "miss_rate": 0.1964285714285714,
+      "conditional_lead_p50_s": 1.0,
+      "warning_windows": 176,
+      "false_warning_windows": 74,
+      "false_warning_window_categories": {
+        "late_after_boundary": 59,
+        "premature_beyond_horizon": 15,
+        "wrong_progress_or_missing_target": 0
+      },
+      "false_warning_window_fraction": 0.42045454545454547,
+      "false_warning_rising_events": 16,
+      "warning_rising_events": 56,
+      "false_warning_rising_per_minute": 0.6694560669456068,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 8.833333333333334,
+              "detected": true,
+              "lead_s": 1.333333333333334
+            },
+            {
+              "phase": 2,
+              "time": 55.8,
+              "detected": true,
+              "lead_s": 0.7999999999999972
+            },
+            {
+              "phase": 3,
+              "time": 60.43333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 73.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 81.13333333333334,
+              "detected": true,
+              "lead_s": 0.13333333333333997
+            },
+            {
+              "phase": 6,
+              "time": 129.2,
+              "detected": true,
+              "lead_s": 1.1999999999999886
+            }
+          ],
+          "warning_windows": 14,
+          "false_warning_windows": 5,
+          "warning_rising_events": [
+            {
+              "time": 7.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 55.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 60.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 81.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 128.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 10.233333333333333,
+              "detected": true,
+              "lead_s": 1.2333333333333325
+            },
+            {
+              "phase": 2,
+              "time": 76.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 3,
+              "time": 82.46666666666667,
+              "detected": true,
+              "lead_s": 0.9666666666666686
+            },
+            {
+              "phase": 4,
+              "time": 108.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 119.4,
+              "detected": true,
+              "lead_s": 0.4000000000000057
+            },
+            {
+              "phase": 6,
+              "time": 169.9,
+              "detected": true,
+              "lead_s": 1.4000000000000057
+            }
+          ],
+          "warning_windows": 16,
+          "false_warning_windows": 6,
+          "warning_rising_events": [
+            {
+              "time": 9.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 76.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 81.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 83.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 108.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 119.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 168.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.566666666666666,
+              "detected": true,
+              "lead_s": 0.5666666666666664
+            },
+            {
+              "phase": 2,
+              "time": 73.86666666666666,
+              "detected": true,
+              "lead_s": 1.36666666666666
+            },
+            {
+              "phase": 3,
+              "time": 80.8,
+              "detected": true,
+              "lead_s": 1.2999999999999972
+            },
+            {
+              "phase": 4,
+              "time": 99.16666666666667,
+              "detected": true,
+              "lead_s": 0.6666666666666714
+            },
+            {
+              "phase": 5,
+              "time": 113.6,
+              "detected": true,
+              "lead_s": 1.0999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 175.56666666666666,
+              "detected": true,
+              "lead_s": 1.0666666666666629
+            }
+          ],
+          "warning_windows": 30,
+          "false_warning_windows": 14,
+          "warning_rising_events": [
+            {
+              "time": 7.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 72.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 77.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 98.5,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 110.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 174.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "61c420843f11ca54bfe804ee": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 9.566666666666666,
+              "detected": true,
+              "lead_s": 0.5666666666666664
+            },
+            {
+              "phase": 2,
+              "time": 71.0,
+              "detected": true,
+              "lead_s": 1.0
+            },
+            {
+              "phase": 3,
+              "time": 77.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 4,
+              "time": 90.73333333333333,
+              "detected": true,
+              "lead_s": 1.2333333333333343
+            },
+            {
+              "phase": 5,
+              "time": 100.66666666666667,
+              "detected": true,
+              "lead_s": 1.1666666666666714
+            },
+            {
+              "phase": 6,
+              "time": 138.63333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333258
+            }
+          ],
+          "warning_windows": 22,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 9.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 69.0,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 70.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 77.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 89.5,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 99.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 138.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.366666666666666,
+              "detected": true,
+              "lead_s": 0.8666666666666663
+            },
+            {
+              "phase": 2,
+              "time": 57.6,
+              "detected": true,
+              "lead_s": 1.1000000000000014
+            },
+            {
+              "phase": 3,
+              "time": 62.8,
+              "detected": true,
+              "lead_s": 0.7999999999999972
+            },
+            {
+              "phase": 4,
+              "time": 90.83333333333333,
+              "detected": true,
+              "lead_s": 0.8333333333333286
+            },
+            {
+              "phase": 5,
+              "time": 99.1,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 6,
+              "time": 136.96666666666667,
+              "detected": true,
+              "lead_s": 1.4666666666666686
+            }
+          ],
+          "warning_windows": 24,
+          "false_warning_windows": 11,
+          "warning_rising_events": [
+            {
+              "time": 6.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 51.0,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 56.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 62.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 90.0,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 99.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 134.5,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.0,
+              "detected": true,
+              "lead_s": 1.0
+            },
+            {
+              "phase": 2,
+              "time": 62.96666666666667,
+              "detected": true,
+              "lead_s": 1.4666666666666686
+            },
+            {
+              "phase": 3,
+              "time": 66.23333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 96.26666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 106.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 175.4,
+              "detected": false,
+              "lead_s": null
+            }
+          ],
+          "warning_windows": 13,
+          "false_warning_windows": 7,
+          "warning_rising_events": [
+            {
+              "time": 6.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 61.0,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 67.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 98.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 106.0,
+              "phase": 5,
+              "correct": true
+            }
+          ]
+        },
+        "ca784332e44d979f99018a52": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 6.3,
+              "detected": true,
+              "lead_s": 0.7999999999999998
+            },
+            {
+              "phase": 2,
+              "time": 32.0,
+              "detected": true,
+              "lead_s": 1.5
+            }
+          ],
+          "warning_windows": 10,
+          "false_warning_windows": 5,
+          "warning_rising_events": [
+            {
+              "time": 5.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 29.5,
+              "phase": 2,
+              "correct": false
+            }
+          ]
+        },
+        "a8b23394b642f0bb769a0391": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.5,
+              "detected": true,
+              "lead_s": 1.5
+            },
+            {
+              "phase": 2,
+              "time": 37.13333333333333,
+              "detected": true,
+              "lead_s": 1.1333333333333329
+            },
+            {
+              "phase": 3,
+              "time": 40.13333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333329
+            },
+            {
+              "phase": 4,
+              "time": 64.96666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.46666666666667,
+              "detected": true,
+              "lead_s": 0.46666666666666856
+            },
+            {
+              "phase": 6,
+              "time": 86.7,
+              "detected": true,
+              "lead_s": 0.7000000000000028
+            }
+          ],
+          "warning_windows": 17,
+          "false_warning_windows": 6,
+          "warning_rising_events": [
+            {
+              "time": 4.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 36.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 39.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 65.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 70.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 86.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "6d46f3c8c5c61bd2c6d22973": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.6,
+              "detected": true,
+              "lead_s": 0.5999999999999996
+            },
+            {
+              "phase": 2,
+              "time": 91.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 3,
+              "time": 104.33333333333333,
+              "detected": true,
+              "lead_s": 1.3333333333333286
+            },
+            {
+              "phase": 4,
+              "time": 127.0,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 139.3,
+              "detected": true,
+              "lead_s": 0.8000000000000114
+            },
+            {
+              "phase": 6,
+              "time": 270.1,
+              "detected": true,
+              "lead_s": 0.6000000000000227
+            }
+          ],
+          "warning_windows": 12,
+          "false_warning_windows": 5,
+          "warning_rising_events": [
+            {
+              "time": 7.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 103.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 127.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 138.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 269.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.0,
+              "detected": true,
+              "lead_s": 1.0
+            },
+            {
+              "phase": 2,
+              "time": 44.833333333333336,
+              "detected": true,
+              "lead_s": 1.3333333333333357
+            },
+            {
+              "phase": 3,
+              "time": 47.93333333333333,
+              "detected": true,
+              "lead_s": 1.43333333333333
+            },
+            {
+              "phase": 4,
+              "time": 64.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.9,
+              "detected": true,
+              "lead_s": 1.4000000000000057
+            },
+            {
+              "phase": 6,
+              "time": 89.6,
+              "detected": false,
+              "lead_s": null
+            }
+          ],
+          "warning_windows": 18,
+          "false_warning_windows": 7,
+          "warning_rising_events": [
+            {
+              "time": 4.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 43.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 46.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 65.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 69.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 90.0,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        }
+      },
+      "definition": "Actual provider level warning: threshold.8, expected next ordered phase, no Future confirmation; Current needs2 confirmations. Boundary recall means any correctly targeted level warning within horizon. Overlong warnings accumulate false windows; rising-event count is reported separately. Input-time basis."
+    },
+    {
+      "name": "joint",
+      "seed": 42,
+      "horizon_s": 1.0,
+      "boundaries": 56,
+      "any_correct_warning_hits": 38,
+      "any_correct_warning_recall": 0.6785714285714286,
+      "miss_rate": 0.3214285714285714,
+      "conditional_lead_p50_s": 0.5499999999999972,
+      "warning_windows": 148,
+      "false_warning_windows": 91,
+      "false_warning_window_categories": {
+        "late_after_boundary": 78,
+        "premature_beyond_horizon": 13,
+        "wrong_progress_or_missing_target": 0
+      },
+      "false_warning_window_fraction": 0.6148648648648649,
+      "false_warning_rising_events": 28,
+      "warning_rising_events": 62,
+      "false_warning_rising_per_minute": 1.1674774148714384,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 8.833333333333334,
+              "detected": true,
+              "lead_s": 0.3333333333333339
+            },
+            {
+              "phase": 2,
+              "time": 55.8,
+              "detected": true,
+              "lead_s": 0.29999999999999716
+            },
+            {
+              "phase": 3,
+              "time": 60.43333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 73.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 81.13333333333334,
+              "detected": true,
+              "lead_s": 0.13333333333333997
+            },
+            {
+              "phase": 6,
+              "time": 129.2,
+              "detected": true,
+              "lead_s": 0.6999999999999886
+            }
+          ],
+          "warning_windows": 15,
+          "false_warning_windows": 10,
+          "warning_rising_events": [
+            {
+              "time": 8.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 55.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 61.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 71.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 81.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 128.0,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 10.233333333333333,
+              "detected": true,
+              "lead_s": 0.2333333333333325
+            },
+            {
+              "phase": 2,
+              "time": 76.6,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 3,
+              "time": 82.46666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 108.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 119.4,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 6,
+              "time": 169.9,
+              "detected": true,
+              "lead_s": 0.9000000000000057
+            }
+          ],
+          "warning_windows": 15,
+          "false_warning_windows": 11,
+          "warning_rising_events": [
+            {
+              "time": 10.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 76.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 82.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 109.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 119.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 167.5,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 168.5,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.566666666666666,
+              "detected": true,
+              "lead_s": 0.06666666666666643
+            },
+            {
+              "phase": 2,
+              "time": 73.86666666666666,
+              "detected": true,
+              "lead_s": 0.86666666666666
+            },
+            {
+              "phase": 3,
+              "time": 80.8,
+              "detected": true,
+              "lead_s": 0.7999999999999972
+            },
+            {
+              "phase": 4,
+              "time": 99.16666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 113.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 175.56666666666666,
+              "detected": false,
+              "lead_s": null
+            }
+          ],
+          "warning_windows": 23,
+          "false_warning_windows": 16,
+          "warning_rising_events": [
+            {
+              "time": 7.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 73.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 80.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 97.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 99.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 101.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 102.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 113.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 176.0,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        },
+        "61c420843f11ca54bfe804ee": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 9.566666666666666,
+              "detected": true,
+              "lead_s": 0.06666666666666643
+            },
+            {
+              "phase": 2,
+              "time": 71.0,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 3,
+              "time": 77.6,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 90.73333333333333,
+              "detected": true,
+              "lead_s": 0.7333333333333343
+            },
+            {
+              "phase": 5,
+              "time": 100.66666666666667,
+              "detected": true,
+              "lead_s": 0.6666666666666714
+            },
+            {
+              "phase": 6,
+              "time": 138.63333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333258
+            }
+          ],
+          "warning_windows": 16,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 9.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 70.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 78.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 90.0,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 100.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 138.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.366666666666666,
+              "detected": true,
+              "lead_s": 0.36666666666666625
+            },
+            {
+              "phase": 2,
+              "time": 57.6,
+              "detected": true,
+              "lead_s": 0.6000000000000014
+            },
+            {
+              "phase": 3,
+              "time": 62.8,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 90.83333333333333,
+              "detected": true,
+              "lead_s": 0.8333333333333286
+            },
+            {
+              "phase": 5,
+              "time": 99.1,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 6,
+              "time": 136.96666666666667,
+              "detected": true,
+              "lead_s": 0.46666666666666856
+            }
+          ],
+          "warning_windows": 15,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 7.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 57.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 63.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 90.0,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 99.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 134.5,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 136.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.0,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 2,
+              "time": 62.96666666666667,
+              "detected": true,
+              "lead_s": 0.9666666666666686
+            },
+            {
+              "phase": 3,
+              "time": 66.23333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 96.26666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 106.6,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 6,
+              "time": 175.4,
+              "detected": true,
+              "lead_s": 0.9000000000000057
+            }
+          ],
+          "warning_windows": 18,
+          "false_warning_windows": 12,
+          "warning_rising_events": [
+            {
+              "time": 6.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 61.0,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 66.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 98.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 106.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 159.0,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 174.0,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        },
+        "ca784332e44d979f99018a52": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 6.3,
+              "detected": true,
+              "lead_s": 0.2999999999999998
+            },
+            {
+              "phase": 2,
+              "time": 32.0,
+              "detected": true,
+              "lead_s": 1.0
+            }
+          ],
+          "warning_windows": 6,
+          "false_warning_windows": 3,
+          "warning_rising_events": [
+            {
+              "time": 6.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 31.0,
+              "phase": 2,
+              "correct": true
+            }
+          ]
+        },
+        "a8b23394b642f0bb769a0391": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.5,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 2,
+              "time": 37.13333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333329
+            },
+            {
+              "phase": 3,
+              "time": 40.13333333333333,
+              "detected": true,
+              "lead_s": 0.13333333333333286
+            },
+            {
+              "phase": 4,
+              "time": 64.96666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.46666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 6,
+              "time": 86.7,
+              "detected": true,
+              "lead_s": 0.7000000000000028
+            }
+          ],
+          "warning_windows": 12,
+          "false_warning_windows": 6,
+          "warning_rising_events": [
+            {
+              "time": 5.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 36.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 40.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 65.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 70.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 86.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "6d46f3c8c5c61bd2c6d22973": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.6,
+              "detected": true,
+              "lead_s": 0.09999999999999964
+            },
+            {
+              "phase": 2,
+              "time": 91.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 3,
+              "time": 104.33333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 127.0,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 139.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 6,
+              "time": 270.1,
+              "detected": true,
+              "lead_s": 0.6000000000000227
+            }
+          ],
+          "warning_windows": 12,
+          "false_warning_windows": 9,
+          "warning_rising_events": [
+            {
+              "time": 7.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 92.5,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 127.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 139.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 263.0,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 269.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.0,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 2,
+              "time": 44.833333333333336,
+              "detected": true,
+              "lead_s": 0.8333333333333357
+            },
+            {
+              "phase": 3,
+              "time": 47.93333333333333,
+              "detected": true,
+              "lead_s": 0.93333333333333
+            },
+            {
+              "phase": 4,
+              "time": 64.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.9,
+              "detected": true,
+              "lead_s": 0.9000000000000057
+            },
+            {
+              "phase": 6,
+              "time": 89.6,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            }
+          ],
+          "warning_windows": 16,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 4.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 44.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 47.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 66.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 70.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 89.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        }
+      },
+      "definition": "Actual provider level warning: threshold.8, expected next ordered phase, no Future confirmation; Current needs2 confirmations. Boundary recall means any correctly targeted level warning within horizon. Overlong warnings accumulate false windows; rising-event count is reported separately. Input-time basis."
+    },
+    {
+      "name": "joint",
+      "seed": 43,
+      "horizon_s": 1.0,
+      "boundaries": 56,
+      "any_correct_warning_hits": 36,
+      "any_correct_warning_recall": 0.6428571428571429,
+      "miss_rate": 0.3571428571428571,
+      "conditional_lead_p50_s": 0.466666666666665,
+      "warning_windows": 146,
+      "false_warning_windows": 97,
+      "false_warning_window_categories": {
+        "late_after_boundary": 81,
+        "premature_beyond_horizon": 16,
+        "wrong_progress_or_missing_target": 0
+      },
+      "false_warning_window_fraction": 0.6643835616438356,
+      "false_warning_rising_events": 29,
+      "warning_rising_events": 62,
+      "false_warning_rising_per_minute": 1.2091730368311326,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 8.833333333333334,
+              "detected": true,
+              "lead_s": 0.3333333333333339
+            },
+            {
+              "phase": 2,
+              "time": 55.8,
+              "detected": true,
+              "lead_s": 0.7999999999999972
+            },
+            {
+              "phase": 3,
+              "time": 60.43333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 73.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 81.13333333333334,
+              "detected": true,
+              "lead_s": 0.13333333333333997
+            },
+            {
+              "phase": 6,
+              "time": 129.2,
+              "detected": true,
+              "lead_s": 0.6999999999999886
+            }
+          ],
+          "warning_windows": 15,
+          "false_warning_windows": 9,
+          "warning_rising_events": [
+            {
+              "time": 8.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 55.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 61.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 71.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 81.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 128.0,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 10.233333333333333,
+              "detected": true,
+              "lead_s": 0.2333333333333325
+            },
+            {
+              "phase": 2,
+              "time": 76.6,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 3,
+              "time": 82.46666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 108.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 119.4,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 6,
+              "time": 169.9,
+              "detected": true,
+              "lead_s": 0.4000000000000057
+            }
+          ],
+          "warning_windows": 15,
+          "false_warning_windows": 12,
+          "warning_rising_events": [
+            {
+              "time": 10.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 76.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 82.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 108.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 119.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 168.5,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 169.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.566666666666666,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 2,
+              "time": 73.86666666666666,
+              "detected": true,
+              "lead_s": 0.86666666666666
+            },
+            {
+              "phase": 3,
+              "time": 80.8,
+              "detected": true,
+              "lead_s": 0.7999999999999972
+            },
+            {
+              "phase": 4,
+              "time": 99.16666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 113.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 175.56666666666666,
+              "detected": true,
+              "lead_s": 0.5666666666666629
+            }
+          ],
+          "warning_windows": 15,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 8.0,
+              "phase": 1,
+              "correct": false
+            },
+            {
+              "time": 73.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 80.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 100.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 113.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 175.0,
+              "phase": 6,
+              "correct": true
+            },
+            {
+              "time": 176.0,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        },
+        "61c420843f11ca54bfe804ee": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 9.566666666666666,
+              "detected": true,
+              "lead_s": 0.06666666666666643
+            },
+            {
+              "phase": 2,
+              "time": 71.0,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 3,
+              "time": 77.6,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 90.73333333333333,
+              "detected": true,
+              "lead_s": 0.23333333333333428
+            },
+            {
+              "phase": 5,
+              "time": 100.66666666666667,
+              "detected": true,
+              "lead_s": 0.1666666666666714
+            },
+            {
+              "phase": 6,
+              "time": 138.63333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333258
+            }
+          ],
+          "warning_windows": 14,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 9.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 70.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 78.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 90.5,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 100.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 138.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.366666666666666,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 2,
+              "time": 57.6,
+              "detected": true,
+              "lead_s": 0.6000000000000014
+            },
+            {
+              "phase": 3,
+              "time": 62.8,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 90.83333333333333,
+              "detected": true,
+              "lead_s": 0.3333333333333286
+            },
+            {
+              "phase": 5,
+              "time": 99.1,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 6,
+              "time": 136.96666666666667,
+              "detected": true,
+              "lead_s": 0.9666666666666686
+            }
+          ],
+          "warning_windows": 19,
+          "false_warning_windows": 13,
+          "warning_rising_events": [
+            {
+              "time": 7.5,
+              "phase": 1,
+              "correct": false
+            },
+            {
+              "time": 56.5,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 63.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 90.5,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 99.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 134.0,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 136.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.0,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 2,
+              "time": 62.96666666666667,
+              "detected": true,
+              "lead_s": 0.9666666666666686
+            },
+            {
+              "phase": 3,
+              "time": 66.23333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 96.26666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 106.6,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 6,
+              "time": 175.4,
+              "detected": true,
+              "lead_s": 0.4000000000000057
+            }
+          ],
+          "warning_windows": 17,
+          "false_warning_windows": 12,
+          "warning_rising_events": [
+            {
+              "time": 6.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 61.0,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 66.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 99.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 106.5,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 159.0,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 175.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "ca784332e44d979f99018a52": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 6.3,
+              "detected": true,
+              "lead_s": 0.2999999999999998
+            },
+            {
+              "phase": 2,
+              "time": 32.0,
+              "detected": true,
+              "lead_s": 1.0
+            }
+          ],
+          "warning_windows": 6,
+          "false_warning_windows": 3,
+          "warning_rising_events": [
+            {
+              "time": 6.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 31.0,
+              "phase": 2,
+              "correct": true
+            }
+          ]
+        },
+        "a8b23394b642f0bb769a0391": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.5,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 2,
+              "time": 37.13333333333333,
+              "detected": true,
+              "lead_s": 0.13333333333333286
+            },
+            {
+              "phase": 3,
+              "time": 40.13333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 64.96666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.46666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 6,
+              "time": 86.7,
+              "detected": true,
+              "lead_s": 0.7000000000000028
+            }
+          ],
+          "warning_windows": 13,
+          "false_warning_windows": 9,
+          "warning_rising_events": [
+            {
+              "time": 5.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 37.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 40.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 65.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 70.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 86.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "6d46f3c8c5c61bd2c6d22973": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.6,
+              "detected": true,
+              "lead_s": 0.09999999999999964
+            },
+            {
+              "phase": 2,
+              "time": 91.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 3,
+              "time": 104.33333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 127.0,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 139.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 6,
+              "time": 270.1,
+              "detected": true,
+              "lead_s": 0.6000000000000227
+            }
+          ],
+          "warning_windows": 17,
+          "false_warning_windows": 14,
+          "warning_rising_events": [
+            {
+              "time": 7.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 92.5,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 105.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 127.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 139.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 234.0,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 261.5,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 269.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.0,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 2,
+              "time": 44.833333333333336,
+              "detected": true,
+              "lead_s": 0.3333333333333357
+            },
+            {
+              "phase": 3,
+              "time": 47.93333333333333,
+              "detected": true,
+              "lead_s": 0.43333333333333
+            },
+            {
+              "phase": 4,
+              "time": 64.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.9,
+              "detected": true,
+              "lead_s": 0.9000000000000057
+            },
+            {
+              "phase": 6,
+              "time": 89.6,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            }
+          ],
+          "warning_windows": 15,
+          "false_warning_windows": 9,
+          "warning_rising_events": [
+            {
+              "time": 4.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 44.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 47.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 65.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 70.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 89.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        }
+      },
+      "definition": "Actual provider level warning: threshold.8, expected next ordered phase, no Future confirmation; Current needs2 confirmations. Boundary recall means any correctly targeted level warning within horizon. Overlong warnings accumulate false windows; rising-event count is reported separately. Input-time basis."
+    },
+    {
+      "name": "joint",
+      "seed": 44,
+      "horizon_s": 1.0,
+      "boundaries": 56,
+      "any_correct_warning_hits": 38,
+      "any_correct_warning_recall": 0.6785714285714286,
+      "miss_rate": 0.3214285714285714,
+      "conditional_lead_p50_s": 0.5,
+      "warning_windows": 141,
+      "false_warning_windows": 88,
+      "false_warning_window_categories": {
+        "late_after_boundary": 80,
+        "premature_beyond_horizon": 8,
+        "wrong_progress_or_missing_target": 0
+      },
+      "false_warning_window_fraction": 0.624113475177305,
+      "false_warning_rising_events": 27,
+      "warning_rising_events": 62,
+      "false_warning_rising_per_minute": 1.1257817929117442,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 8.833333333333334,
+              "detected": true,
+              "lead_s": 0.3333333333333339
+            },
+            {
+              "phase": 2,
+              "time": 55.8,
+              "detected": true,
+              "lead_s": 0.29999999999999716
+            },
+            {
+              "phase": 3,
+              "time": 60.43333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 73.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 81.13333333333334,
+              "detected": true,
+              "lead_s": 0.13333333333333997
+            },
+            {
+              "phase": 6,
+              "time": 129.2,
+              "detected": true,
+              "lead_s": 0.6999999999999886
+            }
+          ],
+          "warning_windows": 14,
+          "false_warning_windows": 9,
+          "warning_rising_events": [
+            {
+              "time": 8.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 55.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 61.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 70.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 71.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 81.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 128.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 10.233333333333333,
+              "detected": true,
+              "lead_s": 0.7333333333333325
+            },
+            {
+              "phase": 2,
+              "time": 76.6,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 3,
+              "time": 82.46666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 108.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 119.4,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 6,
+              "time": 169.9,
+              "detected": true,
+              "lead_s": 0.4000000000000057
+            }
+          ],
+          "warning_windows": 14,
+          "false_warning_windows": 10,
+          "warning_rising_events": [
+            {
+              "time": 9.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 76.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 82.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 108.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 119.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 169.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.566666666666666,
+              "detected": true,
+              "lead_s": 0.06666666666666643
+            },
+            {
+              "phase": 2,
+              "time": 73.86666666666666,
+              "detected": true,
+              "lead_s": 0.86666666666666
+            },
+            {
+              "phase": 3,
+              "time": 80.8,
+              "detected": true,
+              "lead_s": 0.7999999999999972
+            },
+            {
+              "phase": 4,
+              "time": 99.16666666666667,
+              "detected": true,
+              "lead_s": 0.1666666666666714
+            },
+            {
+              "phase": 5,
+              "time": 113.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 175.56666666666666,
+              "detected": false,
+              "lead_s": null
+            }
+          ],
+          "warning_windows": 22,
+          "false_warning_windows": 14,
+          "warning_rising_events": [
+            {
+              "time": 7.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 73.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 79.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 99.0,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 101.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 103.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 111.0,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 112.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 176.0,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        },
+        "61c420843f11ca54bfe804ee": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 9.566666666666666,
+              "detected": true,
+              "lead_s": 0.5666666666666664
+            },
+            {
+              "phase": 2,
+              "time": 71.0,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 3,
+              "time": 77.6,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 4,
+              "time": 90.73333333333333,
+              "detected": true,
+              "lead_s": 0.23333333333333428
+            },
+            {
+              "phase": 5,
+              "time": 100.66666666666667,
+              "detected": true,
+              "lead_s": 0.6666666666666714
+            },
+            {
+              "phase": 6,
+              "time": 138.63333333333333,
+              "detected": true,
+              "lead_s": 0.13333333333332575
+            }
+          ],
+          "warning_windows": 16,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 9.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 70.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 77.5,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 90.5,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 100.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 138.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.366666666666666,
+              "detected": true,
+              "lead_s": 0.36666666666666625
+            },
+            {
+              "phase": 2,
+              "time": 57.6,
+              "detected": true,
+              "lead_s": 0.6000000000000014
+            },
+            {
+              "phase": 3,
+              "time": 62.8,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 90.83333333333333,
+              "detected": true,
+              "lead_s": 0.3333333333333286
+            },
+            {
+              "phase": 5,
+              "time": 99.1,
+              "detected": true,
+              "lead_s": 0.09999999999999432
+            },
+            {
+              "phase": 6,
+              "time": 136.96666666666667,
+              "detected": true,
+              "lead_s": 0.46666666666666856
+            }
+          ],
+          "warning_windows": 17,
+          "false_warning_windows": 11,
+          "warning_rising_events": [
+            {
+              "time": 7.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 57.0,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 63.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 90.5,
+              "phase": 4,
+              "correct": true
+            },
+            {
+              "time": 99.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 134.5,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 136.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.0,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 2,
+              "time": 62.96666666666667,
+              "detected": true,
+              "lead_s": 0.9666666666666686
+            },
+            {
+              "phase": 3,
+              "time": 66.23333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 96.26666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 106.6,
+              "detected": true,
+              "lead_s": 0.5999999999999943
+            },
+            {
+              "phase": 6,
+              "time": 175.4,
+              "detected": false,
+              "lead_s": null
+            }
+          ],
+          "warning_windows": 15,
+          "false_warning_windows": 10,
+          "warning_rising_events": [
+            {
+              "time": 6.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 61.5,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 67.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 99.0,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 106.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 159.0,
+              "phase": 6,
+              "correct": false
+            },
+            {
+              "time": 175.5,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        },
+        "ca784332e44d979f99018a52": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 6.3,
+              "detected": true,
+              "lead_s": 0.2999999999999998
+            },
+            {
+              "phase": 2,
+              "time": 32.0,
+              "detected": true,
+              "lead_s": 1.0
+            }
+          ],
+          "warning_windows": 6,
+          "false_warning_windows": 3,
+          "warning_rising_events": [
+            {
+              "time": 6.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 31.0,
+              "phase": 2,
+              "correct": true
+            }
+          ]
+        },
+        "a8b23394b642f0bb769a0391": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.5,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 2,
+              "time": 37.13333333333333,
+              "detected": true,
+              "lead_s": 0.6333333333333329
+            },
+            {
+              "phase": 3,
+              "time": 40.13333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 64.96666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.46666666666667,
+              "detected": true,
+              "lead_s": 0.46666666666666856
+            },
+            {
+              "phase": 6,
+              "time": 86.7,
+              "detected": true,
+              "lead_s": 0.7000000000000028
+            }
+          ],
+          "warning_windows": 12,
+          "false_warning_windows": 6,
+          "warning_rising_events": [
+            {
+              "time": 5.0,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 36.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 40.5,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 65.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 70.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 86.0,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "6d46f3c8c5c61bd2c6d22973": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 7.6,
+              "detected": true,
+              "lead_s": 0.09999999999999964
+            },
+            {
+              "phase": 2,
+              "time": 91.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 3,
+              "time": 104.33333333333333,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 4,
+              "time": 127.0,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 139.3,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 6,
+              "time": 270.1,
+              "detected": true,
+              "lead_s": 0.6000000000000227
+            }
+          ],
+          "warning_windows": 11,
+          "false_warning_windows": 8,
+          "warning_rising_events": [
+            {
+              "time": 7.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 92.5,
+              "phase": 2,
+              "correct": false
+            },
+            {
+              "time": 105.0,
+              "phase": 3,
+              "correct": false
+            },
+            {
+              "time": 127.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 139.5,
+              "phase": 5,
+              "correct": false
+            },
+            {
+              "time": 269.5,
+              "phase": 6,
+              "correct": true
+            }
+          ]
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "boundaries": [
+            {
+              "phase": 1,
+              "time": 5.0,
+              "detected": true,
+              "lead_s": 0.5
+            },
+            {
+              "phase": 2,
+              "time": 44.833333333333336,
+              "detected": true,
+              "lead_s": 0.3333333333333357
+            },
+            {
+              "phase": 3,
+              "time": 47.93333333333333,
+              "detected": true,
+              "lead_s": 0.93333333333333
+            },
+            {
+              "phase": 4,
+              "time": 64.76666666666667,
+              "detected": false,
+              "lead_s": null
+            },
+            {
+              "phase": 5,
+              "time": 70.9,
+              "detected": true,
+              "lead_s": 0.9000000000000057
+            },
+            {
+              "phase": 6,
+              "time": 89.6,
+              "detected": false,
+              "lead_s": null
+            }
+          ],
+          "warning_windows": 14,
+          "false_warning_windows": 9,
+          "warning_rising_events": [
+            {
+              "time": 4.5,
+              "phase": 1,
+              "correct": true
+            },
+            {
+              "time": 44.5,
+              "phase": 2,
+              "correct": true
+            },
+            {
+              "time": 47.0,
+              "phase": 3,
+              "correct": true
+            },
+            {
+              "time": 65.5,
+              "phase": 4,
+              "correct": false
+            },
+            {
+              "time": 70.0,
+              "phase": 5,
+              "correct": true
+            },
+            {
+              "time": 90.0,
+              "phase": 6,
+              "correct": false
+            }
+          ]
+        }
+      },
+      "definition": "Actual provider level warning: threshold.8, expected next ordered phase, no Future confirmation; Current needs2 confirmations. Boundary recall means any correctly targeted level warning within horizon. Overlong warnings accumulate false windows; rising-event count is reported separately. Input-time basis."
+    }
+  ],
+  "selection_unchanged": true,
+  "notes": "Different metric from raw four-class accepted-change events/K2. No seven-class probability or future label enters provider. Offline recorded logits, no robot/RTC."
+}
