@@ -127,7 +127,7 @@ def run():
  a('## 10. 下一轮最值得做的事\n')
  a('先准备全新的独立录制，覆盖当前误报集中Episode同类场景、长稳定阶段、小动作干扰、不同操作速度与边界标注一致性。固定本轮选出的checkpoint、时距、阈值和事件定义后一次性评估，不再用旧8条测试或本10条验证继续证明可靠性。\n')
  a('低成本模型研究优先做等参数量GRU/TCN对照和边界标注盲审；目前时序头容量与MLP不同，不能把负结果概括为时序信息无用。4Hz新鲜输入可能减少确认延迟，但需相应准确率评估和时序上下文重采样；现有时延证据只证明算得过来。没有证据时不继续堆叠Transformer、完整Token/Attentive Readout或所有参数的笛卡尔积。\n')
- Path('docs/TOMATO_TEMPORAL_RESULTS_20261108.md').write_text('\n'.join(lines)+'\n')
+ Path('docs/TOMATO_TEMPORAL_RESULTS_20261108.md').write_text('\n'.join(lines).rstrip()+'\n')
  # Neighborhood details remain lightweight enough to version alongside seed summaries.
  shutil.copyfile(ROOT/'boundary_neighborhoods.json',out/'boundary_neighborhoods.json')
  print('FINAL REPORT WRITTEN',len(rows),'evaluation rows',len(normal),'training runs',flush=True)
