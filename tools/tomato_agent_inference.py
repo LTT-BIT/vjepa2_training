@@ -6,13 +6,14 @@ import numpy as np
 
 from . import tomato_dataset as ds
 from . import tomato_phase_model as model
+from . import tomato_independent_heads as independent
 
 PROTOCOL = 'tomato-stage-prediction-v1'
 
 
 class TomatoAgent:
     def __init__(self, checkpoint, pretrained_dir, device='cuda'):
-        self.saved, self.head = model.load_checkpoint(checkpoint, device=device)
+        self.saved, self.head = independent.load_checkpoint(checkpoint, device=device)
         self.encoder, provenance = model.load_encoder(pretrained_dir, device, self.saved['contract']['seed'])
         if provenance != self.saved['pretrained']:
             raise ValueError('Checkpoint/encoder provenance mismatch')

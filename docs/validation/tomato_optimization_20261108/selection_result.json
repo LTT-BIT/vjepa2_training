@@ -1,0 +1,24 @@
+{
+  "rule_sha256": "5f3cf655b2c2b294d3e6f34e7afd3a23c4687560e8b04e77eb8513e3cf83af6f",
+  "reliable_transition_candidate_approved": false,
+  "selected": {
+    "name": "independent_h15",
+    "current_threshold": 0.65,
+    "current_confirmations": 2,
+    "future_threshold": 0.5,
+    "future_confirmations": 2,
+    "current_f1": 0.9737932752963525,
+    "future_f1": 0.9261451293776944,
+    "current_recall": 0.9404761904761904,
+    "current_delay_p95": 1.2877777777777795,
+    "current_false_per_min": 0.1656314699792961,
+    "future_recall": 0.7202380952380952,
+    "future_lead_p50": 0.5999999999999975,
+    "future_false_per_min": 0.9483960948396096,
+    "feasible": false
+  },
+  "checkpoint": "runs/tomato/optimization_20261108/bundles/independent_h15_s42.pt",
+  "checkpoint_sha256": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+  "stable_default_checkpoint": "runs/tomato/campaign94_20261107/experiments/joint_s42/best_head.pt",
+  "test_accessed": false
+}

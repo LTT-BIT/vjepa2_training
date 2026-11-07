@@ -298,6 +298,12 @@ def save_checkpoint(path, head, mean, std, manifest, manifest_sha256, epoch, val
 
 def load_checkpoint(path, manifest_sha256=None, device='cpu', split_sha256=None):
     saved = torch.load(path, map_location='cpu', weights_only=True)
+    return load_checkpoint_payload(saved, manifest_sha256, device, split_sha256)
+
+
+def load_checkpoint_payload(saved, manifest_sha256=None, device='cpu', split_sha256=None):
+    """Validate a self-contained payload, including embedded independent heads."""
+    saved = dict(saved)
     if device.startswith('cuda'):
         try:
             from .tomato_runtime import initialize_runtime
