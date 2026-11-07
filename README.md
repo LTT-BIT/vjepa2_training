@@ -1,3 +1,13 @@
+# 番茄 Agent 训练适配
+
+`research-tomato-agent` 从 `feat/tomato-four-stage` 的 `63d89e8` 建立。
+当前使用 Meta 官方 `facebook/vjepa2-vitl-fpc64-256` 冻结编码器，训练四类 current/future heads。
+本地94条严格校验配置、三模式真实小规模试验及独立推理接口见 [训练与接口使用说明](docs/TOMATO_LOCAL_AGENT.md)。
+OpenPI 通过 `tomato-stage-prediction-v1` 四类协议对接，不加载本仓库 checkpoint 到旧七分类模型。
+下面保留的柠檬说明与已有结果属于历史项目，不能用于描述番茄模型性能。
+
+---
+
 # Lemon V-JEPA 2 阶段判断训练包
 
 这是当前六阶段、三路相机、双臂12维状态的 V-JEPA 2 阶段分类工程。模型输入是 `cam0/cam1/cam2` 的因果视频历史和左右臂12个关节位置，输出六个动作阶段：
