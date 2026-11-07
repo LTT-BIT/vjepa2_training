@@ -185,6 +185,20 @@ def lock_selection(root, results, expected):
     ds.write_json(path,selection);return selection
 
 
+def forecast_diagnostics(current_logits, future_logits, arrays):
+    valid=arrays['future_valid_mask']
+    changing=valid & (arrays['current_labels']!=arrays['future_labels'])
+    out={}
+    for name,keep in [('all_valid',valid),('changing_within_horizon',changing)]:
+        if not keep.any():
+            out[name]=None;continue
+        baseline=metrics.scores(current_logits[keep],arrays['future_labels'][keep])
+        forecast=metrics.scores(future_logits[keep],arrays['future_labels'][keep])
+        out[name]=dict(current_model_persistence=baseline,forecast=forecast,
+                       macro_f1_gain=forecast['macro_f1']-baseline['macro_f1'])
+    return out
+
+
 def evaluate_selected_runs(root, results, entries, arrays, config):
     selection=ds.read_json(Path(root)/'selection.json')
     if selection['results_sha256']!=ds.fingerprint(results): raise ValueError('Selection/results mismatch')
@@ -213,6 +227,19 @@ def evaluate_selected_runs(root, results, entries, arrays, config):
         core.write_predictions(directory,rows)
         ds.write_json(path,report);reports.append(report)
     ds.write_json(Path(root)/'heldout_comparison.json',reports)
+    forecast_reports=[]
+    for seed in (42,43,44):
+        baseline=next(r for r in results if r['name']=='current' and r['training_seed']==seed)
+        saved,head=model.load_checkpoint(baseline['checkpoint'],device=config['device'])
+        current_logits=model.predict_heads(head,arrays['test']['features'],saved['mean'],saved['std'])['current_logits']
+        for name in ('future','joint','joint_transition'):
+            candidate=next(r for r in results if r['name']==name and r['training_seed']==seed)
+            saved,head=model.load_checkpoint(candidate['checkpoint'],device=config['device'])
+            future_logits=model.predict_heads(head,arrays['test']['features'],saved['mean'],saved['std'])['future_logits']
+            forecast_reports.append(dict(name=name,seed=seed,
+                definition='Same-seed current-only classifier persistence versus trained future head; diagnostic after selection lock',
+                metrics=forecast_diagnostics(current_logits,future_logits,arrays['test'])))
+    ds.write_json(Path(root)/'forecast_baseline_comparison.json',forecast_reports)
     summary={}
     for recipe in RECIPES:
         parts=[r for r in reports if r['name']==recipe['name']]

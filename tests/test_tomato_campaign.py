@@ -78,3 +78,15 @@ def test_selection_requires_complete_runs_and_uses_validation_only(tmp_path):
     result=campaign.lock_selection(tmp_path,rows,6)
     assert result['winner']=='joint_transition' and result['representative_seed']==42
     assert result['test_accessed_for_selection'] is False
+
+
+def test_forecast_diagnostics_compares_current_classifier_and_masks_tail():
+    current=np.array([[6,0,0,0],[6,0,0,0],[0,6,0,0],[0,0,0,99]],dtype=float)
+    future=current.copy();future[0]=[0,6,0,0]
+    arrays=dict(current_labels=np.array([0,0,1,3]),future_labels=np.array([1,0,1,-100]),future_valid_mask=np.array([True,True,True,False]))
+    report=campaign.forecast_diagnostics(current,future,arrays)
+    assert report['all_valid']['macro_f1_gain']>0
+    change=report['changing_within_horizon']
+    assert change['current_model_persistence']['accuracy']==0
+    assert change['forecast']['accuracy']==1
+    assert report['all_valid']['forecast']['samples']==3

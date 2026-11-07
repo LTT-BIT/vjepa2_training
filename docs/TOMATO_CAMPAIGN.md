@@ -25,7 +25,7 @@
 
 每次训练只计算验证指标，以活跃λ归一化的val Macro-F1、再NLL选epoch。joint与joint_transition按三个seed的平均验证得分选家族，部署代表固定为seed42，避免事后挑幸运种子。current/future单头作为对照，不把单头分数与双头混合分数直接排名。
 
-12次训练全部完成后先写不可变selection.json，再计算8条heldout上的所有预定义对照。输出均值/样本标准差、每类指标、混淆矩阵、时间边界指标和persistence对照。不得根据test改权重、阈值或重新选择家族。
+12次训练全部完成后先写不可变selection.json，再计算8条heldout上的所有预定义对照。输出均值/样本标准差、每类指标、混淆矩阵、时间边界指标和persistence对照。forecast_baseline_comparison.json额外比较同seed的Current-only模型持久预测与每个未来头，并单列未来1秒标签变化的锚点；不将oracle-current当作可部署基线。不得根据test改权重、阈值或重新选择家族。
 
 ## 启动与恢复
 
