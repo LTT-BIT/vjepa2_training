@@ -1,0 +1,335 @@
+{
+  "data_split": {
+    "train": 76,
+    "val": 10,
+    "test": 8
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "current": {
+      "current": {
+        "accuracy": {
+          "mean": 0.9797727902466057,
+          "std": 0.0014596361530691093
+        },
+        "macro_f1": {
+          "mean": 0.9546478858901856,
+          "std": 0.002984627220543904
+        },
+        "nll": {
+          "mean": 0.09925676791180953,
+          "std": 0.038651145614150055
+        }
+      },
+      "future": null
+    },
+    "future": {
+      "current": null,
+      "future": {
+        "accuracy": {
+          "mean": 0.9695955369595537,
+          "std": 0.0034077522239527743
+        },
+        "macro_f1": {
+          "mean": 0.9347865664130164,
+          "std": 0.00809371129493777
+        },
+        "nll": {
+          "mean": 0.11786829691004992,
+          "std": 0.03228474361427817
+        }
+      }
+    },
+    "joint": {
+      "current": {
+        "accuracy": {
+          "mean": 0.9788029925187033,
+          "std": 0.0004156275976724966
+        },
+        "macro_f1": {
+          "mean": 0.9521878362667576,
+          "std": 0.0014807376465747187
+        },
+        "nll": {
+          "mean": 0.0897458830042644,
+          "std": 0.02659356714355717
+        }
+      },
+      "future": {
+        "accuracy": {
+          "mean": 0.9571827057182706,
+          "std": 0.005264877569923817
+        },
+        "macro_f1": {
+          "mean": 0.9136516557270108,
+          "std": 0.010376410919650957
+        },
+        "nll": {
+          "mean": 0.1492357998028273,
+          "std": 0.048777996531608366
+        }
+      }
+    },
+    "joint_transition": {
+      "current": {
+        "accuracy": {
+          "mean": 0.9800498753117207,
+          "std": 0.0008312551953449931
+        },
+        "macro_f1": {
+          "mean": 0.9550713426280878,
+          "std": 0.002105143962430401
+        },
+        "nll": {
+          "mean": 0.08961958163619575,
+          "std": 0.018082351198777383
+        }
+      },
+      "future": {
+        "accuracy": {
+          "mean": 0.9570432357043236,
+          "std": 0.010088223888437997
+        },
+        "macro_f1": {
+          "mean": 0.9116933156193872,
+          "std": 0.01579360773270112
+        },
+        "nll": {
+          "mean": 0.14344687139255186,
+          "std": 0.035574825452558655
+        }
+      }
+    }
+  },
+  "selection": {
+    "joint_family_validation_scores": {
+      "joint": 0.9600816972506406,
+      "joint_transition": 0.9587446703649393
+    },
+    "winner": "joint",
+    "representative_seed": 42,
+    "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/joint_s42/best_head.pt",
+    "checkpoint_sha256": "92e4b2dbd3dbdcb287fa0c4e29a6020679a90c58bf1777a324826f7ff53c5bcc",
+    "policy": "Family selected by mean validation score across predefined seeds; fixed seed42 deployment representative",
+    "results_sha256": "626e150ad940ba5237e22b526899d790f32b0db86554119c7517b0cee00d4339",
+    "test_accessed_for_selection": false
+  },
+  "validation_runs": [
+    {
+      "name": "current",
+      "training_seed": 42,
+      "best_epoch": 6,
+      "epochs_executed": 21,
+      "validation_selection_score": 0.9748113511302597,
+      "validation_selection_nll": 0.04944464997389019,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/current_s42/best_head.pt",
+      "checkpoint_sha256": "6a7ae48498779505de2222cc451315c108962f9e29ab81ea4239df11e96fff3c",
+      "test_evaluated": false
+    },
+    {
+      "name": "current",
+      "training_seed": 43,
+      "best_epoch": 6,
+      "epochs_executed": 21,
+      "validation_selection_score": 0.9713044315133941,
+      "validation_selection_nll": 0.05355183697020454,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/current_s43/best_head.pt",
+      "checkpoint_sha256": "f01bc88498e437a8d708a8c54f4e23d7365d0a29f66dc8179f92fd5d2f1e2753",
+      "test_evaluated": false
+    },
+    {
+      "name": "current",
+      "training_seed": 44,
+      "best_epoch": 30,
+      "epochs_executed": 45,
+      "validation_selection_score": 0.9752640432454039,
+      "validation_selection_nll": 0.10074043018662072,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/current_s44/best_head.pt",
+      "checkpoint_sha256": "1d7a8331e00c2acebf9708dc755071a7b977e0cee90b88385d2fbf022e6eb30c",
+      "test_evaluated": false
+    },
+    {
+      "name": "future",
+      "training_seed": 42,
+      "best_epoch": 4,
+      "epochs_executed": 19,
+      "validation_selection_score": 0.9444514860627152,
+      "validation_selection_nll": 0.08021972530458286,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/future_s42/best_head.pt",
+      "checkpoint_sha256": "57bde334e258271672257f23fe81e9b3c8735e404af98c27dc86a71d8d1b6c42",
+      "test_evaluated": false
+    },
+    {
+      "name": "future",
+      "training_seed": 43,
+      "best_epoch": 21,
+      "epochs_executed": 36,
+      "validation_selection_score": 0.9393225411999524,
+      "validation_selection_nll": 0.13521827885427803,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/future_s43/best_head.pt",
+      "checkpoint_sha256": "ea7773e0a22ed1d2c5a630e5f421dfe4596f80ed9529237dfececc5ee7ed826b",
+      "test_evaluated": false
+    },
+    {
+      "name": "future",
+      "training_seed": 44,
+      "best_epoch": 14,
+      "epochs_executed": 29,
+      "validation_selection_score": 0.9405335774996593,
+      "validation_selection_nll": 0.10686611976563488,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/future_s44/best_head.pt",
+      "checkpoint_sha256": "8e66b1a66ed73f66c96d192022058d6e7f23bbef8e386af8c9ff4381146dd118",
+      "test_evaluated": false
+    },
+    {
+      "name": "joint",
+      "training_seed": 42,
+      "best_epoch": 7,
+      "epochs_executed": 22,
+      "validation_selection_score": 0.9597197358294315,
+      "validation_selection_nll": 0.06329466175660907,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/joint_s42/best_head.pt",
+      "checkpoint_sha256": "92e4b2dbd3dbdcb287fa0c4e29a6020679a90c58bf1777a324826f7ff53c5bcc",
+      "test_evaluated": false
+    },
+    {
+      "name": "joint",
+      "training_seed": 43,
+      "best_epoch": 5,
+      "epochs_executed": 20,
+      "validation_selection_score": 0.9593664762948103,
+      "validation_selection_nll": 0.06849907223088135,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/joint_s43/best_head.pt",
+      "checkpoint_sha256": "2774a436db399d5cff16b461a7238eaae8e8a8a8647268424eb6f1f2dd0bc900",
+      "test_evaluated": false
+    },
+    {
+      "name": "joint",
+      "training_seed": 44,
+      "best_epoch": 18,
+      "epochs_executed": 33,
+      "validation_selection_score": 0.9611588796276802,
+      "validation_selection_nll": 0.08350901505444179,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/joint_s44/best_head.pt",
+      "checkpoint_sha256": "646f5ee5e0b633fa3639bd7190b2697f05aa0bd2ac18a38d9da275b5c40a97ff",
+      "test_evaluated": false
+    },
+    {
+      "name": "joint_transition",
+      "training_seed": 42,
+      "best_epoch": 7,
+      "epochs_executed": 22,
+      "validation_selection_score": 0.9595739934280445,
+      "validation_selection_nll": 0.06286486612724619,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/joint_transition_s42/best_head.pt",
+      "checkpoint_sha256": "36b45dfcf22af97365512df4ec69603974fd9e2fdcc31b8d7420dd588f678d61",
+      "test_evaluated": false
+    },
+    {
+      "name": "joint_transition",
+      "training_seed": 43,
+      "best_epoch": 10,
+      "epochs_executed": 25,
+      "validation_selection_score": 0.9573572947191207,
+      "validation_selection_nll": 0.0725513402416018,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/joint_transition_s43/best_head.pt",
+      "checkpoint_sha256": "80e47d6381b4b453bacf03eb8e2bdcfd5598818ab6fe57141a2f9e79b35f8064",
+      "test_evaluated": false
+    },
+    {
+      "name": "joint_transition",
+      "training_seed": 44,
+      "best_epoch": 19,
+      "epochs_executed": 34,
+      "validation_selection_score": 0.9593027229476524,
+      "validation_selection_nll": 0.08638730436428384,
+      "checkpoint": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/joint_transition_s44/best_head.pt",
+      "checkpoint_sha256": "47f18a59ae5b53b65138dc539993fff2bdb3dd6f8e96795f63d68db78fc81caa",
+      "test_evaluated": false
+    }
+  ],
+  "source_snapshot": {
+    "commit": "9ceb3ced1f1a1de8d342b403067a00c89dd38fd8",
+    "working_tree": "",
+    "runner_sha256": "1b8efd8abbd6e181074405c0397f3b2cc000b30d75246452bd795f0c6814b526",
+    "dependencies_sha256": "8cfd8924eb50be7be78b52788908c513afc8753006e516f0820ab81e7a2036ef"
+  },
+  "tests": {
+    "tomato_specialized": 91,
+    "cuda_exact_resume": true,
+    "real_agent_bridge": true,
+    "full94_media_validation": true
+  },
+  "forecast_baseline_summary": {
+    "future": {
+      "all_valid": {
+        "current_model_persistence": {
+          "accuracy": 0.9548117154811715,
+          "macro_f1": 0.9065541288137021
+        },
+        "forecast": {
+          "accuracy": 0.9695955369595537,
+          "macro_f1": 0.9347865664130164
+        }
+      },
+      "changing_within_horizon": {
+        "current_model_persistence": {
+          "accuracy": 0.1909722222222222,
+          "macro_f1": 0.20899059318775084
+        },
+        "forecast": {
+          "accuracy": 0.7048611111111112,
+          "macro_f1": 0.6870271127802435
+        }
+      }
+    },
+    "joint": {
+      "all_valid": {
+        "current_model_persistence": {
+          "accuracy": 0.9548117154811715,
+          "macro_f1": 0.9065541288137021
+        },
+        "forecast": {
+          "accuracy": 0.9571827057182706,
+          "macro_f1": 0.9136516557270108
+        }
+      },
+      "changing_within_horizon": {
+        "current_model_persistence": {
+          "accuracy": 0.1909722222222222,
+          "macro_f1": 0.20899059318775084
+        },
+        "forecast": {
+          "accuracy": 0.6840277777777778,
+          "macro_f1": 0.670632902085072
+        }
+      }
+    },
+    "joint_transition": {
+      "all_valid": {
+        "current_model_persistence": {
+          "accuracy": 0.9548117154811715,
+          "macro_f1": 0.9065541288137021
+        },
+        "forecast": {
+          "accuracy": 0.9570432357043236,
+          "macro_f1": 0.9116933156193872
+        }
+      },
+      "changing_within_horizon": {
+        "current_model_persistence": {
+          "accuracy": 0.1909722222222222,
+          "macro_f1": 0.20899059318775084
+        },
+        "forecast": {
+          "accuracy": 0.7708333333333334,
+          "macro_f1": 0.754720874991691
+        }
+      }
+    }
+  }
+}
