@@ -1,0 +1,746 @@
+[
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1102_588_616_normal_lerobot",
+    "episode_index": 0,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1102_588_616_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "95a58745119140c10ca4073475ab9cd7264c82cbe3caa2cac182604cb5f267f3"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1102_588_616_normal_lerobot",
+    "episode_index": 1,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1102_588_616_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "ca23b64d54124848e2a494fa383462db3a368c89a1adf5298082d1b5c1c1e0d5"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot",
+    "episode_index": 0,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "9e2e245e981280e681ad8a106a867167f7cd8ca37530387c4ddd7a5daa17aa3c"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot",
+    "episode_index": 1,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "a23cf0a975ee088a2c80a88e7d55af6ddf3764e7f7bdc8eba56f9af85fb9d1e1"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot",
+    "episode_index": 2,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "71778d522baba5e933b6a4529022a0cbd04de679309f4beaa688df468924e97f"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot",
+    "episode_index": 3,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000003.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "30525425672397b694a82ad7f81e8f8c3f52d245e80a5e51d747850f1543546b"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot",
+    "episode_index": 4,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "2ee0e8cdc721169896a513d7a68eaff93c57c6d6c637f951af2074c4de7c8105"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot",
+    "episode_index": 5,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000005.json",
+    "variant": "normal",
+    "revision": 3,
+    "annotation_sha256": "43275e029e55603ebcad43566c6571606bb19783d56a7e7be8e551efce92dda4"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot",
+    "episode_index": 6,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000006.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "f56ffb7e1727dc66993d30c0dc621d0a948ccf4ca3f1f29f5e2d21c0e3bdc510"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 0,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "449d4621a5131ea86c21f594698c8756fc7cfd7f10b63332900c0a4364f3b23f"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 1,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "fafdda99d3963d2f7968ee8ee3918352be3321a36b302d3f2847f8a6216d37e2"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 2,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "492e92799c15798f5f7420bfcc66299c51af6852e6875bb3a3c6578f39f0e5bc"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 3,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000003.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "b5a3d1fe1deee9a895950a127d57ea6f3b98f54c94c2cd3fd2d6af348318fe5c"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 4,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "f2db5eaa13115bce35812b85a03a5b6283ed17e73ca38675bb1c867761a6bb5a"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 5,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000005.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "32f9a018b4f97038c1aff5f604c6b0a1031c104eac4dd4f27e7137f9e0f9bf1d"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 6,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000006.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "0b31704d4db0bf1ba21420c53ffb0c94b40accb1fcd1bd54663a9ef56ec9ff86"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 7,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000007.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "04abdc26d3c303a0763a510482ea87303909155abdc677709e87536a585aba52"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 8,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000008.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "c19a36ec6effd7161e178322821278a194d04eefe94b42512b90ca8454217569"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 9,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000009.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "bddc4d4039f43a85cc1057eab30b87775bdaa5c1b92e8b18d318b62597b1e5f0"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 10,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000010.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "c8e433ad2229012ddc86b50567a72fd2f46720c5c2aabda4fa17bfdfaaf15431"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 11,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000011.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "f55a93758fd14bcf2c4af7343da329cde1be0f512ca6c035c6e7fbe35fe71c38"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 12,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000012.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "9b8116b94d3b35a0e9b79a4751e7a028a39d9baa6f7809d2391aa2547408e755"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 13,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000013.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "8a3c686b4f1fc6640211665bd16f53735741204ae060c094c6440184e72644ef"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 14,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000014.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "9cfe845088841a5d1923a8b3fc0a43b3c25d0a51ad048dbf3f505a683675b951"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot",
+    "episode_index": 15,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000015.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "7f55cc82875e7af3e25c449bcc43ab67f92ec52752470b95f0c49c55fb29a5f1"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 0,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "variant": "normal",
+    "revision": 3,
+    "annotation_sha256": "79e5a7ce763810b9653e8e984a1f3cc8968072ae5346b147e41883b77e89c448"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 1,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "6cbcc91f05f6e04c4acb94c862b534f71487ac7d109600a9ace6418eff42818c"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 2,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "ca3fb089744b075d9b782449d33f53ba56319abf2d5298ca67a0c51e87e79dcb"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 3,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000003.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "f3dd8e1a0d9c2b014fbf0e397209dfe8a54cc6dd79175c500e33d5508b42cfec"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 4,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "b53094ae0bc8b78d5ed4a00b91e99abce95f335666e60f92253ef040cdaefbe8"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 5,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000005.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "5cd0a512d14886b8ff25cf1156e11669447ed22ff758639911cd34d8b02ec86e"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 6,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000006.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "34bc99be4fffcde25554371eaae1719942d333fd6c2ab2c93985b41187b5cd52"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 7,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000007.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "47e9969e819a3e224b4b65c7394d1c4596bf98a2fad02b9a2dfc0adac8829b4c"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 8,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000008.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "89ed43904a1be4c4362d5a8e1f33887c1ecf81541eb730f62d6db81253ef58e0"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 9,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000009.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "261c69eab41ec26e358b737ff15c79f10309b94ab56570b7d0bf56bc7f6c0028"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 10,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000010.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "43071ee7528673e5d5872e2ea68a73404d592f99068c62cb7de1ff7bb51c1a9c"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 11,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000011.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "54746f4c438ac71022dab865a4a913b0d0ee7f369628b394948817338f0684d7"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 12,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000012.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "3f978ab001b01c81d7a05edbe9527f5a62428b300b20827f91a470cc24357492"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 13,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000013.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "038e0ddf98fbc84e2e0af371679b560d495ef48df06d59c14cd9a0790dfed0f5"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 14,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000014.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "adcfb4476ee559145c5b5ee22ed0bfcdc2b76c58708e9018be64d0beef3a7869"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 15,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000015.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "d63292f1838d1c1927e2995c73265f2d60406782219e9ef453578ccd0c20f083"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 16,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000016.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "4a81f02fe886727a49b0d3f4df7fa56d008cf0e844ef8c2c99a59f5cd6dfddc3"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 17,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000017.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "0048631f43aa45de9226f3e9cf2c7dc896a248a6a623b373c4e49a7517331724"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot",
+    "episode_index": 18,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000018.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "71e691a48fe775390bff34842945c481dff7bf259634cda9de808d2c56500e21"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 0,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000000.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "005e7425852e7704dca271e863ec43d6d0f9334180a46880c95242f0ebe6e921"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 1,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000001.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "05a8dcf772919f1870d8eccac5702f3231cf8bf531207d5d2ea05f72a5c53860"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 2,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000002.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "65d5e57b21f139860e1fedb1ff759302b700422e44c1ad2ee617c11315ce74b3"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 3,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000003.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "368eb28c9afa210f0f2daee26f61f32fcce1da7669fe6e48b306445b58da75b9"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 4,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000004.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "d08cde6ef5ba57fc2e5c363a7e95d18ad3120552a9f1993dcece7e9d719f7dc0"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 5,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000005.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "8d6c330537b34f302c667ffb9bcffc70ec74f69f44ae7951349a66bf16f70f68"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 6,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000006.json",
+    "variant": "normal",
+    "revision": 2,
+    "annotation_sha256": "e0b30ebbb671c3e6b6c14a822410c41d103b782efc62d41c05b0827f434bb19e"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 7,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000007.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "77831167fcdd6deda0b2db47347ae2d47d37f5018f91a29c910c2c6c81ddc885"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 8,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000008.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "b27958cd7910d8f6dcea18e79ceb0726b0de39dad6f4b0fb24470dd62681f9c4"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 9,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000009.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "36f0db13a36ce4fea0a4481e058a20ae066c7203934955037ba5d23a6335515f"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 10,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000010.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "77a92a9e84448e0c80c742c65321eb824ca4942b748c9424ada059404f63996d"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 11,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000011.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "c1d71727439e8fe831e5a392c7064e76f2fb3602c31ac527bf7b82b5a7f1c71c"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 12,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000012.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "a56f02533f12931171ed28a441d486fd92e7ff2865fbcdde7e08b87551fa7abb"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 13,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000013.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "15d132db01d6ab3d8fa7b536cae2ba202de9dd1a72e2db692deb00c807cb0fbe"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 14,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000014.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "e07a848427b5ee306d381e01a0ebb3898ba6b229334f5dd9ba0c1ba686d4e516"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 15,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000015.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "9d7b6f464ce2c66729a4ca840dc3b2fc9d07a753266f6e8692c09cef5944defa"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 16,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000016.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "d246d476f8f13c4c5f034d0cfd5d3266718cfcba13bca342ddcf661e8bf3be6a"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 17,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000017.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "a34ae7c61f0e89232a2ed230be9ae3d9a702b1f62a18d92352582ecf44f252a2"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 18,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000018.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "20586d85c8326af14551f837310b26b588377043f5cac9c19c15e4d31535e153"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal",
+    "episode_index": 19,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000019.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "554ce42c12d87f6b8f988e875cd729c9cff654136bee8c3fcea66aa3260466c2"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1101_572_601_normal_lerobot",
+    "episode_index": 0,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "27dce58bf80be5e17f595770be2671665910fcae9a8e4cca460e83db183a2fd8"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1101_572_601_normal_lerobot",
+    "episode_index": 1,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "3ffea04cde9b83bf78d1b4331da93330af2555b8b549f151767de5fe74ec251c"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1101_572_601_normal_lerobot",
+    "episode_index": 2,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "50f41ecb8eec59329ee0db48223dae1c6e9cee3eb873c9145715e19e42b1c290"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1103_604_632_normal_lerobot",
+    "episode_index": 0,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1103_604_632_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "b47598432019b56930432792938b73f86ac23923464ca7411f777aa952e5b12e"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1103_604_632_normal_lerobot",
+    "episode_index": 1,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1103_604_632_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "fe8ed91d97e3d46134b08e2a842c4dff22b2d0e17022513666d012b41f5e8929"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1103_604_632_normal_lerobot",
+    "episode_index": 2,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1103_604_632_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "ed08c8222ede36be8417164f58f9b0a8977edb5362e5fc2c715532695f924f00"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1103_604_632_normal_lerobot",
+    "episode_index": 3,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1103_604_632_normal_lerobot/annotations/subtasks/coarse/episode_000003.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "c271f73eab8a9e5a3820e05350af4c44ce50a72b7cba89fe2dbb1209abe5e848"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1103_604_632_normal_lerobot",
+    "episode_index": 4,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1103_604_632_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "857e688ead57e3895ab3c91473bbb092e1cdd7528195de50d5d134ce489e841d"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 0,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "be1d809e142cdb8deaaa4a4b89b9f5fd2671aa558f2992e6bb97e56b82567971"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 1,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "adc97399fc39113d84fef2147c6163d49b74753abb06b8bc794b6a2655116a7a"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 2,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "60c863140c2cc3a19e21522df1b19a6c3ab71ffa9385c1b2e0f74dac4917a40a"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 3,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000003.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "74fcb7e66bc59dde756cb526c458a0ae33bcc844d202f7593ad4f8609acd9343"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 4,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "07c50fad8f4e7fb017f24ee6b48376af97801b5aecad9d2a25e6d76473b2345d"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 5,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000005.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "3408692a424695d9e91c74b5a9f4ea02b3cd4759b0f84bb39995e5bcac5100d0"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 6,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000006.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "55d3a3830f53586bc2ffa367b2cf00f935cb2c847b7ef1d58da666ee53992695"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 7,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000007.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "8f0057d2603ddf90fe26c2ceaa92bdef1a8a5eafa84fdf632cf445cb6495a3c6"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 8,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000008.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "6adc1c169f2a5773e0e199c33f9f15e64175e5a6e8190b4f732293b52cb68717"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 9,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000009.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "29e448be7ba0222a8671fdc5d04759b9430a854ffe295d7b1e749871e1e1ae67"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 10,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000010.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "df55b819047b3bad276c1457694b8c9488ac1e9ecff2dd0942964d47802c6756"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot",
+    "episode_index": 11,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000011.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "012e85a32f9757254613e56d030d60cc6292f6a8f960f41270b903eece38a854"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1105_703_713_normal_lerobot",
+    "episode_index": 0,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1105_703_713_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "e090b9e98ccacbfb70a79c2c1917d6fc8393175397083ab3404ae3eb09779d2c"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal",
+    "episode_index": 0,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000000.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "e1ffe9a0f48c06333d67868d3593a8076b2e26d2bc35e13215aa488577ca85f7"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal",
+    "episode_index": 1,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000001.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "1229f0f5ff11e3b769477b2cd74fff2e6c5fb31d7409069ede4b46f01c375140"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal",
+    "episode_index": 2,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000002.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "0bb16a646f3362d67ab081d7839e3e268abf4d98bd7b8618fabc59f0314d87db"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal",
+    "episode_index": 3,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000003.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "e9c1dbf690f2f7c9cd815731d0617d7e43a568a7e65bdf4936948eb540ace42a"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal",
+    "episode_index": 4,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000004.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "22005b7c3b03103f72020dbe7f5e45a6c9645f6ac18e84fc8723cdb929ed1cb6"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal",
+    "episode_index": 5,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000005.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "b43478d4761e119608fa05b7e61ed43271326327beb0f0d885750d838e613ad9"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal",
+    "episode_index": 6,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000006.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "1da39172ec290a17b157e3fc355f85a9e792410ae8f4052776acff5cf29fe1ee"
+  },
+  {
+    "dataset_root": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal",
+    "episode_index": 7,
+    "coarse_annotation": "/home/user/pi05/vjepa2_training/runs/tomato/remote93_mount/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000007.json",
+    "variant": "normal",
+    "revision": 1,
+    "annotation_sha256": "8776e306367287c3eb4b5693846b96cea64806310d5ee3cea91591cb8c98e065"
+  }
+]
