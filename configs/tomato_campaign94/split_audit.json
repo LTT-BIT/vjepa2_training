@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "counts": {
+    "train": 76,
+    "val": 10,
+    "test": 8
+  },
+  "test_sources": [
+    "0340d869ea074774b09441f2339cec30",
+    "26a781329cd64ac2b99e19c41fb02f10",
+    "3b7d153b61764f4b9920e382f7f1083b",
+    "97b0a0e7b27140cc933c1c6f8bc7ca1f",
+    "9c6fd4d27e9e4713819c96a88264c853",
+    "9e19bb249db04f8781577bc3ad22d753",
+    "b693693c0fd34115989b89177cbe78c2",
+    "bb378a3fc949476d98a5a21b68a157c5"
+  ],
+  "known_exploratory_sources": [
+    "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "76354615cf9746758c5c7e6e5ab579d4",
+    "7d879f9d5d5a4be09beb55cf88591b0d",
+    "e826c474e80547d5a3b24e5eb0f30977"
+  ],
+  "overlap": [],
+  "scope": "Known current smoke and repository historical three-recording pilot"
+}

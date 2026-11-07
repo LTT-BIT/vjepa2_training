@@ -4,7 +4,7 @@
 
 ## 本轮划分与试验计划
 
-原76/9/9划分中的一条test曾在smoke中查看结果。新实验将该来源移至验证，不改训练来源：76train、10val、8test。旧manifest与split保留。本轮入口 `configs/tomato_campaign94.yaml`，锁定清单在 `runs/tomato/campaign94_20261107/`。历史三条pilot与本轮smoke的已知来源均不在8条test中，审计见split_audit.json。
+原76/9/9划分中的一条test曾在smoke中查看结果。新实验将该来源移至验证，不改训练来源：76train、10val、8test。旧manifest与split保留。本轮入口 `configs/tomato_campaign94.yaml`，锁定索引/划分和来源审计已版本化在 `configs/tomato_campaign94/`；严格媒体验收产物在 `runs/tomato/campaign94_20261107/`。历史三条pilot与本轮smoke的已知来源均不在8条test中，审计见split_audit.json。
 
 样本是固定2Hz因果历史锚点：train22168、val2898、test2406；未来尾部mask，不用未来观测。三集合按原始录制ID严格分组。正常/加速副本不混用。
 

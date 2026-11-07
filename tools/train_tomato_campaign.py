@@ -10,6 +10,7 @@ import copy
 import hashlib
 import json
 from pathlib import Path
+import subprocess
 import time
 
 import numpy as np
@@ -240,7 +241,13 @@ def main(argv=None):
     plan=dict(recipes=list(RECIPES),seeds=[42,43,44],parent_manifest_sha256=ds.digest(Path(cfg['output_dir'])/'manifest.json'),
               selection='Validation-only; heldout untouched until all runs finish',runner_sha256=ds.digest(__file__))
     if (root/'plan.json').exists() and ds.read_json(root/'plan.json')!=plan:raise ValueError('Campaign plan changed')
-    ds.write_json(root/'plan.json',plan);results=[]
+    ds.write_json(root/'plan.json',plan)
+    if not (root/'source_snapshot.json').exists():
+        ds.write_json(root/'source_snapshot.json',dict(
+            commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ds.REPO,text=True).strip(),
+            working_tree=subprocess.check_output(['git','status','--porcelain'],cwd=ds.REPO,text=True),
+            runner_sha256=plan['runner_sha256'],dependencies_sha256=ds.digest(ds.REPO/'requirements-tomato-local.lock')))
+    results=[]
     for recipe in RECIPES:
         for seed in plan['seeds']:
             ds.status(root,'training_campaign',recipe=recipe['name'],seed=seed,completed=len(results),total=12)

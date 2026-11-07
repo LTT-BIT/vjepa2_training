@@ -2,7 +2,7 @@ project: tomato_sharpa_four_stage
 model_id: facebook/vjepa2-vitl-fpc64-256
 model_revision: b3c1679b7c34d3255ef3547f27c7b226aefab26f
 pretrained_dir: /home/user/vjepa2_training/pretrained/vjepa2-vitl-fpc64-256
-annotation_index: /home/user/vjepa2_training/runs/tomato/local94_20261107/annotation_index.json
+annotation_index: /home/user/vjepa2_training/configs/tomato_campaign94/annotation_index.json
 output_dir: /home/user/vjepa2_training/runs/tomato/campaign94_20261107/prepared
 feature_cache_dir: /home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache
 robot: sharpa
@@ -94,4 +94,4 @@ patience: 15
 batch_size: 128
 learning_rate: 0.0003
 weight_decay: 0.01
-split_file: /home/user/vjepa2_training/runs/tomato/campaign94_20261107/split.json
+split_file: /home/user/vjepa2_training/configs/tomato_campaign94/split.json
