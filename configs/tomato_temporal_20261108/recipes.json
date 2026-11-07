@@ -1,0 +1,110 @@
+{
+  "mlp_h15": {
+    "architecture": "mlp",
+    "context": 1,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 0.5,
+    "boundary_weight": 0.0,
+    "focal_gamma": 0.0
+  },
+  "loss11": {
+    "architecture": "mlp",
+    "context": 1,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 1.0,
+    "boundary_weight": 0.0,
+    "focal_gamma": 0.0
+  },
+  "loss12": {
+    "architecture": "mlp",
+    "context": 1,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 2.0,
+    "boundary_weight": 0.0,
+    "focal_gamma": 0.0
+  },
+  "focal": {
+    "architecture": "mlp",
+    "context": 1,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 0.5,
+    "boundary_weight": 0.0,
+    "focal_gamma": 2.0
+  },
+  "boundary_aux": {
+    "architecture": "mlp",
+    "context": 1,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 0.5,
+    "boundary_weight": 0.2,
+    "focal_gamma": 0.0
+  },
+  "gru": {
+    "architecture": "gru",
+    "context": 4,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 0.5,
+    "boundary_weight": 0.0,
+    "focal_gamma": 0.0
+  },
+  "tcn": {
+    "architecture": "tcn",
+    "context": 4,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 0.5,
+    "boundary_weight": 0.0,
+    "focal_gamma": 0.0
+  },
+  "gated": {
+    "architecture": "gated",
+    "context": 1,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 0.5,
+    "boundary_weight": 0.0,
+    "focal_gamma": 0.0
+  },
+  "velocity": {
+    "architecture": "velocity",
+    "context": 1,
+    "dimension": 4058,
+    "horizon_s": 1.5,
+    "lambda_future": 0.5,
+    "boundary_weight": 0.0,
+    "focal_gamma": 0.0
+  },
+  "split": {
+    "architecture": "split",
+    "context": 1,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 0.5,
+    "boundary_weight": 0.0,
+    "focal_gamma": 0.0
+  },
+  "vision_only": {
+    "architecture": "vision_only",
+    "context": 1,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 0.5,
+    "boundary_weight": 0.0,
+    "focal_gamma": 0.0
+  },
+  "state_only": {
+    "architecture": "state_only",
+    "context": 1,
+    "dimension": 4000,
+    "horizon_s": 1.5,
+    "lambda_future": 0.5,
+    "boundary_weight": 0.0,
+    "focal_gamma": 0.0
+  }
+}

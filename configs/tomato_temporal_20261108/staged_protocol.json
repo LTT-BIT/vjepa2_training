@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "split": "original train/val only; historical test excluded from prediction/search",
+  "main_horizon_s": 1.5,
+  "reason": "Earlier locked validation experiment favored 1.5s anticipation; keep 1s original baseline separately.",
+  "selection_epoch": "Fixed (Current F1 + .5 Future F1)/1.5, then lower NLL; independent of optimized loss weights.",
+  "pilot_seed": 42,
+  "final_seeds": [
+    42,
+    43,
+    44
+  ],
+  "context_anchors": 4,
+  "epochs": 100,
+  "patience": 15,
+  "batch_size": 128,
+  "pilot_groups": {
+    "loss": [
+      "loss11",
+      "loss12",
+      "focal"
+    ],
+    "temporal": [
+      "gru",
+      "tcn"
+    ],
+    "fusion": [
+      "gated",
+      "velocity",
+      "split"
+    ]
+  },
+  "pilot_filter": "Current F1 at least baseline seed42 minus .005; one candidate/group by future recall - .1 false/min + .01 Current F1 at .5/K2. Boundary auxiliary advances if same guard and better rank or AP improves .02.",
+  "final_rank": "Feasible first; then mean future recall - .1 false/min + .01 currentF1 at .5/K2; fixed seed42 representative.",
+  "reliable_gates": {
+    "current_f1_drop_max": 0.005,
+    "current_recall_min": 0.9,
+    "current_delay_p95_max": 1.5,
+    "future_recall_min": 0.8,
+    "future_false_per_min_max": 1.0
+  },
+  "fallback": "Do not replace stable original Joint seed42 without reliable gates. Research winner may be exported.",
+  "cv": "Top research candidate vs matched-horizon MLP: three source-grouped folds on train+val86 only, seed42 diagnostic. No test membership or data.",
+  "no_cartesian_search": true
+}

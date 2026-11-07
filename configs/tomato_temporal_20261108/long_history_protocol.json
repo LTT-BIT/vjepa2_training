@@ -1,0 +1,45 @@
+{
+  "source_baseline": "Same-horizon Joint MLP1.5s, sixteen frames10Hz",
+  "new_history": {
+    "sampler_version": "tomato-flexible-history-v1",
+    "frames": 16,
+    "sample_hz": 5,
+    "offsets_s": [
+      3.0,
+      2.8,
+      2.6,
+      2.4,
+      2.2,
+      2.0,
+      1.8,
+      1.6,
+      1.4,
+      1.2,
+      1.0,
+      0.8,
+      0.6,
+      0.4,
+      0.2,
+      0.0
+    ],
+    "latest_frame_retained": true,
+    "causal": true
+  },
+  "input_dimension": 4000,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "horizon_s": 1.5,
+  "architecture": "mlp",
+  "lambda_future": 0.5,
+  "batch_windows": 16,
+  "feature_splits": [
+    "train",
+    "val"
+  ],
+  "test_never_extracted": true,
+  "motivation": "Temporal heads over old features did not improve; test longer raw sensory context before increasing classifier complexity.",
+  "selection": "Use same fixed stage2 event and classification metrics; no gate relaxation; compare actual validation three-seed results."
+}

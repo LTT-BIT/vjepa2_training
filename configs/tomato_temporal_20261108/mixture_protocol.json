@@ -1,0 +1,24 @@
+{
+  "component_selection": "Use winner of previously locked second-stage recipe rule, never best seed.",
+  "candidates": {
+    "hybrid_new_future": 1.0,
+    "ensemble_half": 0.5
+  },
+  "fixed_current_source": "prior Current-only same seed",
+  "legacy_future": "prior Future-only1.5s same seed",
+  "head_horizon_s": 1.5,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "operating_point": {
+    "current_threshold": 0.5,
+    "current_k": 2,
+    "future_threshold": 0.5,
+    "future_k": 2
+  },
+  "selection": "Mean same rank and reliability gates as stage2; compare old independent1.5 with identical thresholds; retain old Joint stable default if gates fail.",
+  "motivation": "Preserve stronger Current-only model while testing new future representation and fixed probability averaging. No extra training or encoded frames.",
+  "cv_scope": "Mixtures evaluated on original validation only; no claim of cross-validation because fixed Current-only would leak into regrouped folds."
+}
