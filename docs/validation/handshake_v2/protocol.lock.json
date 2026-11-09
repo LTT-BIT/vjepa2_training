@@ -1,0 +1,335 @@
+{
+  "status": "EXPLORATORY_VAL_ONLY",
+  "candidates": [
+    {
+      "name": "H1_t0.8_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.8,
+        "K": 1,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": false,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H3_t0.8_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.8,
+        "K": 1,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H2_t0.8_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.8,
+        "K": 2,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": false,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H4_t0.8_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.8,
+        "K": 2,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H1_t0.9_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.9,
+        "K": 1,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": false,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H3_t0.9_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.9,
+        "K": 1,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H2_t0.9_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.9,
+        "K": 2,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": false,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H4_t0.9_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.9,
+        "K": 2,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H1_t0.95_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.95,
+        "K": 1,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": false,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H3_t0.95_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.95,
+        "K": 1,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H2_t0.95_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.95,
+        "K": 2,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": false,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H4_t0.95_ack1.5",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.95,
+        "K": 2,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": true,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H3_t0.8_ack1.0",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.8,
+        "K": 1,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.0,
+        "legal_edges": true,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H3_t0.8_ack2.0",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.8,
+        "K": 1,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 2.0,
+        "legal_edges": true,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H4_t0.8_ack1.0",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.8,
+        "K": 2,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.0,
+        "legal_edges": true,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "H4_t0.8_ack2.0",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.8,
+        "K": 2,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 2.0,
+        "legal_edges": true,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "BASE_H0_raw",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.0,
+        "theta_commit": 0.0,
+        "K": 1,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": false,
+        "ack_enabled": false,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    },
+    {
+      "name": "LEGAL_OFF_K2_ACK",
+      "config": {
+        "margin": 0.0,
+        "theta_prepare": 0.65,
+        "theta_commit": 0.8,
+        "K": 2,
+        "min_confirm_span_s": 0.0,
+        "theta_ack": 0.7,
+        "ack_timeout_s": 1.5,
+        "legal_edges": false,
+        "ack_enabled": true,
+        "latency_s": 0.09,
+        "plan_period_s": 0.5,
+        "plan_offset_s": 0.0,
+        "prediction_ttl_s": 0.75
+      }
+    }
+  ],
+  "predictions_sha256": "f88df6121def39d21a053500d1685e74de5d5440e469b7b654b334eaff3eca26",
+  "checkpoint_sha256": "9324cdb3287c407c259eafbc725ac3bc3d3df6d38646545e8435e0faa9ad03d9",
+  "five_hz": "NOT_RUN",
+  "camera_degradation": "NOT_RUN",
+  "test_scored": false,
+  "source_sha256": "90f8779ba044e02955167e5cdcacb97f71d457b144ba614c9104690c1b87ab23"
+}

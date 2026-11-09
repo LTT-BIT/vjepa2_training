@@ -9,6 +9,7 @@ def export_video(catalog,result,output,progress=lambda v:None):
     import av,cv2
     import numpy as np
     e=catalog.get(result['episode_id']);mode=result['prediction_mode'];key=result['result_id']
+    sim=result.get('handshake');height=800 if sim else 680
     dest=Path(output)/'ui_exports'/e['episode_id']/mode/key
     if (dest/'render_metadata.json').exists() and (dest/'annotated.mp4').exists():
         receipt=json.loads((dest/'render_metadata.json').read_text())
@@ -22,11 +23,11 @@ def export_video(catalog,result,output,progress=lambda v:None):
         inputs=[av.open(str(catalog.media(e['episode_id'],'cam'+str(i)))) for i in range(3)]
         decoders=[c.decode(video=0) for c in inputs]
         output_container=av.open(str(tmp),mode='w');stream=output_container.add_stream('libx264',rate=round(e['fps']))
-        stream.width=1152;stream.height=680;stream.pix_fmt='yuv420p';stream.options={'crf':'23','preset':'veryfast'}
+        stream.width=1152;stream.height=height;stream.pix_fmt='yuv420p';stream.options={'crf':'23','preset':'veryfast'}
         gt=e['annotation']['segments'];heads=MODES[mode];rows=result['rows']
         def text(img,s,x,y,color=(225,230,235),scale=.45):cv2.putText(img,s,(x,y),cv2.FONT_HERSHEY_SIMPLEX,scale,color,1,cv2.LINE_AA)
         for i in range(e['length']):
-            canvas=np.full((680,1152,3),22,dtype=np.uint8)
+            canvas=np.full((height,1152,3),22,dtype=np.uint8)
             for k,decoder in enumerate(decoders):
                 frame=next(decoder)
                 if frame.pts is None or abs(float(frame.time)-i/e['fps'])>1/e['fps']+.001:raise ValueError('Camera PTS mismatch')
@@ -41,6 +42,11 @@ def export_video(catalog,result,output,progress=lambda v:None):
                 text(canvas,f'{label}: {p["stage"]} {p["confidence"]:.3f} | {state} anchor={p["observed_at"]:.3f} target={target_time:.3f}'+(' TARGET_GT_UNSCORABLE' if not p['target_scorable'] else ''),12,375+j*45)
                 text(canvas,' | '.join(f'{k} {v:.3f}' for k,v in p['probabilities'].items()),12,393+j*45)
             tracks=[('GT(now)',[dict(start_s=s['start_frame']/e['fps'],end_s=s['end_frame']/e['fps'],stage=s['label']) for s in gt])]+[(h+('(+1s at original anchor)' if h=='future' else ''),result['tracks'][h]) for h in heads]
+            if sim:
+                events=[v for v in sim['events'] if v['time']<=i/e['fps']];state=events[-1] if events else dict(active_stage='pickup',policy_state='READY',pending=None)
+                text(canvas,f'SIMULATED Active={state["active_stage"]} state={state["policy_state"]} | prepare={sim["config"]["theta_prepare"]} commit={sim["config"]["theta_commit"]} K={sim["config"]["K"]}',12,465)
+                text(canvas,f'Pending={(state.get("pending") or {}).get("stage")} | ACK_at={next((v["time"] for v in reversed(events) if v["kind"]=="ack"),None)} | timeout_at={next((v["time"] for v in reversed(events) if v["kind"]=="timeout"),None)}',12,483,scale=.35)
+                tracks += [('Simulated Active (commit clock)',sim['active_intervals']),('Pending',sim['pending_intervals'])]
             for j,(name,segs) in enumerate(tracks):
                 y=500+j*52;text(canvas,name,12,y-7)
                 for seg in segs:
@@ -60,7 +66,8 @@ def export_video(catalog,result,output,progress=lambda v:None):
         meta=dict(episode_id=e['episode_id'],source_recording_id=e['source_recording_id'],prediction_mode=mode,result_id=key,
             prediction_hz=result.get('prediction_hz',2),provenance=result['provenance'],source_sha256=e['input_sha256'],frames=count,fps=e['fps'],duration_s=count/e['fps'],
             layout='three letterboxed cameras + GT and selected heads + observation-aligned tracks',elapsed_s=time.monotonic()-start,
-            generated_at=time.time(),video_sha256=sha(target))
+            handshake_config=sim['config'] if sim else None,simulation_id=sim['simulation_id'] if sim else None,generated_at=time.time(),video_sha256=sha(target))
+        if sim:write(dest/'handshake.json',sim)
         (dest/'anchors.jsonl').write_text(''.join(json.dumps(v)+'\n' for v in rows));write(dest/'render_metadata.json',meta)
         return dict(file=str(target),metadata=meta)
     except BaseException:

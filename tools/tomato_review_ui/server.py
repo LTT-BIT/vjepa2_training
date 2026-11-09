@@ -26,9 +26,9 @@ def byte_range(value,size):
 class App:
     def __init__(self,root,output,encoder_device="cuda"):
         self.catalog=Catalog(root);self.store=PredictionRepository(self.catalog,output,encoder_device)
-        self.pool=ThreadPoolExecutor(max_workers=1);self.jobs={};self.keys={};self.permissions={};self.sessions=set();self.lock=threading.Lock()
+        self.pool=ThreadPoolExecutor(max_workers=1);self.jobs={};self.keys={};self.permissions={};self.sessions=set();self.lock=threading.Lock();self.simulations={};self.sim_permissions={}
     def submit(self,owner,kind,data):
-        eid=data.get('episode_id');mode=data.get('prediction_mode');rid=data.get('result_id')
+        eid=data.get('episode_id');mode=data.get('prediction_mode');rid=data.get('result_id');sid=data.get('simulation_id')
         revision=None;hz=2
         if kind=='recognize':
             from .five_hz import validate_hz
@@ -43,7 +43,8 @@ class App:
                 if item:paths.append(Path(item['path']))
             revision=sha_bytes({str(p):sha(p) if p.is_file() else None for p in paths})
         elif rid not in self.permissions.get(owner,set()):raise PermissionError('Result not owned by session')
-        key=(owner,kind,eid,mode,rid,bool(data.get('regenerate',False)),revision,hz)
+        if sid and (sid not in self.sim_permissions.get(owner,set()) or self.simulations[sid]['result_id']!=rid):raise PermissionError('Simulation/result ownership mismatch')
+        key=(owner,kind,eid,mode,rid,sid,bool(data.get('regenerate',False)),revision,hz)
         with self.lock:
             if key in self.keys and self.jobs[self.keys[key]]['status']!='failed':
                 old=self.jobs[self.keys[key]]
@@ -60,6 +61,8 @@ class App:
                     self.permissions.setdefault(owner,set()).add(rid2);job['result_id']=rid2;job['source']=value['source']
                 else:
                     result=self.store.results[rid]
+                    if sid:
+                        sim=self.simulations[sid];result={**result,'model_result_id':rid,'result_id':sha_bytes(dict(result_id=rid,simulation_id=sid)),'handshake':sim,'provenance':{**result['provenance'],'handshake_config_sha256':sim['config_sha256']}}
                     job['export']=export_video(self.catalog,result,self.store.output,lambda v:job.update(progress=v))
                 job['status']='complete'
             except Exception as exc:job.update(status='failed',error=str(exc))
@@ -102,6 +105,9 @@ def handler(app):
                     q=parse_qs(parsed.query);return self.reply(app.catalog.listing(q.get('split',[''])[0],q.get('q',[''])[0],q.get('package',[''])[0]))
                 if len(parts)==3 and parts[:2]==['api','episodes']:return self.reply(app.catalog.detail(parts[2]))
                 if len(parts)==4 and parts[:2]==['api','media']:return self.file(app.catalog.media(parts[2],parts[3]))
+                if len(parts)==3 and parts[:2]==['api','handshakes']:
+                    if parts[2] not in app.sim_permissions.get(owner,set()):raise PermissionError('Simulation not owned')
+                    return self.reply(app.simulations[parts[2]])
                 if len(parts)==3 and parts[:2]==['api','predictions']:
                     if parts[2] not in app.permissions.get(owner,set()):raise PermissionError('Unknown result for session')
                     v=app.store.results[parts[2]];return self.reply({k:x for k,x in v.items() if k!='raw_rows'})
@@ -126,11 +132,16 @@ def handler(app):
                 if not 0<n<=4096:raise ValueError('Invalid request size')
                 data=json.loads(self.rfile.read(n))
                 if not isinstance(data,dict):raise ValueError('JSON object required')
+                if self.path=='/api/handshakes/simulate':
+                    if set(data)!={'result_id','config'} or data['result_id'] not in app.permissions.get(owner,set()):raise PermissionError('Owned result and config required')
+                    from .handshake_service import simulate
+                    value=simulate(app,data['result_id'],data['config']);sid=value['simulation_id'];app.simulations[sid]=value;app.sim_permissions.setdefault(owner,set()).add(sid)
+                    return self.reply(value)
                 if self.path=='/api/predictions/recognize':
                     if set(data)-{'episode_id','prediction_mode','regenerate','prediction_hz'}:raise ValueError('Unexpected input fields')
                     jid=app.submit(owner,'recognize',data)
                 elif self.path=='/api/exports/video':
-                    if set(data)!={'result_id'}:raise ValueError('Only result_id is accepted')
+                    if 'result_id' not in data or set(data)-{'result_id','simulation_id'}:raise ValueError('Only result_id is accepted')
                     jid=app.submit(owner,'export',data)
                 else:return self.reply(dict(error='Not found'),404)
                 self.reply(dict(job_id=jid),202)
