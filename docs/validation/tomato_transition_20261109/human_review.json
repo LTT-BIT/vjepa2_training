@@ -1,0 +1,6678 @@
+{
+  "original_labels_untouched": true,
+  "items": [
+    {
+      "event_id": "3e645bf4e137d0f836c9d7ff_b3",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "ordinal": 3,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "boundary_s": 60.43333333333333,
+      "boundary_frame": 1813,
+      "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "strict": {
+        "time": 60.43333333333333,
+        "previous": 2,
+        "label": 3,
+        "end": 73.3,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": null,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 60.43333333333333,
+        "previous": 2,
+        "label": 3,
+        "end": 73.3,
+        "detected": true,
+        "event_time": 61.5,
+        "offset_s": 1.06666666666667
+      },
+      "nearby_false_events": [
+        {
+          "time": 61.0,
+          "previous": 2,
+          "label": 3
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "same_transition_outside_allowed_time_window",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.05801245214533882,
+        "hand_speed_rms": 0.13999314211445751,
+        "max_state_gap_s": 0.033336639404296875
+      },
+      "probability_curve": {
+        "times_s": [
+          57.5,
+          58.0,
+          58.5,
+          59.0,
+          59.5,
+          60.0,
+          60.5,
+          61.0,
+          61.5,
+          62.0,
+          62.5,
+          63.0
+        ],
+        "current": [
+          [
+            6.99108039600379e-06,
+            5.6838504053904274e-06,
+            0.9999221865808489,
+            6.513848834978858e-05
+          ],
+          [
+            7.689569957868813e-06,
+            6.033851532978264e-06,
+            0.9997270825911414,
+            0.00025919398736773077
+          ],
+          [
+            1.4369662847972518e-06,
+            3.872924727487528e-06,
+            0.9998605867178958,
+            0.00013410339109188945
+          ],
+          [
+            1.6234285290365476e-05,
+            1.2207068224089803e-05,
+            0.9996295523680145,
+            0.0003420062784710754
+          ],
+          [
+            1.0772327222098734e-05,
+            2.303603426314956e-05,
+            0.9992663787286313,
+            0.0006998129098834821
+          ],
+          [
+            1.679443151740352e-05,
+            5.5377035864034685e-05,
+            0.9956699667265145,
+            0.004257861806104171
+          ],
+          [
+            0.0003535262181170917,
+            0.00015388049004807746,
+            0.9658031219680451,
+            0.03368947132378963
+          ],
+          [
+            0.004169717434798055,
+            0.0005862814682872955,
+            0.1360931297087841,
+            0.8591508713881305
+          ],
+          [
+            0.0014223663513593175,
+            9.2944289258141e-05,
+            0.03988955920993058,
+            0.9585951301494519
+          ],
+          [
+            0.000371913598014353,
+            5.908870969335072e-06,
+            0.003270896229304436,
+            0.9963512813017118
+          ],
+          [
+            0.00019477059117788164,
+            1.289905607968426e-05,
+            0.001390214396937848,
+            0.9984021159558045
+          ],
+          [
+            7.460970935461512e-05,
+            1.3178655021539355e-06,
+            0.0007589409564875329,
+            0.9991651314686558
+          ]
+        ],
+        "future": [
+          [
+            4.365401597220967e-10,
+            1.4574043740122108e-06,
+            0.9999985412918704,
+            8.672154653844903e-10
+          ],
+          [
+            8.589659011737616e-10,
+            3.237285778186857e-07,
+            0.9999942116234365,
+            5.463789019821877e-06
+          ],
+          [
+            8.072872676005586e-12,
+            1.2362632752543994e-07,
+            0.9999849541029258,
+            1.4922262673914414e-05
+          ],
+          [
+            4.897060286562467e-08,
+            1.2107805738009694e-07,
+            0.9998821228941498,
+            0.00011770705718975332
+          ],
+          [
+            1.3541069564914588e-10,
+            4.374910478645326e-07,
+            0.9971658256060252,
+            0.002833736767516391
+          ],
+          [
+            1.3680081065624706e-06,
+            0.000259536492157442,
+            0.773967548454522,
+            0.22577154704521407
+          ],
+          [
+            8.760116460472934e-06,
+            0.0003143972614351847,
+            0.023352440394525623,
+            0.9763244022275788
+          ],
+          [
+            0.0001041806795697161,
+            2.198277582793326e-06,
+            4.009768887373695e-05,
+            0.9998535233539737
+          ],
+          [
+            1.6673810290307264e-10,
+            2.7112226017076193e-09,
+            1.5097296415897229e-05,
+            0.9999848998256233
+          ],
+          [
+            5.06810983798005e-07,
+            4.1969847269607115e-10,
+            7.577828977896813e-09,
+            0.9999994851914887
+          ],
+          [
+            8.415032884122459e-10,
+            3.806147445800999e-11,
+            8.553422069261545e-08,
+            0.9999999135862144
+          ],
+          [
+            6.081620826090282e-08,
+            3.5602346060129406e-10,
+            6.485345401268912e-08,
+            0.9999998739743142
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 1813,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, same_transition_outside_allowed_time_window, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/3e645bf4e137d0f836c9d7ff_b3.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/3e645bf4e137d0f836c9d7ff_b3.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/3e645bf4e137d0f836c9d7ff_b3_contact.jpg",
+        "clip_start_s": 56.43333333333333,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 61.5,
+        "offset_s": 1.06666666666667,
+        "any_warning_time_s": null,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": true,
+            "event_time": 61.5,
+            "offset_s": 1.06666666666667
+          },
+          "future": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": true,
+            "event_time": 61.5,
+            "offset_s": 1.06666666666667
+          },
+          "future": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": true,
+            "event_time": 61.5,
+            "offset_s": 1.06666666666667
+          },
+          "future": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": true,
+            "event_time": 61.233333333333334,
+            "offset_s": 0.8000000000000043
+          },
+          "future": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": true,
+            "event_time": 61.233333333333334,
+            "offset_s": 0.8000000000000043
+          },
+          "future": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": true,
+            "event_time": 61.233333333333334,
+            "offset_s": 0.8000000000000043
+          },
+          "future": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": true,
+            "event_time": 61.5,
+            "offset_s": 1.06666666666667
+          },
+          "future": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": true,
+            "event_time": 61.5,
+            "offset_s": 1.06666666666667
+          },
+          "future": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": true,
+            "event_time": 61.5,
+            "offset_s": 1.06666666666667
+          },
+          "future": {
+            "time": 60.43333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 73.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": 0.56666666666667,
+      "primary_timing_diagnosis": "late_after_boundary"
+    },
+    {
+      "event_id": "3e645bf4e137d0f836c9d7ff_b4",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "ordinal": 4,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "boundary_s": 73.3,
+      "boundary_frame": 2199,
+      "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "strict": {
+        "time": 73.3,
+        "previous": 3,
+        "label": 0,
+        "end": 81.13333333333334,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": 72.0,
+      "stable_target_warning_s": 72.5,
+      "current": {
+        "time": 73.3,
+        "previous": 3,
+        "label": 0,
+        "end": 81.13333333333334,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "nearby_false_events": [],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "stable_target_probability_but_no_exact_from_to_change"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.019180036846669513,
+        "hand_speed_rms": 0.06973758679718617,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          70.5,
+          71.0,
+          71.5,
+          72.0,
+          72.5,
+          73.0,
+          73.5,
+          74.0,
+          74.5,
+          75.0,
+          75.5,
+          76.0
+        ],
+        "current": [
+          [
+            0.033460321351716685,
+            3.4890540454556095e-06,
+            0.0003457754287371342,
+            0.9661904141655007
+          ],
+          [
+            0.45941181665992525,
+            2.011288438078108e-05,
+            0.0002706285768642234,
+            0.5402974418788297
+          ],
+          [
+            0.9922725945177561,
+            1.3467124476790708e-05,
+            1.6073043205816573e-05,
+            0.007697865314561165
+          ],
+          [
+            0.9889040484968544,
+            2.4376592246518476e-06,
+            6.431087508241153e-06,
+            0.011087082756412778
+          ],
+          [
+            0.9996675240209434,
+            1.3798573286173152e-06,
+            1.63384619705189e-06,
+            0.0003294622755309794
+          ],
+          [
+            0.9999397325729258,
+            2.557694562490608e-07,
+            8.962510861374563e-08,
+            5.992203250953703e-05
+          ],
+          [
+            0.9999931810518561,
+            1.1971098643861735e-06,
+            1.05696634418356e-07,
+            5.516141645196421e-06
+          ],
+          [
+            0.9999032075446894,
+            7.908426514510441e-06,
+            4.2365196045853036e-06,
+            8.464750919145647e-05
+          ],
+          [
+            0.9999549688999164,
+            2.459441686314585e-06,
+            6.930780934068404e-07,
+            4.187858030402884e-05
+          ],
+          [
+            0.9998548781102081,
+            1.634252929689185e-06,
+            1.2120840098567824e-06,
+            0.0001422755528524275
+          ],
+          [
+            0.9999742800079787,
+            8.073775227570131e-07,
+            2.992701314950878e-07,
+            2.4613344366946278e-05
+          ],
+          [
+            0.9999979319497092,
+            7.331257534528972e-07,
+            1.2972527424942849e-07,
+            1.2051992630969494e-06
+          ]
+        ],
+        "future": [
+          [
+            0.3831178243879374,
+            2.0253568092096657e-05,
+            5.263096053281961e-09,
+            0.6168619167808744
+          ],
+          [
+            0.9926516644195598,
+            1.8034451670043291e-07,
+            8.309869495672217e-12,
+            0.007348155227613643
+          ],
+          [
+            0.9999910902304692,
+            1.5710564095650564e-08,
+            4.875543356223696e-14,
+            8.894058917866433e-06
+          ],
+          [
+            0.9999116103125363,
+            1.0518402705983604e-06,
+            8.689815397392378e-13,
+            8.733784632401942e-05
+          ],
+          [
+            0.9999982867730753,
+            8.758684858318462e-07,
+            4.0766869156220096e-14,
+            8.373583979014592e-07
+          ],
+          [
+            0.9999996456300607,
+            2.8098508640865247e-07,
+            2.5999161662872912e-17,
+            7.338485292502022e-08
+          ],
+          [
+            0.9999999177528883,
+            7.86973477923635e-08,
+            6.10961582758102e-17,
+            3.549763905865772e-09
+          ],
+          [
+            0.9999988981544902,
+            4.5112090464113875e-07,
+            4.307868980392141e-15,
+            6.507246007922041e-07
+          ],
+          [
+            0.9999999860018822,
+            6.401894121897432e-09,
+            1.977735287253488e-17,
+            7.596223733285075e-09
+          ],
+          [
+            0.999999966216309,
+            2.0922039207454842e-08,
+            1.0195087526768433e-16,
+            1.2861651823545702e-08
+          ],
+          [
+            0.9999997896042111,
+            3.061279836271291e-08,
+            1.9916960557567183e-15,
+            1.7978298867774325e-07
+          ],
+          [
+            0.9999986304046127,
+            1.36736148979715e-06,
+            5.078324891637128e-15,
+            2.2338923664662894e-09
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 2199,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, stable_target_probability_but_no_exact_from_to_change. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/3e645bf4e137d0f836c9d7ff_b4.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/3e645bf4e137d0f836c9d7ff_b4.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/3e645bf4e137d0f836c9d7ff_b4_contact.jpg",
+        "clip_start_s": 69.3,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 72.0,
+        "offset_s": -1.2999999999999972,
+        "any_warning_time_s": null,
+        "prompt_premature": true
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 73.3,
+            "previous": 3,
+            "label": 0,
+            "end": 81.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": -3.299999999999997,
+      "primary_timing_diagnosis": "premature_before_horizon"
+    },
+    {
+      "event_id": "3e645bf4e137d0f836c9d7ff_b5",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "ordinal": 5,
+      "from_stage": "pickup",
+      "to_stage": "harvest",
+      "boundary_s": 81.13333333333334,
+      "boundary_frame": 2434,
+      "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "strict": {
+        "time": 81.13333333333334,
+        "previous": 0,
+        "label": 1,
+        "end": 129.2,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": 81.0,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 81.13333333333334,
+        "previous": 0,
+        "label": 1,
+        "end": 129.2,
+        "detected": true,
+        "event_time": 82.0,
+        "offset_s": 0.86666666666666
+      },
+      "nearby_false_events": [
+        {
+          "time": 81.5,
+          "previous": 0,
+          "label": 1
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "warning_not_sustained_for_two_observations",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.0333943382622173,
+        "hand_speed_rms": 0.04085643262972561,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          78.5,
+          79.0,
+          79.5,
+          80.0,
+          80.5,
+          81.0,
+          81.5,
+          82.0,
+          82.5,
+          83.0,
+          83.5,
+          84.0
+        ],
+        "current": [
+          [
+            0.9999972442769575,
+            2.749024817660379e-06,
+            1.3453536333726759e-09,
+            5.352871270614675e-09
+          ],
+          [
+            0.9999955633846875,
+            4.419373991434144e-06,
+            2.0747483013186504e-09,
+            1.5166572728715708e-08
+          ],
+          [
+            0.999995239431383,
+            4.7126340986764365e-06,
+            5.9646662699012354e-09,
+            4.196985187428688e-08
+          ],
+          [
+            0.999969891093183,
+            2.9976028843931708e-05,
+            3.905362529653319e-08,
+            9.382434790562364e-08
+          ],
+          [
+            0.9999915739355572,
+            8.421290968865185e-06,
+            7.418293191052963e-10,
+            4.031644853803428e-09
+          ],
+          [
+            0.9992370487028474,
+            0.0007621698835605508,
+            5.686631797646692e-07,
+            2.1275041235380427e-07
+          ],
+          [
+            0.00020896684081409615,
+            0.9997900279951171,
+            1.0047338639950092e-06,
+            4.302049920247503e-10
+          ],
+          [
+            0.00025429817305172727,
+            0.9997441300643025,
+            1.569138403827497e-06,
+            2.624242079375096e-09
+          ],
+          [
+            1.2241007297925327e-05,
+            0.9999877460483129,
+            1.2305095394139805e-08,
+            6.392937821966879e-10
+          ],
+          [
+            7.86793267263026e-09,
+            0.9999999921174533,
+            5.925522251542606e-12,
+            8.688706738521632e-12
+          ],
+          [
+            8.981781421068906e-09,
+            0.9999999910108454,
+            7.500294011871572e-13,
+            6.623062326701129e-12
+          ],
+          [
+            1.0433963054083592e-11,
+            0.9999999999894826,
+            1.5005330308591e-14,
+            6.829398102946141e-14
+          ]
+        ],
+        "future": [
+          [
+            0.9996725026679278,
+            0.0003274973320716834,
+            4.756917515954813e-16,
+            7.854069364049736e-17
+          ],
+          [
+            0.9996592391276684,
+            0.0003407608723273847,
+            4.1676429571789524e-15,
+            5.3070871053019487e-17
+          ],
+          [
+            0.9912080766567061,
+            0.008791923342999813,
+            2.9212796873316667e-13,
+            1.9909334960153507e-15
+          ],
+          [
+            0.9774555314602753,
+            0.022544468497813705,
+            4.190509079416028e-11,
+            5.8800166004492944e-15
+          ],
+          [
+            0.7868089288038801,
+            0.21319107119611486,
+            5.09879668099252e-15,
+            4.3492654437292816e-17
+          ],
+          [
+            9.57115290978793e-06,
+            0.9999904288466712,
+            4.189422326105018e-13,
+            2.52764590962835e-18
+          ],
+          [
+            5.119562348264742e-10,
+            0.9999999994880233,
+            2.043772828408891e-14,
+            6.725523215486848e-24
+          ],
+          [
+            3.991515719120786e-14,
+            0.99999999999996,
+            1.0587427396246018e-17,
+            2.014043605416991e-25
+          ],
+          [
+            1.297362112097164e-15,
+            0.9999999999999987,
+            6.369839813230165e-18,
+            1.962504904822499e-25
+          ],
+          [
+            2.203377981699202e-22,
+            1.0,
+            1.1220435170504226e-24,
+            3.8717323044025413e-31
+          ],
+          [
+            1.0584032654556674e-25,
+            1.0,
+            7.91414529921927e-29,
+            2.3141004567724715e-35
+          ],
+          [
+            1.9962439480275194e-33,
+            1.0,
+            3.8515704755127237e-36,
+            9.881626524395887e-43
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 2434,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, warning_not_sustained_for_two_observations, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/3e645bf4e137d0f836c9d7ff_b5.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/3e645bf4e137d0f836c9d7ff_b5.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/3e645bf4e137d0f836c9d7ff_b5_contact.jpg",
+        "clip_start_s": 77.13333333333334,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 82.0,
+        "offset_s": 0.86666666666666,
+        "any_warning_time_s": 81.0,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 82.0,
+            "offset_s": 0.86666666666666
+          },
+          "future": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 82.0,
+            "offset_s": 0.86666666666666
+          },
+          "future": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 82.0,
+            "offset_s": 0.86666666666666
+          },
+          "future": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 81.5,
+            "offset_s": 0.36666666666666003
+          },
+          "future": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 81.0,
+            "offset_s": -0.13333333333333997
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 81.5,
+            "offset_s": 0.36666666666666003
+          },
+          "future": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 81.0,
+            "offset_s": -0.13333333333333997
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 81.5,
+            "offset_s": 0.36666666666666003
+          },
+          "future": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 81.0,
+            "offset_s": -0.13333333333333997
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 81.73333333333333,
+            "offset_s": 0.5999999999999943
+          },
+          "future": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 81.73333333333333,
+            "offset_s": 0.5999999999999943
+          },
+          "future": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": true,
+            "event_time": 81.73333333333333,
+            "offset_s": 0.5999999999999943
+          },
+          "future": {
+            "time": 81.13333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": 0.36666666666666003,
+      "primary_timing_diagnosis": "late_after_boundary"
+    },
+    {
+      "event_id": "27d8bc0413a42341c7e8c3e5_b4",
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+      "ordinal": 4,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "boundary_s": 108.3,
+      "boundary_frame": 3249,
+      "annotation_sha256": "88f06ef9f62f5626b7f518c87da5e3960f1ab346c8ce34ae75068577eed64cba",
+      "strict": {
+        "time": 108.3,
+        "previous": 3,
+        "label": 0,
+        "end": 119.4,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": null,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 108.3,
+        "previous": 3,
+        "label": 0,
+        "end": 119.4,
+        "detected": true,
+        "event_time": 109.5,
+        "offset_s": 1.2000000000000028
+      },
+      "nearby_false_events": [
+        {
+          "time": 109.0,
+          "previous": 3,
+          "label": 0
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "same_transition_outside_allowed_time_window",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.02448589786248059,
+        "hand_speed_rms": 0.2103488647051221,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          105.5,
+          106.0,
+          106.5,
+          107.0,
+          107.5,
+          108.0,
+          108.5,
+          109.0,
+          109.5,
+          110.0,
+          110.5,
+          111.0
+        ],
+        "current": [
+          [
+            8.45999795848727e-07,
+            1.32723672002469e-09,
+            3.431049067724568e-07,
+            0.9999988095680605
+          ],
+          [
+            4.4466126927649777e-07,
+            2.7751480853442153e-10,
+            3.485274388083995e-07,
+            0.9999992065337772
+          ],
+          [
+            2.9721205552312718e-06,
+            4.215882167416438e-09,
+            2.581872498563225e-06,
+            0.9999944417910641
+          ],
+          [
+            1.5520627969550516e-05,
+            3.813448967528367e-09,
+            2.5796856912273753e-07,
+            0.9999842175900123
+          ],
+          [
+            9.697505916505691e-05,
+            1.026435479270521e-08,
+            4.5777098004338806e-07,
+            0.9999025569055001
+          ],
+          [
+            2.719132352990002e-05,
+            2.046505087675357e-09,
+            2.6655757752491047e-07,
+            0.9999725400723876
+          ],
+          [
+            0.2686273230326718,
+            8.31291637487033e-06,
+            3.268207182889166e-05,
+            0.7313316819791245
+          ],
+          [
+            0.7960485334775609,
+            4.280814364838541e-06,
+            2.5800339390486472e-05,
+            0.20392138536868382
+          ],
+          [
+            0.9991761155914956,
+            2.493409435566701e-06,
+            2.7468418382368622e-06,
+            0.0008186441572308482
+          ],
+          [
+            0.9998714500760072,
+            4.5693545125271903e-07,
+            3.2186268138122855e-07,
+            0.00012777112586025472
+          ],
+          [
+            0.9988379878256296,
+            3.3882116017841696e-06,
+            7.038003871840527e-06,
+            0.0011515859588965612
+          ],
+          [
+            0.997049432048379,
+            4.920885686062719e-06,
+            2.8027541650009764e-05,
+            0.0029176195242849915
+          ]
+        ],
+        "future": [
+          [
+            9.623224813393856e-06,
+            1.3392387959254377e-12,
+            1.3943261219643813e-14,
+            0.9999903767738335
+          ],
+          [
+            0.007918791148667326,
+            1.273659642538853e-11,
+            5.591329975083414e-14,
+            0.9920812088385401
+          ],
+          [
+            0.0006426300727496252,
+            4.522311344347199e-12,
+            2.566297813072506e-14,
+            0.9993573699227024
+          ],
+          [
+            0.014768621678345516,
+            6.767803962256195e-13,
+            7.746374674658873e-16,
+            0.9852313783209768
+          ],
+          [
+            0.06870553708761303,
+            1.6312166756205383e-13,
+            1.5237968422527761e-15,
+            0.9312944629122224
+          ],
+          [
+            0.02007069120263532,
+            1.6349992270790632e-13,
+            6.193149006595896e-15,
+            0.9799293087971951
+          ],
+          [
+            0.9998176790333637,
+            4.171473211936521e-13,
+            1.9497145318356647e-14,
+            0.00018232096619965094
+          ],
+          [
+            0.9999999167173337,
+            6.3581415631987956e-15,
+            7.260833642838248e-18,
+            8.328265990007999e-08
+          ],
+          [
+            0.9999999941786604,
+            3.7892353608154226e-16,
+            1.470192750516748e-18,
+            5.82133923361442e-09
+          ],
+          [
+            0.999999838667329,
+            1.970417490201601e-13,
+            3.1220580635215268e-15,
+            1.6133247097330871e-07
+          ],
+          [
+            0.9999289066299847,
+            9.199312183763319e-10,
+            2.477507291836364e-09,
+            7.10899725769252e-05
+          ],
+          [
+            0.9995236382391504,
+            1.1312967652724598e-08,
+            1.012125052905351e-09,
+            0.0004763494357569589
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 3249,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, same_transition_outside_allowed_time_window, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/27d8bc0413a42341c7e8c3e5_b4.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/27d8bc0413a42341c7e8c3e5_b4.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/27d8bc0413a42341c7e8c3e5_b4_contact.jpg",
+        "clip_start_s": 104.3,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 110.0,
+        "offset_s": 1.7000000000000028,
+        "any_warning_time_s": null,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.5,
+            "offset_s": 1.2000000000000028
+          },
+          "future": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.5,
+            "offset_s": 1.2000000000000028
+          },
+          "future": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.5,
+            "offset_s": 1.2000000000000028
+          },
+          "future": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.0,
+            "offset_s": 0.7000000000000028
+          },
+          "future": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.23333333333333,
+            "offset_s": 0.9333333333333371
+          },
+          "future": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.23333333333333,
+            "offset_s": 0.9333333333333371
+          },
+          "future": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.23333333333333,
+            "offset_s": 0.9333333333333371
+          },
+          "future": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.5,
+            "offset_s": 1.2000000000000028
+          },
+          "future": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.5,
+            "offset_s": 1.2000000000000028
+          },
+          "future": {
+            "time": 108.3,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": 0.7000000000000028,
+      "primary_timing_diagnosis": "late_after_boundary"
+    },
+    {
+      "event_id": "0b12ac0fda9d7cd77dee6e60_b3",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "ordinal": 3,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "boundary_s": 80.8,
+      "boundary_frame": 2424,
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "strict": {
+        "time": 80.8,
+        "previous": 2,
+        "label": 3,
+        "end": 99.16666666666667,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": 79.5,
+      "stable_target_warning_s": 80.0,
+      "current": {
+        "time": 80.8,
+        "previous": 2,
+        "label": 3,
+        "end": 99.16666666666667,
+        "detected": true,
+        "event_time": 81.5,
+        "offset_s": 0.7000000000000028
+      },
+      "nearby_false_events": [
+        {
+          "time": 78.0,
+          "previous": 2,
+          "label": 3
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "stable_target_probability_but_no_exact_from_to_change",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.03891953330556105,
+        "hand_speed_rms": 0.18325048625491813,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          78.0,
+          78.5,
+          79.0,
+          79.5,
+          80.0,
+          80.5,
+          81.0,
+          81.5,
+          82.0,
+          82.5,
+          83.0,
+          83.5
+        ],
+        "current": [
+          [
+            3.771622571486933e-05,
+            0.00013111183060493062,
+            0.9972858271913982,
+            0.0025453447522818195
+          ],
+          [
+            2.8360443347243963e-05,
+            2.9111663028838697e-05,
+            0.9971533161337836,
+            0.002789211759840434
+          ],
+          [
+            0.0003082838775501065,
+            5.932269512310217e-05,
+            0.9095258323145127,
+            0.09010656111281416
+          ],
+          [
+            0.00024101742134617605,
+            5.008700497255354e-05,
+            0.8922395258844154,
+            0.107469369689266
+          ],
+          [
+            3.6160901966064465e-05,
+            5.3351450742913756e-05,
+            0.8243251174607538,
+            0.1755853701865373
+          ],
+          [
+            0.00018306033167381965,
+            3.5598621336847614e-05,
+            0.788202751437189,
+            0.2115785896098004
+          ],
+          [
+            0.0003154033064933746,
+            2.4287699905390866e-05,
+            0.0465057246416841,
+            0.9531545843519172
+          ],
+          [
+            1.790036829372264e-05,
+            4.338283935321894e-06,
+            0.0035654057889914527,
+            0.9964123555587794
+          ],
+          [
+            0.0007620004260335649,
+            1.5866521623974608e-06,
+            0.0003659782007521611,
+            0.9988704347210517
+          ],
+          [
+            0.0011913701329108,
+            1.6872357570577455e-06,
+            0.0001645873750452308,
+            0.9986423552562869
+          ],
+          [
+            8.757251259895024e-06,
+            7.64122067439561e-08,
+            0.0001454443273166479,
+            0.9998457220092168
+          ],
+          [
+            7.496975158982837e-06,
+            9.405867097147536e-07,
+            0.0007295177541431897,
+            0.999262044683988
+          ]
+        ],
+        "future": [
+          [
+            4.710099947428448e-09,
+            2.4461885563983345e-07,
+            0.0033039108201808973,
+            0.9966958398508636
+          ],
+          [
+            3.39333316779199e-11,
+            3.7751198391187584e-08,
+            0.0009767007366328969,
+            0.9990232614782354
+          ],
+          [
+            1.2358643467000679e-07,
+            2.650478248951251e-07,
+            3.6513518966417164e-05,
+            0.9999630978467741
+          ],
+          [
+            3.5462432931500767e-10,
+            5.527507446658356e-09,
+            2.88728007413372e-06,
+            0.9999971068377942
+          ],
+          [
+            7.433599785455312e-09,
+            1.528876373977518e-09,
+            9.05269661238375e-10,
+            0.9999999901322542
+          ],
+          [
+            4.856037127308934e-12,
+            1.9545620252343212e-11,
+            3.8178211285635737e-10,
+            0.9999999995938162
+          ],
+          [
+            3.4589697809102498e-09,
+            1.2137616093386394e-10,
+            3.4992073759112333e-09,
+            0.9999999929204466
+          ],
+          [
+            8.576026699590632e-11,
+            5.682780671531056e-12,
+            1.1343364119009022e-08,
+            0.9999999885651928
+          ],
+          [
+            2.251801452579995e-06,
+            3.711612744528082e-10,
+            2.1941476034475214e-08,
+            0.9999977258859101
+          ],
+          [
+            2.281397384087279e-09,
+            4.4706564120240613e-10,
+            3.9516011753500035e-06,
+            0.9999960456703616
+          ],
+          [
+            2.4631387601631156e-09,
+            8.703070092813908e-11,
+            5.368158694056166e-07,
+            0.9999994606339611
+          ],
+          [
+            1.3958795079945278e-15,
+            2.7053857794660133e-14,
+            1.289484977692271e-08,
+            0.9999999871051216
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 2424,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, stable_target_probability_but_no_exact_from_to_change, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/0b12ac0fda9d7cd77dee6e60_b3.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/0b12ac0fda9d7cd77dee6e60_b3.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/0b12ac0fda9d7cd77dee6e60_b3_contact.jpg",
+        "clip_start_s": 76.8,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 81.5,
+        "offset_s": 0.7000000000000028,
+        "any_warning_time_s": 79.5,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": true,
+            "event_time": 81.5,
+            "offset_s": 0.7000000000000028
+          },
+          "future": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": true,
+            "event_time": 81.5,
+            "offset_s": 0.7000000000000028
+          },
+          "future": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": true,
+            "event_time": 81.5,
+            "offset_s": 0.7000000000000028
+          },
+          "future": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": true,
+            "event_time": 81.23333333333333,
+            "offset_s": 0.4333333333333371
+          },
+          "future": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": true,
+            "event_time": 81.23333333333333,
+            "offset_s": 0.4333333333333371
+          },
+          "future": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": true,
+            "event_time": 81.23333333333333,
+            "offset_s": 0.4333333333333371
+          },
+          "future": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": true,
+            "event_time": 81.5,
+            "offset_s": 0.7000000000000028
+          },
+          "future": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": true,
+            "event_time": 81.5,
+            "offset_s": 0.7000000000000028
+          },
+          "future": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": true,
+            "event_time": 81.5,
+            "offset_s": 0.7000000000000028
+          },
+          "future": {
+            "time": 80.8,
+            "previous": 2,
+            "label": 3,
+            "end": 99.16666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": -2.799999999999997,
+      "primary_timing_diagnosis": "premature_before_horizon"
+    },
+    {
+      "event_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "ordinal": 4,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "boundary_s": 99.16666666666667,
+      "boundary_frame": 2975,
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "strict": {
+        "time": 99.16666666666667,
+        "previous": 3,
+        "label": 0,
+        "end": 113.6,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": 98.0,
+      "stable_target_warning_s": 98.5,
+      "current": {
+        "time": 99.16666666666667,
+        "previous": 3,
+        "label": 0,
+        "end": 113.6,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "nearby_false_events": [
+        {
+          "time": 96.5,
+          "previous": 3,
+          "label": 0
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "stable_target_probability_but_no_exact_from_to_change",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.11315814177749269,
+        "hand_speed_rms": 0.32769712946055096,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          96.5,
+          97.0,
+          97.5,
+          98.0,
+          98.5,
+          99.0,
+          99.5,
+          100.0,
+          100.5,
+          101.0,
+          101.5,
+          102.0
+        ],
+        "current": [
+          [
+            0.0034349504023413503,
+            3.6294715679423263e-07,
+            5.3405621356292605e-06,
+            0.9965593460883662
+          ],
+          [
+            0.00036404872461878046,
+            1.7832750555890687e-07,
+            6.02388841021349e-06,
+            0.9996297490594654
+          ],
+          [
+            0.009801653952197011,
+            2.145448401159985e-06,
+            1.610140187729486e-05,
+            0.9901800991975246
+          ],
+          [
+            0.000296083903455206,
+            5.224468494680246e-08,
+            1.0312469519020011e-05,
+            0.999693551382341
+          ],
+          [
+            0.005999888584766876,
+            3.618372578712586e-06,
+            0.0005135730221554374,
+            0.9934829200204991
+          ],
+          [
+            0.01284331602751555,
+            4.031577624865041e-06,
+            0.00021858974495983467,
+            0.9869340626498997
+          ],
+          [
+            0.606940989843614,
+            0.00017478443605479135,
+            0.0012269108710634925,
+            0.3916573148492678
+          ],
+          [
+            0.39663713121744043,
+            2.302246064836451e-06,
+            2.9595776289248077e-05,
+            0.6033309707602055
+          ],
+          [
+            0.6298879190399109,
+            2.020442670488316e-06,
+            6.05367953586604e-06,
+            0.37010400683788275
+          ],
+          [
+            0.3140751979231118,
+            2.3918358453543253e-07,
+            1.0715846278142946e-06,
+            0.6859234913086758
+          ],
+          [
+            0.9042918556847849,
+            5.946517047367223e-07,
+            3.993700227408212e-07,
+            0.09570715029348766
+          ],
+          [
+            0.5086583081086857,
+            1.9869547587065225e-07,
+            1.7292926488688834e-07,
+            0.49134132026657357
+          ]
+        ],
+        "future": [
+          [
+            0.9767651746049832,
+            7.740915247320969e-10,
+            3.2312721901046884e-14,
+            0.023234824620893078
+          ],
+          [
+            0.7886087048266279,
+            9.034296018813032e-08,
+            5.5409783549609426e-12,
+            0.21139120482487084
+          ],
+          [
+            0.5576938091655281,
+            3.4273454536915044e-09,
+            2.167049486050277e-14,
+            0.44230618740710476
+          ],
+          [
+            0.9638283280400544,
+            6.993132676665432e-09,
+            3.548037005960461e-12,
+            0.03617166496326482
+          ],
+          [
+            0.9998583040475582,
+            3.878358442102324e-13,
+            4.721782916905338e-13,
+            0.00014169595158169173
+          ],
+          [
+            0.998062525379464,
+            4.7882679887503e-14,
+            3.678610241253017e-14,
+            0.0019374746204512405
+          ],
+          [
+            0.9992363890274499,
+            1.2652371216589332e-14,
+            1.6344718227736634e-13,
+            0.0007636109723738858
+          ],
+          [
+            0.990877121706241,
+            4.37643958841123e-13,
+            1.2130123072809793e-13,
+            0.009122878293200147
+          ],
+          [
+            0.9408888536755512,
+            1.035047982634685e-11,
+            1.8256583316045477e-14,
+            0.059111146314080196
+          ],
+          [
+            0.7282108849187618,
+            5.225565413625449e-10,
+            9.856250153472034e-15,
+            0.27178911455867183
+          ],
+          [
+            0.9618238262628229,
+            6.186476378323115e-10,
+            5.803204015797246e-16,
+            0.03817617311852875
+          ],
+          [
+            0.31802930911119326,
+            2.8064548908755335e-09,
+            3.9419216529097574e-16,
+            0.6819706880823514
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 2975,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, stable_target_probability_but_no_exact_from_to_change, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/0b12ac0fda9d7cd77dee6e60_b4.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/0b12ac0fda9d7cd77dee6e60_b4.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/0b12ac0fda9d7cd77dee6e60_b4_contact.jpg",
+        "clip_start_s": 95.16666666666667,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 103.0,
+        "offset_s": 3.8333333333333286,
+        "any_warning_time_s": 98.0,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": true,
+            "event_time": 100.0,
+            "offset_s": 0.8333333333333286
+          },
+          "future": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": true,
+            "event_time": 99.73333333333333,
+            "offset_s": 0.5666666666666629
+          },
+          "future": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": true,
+            "event_time": 99.73333333333333,
+            "offset_s": 0.5666666666666629
+          },
+          "future": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": true,
+            "event_time": 98.5,
+            "offset_s": -0.6666666666666714
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": true,
+            "event_time": 99.73333333333333,
+            "offset_s": 0.5666666666666629
+          },
+          "future": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": true,
+            "event_time": 100.0,
+            "offset_s": 0.8333333333333286
+          },
+          "future": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": true,
+            "event_time": 98.73333333333333,
+            "offset_s": -0.4333333333333371
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 99.16666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 113.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": -2.6666666666666714,
+      "primary_timing_diagnosis": "premature_before_horizon"
+    },
+    {
+      "event_id": "0b12ac0fda9d7cd77dee6e60_b5",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "ordinal": 5,
+      "from_stage": "pickup",
+      "to_stage": "harvest",
+      "boundary_s": 113.6,
+      "boundary_frame": 3408,
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "strict": {
+        "time": 113.6,
+        "previous": 0,
+        "label": 1,
+        "end": 175.56666666666666,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": 112.5,
+      "stable_target_warning_s": 113.0,
+      "current": {
+        "time": 113.6,
+        "previous": 0,
+        "label": 1,
+        "end": 175.56666666666666,
+        "detected": true,
+        "event_time": 114.5,
+        "offset_s": 0.9000000000000057
+      },
+      "nearby_false_events": [
+        {
+          "time": 111.0,
+          "previous": 0,
+          "label": 1
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "stable_target_probability_but_no_exact_from_to_change",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.04261681934572935,
+        "hand_speed_rms": 0.013766648261646688,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          111.0,
+          111.5,
+          112.0,
+          112.5,
+          113.0,
+          113.5,
+          114.0,
+          114.5,
+          115.0,
+          115.5,
+          116.0,
+          116.5
+        ],
+        "current": [
+          [
+            0.9999990788567089,
+            9.073718479594527e-07,
+            1.902595776210543e-11,
+            1.3752417287520484e-08
+          ],
+          [
+            0.9999979949831017,
+            2.004991571901772e-06,
+            2.090311784537288e-13,
+            2.5117471170636572e-11
+          ],
+          [
+            0.9999968871415915,
+            3.1121705645502745e-06,
+            3.689612095962803e-12,
+            6.84154179964975e-10
+          ],
+          [
+            0.9999970872417377,
+            2.9127051522684245e-06,
+            1.6376999991417728e-13,
+            5.294623403366199e-11
+          ],
+          [
+            0.9999791898175421,
+            2.0799674973845068e-05,
+            2.576076290121703e-11,
+            1.0481723269785764e-08
+          ],
+          [
+            0.9999011577234472,
+            9.88416069096794e-05,
+            1.5281209422294735e-12,
+            6.68114981046611e-10
+          ],
+          [
+            0.0005923870564125363,
+            0.9994076113188534,
+            1.2084292484796783e-09,
+            4.1630496648266137e-10
+          ],
+          [
+            0.0005556194650298301,
+            0.9994443804932686,
+            5.57883330837296e-12,
+            3.612283959669409e-11
+          ],
+          [
+            5.1163255164690746e-05,
+            0.9999488365227184,
+            6.760820149007864e-12,
+            2.1535599909653448e-10
+          ],
+          [
+            1.4078839251870934e-06,
+            0.9999985920967793,
+            3.134118318513557e-13,
+            1.898210740297387e-11
+          ],
+          [
+            1.4570158784438757e-08,
+            0.9999999854250017,
+            1.2874685989096583e-13,
+            4.710656004435986e-12
+          ],
+          [
+            2.5952035844574213e-09,
+            0.9999999974040434,
+            2.1401496584953256e-13,
+            5.389600098453467e-13
+          ]
+        ],
+        "future": [
+          [
+            0.0662418210235936,
+            0.9337581789764064,
+            7.666171580852499e-19,
+            4.720375388696001e-17
+          ],
+          [
+            0.7570945778043803,
+            0.24290542219561986,
+            3.9150408156375453e-23,
+            3.280697713600408e-20
+          ],
+          [
+            0.0282826977627765,
+            0.9717173022372234,
+            4.148662748873626e-20,
+            1.1295953414994066e-17
+          ],
+          [
+            5.5455388569420194e-05,
+            0.9999445446114305,
+            6.154952054593873e-24,
+            1.3104819108823748e-21
+          ],
+          [
+            1.1121709248239739e-09,
+            0.999999998887829,
+            6.119948585140227e-23,
+            3.9757636688881217e-22
+          ],
+          [
+            2.5858448709886704e-14,
+            0.9999999999999742,
+            6.48041107088327e-30,
+            5.432860770065952e-28
+          ],
+          [
+            9.205320949686853e-21,
+            1.0,
+            1.896689523174446e-30,
+            9.497742335709261e-35
+          ],
+          [
+            1.5264897678419674e-28,
+            1.0,
+            1.4321996345832282e-44,
+            7.219175608686263e-47
+          ],
+          [
+            7.453643499780459e-23,
+            1.0,
+            7.138062481937486e-40,
+            6.2377405419993e-41
+          ],
+          [
+            4.496236186019418e-28,
+            1.0,
+            8.859200234204613e-47,
+            2.4160383468657225e-46
+          ],
+          [
+            7.04926836257959e-28,
+            1.0,
+            3.432268547274379e-48,
+            1.5097841542140222e-48
+          ],
+          [
+            1.1201075152621975e-33,
+            1.0,
+            3.0455384436943607e-53,
+            5.248042839114837e-54
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 3408,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, stable_target_probability_but_no_exact_from_to_change, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/0b12ac0fda9d7cd77dee6e60_b5.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/0b12ac0fda9d7cd77dee6e60_b5.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/0b12ac0fda9d7cd77dee6e60_b5_contact.jpg",
+        "clip_start_s": 109.6,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 114.5,
+        "offset_s": 0.9000000000000057,
+        "any_warning_time_s": 112.5,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 114.5,
+            "offset_s": 0.9000000000000057
+          },
+          "future": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 113.0,
+            "offset_s": -0.5999999999999943
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 114.5,
+            "offset_s": 0.9000000000000057
+          },
+          "future": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 113.5,
+            "offset_s": -0.09999999999999432
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 114.5,
+            "offset_s": 0.9000000000000057
+          },
+          "future": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 114.0,
+            "offset_s": 0.4000000000000057
+          },
+          "future": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 112.73333333333333,
+            "offset_s": -0.86666666666666
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 114.0,
+            "offset_s": 0.4000000000000057
+          },
+          "future": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 113.23333333333333,
+            "offset_s": -0.36666666666666003
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 114.0,
+            "offset_s": 0.4000000000000057
+          },
+          "future": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 114.23333333333333,
+            "offset_s": 0.63333333333334
+          },
+          "future": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 113.0,
+            "offset_s": -0.5999999999999943
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 114.23333333333333,
+            "offset_s": 0.63333333333334
+          },
+          "future": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 113.5,
+            "offset_s": -0.09999999999999432
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 114.23333333333333,
+            "offset_s": 0.63333333333334
+          },
+          "future": {
+            "time": 113.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": -2.5999999999999943,
+      "primary_timing_diagnosis": "premature_before_horizon"
+    },
+    {
+      "event_id": "f53f0b6fb7f3888f87a0f8ff_b3",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "ordinal": 3,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "boundary_s": 66.23333333333333,
+      "boundary_frame": 1987,
+      "annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "strict": {
+        "time": 66.23333333333333,
+        "previous": 2,
+        "label": 3,
+        "end": 96.26666666666667,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": null,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 66.23333333333333,
+        "previous": 2,
+        "label": 3,
+        "end": 96.26666666666667,
+        "detected": true,
+        "event_time": 67.0,
+        "offset_s": 0.7666666666666657
+      },
+      "nearby_false_events": [
+        {
+          "time": 67.0,
+          "previous": 2,
+          "label": 3
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "same_transition_outside_allowed_time_window",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.048023236211437385,
+        "hand_speed_rms": 0.2854961512038275,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          63.5,
+          64.0,
+          64.5,
+          65.0,
+          65.5,
+          66.0,
+          66.5,
+          67.0,
+          67.5,
+          68.0,
+          68.5,
+          69.0
+        ],
+        "current": [
+          [
+            7.857645039917326e-07,
+            1.3833004051000984e-05,
+            0.9999847155858559,
+            6.656455893149622e-07
+          ],
+          [
+            3.0695826385064324e-08,
+            2.1267071069901515e-06,
+            0.9999974986801686,
+            3.43916897951226e-07
+          ],
+          [
+            1.4763058801356427e-08,
+            1.1108866891182402e-06,
+            0.9999987093769668,
+            1.6497328522282798e-07
+          ],
+          [
+            3.7582861026429895e-08,
+            1.3688679495264458e-06,
+            0.9999943982074904,
+            4.195341699034108e-06
+          ],
+          [
+            7.613875115327221e-08,
+            8.191665480117411e-06,
+            0.9998945829413038,
+            9.714925446500418e-05
+          ],
+          [
+            5.0875949533570305e-05,
+            0.00013697056720898197,
+            0.814495563386939,
+            0.18531659009631857
+          ],
+          [
+            8.305923207708676e-06,
+            7.218696380551015e-05,
+            0.2938688235155977,
+            0.7060506835973891
+          ],
+          [
+            3.643694151462343e-05,
+            2.201609751819727e-06,
+            0.007601347923786728,
+            0.9923600135249468
+          ],
+          [
+            1.1189158906382757e-05,
+            6.404760590614089e-07,
+            0.0012824775690238718,
+            0.9987056927960107
+          ],
+          [
+            6.733426576631672e-06,
+            6.613948127959943e-08,
+            0.00024838526485540876,
+            0.9997448151690868
+          ],
+          [
+            2.696263775118843e-06,
+            6.906968367133256e-07,
+            0.002667465447108439,
+            0.9973291475922796
+          ],
+          [
+            6.903162613612602e-07,
+            2.887348091209025e-08,
+            0.00016641268416565632,
+            0.9998328681260922
+          ]
+        ],
+        "future": [
+          [
+            1.1584657512775682e-19,
+            5.467516530917663e-12,
+            0.9999999982495873,
+            1.7449450526704303e-09
+          ],
+          [
+            3.757607098759423e-18,
+            4.325693707899476e-12,
+            0.9999999996231101,
+            3.72564171449732e-10
+          ],
+          [
+            2.814221288571218e-20,
+            5.386561313959145e-14,
+            0.9999991913134667,
+            8.086864793097972e-07
+          ],
+          [
+            2.2060867909254132e-16,
+            3.7437064860924143e-13,
+            0.9999982024605545,
+            1.7975390709466601e-06
+          ],
+          [
+            2.6855880504694807e-17,
+            4.071419719415303e-13,
+            0.9996719935040529,
+            0.00032800649554007473
+          ],
+          [
+            2.521515421174159e-09,
+            1.5430996383218617e-09,
+            0.8720324263101138,
+            0.12796756962527114
+          ],
+          [
+            1.6566008400941968e-12,
+            3.175183584551292e-10,
+            0.2765142095371608,
+            0.7234857901436642
+          ],
+          [
+            2.511546472435903e-09,
+            1.4928576551624988e-11,
+            8.957751157466989e-05,
+            0.9999104199619503
+          ],
+          [
+            6.365120025282137e-11,
+            1.4760204459986704e-12,
+            0.0003632592035560811,
+            0.9996367407313166
+          ],
+          [
+            1.517880700681523e-09,
+            6.26069332153861e-13,
+            5.845490811191512e-07,
+            0.9999994139324122
+          ],
+          [
+            3.049180033987902e-10,
+            1.6348999888572907e-12,
+            4.567453764807603e-05,
+            0.999954325155799
+          ],
+          [
+            5.936319643306758e-08,
+            1.946649093504622e-12,
+            1.1486491501964993e-07,
+            0.999999825769942
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 1987,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, same_transition_outside_allowed_time_window, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/f53f0b6fb7f3888f87a0f8ff_b3.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/f53f0b6fb7f3888f87a0f8ff_b3.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/f53f0b6fb7f3888f87a0f8ff_b3_contact.jpg",
+        "clip_start_s": 62.233333333333334,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 67.5,
+        "offset_s": 1.2666666666666657,
+        "any_warning_time_s": null,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": true,
+            "event_time": 67.5,
+            "offset_s": 1.2666666666666657
+          },
+          "future": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": true,
+            "event_time": 67.0,
+            "offset_s": 0.7666666666666657
+          },
+          "future": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": true,
+            "event_time": 67.0,
+            "offset_s": 0.7666666666666657
+          },
+          "future": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": true,
+            "event_time": 67.0,
+            "offset_s": 0.7666666666666657
+          },
+          "future": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": true,
+            "event_time": 66.73333333333333,
+            "offset_s": 0.5
+          },
+          "future": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": true,
+            "event_time": 66.73333333333333,
+            "offset_s": 0.5
+          },
+          "future": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": true,
+            "event_time": 67.23333333333333,
+            "offset_s": 1.0
+          },
+          "future": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": true,
+            "event_time": 67.0,
+            "offset_s": 0.7666666666666657
+          },
+          "future": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": true,
+            "event_time": 67.0,
+            "offset_s": 0.7666666666666657
+          },
+          "future": {
+            "time": 66.23333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 96.26666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": 0.7666666666666657,
+      "primary_timing_diagnosis": "late_after_boundary"
+    },
+    {
+      "event_id": "f53f0b6fb7f3888f87a0f8ff_b4",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "ordinal": 4,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "boundary_s": 96.26666666666667,
+      "boundary_frame": 2888,
+      "annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "strict": {
+        "time": 96.26666666666667,
+        "previous": 3,
+        "label": 0,
+        "end": 106.6,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": null,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 96.26666666666667,
+        "previous": 3,
+        "label": 0,
+        "end": 106.6,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "nearby_false_events": [
+        {
+          "time": 99.0,
+          "previous": 3,
+          "label": 0
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "same_transition_outside_allowed_time_window",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.05203540743119185,
+        "hand_speed_rms": 0.1256926858416497,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          93.5,
+          94.0,
+          94.5,
+          95.0,
+          95.5,
+          96.0,
+          96.5,
+          97.0,
+          97.5,
+          98.0,
+          98.5,
+          99.0
+        ],
+        "current": [
+          [
+            0.0019192267664335555,
+            1.1303193895734027e-06,
+            1.7049772749432753e-05,
+            0.9980625931414275
+          ],
+          [
+            1.5077664805439248e-05,
+            3.289295821841393e-08,
+            8.320556126534053e-06,
+            0.9999765688861098
+          ],
+          [
+            0.0002503829839589206,
+            1.2772251158263463e-06,
+            0.00017778096669863002,
+            0.9995705588242266
+          ],
+          [
+            0.0016259910928506562,
+            2.994800331132098e-05,
+            0.007489063299720996,
+            0.9908549976041171
+          ],
+          [
+            0.004656803730271588,
+            9.279236591991145e-05,
+            0.0710725054566294,
+            0.9241778984471791
+          ],
+          [
+            7.903377764269568e-05,
+            7.815106101057636e-06,
+            0.08582839469526024,
+            0.9140847564209961
+          ],
+          [
+            7.00521836979703e-05,
+            2.5166457972000468e-05,
+            0.06526519116391781,
+            0.9346395901944122
+          ],
+          [
+            9.536040867348363e-05,
+            1.190821160357317e-05,
+            0.016859167470304397,
+            0.9830335639094185
+          ],
+          [
+            0.006307716992553616,
+            0.00011808937993718718,
+            0.02860377510719834,
+            0.9649704185203108
+          ],
+          [
+            0.026009754890735332,
+            5.6403217588989505e-05,
+            0.011188042497452625,
+            0.9627457993942231
+          ],
+          [
+            0.5566466948970215,
+            0.00023697663401122594,
+            0.006856664628311741,
+            0.4362596638406555
+          ],
+          [
+            0.9036735047418963,
+            1.2013145559603736e-05,
+            0.00021008691520989263,
+            0.09610439519733413
+          ]
+        ],
+        "future": [
+          [
+            0.2692256159194895,
+            8.651094063791345e-07,
+            6.307606900154401e-08,
+            0.7307734558950352
+          ],
+          [
+            0.0033922984903748785,
+            6.829072282527171e-08,
+            2.5396188017882323e-08,
+            0.9966076078227144
+          ],
+          [
+            0.8385897260363759,
+            1.834718650016274e-09,
+            3.282938407016056e-07,
+            0.1614099438350647
+          ],
+          [
+            0.006249732728071408,
+            6.7505115042577056e-09,
+            6.074250155719294e-06,
+            0.9937441862712613
+          ],
+          [
+            0.004181641469694204,
+            2.5615279040172563e-08,
+            6.794643887964389e-05,
+            0.995750386476147
+          ],
+          [
+            2.7198011232289227e-05,
+            4.3695917865712566e-10,
+            2.4042613675574943e-09,
+            0.9999727991475472
+          ],
+          [
+            6.87234633416753e-06,
+            2.0947589644779822e-10,
+            6.653093225310207e-12,
+            0.9999931274375369
+          ],
+          [
+            1.1978250364068437e-05,
+            1.8813256703661813e-11,
+            4.923367333903952e-13,
+            0.9999880217303304
+          ],
+          [
+            0.015969339346212617,
+            1.153796501061396e-09,
+            1.1988400278977258e-11,
+            0.9840306594880026
+          ],
+          [
+            0.0942882610395413,
+            1.7339432959500707e-09,
+            4.0415457126320683e-10,
+            0.9057117368223607
+          ],
+          [
+            0.9848484620423277,
+            1.1457324459741216e-08,
+            5.448966671803358e-11,
+            0.015151526445858148
+          ],
+          [
+            0.9918791401098297,
+            5.811011874523647e-10,
+            2.8521995049908047e-12,
+            0.008120859306217
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 2888,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, same_transition_outside_allowed_time_window, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/f53f0b6fb7f3888f87a0f8ff_b4.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/f53f0b6fb7f3888f87a0f8ff_b4.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/f53f0b6fb7f3888f87a0f8ff_b4_contact.jpg",
+        "clip_start_s": 92.26666666666667,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 99.5,
+        "offset_s": 3.2333333333333343,
+        "any_warning_time_s": null,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 96.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": 2.7333333333333343,
+      "primary_timing_diagnosis": "late_after_boundary"
+    },
+    {
+      "event_id": "f53f0b6fb7f3888f87a0f8ff_b6",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "ordinal": 6,
+      "from_stage": "harvest",
+      "to_stage": "return",
+      "boundary_s": 175.4,
+      "boundary_frame": 5262,
+      "annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "strict": {
+        "time": 175.4,
+        "previous": 1,
+        "label": 2,
+        "end": 179.03333333333333,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": 175.0,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 175.4,
+        "previous": 1,
+        "label": 2,
+        "end": 179.03333333333333,
+        "detected": true,
+        "event_time": 176.0,
+        "offset_s": 0.5999999999999943
+      },
+      "nearby_false_events": [
+        {
+          "time": 175.5,
+          "previous": 1,
+          "label": 2
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "warning_not_sustained_for_two_observations",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.06941726655656877,
+        "hand_speed_rms": 0.04797220619502843,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          172.5,
+          173.0,
+          173.5,
+          174.0,
+          174.5,
+          175.0,
+          175.5,
+          176.0,
+          176.5,
+          177.0,
+          177.5,
+          178.0
+        ],
+        "current": [
+          [
+            3.5286462220290407e-16,
+            0.9999999999361422,
+            6.38569934807536e-11,
+            3.5542365317004287e-16
+          ],
+          [
+            1.7638840492961864e-15,
+            0.9999999922741362,
+            7.725859326210527e-09,
+            2.9133218673804484e-15
+          ],
+          [
+            2.0781648589360892e-13,
+            0.999999796940317,
+            2.030593143704597e-07,
+            1.6086956107466438e-13
+          ],
+          [
+            2.9591958066424087e-14,
+            0.9999999699776057,
+            3.0022300190198766e-08,
+            6.471317141504748e-14
+          ],
+          [
+            4.2034027031408835e-12,
+            0.9999997822751246,
+            2.1771956355372725e-07,
+            1.1083582611779224e-12
+          ],
+          [
+            1.1682589166739546e-10,
+            0.9997874909372696,
+            0.00021250891478293975,
+            3.1121513845870945e-11
+          ],
+          [
+            8.342406236788742e-09,
+            0.016163113447378644,
+            0.9838368762804051,
+            1.9298100190632197e-09
+          ],
+          [
+            7.90623703420378e-11,
+            8.813246810410171e-07,
+            0.9999991185453354,
+            5.092120409785087e-11
+          ],
+          [
+            3.520648369997203e-11,
+            1.4063687331417417e-08,
+            0.9999999858843573,
+            1.6748767021479298e-11
+          ],
+          [
+            3.547227538982772e-11,
+            1.1791498356531923e-08,
+            0.9999999881511842,
+            2.1845260329345552e-11
+          ],
+          [
+            3.008833977484433e-10,
+            2.237640912365143e-08,
+            0.9999999773106417,
+            1.206587034466778e-11
+          ],
+          [
+            2.7756028132236063e-10,
+            2.7534381258082663e-08,
+            0.9999999719606348,
+            2.2742365990355774e-10
+          ]
+        ],
+        "future": [
+          [
+            3.322150726381892e-20,
+            0.9999999999999454,
+            5.458061850948486e-14,
+            2.1480089957088228e-38
+          ],
+          [
+            1.4419145388463998e-15,
+            0.9999410828725039,
+            5.891712749471919e-05,
+            1.0935277630390665e-34
+          ],
+          [
+            3.935527792013117e-15,
+            0.9748511964585047,
+            0.025148803541491415,
+            4.8800329005992175e-30
+          ],
+          [
+            5.995093423142995e-14,
+            0.9755201523123296,
+            0.02447984768761041,
+            9.946951647450952e-29
+          ],
+          [
+            1.5987921278050455e-15,
+            0.9780315722319596,
+            0.021968427768038788,
+            3.0867131675079285e-29
+          ],
+          [
+            1.2125010662085632e-14,
+            0.000814516067869412,
+            0.9991854839321184,
+            3.558277744358917e-31
+          ],
+          [
+            8.29460564090518e-15,
+            6.100408142788673e-05,
+            0.9999389959185639,
+            1.2328430057858443e-32
+          ],
+          [
+            1.6399317951729695e-15,
+            2.4180172624941653e-14,
+            0.9999999999999742,
+            5.401199657010631e-33
+          ],
+          [
+            2.677121531274858e-15,
+            5.554631384603562e-14,
+            0.9999999999999418,
+            3.6277389051699992e-28
+          ],
+          [
+            3.79058365262789e-15,
+            5.756521225538241e-14,
+            0.9999999999999387,
+            1.0026582977231152e-23
+          ],
+          [
+            6.450534419174785e-13,
+            1.5272497776934085e-15,
+            0.9999999999993534,
+            1.969303291215642e-21
+          ],
+          [
+            6.794311929753299e-13,
+            1.012574908115001e-14,
+            0.9999999999993106,
+            1.191176990427768e-19
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 5262,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, warning_not_sustained_for_two_observations, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/f53f0b6fb7f3888f87a0f8ff_b6.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/f53f0b6fb7f3888f87a0f8ff_b6.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/f53f0b6fb7f3888f87a0f8ff_b6_contact.jpg",
+        "clip_start_s": 171.4,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 176.0,
+        "offset_s": 0.5999999999999943,
+        "any_warning_time_s": 175.0,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 176.0,
+            "offset_s": 0.5999999999999943
+          },
+          "future": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 174.5,
+            "offset_s": -0.9000000000000057
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 176.0,
+            "offset_s": 0.5999999999999943
+          },
+          "future": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 176.0,
+            "offset_s": 0.5999999999999943
+          },
+          "future": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 175.73333333333332,
+            "offset_s": 0.3333333333333144
+          },
+          "future": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 175.73333333333332,
+            "offset_s": 0.3333333333333144
+          },
+          "future": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 175.0,
+            "offset_s": -0.4000000000000057
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 175.73333333333332,
+            "offset_s": 0.3333333333333144
+          },
+          "future": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 175.0,
+            "offset_s": -0.4000000000000057
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 176.0,
+            "offset_s": 0.5999999999999943
+          },
+          "future": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 176.0,
+            "offset_s": 0.5999999999999943
+          },
+          "future": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 175.23333333333332,
+            "offset_s": -0.16666666666668561
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 176.0,
+            "offset_s": 0.5999999999999943
+          },
+          "future": {
+            "time": 175.4,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": true,
+            "event_time": 175.23333333333332,
+            "offset_s": -0.16666666666668561
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": 0.09999999999999432,
+      "primary_timing_diagnosis": "late_after_boundary"
+    },
+    {
+      "event_id": "a8b23394b642f0bb769a0391_b4",
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+      "ordinal": 4,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "boundary_s": 64.96666666666667,
+      "boundary_frame": 1949,
+      "annotation_sha256": "66b4431c3d08b810a7a3ecc8f22793fe8bd58118f4428d8beb152b5c4cce3b77",
+      "strict": {
+        "time": 64.96666666666667,
+        "previous": 3,
+        "label": 0,
+        "end": 70.46666666666667,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": null,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 64.96666666666667,
+        "previous": 3,
+        "label": 0,
+        "end": 70.46666666666667,
+        "detected": true,
+        "event_time": 66.0,
+        "offset_s": 1.0333333333333314
+      },
+      "nearby_false_events": [
+        {
+          "time": 65.5,
+          "previous": 3,
+          "label": 0
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "same_transition_outside_allowed_time_window",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.0818693236027485,
+        "hand_speed_rms": 0.21048858540617746,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          62.0,
+          62.5,
+          63.0,
+          63.5,
+          64.0,
+          64.5,
+          65.0,
+          65.5,
+          66.0,
+          66.5,
+          67.0,
+          67.5
+        ],
+        "current": [
+          [
+            2.7254752999505664e-07,
+            6.817465602411031e-11,
+            1.543702894713582e-08,
+            0.9999997119472664
+          ],
+          [
+            7.339220601041955e-07,
+            1.0455762418977594e-09,
+            3.0850320408726564e-07,
+            0.9999989565291595
+          ],
+          [
+            5.647859031976865e-06,
+            7.448675943197298e-10,
+            7.628455233792065e-08,
+            0.9999942751115481
+          ],
+          [
+            6.814033387869532e-07,
+            2.464966037545739e-09,
+            1.1936779115869544e-06,
+            0.9999981224537835
+          ],
+          [
+            1.6820640279410402e-07,
+            1.0214168868520502e-09,
+            2.756019998726262e-06,
+            0.9999970747521816
+          ],
+          [
+            1.0932821498384124e-07,
+            1.2108738924800468e-09,
+            3.92290940725582e-06,
+            0.9999959665515039
+          ],
+          [
+            0.00039364263499919595,
+            1.0430758720512272e-07,
+            3.265257939687608e-05,
+            0.9995736004780168
+          ],
+          [
+            0.8043637772468522,
+            1.3824355343255914e-05,
+            0.00015547558916810026,
+            0.19546692280863653
+          ],
+          [
+            0.980853051911005,
+            3.461341990783596e-06,
+            8.928148632886536e-06,
+            0.01913455859837124
+          ],
+          [
+            0.9980094449351533,
+            7.420943876608369e-07,
+            7.059675227596843e-07,
+            0.0019891070029362215
+          ],
+          [
+            0.9979396713553383,
+            1.5838061606991294e-06,
+            2.4901006956999285e-06,
+            0.0020562547378051876
+          ],
+          [
+            0.9994995767526423,
+            1.2286586171170925e-06,
+            7.023780644045099e-07,
+            0.0004984922106762357
+          ]
+        ],
+        "future": [
+          [
+            0.0005331955682633592,
+            2.9197188225929914e-11,
+            1.3189905908271066e-13,
+            0.9994668044024075
+          ],
+          [
+            0.06721507035232895,
+            1.755975702547662e-08,
+            1.7817716565812597e-10,
+            0.9327849119097369
+          ],
+          [
+            0.5623823498591908,
+            1.0180978483510717e-10,
+            2.0020289097038973e-13,
+            0.4376176500387992
+          ],
+          [
+            0.09391080535086595,
+            1.0338982265368274e-10,
+            6.275896183176044e-12,
+            0.9060891945394683
+          ],
+          [
+            0.05366367991360864,
+            1.5522418070190358e-10,
+            8.207243973984572e-13,
+            0.9463363199303464
+          ],
+          [
+            0.010279880475929475,
+            1.639361222109946e-11,
+            1.7335081012779626e-11,
+            0.9897201194903418
+          ],
+          [
+            0.9056395565253346,
+            8.094618901890486e-13,
+            3.036861748862141e-14,
+            0.09436044347382581
+          ],
+          [
+            0.9998392976544909,
+            3.860787175508581e-14,
+            4.5677226171770726e-17,
+            0.00016070234547055275
+          ],
+          [
+            0.9999628201014362,
+            2.1365574093459387e-14,
+            6.203423329351089e-18,
+            3.7179898542605465e-05
+          ],
+          [
+            0.9999986510945945,
+            6.05553115968798e-14,
+            3.3964527329578164e-18,
+            1.348905344791386e-06
+          ],
+          [
+            0.9999989889519386,
+            1.80463752697502e-11,
+            5.204693445761586e-17,
+            1.0110300149911272e-06
+          ],
+          [
+            0.9999998421949634,
+            1.931718260265958e-08,
+            5.0560534817391306e-15,
+            1.3848784884217042e-07
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 1949,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, same_transition_outside_allowed_time_window, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/a8b23394b642f0bb769a0391_b4.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/a8b23394b642f0bb769a0391_b4.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/a8b23394b642f0bb769a0391_b4_contact.jpg",
+        "clip_start_s": 60.96666666666667,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 66.0,
+        "offset_s": 1.0333333333333314,
+        "any_warning_time_s": null,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": true,
+            "event_time": 66.0,
+            "offset_s": 1.0333333333333314
+          },
+          "future": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": true,
+            "event_time": 66.0,
+            "offset_s": 1.0333333333333314
+          },
+          "future": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": true,
+            "event_time": 66.0,
+            "offset_s": 1.0333333333333314
+          },
+          "future": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": true,
+            "event_time": 65.73333333333333,
+            "offset_s": 0.7666666666666657
+          },
+          "future": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": true,
+            "event_time": 65.73333333333333,
+            "offset_s": 0.7666666666666657
+          },
+          "future": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": true,
+            "event_time": 65.73333333333333,
+            "offset_s": 0.7666666666666657
+          },
+          "future": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": true,
+            "event_time": 66.0,
+            "offset_s": 1.0333333333333314
+          },
+          "future": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": true,
+            "event_time": 66.0,
+            "offset_s": 1.0333333333333314
+          },
+          "future": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": true,
+            "event_time": 66.0,
+            "offset_s": 1.0333333333333314
+          },
+          "future": {
+            "time": 64.96666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": 0.5333333333333314,
+      "primary_timing_diagnosis": "late_after_boundary"
+    },
+    {
+      "event_id": "6d46f3c8c5c61bd2c6d22973_b2",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "ordinal": 2,
+      "from_stage": "harvest",
+      "to_stage": "return",
+      "boundary_s": 91.76666666666667,
+      "boundary_frame": 2753,
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "strict": {
+        "time": 91.76666666666667,
+        "previous": 1,
+        "label": 2,
+        "end": 104.33333333333333,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": null,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 91.76666666666667,
+        "previous": 1,
+        "label": 2,
+        "end": 104.33333333333333,
+        "detected": true,
+        "event_time": 92.0,
+        "offset_s": 0.23333333333333428
+      },
+      "nearby_false_events": [
+        {
+          "time": 94.0,
+          "previous": 1,
+          "label": 2
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "same_transition_outside_allowed_time_window",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.08714319076605412,
+        "hand_speed_rms": 0.031917621785205165,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          89.0,
+          89.5,
+          90.0,
+          90.5,
+          91.0,
+          91.5,
+          92.0,
+          92.5,
+          93.0,
+          93.5,
+          94.0,
+          94.5
+        ],
+        "current": [
+          [
+            1.8978978741495747e-07,
+            0.9999990914951056,
+            4.4612917989315074e-08,
+            6.741021891692562e-07
+          ],
+          [
+            1.0253988670890263e-07,
+            0.9999993111515078,
+            3.0423634616150147e-08,
+            5.558849709373556e-07
+          ],
+          [
+            1.0148325585493162e-07,
+            0.9999991243218488,
+            3.364959588676849e-07,
+            4.376989366871417e-07
+          ],
+          [
+            4.7026191373838895e-05,
+            0.9971180970294027,
+            0.002826344206733567,
+            8.532572489997229e-06
+          ],
+          [
+            2.105967241413596e-05,
+            0.5669618860883583,
+            0.4330120685427258,
+            4.9856965017827e-06
+          ],
+          [
+            0.0008616927814842138,
+            0.25114787577483283,
+            0.747973234976217,
+            1.719646746588284e-05
+          ],
+          [
+            0.31977114274825613,
+            0.11119773878171095,
+            0.5672076371558818,
+            0.0018234813141510874
+          ],
+          [
+            0.0027349019995679905,
+            0.00032825004701633075,
+            0.996831492022152,
+            0.00010535593126370214
+          ],
+          [
+            0.0007824064382125397,
+            3.617399448193229e-05,
+            0.9991498312949374,
+            3.158827236805226e-05
+          ],
+          [
+            4.427049563133187e-07,
+            1.2687734982999546e-07,
+            0.9999992553840116,
+            1.7503368225988738e-07
+          ],
+          [
+            2.6751489816063903e-07,
+            1.925575466352508e-08,
+            0.9999993686442827,
+            3.4458506420291556e-07
+          ],
+          [
+            8.298942172883861e-07,
+            1.5373101761498602e-07,
+            0.999998644694544,
+            3.716802211848804e-07
+          ]
+        ],
+        "future": [
+          [
+            1.097923209576886e-33,
+            1.0,
+            5.061186000796224e-38,
+            3.6277361313437383e-37
+          ],
+          [
+            1.10283693107597e-36,
+            1.0,
+            8.14836442870028e-36,
+            1.9060111555768845e-36
+          ],
+          [
+            2.0165154467706668e-36,
+            1.0,
+            8.766297859952356e-32,
+            5.464447588646252e-34
+          ],
+          [
+            1.7205202091739725e-35,
+            1.0,
+            4.379957191272741e-27,
+            3.135552751495067e-33
+          ],
+          [
+            1.0947319480349187e-26,
+            1.0,
+            8.877586443208885e-19,
+            1.2970652827788124e-28
+          ],
+          [
+            1.675529822109359e-17,
+            0.999999999999996,
+            3.940412588588632e-15,
+            3.1133773619895623e-22
+          ],
+          [
+            3.7905886075430375e-07,
+            0.9999996208483614,
+            9.260078464772398e-11,
+            1.7711114222964236e-13
+          ],
+          [
+            3.3038652520389654e-05,
+            0.9912826113232407,
+            0.008684346312781878,
+            3.711456996470776e-09
+          ],
+          [
+            0.0005089881375645475,
+            0.8358589726571761,
+            0.1636319589766303,
+            8.022862903706745e-08
+          ],
+          [
+            2.370469964681248e-08,
+            6.589615665983714e-05,
+            0.9999340794830109,
+            6.556297039829987e-10
+          ],
+          [
+            1.2895249259768098e-06,
+            2.34822026485974e-06,
+            0.9999963618203135,
+            4.344957302648715e-10
+          ],
+          [
+            8.176940261292025e-10,
+            8.583055672397659e-09,
+            0.999999989832634,
+            7.666163288342164e-10
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 2753,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, same_transition_outside_allowed_time_window, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b2.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b2.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b2_contact.jpg",
+        "clip_start_s": 87.76666666666667,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 93.0,
+        "offset_s": 1.2333333333333343,
+        "any_warning_time_s": null,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": true,
+            "event_time": 93.0,
+            "offset_s": 1.2333333333333343
+          },
+          "future": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": true,
+            "event_time": 92.0,
+            "offset_s": 0.23333333333333428
+          },
+          "future": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": true,
+            "event_time": 92.0,
+            "offset_s": 0.23333333333333428
+          },
+          "future": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": true,
+            "event_time": 92.73333333333333,
+            "offset_s": 0.9666666666666686
+          },
+          "future": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": true,
+            "event_time": 93.0,
+            "offset_s": 1.2333333333333343
+          },
+          "future": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": true,
+            "event_time": 92.0,
+            "offset_s": 0.23333333333333428
+          },
+          "future": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": true,
+            "event_time": 92.0,
+            "offset_s": 0.23333333333333428
+          },
+          "future": {
+            "time": 91.76666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 104.33333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": 2.2333333333333343,
+      "primary_timing_diagnosis": "late_after_boundary"
+    },
+    {
+      "event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "ordinal": 3,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "boundary_s": 104.33333333333333,
+      "boundary_frame": 3130,
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "strict": {
+        "time": 104.33333333333333,
+        "previous": 2,
+        "label": 3,
+        "end": 127.0,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": 103.0,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 104.33333333333333,
+        "previous": 2,
+        "label": 3,
+        "end": 127.0,
+        "detected": true,
+        "event_time": 105.0,
+        "offset_s": 0.6666666666666714
+      },
+      "nearby_false_events": [
+        {
+          "time": 101.5,
+          "previous": 0,
+          "label": 2
+        },
+        {
+          "time": 105.0,
+          "previous": 2,
+          "label": 0
+        },
+        {
+          "time": 107.0,
+          "previous": 0,
+          "label": 3
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "warning_not_sustained_for_two_observations",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.09339256467754634,
+        "hand_speed_rms": 0.15556112186605314,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          101.5,
+          102.0,
+          102.5,
+          103.0,
+          103.5,
+          104.0,
+          104.5,
+          105.0,
+          105.5,
+          106.0,
+          106.5,
+          107.0
+        ],
+        "current": [
+          [
+            0.00010219342583372981,
+            8.07899551377815e-06,
+            0.9990429775676287,
+            0.000846750011023557
+          ],
+          [
+            0.0012492134652850922,
+            8.832942439333662e-06,
+            0.9929308500831692,
+            0.0058111035091063315
+          ],
+          [
+            0.0002178736119677776,
+            3.1307467998061206e-05,
+            0.9984589977478886,
+            0.0012918211721454599
+          ],
+          [
+            0.00019895406686421237,
+            7.115502320032037e-06,
+            0.9976063250070818,
+            0.0021876054237339425
+          ],
+          [
+            0.0002469111331039979,
+            2.0515010546979915e-05,
+            0.9947763555683501,
+            0.004956218287998738
+          ],
+          [
+            0.002662036962166283,
+            5.728231715887227e-05,
+            0.9430902122639798,
+            0.054190468456695076
+          ],
+          [
+            0.05287109655133078,
+            0.0007915751332541813,
+            0.2679868224159253,
+            0.6783505058994898
+          ],
+          [
+            0.012968576105922712,
+            1.2284313568568525e-05,
+            0.02494635021080787,
+            0.962072789369701
+          ],
+          [
+            0.00263906600208623,
+            3.999518583977054e-06,
+            0.00555574317899196,
+            0.9918011913003378
+          ],
+          [
+            0.0015414107395961421,
+            5.626823618777817e-07,
+            0.003643908705965367,
+            0.9948141178720766
+          ],
+          [
+            2.1703768656662675e-05,
+            2.995800673843076e-08,
+            0.00023196073896106947,
+            0.9997463055343756
+          ],
+          [
+            0.00016884457726862336,
+            4.2191553974267697e-08,
+            0.000246884540399965,
+            0.9995842286907773
+          ]
+        ],
+        "future": [
+          [
+            0.0035967398029419025,
+            0.0012887202479409802,
+            0.9871465442993814,
+            0.007967995649735708
+          ],
+          [
+            0.2738942800134846,
+            0.007140813015354441,
+            0.7136466603955176,
+            0.00531824657564343
+          ],
+          [
+            0.023439268655532863,
+            1.2756624536139363e-05,
+            0.5890375996626751,
+            0.387510375057256
+          ],
+          [
+            0.018295484676973835,
+            2.992546841529073e-07,
+            0.00039000759514710564,
+            0.9813142084731948
+          ],
+          [
+            0.3650735535496055,
+            6.440712877602339e-07,
+            0.18137563285499267,
+            0.453550169524114
+          ],
+          [
+            0.03890410937555333,
+            5.408947528053679e-08,
+            0.025943373461519984,
+            0.9351524630734513
+          ],
+          [
+            0.9898724000245399,
+            5.965651717404219e-11,
+            0.0004452961647645986,
+            0.009682303751038894
+          ],
+          [
+            0.7000064447371847,
+            3.0648701218175496e-09,
+            0.0005301272043991299,
+            0.299463424993546
+          ],
+          [
+            0.0041264810976821605,
+            3.823950610267324e-12,
+            0.00012575807036187557,
+            0.995747760828132
+          ],
+          [
+            0.863783644793223,
+            7.065819281703857e-09,
+            0.0001222106321376308,
+            0.13609413750882018
+          ],
+          [
+            5.4018642638994235e-05,
+            7.754375374253925e-13,
+            2.6094523146506868e-08,
+            0.9999459552620623
+          ],
+          [
+            0.0007622524883126107,
+            2.0637940617812633e-08,
+            4.855974850785329e-07,
+            0.9992372412762618
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 3130,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, warning_not_sustained_for_two_observations, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b3.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b3.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b3_contact.jpg",
+        "clip_start_s": 100.33333333333333,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 105.5,
+        "offset_s": 1.1666666666666714,
+        "any_warning_time_s": 103.0,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 105.0,
+            "offset_s": 0.6666666666666714
+          },
+          "future": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 105.0,
+            "offset_s": 0.6666666666666714
+          },
+          "future": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 105.0,
+            "offset_s": 0.6666666666666714
+          },
+          "future": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 104.5,
+            "offset_s": 0.1666666666666714
+          },
+          "future": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 104.73333333333333,
+            "offset_s": 0.4000000000000057
+          },
+          "future": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 104.0,
+            "offset_s": -0.3333333333333286
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 104.73333333333333,
+            "offset_s": 0.4000000000000057
+          },
+          "future": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 103.0,
+            "offset_s": -1.3333333333333286
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 104.73333333333333,
+            "offset_s": 0.4000000000000057
+          },
+          "future": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 104.23333333333333,
+            "offset_s": -0.09999999999999432
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 105.0,
+            "offset_s": 0.6666666666666714
+          },
+          "future": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 104.23333333333333,
+            "offset_s": -0.09999999999999432
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 105.0,
+            "offset_s": 0.6666666666666714
+          },
+          "future": {
+            "time": 104.33333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 127.0,
+            "detected": true,
+            "event_time": 103.23333333333333,
+            "offset_s": -1.0999999999999943
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": null,
+      "primary_timing_diagnosis": "no_matching_class_path"
+    },
+    {
+      "event_id": "6d46f3c8c5c61bd2c6d22973_b4",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "ordinal": 4,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "boundary_s": 127.0,
+      "boundary_frame": 3810,
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "strict": {
+        "time": 127.0,
+        "previous": 3,
+        "label": 0,
+        "end": 139.3,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": 125.5,
+      "stable_target_warning_s": 126.0,
+      "current": {
+        "time": 127.0,
+        "previous": 3,
+        "label": 0,
+        "end": 139.3,
+        "detected": true,
+        "event_time": 128.0,
+        "offset_s": 1.0
+      },
+      "nearby_false_events": [
+        {
+          "time": 125.0,
+          "previous": 3,
+          "label": 0
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "stable_target_probability_but_no_exact_from_to_change",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.06345743054578874,
+        "hand_speed_rms": 0.18936165641769218,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          124.0,
+          124.5,
+          125.0,
+          125.5,
+          126.0,
+          126.5,
+          127.0,
+          127.5,
+          128.0,
+          128.5,
+          129.0,
+          129.5,
+          130.0
+        ],
+        "current": [
+          [
+            1.7834194846324943e-05,
+            4.0936563388709556e-11,
+            2.6789769965959016e-09,
+            0.99998216308524
+          ],
+          [
+            8.597387830768122e-05,
+            8.169549711847375e-10,
+            1.614039870557951e-08,
+            0.9999140091643386
+          ],
+          [
+            3.6355630192321924e-05,
+            2.5178158298513393e-10,
+            6.765563009885321e-08,
+            0.9999635764623961
+          ],
+          [
+            9.688605216389662e-05,
+            1.247507507887435e-09,
+            5.420516598000813e-07,
+            0.9999025706486688
+          ],
+          [
+            1.8180924458038314e-05,
+            3.0489261082014473e-10,
+            1.4848142829429266e-07,
+            0.9999816702892211
+          ],
+          [
+            6.963305324954398e-05,
+            7.490029665762564e-10,
+            5.505136058433171e-07,
+            0.9999298156841416
+          ],
+          [
+            0.00711800240000681,
+            3.55061514408085e-08,
+            6.349510979932216e-06,
+            0.9928756125828618
+          ],
+          [
+            0.6643622306943943,
+            7.054896704069406e-07,
+            1.1627704549418468e-05,
+            0.33562543611138573
+          ],
+          [
+            0.7804426225272572,
+            1.4040745419105338e-06,
+            3.868533686552264e-05,
+            0.21951728806133528
+          ],
+          [
+            0.9970981055391307,
+            4.746202701360586e-08,
+            1.1243312778224063e-07,
+            0.0029017345657145685
+          ],
+          [
+            0.9973923485180254,
+            4.309212597168555e-08,
+            2.034942767707078e-07,
+            0.002607404895571675
+          ],
+          [
+            0.999786973444187,
+            5.404888712162402e-08,
+            8.844245070345792e-08,
+            0.0002128840644750941
+          ],
+          [
+            0.9999407786670504,
+            2.644070962493535e-07,
+            1.3431490890419582e-07,
+            5.8822610944390456e-05
+          ]
+        ],
+        "future": [
+          [
+            0.06872592083354358,
+            6.688827609597973e-10,
+            3.6444079713810416e-16,
+            0.9312740784975734
+          ],
+          [
+            0.738719328303507,
+            9.436317288728852e-10,
+            9.36577914341283e-17,
+            0.2612806707528611
+          ],
+          [
+            0.9987564328218057,
+            2.1835268061079983e-10,
+            6.75917102538895e-17,
+            0.0012435669598416304
+          ],
+          [
+            0.9993271038980346,
+            2.0587029319935883e-14,
+            1.6300720766034014e-16,
+            0.000672896101944611
+          ],
+          [
+            0.8287817486872984,
+            6.633470934888007e-11,
+            5.485817802600469e-14,
+            0.17121825124631201
+          ],
+          [
+            0.9978657914605181,
+            1.4945452149508772e-11,
+            5.758509964820843e-15,
+            0.002134208524530841
+          ],
+          [
+            0.9998221604406845,
+            2.678026943305667e-13,
+            8.895363516480905e-15,
+            0.00017783955903881557
+          ],
+          [
+            0.9999909174855727,
+            1.5056503958906274e-15,
+            6.995223993277671e-14,
+            9.082514355782638e-06
+          ],
+          [
+            0.9999990502871057,
+            1.0317484604128137e-11,
+            1.0807512121707126e-12,
+            9.497014962202834e-07
+          ],
+          [
+            0.9999999657651296,
+            2.0493060474029227e-12,
+            6.146314519132051e-14,
+            3.4232759778574764e-08
+          ],
+          [
+            0.9999999890596712,
+            1.6911743412405106e-11,
+            1.2179531530069466e-14,
+            1.0923404663932609e-08
+          ],
+          [
+            0.9999999998062528,
+            8.544861235334469e-11,
+            2.8737623592973596e-15,
+            1.0829576452065074e-10
+          ],
+          [
+            0.99999999993216,
+            6.771164774675853e-11,
+            6.10245111807518e-16,
+            1.276105194204628e-13
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 3810,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, stable_target_probability_but_no_exact_from_to_change, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b4.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b4.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b4_contact.jpg",
+        "clip_start_s": 123.0,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 129.0,
+        "offset_s": 2.0,
+        "any_warning_time_s": 125.5,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": true,
+            "event_time": 128.0,
+            "offset_s": 1.0
+          },
+          "future": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": true,
+            "event_time": 128.0,
+            "offset_s": 1.0
+          },
+          "future": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": true,
+            "event_time": 128.0,
+            "offset_s": 1.0
+          },
+          "future": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": true,
+            "event_time": 127.73333333333333,
+            "offset_s": 0.7333333333333343
+          },
+          "future": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": true,
+            "event_time": 127.73333333333333,
+            "offset_s": 0.7333333333333343
+          },
+          "future": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": true,
+            "event_time": 127.73333333333333,
+            "offset_s": 0.7333333333333343
+          },
+          "future": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": true,
+            "event_time": 128.0,
+            "offset_s": 1.0
+          },
+          "future": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": true,
+            "event_time": 128.0,
+            "offset_s": 1.0
+          },
+          "future": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": true,
+            "event_time": 128.0,
+            "offset_s": 1.0
+          },
+          "future": {
+            "time": 127.0,
+            "previous": 3,
+            "label": 0,
+            "end": 139.3,
+            "detected": true,
+            "event_time": 125.5,
+            "offset_s": -1.5
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": -2.0,
+      "primary_timing_diagnosis": "premature_before_horizon"
+    },
+    {
+      "event_id": "6d46f3c8c5c61bd2c6d22973_b5",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "ordinal": 5,
+      "from_stage": "pickup",
+      "to_stage": "harvest",
+      "boundary_s": 139.3,
+      "boundary_frame": 4179,
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "strict": {
+        "time": 139.3,
+        "previous": 0,
+        "label": 1,
+        "end": 270.1,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": null,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 139.3,
+        "previous": 0,
+        "label": 1,
+        "end": 270.1,
+        "detected": true,
+        "event_time": 140.5,
+        "offset_s": 1.1999999999999886
+      },
+      "nearby_false_events": [
+        {
+          "time": 140.5,
+          "previous": 0,
+          "label": 1
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "same_transition_outside_allowed_time_window",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.07051390590472861,
+        "hand_speed_rms": 0.04135038680164019,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          136.5,
+          137.0,
+          137.5,
+          138.0,
+          138.5,
+          139.0,
+          139.5,
+          140.0,
+          140.5,
+          141.0,
+          141.5,
+          142.0
+        ],
+        "current": [
+          [
+            0.9999973268211778,
+            9.989486462769382e-07,
+            1.0532562485754698e-06,
+            6.209739273298684e-07
+          ],
+          [
+            0.9999909966002752,
+            3.5134093580215303e-06,
+            2.5394138016122907e-06,
+            2.950576565051928e-06
+          ],
+          [
+            0.9999608225414535,
+            2.2647429240434322e-05,
+            9.665501515140578e-06,
+            6.864527790976524e-06
+          ],
+          [
+            0.9998693945365755,
+            9.45482445114979e-06,
+            4.290067599855847e-06,
+            0.00011686057137341846
+          ],
+          [
+            0.9999845812800522,
+            7.218531616933615e-06,
+            2.0281708744250773e-07,
+            7.997371243417524e-06
+          ],
+          [
+            0.9999790049543329,
+            8.779712484282784e-06,
+            5.023246190058183e-07,
+            1.1713008563873251e-05
+          ],
+          [
+            0.8482068028715574,
+            0.15042570845313064,
+            0.001193500237253849,
+            0.0001739884380582138
+          ],
+          [
+            8.703690470305081e-05,
+            0.9997794640803496,
+            0.00011875442094299768,
+            1.474459400437893e-05
+          ],
+          [
+            3.8727375116789647e-10,
+            0.999999999508514,
+            1.7031937414653542e-11,
+            8.718027430977805e-11
+          ],
+          [
+            5.945827210904815e-12,
+            0.9999999999211207,
+            3.112027488522658e-14,
+            7.290234218134364e-11
+          ],
+          [
+            3.1791319817980424e-12,
+            0.9999999999948037,
+            4.7498547993396986e-15,
+            2.012392321709809e-12
+          ],
+          [
+            3.6173109990902603e-12,
+            0.9999999999733211,
+            1.1873080310857134e-14,
+            2.3049759862692675e-11
+          ]
+        ],
+        "future": [
+          [
+            0.999999998145793,
+            1.8542060950815631e-09,
+            1.0073174139328317e-17,
+            8.786909317132267e-16
+          ],
+          [
+            0.9999998574752497,
+            1.4252474277254588e-07,
+            2.1397267757547e-15,
+            5.402273507606023e-15
+          ],
+          [
+            0.9999976606359914,
+            2.3393238898552377e-06,
+            3.416471199607489e-14,
+            4.008445801860651e-11
+          ],
+          [
+            0.999998176332896,
+            1.8236669501439524e-06,
+            1.3142196025474533e-15,
+            1.5262890162219657e-13
+          ],
+          [
+            0.9986662969582826,
+            0.0013337030417098327,
+            1.769425483494987e-16,
+            7.257104149792493e-15
+          ],
+          [
+            0.9572162337767842,
+            0.042783766222650406,
+            4.855341915527716e-16,
+            5.64905510413343e-13
+          ],
+          [
+            0.6592242555433506,
+            0.3407757444563097,
+            3.192881551034412e-13,
+            2.0441798169140093e-14
+          ],
+          [
+            4.1320087411161427e-14,
+            0.9999999999999587,
+            6.641148955141046e-24,
+            3.96861462736868e-28
+          ],
+          [
+            8.597393840721352e-33,
+            1.0,
+            7.738677571367324e-44,
+            1.7016405337080266e-46
+          ],
+          [
+            2.3093452178733255e-33,
+            1.0,
+            6.35209306026019e-47,
+            3.752130660260943e-43
+          ],
+          [
+            1.3870011639249954e-35,
+            1.0,
+            2.1329685383484953e-53,
+            1.3373657137539003e-47
+          ],
+          [
+            1.8361625718524494e-33,
+            1.0,
+            6.150385929336172e-49,
+            4.057440517214781e-42
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 4179,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, same_transition_outside_allowed_time_window, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b5.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b5.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/6d46f3c8c5c61bd2c6d22973_b5_contact.jpg",
+        "clip_start_s": 135.3,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 140.5,
+        "offset_s": 1.1999999999999886,
+        "any_warning_time_s": null,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": true,
+            "event_time": 140.0,
+            "offset_s": 0.6999999999999886
+          },
+          "future": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": true,
+            "event_time": 140.5,
+            "offset_s": 1.1999999999999886
+          },
+          "future": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": true,
+            "event_time": 140.5,
+            "offset_s": 1.1999999999999886
+          },
+          "future": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": true,
+            "event_time": 139.73333333333332,
+            "offset_s": 0.4333333333333087
+          },
+          "future": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": true,
+            "event_time": 140.0,
+            "offset_s": 0.6999999999999886
+          },
+          "future": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": true,
+            "event_time": 140.0,
+            "offset_s": 0.6999999999999886
+          },
+          "future": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": true,
+            "event_time": 140.0,
+            "offset_s": 0.6999999999999886
+          },
+          "future": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": true,
+            "event_time": 140.23333333333332,
+            "offset_s": 0.9333333333333087
+          },
+          "future": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": true,
+            "event_time": 140.23333333333332,
+            "offset_s": 0.9333333333333087
+          },
+          "future": {
+            "time": 139.3,
+            "previous": 0,
+            "label": 1,
+            "end": 270.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": 1.1999999999999886,
+      "primary_timing_diagnosis": "late_after_boundary"
+    },
+    {
+      "event_id": "d0f8727d35eced697dcf79fe_b4",
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+      "ordinal": 4,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "boundary_s": 64.76666666666667,
+      "boundary_frame": 1943,
+      "annotation_sha256": "c8ab7d1086a70bf97b65058409154fb0b1c8c90f3ceaadcb0e833b94e7e7c87e",
+      "strict": {
+        "time": 64.76666666666667,
+        "previous": 3,
+        "label": 0,
+        "end": 70.9,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "first_valid_target_warning_s": null,
+      "stable_target_warning_s": null,
+      "current": {
+        "time": 64.76666666666667,
+        "previous": 3,
+        "label": 0,
+        "end": 70.9,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "nearby_false_events": [
+        {
+          "time": 66.0,
+          "previous": 3,
+          "label": 0
+        }
+      ],
+      "attribution_evidence": [
+        "miss_at_strict_operating_point",
+        "same_transition_outside_allowed_time_window",
+        "nearby_unmatched_changes"
+      ],
+      "motion": {
+        "arm_speed_rms": 0.05781022490796184,
+        "hand_speed_rms": 0.12771709794439748,
+        "max_state_gap_s": 0.0333404541015625
+      },
+      "probability_curve": {
+        "times_s": [
+          62.0,
+          62.5,
+          63.0,
+          63.5,
+          64.0,
+          64.5,
+          65.0,
+          65.5,
+          66.0,
+          66.5,
+          67.0,
+          67.5
+        ],
+        "current": [
+          [
+            2.3267852534073858e-07,
+            2.469005847228035e-10,
+            9.184683864178819e-08,
+            0.9999996752277354
+          ],
+          [
+            5.530580271546909e-07,
+            4.862327766113634e-10,
+            1.2452420962827451e-08,
+            0.999999434003319
+          ],
+          [
+            2.611134105101125e-07,
+            1.0223511838167573e-09,
+            8.705926139972621e-08,
+            0.9999996508049769
+          ],
+          [
+            1.5450569777762751e-06,
+            2.4822950173655943e-10,
+            2.008232951567781e-09,
+            0.9999984526865598
+          ],
+          [
+            7.751263493202123e-07,
+            3.306314125734803e-10,
+            6.570037931061079e-09,
+            0.9999992179729814
+          ],
+          [
+            0.00013060438623067465,
+            1.7099960502046858e-08,
+            1.0089963571065238e-07,
+            0.9998692776141731
+          ],
+          [
+            0.00152259000789281,
+            2.6839000228042422e-08,
+            2.779353638098242e-07,
+            0.9984771052177431
+          ],
+          [
+            0.19367668775302324,
+            2.2316806177526956e-06,
+            1.258525137138363e-05,
+            0.8063084953149877
+          ],
+          [
+            0.28681074320510647,
+            4.799241971408594e-07,
+            2.7931103918752486e-06,
+            0.7131859837603046
+          ],
+          [
+            0.7955497615633808,
+            1.9071425318973737e-06,
+            1.32468309005423e-06,
+            0.20444700661099727
+          ],
+          [
+            0.977011582516053,
+            1.589990113145544e-05,
+            1.914631126035124e-06,
+            0.02297060295168938
+          ],
+          [
+            0.9974163918724064,
+            6.216963984528297e-05,
+            3.748114816734296e-06,
+            0.0025176903729314764
+          ]
+        ],
+        "future": [
+          [
+            3.717619536452733e-06,
+            3.8971102171097784e-15,
+            2.9145198922106315e-15,
+            0.9999962823804567
+          ],
+          [
+            2.8773415621808736e-05,
+            2.463276871695305e-12,
+            2.1928400638173889e-16,
+            0.9999712265819146
+          ],
+          [
+            4.306667858875386e-08,
+            7.166955253084366e-16,
+            2.3327652622123814e-17,
+            0.9999999569333208
+          ],
+          [
+            2.0478478042562528e-06,
+            9.248456823952018e-13,
+            1.3174304303722877e-17,
+            0.9999979521512709
+          ],
+          [
+            0.001176241555616356,
+            4.8261728821690084e-11,
+            2.1539232924493637e-15,
+            0.9988237583961198
+          ],
+          [
+            0.03808991313039659,
+            3.2184211310631336e-10,
+            2.4384555745245593e-14,
+            0.9619100865477369
+          ],
+          [
+            0.04047427891102116,
+            5.803847619842744e-11,
+            1.3944822764162405e-15,
+            0.9595257210309389
+          ],
+          [
+            0.9973124422610787,
+            5.407314084203589e-10,
+            1.401203993327454e-15,
+            0.002687557198188485
+          ],
+          [
+            0.9880412003649034,
+            3.639634796133598e-10,
+            3.3614790826796395e-15,
+            0.011958799271129982
+          ],
+          [
+            0.99993203495969,
+            5.351411914151386e-10,
+            1.276570977072178e-15,
+            6.796450516766017e-05
+          ],
+          [
+            0.999994975607924,
+            4.989895291429251e-08,
+            2.452793397419961e-14,
+            4.974493098656016e-06
+          ],
+          [
+            0.99999823580105,
+            8.495634816432394e-08,
+            6.938180605860388e-13,
+            1.6792419078737279e-06
+          ]
+        ]
+      },
+      "review": {
+        "status": "unreviewed",
+        "original_boundary_frame": 1943,
+        "proposed_boundary_frame": null,
+        "revision_history": [],
+        "reason": "Automated evidence: miss_at_strict_operating_point, same_transition_outside_allowed_time_window, nearby_unmatched_changes. Human must inspect video and source semantics; no automatic label change."
+      },
+      "media": {
+        "video": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/d0f8727d35eced697dcf79fe_b4.mp4",
+        "curve": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/d0f8727d35eced697dcf79fe_b4.png",
+        "contact": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109/media/d0f8727d35eced697dcf79fe_b4_contact.jpg",
+        "clip_start_s": 60.766666666666666,
+        "annotation_boundary_offset_s": 4.0
+      },
+      "agent_decision": {
+        "confirmed_time_s": 67.5,
+        "offset_s": 2.7333333333333343,
+        "any_warning_time_s": null,
+        "prompt_premature": false
+      },
+      "comparisons": {
+        "joint_2hz_k2": {
+          "current": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_2hz_k2": {
+          "current": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_2hz_k2": {
+          "current": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k2": {
+          "current": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": true,
+            "event_time": 66.73333333333333,
+            "offset_s": 1.9666666666666686
+          },
+          "future": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k2": {
+          "current": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": true,
+            "event_time": 66.73333333333333,
+            "offset_s": 1.9666666666666686
+          },
+          "future": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k2": {
+          "current": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": true,
+            "event_time": 66.73333333333333,
+            "offset_s": 1.9666666666666686
+          },
+          "future": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "joint_4hz_k3": {
+          "current": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h10_4hz_k3": {
+          "current": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        },
+        "independent_h15_4hz_k3": {
+          "current": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          "future": {
+            "time": 64.76666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        }
+      },
+      "nearest_same_transition_offset_s": 1.2333333333333343,
+      "primary_timing_diagnosis": "late_after_boundary"
+    }
+  ],
+  "review_policy": "Record reviewer, original/proposed frame, confidence/uncertainty interval, rationale and revision history. Test labels never revised for score. No revision proposed by this audit."
+}

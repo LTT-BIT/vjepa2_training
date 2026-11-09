@@ -1,0 +1,2420 @@
+{
+  "joint": {
+    "('current', 'before', 0.25)": {
+      "samples": 23,
+      "accuracy": 0.8695652173913043,
+      "macro_f1": 0.8097587719298245,
+      "nll": 0.33478999717759067,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 1.0,
+          "recall": 0.7777777777777778,
+          "f1": 0.875,
+          "support": 9
+        },
+        "return": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.75,
+          "support": 3
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 2
+        }
+      },
+      "confusion_true_rows": [
+        [
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'before', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.875,
+      "macro_f1": 0.8615079365079366,
+      "nll": 0.5789771183417428,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.8571428571428571,
+          "recall": 0.9473684210526315,
+          "f1": 0.9,
+          "support": 19
+        },
+        "harvest": {
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "f1": 0.8888888888888888,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "support": 9
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          18,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          6
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'before', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.9196428571428571,
+      "macro_f1": 0.9136217948717948,
+      "nll": 0.37991869023969926,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.9,
+          "recall": 0.9473684210526315,
+          "f1": 0.9230769230769231,
+          "support": 38
+        },
+        "harvest": {
+          "precision": 0.9459459459459459,
+          "recall": 0.9210526315789473,
+          "f1": 0.9333333333333333,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.9230769230769231,
+          "support": 18
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.7777777777777778,
+          "f1": 0.875,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          36,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          35,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          14
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'after', 0.25)": {
+      "samples": 33,
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.6106452726017942,
+      "nll": 1.3180216504401616,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 0.2857142857142857,
+          "f1": 0.4444444444444444,
+          "support": 7
+        },
+        "harvest": {
+          "precision": 0.7692307692307693,
+          "recall": 1.0,
+          "f1": 0.8695652173913043,
+          "support": 10
+        },
+        "return": {
+          "precision": 0.7,
+          "recall": 0.7,
+          "f1": 0.7,
+          "support": 10
+        },
+        "adjust": {
+          "precision": 0.375,
+          "recall": 0.5,
+          "f1": 0.42857142857142855,
+          "support": 6
+        }
+      },
+      "confusion_true_rows": [
+        [
+          2,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          3
+        ]
+      ],
+      "return_adjust_confusions": 3,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'after', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.7678571428571429,
+      "macro_f1": 0.7089839984576827,
+      "nll": 0.8605952945700318,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 0.4444444444444444,
+          "f1": 0.6153846153846154,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 0.8260869565217391,
+          "recall": 1.0,
+          "f1": 0.9047619047619048,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.7894736842105263,
+          "recall": 0.7894736842105263,
+          "f1": 0.7894736842105263,
+          "support": 19
+        },
+        "adjust": {
+          "precision": 0.5,
+          "recall": 0.5555555555555556,
+          "f1": 0.5263157894736842,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          4,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          19,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          15,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          5
+        ]
+      ],
+      "return_adjust_confusions": 4,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'after', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.8660714285714286,
+      "macro_f1": 0.8303265624272884,
+      "nll": 0.5599587898278974,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 0.6111111111111112,
+          "f1": 0.7586206896551724,
+          "support": 18
+        },
+        "harvest": {
+          "precision": 0.9047619047619048,
+          "recall": 1.0,
+          "f1": 0.95,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.8947368421052632,
+          "recall": 0.8947368421052632,
+          "f1": 0.8947368421052632,
+          "support": 38
+        },
+        "adjust": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7777777777777778,
+          "f1": 0.717948717948718,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          11,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          38,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          34,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          14
+        ]
+      ],
+      "return_adjust_confusions": 4,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'before', 0.25)": {
+      "samples": 23,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "nll": 0.10028994200675659,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "harvest": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9
+        },
+        "return": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3
+        }
+      },
+      "confusion_true_rows": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'before', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.8035714285714286,
+      "macro_f1": 0.7446581196581196,
+      "nll": 0.6679570822879043,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.5714285714285714,
+          "recall": 0.4444444444444444,
+          "f1": 0.5,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "f1": 0.8888888888888888,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.9,
+          "recall": 0.9473684210526315,
+          "f1": 0.9230769230769231,
+          "support": 19
+        },
+        "adjust": {
+          "precision": 0.5833333333333334,
+          "recall": 0.7777777777777778,
+          "f1": 0.6666666666666666,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          4,
+          0,
+          0,
+          5
+        ],
+        [
+          3,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          7
+        ]
+      ],
+      "return_adjust_confusions": 2,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'before', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.6428571428571429,
+      "macro_f1": 0.5898797729065621,
+      "nll": 1.0638684846249429,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.3076923076923077,
+          "recall": 0.4444444444444444,
+          "f1": 0.36363636363636365,
+          "support": 18
+        },
+        "harvest": {
+          "precision": 0.8695652173913043,
+          "recall": 0.5263157894736842,
+          "f1": 0.6557377049180327,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.7954545454545454,
+          "recall": 0.9210526315789473,
+          "f1": 0.8536585365853658,
+          "support": 38
+        },
+        "adjust": {
+          "precision": 0.47368421052631576,
+          "recall": 0.5,
+          "f1": 0.4864864864864865,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          8,
+          0,
+          0,
+          10
+        ],
+        [
+          18,
+          20,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          35,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          9
+        ]
+      ],
+      "return_adjust_confusions": 9,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'after', 0.25)": {
+      "samples": 33,
+      "accuracy": 0.8787878787878788,
+      "macro_f1": 0.8637362637362637,
+      "nll": 0.4797345425252581,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1": 0.8333333333333334,
+          "support": 7
+        },
+        "harvest": {
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523,
+          "support": 10
+        },
+        "return": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9,
+          "support": 10
+        },
+        "adjust": {
+          "precision": 0.7142857142857143,
+          "recall": 0.8333333333333334,
+          "f1": 0.7692307692307693,
+          "support": 6
+        }
+      },
+      "confusion_true_rows": [
+        [
+          5,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          5
+        ]
+      ],
+      "return_adjust_confusions": 1,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'after', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.9285714285714286,
+      "macro_f1": 0.9097081646423751,
+      "nll": 0.29212287483310956,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 0.7777777777777778,
+          "f1": 0.875,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 0.95,
+          "recall": 1.0,
+          "f1": 0.9743589743589743,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "f1": 0.9473684210526315,
+          "support": 19
+        },
+        "adjust": {
+          "precision": 0.8,
+          "recall": 0.8888888888888888,
+          "f1": 0.8421052631578947,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          7,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          19,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          8
+        ]
+      ],
+      "return_adjust_confusions": 1,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'after', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.9553571428571429,
+      "macro_f1": 0.9411312371838688,
+      "nll": 0.2000530767186762,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "support": 18
+        },
+        "harvest": {
+          "precision": 0.9743589743589743,
+          "recall": 1.0,
+          "f1": 0.987012987012987,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.9736842105263158,
+          "recall": 0.9736842105263158,
+          "f1": 0.9736842105263158,
+          "support": 38
+        },
+        "adjust": {
+          "precision": 0.85,
+          "recall": 0.9444444444444444,
+          "f1": 0.8947368421052632,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          15,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          38,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          37,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          17
+        ]
+      ],
+      "return_adjust_confusions": 1,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    }
+  },
+  "independent_h10": {
+    "('current', 'before', 0.25)": {
+      "samples": 23,
+      "accuracy": 0.9130434782608695,
+      "macro_f1": 0.8530886038625977,
+      "nll": 0.12061111780510929,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 1.0,
+          "recall": 0.8888888888888888,
+          "f1": 0.9411764705882353,
+          "support": 9
+        },
+        "return": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "support": 3
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 2
+        }
+      },
+      "confusion_true_rows": [
+        [
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'before', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.8928571428571429,
+      "macro_f1": 0.8860271672771672,
+      "nll": 0.48515018007600974,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.9,
+          "recall": 0.9473684210526315,
+          "f1": 0.9230769230769231,
+          "support": 19
+        },
+        "harvest": {
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "f1": 0.8888888888888888,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "support": 9
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.7777777777777778,
+          "f1": 0.875,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          18,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          7
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'before', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.9375,
+      "macro_f1": 0.9317079317079318,
+      "nll": 0.3276603061949309,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.925,
+          "recall": 0.9736842105263158,
+          "f1": 0.9487179487179487,
+          "support": 38
+        },
+        "harvest": {
+          "precision": 0.9722222222222222,
+          "recall": 0.9210526315789473,
+          "f1": 0.9459459459459459,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.9230769230769231,
+          "support": 18
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          37,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          35,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          15
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'after', 0.25)": {
+      "samples": 33,
+      "accuracy": 0.5454545454545454,
+      "macro_f1": 0.5169606709080393,
+      "nll": 1.7026926123016068,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.3333333333333333,
+          "recall": 0.2857142857142857,
+          "f1": 0.3076923076923077,
+          "support": 7
+        },
+        "harvest": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6,
+          "f1": 0.631578947368421,
+          "support": 10
+        },
+        "return": {
+          "precision": 0.7,
+          "recall": 0.7,
+          "f1": 0.7,
+          "support": 10
+        },
+        "adjust": {
+          "precision": 0.375,
+          "recall": 0.5,
+          "f1": 0.42857142857142855,
+          "support": 6
+        }
+      },
+      "confusion_true_rows": [
+        [
+          2,
+          0,
+          0,
+          5
+        ],
+        [
+          4,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          3
+        ]
+      ],
+      "return_adjust_confusions": 3,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'after', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.6964285714285714,
+      "macro_f1": 0.6543991955756662,
+      "nll": 1.0715205752830241,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.5,
+          "recall": 0.4444444444444444,
+          "f1": 0.47058823529411764,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 0.75,
+          "recall": 0.7894736842105263,
+          "f1": 0.7692307692307693,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.8235294117647058,
+          "recall": 0.7368421052631579,
+          "f1": 0.7777777777777778,
+          "support": 19
+        },
+        "adjust": {
+          "precision": 0.5454545454545454,
+          "recall": 0.6666666666666666,
+          "f1": 0.6,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          4,
+          0,
+          0,
+          5
+        ],
+        [
+          4,
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          14,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          6
+        ]
+      ],
+      "return_adjust_confusions": 3,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'after', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.8214285714285714,
+      "macro_f1": 0.7829290230204864,
+      "nll": 0.655247857398926,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.7142857142857143,
+          "recall": 0.5555555555555556,
+          "f1": 0.625,
+          "support": 18
+        },
+        "harvest": {
+          "precision": 0.8717948717948718,
+          "recall": 0.8947368421052632,
+          "f1": 0.8831168831168831,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.9166666666666666,
+          "recall": 0.868421052631579,
+          "f1": 0.8918918918918919,
+          "support": 38
+        },
+        "adjust": {
+          "precision": 0.6521739130434783,
+          "recall": 0.8333333333333334,
+          "f1": 0.7317073170731707,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          10,
+          0,
+          0,
+          8
+        ],
+        [
+          4,
+          34,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          33,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          15
+        ]
+      ],
+      "return_adjust_confusions": 3,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'before', 0.25)": {
+      "samples": 23,
+      "accuracy": 0.9130434782608695,
+      "macro_f1": 0.85,
+      "nll": 0.168491259470568,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "harvest": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9
+        },
+        "return": {
+          "precision": 0.8181818181818182,
+          "recall": 1.0,
+          "f1": 0.9,
+          "support": 9
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "support": 3
+        }
+      },
+      "confusion_true_rows": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          1
+        ]
+      ],
+      "return_adjust_confusions": 2,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'before', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.7857142857142857,
+      "macro_f1": 0.7141542055534353,
+      "nll": 0.6657976191397015,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.6666666666666666,
+          "recall": 0.4444444444444444,
+          "f1": 0.5333333333333333,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 0.9444444444444444,
+          "recall": 0.8947368421052632,
+          "f1": 0.918918918918919,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.8181818181818182,
+          "recall": 0.9473684210526315,
+          "f1": 0.8780487804878049,
+          "support": 19
+        },
+        "adjust": {
+          "precision": 0.5,
+          "recall": 0.5555555555555556,
+          "f1": 0.5263157894736842,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          4,
+          0,
+          0,
+          5
+        ],
+        [
+          2,
+          17,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          5
+        ]
+      ],
+      "return_adjust_confusions": 4,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'before', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.6696428571428571,
+      "macro_f1": 0.6012589055914058,
+      "nll": 0.9440785263771074,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.4,
+          "recall": 0.4444444444444444,
+          "f1": 0.42105263157894735,
+          "support": 18
+        },
+        "harvest": {
+          "precision": 0.8666666666666667,
+          "recall": 0.6842105263157895,
+          "f1": 0.7647058823529411,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.7555555555555555,
+          "recall": 0.8947368421052632,
+          "f1": 0.8192771084337349,
+          "support": 38
+        },
+        "adjust": {
+          "precision": 0.4117647058823529,
+          "recall": 0.3888888888888889,
+          "f1": 0.4,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          8,
+          0,
+          0,
+          10
+        ],
+        [
+          12,
+          26,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          34,
+          0
+        ],
+        [
+          0,
+          0,
+          11,
+          7
+        ]
+      ],
+      "return_adjust_confusions": 11,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'after', 0.25)": {
+      "samples": 33,
+      "accuracy": 0.8787878787878788,
+      "macro_f1": 0.8637362637362637,
+      "nll": 0.47464610143833713,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1": 0.8333333333333334,
+          "support": 7
+        },
+        "harvest": {
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523,
+          "support": 10
+        },
+        "return": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9,
+          "support": 10
+        },
+        "adjust": {
+          "precision": 0.7142857142857143,
+          "recall": 0.8333333333333334,
+          "f1": 0.7692307692307693,
+          "support": 6
+        }
+      },
+      "confusion_true_rows": [
+        [
+          5,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          5
+        ]
+      ],
+      "return_adjust_confusions": 1,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'after', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.9285714285714286,
+      "macro_f1": 0.9097081646423751,
+      "nll": 0.30006086696439305,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 0.7777777777777778,
+          "f1": 0.875,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 0.95,
+          "recall": 1.0,
+          "f1": 0.9743589743589743,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "f1": 0.9473684210526315,
+          "support": 19
+        },
+        "adjust": {
+          "precision": 0.8,
+          "recall": 0.8888888888888888,
+          "f1": 0.8421052631578947,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          7,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          19,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          8
+        ]
+      ],
+      "return_adjust_confusions": 1,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'after', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.9553571428571429,
+      "macro_f1": 0.9411312371838688,
+      "nll": 0.21752026006706343,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "support": 18
+        },
+        "harvest": {
+          "precision": 0.9743589743589743,
+          "recall": 1.0,
+          "f1": 0.987012987012987,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.9736842105263158,
+          "recall": 0.9736842105263158,
+          "f1": 0.9736842105263158,
+          "support": 38
+        },
+        "adjust": {
+          "precision": 0.85,
+          "recall": 0.9444444444444444,
+          "f1": 0.8947368421052632,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          15,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          38,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          37,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          17
+        ]
+      ],
+      "return_adjust_confusions": 1,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    }
+  },
+  "independent_h15": {
+    "('current', 'before', 0.25)": {
+      "samples": 23,
+      "accuracy": 0.9130434782608695,
+      "macro_f1": 0.8530886038625977,
+      "nll": 0.12061111780510929,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 1.0,
+          "recall": 0.8888888888888888,
+          "f1": 0.9411764705882353,
+          "support": 9
+        },
+        "return": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "support": 3
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 2
+        }
+      },
+      "confusion_true_rows": [
+        [
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'before', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.8928571428571429,
+      "macro_f1": 0.8860271672771672,
+      "nll": 0.48515018007600974,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.9,
+          "recall": 0.9473684210526315,
+          "f1": 0.9230769230769231,
+          "support": 19
+        },
+        "harvest": {
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "f1": 0.8888888888888888,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "support": 9
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.7777777777777778,
+          "f1": 0.875,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          18,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          7
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'before', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.9375,
+      "macro_f1": 0.9317079317079318,
+      "nll": 0.3276603061949309,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.925,
+          "recall": 0.9736842105263158,
+          "f1": 0.9487179487179487,
+          "support": 38
+        },
+        "harvest": {
+          "precision": 0.9722222222222222,
+          "recall": 0.9210526315789473,
+          "f1": 0.9459459459459459,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.9230769230769231,
+          "support": 18
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          37,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          35,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          15
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'after', 0.25)": {
+      "samples": 33,
+      "accuracy": 0.5454545454545454,
+      "macro_f1": 0.5169606709080393,
+      "nll": 1.7026926123016068,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.3333333333333333,
+          "recall": 0.2857142857142857,
+          "f1": 0.3076923076923077,
+          "support": 7
+        },
+        "harvest": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6,
+          "f1": 0.631578947368421,
+          "support": 10
+        },
+        "return": {
+          "precision": 0.7,
+          "recall": 0.7,
+          "f1": 0.7,
+          "support": 10
+        },
+        "adjust": {
+          "precision": 0.375,
+          "recall": 0.5,
+          "f1": 0.42857142857142855,
+          "support": 6
+        }
+      },
+      "confusion_true_rows": [
+        [
+          2,
+          0,
+          0,
+          5
+        ],
+        [
+          4,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          3
+        ]
+      ],
+      "return_adjust_confusions": 3,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'after', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.6964285714285714,
+      "macro_f1": 0.6543991955756662,
+      "nll": 1.0715205752830241,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.5,
+          "recall": 0.4444444444444444,
+          "f1": 0.47058823529411764,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 0.75,
+          "recall": 0.7894736842105263,
+          "f1": 0.7692307692307693,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.8235294117647058,
+          "recall": 0.7368421052631579,
+          "f1": 0.7777777777777778,
+          "support": 19
+        },
+        "adjust": {
+          "precision": 0.5454545454545454,
+          "recall": 0.6666666666666666,
+          "f1": 0.6,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          4,
+          0,
+          0,
+          5
+        ],
+        [
+          4,
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          14,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          6
+        ]
+      ],
+      "return_adjust_confusions": 3,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('current', 'after', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.8214285714285714,
+      "macro_f1": 0.7829290230204864,
+      "nll": 0.655247857398926,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.7142857142857143,
+          "recall": 0.5555555555555556,
+          "f1": 0.625,
+          "support": 18
+        },
+        "harvest": {
+          "precision": 0.8717948717948718,
+          "recall": 0.8947368421052632,
+          "f1": 0.8831168831168831,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.9166666666666666,
+          "recall": 0.868421052631579,
+          "f1": 0.8918918918918919,
+          "support": 38
+        },
+        "adjust": {
+          "precision": 0.6521739130434783,
+          "recall": 0.8333333333333334,
+          "f1": 0.7317073170731707,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          10,
+          0,
+          0,
+          8
+        ],
+        [
+          4,
+          34,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          33,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          15
+        ]
+      ],
+      "return_adjust_confusions": 3,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'before', 0.25)": {
+      "samples": 23,
+      "accuracy": 0.9565217391304348,
+      "macro_f1": 0.9368421052631579,
+      "nll": 0.09091576310042927,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "harvest": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 9
+        },
+        "return": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "support": 9
+        },
+        "adjust": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "support": 3
+        }
+      },
+      "confusion_true_rows": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "return_adjust_confusions": 1,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'before', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.8571428571428571,
+      "macro_f1": 0.8092780026990554,
+      "nll": 1.1209162172414906,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.8333333333333334,
+          "recall": 0.5555555555555556,
+          "f1": 0.6666666666666666,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "f1": 0.9473684210526315,
+          "support": 19
+        },
+        "return": {
+          "precision": 0.9,
+          "recall": 0.9473684210526315,
+          "f1": 0.9230769230769231,
+          "support": 19
+        },
+        "adjust": {
+          "precision": 0.6363636363636364,
+          "recall": 0.7777777777777778,
+          "f1": 0.7,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          5,
+          0,
+          0,
+          4
+        ],
+        [
+          1,
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          7
+        ]
+      ],
+      "return_adjust_confusions": 2,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'before', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.8392857142857143,
+      "macro_f1": 0.7938262077481093,
+      "nll": 1.3488623837203666,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.7692307692307693,
+          "recall": 0.5555555555555556,
+          "f1": 0.6451612903225806,
+          "support": 18
+        },
+        "harvest": {
+          "precision": 0.9210526315789473,
+          "recall": 0.9210526315789473,
+          "f1": 0.9210526315789473,
+          "support": 38
+        },
+        "return": {
+          "precision": 0.8974358974358975,
+          "recall": 0.9210526315789473,
+          "f1": 0.9090909090909091,
+          "support": 38
+        },
+        "adjust": {
+          "precision": 0.6363636363636364,
+          "recall": 0.7777777777777778,
+          "f1": 0.7,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          10,
+          0,
+          0,
+          8
+        ],
+        [
+          3,
+          35,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          35,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          14
+        ]
+      ],
+      "return_adjust_confusions": 4,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'after', 0.25)": {
+      "samples": 33,
+      "accuracy": 0.8484848484848485,
+      "macro_f1": 0.8327212261422787,
+      "nll": 1.3432083973673665,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.7142857142857143,
+          "recall": 0.7142857142857143,
+          "f1": 0.7142857142857143,
+          "support": 7
+        },
+        "harvest": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9,
+          "support": 10
+        },
+        "return": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9473684210526315,
+          "support": 10
+        },
+        "adjust": {
+          "precision": 0.7142857142857143,
+          "recall": 0.8333333333333334,
+          "f1": 0.7692307692307693,
+          "support": 6
+        }
+      },
+      "confusion_true_rows": [
+        [
+          5,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          9,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          5
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'after', 0.5)": {
+      "samples": 56,
+      "accuracy": 0.9107142857142857,
+      "macro_f1": 0.8850561087403193,
+      "nll": 0.7973546775409576,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.7777777777777778,
+          "recall": 0.7777777777777778,
+          "f1": 0.7777777777777778,
+          "support": 9
+        },
+        "harvest": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "f1": 0.9473684210526315,
+          "support": 19
+        },
+        "return": {
+          "precision": 1.0,
+          "recall": 0.9473684210526315,
+          "f1": 0.972972972972973,
+          "support": 19
+        },
+        "adjust": {
+          "precision": 0.8,
+          "recall": 0.8888888888888888,
+          "f1": 0.8421052631578947,
+          "support": 9
+        }
+      },
+      "confusion_true_rows": [
+        [
+          7,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          18,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          8
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "('future', 'after', 1.0)": {
+      "samples": 112,
+      "accuracy": 0.9285714285714286,
+      "macro_f1": 0.9080525330525331,
+      "nll": 0.554039959843006,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334,
+          "support": 18
+        },
+        "harvest": {
+          "precision": 0.9487179487179487,
+          "recall": 0.9736842105263158,
+          "f1": 0.961038961038961,
+          "support": 38
+        },
+        "return": {
+          "precision": 1.0,
+          "recall": 0.9473684210526315,
+          "f1": 0.972972972972973,
+          "support": 38
+        },
+        "adjust": {
+          "precision": 0.8421052631578947,
+          "recall": 0.8888888888888888,
+          "f1": 0.8648648648648649,
+          "support": 18
+        }
+      },
+      "confusion_true_rows": [
+        [
+          15,
+          0,
+          0,
+          3
+        ],
+        [
+          1,
+          37,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          36,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          16
+        ]
+      ],
+      "return_adjust_confusions": 0,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifest": "runs/tomato/optimization_20261108/prepared_h10/manifest.json",
+  "manifest_sha256": "0065e7c88efb97f8e85d72169aa49f24810d42983c03370f50e2f2b9b01b383c",
+  "git_sha": "1d15065bc3a5492a030f801a49dffcb378ba7a2b",
+  "split": "val",
+  "seed": 42,
+  "threshold": 0.5,
+  "rates": [
+    2,
+    4
+  ],
+  "confirmations": {
+    "2Hz": 2,
+    "4Hz_fixed_count": 2,
+    "4Hz_matched_span": 3
+  },
+  "future_matching": "exact from/to, one-to-one, [boundary-horizon,boundary), first stable label initializes",
+  "current_matching": "exact from/to, [boundary,min(boundary+2s,segment end))",
+  "shared_future_window_s": 1.0,
+  "provider": {
+    "threshold": 0.8,
+    "confirmations": 2,
+    "max_age_s": 2
+  },
+  "no_test_inference": true,
+  "no_training": true,
+  "inputs": "16 past/current frames at10Hz with newest retained, named58 measured positions; actual30Hz frames at fresh4Hz anchors",
+  "runtime_scope": "recorded RGB/state, CPU history assembly + H2D + normalization + GPU encoder + head + output; decode/capture/transport reported separately, not hardware end-to-end",
+  "locked_before_4hz": true
+}

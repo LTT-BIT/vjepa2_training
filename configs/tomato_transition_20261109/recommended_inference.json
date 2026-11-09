@@ -1,0 +1,42 @@
+{
+  "runtime_class": "tools.tomato_agent_inference.TomatoAgent",
+  "checkpoint": "/home/user/vjepa2_training/runs/tomato/temporal_final_20261108/selected_research_bundle/agent.pt",
+  "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+  "pretrained_dir": "/home/user/vjepa2_training/pretrained/vjepa2-vitl-fpc64-256",
+  "pretrained": {
+    "model_id": "facebook/vjepa2-vitl-fpc64-256",
+    "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+    "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+    "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+  },
+  "device": "cuda",
+  "prediction_hz": 2,
+  "future_horizon_s": 1.5,
+  "max_age_s": 2.0,
+  "analysis_operating_point": {
+    "current_threshold": 0.5,
+    "current_confirmations": 2,
+    "future_threshold": 0.5,
+    "future_confirmations": 2
+  },
+  "openpi_existing_provider_unchanged": {
+    "threshold": 0.8,
+    "confirmations": 2,
+    "current_confirmations": 2,
+    "future_warning_confirmations": 1,
+    "future_warning_requires_expected_next_class": true
+  },
+  "research_only": true,
+  "stable_default": "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/joint_s42/best_head.pt",
+  "selection_protocol_sha256": "b51ddbed750dcd8aafd8e6e21f7614d10fe45d7278c87fee63c70500505c2512",
+  "analysis_operating_point_scope": "Classifier change-event evaluation only; not automatically applied to existing provider",
+  "recommendation": "Retain existing2Hz research candidate; not accepted for robot deployment",
+  "transition_audit": "/home/user/vjepa2_training/runs/tomato/transition_audit_20261109",
+  "input_schema_path": "/home/user/vjepa2_training/runs/tomato/temporal_final_20261108/selected_research_bundle/input_schema.json",
+  "normalization_path": "/home/user/vjepa2_training/runs/tomato/temporal_final_20261108/selected_research_bundle/normalization.npz",
+  "no_robot_control": true,
+  "reason": "4Hz matched-duration adds one strict Future hit but increases actual false warnings and premature prompts; no validated overall reliability gain",
+  "checkpoint_sha256": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+  "input_schema_sha256": "32a40a435216f5e60cc39e135f6720b681b41d884cc5b2cce933f29023144ffa",
+  "normalization_sha256": "ca0991bf8e4e9ef4f8c87390ec51929402e9baa735b9bc350371991098950d1d"
+}
