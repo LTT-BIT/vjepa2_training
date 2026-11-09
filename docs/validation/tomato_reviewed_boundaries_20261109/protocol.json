@@ -1,0 +1,59 @@
+{
+  "seed": 42,
+  "threshold": 0.5,
+  "confirmations": 2,
+  "hz": 2,
+  "split": "val",
+  "val_episodes": 9,
+  "test_read": false,
+  "training": false,
+  "encoder_calls": 0,
+  "source_labels_changed": false,
+  "matching": "exact from/to, one-to-one, [boundary-horizon,boundary), first stable label initializes",
+  "current_matching": "exact from/to, [boundary,min(boundary+2s,segment end))",
+  "native_horizons": {
+    "joint": 1.0,
+    "independent_h10": 1.0,
+    "independent_h15": 1.5
+  },
+  "common_future_window_s": 1.0,
+  "inputs": {
+    "docs/validation/tomato_boundary_review_20261109/completed_review_capture.json": "865d0af61e1ee71fc32d24ae1dd4d441150b5d763c747f67b3359ed37104ce03",
+    "configs/tomato_curated91_20261109/quality_exclusions.json": "8aa259a4128a2db194b924aa4fd687b5cb029d970046e040edd7c48d8c381655",
+    "runs/tomato/transition_audit_20261109/comparison.json": "8b37e1e905870b2027cc8f226689a310c2a2e266efc439c1ec9c00c828499ed2",
+    "runs/tomato/optimization_20261108/prepared_h10/manifest.json": "0065e7c88efb97f8e85d72169aa49f24810d42983c03370f50e2f2b9b01b383c",
+    "runs/tomato/transition_audit_20261109/protocol.json": "f6dae070f9779ebc0269135c434912b1ca3d9231ce4e224a2de7c177ea40cf61",
+    "runs/tomato/optimization_20261108/evaluations/joint_s42_val_logits.npz": "be1c2e29c34e5d75172eca1275f46ba49078cee6ca7de9faf1e9ea360ac32341",
+    "runs/tomato/optimization_20261108/evaluations/independent_h10_s42_val_logits.npz": "6c377ee6e09a4326c27bad71583c50cb66cf913ed1d9addfc3679914263337a6",
+    "runs/tomato/optimization_20261108/evaluations/independent_h15_s42_val_logits.npz": "ac619829ae5d729d0975b4ed11230f0ab5aecb2fa16d28ed45062e0cc18af880",
+    "runs/tomato/transition_audit_20261109/openpi_replay.json": "4f0291e1cc9b941691f74ebd217b89de2a3ce669cfbb34a1ec51c587075f9282"
+  },
+  "code_sha": "3e323a6ab6716298f6ed9f7fe50d84a37fd0bba596c765eb114d535ae9f9943b",
+  "historical_parity": {
+    "joint": {
+      "detected": 21,
+      "total": 56,
+      "false_events": 39,
+      "passed": true
+    },
+    "independent_h10": {
+      "detected": 25,
+      "total": 56,
+      "false_events": 33,
+      "passed": true
+    },
+    "independent_h15": {
+      "detected": 40,
+      "total": 56,
+      "false_events": 23,
+      "passed": true
+    }
+  },
+  "limitations": [
+    "27 records retain UI default pending_human_review; user declared annotation complete, but status not auto-promoted.",
+    "All reasons are literal 1; motion rationale absent. Do not invent motion evidence.",
+    "Full original localStorage export including revision history/reviewed_at is not captured. Browser originals preserved.",
+    "False-warning clip marks do not automatically create new full-Episode ground-truth events.",
+    "No raw labels changed; no revised event recall claimed."
+  ]
+}

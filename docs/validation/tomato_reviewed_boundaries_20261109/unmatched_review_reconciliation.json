@@ -1,0 +1,192 @@
+[
+  {
+    "original_ui_number": 19,
+    "case_id": "3e645bf4e137d0f836c9d7ff_fp1",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 3,
+        "provisional_boundary_frame": 1853,
+        "reviewed_point_offset_s": -0.19999999999999574
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 20,
+    "case_id": "3e645bf4e137d0f836c9d7ff_fp2",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 4,
+        "provisional_boundary_frame": 2227,
+        "reviewed_point_offset_s": -2.5333333333333314
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 21,
+    "case_id": "3e645bf4e137d0f836c9d7ff_fp3",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 5,
+        "provisional_boundary_frame": 2430,
+        "reviewed_point_offset_s": 0.4333333333333371
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 22,
+    "case_id": "27d8bc0413a42341c7e8c3e5_fp1",
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 4,
+        "provisional_boundary_frame": 3288,
+        "reviewed_point_offset_s": -0.6333333333333258
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 23,
+    "case_id": "0b12ac0fda9d7cd77dee6e60_fp1",
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 3,
+        "provisional_boundary_frame": 2420,
+        "reviewed_point_offset_s": -0.3333333333333428
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 24,
+    "case_id": "0b12ac0fda9d7cd77dee6e60_fp2",
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 4,
+        "provisional_boundary_frame": 2974,
+        "reviewed_point_offset_s": 0.0
+      }
+    ],
+    "has_frame_conflict": false,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 25,
+    "case_id": "0b12ac0fda9d7cd77dee6e60_fp3",
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "same_type_existing_events_inside_clip": [],
+    "has_frame_conflict": false,
+    "resolution": "explicit_no_transition"
+  },
+  {
+    "original_ui_number": 26,
+    "case_id": "0b12ac0fda9d7cd77dee6e60_fp4",
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 4,
+        "provisional_boundary_frame": 2974,
+        "reviewed_point_offset_s": 6.133333333333326
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 27,
+    "case_id": "0b12ac0fda9d7cd77dee6e60_fp5",
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 5,
+        "provisional_boundary_frame": 3413,
+        "reviewed_point_offset_s": 0.06666666666666288
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 28,
+    "case_id": "f53f0b6fb7f3888f87a0f8ff_fp1",
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 3,
+        "provisional_boundary_frame": 1986,
+        "reviewed_point_offset_s": 0.03333333333333144
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 29,
+    "case_id": "f53f0b6fb7f3888f87a0f8ff_fp2",
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 4,
+        "provisional_boundary_frame": 2846,
+        "reviewed_point_offset_s": 1.8666666666666742
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 30,
+    "case_id": "f53f0b6fb7f3888f87a0f8ff_fp3",
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 6,
+        "provisional_boundary_frame": 5263,
+        "reviewed_point_offset_s": 0.0
+      }
+    ],
+    "has_frame_conflict": false,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 31,
+    "case_id": "a8b23394b642f0bb769a0391_fp1",
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 4,
+        "provisional_boundary_frame": 1958,
+        "reviewed_point_offset_s": 0.09999999999999432
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  },
+  {
+    "original_ui_number": 41,
+    "case_id": "d0f8727d35eced697dcf79fe_fp1",
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "same_type_existing_events_inside_clip": [
+      {
+        "ordinal": 4,
+        "provisional_boundary_frame": 1968,
+        "reviewed_point_offset_s": -2.299999999999997
+      }
+    ],
+    "has_frame_conflict": true,
+    "resolution": "associate_with_existing_event"
+  }
+]

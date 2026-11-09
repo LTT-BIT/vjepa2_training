@@ -1,0 +1,416 @@
+[
+  {
+    "model": "joint",
+    "head": "current",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "before": {
+      "time": 60.43333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 73.3,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": 1.06666666666667
+    },
+    "after": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    }
+  },
+  {
+    "model": "joint",
+    "head": "future",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "before": {
+      "time": 60.43333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 73.3,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "after": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -0.2666666666666657
+    }
+  },
+  {
+    "model": "joint",
+    "head": "current",
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "before": {
+      "time": 108.3,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.5,
+      "offset_s": 1.2000000000000028
+    },
+    "after": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    }
+  },
+  {
+    "model": "joint",
+    "head": "future",
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "before": {
+      "time": 108.3,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "after": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    }
+  },
+  {
+    "model": "joint",
+    "head": "current",
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "before": {
+      "time": 64.76666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "after": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": true,
+      "event_time": 67.0,
+      "offset_s": 1.4000000000000057
+    }
+  },
+  {
+    "model": "independent_h10",
+    "head": "current",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "before": {
+      "time": 60.43333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 73.3,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": 1.06666666666667
+    },
+    "after": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    }
+  },
+  {
+    "model": "independent_h10",
+    "head": "future",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "before": {
+      "time": 60.43333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 73.3,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "after": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -0.2666666666666657
+    }
+  },
+  {
+    "model": "independent_h10",
+    "head": "current",
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "before": {
+      "time": 108.3,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.5,
+      "offset_s": 1.2000000000000028
+    },
+    "after": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    }
+  },
+  {
+    "model": "independent_h10",
+    "head": "future",
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "before": {
+      "time": 108.3,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "after": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    }
+  },
+  {
+    "model": "independent_h10",
+    "head": "future",
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "before": {
+      "time": 90.73333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 90.5,
+      "offset_s": -0.23333333333333428
+    },
+    "after": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    }
+  },
+  {
+    "model": "independent_h10",
+    "head": "future",
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "before": {
+      "time": 90.83333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": true,
+      "event_time": 90.5,
+      "offset_s": -0.3333333333333286
+    },
+    "after": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    }
+  },
+  {
+    "model": "independent_h10",
+    "head": "current",
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "before": {
+      "time": 64.76666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "after": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": true,
+      "event_time": 67.0,
+      "offset_s": 1.4000000000000057
+    }
+  },
+  {
+    "model": "independent_h15",
+    "head": "current",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "before": {
+      "time": 60.43333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 73.3,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": 1.06666666666667
+    },
+    "after": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    }
+  },
+  {
+    "model": "independent_h15",
+    "head": "future",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "before": {
+      "time": 60.43333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 73.3,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "after": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.0,
+      "offset_s": -0.7666666666666657
+    }
+  },
+  {
+    "model": "independent_h15",
+    "head": "current",
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "before": {
+      "time": 108.3,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.5,
+      "offset_s": 1.2000000000000028
+    },
+    "after": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    }
+  },
+  {
+    "model": "independent_h15",
+    "head": "future",
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "before": {
+      "time": 108.3,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "after": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    }
+  },
+  {
+    "model": "independent_h15",
+    "head": "future",
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "before": {
+      "time": 90.83333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": true,
+      "event_time": 90.5,
+      "offset_s": -0.3333333333333286
+    },
+    "after": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    }
+  },
+  {
+    "model": "independent_h15",
+    "head": "current",
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "before": {
+      "time": 64.76666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "after": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": true,
+      "event_time": 67.0,
+      "offset_s": 1.4000000000000057
+    }
+  }
+]

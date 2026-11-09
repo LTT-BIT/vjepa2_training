@@ -1,0 +1,292 @@
+[
+  {
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 74.23333333333333,
+    "diagnosis": "premature_event_persists_into_window",
+    "adequate_window_times_s": [
+      73.0,
+      73.5,
+      74.0
+    ],
+    "nearest_same_transition_offset_s": -4.233333333333334,
+    "window_times_s": [
+      73.0,
+      73.5,
+      74.0
+    ],
+    "window_target_probabilities": [
+      0.9999996456300607,
+      0.9999999177528883,
+      0.9999988981544902
+    ],
+    "window_argmax_labels": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 81.0,
+    "diagnosis": "no_target_probability_in_allowed_window",
+    "adequate_window_times_s": [],
+    "nearest_same_transition_offset_s": 0.5,
+    "window_times_s": [
+      79.5,
+      80.0,
+      80.5
+    ],
+    "window_target_probabilities": [
+      0.008791923342999813,
+      0.022544468497813705,
+      0.21319107119611486
+    ],
+    "window_argmax_labels": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 80.66666666666667,
+    "diagnosis": "premature_event_persists_into_window",
+    "adequate_window_times_s": [
+      79.5,
+      80.0,
+      80.5
+    ],
+    "nearest_same_transition_offset_s": -2.6666666666666714,
+    "window_times_s": [
+      79.5,
+      80.0,
+      80.5
+    ],
+    "window_target_probabilities": [
+      0.9999971068377942,
+      0.9999999901322542,
+      0.9999999995938162
+    ],
+    "window_argmax_labels": [
+      3,
+      3,
+      3
+    ]
+  },
+  {
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 99.13333333333334,
+    "diagnosis": "premature_event_persists_into_window",
+    "adequate_window_times_s": [
+      98.0,
+      98.5,
+      99.0
+    ],
+    "nearest_same_transition_offset_s": -2.63333333333334,
+    "window_times_s": [
+      98.0,
+      98.5,
+      99.0
+    ],
+    "window_target_probabilities": [
+      0.9638283280400544,
+      0.9998583040475582,
+      0.998062525379464
+    ],
+    "window_argmax_labels": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 113.76666666666667,
+    "diagnosis": "premature_event_persists_into_window",
+    "adequate_window_times_s": [
+      112.5,
+      113.0,
+      113.5
+    ],
+    "nearest_same_transition_offset_s": -2.7666666666666657,
+    "window_times_s": [
+      112.5,
+      113.0,
+      113.5
+    ],
+    "window_target_probabilities": [
+      0.9999445446114305,
+      0.999999998887829,
+      0.9999999999999742
+    ],
+    "window_argmax_labels": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 90.3,
+    "diagnosis": "insufficient_confirmation_or_class_path",
+    "adequate_window_times_s": [
+      90.0
+    ],
+    "nearest_same_transition_offset_s": 0.20000000000000284,
+    "window_times_s": [
+      89.0,
+      89.5,
+      90.0
+    ],
+    "window_target_probabilities": [
+      0.041055420316084154,
+      0.04413503504772888,
+      0.8614761956457196
+    ],
+    "window_argmax_labels": [
+      3,
+      3,
+      0
+    ]
+  },
+  {
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 66.2,
+    "diagnosis": "no_target_probability_in_allowed_window",
+    "adequate_window_times_s": [],
+    "nearest_same_transition_offset_s": 0.7999999999999972,
+    "window_times_s": [
+      65.0,
+      65.5,
+      66.0
+    ],
+    "window_target_probabilities": [
+      1.7975390709466601e-06,
+      0.00032800649554007473,
+      0.12796756962527114
+    ],
+    "window_argmax_labels": [
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 94.86666666666666,
+    "diagnosis": "insufficient_confirmation_or_class_path",
+    "adequate_window_times_s": [
+      94.5
+    ],
+    "nearest_same_transition_offset_s": 4.13333333333334,
+    "window_times_s": [
+      93.5,
+      94.0,
+      94.5
+    ],
+    "window_target_probabilities": [
+      0.2692256159194895,
+      0.0033922984903748785,
+      0.8385897260363759
+    ],
+    "window_argmax_labels": [
+      3,
+      3,
+      0
+    ]
+  },
+  {
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 175.43333333333334,
+    "diagnosis": "insufficient_confirmation_or_class_path",
+    "adequate_window_times_s": [
+      175.0
+    ],
+    "nearest_same_transition_offset_s": 0.06666666666666288,
+    "window_times_s": [
+      174.0,
+      174.5,
+      175.0
+    ],
+    "window_target_probabilities": [
+      0.02447984768761041,
+      0.021968427768038788,
+      0.9991854839321184
+    ],
+    "window_argmax_labels": [
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 65.26666666666667,
+    "diagnosis": "insufficient_confirmation_or_class_path",
+    "adequate_window_times_s": [
+      65.0
+    ],
+    "nearest_same_transition_offset_s": 0.23333333333333428,
+    "window_times_s": [
+      64.0,
+      64.5,
+      65.0
+    ],
+    "window_target_probabilities": [
+      0.05366367991360864,
+      0.010279880475929475,
+      0.9056395565253346
+    ],
+    "window_argmax_labels": [
+      3,
+      3,
+      0
+    ]
+  },
+  {
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 65.6,
+    "diagnosis": "insufficient_confirmation_or_class_path",
+    "adequate_window_times_s": [
+      65.5
+    ],
+    "nearest_same_transition_offset_s": 0.4000000000000057,
+    "window_times_s": [
+      64.5,
+      65.0,
+      65.5
+    ],
+    "window_target_probabilities": [
+      0.03808991313039659,
+      0.04047427891102116,
+      0.9973124422610787
+    ],
+    "window_argmax_labels": [
+      3,
+      3,
+      0
+    ]
+  }
+]
