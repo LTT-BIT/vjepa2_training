@@ -156,6 +156,18 @@
       "agent_modified": false
     }
   ],
+  "user_confirmed_revision": {
+    "episode_id": "e80436dea962fa58288fd8f9",
+    "split": "train",
+    "original_annotation_sha256": "ca93d3c93e66508fbddfadeda3954b6a1bf65d29b15d4b7328aac91544a99008",
+    "corrected_annotation_sha256": "4b64e72b2f5274e1b747c9f8b133b27f77b341c45c5c786d57d156152ed9c373",
+    "change_status": "user_confirmed_manual_correction",
+    "confirmation_date": "2026-11-09",
+    "evidence": "用户说明：今天早上考虑训练时发现一条数据阶段时间划分错误，随后重新修改。对应本轮唯一发现的训练标注差异。",
+    "agent_applied_label_changes": false,
+    "old_experiment_version_preserved": true
+  },
+  "unexpected_annotation_changes": [],
   "validation_annotations_unchanged": true,
   "training_performed": false,
   "source_file_restored_or_modified": false,

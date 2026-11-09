@@ -1,5 +1,17 @@
 {
-  "passed": false,
+  "passed": true,
+  "confirmed_annotation_revision": {
+    "episode_id": "e80436dea962fa58288fd8f9",
+    "split": "train",
+    "original_annotation_sha256": "ca93d3c93e66508fbddfadeda3954b6a1bf65d29b15d4b7328aac91544a99008",
+    "corrected_annotation_sha256": "4b64e72b2f5274e1b747c9f8b133b27f77b341c45c5c786d57d156152ed9c373",
+    "change_status": "user_confirmed_manual_correction",
+    "confirmation_date": "2026-11-09",
+    "evidence": "用户说明：今天早上考虑训练时发现一条数据阶段时间划分错误，随后重新修改。对应本轮唯一发现的训练标注差异。",
+    "agent_applied_label_changes": false,
+    "old_experiment_version_preserved": true
+  },
+  "unexpected_annotation_changes": [],
   "validation_evidence_passed": true,
   "global_annotation_snapshot_intact": false,
   "historical_files_checked": 1204,
@@ -180,7 +192,7 @@
   },
   "active_openpi_at_report": {
     "branch": "tomato-subtasks-ab-train",
-    "sha": "6242e4a2fa6a00398baaff7069a52c4fbc5b3762",
+    "sha": "71ab55c93864567fe7a43fe4a2f6511004e5b4d9",
     "status": ""
   },
   "statement": "Historical bridge isolated from33ce417; active OpenPI branch left untouched. Model candidate and stable default configs unchanged."

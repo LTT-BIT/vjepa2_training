@@ -2,7 +2,7 @@
 import argparse
 from . import tomato_dataset as ds
 
-STATUSES={'pending_human_review','retain_original','propose_revision','ambiguous','unobservable'}
+STATUSES={'pending_human_review','retain_original','propose_revision','ambiguous','unobservable','no_transition'}
 
 
 def validate(payload,case_data):
@@ -21,6 +21,7 @@ def validate(payload,case_data):
             if v is not None and (type(v) is not int or not 0<=v<c['episode_length']):raise ValueError('Invalid source frame')
         if (lo is None)!=(hi is None) or lo is not None and lo>hi:raise ValueError('Invalid uncertainty interval')
         if p is not None and lo is not None and not lo<=p<=hi:raise ValueError('Proposed frame outside interval')
+        if r['status']=='no_transition' and any(v is not None for v in [p,lo,hi]):raise ValueError('No transition cannot carry a boundary suggestion')
         if r['status']=='propose_revision' and (p is None or lo is None):raise ValueError('Revision needs point and uncertainty interval')
         if r['status']=='retain_original' and p not in (None,c['original_boundary_frame']):raise ValueError('Retention contradicts proposed frame')
         if r['status']!='pending_human_review' and (not r.get('reviewer') or not str(r.get('reason','')).strip()):raise ValueError('Completed opinion needs reviewer and motion evidence')

@@ -25,3 +25,11 @@ def test_retention_and_revision_cannot_be_confused_and_duplicate_is_not_consensu
     with pytest.raises(ValueError):validate(p,c)
     p,c=sample();p['reviews'].append(deepcopy(p['reviews'][0]))
     with pytest.raises(ValueError):validate(p,c)
+
+
+def test_explicit_no_transition_opinion_has_no_boundary_time():
+    p,c=sample();r=p['reviews'][0];r['status']='no_transition'
+    for field in ['proposed_boundary_frame','earliest_plausible_frame','latest_plausible_frame']:r[field]=None
+    assert validate(p,c)['valid']
+    r['proposed_boundary_frame']=22
+    with pytest.raises(ValueError):validate(p,c)

@@ -25,12 +25,14 @@ def run():
             current=ds.read_json(e['annotation']['path'])
             ann_changed.append(dict(episode_id=e['episode_id'],split=e['split'],source_recording_id=e['source_recording_id'],path=e['annotation']['path'],expected_sha256=e['annotation']['sha256'],actual_sha256=actual,frozen_segments=e['annotation']['segments'],current_segments=current['segments'],current_revision=current.get('revision'),mtime=Path(e['annotation']['path']).stat().st_mtime,agent_modified=False))
     assert not changed and not any(e['split']=='val' for e in ann_changed)
+    confirmed=ds.read_json('configs/tomato_boundary_review_20261109/annotation_revision_provenance.json')
+    unexpected=[e for e in ann_changed if not (e['episode_id']==confirmed['episode_id'] and e['actual_sha256']==confirmed['corrected_annotation_sha256'])]
     active_now=dict(branch=subprocess.check_output(['git','-C','/home/user/tomato-openpi','branch','--show-current'],text=True).strip(),sha=subprocess.check_output(['git','-C','/home/user/tomato-openpi','rev-parse','HEAD'],text=True).strip(),status=subprocess.check_output(['git','-C','/home/user/tomato-openpi','status','--short'],text=True).strip())
-    integrity=dict(passed=not ann_changed,validation_evidence_passed=True,global_annotation_snapshot_intact=not ann_changed,historical_files_checked=len(expectations),changed=changed,annotations_checked=len(m['episodes']),changed_annotations=ann_changed,
+    integrity=dict(passed=not unexpected,confirmed_annotation_revision=confirmed,unexpected_annotation_changes=unexpected,validation_evidence_passed=True,global_annotation_snapshot_intact=not ann_changed,historical_files_checked=len(expectations),changed=changed,annotations_checked=len(m['episodes']),changed_annotations=ann_changed,
         training_runs=0,encoder_calls=0,test_inference_calls=0,source_split_sha256=m['split_sha256'],historical_source=lock['historical_openpi'],active_openpi_start=lock['live_openpi'],active_openpi_at_report=active_now,
         statement='Historical bridge isolated from33ce417; active OpenPI branch left untouched. Model candidate and stable default configs unchanged.')
     ds.write_json(ROOT/'integrity.json',integrity)
-    ds.write_json(ROOT/'training_annotation_drift.json',dict(items=ann_changed,validation_annotations_unchanged=True,training_performed=False,source_file_restored_or_modified=False,action='Keep frozen checkpoint/cache/val evidence. Reconcile data version before any future retraining; do not mix current source labels with old cache targets.'))
+    ds.write_json(ROOT/'training_annotation_drift.json',dict(items=ann_changed,user_confirmed_revision=confirmed,unexpected_annotation_changes=unexpected,validation_annotations_unchanged=True,training_performed=False,source_file_restored_or_modified=False,action='Keep frozen checkpoint/cache/val evidence. Reconcile data version before any future retraining; do not mix current source labels with old cache targets.'))
     for name in ['decision_summary.json','event_attribution.json','early_prompt_trace.json','prompt_timing_decomposition.json','package_checks.json','integrity.json','training_annotation_drift.json']:
         ds.write_json(dest/name,ds.read_json(ROOT/name))
     # Preliminary observations are not human adjudications or suggested ground truth.
@@ -96,13 +98,13 @@ def run():
       '|人工不确定性|adjust与新抓握外观相近，尚无两位独立复核者共识|41项人工复核、辅助锚点、最早/最晚区间、原始/建议点和修订历史|统计人际差异和区间，不只重标错例；统一新版本后才另行评价|',
       '|Prompt效果|1次提前1.3秒、4次晚于允许窗；Future不能直接切Prompt|保留原逻辑和候选，先核对语义与实际Current起点|真实历史接口逐观测日志、版本/Chunk检验；不连接硬件|',
       '', '## 新发现：训练原始标注版本漂移','',
-      '全量核查发现训练Episode e80436dea962fa58288fd8f9（原录制651eb2271bae4971a62273985ed85c2d）当前原始标注revision2与冻结manifest不同：最后harvest→return从frame2989（99.633秒）移到2908（96.933秒），末段return从1帧变为82帧。新旧SHA及区间保存在training_annotation_drift.json。本轮未写该文件，不能从本轮日志确定修改来源，也没有恢复/覆盖它。',
-      '', '这说明原始数据树不再整体等同历史94条快照，不能宣称94份标注全部未变。10条验证标注均匹配，56事件和已有模型得分不受影响；1197份历史产物也一致。未来重训前应确认该修订的来源/批准记录，建立新manifest和目标标签/缓存身份；旧训练数据版本及已有结果仍冻结。这个harvest→return样本的问题不能用来解释全部adjust→pickup失败。',
+      '全量核查发现训练Episode e80436dea962fa58288fd8f9（原录制651eb2271bae4971a62273985ed85c2d）当前原始标注revision2与冻结manifest不同：最后harvest→return从frame2989（99.633秒）移到2908（96.933秒），末段return从1帧变为82帧。新旧SHA及区间保存在training_annotation_drift.json。用户随后确认：今天早上检查训练数据时发现这一条阶段时间划分错误，已人工重新修改。该差异现已记录为用户确认的标注纠错，不再视为来源不明的变更。本轮没有恢复、覆盖或再次修改它。',
+      '', '这说明原始数据树不再整体等同历史94条快照，不能宣称94份标注全部未变。10条验证标注均匹配，56事件和已有模型得分不受影响；1197份历史产物也一致。用户确认及精确修订SHA保存在configs/tomato_boundary_review_20261109/annotation_revision_provenance.json。未来重训前建立新manifest和目标标签版本；在视频、状态与采样身份不变且校验通过时可复用视觉特征，但不能混用旧目标标签；旧训练数据版本及已有结果仍冻结。这个harvest→return样本的问题不能用来解释全部adjust→pickup失败。',
       '', '## 补录与真正盲测','',
       '具体清单在docs/TOMATO_RECORDING_CHECKLIST_20261109.md：12条开发、20条主封存测试，另4条预登记备用；6个开发场次组、10个主测试场次组、2个备用组。补足不同速度、重复调整、抓握不抬起、遮挡、裸梗停顿、返程/释放重叠及缺失/回退。不能预设困难动作必然是负例，应按真实动作标注。计划数据尚未采集。',
       '', '以原录制/植株/场次分组，开发与盲测不共享；尽量跨新日期和操作者，若有重叠如实报告。锁定checkpoint、归一化、Schema、规范、2Hz/1.5秒、阈值和事件口径，再释放封存测试一次验收。备用只按事件数量缺口或技术失败启用，不按分数补数据。新的盲测一旦用于修改模型/阈值即视为已暴露。',
       '', '## 代码、检查与适用限制','',
-      '开始核查时OpenPI主目录处于tomato-subtasks-ab-train / 7b83057，末次核对该分支已推进到6242e4a，工作区干净；检出中没有agent_bridge.py。本轮从其Git对象33ce417只读提取原三份接口/契约源码，保存SHA到本轮隔离目录，并复现上轮有序回放。没有切换、修改或恢复OpenPI工作目录。因此这里验收的是历史固定接口，不是声称当前AB训练分支已经具备同一接口。',
+      f'开始核查时OpenPI主目录处于tomato-subtasks-ab-train / 7b83057，末次核对该分支为{active_now["sha"][:7]}；检出中没有agent_bridge.py。本轮从其Git对象33ce417只读提取原三份接口/契约源码，保存SHA到本轮隔离目录，并复现上轮有序回放。没有切换、修改或恢复OpenPI工作目录。因此这里验收的是历史固定接口，不是声称当前AB训练分支已经具备同一接口。',
       '', f'134项回归/单元测试通过；41个视频的30Hz、零起点、逐帧数量，以及状态CSV的源帧号、命名关节、原标注SHA逐项通过。历史{integrity["historical_files_checked"]}份已冻结产物及候选/默认配置SHA未变；94份原始标注中93份匹配、1份训练标注漂移，10条验证均匹配。训练0次、编码器前向0次、测试推断0次。',
       '', '人工复核工具检查中修复两项本轮新建辅助功能问题：浮点秒数裁剪会让14个片段CSV首尾最多偏1帧，已改用源帧索引并重新生成/逐项验证；普通静态HTTP服务不支持视频Range导致步进失败，已提供仅loopback的Range服务器并浏览器实测1帧步进68.000→68.033秒。它们不是原始训练数据或OpenPI缺陷。',
       '', f'完整本地产物：`{ROOT.resolve()}`。人审包包含原始实测曲线/CSV和视频，不进入Git；版本化代码、规范、逐事件诊断和结果摘要。意见仍需人工填写，本轮没有自行完成双人专家重标。',
@@ -118,6 +120,7 @@ def run():
     Path('docs/TOMATO_BOUNDARY_REVIEW_AND_DECISIONS_20261109.md').write_text('\n'.join(lines)+'\n')
     # Portable reviewer instructions and a stdlib-only server.
     shutil.copyfile('docs/TOMATO_BOUNDARY_ANNOTATION_STANDARD_V1.md',package/'ANNOTATION_STANDARD.md')
+    shutil.copyfile('docs/TOMATO_REVIEW_UI_QUICKSTART.md',package/'QUICKSTART.md')
     shutil.copyfile('tools/serve_tomato_boundary_review.py',package/'run_review_server.py')
     readme=['# 41案例人工复核包','', '这是历史验证数据的模型辅助复核包，不是新的独立盲测。建议两位复核者在不同机器/浏览器档案分别操作。不要共用浏览器意见缓存。','',
         '在本目录启动：`python3 run_review_server.py --directory . --port 8768`，打开 http://127.0.0.1:8768/ 。服务器仅绑定本机，支持逐帧视频定位所需的HTTP Range。直接双击HTML可能无法读取CSV。','',
