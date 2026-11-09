@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "training_calls": 0,
+  "normalization_refitted": false,
+  "model_or_threshold_selected_on_new_test": false,
+  "source_or_checkpoint_changed": false,
+  "remote_pushed": false,
+  "independent_recordings": 10
+}

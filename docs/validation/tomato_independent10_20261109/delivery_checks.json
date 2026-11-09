@@ -1,0 +1,13 @@
+{
+  "tomato_tests_passed": 133,
+  "old_model_hashes_unchanged": true,
+  "model_joint_names_and_pretrained_match": true,
+  "new_recordings": 10,
+  "new_windows": 2341,
+  "new_future15_valid_windows": 2311,
+  "new_ground_truth_events": 60,
+  "primary_fixed_before_scoring": true,
+  "normalization_refitted": false,
+  "training": false,
+  "remote_push": false
+}

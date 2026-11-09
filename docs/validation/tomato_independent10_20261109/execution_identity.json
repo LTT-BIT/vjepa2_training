@@ -1,0 +1,9 @@
+{
+  "base_git_sha": "712e6db",
+  "evaluator_sha256": "f4d188cd7e2fb6886c09976b8e293cc8b07f9442870e44cbd670d5f4031131ec",
+  "source_snapshot": "runs/tomato/independent10_20261109/evaluator_source_executed.py",
+  "dataset_utility_sha256": "1d84d589095ecbda33c8be457ff1d10af880aca30df47f4062cfe2898d3ad3db",
+  "encoder_utility_sha256": "8cdebb9a52422fac670b0feb421dce2b8939e03635c312f26f007d3754af8671",
+  "no_training": true,
+  "no_threshold_change": true
+}

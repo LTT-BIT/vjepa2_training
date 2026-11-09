@@ -1,0 +1,132 @@
+{
+  "locked_before_scoring": true,
+  "new_recordings": 10,
+  "original_annotation_events": 60,
+  "old_source_overlap": false,
+  "training_calls": 0,
+  "recommended_model_unchanged": true,
+  "new_model_selected": false,
+  "seed_summary": {
+    "recall": {
+      "mean": 0.6055555555555555,
+      "sample_sd": 0.05091750772173154
+    },
+    "false_per_minute": {
+      "mean": 1.6443098225876245,
+      "sample_sd": 0.10809170053480567
+    }
+  },
+  "primary_recording_ci": {
+    "primary_future_recall_recording_bootstrap_ci95": [
+      0.48333333333333334,
+      0.75
+    ],
+    "recordings": 10,
+    "draws": 3000,
+    "scope": "same scene/operator may limit independence beyond recording"
+  },
+  "primary_miss_diagnoses": {
+    "too_early": 11,
+    "late": 12
+  },
+  "primary_false_diagnoses": {
+    "too_early": 12,
+    "late": 17,
+    "wrong_transition_type": 2
+  },
+  "time_head_diagnostic": {
+    "B0": {
+      "total": 60,
+      "detected": 37,
+      "missed": 23,
+      "precision": 0.5441176470588235,
+      "recall": 0.6166666666666667,
+      "f1": 0.578125,
+      "false_events": 31,
+      "false_per_minute": 1.609692773691043,
+      "minutes": 19.258333333333333,
+      "lead_p50_s": 0.7000000000000028,
+      "lead_p05_s": 0.1,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 20,
+          "detected": 15
+        },
+        "harvest->return": {
+          "total": 20,
+          "detected": 13
+        },
+        "return->adjust": {
+          "total": 10,
+          "detected": 5
+        },
+        "adjust->pickup": {
+          "total": 10,
+          "detected": 4
+        }
+      }
+    },
+    "B1_gate": {
+      "total": 60,
+      "detected": 28,
+      "missed": 32,
+      "precision": 0.8235294117647058,
+      "recall": 0.4666666666666667,
+      "f1": 0.5957446808510638,
+      "false_events": 6,
+      "false_per_minute": 0.3115534400692341,
+      "minutes": 19.258333333333333,
+      "lead_p50_s": 0.7666666666666608,
+      "lead_p05_s": 0.13500000000000192,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 20,
+          "detected": 14
+        },
+        "harvest->return": {
+          "total": 20,
+          "detected": 12
+        },
+        "return->adjust": {
+          "total": 10,
+          "detected": 2
+        },
+        "adjust->pickup": {
+          "total": 10,
+          "detected": 0
+        }
+      }
+    },
+    "B2": {
+      "total": 60,
+      "detected": 13,
+      "missed": 47,
+      "precision": 0.8125,
+      "recall": 0.21666666666666667,
+      "f1": 0.34210526315789475,
+      "false_events": 3,
+      "false_per_minute": 0.15577672003461704,
+      "minutes": 19.258333333333333,
+      "lead_p50_s": 0.4666666666666668,
+      "lead_p05_s": 0.273333333333332,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 20,
+          "detected": 8
+        },
+        "harvest->return": {
+          "total": 20,
+          "detected": 5
+        },
+        "return->adjust": {
+          "total": 10,
+          "detected": 0
+        },
+        "adjust->pickup": {
+          "total": 10,
+          "detected": 0
+        }
+      }
+    }
+  }
+}

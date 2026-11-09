@@ -1,0 +1,45 @@
+{
+  "purpose": "new independent recordings evaluation; no training, model or threshold selection",
+  "primary": "independent_h15_s42",
+  "model_sha256": {
+    "independent_h15_s42": {
+      "path": "runs/tomato/optimization_20261108/bundles/independent_h15_s42.pt",
+      "sha256": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00"
+    },
+    "independent_h15_s43": {
+      "path": "runs/tomato/optimization_20261108/bundles/independent_h15_s43.pt",
+      "sha256": "794a42e17dad0b4e6f028c39497b029f56f6aa3f410ed40eb72accec89a2bea6"
+    },
+    "independent_h15_s44": {
+      "path": "runs/tomato/optimization_20261108/bundles/independent_h15_s44.pt",
+      "sha256": "b5989cddcad1ee1c391723660a547060cbb97efc8cdb44553ee8894194014362"
+    },
+    "joint_s42": {
+      "path": "runs/tomato/campaign94_20261107/experiments/joint_s42/best_head.pt",
+      "sha256": "92e4b2dbd3dbdcb287fa0c4e29a6020679a90c58bf1777a324826f7ff53c5bcc"
+    },
+    "independent_h10_s42": {
+      "path": "runs/tomato/optimization_20261108/bundles/independent_h10_s42.pt",
+      "sha256": "bfa844ceb62cd1d20b4f174bb0f6ff340524b563f6264d4f7e8cda1d2d3e0835"
+    },
+    "hazard_s42": {
+      "path": "runs/tomato/transition_time_20261109/seed42/hazard.pt",
+      "sha256": "9b7579ce22951c65d1189949631e3b9a0abf9279b61ac07ea052372dcef23176"
+    }
+  },
+  "threshold": 0.5,
+  "confirmations": 2,
+  "prediction_hz": 2,
+  "future_horizons_s": {
+    "independent_h15": 1.5,
+    "independent_h10": 1.0,
+    "joint": 1.0
+  },
+  "common_window_s": 1.0,
+  "hazard_threshold": 0.5,
+  "hazard_current_confirmations": 2,
+  "original_new_annotations_only": true,
+  "source": "28:/mnt/workspace/train_platform/datasets/tomato_sharpa/normal/no-block-more",
+  "remote_push": false,
+  "git_sha": "712e6db05a39cea44793315fe6663801d24fc722"
+}

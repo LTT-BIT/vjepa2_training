@@ -1,0 +1,366 @@
+{
+  "records": [
+    {
+      "package": "A/1109_783_818_normal",
+      "episode_index": 1,
+      "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+      "annotation": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000001.json"
+    },
+    {
+      "package": "A/1109_783_818_normal",
+      "episode_index": 2,
+      "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+      "annotation": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000002.json"
+    },
+    {
+      "package": "A/1109_783_818_normal",
+      "episode_index": 3,
+      "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+      "annotation": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000003.json"
+    },
+    {
+      "package": "A/1109_783_818_normal",
+      "episode_index": 4,
+      "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+      "annotation": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000004.json"
+    },
+    {
+      "package": "A/1109_783_818_normal",
+      "episode_index": 5,
+      "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+      "annotation": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000005.json"
+    },
+    {
+      "package": "A/1109_783_818_normal",
+      "episode_index": 6,
+      "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+      "annotation": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000006.json"
+    },
+    {
+      "package": "A/1109_783_818_normal",
+      "episode_index": 7,
+      "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+      "annotation": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000007.json"
+    },
+    {
+      "package": "B/1109_696_811_normal",
+      "episode_index": 1,
+      "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+      "annotation": "B/1109_696_811_normal/annotations/subtasks/coarse/episode_000001.json"
+    },
+    {
+      "package": "B/1109_696_811_normal",
+      "episode_index": 2,
+      "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+      "annotation": "B/1109_696_811_normal/annotations/subtasks/coarse/episode_000002.json"
+    },
+    {
+      "package": "B/1109_696_811_normal",
+      "episode_index": 3,
+      "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+      "annotation": "B/1109_696_811_normal/annotations/subtasks/coarse/episode_000003.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000001.json",
+      "sha256": "247f228aa6bdfe3daf1db5a858a526b830fa84c26c402b2294c4794e2b797ffe",
+      "bytes": 2998
+    },
+    {
+      "path": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000002.json",
+      "sha256": "6027b60011f0a63da92b40689ed53af5ee05f16e362ef73397301134a3f80570",
+      "bytes": 3062
+    },
+    {
+      "path": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000003.json",
+      "sha256": "f2bb777fcea2e61c625a684861f26a166047f1229d8c1d2088636c2993446e20",
+      "bytes": 3105
+    },
+    {
+      "path": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000004.json",
+      "sha256": "2f76a109e3598ed3f8547a9cfeec9fb1adacf2a9a6c84dde072fb0a75835eacc",
+      "bytes": 3079
+    },
+    {
+      "path": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000005.json",
+      "sha256": "8dbe6a993ac07199f24230ba21c5ec591353c4cf2fc1eb6b838cb45ad6203141",
+      "bytes": 2966
+    },
+    {
+      "path": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000006.json",
+      "sha256": "74ae64b108d1a09881c25d1445ea710c35832439067e871ead1c6af53831eb6a",
+      "bytes": 2999
+    },
+    {
+      "path": "A/1109_783_818_normal/annotations/subtasks/coarse/episode_000007.json",
+      "sha256": "4c65f3c5f54f9e137f50739fc2ab9fa40156f57919d0830da3b0465028a9f204",
+      "bytes": 3077
+    },
+    {
+      "path": "A/1109_783_818_normal/data/chunk-000/episode_000001.parquet",
+      "sha256": "e20ac075c2bc14f1076c77b348e662c1bcff193344ec1eeb097184ba96e83a9d",
+      "bytes": 3260820
+    },
+    {
+      "path": "A/1109_783_818_normal/data/chunk-000/episode_000002.parquet",
+      "sha256": "ff8c2a80a6ae62c29adfdd09a9a86bfa5d3e3e30cfc3d0662f63331fbe5ecfea",
+      "bytes": 2326794
+    },
+    {
+      "path": "A/1109_783_818_normal/data/chunk-000/episode_000003.parquet",
+      "sha256": "be390832971dbd37f332f398ffc9069112af21622e2e3a92c74bbf481c148640",
+      "bytes": 2463772
+    },
+    {
+      "path": "A/1109_783_818_normal/data/chunk-000/episode_000004.parquet",
+      "sha256": "6bc6d49c264075afdd2eb8424c99527374e76b6fa275c0a43db61815d6fd67c3",
+      "bytes": 2314893
+    },
+    {
+      "path": "A/1109_783_818_normal/data/chunk-000/episode_000005.parquet",
+      "sha256": "5060fb907eca7da6163403340f38d61ece37c4844ce229f805e60287a9aee242",
+      "bytes": 1980614
+    },
+    {
+      "path": "A/1109_783_818_normal/data/chunk-000/episode_000006.parquet",
+      "sha256": "b143392506dc5a8af4cb64669845771e9bf50b837c9a302a5a9e520ce6f8c1a1",
+      "bytes": 2462608
+    },
+    {
+      "path": "A/1109_783_818_normal/data/chunk-000/episode_000007.parquet",
+      "sha256": "1014544bbda05436a1861fc480a34e31fae87e3ce472cd93dbe9042d4a910f30",
+      "bytes": 2667000
+    },
+    {
+      "path": "A/1109_783_818_normal/meta/episodes.jsonl",
+      "sha256": "2d6f819b41624297c1616566f5ccbbeedbee0438679460683b64036154d50b64",
+      "bytes": 2824
+    },
+    {
+      "path": "A/1109_783_818_normal/meta/episodes_stats.jsonl",
+      "sha256": "5341cde2fc29eba703921fdbf62a5462a4d11cc0a3c57f2a5807c9eae8c697d9",
+      "bytes": 132254
+    },
+    {
+      "path": "A/1109_783_818_normal/meta/info.json",
+      "sha256": "126c4544570cb093a65e747119e11fb5c1205a3a38d74d60175212a587d889ea",
+      "bytes": 9302
+    },
+    {
+      "path": "A/1109_783_818_normal/meta/stats.json",
+      "sha256": "2714213ba7a66e97d33788173155ab75c07eca3cd85b31c1c1bd61190b280adf",
+      "bytes": 23209
+    },
+    {
+      "path": "A/1109_783_818_normal/meta/tasks.jsonl",
+      "sha256": "215abb61c0958b797f694ac2f029d5cccbde8b87b553837548165cf7a130361c",
+      "bytes": 151
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam0/episode_000001.mp4",
+      "sha256": "fe205f26916c0969371cf06e674b2fc57124faa54621b2b3940d23223a372c60",
+      "bytes": 11286299
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam0/episode_000002.mp4",
+      "sha256": "0c0a27d4f44e4ce806ec4481f4c6d68e86e0002cec17d7d5d0bce15dea9d236a",
+      "bytes": 8254155
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam0/episode_000003.mp4",
+      "sha256": "a69e3df1e2acc8184c4712dbf94d1f44d4c4583d15c4dc1e48088d6ba620dc54",
+      "bytes": 9081543
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam0/episode_000004.mp4",
+      "sha256": "f602139475d2239dd510495d6b5d8968be7f52480595a375062e5b48c5d8be10",
+      "bytes": 8401566
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam0/episode_000005.mp4",
+      "sha256": "8746ca125f4014d0aef93b6caed9733db4fa8d6004538867b5bf1c73db7d4530",
+      "bytes": 6912852
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam0/episode_000006.mp4",
+      "sha256": "bccae77c05ec69ba02344a6387224ce069b97f36358a45b01151f19577b5a171",
+      "bytes": 9080530
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam0/episode_000007.mp4",
+      "sha256": "d4602c589b8bc949ce1699fdb113e71d7b0d96c0775467e53048ec9854c46200",
+      "bytes": 9760888
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam1/episode_000001.mp4",
+      "sha256": "1d80d71b726f19fd88fc858269376b0b770f1364eccbc2f42a1e8e90eded4618",
+      "bytes": 10809361
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam1/episode_000002.mp4",
+      "sha256": "81f2c24d465ed3558c4bcca55ae076f4c0fd557da88ce8abadff22f10a381318",
+      "bytes": 7334303
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam1/episode_000003.mp4",
+      "sha256": "15cc709d9c1a9a09130aeb3998eda8441f8baf0233ce4a0ae17f04c9b4b0602d",
+      "bytes": 8143337
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam1/episode_000004.mp4",
+      "sha256": "2519f8450af034845df7983a5f5c9dfea7c51cbb1e371d720918f532b26e8fd4",
+      "bytes": 7302605
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam1/episode_000005.mp4",
+      "sha256": "34dcf3161db55c574df19b056da9bf93c329555fb6233a182b5bf192776ba738",
+      "bytes": 6210042
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam1/episode_000006.mp4",
+      "sha256": "f94447140afb184b2248fb836a02966f06485a143ce4284e7d9f4cd3bb8ee154",
+      "bytes": 8783668
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam1/episode_000007.mp4",
+      "sha256": "d5ce5b27db454b7c2283bdc742dad21a198bdd0b8746d349f451017ee9cbdf65",
+      "bytes": 8997238
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam2/episode_000001.mp4",
+      "sha256": "d09ce63619aa90916c695af07b177446e4348fdc820ffce67f9042dbbb3088f3",
+      "bytes": 14724450
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam2/episode_000002.mp4",
+      "sha256": "4576a5d125a97dcd90be21c3effdd84f3cfb710999a9a65d757dda967079f17c",
+      "bytes": 10434412
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam2/episode_000003.mp4",
+      "sha256": "9a301725248e0f332daed1126bd2f0c0aa691be034f006e7b0e1dedec8fffbd9",
+      "bytes": 12153831
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam2/episode_000004.mp4",
+      "sha256": "a9a4064f28950f4ec7a21152eb43210bd7813534797f7fb9ff810c09de9b95a9",
+      "bytes": 11249975
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam2/episode_000005.mp4",
+      "sha256": "540c04684c2e92ca2fb0a6a848603ff609ae5987c3a9ac3cd6d594eacf101414",
+      "bytes": 9117435
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam2/episode_000006.mp4",
+      "sha256": "dda7f6efbba7b39226cef769fafa1ab6124a235e2730571e105231748e75873d",
+      "bytes": 13137281
+    },
+    {
+      "path": "A/1109_783_818_normal/videos/chunk-000/observation.images.cam2/episode_000007.mp4",
+      "sha256": "554ef996fb0ad7ec53e8596a832a38710c1ddd087be2f09248e67f4f2ad5be1d",
+      "bytes": 14709133
+    },
+    {
+      "path": "B/1109_696_811_normal/annotations/subtasks/coarse/episode_000001.json",
+      "sha256": "bce98689a8b8bac83e85cc2e01da51d28cbf8bbb5154485d71e611d315dc8780",
+      "bytes": 3023
+    },
+    {
+      "path": "B/1109_696_811_normal/annotations/subtasks/coarse/episode_000002.json",
+      "sha256": "26334b52d8d2ec7ed54cd5b92d811fd07271c3f60fa0f2c13fe2fe74369f4ad0",
+      "bytes": 2994
+    },
+    {
+      "path": "B/1109_696_811_normal/annotations/subtasks/coarse/episode_000003.json",
+      "sha256": "d6adfbfd9247b95a28daac4f03a112cbfd4533b9c8d7c24c876a72c4cab5e307",
+      "bytes": 3077
+    },
+    {
+      "path": "B/1109_696_811_normal/data/chunk-000/episode_000001.parquet",
+      "sha256": "f82c2fbf0922c06c5fcede4dafc80733dec94dff6b8916256be5bb226498b135",
+      "bytes": 2869168
+    },
+    {
+      "path": "B/1109_696_811_normal/data/chunk-000/episode_000002.parquet",
+      "sha256": "4927a0b4569469f152b64e9acdae5d67c41bfeafb625fa8b8492dbb5aff2d11c",
+      "bytes": 1990315
+    },
+    {
+      "path": "B/1109_696_811_normal/data/chunk-000/episode_000003.parquet",
+      "sha256": "a064a2eb50424a01a5efbb21b530e9ad24366596dc9b2b0380f62751ee492967",
+      "bytes": 2276419
+    },
+    {
+      "path": "B/1109_696_811_normal/meta/episodes.jsonl",
+      "sha256": "3a2eb8e0a9c92d475e4b429a26e2e054504a4be74b76b0148155cc6f8ec00081",
+      "bytes": 1412
+    },
+    {
+      "path": "B/1109_696_811_normal/meta/episodes_stats.jsonl",
+      "sha256": "8ae1ef4c7e6bd3a22a60986590c1d1376f83128f48e69aa5dd24134326ca1746",
+      "bytes": 66005
+    },
+    {
+      "path": "B/1109_696_811_normal/meta/info.json",
+      "sha256": "b942a41c1bff181b014d8f6287fde723255fc97aba0b92a428de2bf4eb071f9a",
+      "bytes": 9302
+    },
+    {
+      "path": "B/1109_696_811_normal/meta/stats.json",
+      "sha256": "6f045e9f82bf5cdf204e8e75502e96cd45884911b71f696f1e46a4807b58521e",
+      "bytes": 23120
+    },
+    {
+      "path": "B/1109_696_811_normal/meta/tasks.jsonl",
+      "sha256": "215abb61c0958b797f694ac2f029d5cccbde8b87b553837548165cf7a130361c",
+      "bytes": 151
+    },
+    {
+      "path": "B/1109_696_811_normal/videos/chunk-000/observation.images.cam0/episode_000001.mp4",
+      "sha256": "a89ae20b23d25d95ae554ab5b2c090920882cce02f6ce454668ec0db524e7e8a",
+      "bytes": 10387691
+    },
+    {
+      "path": "B/1109_696_811_normal/videos/chunk-000/observation.images.cam0/episode_000002.mp4",
+      "sha256": "acdbd68a82250702e400283118a81e341923dc6993d5299909d397719f4b0d34",
+      "bytes": 7393982
+    },
+    {
+      "path": "B/1109_696_811_normal/videos/chunk-000/observation.images.cam0/episode_000003.mp4",
+      "sha256": "2ef0d0edc712f6fe2b93f605130ceaef349f2eb1e228f9574e9496615cdf8ae0",
+      "bytes": 8012752
+    },
+    {
+      "path": "B/1109_696_811_normal/videos/chunk-000/observation.images.cam1/episode_000001.mp4",
+      "sha256": "4fc14abea0c7bfcc7d7fcad274f5e3eb96461d7d0c6b4dc9e35f72c623b1ddaa",
+      "bytes": 8945151
+    },
+    {
+      "path": "B/1109_696_811_normal/videos/chunk-000/observation.images.cam1/episode_000002.mp4",
+      "sha256": "8e90c201a402e595364fbec5979736d107dc3907e48b1e03dd7116269175ed05",
+      "bytes": 6136921
+    },
+    {
+      "path": "B/1109_696_811_normal/videos/chunk-000/observation.images.cam1/episode_000003.mp4",
+      "sha256": "ff6654307225d3c654fbd917843663a84a06c069e00fc590898b0aa325428ee4",
+      "bytes": 7309731
+    },
+    {
+      "path": "B/1109_696_811_normal/videos/chunk-000/observation.images.cam2/episode_000001.mp4",
+      "sha256": "5f4cd36baf115818757e4c01abe799fdc7826fcc682236d19f4706f5b4bc787d",
+      "bytes": 14726534
+    },
+    {
+      "path": "B/1109_696_811_normal/videos/chunk-000/observation.images.cam2/episode_000002.mp4",
+      "sha256": "3316d7ce896d14525c6b9ed21f29def6c7f304df175ab11d18adda9f10acd738",
+      "bytes": 10070408
+    },
+    {
+      "path": "B/1109_696_811_normal/videos/chunk-000/observation.images.cam2/episode_000003.mp4",
+      "sha256": "25d475cb40e634976866031fe1a399d3e9c2789078e9c64d634606e9b20d4ba7",
+      "bytes": 11647408
+    }
+  ]
+}

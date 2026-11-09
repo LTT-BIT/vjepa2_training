@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "overlap": [],
+  "meaning": "Source timestamp interval intersection only; clock correctness and operator independence not proven"
+}

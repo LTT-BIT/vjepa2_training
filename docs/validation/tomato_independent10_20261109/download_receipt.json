@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "files": 60,
+  "source_recordings": 10,
+  "local_root": "/home/user/datasets/tomato_independent10_20261109",
+  "bytes": 315425995,
+  "no_old_source_recording_overlap": true
+}
