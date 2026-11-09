@@ -5,7 +5,9 @@
   "corrected_annotation_sha256": "4b64e72b2f5274e1b747c9f8b133b27f77b341c45c5c786d57d156152ed9c373",
   "change_status": "user_confirmed_manual_correction",
   "confirmation_date": "2026-11-09",
-  "evidence": "用户说明：今天早上考虑训练时发现一条数据阶段时间划分错误，随后重新修改。对应本轮唯一发现的训练标注差异。",
+  "evidence": "用户明确确认出问题并已人工修正的数据为 B/1106_750_791_normal/episode_000004；与本轮唯一训练标注差异的路径和修订SHA一致。",
   "agent_applied_label_changes": false,
-  "old_experiment_version_preserved": true
+  "old_experiment_version_preserved": true,
+  "user_confirmed_source_episode": "B/1106_750_791_normal/episode_000004",
+  "source_annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000004.json"
 }
