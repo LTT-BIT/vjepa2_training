@@ -1,0 +1,811 @@
+{
+  "42": {
+    "B1_hits_lost_by_B2": [
+      {
+        "seed": 42,
+        "episode_id": "27d8bc0413a42341c7e8c3e5",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 169.9,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 169.5,
+        "B1_event_time": 169.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9057353734970093,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "0b12ac0fda9d7cd77dee6e60",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 175.56666666666666,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 175.0,
+        "B1_event_time": 175.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.8328759074211121,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "61c420843f11ca54bfe804ee",
+        "ordinal": 3,
+        "transition": "return->adjust",
+        "boundary_s": 77.6,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 76.5,
+        "B1_event_time": 76.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.6088685989379883,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "61c420843f11ca54bfe804ee",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 100.66666666666667,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 100.0,
+        "B1_event_time": 100.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.5595828890800476,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "5b82f4bb76e70d8bf12c0798",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 99.1,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 99.0,
+        "B1_event_time": 99.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.5217498540878296,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "5b82f4bb76e70d8bf12c0798",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 136.96666666666667,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 136.5,
+        "B1_event_time": 136.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.5188244581222534,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+        "ordinal": 2,
+        "transition": "harvest->return",
+        "boundary_s": 62.96666666666667,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 61.5,
+        "B1_event_time": 61.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.7176228761672974,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 106.6,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 106.5,
+        "B1_event_time": 106.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9106284976005554,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "a8b23394b642f0bb769a0391",
+        "ordinal": 3,
+        "transition": "return->adjust",
+        "boundary_s": 40.13333333333333,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 40.0,
+        "B1_event_time": 40.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.5092024803161621,
+        "mechanism": "risk_future_confirmation_or_phase_timing",
+        "window_online_phases": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "a8b23394b642f0bb769a0391",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 70.46666666666667,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 70.0,
+        "B1_event_time": 70.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9400570392608643,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "a8b23394b642f0bb769a0391",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 86.7,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 86.0,
+        "B1_event_time": 86.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9902893304824829,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "d0f8727d35eced697dcf79fe",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 70.9,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 69.5,
+        "B1_event_time": 69.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.8223770260810852,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "seed": 42,
+        "episode_id": "d0f8727d35eced697dcf79fe",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 89.6,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 89.5,
+        "B1_event_time": 89.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9655832052230835,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          3,
+          3,
+          3
+        ]
+      }
+    ],
+    "mechanism_counts": {
+      "no_expected_online_phase_in_window": 12,
+      "risk_future_confirmation_or_phase_timing": 1
+    },
+    "true_near_event_risk": {
+      "pickup->harvest": {
+        "positive_windows": 51,
+        "positive_mean": 0.6463774559544582,
+        "negative_mean": 0.07554202781611191
+      },
+      "harvest->return": {
+        "positive_windows": 51,
+        "positive_mean": 0.6561986909193152,
+        "negative_mean": 0.01962890202784083
+      },
+      "return->adjust": {
+        "positive_windows": 24,
+        "positive_mean": 0.5149641657869021,
+        "negative_mean": 0.1501271543758256
+      },
+      "adjust->pickup": {
+        "positive_windows": 24,
+        "positive_mean": 0.19354736308256784,
+        "negative_mean": 0.08121639678749858
+      }
+    }
+  },
+  "43": {
+    "B1_hits_lost_by_B2": [
+      {
+        "seed": 43,
+        "episode_id": "3e645bf4e137d0f836c9d7ff",
+        "ordinal": 3,
+        "transition": "return->adjust",
+        "boundary_s": 61.766666666666666,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 60.5,
+        "B1_event_time": 60.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.5728179812431335,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 43,
+        "episode_id": "27d8bc0413a42341c7e8c3e5",
+        "ordinal": 2,
+        "transition": "harvest->return",
+        "boundary_s": 76.6,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 76.0,
+        "B1_event_time": 76.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.5445029735565186,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 43,
+        "episode_id": "0b12ac0fda9d7cd77dee6e60",
+        "ordinal": 2,
+        "transition": "harvest->return",
+        "boundary_s": 73.86666666666666,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 73.0,
+        "B1_event_time": 73.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.8381062746047974,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 43,
+        "episode_id": "61c420843f11ca54bfe804ee",
+        "ordinal": 2,
+        "transition": "harvest->return",
+        "boundary_s": 71.0,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 70.5,
+        "B1_event_time": 70.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.5815132260322571,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 43,
+        "episode_id": "61c420843f11ca54bfe804ee",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 138.63333333333333,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 138.5,
+        "B1_event_time": 138.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.7120559215545654,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 43,
+        "episode_id": "5b82f4bb76e70d8bf12c0798",
+        "ordinal": 2,
+        "transition": "harvest->return",
+        "boundary_s": 57.6,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 57.0,
+        "B1_event_time": 57.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9240595102310181,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 43,
+        "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+        "ordinal": 2,
+        "transition": "harvest->return",
+        "boundary_s": 62.96666666666667,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 61.5,
+        "B1_event_time": 61.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.7579215168952942,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 43,
+        "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 106.6,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 106.0,
+        "B1_event_time": 106.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.7059373259544373,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 43,
+        "episode_id": "a8b23394b642f0bb769a0391",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 70.46666666666667,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 70.0,
+        "B1_event_time": 70.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9320655465126038,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 43,
+        "episode_id": "a8b23394b642f0bb769a0391",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 86.7,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 86.5,
+        "B1_event_time": 86.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9753298163414001,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 43,
+        "episode_id": "d0f8727d35eced697dcf79fe",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 70.9,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 70.0,
+        "B1_event_time": 70.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.7147312164306641,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          3,
+          3,
+          3
+        ]
+      }
+    ],
+    "mechanism_counts": {
+      "no_expected_online_phase_in_window": 11
+    },
+    "true_near_event_risk": {
+      "pickup->harvest": {
+        "positive_windows": 51,
+        "positive_mean": 0.4730529574786915,
+        "negative_mean": 0.04558726332404397
+      },
+      "harvest->return": {
+        "positive_windows": 51,
+        "positive_mean": 0.6018697070140465,
+        "negative_mean": 0.013883895078248457
+      },
+      "return->adjust": {
+        "positive_windows": 24,
+        "positive_mean": 0.4050117904941241,
+        "negative_mean": 0.11990006161587578
+      },
+      "adjust->pickup": {
+        "positive_windows": 24,
+        "positive_mean": 0.11034128318230312,
+        "negative_mean": 0.04844643401948712
+      }
+    }
+  },
+  "44": {
+    "B1_hits_lost_by_B2": [
+      {
+        "seed": 44,
+        "episode_id": "27d8bc0413a42341c7e8c3e5",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 169.9,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 169.0,
+        "B1_event_time": 169.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.8348321914672852,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "0b12ac0fda9d7cd77dee6e60",
+        "ordinal": 2,
+        "transition": "harvest->return",
+        "boundary_s": 73.86666666666666,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 73.0,
+        "B1_event_time": 73.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.8683407306671143,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "0b12ac0fda9d7cd77dee6e60",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 175.56666666666666,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 175.0,
+        "B1_event_time": 175.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.7278363704681396,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "61c420843f11ca54bfe804ee",
+        "ordinal": 1,
+        "transition": "pickup->harvest",
+        "boundary_s": 9.566666666666666,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 9.0,
+        "B1_event_time": 9.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.7588478326797485,
+        "mechanism": "risk_future_confirmation_or_phase_timing",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "61c420843f11ca54bfe804ee",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 100.66666666666667,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 100.0,
+        "B1_event_time": 100.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.803518533706665,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "61c420843f11ca54bfe804ee",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 138.63333333333333,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 138.0,
+        "B1_event_time": 138.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.8224676847457886,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "5b82f4bb76e70d8bf12c0798",
+        "ordinal": 2,
+        "transition": "harvest->return",
+        "boundary_s": 57.6,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 57.0,
+        "B1_event_time": 57.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9708811044692993,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "5b82f4bb76e70d8bf12c0798",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 99.1,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 99.0,
+        "B1_event_time": 99.0,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.7300108075141907,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+        "ordinal": 2,
+        "transition": "harvest->return",
+        "boundary_s": 62.96666666666667,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 61.5,
+        "B1_event_time": 61.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.8922565579414368,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "a8b23394b642f0bb769a0391",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 86.7,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 86.5,
+        "B1_event_time": 86.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9955605268478394,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "d0f8727d35eced697dcf79fe",
+        "ordinal": 5,
+        "transition": "pickup->harvest",
+        "boundary_s": 70.9,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 69.5,
+        "B1_event_time": 69.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.8268697261810303,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "seed": 44,
+        "episode_id": "d0f8727d35eced697dcf79fe",
+        "ordinal": 6,
+        "transition": "harvest->return",
+        "boundary_s": 89.6,
+        "B0_hit": true,
+        "B1_hit": true,
+        "B2_hit": false,
+        "B0_event_time": 89.5,
+        "B1_event_time": 89.5,
+        "B2_event_time": null,
+        "risk_at_B0_hit": 0.9707330465316772,
+        "mechanism": "no_expected_online_phase_in_window",
+        "window_online_phases": [
+          3,
+          3,
+          3
+        ]
+      }
+    ],
+    "mechanism_counts": {
+      "no_expected_online_phase_in_window": 11,
+      "risk_future_confirmation_or_phase_timing": 1
+    },
+    "true_near_event_risk": {
+      "pickup->harvest": {
+        "positive_windows": 51,
+        "positive_mean": 0.6243905518569198,
+        "negative_mean": 0.06853321259155934
+      },
+      "harvest->return": {
+        "positive_windows": 51,
+        "positive_mean": 0.5988401630345512,
+        "negative_mean": 0.01352352374788175
+      },
+      "return->adjust": {
+        "positive_windows": 24,
+        "positive_mean": 0.5393285950024923,
+        "negative_mean": 0.15600910782814026
+      },
+      "adjust->pickup": {
+        "positive_windows": 24,
+        "positive_mean": 0.195999376475811,
+        "negative_mean": 0.06672951654542851
+      }
+    }
+  }
+}

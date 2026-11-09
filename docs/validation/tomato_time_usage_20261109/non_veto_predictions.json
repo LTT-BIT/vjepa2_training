@@ -1,0 +1,3798 @@
+{
+  "42": {
+    "predictions": {
+      "3e645bf4e137d0f836c9d7ff": [
+        {
+          "time": 8.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.8769176006317139,
+          "time_distribution": [
+            0.00394476018846035,
+            0.02964063361287117,
+            0.4170668125152588,
+            0.4262653589248657,
+            0.12308239936828613
+          ],
+          "conditional_remaining_if_within15_s": 0.9775606465991586,
+          "conditional_interval_if_within15_s": [
+            9.0,
+            9.5
+          ],
+          "modal_interval_s": [
+            9.0,
+            9.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 55.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.1907433271408081,
+          "time_distribution": [
+            0.11299458891153336,
+            0.020397141575813293,
+            0.03625909611582756,
+            0.021092398092150688,
+            0.8092566728591919
+          ],
+          "conditional_remaining_if_within15_s": 0.39494491182267666,
+          "conditional_interval_if_within15_s": [
+            55.5,
+            55.75
+          ],
+          "modal_interval_s": [
+            57.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 61.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.28653639554977417,
+          "time_distribution": [
+            0.03770134970545769,
+            0.035292528569698334,
+            0.06691080331802368,
+            0.14663174748420715,
+            0.7134636044502258
+          ],
+          "conditional_remaining_if_within15_s": 0.8774457043036819,
+          "conditional_interval_if_within15_s": [
+            62.0,
+            62.5
+          ],
+          "modal_interval_s": [
+            62.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 70.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.06426650285720825,
+          "time_distribution": [
+            0.007627174258232117,
+            0.007602935656905174,
+            0.017255693674087524,
+            0.031780753284692764,
+            0.9357334971427917
+          ],
+          "conditional_remaining_if_within15_s": 0.8787183733657002,
+          "conditional_interval_if_within15_s": [
+            71.0,
+            71.5
+          ],
+          "modal_interval_s": [
+            71.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 81.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.002964794635772705,
+          "time_distribution": [
+            0.001396567327901721,
+            0.0007808561204001307,
+            0.0005568788619711995,
+            0.0002304773370269686,
+            0.9970352053642273
+          ],
+          "conditional_remaining_if_within15_s": 0.39569477923214436,
+          "conditional_interval_if_within15_s": [
+            81.5,
+            81.75
+          ],
+          "modal_interval_s": [
+            83.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 128.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.7679093778133392,
+          "time_distribution": [
+            0.06316492706537247,
+            0.12227439880371094,
+            0.41725465655326843,
+            0.16521534323692322,
+            0.23209062218666077
+          ],
+          "conditional_remaining_if_within15_s": 0.7464536456391215,
+          "conditional_interval_if_within15_s": [
+            129.0,
+            129.5
+          ],
+          "modal_interval_s": [
+            129.0,
+            129.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "27d8bc0413a42341c7e8c3e5": [
+        {
+          "time": 9.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.6369417011737823,
+          "time_distribution": [
+            0.008189710788428783,
+            0.030030157417058945,
+            0.21815544366836548,
+            0.3805663287639618,
+            0.36305829882621765
+          ],
+          "conditional_remaining_if_within15_s": 1.023028550320305,
+          "conditional_interval_if_within15_s": [
+            10.0,
+            10.5
+          ],
+          "modal_interval_s": [
+            10.0,
+            10.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 76.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.6789627075195312,
+          "time_distribution": [
+            0.1562419831752777,
+            0.26413270831108093,
+            0.17788875102996826,
+            0.08069921284914017,
+            0.32103729248046875
+          ],
+          "conditional_remaining_if_within15_s": 0.519720196723938,
+          "conditional_interval_if_within15_s": [
+            76.75,
+            77.0
+          ],
+          "modal_interval_s": [
+            78.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 82.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.14670038223266602,
+          "time_distribution": [
+            0.0019582605455070734,
+            0.08997749537229538,
+            0.03156625106930733,
+            0.023198327049613,
+            0.853299617767334
+          ],
+          "conditional_remaining_if_within15_s": 0.5907208453863859,
+          "conditional_interval_if_within15_s": [
+            82.25,
+            82.5
+          ],
+          "modal_interval_s": [
+            83.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 109.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.09823477268218994,
+          "time_distribution": [
+            0.0021098293364048004,
+            0.0557234063744545,
+            0.022896306589245796,
+            0.017505262047052383,
+            0.9017652273178101
+          ],
+          "conditional_remaining_if_within15_s": 0.6129580638371408,
+          "conditional_interval_if_within15_s": [
+            109.25,
+            109.5
+          ],
+          "modal_interval_s": [
+            110.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 119.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.3617805242538452,
+          "time_distribution": [
+            0.010788789950311184,
+            0.15337476134300232,
+            0.10384684056043625,
+            0.09377017617225647,
+            0.6382194757461548
+          ],
+          "conditional_remaining_if_within15_s": 0.7019779866095632,
+          "conditional_interval_if_within15_s": [
+            119.25,
+            119.5
+          ],
+          "modal_interval_s": [
+            120.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 169.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9057353809475899,
+          "time_distribution": [
+            0.12378803640604019,
+            0.40684932470321655,
+            0.2744631767272949,
+            0.10063482075929642,
+            0.09426461905241013
+          ],
+          "conditional_remaining_if_within15_s": 0.5516875181347132,
+          "conditional_interval_if_within15_s": [
+            169.75,
+            170.0
+          ],
+          "modal_interval_s": [
+            169.75,
+            170.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "0b12ac0fda9d7cd77dee6e60": [
+        {
+          "time": 7.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.7362324595451355,
+          "time_distribution": [
+            0.04041125252842903,
+            0.1251811683177948,
+            0.35732394456863403,
+            0.21331612765789032,
+            0.2637675404548645
+          ],
+          "conditional_remaining_if_within15_s": 0.7968032290227711,
+          "conditional_interval_if_within15_s": [
+            7.5,
+            8.0
+          ],
+          "modal_interval_s": [
+            7.5,
+            8.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 73.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.7451118230819702,
+          "time_distribution": [
+            0.010464794002473354,
+            0.16302555799484253,
+            0.3948259651660919,
+            0.17679551243782043,
+            0.2548881769180298
+          ],
+          "conditional_remaining_if_within15_s": 0.7778115082764998,
+          "conditional_interval_if_within15_s": [
+            74.0,
+            74.5
+          ],
+          "modal_interval_s": [
+            74.0,
+            74.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 78.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.7838654667139053,
+          "time_distribution": [
+            0.06140511482954025,
+            0.19329600036144257,
+            0.3214092254638672,
+            0.20775508880615234,
+            0.21613453328609467
+          ],
+          "conditional_remaining_if_within15_s": 0.7410869160667062,
+          "conditional_interval_if_within15_s": [
+            78.5,
+            79.0
+          ],
+          "modal_interval_s": [
+            78.5,
+            79.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 96.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.13167762756347656,
+          "time_distribution": [
+            0.014584126882255077,
+            0.02087722346186638,
+            0.04592304676771164,
+            0.050293222069740295,
+            0.8683223724365234
+          ],
+          "conditional_remaining_if_within15_s": 0.8122927797958255,
+          "conditional_interval_if_within15_s": [
+            97.5,
+            98.0
+          ],
+          "modal_interval_s": [
+            98.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 102.5,
+          "previous": 0,
+          "label": 3,
+          "time_risk": 0.0341418981552124,
+          "time_distribution": [
+            0.006753354799002409,
+            0.0016416795551776886,
+            0.010668214410543442,
+            0.015078678727149963,
+            0.9658581018447876
+          ],
+          "conditional_remaining_if_within15_s": 0.8291655019856989,
+          "conditional_interval_if_within15_s": [
+            103.5,
+            104.0
+          ],
+          "modal_interval_s": [
+            104.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 103.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.01842600107192993,
+          "time_distribution": [
+            0.003410870674997568,
+            0.002138711977750063,
+            0.006336310878396034,
+            0.006540216039866209,
+            0.9815739989280701
+          ],
+          "conditional_remaining_if_within15_s": 0.7682511154562235,
+          "conditional_interval_if_within15_s": [
+            104.5,
+            105.0
+          ],
+          "modal_interval_s": [
+            105.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 111.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.6122944355010986,
+          "time_distribution": [
+            0.012103663757443428,
+            0.13964608311653137,
+            0.259341835975647,
+            0.2012028694152832,
+            0.38770556449890137
+          ],
+          "conditional_remaining_if_within15_s": 0.816421270603314,
+          "conditional_interval_if_within15_s": [
+            111.5,
+            112.0
+          ],
+          "modal_interval_s": [
+            112.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 175.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.8328759223222733,
+          "time_distribution": [
+            0.02415391243994236,
+            0.030086258426308632,
+            0.46557214856147766,
+            0.31306368112564087,
+            0.16712407767772675
+          ],
+          "conditional_remaining_if_within15_s": 0.9062696867622435,
+          "conditional_interval_if_within15_s": [
+            175.5,
+            176.0
+          ],
+          "modal_interval_s": [
+            175.5,
+            176.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "61c420843f11ca54bfe804ee": [
+        {
+          "time": 9.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.7993590086698532,
+          "time_distribution": [
+            0.012002496980130672,
+            0.05785588547587395,
+            0.3354467749595642,
+            0.3940538763999939,
+            0.2006409913301468
+          ],
+          "conditional_remaining_if_within15_s": 0.959955011960119,
+          "conditional_interval_if_within15_s": [
+            10.0,
+            10.5
+          ],
+          "modal_interval_s": [
+            10.0,
+            10.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 70.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.4688095450401306,
+          "time_distribution": [
+            0.02800908498466015,
+            0.10890068858861923,
+            0.19928209483623505,
+            0.13261772692203522,
+            0.5311904549598694
+          ],
+          "conditional_remaining_if_within15_s": 0.7669907417148352,
+          "conditional_interval_if_within15_s": [
+            71.0,
+            71.5
+          ],
+          "modal_interval_s": [
+            72.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 76.5,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.6088685691356659,
+          "time_distribution": [
+            0.09421969205141068,
+            0.21950668096542358,
+            0.18696312606334686,
+            0.10817907005548477,
+            0.3911314308643341
+          ],
+          "conditional_remaining_if_within15_s": 0.606926778331399,
+          "conditional_interval_if_within15_s": [
+            76.75,
+            77.0
+          ],
+          "modal_interval_s": [
+            78.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 90.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.3662463426589966,
+          "time_distribution": [
+            0.05270189046859741,
+            0.09673188626766205,
+            0.12285233289003372,
+            0.09396019577980042,
+            0.6337536573410034
+          ],
+          "conditional_remaining_if_within15_s": 0.6892948169261217,
+          "conditional_interval_if_within15_s": [
+            90.5,
+            91.0
+          ],
+          "modal_interval_s": [
+            91.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 100.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.5595828890800476,
+          "time_distribution": [
+            0.01848088577389717,
+            0.052175406366586685,
+            0.28323304653167725,
+            0.2056935429573059,
+            0.4404171109199524
+          ],
+          "conditional_remaining_if_within15_s": 0.8781855469569564,
+          "conditional_interval_if_within15_s": [
+            100.5,
+            101.0
+          ],
+          "modal_interval_s": [
+            101.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 138.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.7893472164869308,
+          "time_distribution": [
+            0.0774829164147377,
+            0.1501740664243698,
+            0.4305928647518158,
+            0.13109731674194336,
+            0.21065278351306915
+          ],
+          "conditional_remaining_if_within15_s": 0.7003470174968243,
+          "conditional_interval_if_within15_s": [
+            139.0,
+            139.5
+          ],
+          "modal_interval_s": [
+            139.0,
+            139.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "5b82f4bb76e70d8bf12c0798": [
+        {
+          "time": 6.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9311807230114937,
+          "time_distribution": [
+            0.0005896209040656686,
+            0.014607149176299572,
+            0.40607813000679016,
+            0.5099058151245117,
+            0.06881927698850632
+          ],
+          "conditional_remaining_if_within15_s": 1.0175170419024653,
+          "conditional_interval_if_within15_s": [
+            7.5,
+            8.0
+          ],
+          "modal_interval_s": [
+            7.5,
+            8.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 57.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9868802735581994,
+          "time_distribution": [
+            0.007855335250496864,
+            0.20909371972084045,
+            0.6141500473022461,
+            0.15578116476535797,
+            0.013119726441800594
+          ],
+          "conditional_remaining_if_within15_s": 0.7444987088674679,
+          "conditional_interval_if_within15_s": [
+            57.5,
+            58.0
+          ],
+          "modal_interval_s": [
+            57.5,
+            58.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 62.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.692900151014328,
+          "time_distribution": [
+            0.1288323700428009,
+            0.1803552508354187,
+            0.20958927273750305,
+            0.17412327229976654,
+            0.307099848985672
+          ],
+          "conditional_remaining_if_within15_s": 0.6618317328393459,
+          "conditional_interval_if_within15_s": [
+            62.5,
+            63.0
+          ],
+          "modal_interval_s": [
+            63.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 90.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.6498928368091583,
+          "time_distribution": [
+            0.17212167382240295,
+            0.23075829446315765,
+            0.18627196550369263,
+            0.06074092909693718,
+            0.3501071631908417
+          ],
+          "conditional_remaining_if_within15_s": 0.49805085733532906,
+          "conditional_interval_if_within15_s": [
+            90.75,
+            91.0
+          ],
+          "modal_interval_s": [
+            92.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 99.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.5217498540878296,
+          "time_distribution": [
+            0.16698326170444489,
+            0.05685035139322281,
+            0.16930003464221954,
+            0.12861621379852295,
+            0.4782501459121704
+          ],
+          "conditional_remaining_if_within15_s": 0.6323664104565978,
+          "conditional_interval_if_within15_s": [
+            99.5,
+            100.0
+          ],
+          "modal_interval_s": [
+            100.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 136.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.5188244879245758,
+          "time_distribution": [
+            0.07844821363687515,
+            0.11249838769435883,
+            0.23880364000797272,
+            0.08907425403594971,
+            0.4811755120754242
+          ],
+          "conditional_remaining_if_within15_s": 0.6600275356322527,
+          "conditional_interval_if_within15_s": [
+            137.0,
+            137.5
+          ],
+          "modal_interval_s": [
+            138.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "f53f0b6fb7f3888f87a0f8ff": [
+        {
+          "time": 6.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9168473184108734,
+          "time_distribution": [
+            0.004536591935902834,
+            0.028306717053055763,
+            0.5366790294647217,
+            0.3473249673843384,
+            0.08315268158912659
+          ],
+          "conditional_remaining_if_within15_s": 0.9247424161876552,
+          "conditional_interval_if_within15_s": [
+            6.5,
+            7.0
+          ],
+          "modal_interval_s": [
+            6.5,
+            7.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 61.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.7176228761672974,
+          "time_distribution": [
+            0.05936267599463463,
+            0.32230570912361145,
+            0.1916138082742691,
+            0.14434067904949188,
+            0.28237712383270264
+          ],
+          "conditional_remaining_if_within15_s": 0.6304441997781396,
+          "conditional_interval_if_within15_s": [
+            61.75,
+            62.0
+          ],
+          "modal_interval_s": [
+            61.75,
+            62.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 67.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.195526123046875,
+          "time_distribution": [
+            0.03663020581007004,
+            0.03950874134898186,
+            0.050282806158065796,
+            0.06910435110330582,
+            0.804473876953125
+          ],
+          "conditional_remaining_if_within15_s": 0.733851408585906,
+          "conditional_interval_if_within15_s": [
+            68.0,
+            68.5
+          ],
+          "modal_interval_s": [
+            68.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 99.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.15997272729873657,
+          "time_distribution": [
+            0.015046544373035431,
+            0.022953003644943237,
+            0.04768631234765053,
+            0.07428689301013947,
+            0.8400272727012634
+          ],
+          "conditional_remaining_if_within15_s": 0.8695952408015728,
+          "conditional_interval_if_within15_s": [
+            100.0,
+            100.5
+          ],
+          "modal_interval_s": [
+            100.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 106.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9106285125017166,
+          "time_distribution": [
+            0.09417524188756943,
+            0.43930792808532715,
+            0.24410098791122437,
+            0.13304437696933746,
+            0.08937148749828339
+          ],
+          "conditional_remaining_if_within15_s": 0.5775061892345548,
+          "conditional_interval_if_within15_s": [
+            106.75,
+            107.0
+          ],
+          "modal_interval_s": [
+            106.75,
+            107.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 175.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.07799279689788818,
+          "time_distribution": [
+            0.017347728833556175,
+            0.008349183015525341,
+            0.04652683436870575,
+            0.005769030191004276,
+            0.9220072031021118
+          ],
+          "conditional_remaining_if_within15_s": 0.6078232740983367,
+          "conditional_interval_if_within15_s": [
+            176.0,
+            176.5
+          ],
+          "modal_interval_s": [
+            177.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "ca784332e44d979f99018a52": [
+        {
+          "time": 6.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.7731935232877731,
+          "time_distribution": [
+            0.24279862642288208,
+            0.11844151467084885,
+            0.2532201409339905,
+            0.15873323380947113,
+            0.22680647671222687
+          ],
+          "conditional_remaining_if_within15_s": 0.5989406537264585,
+          "conditional_interval_if_within15_s": [
+            6.5,
+            7.0
+          ],
+          "modal_interval_s": [
+            6.5,
+            7.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 31.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.8872757852077484,
+          "time_distribution": [
+            0.027708198875188828,
+            0.07490535080432892,
+            0.42040562629699707,
+            0.3642566502094269,
+            0.11272421479225159
+          ],
+          "conditional_remaining_if_within15_s": 0.9040909707546234,
+          "conditional_interval_if_within15_s": [
+            31.5,
+            32.0
+          ],
+          "modal_interval_s": [
+            31.5,
+            32.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "a8b23394b642f0bb769a0391": [
+        {
+          "time": 4.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9962789050769061,
+          "time_distribution": [
+            0.0019451957195997238,
+            0.03942831978201866,
+            0.7992522120475769,
+            0.155653178691864,
+            0.003721094923093915
+          ],
+          "conditional_remaining_if_within15_s": 0.8120561743999133,
+          "conditional_interval_if_within15_s": [
+            5.0,
+            5.5
+          ],
+          "modal_interval_s": [
+            5.0,
+            5.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 37.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9759943597018719,
+          "time_distribution": [
+            0.06830208748579025,
+            0.32639560103416443,
+            0.4501497149467468,
+            0.13114692270755768,
+            0.024005640298128128
+          ],
+          "conditional_remaining_if_within15_s": 0.6480386331677437,
+          "conditional_interval_if_within15_s": [
+            37.5,
+            38.0
+          ],
+          "modal_interval_s": [
+            37.5,
+            38.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 40.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.5092024505138397,
+          "time_distribution": [
+            0.022287234663963318,
+            0.12535220384597778,
+            0.20153120160102844,
+            0.16003181040287018,
+            0.4907975494861603
+          ],
+          "conditional_remaining_if_within15_s": 0.7874690401367843,
+          "conditional_interval_if_within15_s": [
+            40.5,
+            41.0
+          ],
+          "modal_interval_s": [
+            41.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 65.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.17047584056854248,
+          "time_distribution": [
+            0.022267324849963188,
+            0.035509031265974045,
+            0.06802958250045776,
+            0.044669926166534424,
+            0.8295241594314575
+          ],
+          "conditional_remaining_if_within15_s": 0.7212686277925968,
+          "conditional_interval_if_within15_s": [
+            66.0,
+            66.5
+          ],
+          "modal_interval_s": [
+            67.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 70.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9400570131838322,
+          "time_distribution": [
+            0.002729780040681362,
+            0.06303846091032028,
+            0.525162935256958,
+            0.34912580251693726,
+            0.05994298681616783
+          ],
+          "conditional_remaining_if_within15_s": 0.9087322927371133,
+          "conditional_interval_if_within15_s": [
+            70.5,
+            71.0
+          ],
+          "modal_interval_s": [
+            70.5,
+            71.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 86.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9902893416583538,
+          "time_distribution": [
+            0.2383001148700714,
+            0.3248785436153412,
+            0.3807031512260437,
+            0.04640758037567139,
+            0.009710658341646194
+          ],
+          "conditional_remaining_if_within15_s": 0.5000091884285212,
+          "conditional_interval_if_within15_s": [
+            86.5,
+            87.0
+          ],
+          "modal_interval_s": [
+            86.5,
+            87.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "d0f8727d35eced697dcf79fe": [
+        {
+          "time": 4.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9820043202489614,
+          "time_distribution": [
+            0.005584833212196827,
+            0.1620437651872635,
+            0.6571303009986877,
+            0.15724538266658783,
+            0.01799567975103855
+          ],
+          "conditional_remaining_if_within15_s": 0.7646290083648637,
+          "conditional_interval_if_within15_s": [
+            5.0,
+            5.5
+          ],
+          "modal_interval_s": [
+            5.0,
+            5.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 44.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9734607841819525,
+          "time_distribution": [
+            0.005670574493706226,
+            0.10361945629119873,
+            0.43799740076065063,
+            0.4261733889579773,
+            0.026539215818047523
+          ],
+          "conditional_remaining_if_within15_s": 0.9253385914489627,
+          "conditional_interval_if_within15_s": [
+            44.5,
+            45.0
+          ],
+          "modal_interval_s": [
+            44.5,
+            45.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 47.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.8441659212112427,
+          "time_distribution": [
+            0.017875876277685165,
+            0.135938823223114,
+            0.4337615668773651,
+            0.2565896809101105,
+            0.15583407878875732
+          ],
+          "conditional_remaining_if_within15_s": 0.828355880221352,
+          "conditional_interval_if_within15_s": [
+            47.5,
+            48.0
+          ],
+          "modal_interval_s": [
+            47.5,
+            48.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 66.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.06039702892303467,
+          "time_distribution": [
+            0.013086201623082161,
+            0.012841551564633846,
+            0.020841894671320915,
+            0.013627423904836178,
+            0.9396029710769653
+          ],
+          "conditional_remaining_if_within15_s": 0.647664800286293,
+          "conditional_interval_if_within15_s": [
+            66.5,
+            67.0
+          ],
+          "modal_interval_s": [
+            67.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 69.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.8223770409822464,
+          "time_distribution": [
+            0.006480645388364792,
+            0.052195750176906586,
+            0.37865838408470154,
+            0.385042279958725,
+            0.1776229590177536
+          ],
+          "conditional_remaining_if_within15_s": 0.9553769425256178,
+          "conditional_interval_if_within15_s": [
+            70.5,
+            71.0
+          ],
+          "modal_interval_s": [
+            70.5,
+            71.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 89.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9655832201242447,
+          "time_distribution": [
+            0.168107271194458,
+            0.26078617572784424,
+            0.4141296148300171,
+            0.12256017327308655,
+            0.03441677987575531
+          ],
+          "conditional_remaining_if_within15_s": 0.6033717766404152,
+          "conditional_interval_if_within15_s": [
+            90.0,
+            90.5
+          ],
+          "modal_interval_s": [
+            90.0,
+            90.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ]
+    },
+    "metrics": {
+      "total": 50,
+      "detected": 39,
+      "missed": 11,
+      "precision": 0.75,
+      "recall": 0.78,
+      "f1": 0.7647058823529411,
+      "false_events": 13,
+      "false_per_minute": 0.6744487678339819,
+      "minutes": 19.275,
+      "lead_p50_s": 0.5666666666666664,
+      "lead_p05_s": 0.09999999999999432,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 17,
+          "detected": 15
+        },
+        "harvest->return": {
+          "total": 17,
+          "detected": 16
+        },
+        "return->adjust": {
+          "total": 8,
+          "detected": 6
+        },
+        "adjust->pickup": {
+          "total": 8,
+          "detected": 2
+        }
+      }
+    },
+    "all_event_times_and_matching_unchanged": true
+  },
+  "43": {
+    "predictions": {
+      "3e645bf4e137d0f836c9d7ff": [
+        {
+          "time": 8.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.5965665876865387,
+          "time_distribution": [
+            0.0008557105902582407,
+            0.01756501942873001,
+            0.14843551814556122,
+            0.42971041798591614,
+            0.4034334123134613
+          ],
+          "conditional_remaining_if_within15_s": 1.0982150261843344,
+          "conditional_interval_if_within15_s": [
+            9.0,
+            9.5
+          ],
+          "modal_interval_s": [
+            9.0,
+            9.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 56.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.06971198320388794,
+          "time_distribution": [
+            0.052694473415613174,
+            0.011264745146036148,
+            0.004159518051892519,
+            0.0015931917587295175,
+            0.9302880167961121
+          ],
+          "conditional_remaining_if_within15_s": 0.22840017173439264,
+          "conditional_interval_if_within15_s": [
+            56.0,
+            56.25
+          ],
+          "modal_interval_s": [
+            57.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 60.5,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.5728179812431335,
+          "time_distribution": [
+            0.11856354773044586,
+            0.15187862515449524,
+            0.19911159574985504,
+            0.10326413810253143,
+            0.42718201875686646
+          ],
+          "conditional_remaining_if_within15_s": 0.6113440152257681,
+          "conditional_interval_if_within15_s": [
+            61.0,
+            61.5
+          ],
+          "modal_interval_s": [
+            62.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 70.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.04096341133117676,
+          "time_distribution": [
+            0.005209446884691715,
+            0.007125683128833771,
+            0.006837088614702225,
+            0.021791208535432816,
+            0.9590365886688232
+          ],
+          "conditional_remaining_if_within15_s": 0.8712683748453856,
+          "conditional_interval_if_within15_s": [
+            71.0,
+            71.5
+          ],
+          "modal_interval_s": [
+            71.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 81.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.10892355442047119,
+          "time_distribution": [
+            0.04625491425395012,
+            0.023158138617873192,
+            0.021641798317432404,
+            0.01786864921450615,
+            0.8910764455795288
+          ],
+          "conditional_remaining_if_within15_s": 0.4868860151618719,
+          "conditional_interval_if_within15_s": [
+            81.0,
+            81.25
+          ],
+          "modal_interval_s": [
+            82.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 128.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.7043733298778534,
+          "time_distribution": [
+            0.032743874937295914,
+            0.12883532047271729,
+            0.40750259160995483,
+            0.13529153168201447,
+            0.2956266701221466
+          ],
+          "conditional_remaining_if_within15_s": 0.7483923709951341,
+          "conditional_interval_if_within15_s": [
+            129.0,
+            129.5
+          ],
+          "modal_interval_s": [
+            129.0,
+            129.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "27d8bc0413a42341c7e8c3e5": [
+        {
+          "time": 9.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.32314014434814453,
+          "time_distribution": [
+            0.0017897887155413628,
+            0.015674550086259842,
+            0.07095476239919662,
+            0.23472103476524353,
+            0.6768598556518555
+          ],
+          "conditional_remaining_if_within15_s": 1.0915358247002587,
+          "conditional_interval_if_within15_s": [
+            10.0,
+            10.5
+          ],
+          "modal_interval_s": [
+            10.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 76.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.5445030033588409,
+          "time_distribution": [
+            0.037623971700668335,
+            0.12202057242393494,
+            0.2313174158334732,
+            0.15354102849960327,
+            0.45549699664115906
+          ],
+          "conditional_remaining_if_within15_s": 0.7637700391933322,
+          "conditional_interval_if_within15_s": [
+            76.5,
+            77.0
+          ],
+          "modal_interval_s": [
+            77.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 82.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.10571074485778809,
+          "time_distribution": [
+            0.001550331013277173,
+            0.0544917918741703,
+            0.02240542508661747,
+            0.027263185009360313,
+            0.8942892551422119
+          ],
+          "conditional_remaining_if_within15_s": 0.6764805879211053,
+          "conditional_interval_if_within15_s": [
+            82.25,
+            82.5
+          ],
+          "modal_interval_s": [
+            83.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 107.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.021155476570129395,
+          "time_distribution": [
+            0.00038876369944773614,
+            0.006686504930257797,
+            0.00659761531278491,
+            0.007482659071683884,
+            0.9788445234298706
+          ],
+          "conditional_remaining_if_within15_s": 0.796839379472658,
+          "conditional_interval_if_within15_s": [
+            108.5,
+            109.0
+          ],
+          "modal_interval_s": [
+            109.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 119.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.28390127420425415,
+          "time_distribution": [
+            0.010007305070757866,
+            0.1292864978313446,
+            0.08340571820735931,
+            0.061201710253953934,
+            0.7160987257957458
+          ],
+          "conditional_remaining_if_within15_s": 0.6649839635938406,
+          "conditional_interval_if_within15_s": [
+            119.25,
+            119.5
+          ],
+          "modal_interval_s": [
+            120.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 167.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.45158839225769043,
+          "time_distribution": [
+            0.05362563207745552,
+            0.15843509137630463,
+            0.11167748272418976,
+            0.12785010039806366,
+            0.5484116077423096
+          ],
+          "conditional_remaining_if_within15_s": 0.685773029923439,
+          "conditional_interval_if_within15_s": [
+            167.25,
+            167.5
+          ],
+          "modal_interval_s": [
+            168.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "0b12ac0fda9d7cd77dee6e60": [
+        {
+          "time": 7.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.5468426048755646,
+          "time_distribution": [
+            0.015110134147107601,
+            0.14361488819122314,
+            0.26276859641075134,
+            0.1253489851951599,
+            0.4531573951244354
+          ],
+          "conditional_remaining_if_within15_s": 0.7488572655711323,
+          "conditional_interval_if_within15_s": [
+            7.5,
+            8.0
+          ],
+          "modal_interval_s": [
+            8.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 73.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.8381062895059586,
+          "time_distribution": [
+            0.005570516921579838,
+            0.006797878071665764,
+            0.3408043682575226,
+            0.4849334955215454,
+            0.16189371049404144
+          ],
+          "conditional_remaining_if_within15_s": 1.0321073345839977,
+          "conditional_interval_if_within15_s": [
+            74.0,
+            74.5
+          ],
+          "modal_interval_s": [
+            74.0,
+            74.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 78.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.6760894656181335,
+          "time_distribution": [
+            0.04308345541357994,
+            0.10462138056755066,
+            0.2405969798564911,
+            0.28778767585754395,
+            0.32391053438186646
+          ],
+          "conditional_remaining_if_within15_s": 0.8649753732606769,
+          "conditional_interval_if_within15_s": [
+            79.0,
+            79.5
+          ],
+          "modal_interval_s": [
+            79.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 97.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.0848204493522644,
+          "time_distribution": [
+            0.01100942213088274,
+            0.013927370309829712,
+            0.01899656653404236,
+            0.040887054055929184,
+            0.9151795506477356
+          ],
+          "conditional_remaining_if_within15_s": 0.8483238983899355,
+          "conditional_interval_if_within15_s": [
+            98.0,
+            98.5
+          ],
+          "modal_interval_s": [
+            98.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 101.0,
+          "previous": 0,
+          "label": 3,
+          "time_risk": 0.027956843376159668,
+          "time_distribution": [
+            0.004650216083973646,
+            0.0022687676828354597,
+            0.006738885771483183,
+            0.014298993162810802,
+            0.9720431566238403
+          ],
+          "conditional_remaining_if_within15_s": 0.8713413951918483,
+          "conditional_interval_if_within15_s": [
+            102.0,
+            102.5
+          ],
+          "modal_interval_s": [
+            102.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 104.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.004769861698150635,
+          "time_distribution": [
+            0.0003209092828910798,
+            0.00028241972904652357,
+            0.0014772489666938782,
+            0.0026892926543951035,
+            0.9952301383018494
+          ],
+          "conditional_remaining_if_within15_s": 0.967651775572449,
+          "conditional_interval_if_within15_s": [
+            105.5,
+            106.0
+          ],
+          "modal_interval_s": [
+            106.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 110.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.46639519929885864,
+          "time_distribution": [
+            0.0017879775259643793,
+            0.046855077147483826,
+            0.20271636545658112,
+            0.21503578126430511,
+            0.5336048007011414
+          ],
+          "conditional_remaining_if_within15_s": 0.9404602511785924,
+          "conditional_interval_if_within15_s": [
+            111.5,
+            112.0
+          ],
+          "modal_interval_s": [
+            112.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 175.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.8968866467475891,
+          "time_distribution": [
+            0.013507612980902195,
+            0.008773185312747955,
+            0.4078997075557709,
+            0.46670615673065186,
+            0.10311335325241089
+          ],
+          "conditional_remaining_if_within15_s": 0.9971002372913063,
+          "conditional_interval_if_within15_s": [
+            176.0,
+            176.5
+          ],
+          "modal_interval_s": [
+            176.0,
+            176.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "61c420843f11ca54bfe804ee": [
+        {
+          "time": 9.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.6043292284011841,
+          "time_distribution": [
+            0.004073432646691799,
+            0.07847348600625992,
+            0.18227079510688782,
+            0.3395114839076996,
+            0.3956707715988159
+          ],
+          "conditional_remaining_if_within15_s": 0.9779920501750894,
+          "conditional_interval_if_within15_s": [
+            10.0,
+            10.5
+          ],
+          "modal_interval_s": [
+            10.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 70.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.5815132260322571,
+          "time_distribution": [
+            0.019858468323946,
+            0.10241856426000595,
+            0.2450711727142334,
+            0.21416498720645905,
+            0.4184867739677429
+          ],
+          "conditional_remaining_if_within15_s": 0.8467544950544834,
+          "conditional_interval_if_within15_s": [
+            71.0,
+            71.5
+          ],
+          "modal_interval_s": [
+            72.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 76.5,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.32794249057769775,
+          "time_distribution": [
+            0.08265486359596252,
+            0.05811508744955063,
+            0.11501000821590424,
+            0.07216259837150574,
+            0.6720575094223022
+          ],
+          "conditional_remaining_if_within15_s": 0.6360435709357262,
+          "conditional_interval_if_within15_s": [
+            77.0,
+            77.5
+          ],
+          "modal_interval_s": [
+            78.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 89.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.3524896502494812,
+          "time_distribution": [
+            0.06523868441581726,
+            0.05594232678413391,
+            0.1561536192893982,
+            0.07515508681535721,
+            0.6475103497505188
+          ],
+          "conditional_remaining_if_within15_s": 0.6814164370298386,
+          "conditional_interval_if_within15_s": [
+            90.0,
+            90.5
+          ],
+          "modal_interval_s": [
+            91.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 100.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.3241111636161804,
+          "time_distribution": [
+            0.007208562921732664,
+            0.015585232526063919,
+            0.11903329193592072,
+            0.18228405714035034,
+            0.6758888363838196
+          ],
+          "conditional_remaining_if_within15_s": 0.9992731029633433,
+          "conditional_interval_if_within15_s": [
+            101.0,
+            101.5
+          ],
+          "modal_interval_s": [
+            101.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 138.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.7120559215545654,
+          "time_distribution": [
+            0.014750523492693901,
+            0.10111065953969955,
+            0.3971298933029175,
+            0.19906483590602875,
+            0.28794407844543457
+          ],
+          "conditional_remaining_if_within15_s": 0.8235853035002947,
+          "conditional_interval_if_within15_s": [
+            139.0,
+            139.5
+          ],
+          "modal_interval_s": [
+            139.0,
+            139.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "5b82f4bb76e70d8bf12c0798": [
+        {
+          "time": 6.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.5884896814823151,
+          "time_distribution": [
+            8.928213355829939e-05,
+            0.005793402902781963,
+            0.13258007168769836,
+            0.45002689957618713,
+            0.41151031851768494
+          ],
+          "conditional_remaining_if_within15_s": 1.1285710348383873,
+          "conditional_interval_if_within15_s": [
+            7.5,
+            8.0
+          ],
+          "modal_interval_s": [
+            7.5,
+            8.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 57.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9240594953298569,
+          "time_distribution": [
+            0.0037453975528478622,
+            0.059956662356853485,
+            0.4881044626235962,
+            0.3722530007362366,
+            0.07594050467014313
+          ],
+          "conditional_remaining_if_within15_s": 0.9245578891132027,
+          "conditional_interval_if_within15_s": [
+            57.5,
+            58.0
+          ],
+          "modal_interval_s": [
+            57.5,
+            58.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 62.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.3721221089363098,
+          "time_distribution": [
+            0.05885664001107216,
+            0.06903891265392303,
+            0.08793643862009048,
+            0.15629006922245026,
+            0.6278778910636902
+          ],
+          "conditional_remaining_if_within15_s": 0.7915725242346525,
+          "conditional_interval_if_within15_s": [
+            63.0,
+            63.5
+          ],
+          "modal_interval_s": [
+            63.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 90.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.46711742877960205,
+          "time_distribution": [
+            0.1963472068309784,
+            0.09109912812709808,
+            0.11514931172132492,
+            0.06452171504497528,
+            0.532882571220398
+          ],
+          "conditional_remaining_if_within15_s": 0.4832183849066496,
+          "conditional_interval_if_within15_s": [
+            90.5,
+            90.75
+          ],
+          "modal_interval_s": [
+            92.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 99.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.35810089111328125,
+          "time_distribution": [
+            0.13455483317375183,
+            0.057199206203222275,
+            0.0914815291762352,
+            0.07486525923013687,
+            0.6418991088867188
+          ],
+          "conditional_remaining_if_within15_s": 0.5597914196550846,
+          "conditional_interval_if_within15_s": [
+            99.0,
+            99.25
+          ],
+          "modal_interval_s": [
+            100.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 136.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.2740962505340576,
+          "time_distribution": [
+            0.030484214425086975,
+            0.035925887525081635,
+            0.1264939159154892,
+            0.081192247569561,
+            0.7259037494659424
+          ],
+          "conditional_remaining_if_within15_s": 0.7794468449428678,
+          "conditional_interval_if_within15_s": [
+            137.0,
+            137.5
+          ],
+          "modal_interval_s": [
+            138.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "f53f0b6fb7f3888f87a0f8ff": [
+        {
+          "time": 6.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.6974817216396332,
+          "time_distribution": [
+            0.0006262717652134597,
+            0.01627257652580738,
+            0.24231873452663422,
+            0.4382641315460205,
+            0.3025182783603668
+          ],
+          "conditional_remaining_if_within15_s": 1.054865898709977,
+          "conditional_interval_if_within15_s": [
+            7.0,
+            7.5
+          ],
+          "modal_interval_s": [
+            7.0,
+            7.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 61.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.7579215317964554,
+          "time_distribution": [
+            0.06285320222377777,
+            0.23765230178833008,
+            0.30278468132019043,
+            0.1546313762664795,
+            0.24207846820354462
+          ],
+          "conditional_remaining_if_within15_s": 0.6825956907123327,
+          "conditional_interval_if_within15_s": [
+            62.0,
+            62.5
+          ],
+          "modal_interval_s": [
+            62.0,
+            62.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 66.5,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.4971429109573364,
+          "time_distribution": [
+            0.0768776461482048,
+            0.10948500037193298,
+            0.15155838429927826,
+            0.15922188758850098,
+            0.5028570890426636
+          ],
+          "conditional_remaining_if_within15_s": 0.7309019491076469,
+          "conditional_interval_if_within15_s": [
+            67.5,
+            68.0
+          ],
+          "modal_interval_s": [
+            68.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 98.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.22960245609283447,
+          "time_distribution": [
+            0.0271151103079319,
+            0.03058823011815548,
+            0.07702701538801193,
+            0.09487210214138031,
+            0.7703975439071655
+          ],
+          "conditional_remaining_if_within15_s": 0.8328323923051357,
+          "conditional_interval_if_within15_s": [
+            99.5,
+            100.0
+          ],
+          "modal_interval_s": [
+            100.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 106.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.7059373259544373,
+          "time_distribution": [
+            0.0008212836692109704,
+            0.019801655784249306,
+            0.23910804092884064,
+            0.44620633125305176,
+            0.29406267404556274
+          ],
+          "conditional_remaining_if_within15_s": 1.0547922208643286,
+          "conditional_interval_if_within15_s": [
+            107.0,
+            107.5
+          ],
+          "modal_interval_s": [
+            107.0,
+            107.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 175.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.46468937397003174,
+          "time_distribution": [
+            0.023037469014525414,
+            0.15035158395767212,
+            0.2355329692363739,
+            0.05576737970113754,
+            0.5353106260299683
+          ],
+          "conditional_remaining_if_within15_s": 0.6576876565814018,
+          "conditional_interval_if_within15_s": [
+            175.5,
+            176.0
+          ],
+          "modal_interval_s": [
+            176.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "ca784332e44d979f99018a52": [
+        {
+          "time": 6.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.5648659467697144,
+          "time_distribution": [
+            0.10346898436546326,
+            0.13029804825782776,
+            0.21192894876003265,
+            0.11916998028755188,
+            0.43513405323028564
+          ],
+          "conditional_remaining_if_within15_s": 0.654499676078558,
+          "conditional_interval_if_within15_s": [
+            6.5,
+            7.0
+          ],
+          "modal_interval_s": [
+            7.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 30.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.3078498840332031,
+          "time_distribution": [
+            0.0929231122136116,
+            0.029978618025779724,
+            0.10432842373847961,
+            0.08061972260475159,
+            0.6921501159667969
+          ],
+          "conditional_remaining_if_within15_s": 0.6557687781751156,
+          "conditional_interval_if_within15_s": [
+            30.5,
+            31.0
+          ],
+          "modal_interval_s": [
+            31.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "a8b23394b642f0bb769a0391": [
+        {
+          "time": 4.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9895103005692363,
+          "time_distribution": [
+            0.0003205542452633381,
+            0.043865326792001724,
+            0.7493584752082825,
+            0.1959659457206726,
+            0.010489699430763721
+          ],
+          "conditional_remaining_if_within15_s": 0.8321953310223762,
+          "conditional_interval_if_within15_s": [
+            5.0,
+            5.5
+          ],
+          "modal_interval_s": [
+            5.0,
+            5.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 36.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9793865997344255,
+          "time_distribution": [
+            0.0034731305204331875,
+            0.045790206640958786,
+            0.6918264031410217,
+            0.23829683661460876,
+            0.020613400265574455
+          ],
+          "conditional_remaining_if_within15_s": 0.8519070409238338,
+          "conditional_interval_if_within15_s": [
+            37.0,
+            37.5
+          ],
+          "modal_interval_s": [
+            37.0,
+            37.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 40.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.4315868616104126,
+          "time_distribution": [
+            0.0184418223798275,
+            0.07856366783380508,
+            0.1390846073627472,
+            0.19549675285816193,
+            0.5684131383895874
+          ],
+          "conditional_remaining_if_within15_s": 0.8815166275016963,
+          "conditional_interval_if_within15_s": [
+            41.0,
+            41.5
+          ],
+          "modal_interval_s": [
+            41.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 52.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.06631523370742798,
+          "time_distribution": [
+            0.0020483550615608692,
+            0.009688049554824829,
+            0.015113364905118942,
+            0.039465464651584625,
+            0.933684766292572
+          ],
+          "conditional_remaining_if_within15_s": 0.9734703877475113,
+          "conditional_interval_if_within15_s": [
+            53.0,
+            53.5
+          ],
+          "modal_interval_s": [
+            53.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 53.5,
+          "previous": 0,
+          "label": 3,
+          "time_risk": 0.06112480163574219,
+          "time_distribution": [
+            0.002032047603279352,
+            0.014888270758092403,
+            0.018298780545592308,
+            0.02590574510395527,
+            0.9388751983642578
+          ],
+          "conditional_remaining_if_within15_s": 0.8497915090993047,
+          "conditional_interval_if_within15_s": [
+            54.5,
+            55.0
+          ],
+          "modal_interval_s": [
+            55.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 63.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.04620361328125,
+          "time_distribution": [
+            0.0012626252137124538,
+            0.005986913572996855,
+            0.011989767663180828,
+            0.026964258402585983,
+            0.95379638671875
+          ],
+          "conditional_remaining_if_within15_s": 0.9761274987831712,
+          "conditional_interval_if_within15_s": [
+            64.0,
+            64.5
+          ],
+          "modal_interval_s": [
+            64.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 70.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9320655465126038,
+          "time_distribution": [
+            0.0008127908804453909,
+            0.03373969718813896,
+            0.43666794896125793,
+            0.46084511280059814,
+            0.06793445348739624
+          ],
+          "conditional_remaining_if_within15_s": 0.9830975375516573,
+          "conditional_interval_if_within15_s": [
+            71.0,
+            71.5
+          ],
+          "modal_interval_s": [
+            71.0,
+            71.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 86.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.975329801440239,
+          "time_distribution": [
+            0.5316678285598755,
+            0.16607250273227692,
+            0.2320280522108078,
+            0.04556139558553696,
+            0.024670198559761047
+          ],
+          "conditional_remaining_if_within15_s": 0.3688070010393858,
+          "conditional_interval_if_within15_s": [
+            86.5,
+            86.75
+          ],
+          "modal_interval_s": [
+            86.5,
+            86.75
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "d0f8727d35eced697dcf79fe": [
+        {
+          "time": 4.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9261404052376747,
+          "time_distribution": [
+            0.0006886526825837791,
+            0.17805473506450653,
+            0.5001311898231506,
+            0.2472658008337021,
+            0.07385959476232529
+          ],
+          "conditional_remaining_if_within15_s": 0.8109323649041471,
+          "conditional_interval_if_within15_s": [
+            5.0,
+            5.5
+          ],
+          "modal_interval_s": [
+            5.0,
+            5.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 44.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9755614530295134,
+          "time_distribution": [
+            0.005140893626958132,
+            0.11329051107168198,
+            0.6132856011390686,
+            0.24384449422359467,
+            0.02443854697048664
+          ],
+          "conditional_remaining_if_within15_s": 0.8281347323209047,
+          "conditional_interval_if_within15_s": [
+            44.5,
+            45.0
+          ],
+          "modal_interval_s": [
+            44.5,
+            45.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 47.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.7528503090143204,
+          "time_distribution": [
+            0.0176119115203619,
+            0.07610657811164856,
+            0.28161901235580444,
+            0.3775128126144409,
+            0.24714969098567963
+          ],
+          "conditional_remaining_if_within15_s": 0.9481921752449125,
+          "conditional_interval_if_within15_s": [
+            48.0,
+            48.5
+          ],
+          "modal_interval_s": [
+            48.0,
+            48.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 66.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.029888033866882324,
+          "time_distribution": [
+            0.0055688126012682915,
+            0.005670870188623667,
+            0.006485069636255503,
+            0.01216330099850893,
+            0.9701119661331177
+          ],
+          "conditional_remaining_if_within15_s": 0.765878152102232,
+          "conditional_interval_if_within15_s": [
+            67.0,
+            67.5
+          ],
+          "modal_interval_s": [
+            67.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 70.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.7147311866283417,
+          "time_distribution": [
+            0.03696000203490257,
+            0.201935812830925,
+            0.30806633830070496,
+            0.16776899993419647,
+            0.2852688133716583
+          ],
+          "conditional_remaining_if_within15_s": 0.7290950212627649,
+          "conditional_interval_if_within15_s": [
+            70.5,
+            71.0
+          ],
+          "modal_interval_s": [
+            70.5,
+            71.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 90.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.1463114619255066,
+          "time_distribution": [
+            0.04088640958070755,
+            0.07168016582727432,
+            0.02296578325331211,
+            0.010779156349599361,
+            0.8536885380744934
+          ],
+          "conditional_remaining_if_within15_s": 0.4284635093063116,
+          "conditional_interval_if_within15_s": [
+            90.25,
+            90.5
+          ],
+          "modal_interval_s": [
+            91.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ]
+    },
+    "metrics": {
+      "total": 50,
+      "detected": 35,
+      "missed": 15,
+      "precision": 0.6481481481481481,
+      "recall": 0.7,
+      "f1": 0.673076923076923,
+      "false_events": 19,
+      "false_per_minute": 0.9857328145265889,
+      "minutes": 19.275,
+      "lead_p50_s": 0.6000000000000014,
+      "lead_p05_s": 0.13333333333333072,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 17,
+          "detected": 15
+        },
+        "harvest->return": {
+          "total": 17,
+          "detected": 13
+        },
+        "return->adjust": {
+          "total": 8,
+          "detected": 6
+        },
+        "adjust->pickup": {
+          "total": 8,
+          "detected": 1
+        }
+      }
+    },
+    "all_event_times_and_matching_unchanged": true
+  },
+  "44": {
+    "predictions": {
+      "3e645bf4e137d0f836c9d7ff": [
+        {
+          "time": 8.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.8914681002497673,
+          "time_distribution": [
+            0.001169198309071362,
+            0.022738022729754448,
+            0.44419774413108826,
+            0.42336320877075195,
+            0.1085318997502327
+          ],
+          "conditional_remaining_if_within15_s": 0.9770682328380644,
+          "conditional_interval_if_within15_s": [
+            8.5,
+            9.0
+          ],
+          "modal_interval_s": [
+            8.5,
+            9.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 55.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.18295353651046753,
+          "time_distribution": [
+            0.13318488001823425,
+            0.029315508902072906,
+            0.016542674973607063,
+            0.003910426516085863,
+            0.8170464634895325
+          ],
+          "conditional_remaining_if_within15_s": 0.24561690213158727,
+          "conditional_interval_if_within15_s": [
+            55.5,
+            55.75
+          ],
+          "modal_interval_s": [
+            57.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 61.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.15879470109939575,
+          "time_distribution": [
+            0.013137421570718288,
+            0.023079339414834976,
+            0.05579786002635956,
+            0.06678011268377304,
+            0.8412052989006042
+          ],
+          "conditional_remaining_if_within15_s": 0.8540615057572722,
+          "conditional_interval_if_within15_s": [
+            62.0,
+            62.5
+          ],
+          "modal_interval_s": [
+            62.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 71.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.024521291255950928,
+          "time_distribution": [
+            0.003987834323197603,
+            0.005921740550547838,
+            0.009570157155394554,
+            0.005041551310569048,
+            0.9754787087440491
+          ],
+          "conditional_remaining_if_within15_s": 0.6605971101671457,
+          "conditional_interval_if_within15_s": [
+            72.0,
+            72.5
+          ],
+          "modal_interval_s": [
+            73.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 81.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.0017644166946411133,
+          "time_distribution": [
+            0.000963512051384896,
+            0.0005637745489366353,
+            0.00018551808898337185,
+            5.1608360081445426e-05,
+            0.9982355833053589
+          ],
+          "conditional_remaining_if_within15_s": 0.3035023449920118,
+          "conditional_interval_if_within15_s": [
+            81.5,
+            81.75
+          ],
+          "modal_interval_s": [
+            83.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 128.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.7695097327232361,
+          "time_distribution": [
+            0.09039649367332458,
+            0.2157692164182663,
+            0.36629852652549744,
+            0.09704546630382538,
+            0.23049026727676392
+          ],
+          "conditional_remaining_if_within15_s": 0.6344867590814829,
+          "conditional_interval_if_within15_s": [
+            129.0,
+            129.5
+          ],
+          "modal_interval_s": [
+            129.0,
+            129.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "27d8bc0413a42341c7e8c3e5": [
+        {
+          "time": 9.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.5095180869102478,
+          "time_distribution": [
+            0.001490244409069419,
+            0.015899159014225006,
+            0.1636808067560196,
+            0.3284479081630707,
+            0.4904819130897522
+          ],
+          "conditional_remaining_if_within15_s": 1.0587825791735668,
+          "conditional_interval_if_within15_s": [
+            10.0,
+            10.5
+          ],
+          "modal_interval_s": [
+            10.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 76.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.638987809419632,
+          "time_distribution": [
+            0.035687632858753204,
+            0.2016996443271637,
+            0.2571876049041748,
+            0.14441296458244324,
+            0.36101219058036804
+          ],
+          "conditional_remaining_if_within15_s": 0.7097243424504995,
+          "conditional_interval_if_within15_s": [
+            76.5,
+            77.0
+          ],
+          "modal_interval_s": [
+            77.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 82.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.1554034948348999,
+          "time_distribution": [
+            0.0006500506424345076,
+            0.07340819388628006,
+            0.03798883780837059,
+            0.04335645213723183,
+            0.8445965051651001
+          ],
+          "conditional_remaining_if_within15_s": 0.7097427200060338,
+          "conditional_interval_if_within15_s": [
+            82.25,
+            82.5
+          ],
+          "modal_interval_s": [
+            83.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 109.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.16057229042053223,
+          "time_distribution": [
+            0.005279022268950939,
+            0.10298915952444077,
+            0.031267452985048294,
+            0.0210366640239954,
+            0.8394277095794678
+          ],
+          "conditional_remaining_if_within15_s": 0.5544370240531862,
+          "conditional_interval_if_within15_s": [
+            109.25,
+            109.5
+          ],
+          "modal_interval_s": [
+            110.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 119.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.26435214281082153,
+          "time_distribution": [
+            0.032893914729356766,
+            0.1595226377248764,
+            0.037685953080654144,
+            0.03424964100122452,
+            0.7356478571891785
+          ],
+          "conditional_remaining_if_within15_s": 0.5107174115255475,
+          "conditional_interval_if_within15_s": [
+            119.75,
+            120.0
+          ],
+          "modal_interval_s": [
+            121.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 169.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.8348321616649628,
+          "time_distribution": [
+            0.003171575954183936,
+            0.0657157301902771,
+            0.5645055770874023,
+            0.20143930613994598,
+            0.16516783833503723
+          ],
+          "conditional_remaining_if_within15_s": 0.8387532093911432,
+          "conditional_interval_if_within15_s": [
+            169.5,
+            170.0
+          ],
+          "modal_interval_s": [
+            169.5,
+            170.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "0b12ac0fda9d7cd77dee6e60": [
+        {
+          "time": 7.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.6246029734611511,
+          "time_distribution": [
+            0.3476865887641907,
+            0.19012892246246338,
+            0.0712694600224495,
+            0.015518012456595898,
+            0.3753970265388489
+          ],
+          "conditional_remaining_if_within15_s": 0.30036485008895397,
+          "conditional_interval_if_within15_s": [
+            7.5,
+            7.75
+          ],
+          "modal_interval_s": [
+            9.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 73.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.8683407008647919,
+          "time_distribution": [
+            0.002471578773111105,
+            0.07830628752708435,
+            0.5341427326202393,
+            0.25342005491256714,
+            0.13165929913520813
+          ],
+          "conditional_remaining_if_within15_s": 0.8603258245857432,
+          "conditional_interval_if_within15_s": [
+            73.5,
+            74.0
+          ],
+          "modal_interval_s": [
+            73.5,
+            74.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 78.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.9062099903821945,
+          "time_distribution": [
+            0.023016909137368202,
+            0.20705899596214294,
+            0.45478910207748413,
+            0.221344992518425,
+            0.09379000961780548
+          ],
+          "conditional_remaining_if_within15_s": 0.7705689780414104,
+          "conditional_interval_if_within15_s": [
+            78.5,
+            79.0
+          ],
+          "modal_interval_s": [
+            78.5,
+            79.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 98.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.12558317184448242,
+          "time_distribution": [
+            0.00331642827950418,
+            0.0288004819303751,
+            0.05463862046599388,
+            0.03882763534784317,
+            0.8744168281555176
+          ],
+          "conditional_remaining_if_within15_s": 0.8020839295350015,
+          "conditional_interval_if_within15_s": [
+            99.0,
+            99.5
+          ],
+          "modal_interval_s": [
+            100.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 101.5,
+          "previous": 0,
+          "label": 3,
+          "time_risk": 0.01485908031463623,
+          "time_distribution": [
+            0.0009348083985969424,
+            0.0007305605104193091,
+            0.0047503369860351086,
+            0.008443369530141354,
+            0.9851409196853638
+          ],
+          "conditional_remaining_if_within15_s": 0.9763579056598246,
+          "conditional_interval_if_within15_s": [
+            102.5,
+            103.0
+          ],
+          "modal_interval_s": [
+            103.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 104.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.0020066499710083008,
+          "time_distribution": [
+            5.1863658882211894e-05,
+            0.00011172951781190932,
+            0.0006767617887817323,
+            0.0011662717442959547,
+            0.9979933500289917
+          ],
+          "conditional_remaining_if_within15_s": 1.0035711226519197,
+          "conditional_interval_if_within15_s": [
+            105.5,
+            106.0
+          ],
+          "modal_interval_s": [
+            106.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 111.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.7750939428806305,
+          "time_distribution": [
+            0.006652399431914091,
+            0.25249210000038147,
+            0.3410060405731201,
+            0.17494337260723114,
+            0.2249060571193695
+          ],
+          "conditional_remaining_if_within15_s": 0.7353300327667966,
+          "conditional_interval_if_within15_s": [
+            111.5,
+            112.0
+          ],
+          "modal_interval_s": [
+            111.5,
+            112.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 175.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.7278363704681396,
+          "time_distribution": [
+            0.02387050725519657,
+            0.02068949304521084,
+            0.41273459792137146,
+            0.2705417275428772,
+            0.27216362953186035
+          ],
+          "conditional_remaining_if_within15_s": 0.9046958773396909,
+          "conditional_interval_if_within15_s": [
+            175.5,
+            176.0
+          ],
+          "modal_interval_s": [
+            175.5,
+            176.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "61c420843f11ca54bfe804ee": [
+        {
+          "time": 9.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.7588478326797485,
+          "time_distribution": [
+            0.004271378740668297,
+            0.07673002779483795,
+            0.31615591049194336,
+            0.36169058084487915,
+            0.24115216732025146
+          ],
+          "conditional_remaining_if_within15_s": 0.9468799181631766,
+          "conditional_interval_if_within15_s": [
+            10.0,
+            10.5
+          ],
+          "modal_interval_s": [
+            10.0,
+            10.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 70.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.5597625970840454,
+          "time_distribution": [
+            0.10144674777984619,
+            0.2691968083381653,
+            0.15309378504753113,
+            0.03602524474263191,
+            0.4402374029159546
+          ],
+          "conditional_remaining_if_within15_s": 0.48856706358492374,
+          "conditional_interval_if_within15_s": [
+            70.75,
+            71.0
+          ],
+          "modal_interval_s": [
+            72.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 77.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.4834543466567993,
+          "time_distribution": [
+            0.04502318799495697,
+            0.15423108637332916,
+            0.17688190937042236,
+            0.10731809586286545,
+            0.5165456533432007
+          ],
+          "conditional_remaining_if_within15_s": 0.6831537373363972,
+          "conditional_interval_if_within15_s": [
+            77.5,
+            78.0
+          ],
+          "modal_interval_s": [
+            78.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 90.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.29237496852874756,
+          "time_distribution": [
+            0.016312099993228912,
+            0.05177513509988785,
+            0.12221690267324448,
+            0.10207076370716095,
+            0.7076250314712524
+          ],
+          "conditional_remaining_if_within15_s": 0.8232779712416232,
+          "conditional_interval_if_within15_s": [
+            90.5,
+            91.0
+          ],
+          "modal_interval_s": [
+            91.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 100.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.8035185486078262,
+          "time_distribution": [
+            0.01617090217769146,
+            0.049875710159540176,
+            0.35041719675064087,
+            0.3870547115802765,
+            0.19648145139217377
+          ],
+          "conditional_remaining_if_within15_s": 0.9549948209896684,
+          "conditional_interval_if_within15_s": [
+            101.0,
+            101.5
+          ],
+          "modal_interval_s": [
+            101.0,
+            101.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 138.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.8224676996469498,
+          "time_distribution": [
+            0.03472231328487396,
+            0.24214236438274384,
+            0.3724147081375122,
+            0.17318828403949738,
+            0.17753230035305023
+          ],
+          "conditional_remaining_if_within15_s": 0.7184964586049318,
+          "conditional_interval_if_within15_s": [
+            138.5,
+            139.0
+          ],
+          "modal_interval_s": [
+            138.5,
+            139.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "5b82f4bb76e70d8bf12c0798": [
+        {
+          "time": 6.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9194580838084221,
+          "time_distribution": [
+            4.230082777212374e-05,
+            0.009409776888787746,
+            0.31366074085235596,
+            0.5963452458381653,
+            0.08054191619157791
+          ],
+          "conditional_remaining_if_within15_s": 1.0704251925749304,
+          "conditional_interval_if_within15_s": [
+            7.5,
+            8.0
+          ],
+          "modal_interval_s": [
+            7.5,
+            8.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 57.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9708810858428478,
+          "time_distribution": [
+            0.00805357564240694,
+            0.28717172145843506,
+            0.5623661279678345,
+            0.11328965425491333,
+            0.029118914157152176
+          ],
+          "conditional_remaining_if_within15_s": 0.6922400353942066,
+          "conditional_interval_if_within15_s": [
+            57.5,
+            58.0
+          ],
+          "modal_interval_s": [
+            57.5,
+            58.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 62.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.6865047812461853,
+          "time_distribution": [
+            0.09486892819404602,
+            0.1767295002937317,
+            0.24337716400623322,
+            0.17152929306030273,
+            0.3134952187538147
+          ],
+          "conditional_remaining_if_within15_s": 0.6920222379267216,
+          "conditional_interval_if_within15_s": [
+            62.5,
+            63.0
+          ],
+          "modal_interval_s": [
+            63.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 90.5,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.7340808510780334,
+          "time_distribution": [
+            0.2930372357368469,
+            0.15433159470558167,
+            0.22758221626281738,
+            0.059129782021045685,
+            0.26591914892196655
+          ],
+          "conditional_remaining_if_within15_s": 0.461942158639431,
+          "conditional_interval_if_within15_s": [
+            90.5,
+            90.75
+          ],
+          "modal_interval_s": [
+            90.5,
+            90.75
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 99.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.7300108075141907,
+          "time_distribution": [
+            0.16994428634643555,
+            0.21407952904701233,
+            0.2057598978281021,
+            0.1402270793914795,
+            0.2699891924858093
+          ],
+          "conditional_remaining_if_within15_s": 0.5905757043510675,
+          "conditional_interval_if_within15_s": [
+            99.25,
+            99.5
+          ],
+          "modal_interval_s": [
+            100.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 134.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.39148634672164917,
+          "time_distribution": [
+            0.059103500097990036,
+            0.16067543625831604,
+            0.12106328457593918,
+            0.05064412206411362,
+            0.6085136532783508
+          ],
+          "conditional_remaining_if_within15_s": 0.566415274515748,
+          "conditional_interval_if_within15_s": [
+            134.75,
+            135.0
+          ],
+          "modal_interval_s": [
+            136.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "f53f0b6fb7f3888f87a0f8ff": [
+        {
+          "time": 6.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9046116471290588,
+          "time_distribution": [
+            0.0008144162711687386,
+            0.015008016489446163,
+            0.46181535720825195,
+            0.426973819732666,
+            0.09538835287094116
+          ],
+          "conditional_remaining_if_within15_s": 0.9792142721344135,
+          "conditional_interval_if_within15_s": [
+            6.5,
+            7.0
+          ],
+          "modal_interval_s": [
+            6.5,
+            7.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 61.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.8922565653920174,
+          "time_distribution": [
+            0.0713098868727684,
+            0.3202832341194153,
+            0.37097564339637756,
+            0.1296878159046173,
+            0.10774343460798264
+          ],
+          "conditional_remaining_if_within15_s": 0.6381140314042568,
+          "conditional_interval_if_within15_s": [
+            62.0,
+            62.5
+          ],
+          "modal_interval_s": [
+            62.0,
+            62.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 67.5,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.035411953926086426,
+          "time_distribution": [
+            0.0010062764631584287,
+            0.0022104934323579073,
+            0.013921660371124744,
+            0.01827353797852993,
+            0.9645880460739136
+          ],
+          "conditional_remaining_if_within15_s": 0.9668450497556478,
+          "conditional_interval_if_within15_s": [
+            68.5,
+            69.0
+          ],
+          "modal_interval_s": [
+            69.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 99.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.12145668268203735,
+          "time_distribution": [
+            0.012132108211517334,
+            0.011393233202397823,
+            0.04234950616955757,
+            0.055581893771886826,
+            0.8785433173179626
+          ],
+          "conditional_remaining_if_within15_s": 0.8812065357342362,
+          "conditional_interval_if_within15_s": [
+            100.0,
+            100.5
+          ],
+          "modal_interval_s": [
+            100.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 106.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.6657140552997589,
+          "time_distribution": [
+            0.10347194224596024,
+            0.20643991231918335,
+            0.17347976565361023,
+            0.1823224127292633,
+            0.3342859447002411
+          ],
+          "conditional_remaining_if_within15_s": 0.6735050976276398,
+          "conditional_interval_if_within15_s": [
+            106.75,
+            107.0
+          ],
+          "modal_interval_s": [
+            108.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 176.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.00016123056411743164,
+          "time_distribution": [
+            1.524029084976064e-05,
+            4.426316445460543e-05,
+            8.010775673028547e-06,
+            9.366915764985606e-05,
+            0.9998387694358826
+          ],
+          "conditional_remaining_if_within15_s": 0.8784916130825877,
+          "conditional_interval_if_within15_s": [
+            177.5,
+            178.0
+          ],
+          "modal_interval_s": [
+            178.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "ca784332e44d979f99018a52": [
+        {
+          "time": 6.0,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.5506632328033447,
+          "time_distribution": [
+            0.14412802457809448,
+            0.11057673394680023,
+            0.1311217099428177,
+            0.1648367941379547,
+            0.4493367671966553
+          ],
+          "conditional_remaining_if_within15_s": 0.6607841905206442,
+          "conditional_interval_if_within15_s": [
+            7.0,
+            7.5
+          ],
+          "modal_interval_s": [
+            7.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 30.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.22105956077575684,
+          "time_distribution": [
+            0.07712166756391525,
+            0.01839183270931244,
+            0.0543099120259285,
+            0.07123618572950363,
+            0.7789404392242432
+          ],
+          "conditional_remaining_if_within15_s": 0.6618794966489077,
+          "conditional_interval_if_within15_s": [
+            30.0,
+            30.25
+          ],
+          "modal_interval_s": [
+            31.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "a8b23394b642f0bb769a0391": [
+        {
+          "time": 4.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.9943029377609491,
+          "time_distribution": [
+            0.00039353338070213795,
+            0.02177811600267887,
+            0.7182311415672302,
+            0.2539001703262329,
+            0.005697062239050865
+          ],
+          "conditional_remaining_if_within15_s": 0.8692165099018894,
+          "conditional_interval_if_within15_s": [
+            5.0,
+            5.5
+          ],
+          "modal_interval_s": [
+            5.0,
+            5.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 36.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.936551608145237,
+          "time_distribution": [
+            0.0033240767661482096,
+            0.058099377900362015,
+            0.514014482498169,
+            0.36111363768577576,
+            0.06344839185476303
+          ],
+          "conditional_remaining_if_within15_s": 0.917307401803555,
+          "conditional_interval_if_within15_s": [
+            37.0,
+            37.5
+          ],
+          "modal_interval_s": [
+            37.0,
+            37.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 39.5,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.4949609041213989,
+          "time_distribution": [
+            0.00019030968542210758,
+            0.0022171533200889826,
+            0.1410565823316574,
+            0.3514968752861023,
+            0.5050390958786011
+          ],
+          "conditional_remaining_if_within15_s": 1.1031553069115034,
+          "conditional_interval_if_within15_s": [
+            40.5,
+            41.0
+          ],
+          "modal_interval_s": [
+            41.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 66.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.11166292428970337,
+          "time_distribution": [
+            0.01856965757906437,
+            0.01890920288860798,
+            0.03601910173892975,
+            0.03816499933600426,
+            0.8883370757102966
+          ],
+          "conditional_remaining_if_within15_s": 0.7534524034708738,
+          "conditional_interval_if_within15_s": [
+            67.0,
+            67.5
+          ],
+          "modal_interval_s": [
+            67.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 70.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.12207788228988647,
+          "time_distribution": [
+            0.071003258228302,
+            0.02513064816594124,
+            0.006467516999691725,
+            0.019476383924484253,
+            0.8779221177101135
+          ],
+          "conditional_remaining_if_within15_s": 0.38905942998826504,
+          "conditional_interval_if_within15_s": [
+            70.5,
+            70.75
+          ],
+          "modal_interval_s": [
+            72.0,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 86.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9955605249851942,
+          "time_distribution": [
+            0.6690273880958557,
+            0.258565753698349,
+            0.06049429625272751,
+            0.007473094388842583,
+            0.004439475014805794
+          ],
+          "conditional_remaining_if_within15_s": 0.2363519538193941,
+          "conditional_interval_if_within15_s": [
+            86.5,
+            86.75
+          ],
+          "modal_interval_s": [
+            86.5,
+            86.75
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ],
+      "d0f8727d35eced697dcf79fe": [
+        {
+          "time": 4.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.8894917517900467,
+          "time_distribution": [
+            0.0012267989804968238,
+            0.07939188927412033,
+            0.3198600113391876,
+            0.48901301622390747,
+            0.11050824820995331
+          ],
+          "conditional_remaining_if_within15_s": 0.9905507051444147,
+          "conditional_interval_if_within15_s": [
+            5.5,
+            6.0
+          ],
+          "modal_interval_s": [
+            5.5,
+            6.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 44.0,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.894063264131546,
+          "time_distribution": [
+            0.007277961820363998,
+            0.1571853756904602,
+            0.32567301392555237,
+            0.40392687916755676,
+            0.10593673586845398
+          ],
+          "conditional_remaining_if_within15_s": 0.9048774124821648,
+          "conditional_interval_if_within15_s": [
+            45.0,
+            45.5
+          ],
+          "modal_interval_s": [
+            45.0,
+            45.5
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 47.0,
+          "previous": 2,
+          "label": 3,
+          "time_risk": 0.9733972996473312,
+          "time_distribution": [
+            0.027549877762794495,
+            0.25390198826789856,
+            0.5680829286575317,
+            0.12386251986026764,
+            0.026602700352668762
+          ],
+          "conditional_remaining_if_within15_s": 0.6981191921513528,
+          "conditional_interval_if_within15_s": [
+            47.5,
+            48.0
+          ],
+          "modal_interval_s": [
+            47.5,
+            48.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 66.0,
+          "previous": 3,
+          "label": 0,
+          "time_risk": 0.03294402360916138,
+          "time_distribution": [
+            0.00598090561106801,
+            0.0071442318148911,
+            0.010882464237511158,
+            0.008936374448239803,
+            0.9670559763908386
+          ],
+          "conditional_remaining_if_within15_s": 0.6908400245010853,
+          "conditional_interval_if_within15_s": [
+            66.5,
+            67.0
+          ],
+          "modal_interval_s": [
+            67.5,
+            null
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 69.5,
+          "previous": 0,
+          "label": 1,
+          "time_risk": 0.8268697559833527,
+          "time_distribution": [
+            0.008363988250494003,
+            0.05259094014763832,
+            0.36793816089630127,
+            0.39797666668891907,
+            0.17313024401664734
+          ],
+          "conditional_remaining_if_within15_s": 0.9604796590283513,
+          "conditional_interval_if_within15_s": [
+            70.5,
+            71.0
+          ],
+          "modal_interval_s": [
+            70.5,
+            71.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        },
+        {
+          "time": 89.5,
+          "previous": 1,
+          "label": 2,
+          "time_risk": 0.9707330763339996,
+          "time_distribution": [
+            0.24611642956733704,
+            0.4120014011859894,
+            0.256140798330307,
+            0.056474488228559494,
+            0.029266923666000366
+          ],
+          "conditional_remaining_if_within15_s": 0.46146958228200674,
+          "conditional_interval_if_within15_s": [
+            89.75,
+            90.0
+          ],
+          "modal_interval_s": [
+            89.75,
+            90.0
+          ],
+          "semantics": "Timing/confidence metadata only; not calibrated probability that this warning is correct; never veto or advance Prompt"
+        }
+      ]
+    },
+    "metrics": {
+      "total": 50,
+      "detected": 36,
+      "missed": 14,
+      "precision": 0.6923076923076923,
+      "recall": 0.72,
+      "f1": 0.7058823529411765,
+      "false_events": 16,
+      "false_per_minute": 0.8300907911802854,
+      "minutes": 19.275,
+      "lead_p50_s": 0.6333333333333293,
+      "lead_p05_s": 0.09999999999999432,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 17,
+          "detected": 13
+        },
+        "harvest->return": {
+          "total": 17,
+          "detected": 14
+        },
+        "return->adjust": {
+          "total": 8,
+          "detected": 6
+        },
+        "adjust->pickup": {
+          "total": 8,
+          "detected": 3
+        }
+      }
+    },
+    "all_event_times_and_matching_unchanged": true
+  }
+}

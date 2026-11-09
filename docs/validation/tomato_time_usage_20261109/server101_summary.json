@@ -1,0 +1,8 @@
+{
+  "recordings": 101,
+  "unique_sources": 101,
+  "inventory_sha256": "800adc2dc39378d8bbf4ee10c207343b113aadb9e0d3a4a6ce3d980245201504",
+  "raw_source_changes": 0,
+  "only_annotation_change": "B/1106_750_791_normal/episode_000004",
+  "new10_now_exposed_and_user_authorizes_training": true
+}

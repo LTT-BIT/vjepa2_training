@@ -1,0 +1,20 @@
+{
+  "enabled_by_default": false,
+  "recommended": false,
+  "reason": "Fixed validation event false-rate gate failed; do not replace original B0 or OpenPI default",
+  "checkpoint": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/independent_h15_s42.pt",
+  "model_version": "db7bfea7072136776dc651c72b2cc66b3ccfad961b760c4248ab240d1517fc64",
+  "runtime_class": "tools.tomato_agent_inference.TomatoAgent",
+  "pretrained_dir": "pretrained/vjepa2-vitl-fpc64-256",
+  "prediction_hz": 2,
+  "future_horizon_s": 1.5,
+  "current_threshold": 0.5,
+  "future_threshold": 0.5,
+  "confirmations": 2,
+  "transition_time_checkpoint": null,
+  "split_role": "84train9dev8archived_history_test",
+  "new_independent_test_available": false,
+  "dataset_manifest": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/dataset_manifest.json",
+  "dataset_manifest_sha256": "d268001110c737e77bdd511f86ee1651b9d669798c166249938c1bc7addc9880",
+  "metadata_finalization": "descriptive manifest identity corrected; exact tensor/normalization equivalence receipt retained"
+}

@@ -1,0 +1,114 @@
+{
+  "reason": "Executed custom-run manifests inherited old94 descriptive summary/index/prediction fields; these were not used for actual targets or membership. Training manifest copies/checkpoints remain untouched. Finalized metadata regenerated and every tensor compared.",
+  "receipts": [
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/clean91_control/current_only_s42/best_head.pt",
+      "original_sha256": "18778b25332c68c77088ecdc3afd4e15d0c7a10ca3d550b543349cb0abc2c97d",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/clean91_control/current_only_s42/head.pt",
+      "finalized_sha256": "0fa3db38c4999b31780a6fb8d39da0977ef442a946b1ecc71abaeb9d9d17cf42",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "519b75c386e07de7914ec74da61c9db76e0e602d840e3a5f201db453e36395ce"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/clean91_control/future_only_s42/best_head.pt",
+      "original_sha256": "0ade0e303d91118084d949a4e0c5cdbc06d20c1b4cd3a90b9619206c75aec0ff",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/clean91_control/future_only_s42/head.pt",
+      "finalized_sha256": "33a7765e8ac63cfda9097189b92d99fb9798d5a0350c166015c3f0df7b633c40",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "03cab1015477691609a3bd0c800f36d7c2e36a28a179c460e2f0c6dd45d1c79e"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/clean91_control/current_only_s43/best_head.pt",
+      "original_sha256": "9c7910a7b8ac3145e67af524766e115083fea7d76febdf020ace9bd5682b67cb",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/clean91_control/current_only_s43/head.pt",
+      "finalized_sha256": "274867702f15234ae3d0bb6aa30488fd88783c9d562479bf6d6bdc8d8e6735a8",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "d0010370818ca4021313f29b69d8e50ca6a8fcc8e7c8c9856ebeee7d789ab5b9"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/clean91_control/future_only_s43/best_head.pt",
+      "original_sha256": "1b449ae29adfe6b3ff38317fc871427da0429d14c2481978d7dc6e7258cdcb0c",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/clean91_control/future_only_s43/head.pt",
+      "finalized_sha256": "f37c1d2b438adce539abbadef2918b467b98e58cfbfb1b7ac5c18ce6898fe43e",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "a6778d2a93979da5d6835a7e4fed6b08e753c76087a92206dbf23e4f5012b32f"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/clean91_control/current_only_s44/best_head.pt",
+      "original_sha256": "28acab93f20e9e2c2e92127b38ff9c4cb0f5c08ebfa66986254e8914e8c13f2a",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/clean91_control/current_only_s44/head.pt",
+      "finalized_sha256": "dee833e79d59ef9110e1d4739588717c4667621e696962ec83aaa79ca1424fa4",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "027ba68f5534fd44b4d440feaf7332446ff9b175b358511f4405134c34c6d905"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/clean91_control/future_only_s44/best_head.pt",
+      "original_sha256": "7e79d84d4e7c7d54606e6a60ae9f5452583a58a4f423a2b4f49485a5cd8f8985",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/clean91_control/future_only_s44/head.pt",
+      "finalized_sha256": "d2e9266aa9b04975f11582f1e7e3b597731ac2b3d6f55bdb846cdd549c389459",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "30fadeee8614ef393f6d3d4ed640a8f4b10f915497802e69510093c6ae12e8c2"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/refresh101/current_only_s42/best_head.pt",
+      "original_sha256": "81d3d75d2de65a579b3208e65270b202e91b6c573e9fcbfe43ed5abdfd46b867",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/current_only_s42/head.pt",
+      "finalized_sha256": "855f5460ae273b8a768be38411db8c9d35b6b3eb23e1cfcc8c5a5ae37e1c2ad8",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "bbc539b88e989bc8e6a6c502c638265b33e58abbe843ee5f327d4281dedbfc06"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/refresh101/future_only_s42/best_head.pt",
+      "original_sha256": "ab4a53a392f6a4cfa1449987e2d71b19b42a0d0a2147bfddfd5b36e1130e8b65",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/future_only_s42/head.pt",
+      "finalized_sha256": "1bf582a92964c432775aa8a6a7adbd6e3a95a0684d93ba2f1c1ba0959d98d202",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "96c157f25d37bc62ecb55d0ef2eda25aa01d9ebc4483cbe9f7ac3eef9e32d6e2"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/refresh101/current_only_s43/best_head.pt",
+      "original_sha256": "ae87590ce534ae8644413f35f07ef880a743cee02b20dbd5b5a5f38420a1ced6",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/current_only_s43/head.pt",
+      "finalized_sha256": "87d070fdd375b4197d66342729b017c5195fa77c2d3ee3675910e2d56ea071ce",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "3222cad2159e4a85702b5a77a652b35ca7e231253dfcf74c1e1c50ee53a4125f"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/refresh101/future_only_s43/best_head.pt",
+      "original_sha256": "a1ce160043fe1016778e6dc3fd9c6e89576c2d8a853b085684743e0f4ae1c764",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/future_only_s43/head.pt",
+      "finalized_sha256": "2163e0fa96a9413b898ac49ae03c482548574ed6066a8195b8921001ec022713",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "eaf6fd40fd1dcfc72f69cbdaa0f3ea6e0cb32e6bf3929603416bc517b441ef4e"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/refresh101/current_only_s44/best_head.pt",
+      "original_sha256": "ca6a3dd290834fa676e7a81a9f34d92708a6d78c7fa3d4616d8df10c830693f5",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/current_only_s44/head.pt",
+      "finalized_sha256": "b265b2133a349727a9bb8b0c72cb2768484b7db397406e23bf427116301d675f",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "c46be22bca82e3ec00843cfc478a022b2a584df144709c174d009de0ea192ff6"
+    },
+    {
+      "original": "runs/tomato/refresh101_20261109_v2/refresh101/future_only_s44/best_head.pt",
+      "original_sha256": "de0fcc24e8b2b1fff82730f1c0f87dc20621d5254982b7601838f520e9ad28b8",
+      "finalized": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/future_only_s44/head.pt",
+      "finalized_sha256": "12fc8eb843168c58566a3df4256e596e0ff56f0ece9f9b68569aadae47bf22ac",
+      "tensor_identical": true,
+      "normalization_identical": true,
+      "manifest_sha256": "1f76a945222b0739185d7bdefbcf6b4c7e876a55afa32590b8a5a067517c6623"
+    }
+  ],
+  "training_repeated": false
+}

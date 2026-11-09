@@ -1,0 +1,48 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "cohorts": [
+      "clean91_control",
+      "refresh101"
+    ],
+    "train_recordings": {
+      "clean91_control": 74,
+      "refresh101": 84
+    },
+    "validation_recordings": 9,
+    "archived_historical_test_recordings": 8,
+    "heads": [
+      "current_only",
+      "future_only"
+    ],
+    "future_horizon_s": 1.5,
+    "prediction_hz": 2,
+    "epochs": 100,
+    "patience": 15,
+    "batch_size": 128,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "architecture": "unchanged independent4000->256 GELU dropout0.3->4",
+    "weights": "train-only sqrt inverse frequency per active head",
+    "normalization": "fit train-only per cohort, exact same mean/std for current and future",
+    "epoch_selection": "active head validation Macro-F1 then NLL, unchanged from original independent heads",
+    "event_metrics": "exact from/to one-to-one; future[b-1.5,b), common[b-1,b); current[b,min(b+2,end)); threshold0.5 K2",
+    "validation_labels": "same14 provisional truth edits as39/50 reference; no new events from false-warning clips",
+    "new10_role": "user-authorized training/development after independent test8032f2e; never reported again as independent test",
+    "representative_seed": 42,
+    "candidate_gate": "research candidate only if mean validation recall improves versus control AND mean false/min does not rise; representative stays seed42; no stable default replacement",
+    "encoder_frozen": true,
+    "train_time_head": false,
+    "remote_push": false
+  },
+  "config_sha256": "ce5de9b9b187fc6eb112079ad040a03f3b4f29cee8ae6bb8e3f986f5a3283d51",
+  "base_git_sha": "8032f2eb37c02dd2bb31e40483a8ce12aae2a824",
+  "analysis_sha256": "603f33c2aba16f4472208c3a0d7a935bd6d4c5d6f9b2986fc4f36b3becbcc096",
+  "source_sha256": "8e1a077967f26bb6b484948705affcd8735f3e7beca3a5544fe91528cc5a4881",
+  "no_test_inference": true
+}

@@ -1,0 +1,69 @@
+{
+  "manifest_path": "runs/tomato/refresh101_20261109_v2/clean91_control/manifest.json",
+  "sha256": "27612a768243bd4548d97755f1da208a3243b4f93520dbc7f882313356ee673d",
+  "split_sha256": "e83ff6930638ce9a1fa7167a17f2b24ab71debc93ebea3025eb9a743d337f4c5",
+  "counts": {
+    "train": 74,
+    "val": 9,
+    "test": 8
+  },
+  "label_version": "approved training correction +14 provisional val boundary edits",
+  "finalized_manifest_path": "runs/tomato/refresh101_20261109_v2/finalized_exports/clean91_control/dataset_manifest.json",
+  "finalized_manifest_sha256": "368ee872d4929c08d4d70f6a576a8f5df009db471eca0a5b3a55915b9e33afe8",
+  "finalized_summary": {
+    "train": {
+      "sources": 74,
+      "episodes": 74,
+      "anchors": 21394,
+      "class_counts": [
+        2806,
+        14193,
+        1426,
+        2969
+      ],
+      "future_class_counts": [
+        2584,
+        14193,
+        1426,
+        2969
+      ],
+      "future_invalid": 222
+    },
+    "val": {
+      "sources": 9,
+      "episodes": 9,
+      "anchors": 2340,
+      "class_counts": [
+        282,
+        1570,
+        148,
+        340
+      ],
+      "future_class_counts": [
+        255,
+        1570,
+        148,
+        340
+      ],
+      "future_invalid": 27
+    },
+    "test": {
+      "sources": 8,
+      "episodes": 8,
+      "anchors": 2406,
+      "class_counts": [
+        280,
+        1664,
+        145,
+        317
+      ],
+      "future_class_counts": [
+        256,
+        1664,
+        145,
+        317
+      ],
+      "future_invalid": 24
+    }
+  }
+}

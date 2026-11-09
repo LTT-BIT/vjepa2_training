@@ -1,0 +1,2688 @@
+[
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "pickup->harvest",
+    "time": 8.0,
+    "correct": true,
+    "risk": 0.8769176006317139,
+    "future_confidence": 0.9999490092216738,
+    "predicted_dt_s": 0.9775606511414207,
+    "distribution": [
+      0.00394476018846035,
+      0.02964063361287117,
+      0.4170668125152588,
+      0.4262653589248657,
+      0.12308239936828613
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "harvest->return",
+    "time": 55.5,
+    "correct": true,
+    "risk": 0.1907433271408081,
+    "future_confidence": 0.9896371210863335,
+    "predicted_dt_s": 0.39494491286788813,
+    "distribution": [
+      0.11299458891153336,
+      0.020397141575813293,
+      0.03625909611582756,
+      0.021092398092150688,
+      0.8092566728591919
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "return->adjust",
+    "time": 61.0,
+    "correct": true,
+    "risk": 0.28653639554977417,
+    "future_confidence": 0.9998535236395095,
+    "predicted_dt_s": 0.8774456980875998,
+    "distribution": [
+      0.03770134970545769,
+      0.035292528569698334,
+      0.06691080331802368,
+      0.14663174748420715,
+      0.7134636044502258
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "adjust->pickup",
+    "time": 70.0,
+    "correct": false,
+    "risk": 0.06426650285720825,
+    "future_confidence": 0.5499358532100384,
+    "predicted_dt_s": 0.8787183778278246,
+    "distribution": [
+      0.007627174258232117,
+      0.007602935656905174,
+      0.017255693674087524,
+      0.031780753284692764,
+      0.9357334971427917
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "pickup->harvest",
+    "time": 81.5,
+    "correct": false,
+    "risk": 0.002964794635772705,
+    "future_confidence": 0.9999999994880284,
+    "predicted_dt_s": 0.3956947820892564,
+    "distribution": [
+      0.001396567327901721,
+      0.0007808561204001307,
+      0.0005568788619711995,
+      0.0002304773370269686,
+      0.9970352053642273
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "harvest->return",
+    "time": 128.5,
+    "correct": true,
+    "risk": 0.7679094076156616,
+    "future_confidence": 0.99995731981534,
+    "predicted_dt_s": 0.7464536443949491,
+    "distribution": [
+      0.06316492706537247,
+      0.12227439880371094,
+      0.41725465655326843,
+      0.16521534323692322,
+      0.23209062218666077
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "pickup->harvest",
+    "time": 9.0,
+    "correct": true,
+    "risk": 0.63694167137146,
+    "future_confidence": 0.9999616325955631,
+    "predicted_dt_s": 1.0230285532788808,
+    "distribution": [
+      0.008189710788428783,
+      0.030030157417058945,
+      0.21815544366836548,
+      0.3805663287639618,
+      0.36305829882621765
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "harvest->return",
+    "time": 76.5,
+    "correct": true,
+    "risk": 0.6789627075195312,
+    "future_confidence": 0.9999541101185232,
+    "predicted_dt_s": 0.5197201848012436,
+    "distribution": [
+      0.1562419831752777,
+      0.26413270831108093,
+      0.17788875102996826,
+      0.08069921284914017,
+      0.32103729248046875
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "return->adjust",
+    "time": 82.0,
+    "correct": true,
+    "risk": 0.14670038223266602,
+    "future_confidence": 0.9834591526576397,
+    "predicted_dt_s": 0.5907208579665603,
+    "distribution": [
+      0.0019582605455070734,
+      0.08997749537229538,
+      0.03156625106930733,
+      0.023198327049613,
+      0.853299617767334
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "adjust->pickup",
+    "time": 109.0,
+    "correct": true,
+    "risk": 0.09823477268218994,
+    "future_confidence": 0.9999999167180484,
+    "predicted_dt_s": 0.6129580559569421,
+    "distribution": [
+      0.0021098293364048004,
+      0.0557234063744545,
+      0.022896306589245796,
+      0.017505262047052383,
+      0.9017652273178101
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "pickup->harvest",
+    "time": 119.0,
+    "correct": true,
+    "risk": 0.3617805242538452,
+    "future_confidence": 0.8552022870356583,
+    "predicted_dt_s": 0.7019779864774991,
+    "distribution": [
+      0.010788789950311184,
+      0.15337476134300232,
+      0.10384684056043625,
+      0.09377017617225647,
+      0.6382194757461548
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "harvest->return",
+    "time": 169.5,
+    "correct": true,
+    "risk": 0.9057353734970093,
+    "future_confidence": 0.9940311361954104,
+    "predicted_dt_s": 0.5516875286429375,
+    "distribution": [
+      0.12378803640604019,
+      0.40684932470321655,
+      0.2744631767272949,
+      0.10063482075929642,
+      0.09426461905241013
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "pickup->harvest",
+    "time": 7.0,
+    "correct": true,
+    "risk": 0.7362324595451355,
+    "future_confidence": 0.9912831365167489,
+    "predicted_dt_s": 0.7968032481932786,
+    "distribution": [
+      0.04041125252842903,
+      0.1251811683177948,
+      0.35732394456863403,
+      0.21331612765789032,
+      0.2637675404548645
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "harvest->return",
+    "time": 73.5,
+    "correct": true,
+    "risk": 0.7451118230819702,
+    "future_confidence": 0.7783670418870235,
+    "predicted_dt_s": 0.7778115042156059,
+    "distribution": [
+      0.010464794002473354,
+      0.16302555799484253,
+      0.3948259651660919,
+      0.17679551243782043,
+      0.2548881769180298
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "return->adjust",
+    "time": 78.0,
+    "correct": false,
+    "risk": 0.7838654518127441,
+    "future_confidence": 0.9966958323916992,
+    "predicted_dt_s": 0.7410869024159993,
+    "distribution": [
+      0.06140511482954025,
+      0.19329600036144257,
+      0.3214092254638672,
+      0.20775508880615234,
+      0.21613453328609467
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "adjust->pickup",
+    "time": 96.5,
+    "correct": false,
+    "risk": 0.13167762756347656,
+    "future_confidence": 0.9767652178921578,
+    "predicted_dt_s": 0.8122927888405289,
+    "distribution": [
+      0.014584126882255077,
+      0.02087722346186638,
+      0.04592304676771164,
+      0.050293222069740295,
+      0.8683223724365234
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "pickup->adjust",
+    "time": 102.5,
+    "correct": false,
+    "risk": 0.0341418981552124,
+    "future_confidence": 0.6652011731418255,
+    "predicted_dt_s": 0.8291654892811753,
+    "distribution": [
+      0.006753354799002409,
+      0.0016416795551776886,
+      0.010668214410543442,
+      0.015078678727149963,
+      0.9658581018447876
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "adjust->pickup",
+    "time": 103.5,
+    "correct": false,
+    "risk": 0.01842600107192993,
+    "future_confidence": 0.9038820815833697,
+    "predicted_dt_s": 0.7682511241915798,
+    "distribution": [
+      0.003410870674997568,
+      0.002138711977750063,
+      0.006336310878396034,
+      0.006540216039866209,
+      0.9815739989280701
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "pickup->harvest",
+    "time": 111.0,
+    "correct": false,
+    "risk": 0.6122944355010986,
+    "future_confidence": 0.9337579430223335,
+    "predicted_dt_s": 0.8164212736640524,
+    "distribution": [
+      0.012103663757443428,
+      0.13964608311653137,
+      0.259341835975647,
+      0.2012028694152832,
+      0.38770556449890137
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "harvest->return",
+    "time": 175.0,
+    "correct": true,
+    "risk": 0.8328759074211121,
+    "future_confidence": 0.9999428275772749,
+    "predicted_dt_s": 0.9062696903965201,
+    "distribution": [
+      0.02415391243994236,
+      0.030086258426308632,
+      0.46557214856147766,
+      0.31306368112564087,
+      0.16712407767772675
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "pickup->harvest",
+    "time": 9.0,
+    "correct": true,
+    "risk": 0.7993590235710144,
+    "future_confidence": 0.9999438922725444,
+    "predicted_dt_s": 0.9599550055338356,
+    "distribution": [
+      0.012002496980130672,
+      0.05785588547587395,
+      0.3354467749595642,
+      0.3940538763999939,
+      0.2006409913301468
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "harvest->return",
+    "time": 70.5,
+    "correct": true,
+    "risk": 0.4688095450401306,
+    "future_confidence": 0.9998085513493391,
+    "predicted_dt_s": 0.7669907358147857,
+    "distribution": [
+      0.02800908498466015,
+      0.10890068858861923,
+      0.19928209483623505,
+      0.13261772692203522,
+      0.5311904549598694
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "return->adjust",
+    "time": 76.5,
+    "correct": true,
+    "risk": 0.6088685989379883,
+    "future_confidence": 0.899188015558962,
+    "predicted_dt_s": 0.6069267648715825,
+    "distribution": [
+      0.09421969205141068,
+      0.21950668096542358,
+      0.18696312606334686,
+      0.10817907005548477,
+      0.3911314308643341
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "adjust->pickup",
+    "time": 90.0,
+    "correct": true,
+    "risk": 0.3662463426589966,
+    "future_confidence": 0.9964802411418296,
+    "predicted_dt_s": 0.6892948247919085,
+    "distribution": [
+      0.05270189046859741,
+      0.09673188626766205,
+      0.12285233289003372,
+      0.09396019577980042,
+      0.6337536573410034
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "pickup->harvest",
+    "time": 100.0,
+    "correct": true,
+    "risk": 0.5595828890800476,
+    "future_confidence": 0.9999410580243271,
+    "predicted_dt_s": 0.8781855401484602,
+    "distribution": [
+      0.01848088577389717,
+      0.052175406366586685,
+      0.28323304653167725,
+      0.2056935429573059,
+      0.4404171109199524
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "harvest->return",
+    "time": 138.5,
+    "correct": true,
+    "risk": 0.789347231388092,
+    "future_confidence": 0.9999810899236783,
+    "predicted_dt_s": 0.7003470129667279,
+    "distribution": [
+      0.0774829164147377,
+      0.1501740664243698,
+      0.4305928647518158,
+      0.13109731674194336,
+      0.21065278351306915
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "pickup->harvest",
+    "time": 6.5,
+    "correct": true,
+    "risk": 0.9311807155609131,
+    "future_confidence": 0.9999884424050502,
+    "predicted_dt_s": 1.017517044899404,
+    "distribution": [
+      0.0005896209040656686,
+      0.014607149176299572,
+      0.40607813000679016,
+      0.5099058151245117,
+      0.06881927698850632
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "harvest->return",
+    "time": 57.0,
+    "correct": true,
+    "risk": 0.9868803024291992,
+    "future_confidence": 0.9999999928002508,
+    "predicted_dt_s": 0.7444986953352437,
+    "distribution": [
+      0.007855335250496864,
+      0.20909371972084045,
+      0.6141500473022461,
+      0.15578116476535797,
+      0.013119726441800594
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "return->adjust",
+    "time": 62.0,
+    "correct": true,
+    "risk": 0.6929001808166504,
+    "future_confidence": 0.9999377049866549,
+    "predicted_dt_s": 0.6618317081487588,
+    "distribution": [
+      0.1288323700428009,
+      0.1803552508354187,
+      0.20958927273750305,
+      0.17412327229976654,
+      0.307099848985672
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "adjust->pickup",
+    "time": 90.5,
+    "correct": false,
+    "risk": 0.6498928070068359,
+    "future_confidence": 0.9999180006007927,
+    "predicted_dt_s": 0.49805086619596306,
+    "distribution": [
+      0.17212167382240295,
+      0.23075829446315765,
+      0.18627196550369263,
+      0.06074092909693718,
+      0.3501071631908417
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "pickup->harvest",
+    "time": 99.0,
+    "correct": true,
+    "risk": 0.5217498540878296,
+    "future_confidence": 0.9999998876461196,
+    "predicted_dt_s": 0.6323664110882378,
+    "distribution": [
+      0.16698326170444489,
+      0.05685035139322281,
+      0.16930003464221954,
+      0.12861621379852295,
+      0.4782501459121704
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "harvest->return",
+    "time": 136.5,
+    "correct": true,
+    "risk": 0.5188244581222534,
+    "future_confidence": 0.9390538623266356,
+    "predicted_dt_s": 0.6600275390631507,
+    "distribution": [
+      0.07844821363687515,
+      0.11249838769435883,
+      0.23880364000797272,
+      0.08907425403594971,
+      0.4811755120754242
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "pickup->harvest",
+    "time": 6.0,
+    "correct": true,
+    "risk": 0.9168473482131958,
+    "future_confidence": 0.9999835801477251,
+    "predicted_dt_s": 0.9247424132131971,
+    "distribution": [
+      0.004536591935902834,
+      0.028306717053055763,
+      0.5366790294647217,
+      0.3473249673843384,
+      0.08315268158912659
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "harvest->return",
+    "time": 61.5,
+    "correct": true,
+    "risk": 0.7176228761672974,
+    "future_confidence": 0.9999996541530475,
+    "predicted_dt_s": 0.6304442005173462,
+    "distribution": [
+      0.05936267599463463,
+      0.32230570912361145,
+      0.1916138082742691,
+      0.14434067904949188,
+      0.28237712383270264
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "return->adjust",
+    "time": 67.0,
+    "correct": false,
+    "risk": 0.195526123046875,
+    "future_confidence": 0.9999104197697453,
+    "predicted_dt_s": 0.7338513998248986,
+    "distribution": [
+      0.03663020581007004,
+      0.03950874134898186,
+      0.050282806158065796,
+      0.06910435110330582,
+      0.804473876953125
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "adjust->pickup",
+    "time": 99.0,
+    "correct": false,
+    "risk": 0.15997272729873657,
+    "future_confidence": 0.9918791247462928,
+    "predicted_dt_s": 0.8695952201974927,
+    "distribution": [
+      0.015046544373035431,
+      0.022953003644943237,
+      0.04768631234765053,
+      0.07428689301013947,
+      0.8400272727012634
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "pickup->harvest",
+    "time": 106.5,
+    "correct": true,
+    "risk": 0.9106284976005554,
+    "future_confidence": 0.9999999792018714,
+    "predicted_dt_s": 0.5775061858910939,
+    "distribution": [
+      0.09417524188756943,
+      0.43930792808532715,
+      0.24410098791122437,
+      0.13304437696933746,
+      0.08937148749828339
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "harvest->return",
+    "time": 175.5,
+    "correct": false,
+    "risk": 0.07799279689788818,
+    "future_confidence": 0.9999389958022147,
+    "predicted_dt_s": 0.607823269862676,
+    "distribution": [
+      0.017347728833556175,
+      0.008349183015525341,
+      0.04652683436870575,
+      0.005769030191004276,
+      0.9220072031021118
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "ca784332e44d979f99018a52",
+    "transition": "pickup->harvest",
+    "time": 6.0,
+    "correct": true,
+    "risk": 0.7731935381889343,
+    "future_confidence": 0.9999999445841505,
+    "predicted_dt_s": 0.5989406550803325,
+    "distribution": [
+      0.24279862642288208,
+      0.11844151467084885,
+      0.2532201409339905,
+      0.15873323380947113,
+      0.22680647671222687
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "ca784332e44d979f99018a52",
+    "transition": "harvest->return",
+    "time": 31.0,
+    "correct": true,
+    "risk": 0.8872758150100708,
+    "future_confidence": 0.9998538974448342,
+    "predicted_dt_s": 0.9040909831250707,
+    "distribution": [
+      0.027708198875188828,
+      0.07490535080432892,
+      0.42040562629699707,
+      0.3642566502094269,
+      0.11272421479225159
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "pickup->harvest",
+    "time": 4.5,
+    "correct": true,
+    "risk": 0.9962788820266724,
+    "future_confidence": 0.9999796768074952,
+    "predicted_dt_s": 0.8120561585506539,
+    "distribution": [
+      0.0019451957195997238,
+      0.03942831978201866,
+      0.7992522120475769,
+      0.155653178691864,
+      0.003721094923093915
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "harvest->return",
+    "time": 37.0,
+    "correct": true,
+    "risk": 0.975994348526001,
+    "future_confidence": 0.9999995194378537,
+    "predicted_dt_s": 0.648038640667593,
+    "distribution": [
+      0.06830208748579025,
+      0.32639560103416443,
+      0.4501497149467468,
+      0.13114692270755768,
+      0.024005640298128128
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "return->adjust",
+    "time": 40.0,
+    "correct": true,
+    "risk": 0.5092024803161621,
+    "future_confidence": 0.9951244346324823,
+    "predicted_dt_s": 0.7874690470231823,
+    "distribution": [
+      0.022287234663963318,
+      0.12535220384597778,
+      0.20153120160102844,
+      0.16003181040287018,
+      0.4907975494861603
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "adjust->pickup",
+    "time": 65.5,
+    "correct": false,
+    "risk": 0.17047584056854248,
+    "future_confidence": 0.9998392978077238,
+    "predicted_dt_s": 0.7212686267388095,
+    "distribution": [
+      0.022267324849963188,
+      0.035509031265974045,
+      0.06802958250045776,
+      0.044669926166534424,
+      0.8295241594314575
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "pickup->harvest",
+    "time": 70.0,
+    "correct": true,
+    "risk": 0.9400570392608643,
+    "future_confidence": 0.9999941797867504,
+    "predicted_dt_s": 0.908732256046596,
+    "distribution": [
+      0.002729780040681362,
+      0.06303846091032028,
+      0.525162935256958,
+      0.34912580251693726,
+      0.05994298681616783
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "harvest->return",
+    "time": 86.0,
+    "correct": true,
+    "risk": 0.9902893304824829,
+    "future_confidence": 0.9999359279769052,
+    "predicted_dt_s": 0.5000092014113867,
+    "distribution": [
+      0.2383001148700714,
+      0.3248785436153412,
+      0.3807031512260437,
+      0.04640758037567139,
+      0.009710658341646194
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "pickup->harvest",
+    "time": 4.5,
+    "correct": true,
+    "risk": 0.9820043444633484,
+    "future_confidence": 0.9999998783955141,
+    "predicted_dt_s": 0.764629016142265,
+    "distribution": [
+      0.005584833212196827,
+      0.1620437651872635,
+      0.6571303009986877,
+      0.15724538266658783,
+      0.01799567975103855
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "harvest->return",
+    "time": 44.0,
+    "correct": true,
+    "risk": 0.9734607934951782,
+    "future_confidence": 0.9999560791777056,
+    "predicted_dt_s": 0.9253386017737504,
+    "distribution": [
+      0.005670574493706226,
+      0.10361945629119873,
+      0.43799740076065063,
+      0.4261733889579773,
+      0.026539215818047523
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "return->adjust",
+    "time": 47.0,
+    "correct": true,
+    "risk": 0.8441659212112427,
+    "future_confidence": 0.9998956786560078,
+    "predicted_dt_s": 0.828355897778603,
+    "distribution": [
+      0.017875876277685165,
+      0.135938823223114,
+      0.4337615668773651,
+      0.2565896809101105,
+      0.15583407878875732
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "adjust->pickup",
+    "time": 66.0,
+    "correct": false,
+    "risk": 0.06039702892303467,
+    "future_confidence": 0.9880412116333108,
+    "predicted_dt_s": 0.6476647886294931,
+    "distribution": [
+      0.013086201623082161,
+      0.012841551564633846,
+      0.020841894671320915,
+      0.013627423904836178,
+      0.9396029710769653
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "pickup->harvest",
+    "time": 69.5,
+    "correct": true,
+    "risk": 0.8223770260810852,
+    "future_confidence": 0.9979847310337505,
+    "predicted_dt_s": 0.9553769659652996,
+    "distribution": [
+      0.006480645388364792,
+      0.052195750176906586,
+      0.37865838408470154,
+      0.385042279958725,
+      0.1776229590177536
+    ]
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "harvest->return",
+    "time": 89.5,
+    "correct": true,
+    "risk": 0.9655832052230835,
+    "future_confidence": 0.9930319923276845,
+    "predicted_dt_s": 0.6033717750678126,
+    "distribution": [
+      0.168107271194458,
+      0.26078617572784424,
+      0.4141296148300171,
+      0.12256017327308655,
+      0.03441677987575531
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "pickup->harvest",
+    "time": 8.0,
+    "correct": true,
+    "risk": 0.5965665578842163,
+    "future_confidence": 0.9607076425186064,
+    "predicted_dt_s": 1.0982150568534563,
+    "distribution": [
+      0.0008557105902582407,
+      0.01756501942873001,
+      0.14843551814556122,
+      0.42971041798591614,
+      0.4034334123134613
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "harvest->return",
+    "time": 56.0,
+    "correct": false,
+    "risk": 0.06971198320388794,
+    "future_confidence": 0.987541176203134,
+    "predicted_dt_s": 0.22840016915708064,
+    "distribution": [
+      0.052694473415613174,
+      0.011264745146036148,
+      0.004159518051892519,
+      0.0015931917587295175,
+      0.9302880167961121
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "return->adjust",
+    "time": 60.5,
+    "correct": true,
+    "risk": 0.5728179812431335,
+    "future_confidence": 0.9173368955035873,
+    "predicted_dt_s": 0.6113439962529746,
+    "distribution": [
+      0.11856354773044586,
+      0.15187862515449524,
+      0.19911159574985504,
+      0.10326413810253143,
+      0.42718201875686646
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "adjust->pickup",
+    "time": 70.0,
+    "correct": false,
+    "risk": 0.04096341133117676,
+    "future_confidence": 0.7389280528674619,
+    "predicted_dt_s": 0.8712684081108865,
+    "distribution": [
+      0.005209446884691715,
+      0.007125683128833771,
+      0.006837088614702225,
+      0.021791208535432816,
+      0.9590365886688232
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "pickup->harvest",
+    "time": 81.0,
+    "correct": false,
+    "risk": 0.10892355442047119,
+    "future_confidence": 0.9981792527274091,
+    "predicted_dt_s": 0.48688601673426607,
+    "distribution": [
+      0.04625491425395012,
+      0.023158138617873192,
+      0.021641798317432404,
+      0.01786864921450615,
+      0.8910764455795288
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "harvest->return",
+    "time": 128.5,
+    "correct": true,
+    "risk": 0.7043733596801758,
+    "future_confidence": 0.9879559784129976,
+    "predicted_dt_s": 0.7483923479181968,
+    "distribution": [
+      0.032743874937295914,
+      0.12883532047271729,
+      0.40750259160995483,
+      0.13529153168201447,
+      0.2956266701221466
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "pickup->harvest",
+    "time": 9.0,
+    "correct": true,
+    "risk": 0.32314014434814453,
+    "future_confidence": 0.937960431528307,
+    "predicted_dt_s": 1.0915358283300443,
+    "distribution": [
+      0.0017897887155413628,
+      0.015674550086259842,
+      0.07095476239919662,
+      0.23472103476524353,
+      0.6768598556518555
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "harvest->return",
+    "time": 76.0,
+    "correct": true,
+    "risk": 0.5445029735565186,
+    "future_confidence": 0.8574036832123114,
+    "predicted_dt_s": 0.763770041336608,
+    "distribution": [
+      0.037623971700668335,
+      0.12202057242393494,
+      0.2313174158334732,
+      0.15354102849960327,
+      0.45549699664115906
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "return->adjust",
+    "time": 82.0,
+    "correct": true,
+    "risk": 0.10571074485778809,
+    "future_confidence": 0.9704331536823565,
+    "predicted_dt_s": 0.6764806032018208,
+    "distribution": [
+      0.001550331013277173,
+      0.0544917918741703,
+      0.02240542508661747,
+      0.027263185009360313,
+      0.8942892551422119
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "adjust->pickup",
+    "time": 107.5,
+    "correct": false,
+    "risk": 0.021155476570129395,
+    "future_confidence": 0.5379164208648964,
+    "predicted_dt_s": 0.796839373830484,
+    "distribution": [
+      0.00038876369944773614,
+      0.006686504930257797,
+      0.00659761531278491,
+      0.007482659071683884,
+      0.9788445234298706
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "pickup->harvest",
+    "time": 119.0,
+    "correct": true,
+    "risk": 0.28390127420425415,
+    "future_confidence": 0.6607714280626482,
+    "predicted_dt_s": 0.6649839689546506,
+    "distribution": [
+      0.010007305070757866,
+      0.1292864978313446,
+      0.08340571820735931,
+      0.061201710253953934,
+      0.7160987257957458
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "harvest->return",
+    "time": 167.0,
+    "correct": false,
+    "risk": 0.45158839225769043,
+    "future_confidence": 0.5007395417704407,
+    "predicted_dt_s": 0.6857730335882039,
+    "distribution": [
+      0.05362563207745552,
+      0.15843509137630463,
+      0.11167748272418976,
+      0.12785010039806366,
+      0.5484116077423096
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "pickup->harvest",
+    "time": 7.0,
+    "correct": true,
+    "risk": 0.5468425750732422,
+    "future_confidence": 0.9053323690539027,
+    "predicted_dt_s": 0.7488572530901834,
+    "distribution": [
+      0.015110134147107601,
+      0.14361488819122314,
+      0.26276859641075134,
+      0.1253489851951599,
+      0.4531573951244354
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "harvest->return",
+    "time": 73.0,
+    "correct": true,
+    "risk": 0.8381062746047974,
+    "future_confidence": 0.9947929928790122,
+    "predicted_dt_s": 1.0321073719380485,
+    "distribution": [
+      0.005570516921579838,
+      0.006797878071665764,
+      0.3408043682575226,
+      0.4849334955215454,
+      0.16189371049404144
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "return->adjust",
+    "time": 78.0,
+    "correct": false,
+    "risk": 0.6760894656181335,
+    "future_confidence": 0.9798040164192627,
+    "predicted_dt_s": 0.8649753583464105,
+    "distribution": [
+      0.04308345541357994,
+      0.10462138056755066,
+      0.2405969798564911,
+      0.28778767585754395,
+      0.32391053438186646
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "adjust->pickup",
+    "time": 97.0,
+    "correct": false,
+    "risk": 0.0848204493522644,
+    "future_confidence": 0.8358461647711545,
+    "predicted_dt_s": 0.8483239154591593,
+    "distribution": [
+      0.01100942213088274,
+      0.013927370309829712,
+      0.01899656653404236,
+      0.040887054055929184,
+      0.9151795506477356
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "pickup->adjust",
+    "time": 101.0,
+    "correct": false,
+    "risk": 0.027956843376159668,
+    "future_confidence": 0.8649365029024153,
+    "predicted_dt_s": 0.8713413784211791,
+    "distribution": [
+      0.004650216083973646,
+      0.0022687676828354597,
+      0.006738885771483183,
+      0.014298993162810802,
+      0.9720431566238403
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "adjust->pickup",
+    "time": 104.5,
+    "correct": false,
+    "risk": 0.004769861698150635,
+    "future_confidence": 0.7788070468479251,
+    "predicted_dt_s": 0.9676517543886839,
+    "distribution": [
+      0.0003209092828910798,
+      0.00028241972904652357,
+      0.0014772489666938782,
+      0.0026892926543951035,
+      0.9952301383018494
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "pickup->harvest",
+    "time": 110.5,
+    "correct": false,
+    "risk": 0.46639519929885864,
+    "future_confidence": 0.9904505431033876,
+    "predicted_dt_s": 0.9404602629985575,
+    "distribution": [
+      0.0017879775259643793,
+      0.046855077147483826,
+      0.20271636545658112,
+      0.21503578126430511,
+      0.5336048007011414
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "harvest->return",
+    "time": 175.0,
+    "correct": true,
+    "risk": 0.8968866467475891,
+    "future_confidence": 0.9020011907570926,
+    "predicted_dt_s": 0.9971002198973704,
+    "distribution": [
+      0.013507612980902195,
+      0.008773185312747955,
+      0.4078997075557709,
+      0.46670615673065186,
+      0.10311335325241089
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "pickup->harvest",
+    "time": 9.0,
+    "correct": true,
+    "risk": 0.6043292284011841,
+    "future_confidence": 0.9798384649099598,
+    "predicted_dt_s": 0.9779920609029676,
+    "distribution": [
+      0.004073432646691799,
+      0.07847348600625992,
+      0.18227079510688782,
+      0.3395114839076996,
+      0.3956707715988159
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "harvest->return",
+    "time": 70.5,
+    "correct": true,
+    "risk": 0.5815132260322571,
+    "future_confidence": 0.9151542886667213,
+    "predicted_dt_s": 0.846754488306223,
+    "distribution": [
+      0.019858468323946,
+      0.10241856426000595,
+      0.2450711727142334,
+      0.21416498720645905,
+      0.4184867739677429
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "return->adjust",
+    "time": 76.5,
+    "correct": true,
+    "risk": 0.32794249057769775,
+    "future_confidence": 0.8098423871762553,
+    "predicted_dt_s": 0.6360435716494666,
+    "distribution": [
+      0.08265486359596252,
+      0.05811508744955063,
+      0.11501000821590424,
+      0.07216259837150574,
+      0.6720575094223022
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "adjust->pickup",
+    "time": 89.5,
+    "correct": true,
+    "risk": 0.3524896502494812,
+    "future_confidence": 0.86126719672501,
+    "predicted_dt_s": 0.6814164339199391,
+    "distribution": [
+      0.06523868441581726,
+      0.05594232678413391,
+      0.1561536192893982,
+      0.07515508681535721,
+      0.6475103497505188
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "pickup->harvest",
+    "time": 100.0,
+    "correct": true,
+    "risk": 0.3241111636161804,
+    "future_confidence": 0.9760053259153929,
+    "predicted_dt_s": 0.9992731176745568,
+    "distribution": [
+      0.007208562921732664,
+      0.015585232526063919,
+      0.11903329193592072,
+      0.18228405714035034,
+      0.6758888363838196
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "harvest->return",
+    "time": 138.5,
+    "correct": true,
+    "risk": 0.7120559215545654,
+    "future_confidence": 0.9964858330960619,
+    "predicted_dt_s": 0.8235852829415152,
+    "distribution": [
+      0.014750523492693901,
+      0.10111065953969955,
+      0.3971298933029175,
+      0.19906483590602875,
+      0.28794407844543457
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "pickup->harvest",
+    "time": 6.5,
+    "correct": true,
+    "risk": 0.5884896516799927,
+    "future_confidence": 0.9762091065692143,
+    "predicted_dt_s": 1.1285710168314,
+    "distribution": [
+      8.928213355829939e-05,
+      0.005793402902781963,
+      0.13258007168769836,
+      0.45002689957618713,
+      0.41151031851768494
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "harvest->return",
+    "time": 57.0,
+    "correct": true,
+    "risk": 0.9240595102310181,
+    "future_confidence": 0.9998529090165501,
+    "predicted_dt_s": 0.9245579007701888,
+    "distribution": [
+      0.0037453975528478622,
+      0.059956662356853485,
+      0.4881044626235962,
+      0.3722530007362366,
+      0.07594050467014313
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "return->adjust",
+    "time": 62.0,
+    "correct": true,
+    "risk": 0.3721221089363098,
+    "future_confidence": 0.9289735580793776,
+    "predicted_dt_s": 0.7915725183948961,
+    "distribution": [
+      0.05885664001107216,
+      0.06903891265392303,
+      0.08793643862009048,
+      0.15629006922245026,
+      0.6278778910636902
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "adjust->pickup",
+    "time": 90.5,
+    "correct": false,
+    "risk": 0.46711742877960205,
+    "future_confidence": 0.9876001196824631,
+    "predicted_dt_s": 0.4832183866282315,
+    "distribution": [
+      0.1963472068309784,
+      0.09109912812709808,
+      0.11514931172132492,
+      0.06452171504497528,
+      0.532882571220398
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "pickup->harvest",
+    "time": 99.0,
+    "correct": true,
+    "risk": 0.35810089111328125,
+    "future_confidence": 0.9979313588694847,
+    "predicted_dt_s": 0.5597914323411455,
+    "distribution": [
+      0.13455483317375183,
+      0.057199206203222275,
+      0.0914815291762352,
+      0.07486525923013687,
+      0.6418991088867188
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "harvest->return",
+    "time": 136.5,
+    "correct": true,
+    "risk": 0.2740962505340576,
+    "future_confidence": 0.8728546474043155,
+    "predicted_dt_s": 0.77944684532537,
+    "distribution": [
+      0.030484214425086975,
+      0.035925887525081635,
+      0.1264939159154892,
+      0.081192247569561,
+      0.7259037494659424
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "pickup->harvest",
+    "time": 6.0,
+    "correct": true,
+    "risk": 0.6974817514419556,
+    "future_confidence": 0.9902268218444812,
+    "predicted_dt_s": 1.054865900038619,
+    "distribution": [
+      0.0006262717652134597,
+      0.01627257652580738,
+      0.24231873452663422,
+      0.4382641315460205,
+      0.3025182783603668
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "harvest->return",
+    "time": 61.5,
+    "correct": true,
+    "risk": 0.7579215168952942,
+    "future_confidence": 0.9995645867148092,
+    "predicted_dt_s": 0.6825956811534047,
+    "distribution": [
+      0.06285320222377777,
+      0.23765230178833008,
+      0.30278468132019043,
+      0.1546313762664795,
+      0.24207846820354462
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "return->adjust",
+    "time": 66.5,
+    "correct": false,
+    "risk": 0.4971429109573364,
+    "future_confidence": 0.9513718899725508,
+    "predicted_dt_s": 0.7309019612054134,
+    "distribution": [
+      0.0768776461482048,
+      0.10948500037193298,
+      0.15155838429927826,
+      0.15922188758850098,
+      0.5028570890426636
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "adjust->pickup",
+    "time": 98.5,
+    "correct": false,
+    "risk": 0.22960245609283447,
+    "future_confidence": 0.9318936722975102,
+    "predicted_dt_s": 0.8328323988974168,
+    "distribution": [
+      0.0271151103079319,
+      0.03058823011815548,
+      0.07702701538801193,
+      0.09487210214138031,
+      0.7703975439071655
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "pickup->harvest",
+    "time": 106.0,
+    "correct": true,
+    "risk": 0.7059373259544373,
+    "future_confidence": 0.9453997215324326,
+    "predicted_dt_s": 1.05479225812852,
+    "distribution": [
+      0.0008212836692109704,
+      0.019801655784249306,
+      0.23910804092884064,
+      0.44620633125305176,
+      0.29406267404556274
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "harvest->return",
+    "time": 175.0,
+    "correct": true,
+    "risk": 0.46468937397003174,
+    "future_confidence": 0.9620581547447039,
+    "predicted_dt_s": 0.6576876440125692,
+    "distribution": [
+      0.023037469014525414,
+      0.15035158395767212,
+      0.2355329692363739,
+      0.05576737970113754,
+      0.5353106260299683
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "ca784332e44d979f99018a52",
+    "transition": "pickup->harvest",
+    "time": 6.0,
+    "correct": true,
+    "risk": 0.5648659467697144,
+    "future_confidence": 0.9969544996068787,
+    "predicted_dt_s": 0.6544996741015343,
+    "distribution": [
+      0.10346898436546326,
+      0.13029804825782776,
+      0.21192894876003265,
+      0.11916998028755188,
+      0.43513405323028564
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "ca784332e44d979f99018a52",
+    "transition": "harvest->return",
+    "time": 30.0,
+    "correct": false,
+    "risk": 0.3078498840332031,
+    "future_confidence": 0.7269396034135339,
+    "predicted_dt_s": 0.6557687766560746,
+    "distribution": [
+      0.0929231122136116,
+      0.029978618025779724,
+      0.10432842373847961,
+      0.08061972260475159,
+      0.6921501159667969
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "pickup->harvest",
+    "time": 4.5,
+    "correct": true,
+    "risk": 0.9895102977752686,
+    "future_confidence": 0.9912017763138987,
+    "predicted_dt_s": 0.832195336659075,
+    "distribution": [
+      0.0003205542452633381,
+      0.043865326792001724,
+      0.7493584752082825,
+      0.1959659457206726,
+      0.010489699430763721
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "harvest->return",
+    "time": 36.5,
+    "correct": true,
+    "risk": 0.9793866276741028,
+    "future_confidence": 0.9972762551011067,
+    "predicted_dt_s": 0.8519070448087555,
+    "distribution": [
+      0.0034731305204331875,
+      0.045790206640958786,
+      0.6918264031410217,
+      0.23829683661460876,
+      0.020613400265574455
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "return->adjust",
+    "time": 40.0,
+    "correct": true,
+    "risk": 0.4315868616104126,
+    "future_confidence": 0.9054417499135504,
+    "predicted_dt_s": 0.8815166393395588,
+    "distribution": [
+      0.0184418223798275,
+      0.07856366783380508,
+      0.1390846073627472,
+      0.19549675285816193,
+      0.5684131383895874
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "adjust->pickup",
+    "time": 52.0,
+    "correct": false,
+    "risk": 0.06631523370742798,
+    "future_confidence": 0.8846864816176027,
+    "predicted_dt_s": 0.9734704056670389,
+    "distribution": [
+      0.0020483550615608692,
+      0.009688049554824829,
+      0.015113364905118942,
+      0.039465464651584625,
+      0.933684766292572
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "pickup->adjust",
+    "time": 53.5,
+    "correct": false,
+    "risk": 0.06112480163574219,
+    "future_confidence": 0.9384472703305933,
+    "predicted_dt_s": 0.8497914904450101,
+    "distribution": [
+      0.002032047603279352,
+      0.014888270758092403,
+      0.018298780545592308,
+      0.02590574510395527,
+      0.9388751983642578
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "adjust->pickup",
+    "time": 63.0,
+    "correct": false,
+    "risk": 0.04620361328125,
+    "future_confidence": 0.8832350551789823,
+    "predicted_dt_s": 0.97612748358721,
+    "distribution": [
+      0.0012626252137124538,
+      0.005986913572996855,
+      0.011989767663180828,
+      0.026964258402585983,
+      0.95379638671875
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "pickup->harvest",
+    "time": 70.0,
+    "correct": true,
+    "risk": 0.9320655465126038,
+    "future_confidence": 0.9866003262288544,
+    "predicted_dt_s": 0.9830975315585364,
+    "distribution": [
+      0.0008127908804453909,
+      0.03373969718813896,
+      0.43666794896125793,
+      0.46084511280059814,
+      0.06793445348739624
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "harvest->return",
+    "time": 86.5,
+    "correct": true,
+    "risk": 0.9753298163414001,
+    "future_confidence": 0.9751662034631277,
+    "predicted_dt_s": 0.3688070093730379,
+    "distribution": [
+      0.5316678285598755,
+      0.16607250273227692,
+      0.2320280522108078,
+      0.04556139558553696,
+      0.024670198559761047
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "pickup->harvest",
+    "time": 4.5,
+    "correct": true,
+    "risk": 0.9261404275894165,
+    "future_confidence": 0.9962838207351143,
+    "predicted_dt_s": 0.8109323686461066,
+    "distribution": [
+      0.0006886526825837791,
+      0.17805473506450653,
+      0.5001311898231506,
+      0.2472658008337021,
+      0.07385959476232529
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "harvest->return",
+    "time": 44.0,
+    "correct": true,
+    "risk": 0.9755614399909973,
+    "future_confidence": 0.9641979974432073,
+    "predicted_dt_s": 0.8281347432467436,
+    "distribution": [
+      0.005140893626958132,
+      0.11329051107168198,
+      0.6132856011390686,
+      0.24384449422359467,
+      0.02443854697048664
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "return->adjust",
+    "time": 47.0,
+    "correct": true,
+    "risk": 0.7528502941131592,
+    "future_confidence": 0.9932025847605741,
+    "predicted_dt_s": 0.9481921390596166,
+    "distribution": [
+      0.0176119115203619,
+      0.07610657811164856,
+      0.28161901235580444,
+      0.3775128126144409,
+      0.24714969098567963
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "adjust->pickup",
+    "time": 66.0,
+    "correct": false,
+    "risk": 0.029888033866882324,
+    "future_confidence": 0.9744206071269043,
+    "predicted_dt_s": 0.765878150686656,
+    "distribution": [
+      0.0055688126012682915,
+      0.005670870188623667,
+      0.006485069636255503,
+      0.01216330099850893,
+      0.9701119661331177
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "pickup->harvest",
+    "time": 70.0,
+    "correct": true,
+    "risk": 0.7147312164306641,
+    "future_confidence": 0.9970905004257888,
+    "predicted_dt_s": 0.7290950292741785,
+    "distribution": [
+      0.03696000203490257,
+      0.201935812830925,
+      0.30806633830070496,
+      0.16776899993419647,
+      0.2852688133716583
+    ]
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "harvest->return",
+    "time": 90.0,
+    "correct": false,
+    "risk": 0.1463114619255066,
+    "future_confidence": 0.9926810604987596,
+    "predicted_dt_s": 0.42846349763973196,
+    "distribution": [
+      0.04088640958070755,
+      0.07168016582727432,
+      0.02296578325331211,
+      0.010779156349599361,
+      0.8536885380744934
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "pickup->harvest",
+    "time": 8.0,
+    "correct": true,
+    "risk": 0.8914681077003479,
+    "future_confidence": 0.9995286268026942,
+    "predicted_dt_s": 0.9770682334146087,
+    "distribution": [
+      0.001169198309071362,
+      0.022738022729754448,
+      0.44419774413108826,
+      0.42336320877075195,
+      0.1085318997502327
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "harvest->return",
+    "time": 55.5,
+    "correct": true,
+    "risk": 0.18295353651046753,
+    "future_confidence": 0.956474570291043,
+    "predicted_dt_s": 0.24561689657858085,
+    "distribution": [
+      0.13318488001823425,
+      0.029315508902072906,
+      0.016542674973607063,
+      0.003910426516085863,
+      0.8170464634895325
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "return->adjust",
+    "time": 61.0,
+    "correct": true,
+    "risk": 0.15879470109939575,
+    "future_confidence": 0.9995417319008999,
+    "predicted_dt_s": 0.8540614986483879,
+    "distribution": [
+      0.013137421570718288,
+      0.023079339414834976,
+      0.05579786002635956,
+      0.06678011268377304,
+      0.8412052989006042
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "adjust->pickup",
+    "time": 71.5,
+    "correct": false,
+    "risk": 0.024521291255950928,
+    "future_confidence": 0.9999953553781836,
+    "predicted_dt_s": 0.6605971012849148,
+    "distribution": [
+      0.003987834323197603,
+      0.005921740550547838,
+      0.009570157155394554,
+      0.005041551310569048,
+      0.9754787087440491
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "pickup->harvest",
+    "time": 81.5,
+    "correct": false,
+    "risk": 0.0017644166946411133,
+    "future_confidence": 0.9999999960675154,
+    "predicted_dt_s": 0.3035023480419752,
+    "distribution": [
+      0.000963512051384896,
+      0.0005637745489366353,
+      0.00018551808898337185,
+      5.1608360081445426e-05,
+      0.9982355833053589
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "transition": "harvest->return",
+    "time": 128.5,
+    "correct": true,
+    "risk": 0.7695097327232361,
+    "future_confidence": 0.999517999543461,
+    "predicted_dt_s": 0.6344867710926319,
+    "distribution": [
+      0.09039649367332458,
+      0.2157692164182663,
+      0.36629852652549744,
+      0.09704546630382538,
+      0.23049026727676392
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "pickup->harvest",
+    "time": 9.0,
+    "correct": true,
+    "risk": 0.5095180869102478,
+    "future_confidence": 0.9881378451319183,
+    "predicted_dt_s": 1.0587826147945707,
+    "distribution": [
+      0.001490244409069419,
+      0.015899159014225006,
+      0.1636808067560196,
+      0.3284479081630707,
+      0.4904819130897522
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "harvest->return",
+    "time": 76.0,
+    "correct": true,
+    "risk": 0.6389877796173096,
+    "future_confidence": 0.9373481273165666,
+    "predicted_dt_s": 0.7097243520133554,
+    "distribution": [
+      0.035687632858753204,
+      0.2016996443271637,
+      0.2571876049041748,
+      0.14441296458244324,
+      0.36101219058036804
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "return->adjust",
+    "time": 82.0,
+    "correct": true,
+    "risk": 0.1554034948348999,
+    "future_confidence": 0.7426143456066386,
+    "predicted_dt_s": 0.7097427347478502,
+    "distribution": [
+      0.0006500506424345076,
+      0.07340819388628006,
+      0.03798883780837059,
+      0.04335645213723183,
+      0.8445965051651001
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "adjust->pickup",
+    "time": 109.0,
+    "correct": true,
+    "risk": 0.16057229042053223,
+    "future_confidence": 0.9999971606561008,
+    "predicted_dt_s": 0.5544370319383899,
+    "distribution": [
+      0.005279022268950939,
+      0.10298915952444077,
+      0.031267452985048294,
+      0.0210366640239954,
+      0.8394277095794678
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "pickup->harvest",
+    "time": 119.5,
+    "correct": false,
+    "risk": 0.26435214281082153,
+    "future_confidence": 0.9998913691805269,
+    "predicted_dt_s": 0.5107174207649084,
+    "distribution": [
+      0.032893914729356766,
+      0.1595226377248764,
+      0.037685953080654144,
+      0.03424964100122452,
+      0.7356478571891785
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "transition": "harvest->return",
+    "time": 169.0,
+    "correct": true,
+    "risk": 0.8348321914672852,
+    "future_confidence": 0.9315131705025556,
+    "predicted_dt_s": 0.8387531871230565,
+    "distribution": [
+      0.003171575954183936,
+      0.0657157301902771,
+      0.5645055770874023,
+      0.20143930613994598,
+      0.16516783833503723
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "pickup->harvest",
+    "time": 7.5,
+    "correct": true,
+    "risk": 0.6246029734611511,
+    "future_confidence": 0.9991101597681115,
+    "predicted_dt_s": 0.300364852679009,
+    "distribution": [
+      0.3476865887641907,
+      0.19012892246246338,
+      0.0712694600224495,
+      0.015518012456595898,
+      0.3753970265388489
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "harvest->return",
+    "time": 73.0,
+    "correct": true,
+    "risk": 0.8683407306671143,
+    "future_confidence": 0.9998502614375888,
+    "predicted_dt_s": 0.8603258469525721,
+    "distribution": [
+      0.002471578773111105,
+      0.07830628752708435,
+      0.5341427326202393,
+      0.25342005491256714,
+      0.13165929913520813
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "return->adjust",
+    "time": 78.0,
+    "correct": false,
+    "risk": 0.9062100052833557,
+    "future_confidence": 0.999412079186597,
+    "predicted_dt_s": 0.7705689633340275,
+    "distribution": [
+      0.023016909137368202,
+      0.20705899596214294,
+      0.45478910207748413,
+      0.221344992518425,
+      0.09379000961780548
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "adjust->pickup",
+    "time": 98.5,
+    "correct": true,
+    "risk": 0.12558317184448242,
+    "future_confidence": 0.9263502326596392,
+    "predicted_dt_s": 0.8020839282341603,
+    "distribution": [
+      0.00331642827950418,
+      0.0288004819303751,
+      0.05463862046599388,
+      0.03882763534784317,
+      0.8744168281555176
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "pickup->adjust",
+    "time": 101.5,
+    "correct": false,
+    "risk": 0.01485908031463623,
+    "future_confidence": 0.898367676671475,
+    "predicted_dt_s": 0.9763578991941678,
+    "distribution": [
+      0.0009348083985969424,
+      0.0007305605104193091,
+      0.0047503369860351086,
+      0.008443369530141354,
+      0.9851409196853638
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "adjust->pickup",
+    "time": 104.5,
+    "correct": false,
+    "risk": 0.0020066499710083008,
+    "future_confidence": 0.9524946533451758,
+    "predicted_dt_s": 1.0035710979999932,
+    "distribution": [
+      5.1863658882211894e-05,
+      0.00011172951781190932,
+      0.0006767617887817323,
+      0.0011662717442959547,
+      0.9979933500289917
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "pickup->harvest",
+    "time": 111.0,
+    "correct": false,
+    "risk": 0.7750939130783081,
+    "future_confidence": 0.9974241187734705,
+    "predicted_dt_s": 0.7353300342076471,
+    "distribution": [
+      0.006652399431914091,
+      0.25249210000038147,
+      0.3410060405731201,
+      0.17494337260723114,
+      0.2249060571193695
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "transition": "harvest->return",
+    "time": 175.0,
+    "correct": true,
+    "risk": 0.7278363704681396,
+    "future_confidence": 0.9971051022797771,
+    "predicted_dt_s": 0.904695837979392,
+    "distribution": [
+      0.02387050725519657,
+      0.02068949304521084,
+      0.41273459792137146,
+      0.2705417275428772,
+      0.27216362953186035
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "pickup->harvest",
+    "time": 9.0,
+    "correct": true,
+    "risk": 0.7588478326797485,
+    "future_confidence": 0.9955822348218862,
+    "predicted_dt_s": 0.9468799333785564,
+    "distribution": [
+      0.004271378740668297,
+      0.07673002779483795,
+      0.31615591049194336,
+      0.36169058084487915,
+      0.24115216732025146
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "harvest->return",
+    "time": 70.5,
+    "correct": true,
+    "risk": 0.5597625970840454,
+    "future_confidence": 0.9983079783443377,
+    "predicted_dt_s": 0.4885670672866263,
+    "distribution": [
+      0.10144674777984619,
+      0.2691968083381653,
+      0.15309378504753113,
+      0.03602524474263191,
+      0.4402374029159546
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "return->adjust",
+    "time": 77.0,
+    "correct": true,
+    "risk": 0.4834543466567993,
+    "future_confidence": 0.9710518190736924,
+    "predicted_dt_s": 0.6831537470886819,
+    "distribution": [
+      0.04502318799495697,
+      0.15423108637332916,
+      0.17688190937042236,
+      0.10731809586286545,
+      0.5165456533432007
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "adjust->pickup",
+    "time": 90.0,
+    "correct": true,
+    "risk": 0.29237496852874756,
+    "future_confidence": 0.9665508964925026,
+    "predicted_dt_s": 0.8232779641941868,
+    "distribution": [
+      0.016312099993228912,
+      0.05177513509988785,
+      0.12221690267324448,
+      0.10207076370716095,
+      0.7076250314712524
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "pickup->harvest",
+    "time": 100.0,
+    "correct": true,
+    "risk": 0.803518533706665,
+    "future_confidence": 0.9987281217676417,
+    "predicted_dt_s": 0.9549948245506166,
+    "distribution": [
+      0.01617090217769146,
+      0.049875710159540176,
+      0.35041719675064087,
+      0.3870547115802765,
+      0.19648145139217377
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "transition": "harvest->return",
+    "time": 138.0,
+    "correct": true,
+    "risk": 0.8224676847457886,
+    "future_confidence": 0.9999618808545901,
+    "predicted_dt_s": 0.7184964415532256,
+    "distribution": [
+      0.03472231328487396,
+      0.24214236438274384,
+      0.3724147081375122,
+      0.17318828403949738,
+      0.17753230035305023
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "pickup->harvest",
+    "time": 6.5,
+    "correct": true,
+    "risk": 0.9194580912590027,
+    "future_confidence": 0.9992632884798444,
+    "predicted_dt_s": 1.0704252211521543,
+    "distribution": [
+      4.230082777212374e-05,
+      0.009409776888787746,
+      0.31366074085235596,
+      0.5963452458381653,
+      0.08054191619157791
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "harvest->return",
+    "time": 57.0,
+    "correct": true,
+    "risk": 0.9708811044692993,
+    "future_confidence": 0.9999999460872027,
+    "predicted_dt_s": 0.6922400636531358,
+    "distribution": [
+      0.00805357564240694,
+      0.28717172145843506,
+      0.5623661279678345,
+      0.11328965425491333,
+      0.029118914157152176
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "return->adjust",
+    "time": 62.0,
+    "correct": true,
+    "risk": 0.6865047812461853,
+    "future_confidence": 0.95481236907382,
+    "predicted_dt_s": 0.6920222530811648,
+    "distribution": [
+      0.09486892819404602,
+      0.1767295002937317,
+      0.24337716400623322,
+      0.17152929306030273,
+      0.3134952187538147
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "adjust->pickup",
+    "time": 90.5,
+    "correct": false,
+    "risk": 0.7340808510780334,
+    "future_confidence": 0.999608114284308,
+    "predicted_dt_s": 0.4619421576072037,
+    "distribution": [
+      0.2930372357368469,
+      0.15433159470558167,
+      0.22758221626281738,
+      0.059129782021045685,
+      0.26591914892196655
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "pickup->harvest",
+    "time": 99.0,
+    "correct": true,
+    "risk": 0.7300108075141907,
+    "future_confidence": 0.9999961531319296,
+    "predicted_dt_s": 0.5905756837551742,
+    "distribution": [
+      0.16994428634643555,
+      0.21407952904701233,
+      0.2057598978281021,
+      0.1402270793914795,
+      0.2699891924858093
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "transition": "harvest->return",
+    "time": 134.5,
+    "correct": false,
+    "risk": 0.39148634672164917,
+    "future_confidence": 0.9953086404082552,
+    "predicted_dt_s": 0.56641526320936,
+    "distribution": [
+      0.059103500097990036,
+      0.16067543625831604,
+      0.12106328457593918,
+      0.05064412206411362,
+      0.6085136532783508
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "pickup->harvest",
+    "time": 6.0,
+    "correct": true,
+    "risk": 0.9046116471290588,
+    "future_confidence": 0.9998170785472332,
+    "predicted_dt_s": 0.9792142981647948,
+    "distribution": [
+      0.0008144162711687386,
+      0.015008016489446163,
+      0.46181535720825195,
+      0.426973819732666,
+      0.09538835287094116
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "harvest->return",
+    "time": 61.5,
+    "correct": true,
+    "risk": 0.8922565579414368,
+    "future_confidence": 0.9999878787626001,
+    "predicted_dt_s": 0.638114013262027,
+    "distribution": [
+      0.0713098868727684,
+      0.3202832341194153,
+      0.37097564339637756,
+      0.1296878159046173,
+      0.10774343460798264
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "return->adjust",
+    "time": 67.5,
+    "correct": false,
+    "risk": 0.035411953926086426,
+    "future_confidence": 0.9948371104591596,
+    "predicted_dt_s": 0.9668450662418624,
+    "distribution": [
+      0.0010062764631584287,
+      0.0022104934323579073,
+      0.013921660371124744,
+      0.01827353797852993,
+      0.9645880460739136
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "adjust->pickup",
+    "time": 99.0,
+    "correct": false,
+    "risk": 0.12145668268203735,
+    "future_confidence": 0.9955010357742273,
+    "predicted_dt_s": 0.8812065168579888,
+    "distribution": [
+      0.012132108211517334,
+      0.011393233202397823,
+      0.04234950616955757,
+      0.055581893771886826,
+      0.8785433173179626
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "pickup->harvest",
+    "time": 106.5,
+    "correct": true,
+    "risk": 0.6657140254974365,
+    "future_confidence": 0.9999999892518999,
+    "predicted_dt_s": 0.6735051131260147,
+    "distribution": [
+      0.10347194224596024,
+      0.20643991231918335,
+      0.17347976565361023,
+      0.1823224127292633,
+      0.3342859447002411
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "transition": "harvest->return",
+    "time": 176.5,
+    "correct": false,
+    "risk": 0.00016123056411743164,
+    "future_confidence": 0.9999999944071785,
+    "predicted_dt_s": 0.878491602935664,
+    "distribution": [
+      1.524029084976064e-05,
+      4.426316445460543e-05,
+      8.010775673028547e-06,
+      9.366915764985606e-05,
+      0.9998387694358826
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "ca784332e44d979f99018a52",
+    "transition": "pickup->harvest",
+    "time": 6.0,
+    "correct": true,
+    "risk": 0.5506632328033447,
+    "future_confidence": 0.9999989304219947,
+    "predicted_dt_s": 0.660784181248969,
+    "distribution": [
+      0.14412802457809448,
+      0.11057673394680023,
+      0.1311217099428177,
+      0.1648367941379547,
+      0.4493367671966553
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "ca784332e44d979f99018a52",
+    "transition": "harvest->return",
+    "time": 30.0,
+    "correct": false,
+    "risk": 0.22105956077575684,
+    "future_confidence": 0.9210358473567988,
+    "predicted_dt_s": 0.6618795027629821,
+    "distribution": [
+      0.07712166756391525,
+      0.01839183270931244,
+      0.0543099120259285,
+      0.07123618572950363,
+      0.7789404392242432
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "pickup->harvest",
+    "time": 4.5,
+    "correct": true,
+    "risk": 0.9943029284477234,
+    "future_confidence": 0.9999026604961492,
+    "predicted_dt_s": 0.8692164909910608,
+    "distribution": [
+      0.00039353338070213795,
+      0.02177811600267887,
+      0.7182311415672302,
+      0.2539001703262329,
+      0.005697062239050865
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "harvest->return",
+    "time": 36.5,
+    "correct": true,
+    "risk": 0.9365516304969788,
+    "future_confidence": 0.9999629346002163,
+    "predicted_dt_s": 0.9173073987486947,
+    "distribution": [
+      0.0033240767661482096,
+      0.058099377900362015,
+      0.514014482498169,
+      0.36111363768577576,
+      0.06344839185476303
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "return->adjust",
+    "time": 39.5,
+    "correct": true,
+    "risk": 0.4949609041213989,
+    "future_confidence": 0.9654230582441014,
+    "predicted_dt_s": 1.1031553149259647,
+    "distribution": [
+      0.00019030968542210758,
+      0.0022171533200889826,
+      0.1410565823316574,
+      0.3514968752861023,
+      0.5050390958786011
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "adjust->pickup",
+    "time": 66.0,
+    "correct": false,
+    "risk": 0.11166292428970337,
+    "future_confidence": 0.9999849370102839,
+    "predicted_dt_s": 0.7534524159029569,
+    "distribution": [
+      0.01856965757906437,
+      0.01890920288860798,
+      0.03601910173892975,
+      0.03816499933600426,
+      0.8883370757102966
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "pickup->harvest",
+    "time": 70.5,
+    "correct": false,
+    "risk": 0.12207788228988647,
+    "future_confidence": 0.999999823558295,
+    "predicted_dt_s": 0.3890594183904735,
+    "distribution": [
+      0.071003258228302,
+      0.02513064816594124,
+      0.006467516999691725,
+      0.019476383924484253,
+      0.8779221177101135
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "transition": "harvest->return",
+    "time": 86.5,
+    "correct": true,
+    "risk": 0.9955605268478394,
+    "future_confidence": 0.9861976075116046,
+    "predicted_dt_s": 0.23635194945854374,
+    "distribution": [
+      0.6690273880958557,
+      0.258565753698349,
+      0.06049429625272751,
+      0.007473094388842583,
+      0.004439475014805794
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "pickup->harvest",
+    "time": 4.5,
+    "correct": true,
+    "risk": 0.8894917368888855,
+    "future_confidence": 0.9999435260729798,
+    "predicted_dt_s": 0.990550681513659,
+    "distribution": [
+      0.0012267989804968238,
+      0.07939188927412033,
+      0.3198600113391876,
+      0.48901301622390747,
+      0.11050824820995331
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "harvest->return",
+    "time": 44.0,
+    "correct": true,
+    "risk": 0.8940632343292236,
+    "future_confidence": 0.9999827737539553,
+    "predicted_dt_s": 0.9048774062631584,
+    "distribution": [
+      0.007277961820363998,
+      0.1571853756904602,
+      0.32567301392555237,
+      0.40392687916755676,
+      0.10593673586845398
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "return->adjust",
+    "time": 47.0,
+    "correct": true,
+    "risk": 0.9733973145484924,
+    "future_confidence": 0.9990066266495709,
+    "predicted_dt_s": 0.6981191713627243,
+    "distribution": [
+      0.027549877762794495,
+      0.25390198826789856,
+      0.5680829286575317,
+      0.12386251986026764,
+      0.026602700352668762
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "adjust->pickup",
+    "time": 66.0,
+    "correct": false,
+    "risk": 0.03294402360916138,
+    "future_confidence": 0.9189127605745481,
+    "predicted_dt_s": 0.6908400169008714,
+    "distribution": [
+      0.00598090561106801,
+      0.0071442318148911,
+      0.010882464237511158,
+      0.008936374448239803,
+      0.9670559763908386
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "pickup->harvest",
+    "time": 69.5,
+    "correct": true,
+    "risk": 0.8268697261810303,
+    "future_confidence": 0.9928944725546881,
+    "predicted_dt_s": 0.9604796619995917,
+    "distribution": [
+      0.008363988250494003,
+      0.05259094014763832,
+      0.36793816089630127,
+      0.39797666668891907,
+      0.17313024401664734
+    ]
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "transition": "harvest->return",
+    "time": 89.5,
+    "correct": true,
+    "risk": 0.9707330465316772,
+    "future_confidence": 0.6962676529124066,
+    "predicted_dt_s": 0.46146956907348363,
+    "distribution": [
+      0.24611642956733704,
+      0.4120014011859894,
+      0.256140798330307,
+      0.056474488228559494,
+      0.029266923666000366
+    ]
+  }
+]

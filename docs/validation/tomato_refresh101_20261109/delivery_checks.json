@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "tomato_tests_passed": 137,
+  "old_checkpoints_unchanged": true,
+  "feature_cache_hashes_unchanged": true,
+  "raw_training_bundle_hashes_unchanged": true,
+  "executed_source_preserved": true,
+  "normalization_independently_recomputed": true,
+  "finalized_tensors_identical": true,
+  "training_heads_completed": 12,
+  "encoder_calls": 0,
+  "new10_promoted_from_exposed_test_to_training": true,
+  "historical8_test_features_read": false,
+  "source_annotations_changed_by_agent": false,
+  "remote_push": false,
+  "source_sha256": {
+    "tools/train_tomato_refresh101.py": "544b48f17f3579851651c3030ebaac8ed615aa960664b4938ffe5348f15697f8",
+    "tools/analyze_tomato_time_usage.py": "1fd9a7d6400ba35d49525d593880a6abccd0ac339e7cc4f3e6e8b217c680b3e7",
+    "tools/finalize_tomato_refresh_manifest.py": "7d3b27661472743533c65bc818819afeb27900891a40a8ed7734457eb5ebdf7e"
+  }
+}
