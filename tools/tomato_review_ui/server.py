@@ -24,13 +24,15 @@ def byte_range(value,size):
     return start,end,206
 
 class App:
-    def __init__(self,root,output):
-        self.catalog=Catalog(root);self.store=PredictionRepository(self.catalog,output)
+    def __init__(self,root,output,encoder_device="cuda"):
+        self.catalog=Catalog(root);self.store=PredictionRepository(self.catalog,output,encoder_device)
         self.pool=ThreadPoolExecutor(max_workers=1);self.jobs={};self.keys={};self.permissions={};self.sessions=set();self.lock=threading.Lock()
     def submit(self,owner,kind,data):
         eid=data.get('episode_id');mode=data.get('prediction_mode');rid=data.get('result_id')
-        revision=None
+        revision=None;hz=2
         if kind=='recognize':
+            from .five_hz import validate_hz
+            hz=validate_hz(data.get('prediction_hz',2))
             from .timeline import MODES
             if mode not in MODES:raise ValueError('Unknown mode')
             e=self.catalog.get(eid);run=self.catalog.root/mode
@@ -41,15 +43,20 @@ class App:
                 if item:paths.append(Path(item['path']))
             revision=sha_bytes({str(p):sha(p) if p.is_file() else None for p in paths})
         elif rid not in self.permissions.get(owner,set()):raise PermissionError('Result not owned by session')
-        key=(owner,kind,eid,mode,rid,bool(data.get('regenerate',False)),revision)
+        key=(owner,kind,eid,mode,rid,bool(data.get('regenerate',False)),revision,hz)
         with self.lock:
-            if key in self.keys and self.jobs[self.keys[key]]['status']!='failed':return self.keys[key]
+            if key in self.keys and self.jobs[self.keys[key]]['status']!='failed':
+                old=self.jobs[self.keys[key]]
+                if hz==5 and old['status']=='complete':self.store._validate_five_receipt(self.store.results[old['result_id']])
+                return self.keys[key]
             jid=secrets.token_hex(16);self.keys[key]=jid;self.jobs[jid]=dict(job_id=jid,owner=owner,status='queued',kind=kind)
         def work():
             job=self.jobs[jid];job['status']='running'
             try:
                 if kind=='recognize':
-                    value=self.store.recognize(eid,mode,data.get('regenerate',False));rid2=value['result_id']
+                    if hz==2:value=self.store.recognize(eid,mode,data.get('regenerate',False))
+                    else:value=self.store.recognize(eid,mode,data.get('regenerate',False),prediction_hz=hz,progress=lambda v:job.update(progress=v))
+                    rid2=value['result_id']
                     self.permissions.setdefault(owner,set()).add(rid2);job['result_id']=rid2;job['source']=value['source']
                 else:
                     result=self.store.results[rid]
@@ -120,7 +127,7 @@ def handler(app):
                 data=json.loads(self.rfile.read(n))
                 if not isinstance(data,dict):raise ValueError('JSON object required')
                 if self.path=='/api/predictions/recognize':
-                    if set(data)-{'episode_id','prediction_mode','regenerate'}:raise ValueError('Unexpected input fields')
+                    if set(data)-{'episode_id','prediction_mode','regenerate','prediction_hz'}:raise ValueError('Unexpected input fields')
                     jid=app.submit(owner,'recognize',data)
                 elif self.path=='/api/exports/video':
                     if set(data)!={'result_id'}:raise ValueError('Only result_id is accepted')
@@ -135,7 +142,8 @@ def handler(app):
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--run-root',type=Path,required=True);p.add_argument('--output-dir',type=Path)
     p.add_argument('--host',choices=['127.0.0.1','localhost'],default='127.0.0.1');p.add_argument('--port',type=int,default=8770)
-    a=p.parse_args();app=App(a.run_root,a.output_dir or a.run_root/'review_ui');server=ThreadingHTTPServer((a.host,a.port),handler(app))
+    p.add_argument('--encoder-device',choices=['cuda','cpu'],default='cuda',help='5Hz missing-feature extraction only; never used when merely opening the page')
+    a=p.parse_args();app=App(a.run_root,a.output_dir or a.run_root/'review_ui',a.encoder_device);server=ThreadingHTTPServer((a.host,a.port),handler(app))
     print(f'Read-only review: http://{a.host}:{a.port}',flush=True)
     try:server.serve_forever()
     finally:app.pool.shutdown(wait=True);server.server_close()

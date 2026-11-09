@@ -34,7 +34,7 @@ def export_video(catalog,result,output,progress=lambda v:None):
                 img=cv2.resize(img,(round(w*ratio),round(h*ratio)));x=k*384+(384-img.shape[1])//2;y=(320-img.shape[0])//2
                 canvas[y:y+img.shape[0],x:x+img.shape[1]]=img;text(canvas,'cam'+str(k),k*384+10,20)
             row=held(rows,i);truth=next(s['label'] for s in gt if s['start_frame']<=i<s['end_frame'])
-            text(canvas,f'{mode} | frame={i} t={i/e["fps"]:.3f}s | GT(now)={truth}',12,345,scale=.6)
+            text(canvas,f'{mode} {result.get("prediction_hz",2)}Hz | frame={i} t={i/e["fps"]:.3f}s | GT(now)={truth}',12,345,scale=.6)
             for j,h in enumerate(heads):
                 p=row['heads'][h];target_time=p['target_at'];state='NEW' if row['frame_index']==i else 'HELD'
                 label=f'{h}'+('(+1.0s)' if h=='future' else '')
@@ -58,7 +58,7 @@ def export_video(catalog,result,output,progress=lambda v:None):
             if sum(1 for _ in check.decode(video=0))!=e['length']:raise ValueError('Incomplete export')
         tmp.replace(target)
         meta=dict(episode_id=e['episode_id'],source_recording_id=e['source_recording_id'],prediction_mode=mode,result_id=key,
-            provenance=result['provenance'],source_sha256=e['input_sha256'],frames=count,fps=e['fps'],duration_s=count/e['fps'],
+            prediction_hz=result.get('prediction_hz',2),provenance=result['provenance'],source_sha256=e['input_sha256'],frames=count,fps=e['fps'],duration_s=count/e['fps'],
             layout='three letterboxed cameras + GT and selected heads + observation-aligned tracks',elapsed_s=time.monotonic()-start,
             generated_at=time.time(),video_sha256=sha(target))
         (dest/'anchors.jsonl').write_text(''.join(json.dumps(v)+'\n' for v in rows));write(dest/'render_metadata.json',meta)

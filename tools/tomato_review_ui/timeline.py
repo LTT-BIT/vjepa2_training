@@ -10,7 +10,7 @@ def validate_rows(rows,e,mode):
     for r in rows:
         i=r['frame_index'];t=r['timestamp_s']
         if (r['episode_id']!=e['episode_id'] or r['source_recording_id']!=e['source_recording_id'] or r['split']!=e['split']
-            or r['prediction_mode']!=mode or not math.isfinite(t) or abs(t-i/e['fps'])>1e-6
+            or r['prediction_mode']!=mode or not math.isfinite(t) or abs(t-i/e['fps'])>e.get('ui_timestamp_tolerance_s',1e-6)
             or r['last_input_frame']>i or max(r['input_indices'])>i):raise ValueError('Prediction source/time/mode mismatch')
         row=dict(frame_index=i,observed_at=t,source_recording_id=e['source_recording_id'],heads={})
         for h in MODES[mode]:
