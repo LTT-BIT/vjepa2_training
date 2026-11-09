@@ -1,0 +1,912 @@
+[
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1102_588_616_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1102_588_616_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "episode_index": 0,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "867ea280b6271c35dd34aafb1e975f49f031f773717310f4d48b076f9c11e0a9",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1102_588_616_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1102_588_616_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "episode_index": 1,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "fd4410cd47e571c32e7b0cbbbabbec264a7d54fdda709528eb95d964337d6e45",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "episode_index": 0,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "episode_index": 1,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "79889b12cebdd0e7c0f1e379e1e0f3dea4d2c90482bb355f641818c0470d97fc",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "episode_index": 2,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "88f06ef9f62f5626b7f518c87da5e3960f1ab346c8ce34ae75068577eed64cba",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000003.json",
+    "episode_index": 3,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "ef20e39f460cdb2600c1c341e587b60e46a51ff1e8606036ff38ef81cab76e05",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+    "episode_index": 4,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "56651613b485ccfa9fb635d0190fa43ec3b9fd1679bc5990294b9cd7b0740b84",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000005.json",
+    "episode_index": 5,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "6463fc3088b322a73d79e5f95b4f6aee1d377f1cae4fa6b09f23fb29f908ebf8",
+    "revision": 3,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000006.json",
+    "episode_index": 6,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "3be8c48f01790cc0dc4727fa25105db6aeeffa763104954cef7d9d957f45b166",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "episode_index": 0,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "a31bc56d0f3849d6337d6fad77221e7ecefb5dd824ed99958c812ff8fe89453a",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "episode_index": 1,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "4be87ead383bfe0232e9015e8fe5b87d952df4cec713e947466d28db30e931dd",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "episode_index": 2,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000003.json",
+    "episode_index": 3,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "0e57db58ad60790e3d5ec1db443c4ec1be9868d0876e2f59f557bfa12ee75acb",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+    "episode_index": 4,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "33f5e66795b631654e3b54fd61c7ca98e641c7d397818c85721bf2ccc05d1bdf",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000005.json",
+    "episode_index": 5,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "3b079c25bc087d9471d063ecaa9e3f8f45d3e6cd497d5a48eb6ae7beb0846bde",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000006.json",
+    "episode_index": 6,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "c7e2eee01cd5bbd27381bb6a1edef298bce68a6ab8d0d98436a6c7e2b53c235c",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000007.json",
+    "episode_index": 7,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "64b6044cceda07ad70f19899f39910de4ba1324550b3a5aa1ec18d493ffb3ac7",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000008.json",
+    "episode_index": 8,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "a34a49a89c91a3eba3d6cdcd48f984b102a3fdf780621a5599f2c26c2a14724f",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000009.json",
+    "episode_index": 9,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "ece74cd377bfa49fd37c358efdb3900cae8f7ec5844859aadea3466b450f7564",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000010.json",
+    "episode_index": 10,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "3fe015a4dd8ddc9114894c5ae174030d373cad832717a6d164fe7b4c8e1224de",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000011.json",
+    "episode_index": 11,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "86de7c09e8ef4f59bca4346c9cae924ab21c754a47fa036c775f1a734b3f4770",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000012.json",
+    "episode_index": 12,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "91d340965ee30b8c5c65d77664840e4f830f789c768a0a6df32f50568437fcfe",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000013.json",
+    "episode_index": 13,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "93c7fdd56ea7ad279b9065a94c1e8bc4e820df117be27d2c302176998c7bb4f9",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000014.json",
+    "episode_index": 14,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "983bc4fa53e9832252e12443ebf4ad4e26f6bcdee035fd7b17f92c8f80e98238",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000015.json",
+    "episode_index": 15,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "3b58b2988d33401d9c7d91dd24284e9a8c84566f675dcc24acea5053ae4d7147",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "episode_index": 0,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "4a93e8da1106f6bc090edab3cfaeb33d09d7a4938f9c5ceb0de9bca599b7d3c0",
+    "revision": 3,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "episode_index": 1,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "48a655a2debc043c9bf2df9c4eceaf59b7844ac697d493f59ae36aaae7727103",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "episode_index": 2,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "ac13f38d05cd13635a69e4f187b453f046144a847b5af84d7fb62c3a0952ae5f",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000003.json",
+    "episode_index": 3,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "d6c3816e85b904090bdef0820c5f13a4f67ca50d2e1d2ae92009e56c7b4b1148",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+    "episode_index": 4,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000005.json",
+    "episode_index": 5,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "938dad68eb384d06159713e95263058e3f99e4443d64527962a67b44763d8fb5",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000006.json",
+    "episode_index": 6,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "e865dfde263b63c062ebddcd3d3eb44208de3bd8f7d89df589a7e887ae9218f3",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000007.json",
+    "episode_index": 7,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "77417f250eaa0d9c5922072373478002fe3f38a45a84100b089704962a916a4e",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000008.json",
+    "episode_index": 8,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "1249aba2dabadd8934bc4aca762cc2138c09b3dc3eb792646175152ba5122e3a",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000009.json",
+    "episode_index": 9,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "b1944bffaf9ec0c2099c51be15b1d54bbff33b42ac6bf893e0a417cb775018af",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000010.json",
+    "episode_index": 10,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "abce9a4709160448f4ca34f93c84bd98176b985f3adf3f2c48f0d01e783b66c2",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000011.json",
+    "episode_index": 11,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "fa2e622f951deb0db932be21c0821447b2e99bcfd5a74a5a39de1f6bc15baa3e",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000012.json",
+    "episode_index": 12,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "20c33358f75cf9ee0029650922f8c22ee531a767a7e54ba3404bc1cb2b4a6947",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000013.json",
+    "episode_index": 13,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "cf2d8d1de96e2ad7ae803de1f0d6603236b64d70ac35e979472facf07b262210",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000014.json",
+    "episode_index": 14,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "5d6229d73eac4316ec6cd1c60c046615be3e6e7a2e0f21f8be2ff7d32fae8f1b",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000015.json",
+    "episode_index": 15,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "7f5854e0a9149eab4b26ad196b1fefdaa3845d47e5f223eb911a7196e0bcbd42",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000016.json",
+    "episode_index": 16,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "d20c15add7f56ceeb988503e182b66393b0b44c0329597e0c99ba72f6d1b85b8",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000017.json",
+    "episode_index": 17,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "5a9af87380ef119020c89268f49da9f4f865664429614f81fde591aac2561987",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000018.json",
+    "episode_index": 18,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "fbf4e9d4d041eac8f2e1afac501418121d4014be0c609ef9c417f02109c1b4e5",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000000.json",
+    "episode_index": 0,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "d99a88d9023e299f03be31f5ec3d0aeea4bdf12dcbee824fc03c56fc15e358df",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000001.json",
+    "episode_index": 1,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "a6f416ba483770d41e9b195cbc0c4a3ea8db8cc0b797dcdf2ce4bb6c42a53acb",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000002.json",
+    "episode_index": 2,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "2265570502f51fee648000fb8f42f7664fcc8d93a22c0b8477645b39fd388a29",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000003.json",
+    "episode_index": 3,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "b3b70265acc6604e290df93f33903713f579eb88ef31c47b448048bedcd73860",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000004.json",
+    "episode_index": 4,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "1563fd77bd863e3618a02067e5a85fb5cdc2cde784e54b0cb3005137040d72ef",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000005.json",
+    "episode_index": 5,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "a358c13a2dc88127ea14219387c0b6b3626d3fc5fce2815ff8d96863cc6c422d",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000006.json",
+    "episode_index": 6,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "a50a863707588e338cc64736203b63dab106b23d39057d2663c9c501ae9926ad",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000007.json",
+    "episode_index": 7,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "7ebd56f9c352218298eafd0ddac72d42b2334edf11e975ceca0845db7029a550",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000008.json",
+    "episode_index": 8,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "53f9bc220ac85d156274a5121ad0cd02d26020526961c09517884082204c1972",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000009.json",
+    "episode_index": 9,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "6fef8f7f39d831c75addd22beae48525c8429675d4240989c7b74f052b1badcd",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000010.json",
+    "episode_index": 10,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "0d3d686bc8b3e66f016ed2df1360916e76b2a993b076ddf0f17bba0a18dc9348",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000011.json",
+    "episode_index": 11,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "979b8e5ffc1e5bde9ec6523176b64e38eed21255f0f7bfe3d8f6e859513b0ea5",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000012.json",
+    "episode_index": 12,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "393e42b342a18127a5c5e833be69649cd6fbdc3155aabe7622cd77e4e7b0d845",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000013.json",
+    "episode_index": 13,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "4a9143f4127f2e0e2c64d4bf1535d23d99c69e2b02856677e133a484bdcdd0c2",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000014.json",
+    "episode_index": 14,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "416dc51d60da8830ba53c8a34d26a4cce86861a8e5843b152dd58bcf1210e3bb",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000015.json",
+    "episode_index": 15,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "b41f72e91498de12b2f9c4f947836a89e0c24cf9a9ce8bba90a8f4a0e874732c",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000016.json",
+    "episode_index": 16,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "bee6acc6053e1f03a10446a94eb7b0f50a735436a39bd93af9813ee3343f63f2",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000017.json",
+    "episode_index": 17,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "9e4b7b172c4bbcf928e0b382dac6d5523cfd22c99b68baf7f95896194e3e5a2c",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000018.json",
+    "episode_index": 18,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "2953adc79ae64818515651e077d0f1627c93c1ebbdd376791a2d4d7277a94f96",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/annotations/subtasks/coarse/episode_000019.json",
+    "episode_index": 19,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "be8b7640524ff68acf5adf9dc8d0ecebfe21046c4e22a784e69d3fd87d5e28aa",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal/annotations/subtasks/coarse/episode_000000.json",
+    "episode_index": 0,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "66b4431c3d08b810a7a3ecc8f22793fe8bd58118f4428d8beb152b5c4cce3b77",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "episode_index": 0,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "c061b99771f3445f0c93603400dc7684abc3f3583d2a5b67655687fefeee2f55",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "episode_index": 1,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "7750634a6c1261ea3bbf7183656bc218d22a277cedab1310e7f3e5be9eb25e96",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "episode_index": 2,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "866ed24255f94ebd8a028760abf0202925228401e2aea3ee32cbe5d3ca97d94c",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot/annotations/subtasks/coarse/episode_000003.json",
+    "episode_index": 3,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "3275bbd51eadfaa67f34315f7abc86dcc6d62a0b5c8b900b7a0fa743fc601806",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+    "episode_index": 4,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "02bc3024d725f4d3d7bbee18e46393a021d1895245986b128b67319c2c67a96a",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "episode_index": 0,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "acf8e389f81573cb70e2b36b3457bbe39790d8a5980d6b0d04899e4d9cf98177",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000001.json",
+    "episode_index": 1,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "63fe41dd3dddd89f136c5e18f12cd33c417dccff305e6c76ca8090e8714762c9",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+    "episode_index": 2,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "408f0c20e63a6941eb2eb07d63356b62bbd9aaba8fa74ffeecc8da1ebb71a1e0",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000003.json",
+    "episode_index": 3,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "b31e2ff31f525d8d9cd6d52ff4bdb90bbed7ac6c40a5c2c044e93bf110a6325a",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+    "episode_index": 4,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "127e1de733a07379f8fa59c6ab6a0997c13ea98eb0679b60d22968270e678786",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000005.json",
+    "episode_index": 5,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "0a4d5376a540cd008af1b438816ab7bda212d2f07a800664ae9585453f1e1400",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000006.json",
+    "episode_index": 6,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "83654ae265002a468cfe86a76de07e5decf1f8142a2c9a9d75c9dcc74f1745f2",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000007.json",
+    "episode_index": 7,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "c4eb71004a6a5ad4817182b024ee03ab5ca1adf0422b10615f9666d426197833",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000008.json",
+    "episode_index": 8,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "6444b17c045388c9a8e9756d131f9af401551c9c4aab30c2c352f1e74f3249db",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000009.json",
+    "episode_index": 9,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "fe71cc1d3f1484efbfef51e8472d99aa52c7c4f73f9e550ff6eaccb164f5e0e4",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000010.json",
+    "episode_index": 10,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "bba9336d57231f4119fb4abeed929f8ee4fc67bd4b8af6628a3c6a768e4a8e8c",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot/annotations/subtasks/coarse/episode_000011.json",
+    "episode_index": 11,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "47e6436ec902c7d8b40d32fdf79edf515e02a530ec7bc57f8fb820c7cf01e580",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1105_703_713_normal_lerobot",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1105_703_713_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+    "episode_index": 0,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "9e3f49a657959d5cb8852e2139c2cea018c1c5d7b240b78f8c901a1a2fbe6844",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000000.json",
+    "episode_index": 0,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "317d6a15996e5ebef20cdaab941be4cca7e54b3e6b5b10fc2fa815191f10b8df",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000001.json",
+    "episode_index": 1,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "920260443e842bbb35207b7be58e8c1a2440d7dc59e2a76c377491cbfa08d2e4",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000002.json",
+    "episode_index": 2,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "950e98804a8be65175a7f8b8a4fbcafcdaea5fe012c72df76f84e7ce2b5168ce",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000003.json",
+    "episode_index": 3,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "9c2c348d4c3867761bf34f66358da0379c7891989016fb782c8e307d4897d1c5",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000004.json",
+    "episode_index": 4,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "4b64e72b2f5274e1b747c9f8b133b27f77b341c45c5c786d57d156152ed9c373",
+    "revision": 2,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000005.json",
+    "episode_index": 5,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "c8ab7d1086a70bf97b65058409154fb0b1c8c90f3ceaadcb0e833b94e7e7c87e",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000006.json",
+    "episode_index": 6,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "23cfe04636c0137b259669a21d71507940429276f6a238fe67805bafdc562828",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  },
+  {
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal",
+    "coarse_annotation": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000007.json",
+    "episode_index": 7,
+    "variant": "normal",
+    "robot": "sharpa",
+    "annotation_sha256": "a1a9f5bc206fa526f299bf06f4745860d0a8d3a5d87d5bb401a9d1844b04db8e",
+    "revision": 1,
+    "allowed_metadata_mismatches": []
+  }
+]

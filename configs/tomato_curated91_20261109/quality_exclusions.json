@@ -1,0 +1,157 @@
+{
+  "decision_date": "2026-11-09",
+  "scope": "entire_source_package_all_episodes",
+  "source_package": "B/1101_572_601_normal_lerobot",
+  "status": "excluded_user_confirmed_demonstration_quality",
+  "reason": "用户确认：左手没摘到就回去了，整包数据均不可用，已全部剔除到C。",
+  "reported_destination": "C",
+  "local_snapshot_note": "本地旧快照仍在B，仅有A/B目录；未找到C副本。未移动、删除或修改原始数据。",
+  "excluded_episodes": [
+    {
+      "episode_index": 0,
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "historical_split": "val",
+      "frames": 8367
+    },
+    {
+      "episode_index": 1,
+      "episode_id": "9431fc081de9f2159ad3b663",
+      "source_recording_id": "34d3f5750f7049e0a0e73024589b7863",
+      "historical_split": "train",
+      "frames": 6376
+    },
+    {
+      "episode_index": 2,
+      "episode_id": "fbc5ac1495fc613cd02214df",
+      "source_recording_id": "8560d21c947840b194bc3da0a80a6981",
+      "historical_split": "train",
+      "frames": 5207
+    }
+  ],
+  "affected_historical_review_cases": [
+    {
+      "historical_ui_number": 14,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b2",
+      "kind": "truth",
+      "tags": [
+        "strict_miss"
+      ]
+    },
+    {
+      "historical_ui_number": 15,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "kind": "truth",
+      "tags": [
+        "strict_miss"
+      ]
+    },
+    {
+      "historical_ui_number": 16,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b4",
+      "kind": "truth",
+      "tags": [
+        "strict_miss",
+        "all_adjust_pickup"
+      ]
+    },
+    {
+      "historical_ui_number": 17,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b5",
+      "kind": "truth",
+      "tags": [
+        "strict_miss"
+      ]
+    },
+    {
+      "historical_ui_number": 32,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp1",
+      "kind": "false",
+      "tags": [
+        "unmatched_warning"
+      ]
+    },
+    {
+      "historical_ui_number": 33,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp2",
+      "kind": "false",
+      "tags": [
+        "unmatched_warning"
+      ]
+    },
+    {
+      "historical_ui_number": 34,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp3",
+      "kind": "false",
+      "tags": [
+        "unmatched_warning"
+      ]
+    },
+    {
+      "historical_ui_number": 35,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp4",
+      "kind": "false",
+      "tags": [
+        "unmatched_warning"
+      ]
+    },
+    {
+      "historical_ui_number": 36,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp5",
+      "kind": "false",
+      "tags": [
+        "unmatched_warning"
+      ]
+    },
+    {
+      "historical_ui_number": 37,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp6",
+      "kind": "false",
+      "tags": [
+        "unmatched_warning"
+      ]
+    },
+    {
+      "historical_ui_number": 38,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp7",
+      "kind": "false",
+      "tags": [
+        "unmatched_warning"
+      ]
+    },
+    {
+      "historical_ui_number": 39,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp8",
+      "kind": "false",
+      "tags": [
+        "unmatched_warning"
+      ]
+    },
+    {
+      "historical_ui_number": 40,
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp9",
+      "kind": "false",
+      "tags": [
+        "unmatched_warning"
+      ]
+    }
+  ],
+  "historical_artifacts_preserved": true,
+  "new_split_counts": {
+    "train": 74,
+    "val": 9,
+    "test": 8
+  },
+  "annotation_revisions_included": [
+    {
+      "path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000004.json",
+      "old_sha256": "ca93d3c93e66508fbddfadeda3954b6a1bf65d29b15d4b7328aac91544a99008",
+      "new_sha256": "4b64e72b2f5274e1b747c9f8b133b27f77b341c45c5c786d57d156152ed9c373"
+    }
+  ],
+  "training_performed": false,
+  "metrics_recomputed": false,
+  "normalization_policy": "Refit using only retained train episodes before any new training; do not reuse old normalization as newly fitted.",
+  "cache_policy": "Retained visual features reusable only after identity checks. Exclude removed recording IDs and rebuild targets/windows/cache identity. Never relabel old caches in place.",
+  "model_selection_note": "Existing test has been explored; retain historical values. No thresholds/models selected using new test metrics."
+}
