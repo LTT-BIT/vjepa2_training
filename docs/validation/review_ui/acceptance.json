@@ -1,0 +1,197 @@
+{
+  "episodes": 93,
+  "seven": {
+    "episode_id": "7ed8a2815bb81e0be7bb89f8",
+    "source_recording_id": "34a4b430af2c4fd6a1912ff03628ef3f",
+    "episode_index": 17,
+    "split": "train",
+    "package": "A/1106_702_739_normal_lerobot",
+    "length": 2234,
+    "fps": 30.0,
+    "duration_s": 74.46666666666667,
+    "segments": 7,
+    "modes": {
+      "current_only": true,
+      "future_only": true,
+      "joint": true
+    }
+  },
+  "three": {
+    "episode_id": "1df7c31ae9a58dc60d4e57d6",
+    "source_recording_id": "ef866ed4c8f949d7b1a7d7fb3ef8ffbb",
+    "episode_index": 9,
+    "split": "train",
+    "package": "A/1106_740_796_normal",
+    "length": 1065,
+    "fps": 30.0,
+    "duration_s": 35.5,
+    "segments": 3,
+    "modes": {
+      "current_only": true,
+      "future_only": true,
+      "joint": true
+    }
+  },
+  "predictions": {
+    "future_only": {
+      "source": "frozen_predictions",
+      "seconds": 0.20167158404365182,
+      "anchors": 149,
+      "result_id": "74d6cb2442d77bb83542da48491c0735ee02f832b730392d68d1296e30a93b3d"
+    },
+    "joint": {
+      "source": "frozen_predictions",
+      "seconds": 0.2016837859991938,
+      "anchors": 149,
+      "result_id": "1cbe761d7d7b684bfa8fd1fd6311f1a47ee94bd1e5051c981d6318c7cf8267a1"
+    },
+    "current_only": {
+      "source": "frozen_predictions",
+      "seconds": 0.20163408300140873,
+      "anchors": 149,
+      "result_id": "5e8156d48984c2173a41d7bb7375cabfe8824e1717c2a13fcecf482cc28ccb9a"
+    }
+  },
+  "exports": {
+    "future_only": {
+      "seconds": 0.2062560779741034,
+      "frames": 2234,
+      "metadata": {
+        "episode_id": "7ed8a2815bb81e0be7bb89f8",
+        "source_recording_id": "34a4b430af2c4fd6a1912ff03628ef3f",
+        "prediction_mode": "future_only",
+        "result_id": "74d6cb2442d77bb83542da48491c0735ee02f832b730392d68d1296e30a93b3d",
+        "provenance": {
+          "key": "74d6cb2442d77bb83542da48491c0735ee02f832b730392d68d1296e30a93b3d",
+          "checkpoint_sha256": "8ab5a5789d29adb0a5217cf934448cd6338a9ff6a95eec0c67ec6fc960a21be9",
+          "manifest_sha256": "e36d2da7618680b6677e4f36ffb53c7fc86784b76717bf5d58f80a3d040bde78",
+          "split_sha256": "5ccda5a1499c01082c5223fbdb04d780f8cfb02da7146d5c50cc748ab32281de",
+          "predictions_sha256": "2ff3e0b13312d0e0fa71247af9459fab3ba7121625a0aaf8f948f51ab0b0acdd",
+          "annotation_sha256": "0048631f43aa45de9226f3e9cf2c7dc896a248a6a623b373c4e49a7517331724"
+        },
+        "source_sha256": {
+          "data/chunk-000/episode_000017.parquet": "f005fb8047bf087db7d2a8b50ebc4d509b7790431c3601dce617d5468dcb9565",
+          "videos/chunk-000/observation.images.cam0/episode_000017.mp4": "f6682812fb67288a63941d9972a2e969535605dd71ea00051c43bf939c31832f",
+          "videos/chunk-000/observation.images.cam1/episode_000017.mp4": "02effa97b6f673e1a38cde98f0af143bf48fd94d4b105168694d93a978c56c3f",
+          "videos/chunk-000/observation.images.cam2/episode_000017.mp4": "ac599190dded1035bbaf026864c4c0025b5b777024b478faec3bbcaa47cfbe48"
+        },
+        "frames": 2234,
+        "fps": 30.0,
+        "duration_s": 74.46666666666667,
+        "layout": "three letterboxed cameras + GT and selected heads + observation-aligned tracks",
+        "elapsed_s": 10.343199401977472,
+        "generated_at": 1794196212.5325954,
+        "video_sha256": "865c1d379b94c59eb47a0e65090744b55c34b14251cbe3c6fb5dec37f45e273b"
+      },
+      "download": "runs/tomato/local93_20261107/review_ui_acceptance_20261109_final/future_only.mp4"
+    },
+    "joint": {
+      "seconds": 0.20167039096122608,
+      "frames": 2234,
+      "metadata": {
+        "episode_id": "7ed8a2815bb81e0be7bb89f8",
+        "source_recording_id": "34a4b430af2c4fd6a1912ff03628ef3f",
+        "prediction_mode": "joint",
+        "result_id": "1cbe761d7d7b684bfa8fd1fd6311f1a47ee94bd1e5051c981d6318c7cf8267a1",
+        "provenance": {
+          "key": "1cbe761d7d7b684bfa8fd1fd6311f1a47ee94bd1e5051c981d6318c7cf8267a1",
+          "checkpoint_sha256": "9324cdb3287c407c259eafbc725ac3bc3d3df6d38646545e8435e0faa9ad03d9",
+          "manifest_sha256": "474301f37a8dd65d78fdde4624abacc4d0644a5401598121231198e969f11750",
+          "split_sha256": "5ccda5a1499c01082c5223fbdb04d780f8cfb02da7146d5c50cc748ab32281de",
+          "predictions_sha256": "f88df6121def39d21a053500d1685e74de5d5440e469b7b654b334eaff3eca26",
+          "annotation_sha256": "0048631f43aa45de9226f3e9cf2c7dc896a248a6a623b373c4e49a7517331724"
+        },
+        "source_sha256": {
+          "data/chunk-000/episode_000017.parquet": "f005fb8047bf087db7d2a8b50ebc4d509b7790431c3601dce617d5468dcb9565",
+          "videos/chunk-000/observation.images.cam0/episode_000017.mp4": "f6682812fb67288a63941d9972a2e969535605dd71ea00051c43bf939c31832f",
+          "videos/chunk-000/observation.images.cam1/episode_000017.mp4": "02effa97b6f673e1a38cde98f0af143bf48fd94d4b105168694d93a978c56c3f",
+          "videos/chunk-000/observation.images.cam2/episode_000017.mp4": "ac599190dded1035bbaf026864c4c0025b5b777024b478faec3bbcaa47cfbe48"
+        },
+        "frames": 2234,
+        "fps": 30.0,
+        "duration_s": 74.46666666666667,
+        "layout": "three letterboxed cameras + GT and selected heads + observation-aligned tracks",
+        "elapsed_s": 10.087225480994675,
+        "generated_at": 1794196223.269269,
+        "video_sha256": "e0d09e5d49e831d60ff8d04acf9d79c6ad00f7eae8c7debe18a1adfa313f4c6d"
+      },
+      "download": "runs/tomato/local93_20261107/review_ui_acceptance_20261109_final/joint.mp4"
+    }
+  },
+  "http": {
+    "None": {
+      "status": 200,
+      "content_range": null,
+      "length": "5834457"
+    },
+    "bytes=0-31": {
+      "status": 206,
+      "content_range": "bytes 0-31/5834457",
+      "length": "32"
+    },
+    "bytes=-16": {
+      "status": 206,
+      "content_range": "bytes 5834441-5834456/5834457",
+      "length": "16"
+    },
+    "bytes=99999999999-": {
+      "status": 416
+    },
+    "bytes=0-1,4-5": {
+      "status": 416
+    }
+  },
+  "browser": {
+    "7ed8a2815bb81e0be7bb89f8_future_only": {
+      "times": [
+        1.234999,
+        1.234999,
+        1.234999
+      ],
+      "frame_after_play": 69
+    },
+    "7ed8a2815bb81e0be7bb89f8_joint": {
+      "times": [
+        1.234999,
+        1.234999,
+        1.234999
+      ],
+      "frame_after_play": 69
+    },
+    "1df7c31ae9a58dc60d4e57d6_future_only": {
+      "times": [
+        1.234999,
+        1.234999,
+        1.234999
+      ],
+      "frame_after_play": 69
+    },
+    "1df7c31ae9a58dc60d4e57d6_joint": {
+      "times": [
+        1.234999,
+        1.234999,
+        1.234999
+      ],
+      "frame_after_play": 69
+    },
+    "errors": []
+  },
+  "fallback": {
+    "seconds": 0.20179233798990026,
+    "provenance": {
+      "feature_sha256": "65769badd5c1667f61c870a17c788a7b53b377b456fb23dd4ba0eb3816f91ab5",
+      "fingerprint": "771121af2e4991739f4b9adbad671a47aa654b848990426fb03e15933f85f461",
+      "device": "cpu",
+      "encoder_executed": false,
+      "key": "ce2d0f56bf57fbc95512f386f0dac1c1bca60ad96ca3c9b07a03fedc3dc7d907",
+      "checkpoint_sha256": "8ab5a5789d29adb0a5217cf934448cd6338a9ff6a95eec0c67ec6fc960a21be9",
+      "manifest_sha256": "e36d2da7618680b6677e4f36ffb53c7fc86784b76717bf5d58f80a3d040bde78",
+      "split_sha256": "5ccda5a1499c01082c5223fbdb04d780f8cfb02da7146d5c50cc748ab32281de",
+      "predictions_sha256": "2ff3e0b13312d0e0fa71247af9459fab3ba7121625a0aaf8f948f51ab0b0acdd",
+      "annotation_sha256": "36f0db13a36ce4fea0a4481e058a20ae066c7203934955037ba5d23a6335515f"
+    },
+    "anchors": 71
+  },
+  "protected_files": 321,
+  "originals_unchanged": true
+}
