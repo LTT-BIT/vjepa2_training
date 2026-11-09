@@ -101,6 +101,12 @@ def run():
 
 
 def write_html(out,data):
+    # Preserve the frozen catalogue and case IDs; exclusions affect only the UI/export.
+    policy=Path('configs/tomato_curated91_20261109/quality_exclusions.json')
+    data=dict(data)
+    if policy.exists():
+        excluded=ds.read_json(policy)
+        data['excluded_source_recording_ids']=[e['source_recording_id'] for e in excluded['excluded_episodes']]
     text=(Path(__file__).with_name('tomato_boundary_review_viewer.html')).read_text()
     embedded=json.dumps(data,ensure_ascii=False).replace('<','\\u003c')
     (out/'index.html').write_text(text.replace('__CASE_DATA__',embedded))
