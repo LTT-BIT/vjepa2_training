@@ -1,0 +1,13 @@
+{
+  "episode_id": "e80436dea962fa58288fd8f9",
+  "source_annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000004.json",
+  "frozen_revision": 1,
+  "actual_revision": 2,
+  "old_sha256": "ca93d3c93e66508fbddfadeda3954b6a1bf65d29b15d4b7328aac91544a99008",
+  "actual_sha256": "4b64e72b2f5274e1b747c9f8b133b27f77b341c45c5c786d57d156152ed9c373",
+  "feature_sha256": "e217c9a09a3fe445e0ae04001f717e2f29e4e8362a23c5be1c2e6b70224d969b",
+  "feature_identity_excludes_annotation": true,
+  "changed_hazard_target_rows": 6,
+  "time_head_uses_corrected_targets": true,
+  "original_classification_heads_unchanged": true
+}

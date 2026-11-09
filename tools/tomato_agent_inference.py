@@ -12,7 +12,8 @@ PROTOCOL = 'tomato-stage-prediction-v1'
 
 
 class TomatoAgent:
-    def __init__(self, checkpoint, pretrained_dir, device='cuda'):
+    transition_time_predictor = None
+    def __init__(self, checkpoint, pretrained_dir, device='cuda', transition_time_checkpoint=None):
         self.saved, self.head = independent.load_checkpoint(checkpoint, device=device)
         self.encoder, provenance = model.load_encoder(pretrained_dir, device, self.saved['contract']['seed'])
         if provenance != self.saved['pretrained']:
@@ -20,6 +21,10 @@ class TomatoAgent:
         self.model_version = ds.digest(checkpoint)
         self.joint_names = self.saved['joint_names']
         self.device = device
+        self.transition_time_predictor = None
+        if transition_time_checkpoint is not None:
+            from .tomato_time_inference import TransitionTimePredictor
+            self.transition_time_predictor = TransitionTimePredictor(transition_time_checkpoint,self.model_version,device)
 
     def predict(self, rgb, joints, joint_names, *, observation_id, session_id, timestamp, max_age_s=2.0):
         started = time.time()
@@ -48,5 +53,8 @@ class TomatoAgent:
             else:
                 z = value[0].astype(np.float64); p = np.exp(z - z.max()); p /= p.sum()
                 result[name + '_logits'] = z.tolist(); result[name + '_probabilities'] = p.tolist()
+        if self.transition_time_predictor is not None:
+            result = self.transition_time_predictor.augment(result,features)
+            result['result_timestamp'] = time.time()
         result['latency_ms'] = (result['result_timestamp'] - started) * 1000
         return result

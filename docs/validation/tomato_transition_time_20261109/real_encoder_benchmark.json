@@ -1,0 +1,43 @@
+{
+  "scope": "Measured this run: CPU ready RGB/joint arrays + host assembly/H2D + real frozen encoder + classification and optional time head + JSON response. Same recorded validation window repeatedly independently encoded; NOT fresh2/4Hz observation experiment. Excludes capture, video decode, network and robot.",
+  "measurements": {
+    "B0": {
+      "samples": 20,
+      "p50_ms": 66.7696524906205,
+      "p95_ms": 71.30501086066943,
+      "max_ms": 73.48333901609294
+    },
+    "B1_additive": {
+      "samples": 20,
+      "p50_ms": 67.99195750500076,
+      "p95_ms": 72.71905189845711,
+      "max_ms": 73.38564598467201
+    }
+  },
+  "encoder_forward_calls": 43,
+  "peak_gpu_allocated_bytes": 821481472,
+  "peak_gpu_reserved_bytes": 958398464,
+  "classification_logits_unchanged": true,
+  "transition_timestamps_matched": true,
+  "example_transition": {
+    "schema_version": "tomato-transition-time-v1",
+    "model_version": "9b7579ce22951c65d1189949631e3b9a0abf9279b61ac07ea052372dcef23176",
+    "input_timestamp": 1794215311.8756595,
+    "bin_upper_s": [
+      0.25,
+      0.5,
+      1.0,
+      1.5,
+      null
+    ],
+    "probabilities": [
+      3.013379910044023e-06,
+      9.558319788993686e-07,
+      1.2841658644902054e-05,
+      3.6961448586225742e-06,
+      0.9999794960021973
+    ],
+    "semantics": "next operation-class transition; final bin survival beyond1.5s"
+  },
+  "source_observation_sha256": "311ec616a7ef55727e0f7dc5564e8b392e2c0ca53b1f7713aaafb4acdcd6bb6a"
+}

@@ -1,0 +1,69 @@
+{
+  "config": {
+    "version": "tomato-transition-time-v1",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "bin_upper_s": [
+      0.25,
+      0.5,
+      1.0,
+      1.5
+    ],
+    "max_epochs": 100,
+    "patience": 15,
+    "batch_size": 128,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "internal_holdout_recordings": 10,
+    "thresholds": [
+      0.3,
+      0.5,
+      0.7
+    ],
+    "internal_split_seed": 20261109,
+    "normalization": "fit inner train for epoch selection; refit all retained74 train recordings for final fixed epoch training",
+    "selection": "Epoch by internal held-out censored NLL; B2 threshold by internal event recall subject to B0 rawFuture false/min cap, otherwise minimum false/min and retain B0",
+    "external_validation": "retained9 recordings,50 events,14 provisional truth boundary edits exactly matching frozen39/50 reference; false clip marks never create new events",
+    "current_future_heads": "reuse independently trained frozen heads, including their historical normalization and training-data provenance; not claimed clean retraining",
+    "test": "no test arrays, predictions or hyperparameter selection",
+    "B3": "only if B2 improves external event recall at no greater false/min across seeds; otherwise not run",
+    "remote_push": false
+  },
+  "input_hashes": {
+    "configs/tomato_time_transition_20261109/experiment.json": "37add3855bea7bcab553c57dc09e7c315a4f06d034ee05718e3a90a22ede1ab0",
+    "runs/tomato/campaign94_20261107/prepared/manifest.json": "0065e7c88efb97f8e85d72169aa49f24810d42983c03370f50e2f2b9b01b383c",
+    "runs/tomato/campaign94_20261107/prepared/feature_index.json": "272a5a43375ff4189ef023691a8b6b569556428716e58f18779e193023ddb9be",
+    "docs/validation/tomato_reviewed_boundaries_20261109/results.json": "5ad0deee489aa80d393da7653da3a5e0cf61dd266f5cb8720f86e0c4a41b5647",
+    "docs/validation/tomato_reviewed_boundaries_20261109/proposals.json": "bbe36e955f1f25bf4afc934095c89088bf897fa6872b42669b41cbd14ecfa708",
+    "configs/tomato_curated91_20261109/split.json": "473f6fdc1d605a80201dff13a0fc387d1632a107b9af825ad9377712f4b31a05"
+  },
+  "git_sha": "bc449a48ac1dd5a6f80e00b1e3102bcac3da066b",
+  "source_hashes": {
+    "/home/user/vjepa2_training/tools/train_tomato_transition_time.py": "41962c4302fc59518a5e7041ba629cb47ded485187fa48dab468ea320ca485df",
+    "tools/tomato_transition_time.py": "6c345b3bd752557c1ebc561f66331f8ba8939552eb75e4194b4cb97bf6c6f763"
+  },
+  "hardware": {
+    "pid": 3275232,
+    "seed": 42,
+    "device": "cuda",
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "tf32": false,
+    "cuda_initialized_before_first_setup": false,
+    "torch_version": "2.7.1+cu128",
+    "cuda_version": "12.8",
+    "random_generators": [
+      "python",
+      "numpy",
+      "torch",
+      "torch.cuda (manual_seed lazy seeds all devices)"
+    ],
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "bf16_supported": true
+  }
+}

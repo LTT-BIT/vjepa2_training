@@ -1,0 +1,847 @@
+{
+  "old_manifest_sha256": "0065e7c88efb97f8e85d72169aa49f24810d42983c03370f50e2f2b9b01b383c",
+  "feature_index_sha256": "272a5a43375ff4189ef023691a8b6b569556428716e58f18779e193023ddb9be",
+  "original_split_sha256": "00783ed7fbcc45ba8d160049f5a6764e8cec832977055b72ba4d4f8a01d3e0e0",
+  "approved_training_revision": [
+    {
+      "episode_id": "e80436dea962fa58288fd8f9",
+      "old": "ca93d3c93e66508fbddfadeda3954b6a1bf65d29b15d4b7328aac91544a99008",
+      "new": "4b64e72b2f5274e1b747c9f8b133b27f77b341c45c5c786d57d156152ed9c373",
+      "used_for_training": true
+    }
+  ],
+  "provisional_validation_proposals_sha256": "bbe36e955f1f25bf4afc934095c89088bf897fa6872b42669b41cbd14ecfa708",
+  "episodes": [
+    {
+      "episode_id": "0b509210e606316087c5ed7d",
+      "source_recording_id": "5c83746e032f4c70af823437b698f84c",
+      "split": "train",
+      "source_annotation_sha256": "867ea280b6271c35dd34aafb1e975f49f031f773717310f4d48b076f9c11e0a9",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/c9df8a815dfdd936e98d1afb832acb73f4dfe190a43d127919c2fec26475745b.npz",
+      "feature_sha256": "43f5e0e6c0785ed7affdc7f24fb66fbfd8517de376ecb8ce11ed84383544ee16",
+      "supervision_sha256": "1f281854fabd2edfda4d8417d1ee0efd63493f1eb1ba5822019f64856ac541be",
+      "windows": 511
+    },
+    {
+      "episode_id": "4b9725d5a798ea8ae1ea0e69",
+      "source_recording_id": "435fc6da99284d7ba15cf09193352c06",
+      "split": "train",
+      "source_annotation_sha256": "fd4410cd47e571c32e7b0cbbbabbec264a7d54fdda709528eb95d964337d6e45",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/b7fcca2f93abba0e3169c6686547df6b4851d53bfafa53d61aa82808b175a0d7.npz",
+      "feature_sha256": "606bbe530cefdb424fc21ffd1d006c69f9a66b87b35968f57f89feb3ee6018c6",
+      "supervision_sha256": "4ae63aa5513d5d651dfb778c4f5bb9332f4ed063dfdbb10c14edbc2420f37f26",
+      "windows": 303
+    },
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "split": "val",
+      "source_annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/82b3cfa1070e6283fbcf2c7f1ef3a5132fb90d407bc1017255e29211e83f7fac.npz",
+      "feature_sha256": "d84136c842e3322e33a094242ead55c7fbd24c599474b91a70a600be297e3974",
+      "supervision_sha256": "7a9a8cbafaee4197dc4584366c7ed76bbfeacdacbe54b0ed65c1bc0db3610012",
+      "windows": 268
+    },
+    {
+      "episode_id": "8ade504fe3d1e43060e7ed6f",
+      "source_recording_id": "e826c474e80547d5a3b24e5eb0f30977",
+      "split": "train",
+      "source_annotation_sha256": "79889b12cebdd0e7c0f1e379e1e0f3dea4d2c90482bb355f641818c0470d97fc",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/da4e3e6636fb963b8f608c27f9db278cc1d220dacb5631e12f43aae577a9d224.npz",
+      "feature_sha256": "2b01555c4c8d2ebcfc941c44baa87836c58f1596c7cf07277f97b2f06bb43171",
+      "supervision_sha256": "e107c3103fc5bc6c99a42ed20d5955822bb0909b685bd4e0394b98a209e2fc0d",
+      "windows": 357
+    },
+    {
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+      "split": "val",
+      "source_annotation_sha256": "88f06ef9f62f5626b7f518c87da5e3960f1ab346c8ce34ae75068577eed64cba",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/1d7d137d7b324d3019ac721a046e3adfa2098e23acd9c9a0bd5df3b2e9b45184.npz",
+      "feature_sha256": "19cf3fdc80d797d9f3080f015eecb42dc84a6369edeb82e6e70ad07cac34ace9",
+      "supervision_sha256": "f978e366e1b686fe40f155e0558f4ed58116d07236d1aacf3406724e365ac313",
+      "windows": 350
+    },
+    {
+      "episode_id": "085f066dd8fed481bc79db0e",
+      "source_recording_id": "f53005fcd0124474963cf8a0f48a75eb",
+      "split": "train",
+      "source_annotation_sha256": "ef20e39f460cdb2600c1c341e587b60e46a51ff1e8606036ff38ef81cab76e05",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/a3f46dc355ba127a48799773209a773d6341214666c6cdb049dbc407b3549fb1.npz",
+      "feature_sha256": "3272253d910a163b6aa14b48921dffd093c882d6396003d0829e7c23d6a3a512",
+      "supervision_sha256": "fdde1bc47354d4b2e0d245371e620e519a3524aed9138f6049335402ec26e5a7",
+      "windows": 334
+    },
+    {
+      "episode_id": "9c9c0e8ab7577ddfda0e3b7c",
+      "source_recording_id": "b0e4b49bfa1641beb783ec4a2e4e66ee",
+      "split": "train",
+      "source_annotation_sha256": "56651613b485ccfa9fb635d0190fa43ec3b9fd1679bc5990294b9cd7b0740b84",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/35c84a66383011837cc3a0f33b03a7428b8a0ee42ae1e2d87f946a3574381707.npz",
+      "feature_sha256": "8e23b5c33db48e8dd77c3e57436260906af8649303b4a2e07e59c4b43a2604d9",
+      "supervision_sha256": "026952a8fa64d80c2ea5158df727bb33b143b721f414f5a923f18ab18290cccc",
+      "windows": 352
+    },
+    {
+      "episode_id": "d07358493ee75a94905924f0",
+      "source_recording_id": "6b8eb1ba3f3843e2b952e7a2228dedd1",
+      "split": "train",
+      "source_annotation_sha256": "6463fc3088b322a73d79e5f95b4f6aee1d377f1cae4fa6b09f23fb29f908ebf8",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/4f741a529c742b09befce64a2e1196d068a95b6636b27f4b6b307a01ffd6001c.npz",
+      "feature_sha256": "c74c0fa9ce9404e3d66bf286d5890c263b53ce68e83731047a17a5eedf55a95a",
+      "supervision_sha256": "b423cafbe5979198b40e5235bd0ad5055616a410fcf93b49f8cc3bcd58213d4e",
+      "windows": 387
+    },
+    {
+      "episode_id": "103a8a84aaf072aa2fe0b703",
+      "source_recording_id": "582a9d90ba1246fb948a32cba6a70ab3",
+      "split": "train",
+      "source_annotation_sha256": "3be8c48f01790cc0dc4727fa25105db6aeeffa763104954cef7d9d957f45b166",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/291bcf3c8e3a6804a494288534780827d130475f6d4bf5b30eee45af57bfa1fb.npz",
+      "feature_sha256": "115112cfc8c010441b02ee6e464339696ac5b1f414dcb597cdc8f5eaa837e6cd",
+      "supervision_sha256": "a50175edf399c2c9b2810ef921b4177a54a2cf47ac41ac9de4475560469682c7",
+      "windows": 449
+    },
+    {
+      "episode_id": "d1bea10cbee2dcf0a031297f",
+      "source_recording_id": "0c4d5c84112d4f1f993877f6b854eaa0",
+      "split": "train",
+      "source_annotation_sha256": "a31bc56d0f3849d6337d6fad77221e7ecefb5dd824ed99958c812ff8fe89453a",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/759d38c80ad38c11599e79006f466d9efde8fda6ff59d2a1f5593e034a34b5e2.npz",
+      "feature_sha256": "8aa86d367de99f65e0d785337e146f2310861140c2e22c505c0c7a3be83c321a",
+      "supervision_sha256": "592380395171d286a8705638c4b9babb9bc7e31f94390d7634f4db8016da5840",
+      "windows": 296
+    },
+    {
+      "episode_id": "f6b755a9ea4607d8c2cc21d7",
+      "source_recording_id": "f36134a910264a68b3ebc3be473d2e15",
+      "split": "train",
+      "source_annotation_sha256": "4be87ead383bfe0232e9015e8fe5b87d952df4cec713e947466d28db30e931dd",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/b17ffc506a243d867a78f4880d98e6fa84f64dbad25706f0c5154c9afbcc638d.npz",
+      "feature_sha256": "c1465ba8315fde47aeeb5993982563b69d381d442f97c649884b53c6af179d62",
+      "supervision_sha256": "226c984fb99d125ba74468304529b86894d575afa0460e7b5219c6c54e7f8bd6",
+      "windows": 307
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "split": "val",
+      "source_annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/9cd721158256cb5475494c59b2301d6e2c67d31a08e247c4bcd32a3a74576c79.npz",
+      "feature_sha256": "3648d97f2915ecd39302319dd1e6e6bd0b9b181297d4c9ec4d47c6db8d1f4f32",
+      "supervision_sha256": "4789294ccef38e408a3d9d413f55cb6df2214cb8d6a87a88850c071486a63eee",
+      "windows": 361
+    },
+    {
+      "episode_id": "344622e0733da880525eec9b",
+      "source_recording_id": "b8b78d4a14144ab1b441a100b880929a",
+      "split": "train",
+      "source_annotation_sha256": "0e57db58ad60790e3d5ec1db443c4ec1be9868d0876e2f59f557bfa12ee75acb",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/cf18bc8a17ddf7588220c3e6798eca2f50db1382009a28393f108ddce7cc4b6a.npz",
+      "feature_sha256": "ddf49b2ddf40d336cac9b9eb79472a39fac17f70b015d5ba764781efcfbfbcf2",
+      "supervision_sha256": "7da6a4265191ac8827736c7293629dbb422fe9f9f7701bf469bf221b1d6e371c",
+      "windows": 314
+    },
+    {
+      "episode_id": "ff4170cf447a7d7367a9cf4e",
+      "source_recording_id": "8b6950279df34fe898952c53644aa458",
+      "split": "train",
+      "source_annotation_sha256": "3b079c25bc087d9471d063ecaa9e3f8f45d3e6cd497d5a48eb6ae7beb0846bde",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/3593c8bda674aa4f88b0a8a16d3e80359413d30ee9af366d4fdd844bcce23b02.npz",
+      "feature_sha256": "cd44801e3d8b77c70f2f30c919922689e7640f2e8026078ba63bbaa1509c6a59",
+      "supervision_sha256": "3481a3e46bd00d1b6b88181afe2e393e7b886020a2bfd183a5656dca00f5121a",
+      "windows": 363
+    },
+    {
+      "episode_id": "d72a1dc017f3ae8ed1a433e1",
+      "source_recording_id": "b200c493aea6474fbdc4e114a9650bd3",
+      "split": "train",
+      "source_annotation_sha256": "c7e2eee01cd5bbd27381bb6a1edef298bce68a6ab8d0d98436a6c7e2b53c235c",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/9686a84ff652dc1430ed1efd9e9d6704b1a19867c4703a7d37be58c7b652a70d.npz",
+      "feature_sha256": "5a537df6756186dc6c1b0b8a72259c223cd44cdde0e1fc4d00271a68f1776897",
+      "supervision_sha256": "b0527c7b75783dfc62a160e3c3df7755b4d2c4bd8ac06faf52d5c64da8489f23",
+      "windows": 343
+    },
+    {
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+      "split": "val",
+      "source_annotation_sha256": "64b6044cceda07ad70f19899f39910de4ba1324550b3a5aa1ec18d493ffb3ac7",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/f8b2b46d67bf652f9e3d19ccade79be2d737ecd4a0924d72a8256834225dfd38.npz",
+      "feature_sha256": "5a09bcd482531f83b6b799c169c67e953031f6c7fbc4ac7838425c0fbf255110",
+      "supervision_sha256": "cfc3fab3c9835dde3134426708e0934163ec1cbeeba9fd2e81349a448b39c370",
+      "windows": 286
+    },
+    {
+      "episode_id": "2949e71f692973e6db8b3af8",
+      "source_recording_id": "7f2b191c99d14bf1834641e867dfa66e",
+      "split": "train",
+      "source_annotation_sha256": "a34a49a89c91a3eba3d6cdcd48f984b102a3fdf780621a5599f2c26c2a14724f",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/f1acd07bc25d1150359a98742a094d42a8764a9b8884000d9e7b70ec63379e58.npz",
+      "feature_sha256": "ad8658b0640c008e49614bf877e3c6ef5f287e2d0ebc201e5a840863b30a1b7e",
+      "supervision_sha256": "40f63f9a993168ac61fff8aa78a8f361313aa2a8992a210f26a12b8fa270291d",
+      "windows": 301
+    },
+    {
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+      "split": "val",
+      "source_annotation_sha256": "ece74cd377bfa49fd37c358efdb3900cae8f7ec5844859aadea3466b450f7564",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/9d881ec791c1d68b2ffc253efc29710e6bf663167f4dd781aaef218ee1f27515.npz",
+      "feature_sha256": "f0c641ba5b0185a1a4718db6b25e77d56f82aeb2709f4e6ca28788773b1cd41d",
+      "supervision_sha256": "487de705f4262bd87ebae6c49bab31c058bf401243f966fb21fb8eee5a1523e6",
+      "windows": 281
+    },
+    {
+      "episode_id": "3f1099b1a9f1e73f50cc8e69",
+      "source_recording_id": "d673201bbf804640a75110175bbe0b45",
+      "split": "train",
+      "source_annotation_sha256": "3fe015a4dd8ddc9114894c5ae174030d373cad832717a6d164fe7b4c8e1224de",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/89e646056e4cfbcb08d2ebdf6ab01953fa67b8f39fdae01f82806f8ff5d7f03e.npz",
+      "feature_sha256": "36ebfcd85b0fbd37c9de8f880ce796ac26a93c4ca46a9feedc0b92abc4da9063",
+      "supervision_sha256": "673bd280cb06aab05620c8ca41807052a26ed0ea48f99afe2fd286b024a65ce4",
+      "windows": 258
+    },
+    {
+      "episode_id": "d181578c7dec775708be158e",
+      "source_recording_id": "e2772eb099e84674a0b6f46f3a89db22",
+      "split": "train",
+      "source_annotation_sha256": "86de7c09e8ef4f59bca4346c9cae924ab21c754a47fa036c775f1a734b3f4770",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/a3cf2b3dbb755a1dda90548caaad13bae35aa3887e6a7c7f849c46fb48ac4854.npz",
+      "feature_sha256": "b1832cfea1e2016382e20a0935420e0d42741631358d2cb488cc11a99b8d6b2b",
+      "supervision_sha256": "f6fe7476484605ab37c1e994cefd35e8a0a3eaca5bd2038735043500f02a7b33",
+      "windows": 257
+    },
+    {
+      "episode_id": "7eb896d2ddfc03a18e8b6cdb",
+      "source_recording_id": "eb03aa84529944808c05efa24179f45f",
+      "split": "train",
+      "source_annotation_sha256": "91d340965ee30b8c5c65d77664840e4f830f789c768a0a6df32f50568437fcfe",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/f5c7b97b3a683eba4cc3482b12a553e48ed1dcc128a85de8151e7db494f5cecb.npz",
+      "feature_sha256": "a496dc7ca516669e9d7e212be06e15c8cda0eafc34ec4f37f511e61dff1f56bb",
+      "supervision_sha256": "4daaa820467c43268bc8834a5fd3ebd6bcff20219238cb375989433d95250f9c",
+      "windows": 405
+    },
+    {
+      "episode_id": "c88604cfdfe181263bb04bd9",
+      "source_recording_id": "5d8ad555472e4581a1768e9c27eb03e2",
+      "split": "train",
+      "source_annotation_sha256": "93c7fdd56ea7ad279b9065a94c1e8bc4e820df117be27d2c302176998c7bb4f9",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/84d0d1efc6c7d65693a567ca0b4f16e639428d8ab0dd8f34877844c71c06dc4f.npz",
+      "feature_sha256": "2c3047048aa9ab8a5cffabd634d5e9fbf4f06b5733038a8a6d3f67496ef44944",
+      "supervision_sha256": "092ef5ab79927af9a4fcc58e8f5ac69f7740fb36dc9285c31391a07ffebb2a61",
+      "windows": 321
+    },
+    {
+      "episode_id": "7d3563e229737ee222cdea43",
+      "source_recording_id": "15cf727eaed2406fb2ea6dc7fd4e52e9",
+      "split": "train",
+      "source_annotation_sha256": "983bc4fa53e9832252e12443ebf4ad4e26f6bcdee035fd7b17f92c8f80e98238",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/79746bad1b569a3ca4b7d3c20fe9521ada7aa606037c85247094416cbeacd390.npz",
+      "feature_sha256": "37c2a0c5827cde1bdc819adeb6cf8ec536a7bf7ec6b3f3939e27d9c05093203f",
+      "supervision_sha256": "62bf0d84fdfa6d4a3fa9c4043a50c0b6e09653682f7cc799f7e0563b704605fc",
+      "windows": 295
+    },
+    {
+      "episode_id": "63242061de4993d281f7e41f",
+      "source_recording_id": "e33257a2421b4f03b0d786ed7bda4699",
+      "split": "train",
+      "source_annotation_sha256": "3b58b2988d33401d9c7d91dd24284e9a8c84566f675dcc24acea5053ae4d7147",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/f46680e7002728d8c0f51b80de682e4b5551ace6d99d6d5107d33bdb1c163f90.npz",
+      "feature_sha256": "82fc0075c1eea68821a416bb10bff5f1d3570b56e6b054f986d9ae9e4f996aba",
+      "supervision_sha256": "30f0d92f5e90b65eae1bf087dabc079d12e95a7eb9de3b8cbfdc66c1a3b6d22d",
+      "windows": 333
+    },
+    {
+      "episode_id": "67e1ef837772900ad398f54a",
+      "source_recording_id": "f6e25ffdb2744acf95fc92f22815f319",
+      "split": "train",
+      "source_annotation_sha256": "48a655a2debc043c9bf2df9c4eceaf59b7844ac697d493f59ae36aaae7727103",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/c40987cbe074cfcd72baccac8b4ede0bc0984844a6a504d7e0bbdcdcf0203b35.npz",
+      "feature_sha256": "ced459cb21988eb51e8813d174a45807781421293c33e64c5e6835eb4b1617ce",
+      "supervision_sha256": "680925917ee158a8bfb556b782dffb4f19586821be2f7abb15ed0ba3ab8eacdb",
+      "windows": 263
+    },
+    {
+      "episode_id": "ed68fecbe1e0ad9233f0b7e3",
+      "source_recording_id": "19e729d039fc41c587f597f857099965",
+      "split": "train",
+      "source_annotation_sha256": "d6c3816e85b904090bdef0820c5f13a4f67ca50d2e1d2ae92009e56c7b4b1148",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/c7dc694e340faa23985aa95293107e9a604f4ee0ba5e864d282d39865d56987e.npz",
+      "feature_sha256": "97373348b2c5d3254f5c292d9d3ba2be0bb0dd084358277e4d730594b7e2fea1",
+      "supervision_sha256": "1181dc2b2fccaf4275c1c0fd99d1a66c9d6cc736b2b60b77276808404d15073f",
+      "windows": 327
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "split": "val",
+      "source_annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/edd91a406b833004b694fb57d317659bfff0912b61c9f39dbdfc163f1f2bf1d0.npz",
+      "feature_sha256": "4e7df0e70f77f81e63660c5dc9596ff4897a82cd22fc256d6540ccaba4dcf1e3",
+      "supervision_sha256": "d400205f197f04b0479d26b24a10c82828fa9bf3f9829f46e45c78cb6e5fbe20",
+      "windows": 359
+    },
+    {
+      "episode_id": "9f21d91289b732800d9e8659",
+      "source_recording_id": "f0911f9ed7414ad3853ccdbc25e8078b",
+      "split": "train",
+      "source_annotation_sha256": "938dad68eb384d06159713e95263058e3f99e4443d64527962a67b44763d8fb5",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/cd606f35afad8ee4534ed7704eaa0d5ed3ed375bb32f98f6816a9ff8cc7622e8.npz",
+      "feature_sha256": "fba70c884d7db20d9572994fa5d224a32b65a8b3a6cdcb1651f5a23c8f42fb5e",
+      "supervision_sha256": "de797d42cf46d56607f3e511d6d5cdc10f62b781f6e0be3e4a608d3493895a5d",
+      "windows": 273
+    },
+    {
+      "episode_id": "de33521b3d36212c2f4fc651",
+      "source_recording_id": "2256d59c5b8d4dbba5bb13f06bde7e00",
+      "split": "train",
+      "source_annotation_sha256": "e865dfde263b63c062ebddcd3d3eb44208de3bd8f7d89df589a7e887ae9218f3",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/f3f2b6730646ffc0381b4f55f426f72d0e40f5720b5d9332b79dd997610ad702.npz",
+      "feature_sha256": "afcb1cced6edc904c2c56bf719db4fb39866c74a64880043f420f30c4d885417",
+      "supervision_sha256": "7b1ca694420648166c93dfc1597e103668325c375bd5129ac9554f43041511cd",
+      "windows": 449
+    },
+    {
+      "episode_id": "dbe7c3fd1f63c53dd300df07",
+      "source_recording_id": "d7c0fe71a6ce4330a65beaf26c41c820",
+      "split": "train",
+      "source_annotation_sha256": "77417f250eaa0d9c5922072373478002fe3f38a45a84100b089704962a916a4e",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/7fc309c597d34a8c6b23906b8770209315accdb73534194b8e5bb92d420934d5.npz",
+      "feature_sha256": "15fceed4bdead9453e6cac557b1bcbd7a9c112b3dd6f54eb7a462a825653f85d",
+      "supervision_sha256": "2753a9c6c0986b6d1bfa64e40f26b4ae9e92d93dfdd2079f2fe03888706a5c43",
+      "windows": 280
+    },
+    {
+      "episode_id": "b1455b4921f8a1c35562c08c",
+      "source_recording_id": "1ae08349f74447428c83b42863ddd33e",
+      "split": "train",
+      "source_annotation_sha256": "b1944bffaf9ec0c2099c51be15b1d54bbff33b42ac6bf893e0a417cb775018af",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/405b60cbd3ff31c14bd54773e96cc7dc1137f383e8451f824112b30c0bb94eff.npz",
+      "feature_sha256": "36572113b61ba638093598bf308d41cb53d81a2c21c634e1dbb84f75899c9751",
+      "supervision_sha256": "ffd8addf1e2f60a82ea6b61e988799801699bc301913f7eb0260f866a9360aa3",
+      "windows": 301
+    },
+    {
+      "episode_id": "b8fe452a236b169213200aa2",
+      "source_recording_id": "7e7664e1f87f46c79c74a49b7ac7e531",
+      "split": "train",
+      "source_annotation_sha256": "abce9a4709160448f4ca34f93c84bd98176b985f3adf3f2c48f0d01e783b66c2",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/9a96d08a558fa153fad5cbff385d938e8f748b18fece9a4b6f1b9bb9762832b0.npz",
+      "feature_sha256": "f13aa5004c764b6d75399d4eac393bbc8b51e728bb045ff569f6980383a981b3",
+      "supervision_sha256": "4b5db556a11d5a83de58c14ad552fbc8ed1dbc93cf1ba7f17bacda595c2932f6",
+      "windows": 264
+    },
+    {
+      "episode_id": "8432adc20e1292edecedeb42",
+      "source_recording_id": "e5b435cf5e6442a2bfb0046bc163bb6a",
+      "split": "train",
+      "source_annotation_sha256": "fa2e622f951deb0db932be21c0821447b2e99bcfd5a74a5a39de1f6bc15baa3e",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/0d6aa5c445ef7f06277d842466ec0fbdd365af7b85cfaa6a91b4a7d1a1a80fe6.npz",
+      "feature_sha256": "b2f7175d7410731c7a5f0ad9e2efbde2da1ed442176a0d800208a2a89c8fcfc6",
+      "supervision_sha256": "0fd4990116c3ea4b5c6da4e9c2f88f20b1620a817c04b5e65b1cfd28d7541747",
+      "windows": 239
+    },
+    {
+      "episode_id": "4c9ff33b07c0820e6aba1e54",
+      "source_recording_id": "40d26db9982f4d508076f5686d38d664",
+      "split": "train",
+      "source_annotation_sha256": "20c33358f75cf9ee0029650922f8c22ee531a767a7e54ba3404bc1cb2b4a6947",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/958eeae3be8be5e2141ba16e3fdd49629ffb5b62eb7c136a0aaa70494d484fbc.npz",
+      "feature_sha256": "8ab54ec8e0ca857f00f93c8abeaf8b832d227579a4b0a6f39f13f3acb69eaf4a",
+      "supervision_sha256": "475bf5be5539b44df7a5d5fa50c552f11888453a30e73aab5f02cd079c5cff55",
+      "windows": 362
+    },
+    {
+      "episode_id": "9b6a525ea6d7921f8c103e91",
+      "source_recording_id": "5215e4140cd046888b4a2d0188bba720",
+      "split": "train",
+      "source_annotation_sha256": "cf2d8d1de96e2ad7ae803de1f0d6603236b64d70ac35e979472facf07b262210",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/d1d30986fffbac3b6c078e2be5543aa7ac42f6ae1abc15b013e7540d3bd71433.npz",
+      "feature_sha256": "7b1431d34596884f26d59fc8d2c5f371f934f26ca6898581bc8ce2ff70701243",
+      "supervision_sha256": "b4ff9880e059f2009cd419f519bd7a85ab528483b39637536954d04608e08611",
+      "windows": 189
+    },
+    {
+      "episode_id": "1d4c5ee4582ce6410382e380",
+      "source_recording_id": "477ba193a59d4309bce161ecb82f0a23",
+      "split": "train",
+      "source_annotation_sha256": "5d6229d73eac4316ec6cd1c60c046615be3e6e7a2e0f21f8be2ff7d32fae8f1b",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/12012b3e94adea808553e34d81ac1ec7eefa505cc6da80cbd887b9e253af1fc2.npz",
+      "feature_sha256": "9f6e8fef036f30a18738eea0dfca5d36e6b2f5234e48e7e1d31553108f3fe481",
+      "supervision_sha256": "4fc72dda3dc97387b219ff66ea91ce963693cec986d8514bbd0b240f847a6ec6",
+      "windows": 272
+    },
+    {
+      "episode_id": "a39c9672d4e8a8ae72caed2a",
+      "source_recording_id": "2903463c46534789a1d5c1cf4b8ad455",
+      "split": "train",
+      "source_annotation_sha256": "7f5854e0a9149eab4b26ad196b1fefdaa3845d47e5f223eb911a7196e0bcbd42",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/2503461ebb26dc64c6813261fc10b2647724a15fb34ad85126d5f7eef8db2a9d.npz",
+      "feature_sha256": "1fdce3879765010b8dd19dca36433b78bd64b29453e55ad01bb1713cff631be5",
+      "supervision_sha256": "938cf6c5b1aca90a1aca13f56e97e6f7954fbf849ec376d90812aaec4df97eb4",
+      "windows": 315
+    },
+    {
+      "episode_id": "15820aaaae4a64d0e4580be9",
+      "source_recording_id": "34a4b430af2c4fd6a1912ff03628ef3f",
+      "split": "train",
+      "source_annotation_sha256": "5a9af87380ef119020c89268f49da9f4f865664429614f81fde591aac2561987",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/44434efbb7bfddb09e7ad85cdde98bae3b5c640431888041bf935673887ab3f6.npz",
+      "feature_sha256": "506fff6bd3e0a4ea6558fb4c1c4aca40ee9d0f7cf45b86bf99a322afd901fc23",
+      "supervision_sha256": "634c5100879b119b85b99eacea2608def6f371375f72c504d6b397b83a1ce154",
+      "windows": 149
+    },
+    {
+      "episode_id": "cee68551ce98f618fba875f7",
+      "source_recording_id": "32f9ed66d86b4ade8d669406e5d8fe20",
+      "split": "train",
+      "source_annotation_sha256": "fbf4e9d4d041eac8f2e1afac501418121d4014be0c609ef9c417f02109c1b4e5",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/514a0529a79587a99d94a2cd02cab8230411cf66e125dfb9d801ce8fb49cecec.npz",
+      "feature_sha256": "9ff6b803aa74f4880ff9958f3ceaccdb467c43f06b5dbeda3f2242f1bdaa2da6",
+      "supervision_sha256": "178dc79ca0cdb4e9459812a790cf3018a41740e455ffa55ac898a17b7fa4ed4a",
+      "windows": 233
+    },
+    {
+      "episode_id": "073a1eb5be5d51450840a443",
+      "source_recording_id": "c4735706f30843569cc2693c5802fae4",
+      "split": "train",
+      "source_annotation_sha256": "d99a88d9023e299f03be31f5ec3d0aeea4bdf12dcbee824fc03c56fc15e358df",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/b00b70101a75cb0a23988feff34a9967098d30770d5c43f06c725672e5a4a42d.npz",
+      "feature_sha256": "5d93142a0c96f001db597bb8107b747a15a11b5f0756251e33866bd64d67a337",
+      "supervision_sha256": "bc94fe17aef504ac4aa51bf7ff480c32fd974cc8c2d92494ca5394c9eec9961f",
+      "windows": 202
+    },
+    {
+      "episode_id": "97c75a6f3542d9376afe601c",
+      "source_recording_id": "26e5fdf1f6fc4f36b56aaeeb12164385",
+      "split": "train",
+      "source_annotation_sha256": "a6f416ba483770d41e9b195cbc0c4a3ea8db8cc0b797dcdf2ce4bb6c42a53acb",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/aa4e0996ea3af8ab0e86d24054c44db87380b0b5b22dfb2d689933fdab4cb93b.npz",
+      "feature_sha256": "83bf5c0981b0733bbfe4a244f8bc85e107b4a3a7d4b74048632e8f206458e6d3",
+      "supervision_sha256": "b369b3f1a6c74131ad8f8cb9140ab70810a0afc948f7c7f24995036e34fbe207",
+      "windows": 253
+    },
+    {
+      "episode_id": "230e8c6ed49b9b37c8acce18",
+      "source_recording_id": "bc59ee7fef2848b9bfc7197815bdffc7",
+      "split": "train",
+      "source_annotation_sha256": "b3b70265acc6604e290df93f33903713f579eb88ef31c47b448048bedcd73860",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/d235c4a6875089cb832b92e3bb6c51a8c487db8c20163f118472f6ce60aa5554.npz",
+      "feature_sha256": "b124ae2ae836fcea3b32ce885edb2c187be566fb2697eb4161683e5bb5f0bd03",
+      "supervision_sha256": "97ed5f290489d9277823b0a15e1badc8f14d33050266e1f2dc3b739ca0396394",
+      "windows": 173
+    },
+    {
+      "episode_id": "b2eca7ff88a204b94a54f9ad",
+      "source_recording_id": "db91f18699b244b2a14687f538c00340",
+      "split": "train",
+      "source_annotation_sha256": "1563fd77bd863e3618a02067e5a85fb5cdc2cde784e54b0cb3005137040d72ef",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/4c397d34da74d027c3c4b2179d53ed1d60005561a4b9f254e50f5fb0c7f2e979.npz",
+      "feature_sha256": "8852a2928835aa988b704c1c30666d528c46682a75c92e0708dd3ef8af8f09fb",
+      "supervision_sha256": "3d1fb9759458cab1ebc1bbdd5b46ae8e01a1141a03629a769b53146fc04f5cf3",
+      "windows": 213
+    },
+    {
+      "episode_id": "b511575e467a89f83439d27b",
+      "source_recording_id": "a2d3cd24f74e4ec1ba30f1a6abc81193",
+      "split": "train",
+      "source_annotation_sha256": "a358c13a2dc88127ea14219387c0b6b3626d3fc5fce2815ff8d96863cc6c422d",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/97b2bd7efd8b56325ac7ec1968d16fe318f7ad96a0c78d47cafa5b218363b090.npz",
+      "feature_sha256": "17952f2db7010ce60a30b03045240ec34a14d982bff4a75b946e8651659d33e7",
+      "supervision_sha256": "0abb695d418472dfdfefbc00692218b4cf00a716662f2c3c31fd88903e3ac0ce",
+      "windows": 256
+    },
+    {
+      "episode_id": "b061c777f9dffefec63764ad",
+      "source_recording_id": "f4b8c842064840e1af56f7f5fe749345",
+      "split": "train",
+      "source_annotation_sha256": "a50a863707588e338cc64736203b63dab106b23d39057d2663c9c501ae9926ad",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/504285cd3e67629adc9daa7bcac966953e76f3caa1f22bc6b11b9a808e032bff.npz",
+      "feature_sha256": "ec02972e7a99ed1722ba4f712222f7758274c25d4cbb08061b85e3033e6ba83f",
+      "supervision_sha256": "91da0cc74ef80d974a754e9e346342cdc8519323a7db5bbf5b25ca7630eca3d5",
+      "windows": 156
+    },
+    {
+      "episode_id": "e2152a831799c3d337126635",
+      "source_recording_id": "0d9d11aa369a49d7879f1bb5d911fc96",
+      "split": "train",
+      "source_annotation_sha256": "7ebd56f9c352218298eafd0ddac72d42b2334edf11e975ceca0845db7029a550",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/ae9ad2b909ae88c374fa10499b2c1791b4750a430ae808b6f4b3c56937431629.npz",
+      "feature_sha256": "c369938dbc2661022383fb131d1916abef0624cbc5c7ad954b2bf6f3ffc6caa2",
+      "supervision_sha256": "f44e6798ca72dca5364c3d51d1f08269fc8d9bcf1527095f098e69de4452ef4e",
+      "windows": 215
+    },
+    {
+      "episode_id": "d389af5083c2be3171413850",
+      "source_recording_id": "3e6465da9c424af6aa3d5bbe5fca25a0",
+      "split": "train",
+      "source_annotation_sha256": "53f9bc220ac85d156274a5121ad0cd02d26020526961c09517884082204c1972",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/cd91c96e5597edbb8f5a072643c676f9b3e5a42b14a13b25c51a469529bc25df.npz",
+      "feature_sha256": "57e0e7ae8ce5844aa9a47ed994b77a4d45662c675070038e33a6e26b63287932",
+      "supervision_sha256": "a68766f1aed12e8cdbb8dc55685d3266585d5fa0694cbbdb316c2e6c2adf17b1",
+      "windows": 223
+    },
+    {
+      "episode_id": "ca784332e44d979f99018a52",
+      "source_recording_id": "ef866ed4c8f949d7b1a7d7fb3ef8ffbb",
+      "split": "val",
+      "source_annotation_sha256": "6fef8f7f39d831c75addd22beae48525c8429675d4240989c7b74f052b1badcd",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/771121af2e4991739f4b9adbad671a47aa654b848990426fb03e15933f85f461.npz",
+      "feature_sha256": "4539ed6ddc2a6e870d7ebdb27bde233c50f4084523a642d6286237ba17ec0e01",
+      "supervision_sha256": "9c5891555eadffa6bf240f3ba11c6a0dcbed2ea843c7b2c812458c5cc78d81ef",
+      "windows": 71
+    },
+    {
+      "episode_id": "e1ec4ab1d4f49e5af9ceeecc",
+      "source_recording_id": "08145c5d72af443dad2b3c80c3541b49",
+      "split": "train",
+      "source_annotation_sha256": "0d3d686bc8b3e66f016ed2df1360916e76b2a993b076ddf0f17bba0a18dc9348",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/3958223ce7cb9af36439decd15acf547ff1fbfa26cc86f231f7d5ba3e289d72f.npz",
+      "feature_sha256": "cc7bb88d77eedc9bc085736a92ff53f24fae2cd5da17b2f5769bbbe426397c51",
+      "supervision_sha256": "561134a6274ba2fdc61fb2a54ab1e89c145066bc9ee4f8c3040ebb464d871336",
+      "windows": 257
+    },
+    {
+      "episode_id": "fd6dfb44c2138b3055a6d6c1",
+      "source_recording_id": "6a3a33cde77a47aea4f3d4c0e3882c56",
+      "split": "train",
+      "source_annotation_sha256": "979b8e5ffc1e5bde9ec6523176b64e38eed21255f0f7bfe3d8f6e859513b0ea5",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/c612eed5a13d5ed4efb1b5979303a0727c6a96fd003e643676a162a08b9c486a.npz",
+      "feature_sha256": "866c8b319a726343135c3f7a6ef875c5fc0ea5b17d155ae5fca06b7d97f83e8d",
+      "supervision_sha256": "df0abf5470100285d1745d7f49454dfbaa32d2109f0b6a833f2531e746820d9b",
+      "windows": 244
+    },
+    {
+      "episode_id": "06bd3a309be22e14f6be9f6f",
+      "source_recording_id": "45954bb22f4149f496592e7c4c377e52",
+      "split": "train",
+      "source_annotation_sha256": "393e42b342a18127a5c5e833be69649cd6fbdc3155aabe7622cd77e4e7b0d845",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/c83b0673e7e761712489f42924173d8bbf225be6c025c50f90d3e9a2d5e80e9e.npz",
+      "feature_sha256": "33475ba7041a7fa93c9f3aa06f1cddd9e7d5f68c5a81e8fe3b17c3a937b09fc2",
+      "supervision_sha256": "5304a3bef0c26a1985ac313d38ce3f862d8de543bdbaf2876118344f5c32371d",
+      "windows": 208
+    },
+    {
+      "episode_id": "e3adedca7fbd8c8793dcd441",
+      "source_recording_id": "48dd84ffc94443e2aa98807238327d71",
+      "split": "train",
+      "source_annotation_sha256": "4a9143f4127f2e0e2c64d4bf1535d23d99c69e2b02856677e133a484bdcdd0c2",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/87d2d03bb6ace6230ed3a2cd5257691f3d1f1f81ae85a160aaf93519e24d0d70.npz",
+      "feature_sha256": "85ee6a279d1f662cf08cf33aba4d7dd49afcb7d20842148cc80c4e34dc2f732e",
+      "supervision_sha256": "2b558268c8f1a53b09593e7fe78db387dd61da26e06ae31a1b90cab1a7c8e3b5",
+      "windows": 194
+    },
+    {
+      "episode_id": "6f4bafb382eecb2e2bdc528b",
+      "source_recording_id": "ad8ff4147a9a40748709d65a94c1fb14",
+      "split": "train",
+      "source_annotation_sha256": "416dc51d60da8830ba53c8a34d26a4cce86861a8e5843b152dd58bcf1210e3bb",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/45a6117ae1601fa6e9142f073b537a53017c0207fdfbc594ebca7399954c49ed.npz",
+      "feature_sha256": "316a232c4d1c8a615bdd6c75a88ff1c12c9c00031b5580993f7047fa19920db6",
+      "supervision_sha256": "9a13c954dc36400b84e8294936f1609d6cb4dcdb1f1200838e79c037b2d28d10",
+      "windows": 225
+    },
+    {
+      "episode_id": "3e40d77b8301aa4141042ffe",
+      "source_recording_id": "03c4f749f53e4ceca32a1b73c8dbbf54",
+      "split": "train",
+      "source_annotation_sha256": "b41f72e91498de12b2f9c4f947836a89e0c24cf9a9ce8bba90a8f4a0e874732c",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/0b6c2a5c1701432d2f724c6f03fbe11722bbb85b66f06fade8a9a3f50b4acfbe.npz",
+      "feature_sha256": "1432978611cb465716e891d781e224eb31c454c8e88d80223dfe1078b1874dda",
+      "supervision_sha256": "dae13f874322ea89b7ff4f0e44ac1ff72c3d0881df5f52ef5dce09badef023c3",
+      "windows": 214
+    },
+    {
+      "episode_id": "24f5f11d06768bae4e8ff1de",
+      "source_recording_id": "666d070f4a194cefae4bf7e9437710c7",
+      "split": "train",
+      "source_annotation_sha256": "bee6acc6053e1f03a10446a94eb7b0f50a735436a39bd93af9813ee3343f63f2",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/eac23e9bc07efff4d09c95bc5ced6fa43556e3b92eddd82cc305a215cb006cef.npz",
+      "feature_sha256": "1b2020c84dbd4f150c875edcbaf9e0f100eb8588e2597a9cbb5d2636bd09ff33",
+      "supervision_sha256": "9b520ec209e5212c66f45bf35ae5c80d7d7d11124babf6bdeb203d6b7cb8dbd8",
+      "windows": 244
+    },
+    {
+      "episode_id": "e00eabcc5afc0a1fb422e819",
+      "source_recording_id": "ffdd92b4f7924956acd476e88f2ff1a6",
+      "split": "train",
+      "source_annotation_sha256": "9e4b7b172c4bbcf928e0b382dac6d5523cfd22c99b68baf7f95896194e3e5a2c",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/ebcf9c43cfb21b56717badf81b3a36166f861cc053651f41daf96f48a9a5f88b.npz",
+      "feature_sha256": "decf96c16ad7a88e817b94421d8870d6229afa74fb2c79cc0e09db6228cda2a1",
+      "supervision_sha256": "4ed540a98367d7ea27cc3b63244d072a01cce4bfc49141eb9a25fdd7788ed848",
+      "windows": 172
+    },
+    {
+      "episode_id": "fb5a964ebdb9c086f6d999a0",
+      "source_recording_id": "963bef134ce54ad29733a761d8fd5948",
+      "split": "train",
+      "source_annotation_sha256": "2953adc79ae64818515651e077d0f1627c93c1ebbdd376791a2d4d7277a94f96",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/84e1b0b805ea4f1a5f1b3a95a39341a9ed754c016bf78c84aac27167477bbcf2.npz",
+      "feature_sha256": "101be8e4904cfa75873752a60b44a2750adb37a2432a59fdf53a0bab94688663",
+      "supervision_sha256": "e1067932610c46c95c789d2ed9898c57d73e1becb528250c54ed154e3f8b0c8a",
+      "windows": 184
+    },
+    {
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+      "split": "val",
+      "source_annotation_sha256": "66b4431c3d08b810a7a3ecc8f22793fe8bd58118f4428d8beb152b5c4cce3b77",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/31e1be85520dddeb0c632f8a17ebd4a40de1374ad9bf6455b470b6acc8293497.npz",
+      "feature_sha256": "ebd46eed4f22484be914799ca50e1d8d88d346779db65000ca36602bc9664520",
+      "supervision_sha256": "0e68cb118b22e31a1d589c11bcd5288422672e0becb7857ffac9bf60facbdc49",
+      "windows": 179
+    },
+    {
+      "episode_id": "a6e2dd33f14a2e356e8652af",
+      "source_recording_id": "cc129554ec8340dab7716bdd1a772a5a",
+      "split": "train",
+      "source_annotation_sha256": "c061b99771f3445f0c93603400dc7684abc3f3583d2a5b67655687fefeee2f55",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/5a9a6bf074a42f9ebf5f038c5d9eee9de603fc384799a8df7325ba6efa1eccdf.npz",
+      "feature_sha256": "0496914b347613c95f36675c20d209cd44c6a787ef36c16a312acdd36eeaab66",
+      "supervision_sha256": "701f9971098f74c755ecedff01eab94b3fb8d6d8122f64e185b421a467117324",
+      "windows": 412
+    },
+    {
+      "episode_id": "28cca87cdffd5bdf45603c13",
+      "source_recording_id": "031906d13dc3439a82f379aee2ed5273",
+      "split": "train",
+      "source_annotation_sha256": "7750634a6c1261ea3bbf7183656bc218d22a277cedab1310e7f3e5be9eb25e96",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/9a714945d171e83ab7f4d498883babed017cf11b53a93b5c11295e282bdc7320.npz",
+      "feature_sha256": "aee5fbc4f2d0701238badba9c1cd34be967017f7a9263160f9fec910fe533a51",
+      "supervision_sha256": "49e398cab870944e05b371f2e60ce41ebce377a9a13a1474ff88ab74a48f415e",
+      "windows": 496
+    },
+    {
+      "episode_id": "1cd23a36e2494854403af270",
+      "source_recording_id": "2ca332c2796249bf86bee08f90e8e0d6",
+      "split": "train",
+      "source_annotation_sha256": "3275bbd51eadfaa67f34315f7abc86dcc6d62a0b5c8b900b7a0fa743fc601806",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/bb0fe8153abcecd1052135d386994d33afd6640bfac61debf67c684f2fc3bf64.npz",
+      "feature_sha256": "e78b360c9d0b9690561ab55141fa8b6d8e941db62859bc3d1a24050bc2b8ab6b",
+      "supervision_sha256": "772a937eeae18513f0ee42a166e4c063819519ec825022a02b31548697aad808",
+      "windows": 216
+    },
+    {
+      "episode_id": "d960895f8962550cb7520398",
+      "source_recording_id": "20ad614dc0de475d9c04f2f26d110386",
+      "split": "train",
+      "source_annotation_sha256": "02bc3024d725f4d3d7bbee18e46393a021d1895245986b128b67319c2c67a96a",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/d47c146b92bad1a300c0f7bca7d00f7c56d95f2b22cb5f0ca7577af9c3a31875.npz",
+      "feature_sha256": "1aa92d9a5c84239e2c1592f6bd7783cccd181ebf440e6d37007413f62d7c873f",
+      "supervision_sha256": "e610c7707a845200e18438da2d2d24812f978eceb440f5534e8febc0b49026de",
+      "windows": 287
+    },
+    {
+      "episode_id": "3e21882f6ad765c8134e8042",
+      "source_recording_id": "b7cf52379f064a20aa1035b9c57843d9",
+      "split": "train",
+      "source_annotation_sha256": "acf8e389f81573cb70e2b36b3457bbe39790d8a5980d6b0d04899e4d9cf98177",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/d51ebc127f9325fb937833adc8a7a6b780b82c1e21abf1367cdc36d29b435bec.npz",
+      "feature_sha256": "81163603f37af8844a897cecf98f347cbe45dfa1cd72cffdae1f7adabd6adfef",
+      "supervision_sha256": "8627d34e4c567cc3f8e3d951e3f58c4ebc73d2f18128a281d32282e67ffdcf99",
+      "windows": 332
+    },
+    {
+      "episode_id": "35b98fead313ad3adb9e2263",
+      "source_recording_id": "209695586e5d42a092580087e8595080",
+      "split": "train",
+      "source_annotation_sha256": "63fe41dd3dddd89f136c5e18f12cd33c417dccff305e6c76ca8090e8714762c9",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/1712e0eab25f589212a7cba23f70bbd92a87d8761623ae8e767ca69dfe23dc4b.npz",
+      "feature_sha256": "dac81598cb6902a0c584feee44d36a93b8a47dce4f0fae1d55000f171b3f8494",
+      "supervision_sha256": "db554bfc6c3a2f0733126915170d9e1fa5c2434bb2bcbe3232e2493035023d9e",
+      "windows": 436
+    },
+    {
+      "episode_id": "27a8a232843038617b0882e6",
+      "source_recording_id": "57c0a74671b647f7945837489275283a",
+      "split": "train",
+      "source_annotation_sha256": "408f0c20e63a6941eb2eb07d63356b62bbd9aaba8fa74ffeecc8da1ebb71a1e0",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/d40e0088d7bf38bdbbdd8a5d73d907ad8a4a9a75921028213fc40410be547eee.npz",
+      "feature_sha256": "46752a955c1786961ea294a5e4b2842c7d770d126abf1d7cf7075a5f81c6e963",
+      "supervision_sha256": "d2578866530572d315d6d3afe79af860d5820c5814cbbe3992ab538cb3bb22d3",
+      "windows": 376
+    },
+    {
+      "episode_id": "97fc506c9bd49bf5a3cbe879",
+      "source_recording_id": "ccfc3dc266ef4161b5620a74f9065287",
+      "split": "train",
+      "source_annotation_sha256": "b31e2ff31f525d8d9cd6d52ff4bdb90bbed7ac6c40a5c2c044e93bf110a6325a",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/6e2a48f06f87f1af1602e8c786b8597b3a70fae1683fb6f65d818bf9598ef3d5.npz",
+      "feature_sha256": "162693debc85383ad6a9ee814e1b5df20976cbf86490a244b5532c70d448acfc",
+      "supervision_sha256": "4553647285b467cd3c8df6fbed748d9333444bc82817904ef26b1f559e7b2225",
+      "windows": 256
+    },
+    {
+      "episode_id": "c2ab0294242e464ac8d8b6c5",
+      "source_recording_id": "3c153e6888614010895ac4158fb3733e",
+      "split": "train",
+      "source_annotation_sha256": "127e1de733a07379f8fa59c6ab6a0997c13ea98eb0679b60d22968270e678786",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/29f4f5c72a525c3a90b43311ae21299ba5e7d6028bcfad40a6e8133392560d72.npz",
+      "feature_sha256": "7faca27dabc11de5a3cab720ecd23327553bbb7b3866799d0fde57d0a4a4f48b",
+      "supervision_sha256": "bc88985884741ad3071edfa743b552ee5458f9d3847b0497cf3dfb052f675bc1",
+      "windows": 209
+    },
+    {
+      "episode_id": "42fdcb9b923d9a6ed5df8625",
+      "source_recording_id": "1d82688b0f8c4a6d8c12d82f07561e51",
+      "split": "train",
+      "source_annotation_sha256": "0a4d5376a540cd008af1b438816ab7bda212d2f07a800664ae9585453f1e1400",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/d996e72965d529bfe4c1de438a038f3f4a9ec67bb22b498d9a1296e04e98229f.npz",
+      "feature_sha256": "ec70bff2975bbbba6d6dcb74364c2662ea0acded9461dea8269ee0df9876e65c",
+      "supervision_sha256": "9ddfd2861b1b20610e0dfd28d2349b3f29681cba0de9a6426ad6f21d678457b6",
+      "windows": 282
+    },
+    {
+      "episode_id": "5c169e31b2d5c4ba6af1152b",
+      "source_recording_id": "e8c88bdc015b4be6bee7e90f8c94e86a",
+      "split": "train",
+      "source_annotation_sha256": "83654ae265002a468cfe86a76de07e5decf1f8142a2c9a9d75c9dcc74f1745f2",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/4da02c883e9d49f733b2921548def09d787a1658aad77681b5b4162d282317a8.npz",
+      "feature_sha256": "3c3cbb9a390405537414befdfb692ee31ccaf410ffba015e101d61537227f4a2",
+      "supervision_sha256": "7c61f8fbbfdeefb1621453673711333fba886f74ce3902c42b807e6c6e8a22e9",
+      "windows": 251
+    },
+    {
+      "episode_id": "11e2f1fe404b5eeca714c786",
+      "source_recording_id": "270fddd8068a436cb140f81a338eee6c",
+      "split": "train",
+      "source_annotation_sha256": "c4eb71004a6a5ad4817182b024ee03ab5ca1adf0422b10615f9666d426197833",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/c1930663653b998ef58c0b99c5e90b832ef58b90d4fde05c9856c349df922886.npz",
+      "feature_sha256": "4f581da3b416c5c93a837dc55c097e40175943bdd06740e09e1a0877e7ffe8fd",
+      "supervision_sha256": "ea95eaba1ff1bb7a706e16d5b850ebf22310bfd36aba9c21b75ed1153df7070f",
+      "windows": 378
+    },
+    {
+      "episode_id": "ae8648d89618a1cc243fd08e",
+      "source_recording_id": "4cffd838ea0e4b81af120d4236bbeb93",
+      "split": "train",
+      "source_annotation_sha256": "6444b17c045388c9a8e9756d131f9af401551c9c4aab30c2c352f1e74f3249db",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/c888f630ecc24a4c038a6aab7cf0129c2da8e765a1ebc00ef27f67732dfd0ece.npz",
+      "feature_sha256": "402c7458fee1279709ac581709a19913beeac955d7c170796093eb7d0dc2e98f",
+      "supervision_sha256": "1dfcff526a3564dac532b8204e03aca46618d61faf2e395168a04c7ad3fcd540",
+      "windows": 349
+    },
+    {
+      "episode_id": "b961a9f4fb17a36a803b1a81",
+      "source_recording_id": "7880e2a6f1524495b95fe052249fc434",
+      "split": "train",
+      "source_annotation_sha256": "fe71cc1d3f1484efbfef51e8472d99aa52c7c4f73f9e550ff6eaccb164f5e0e4",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/f740018c32020f66f12bdd9435a01890763b2f7360f3b786e095f271f284fb84.npz",
+      "feature_sha256": "3def12c8f8e2b560b8d37d92898d899b26465e95313098a196a1fb27900790e8",
+      "supervision_sha256": "e46bb40cd1fd5f7a8ea18c92d04cf87fcda620fcaab19753720e2a324e76fed9",
+      "windows": 384
+    },
+    {
+      "episode_id": "ac4f2f10de4532e9dab3017d",
+      "source_recording_id": "2c7dea1400834c86bd057bf60f0db9e2",
+      "split": "train",
+      "source_annotation_sha256": "bba9336d57231f4119fb4abeed929f8ee4fc67bd4b8af6628a3c6a768e4a8e8c",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/8a5df5a6f601b14b084f136be99187002e06cddc530a3d7c0867372a2b27c2ea.npz",
+      "feature_sha256": "28e93b1fe254ca390748e132402ffac8d1483701e5091d0a7bf75b959b42bdbe",
+      "supervision_sha256": "85ad57492c639ce7a8f9850f0c047a3b1820810e6db698f7bcf10123049a9ab6",
+      "windows": 332
+    },
+    {
+      "episode_id": "00c45ede978c60868ef794d5",
+      "source_recording_id": "0e2221c7c284497098d5f1e509d36171",
+      "split": "train",
+      "source_annotation_sha256": "47e6436ec902c7d8b40d32fdf79edf515e02a530ec7bc57f8fb820c7cf01e580",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/afcb35c7bfcbe731a16aa4a30caa0ad501d7b5ce6ac8578c31afb085944d52ff.npz",
+      "feature_sha256": "96cabfcc7ed28ce7c491c9b6fa61c2370b1a65173ac5a6effdcda4e998faf1db",
+      "supervision_sha256": "631fc4c4c669d9790326dd144b3bac40592f818d911022b6cfdf27fc814d9e8a",
+      "windows": 406
+    },
+    {
+      "episode_id": "134ac3106b3dc875a778e01f",
+      "source_recording_id": "7ed15b57f5fc4643a0333cfd99c1edd6",
+      "split": "train",
+      "source_annotation_sha256": "9e3f49a657959d5cb8852e2139c2cea018c1c5d7b240b78f8c901a1a2fbe6844",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/0f1182a04a7d28485c01d144518a2832d165a7fd863d289bfaa749ccc2c50800.npz",
+      "feature_sha256": "8eedbf55d52ba83cb0068280bb1fc033f166c0e43cb1ad28a7712a33afd15172",
+      "supervision_sha256": "1406ecd614784fe60ad6100d511f5ad31eb8bc8a4d7004def9a84f35ba652355",
+      "windows": 313
+    },
+    {
+      "episode_id": "ff10daee7cfe93395fea8669",
+      "source_recording_id": "45ece5143b704a3fb609c2e4a8c5c8d2",
+      "split": "train",
+      "source_annotation_sha256": "317d6a15996e5ebef20cdaab941be4cca7e54b3e6b5b10fc2fa815191f10b8df",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/6baf2be87a3eefb03a07b95b758dc4959ecda699faba23265264f9827431ec7c.npz",
+      "feature_sha256": "de0c2b762c3183745b5ca14decb630a4ecad2d655857d6072695758486619d1c",
+      "supervision_sha256": "738726b2cbf24e1102eee79e98abb2e3be4ba66c92b6e21e90782bfc26d75d16",
+      "windows": 231
+    },
+    {
+      "episode_id": "5049c3974e64cbcd114c66fb",
+      "source_recording_id": "bcd0001b7394475e9a178740c81cc79d",
+      "split": "train",
+      "source_annotation_sha256": "920260443e842bbb35207b7be58e8c1a2440d7dc59e2a76c377491cbfa08d2e4",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/3b639ea50684ef9ea1e17b179fc0e3af5139764c2fdb8556635ce188582ff5b2.npz",
+      "feature_sha256": "3ea4d62fe25132cd7875520f8797e32699e8387fc6ed1e6aa118aba91fe99220",
+      "supervision_sha256": "8674bb72e6e434f2d53dca272e3a7fd0c80157582c0bac5ba6aa99da44d107c6",
+      "windows": 257
+    },
+    {
+      "episode_id": "ba1ce3010a03ead623453a51",
+      "source_recording_id": "30246f5f7f0f45dba996e3cc3adbcd25",
+      "split": "train",
+      "source_annotation_sha256": "950e98804a8be65175a7f8b8a4fbcafcdaea5fe012c72df76f84e7ce2b5168ce",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/9065218d5855277e1d77460466d457935db159d2b80af41eebf61fc1a60ab678.npz",
+      "feature_sha256": "143078badff1cd1bf5bc6ed0210fb31417558c68ee243017fea325ce6f9372c0",
+      "supervision_sha256": "aa6681bf8e8d96492a3767a2831fc44e47b9930496c65935bfe75077eb119815",
+      "windows": 305
+    },
+    {
+      "episode_id": "f03638673202370a5d2581c1",
+      "source_recording_id": "6ad08a7f55384561bfcc1fc4806ae613",
+      "split": "train",
+      "source_annotation_sha256": "9c2c348d4c3867761bf34f66358da0379c7891989016fb782c8e307d4897d1c5",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/3d143ebd50c2443d085e02383b7a557510a0f18eb946c5832d72564b04c1a55d.npz",
+      "feature_sha256": "ee26dcb90bdb01ed182b9dc9a701c28f5bb335b15a16d6a06c0959bc7c43059d",
+      "supervision_sha256": "e6d00d9dadb353be1ecb3d7d988f527868b715a25e88e7e91d7e5ba1f6816894",
+      "windows": 228
+    },
+    {
+      "episode_id": "e80436dea962fa58288fd8f9",
+      "source_recording_id": "651eb2271bae4971a62273985ed85c2d",
+      "split": "train",
+      "source_annotation_sha256": "4b64e72b2f5274e1b747c9f8b133b27f77b341c45c5c786d57d156152ed9c373",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/738bbe760a0b406f927bce3e4ceb03b81ca02611a0f344020073a125305391e3.npz",
+      "feature_sha256": "e217c9a09a3fe445e0ae04001f717e2f29e4e8362a23c5be1c2e6b70224d969b",
+      "supervision_sha256": "aef0ac01bd21c8a503c2aec81b2d1bd2490e90f16b02fe6ac3d31cbc3c019fb0",
+      "windows": 200
+    },
+    {
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+      "split": "val",
+      "source_annotation_sha256": "c8ab7d1086a70bf97b65058409154fb0b1c8c90f3ceaadcb0e833b94e7e7c87e",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/e44c2f38092dacdee18105eea44cd8cf8e6763011bc07a5cde8ec08fce18c19d.npz",
+      "feature_sha256": "a913f04fd1b02ccee974aed104e8460d8ca29fbbd9b32275b9ef41f63a44767d",
+      "supervision_sha256": "7e83a9e6d2b1ad176b0921f60a164508ec1f5fc9cab4b148f6a7a788a5a7ade8",
+      "windows": 185
+    },
+    {
+      "episode_id": "8b8c1da3e272c90d0725c677",
+      "source_recording_id": "59fe475f41454fedb1d5a229292e569c",
+      "split": "train",
+      "source_annotation_sha256": "23cfe04636c0137b259669a21d71507940429276f6a238fe67805bafdc562828",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/eed3309dc62dc03bfe46d35e88854caf26fd02f53607b6e1177722beaaec1fdd.npz",
+      "feature_sha256": "71d24622d75d8a1a45f999d6f5fb66cdf5736cebe81182a01a527482169aa51d",
+      "supervision_sha256": "018a43ad8393ac8dba6b03a707aab7369fd6e058bba19afe6f46995e1fe039a0",
+      "windows": 272
+    },
+    {
+      "episode_id": "ec2a42cb31563737fc34db99",
+      "source_recording_id": "db6fb478cff64df893f81e390d436662",
+      "split": "train",
+      "source_annotation_sha256": "a1a9f5bc206fa526f299bf06f4745860d0a8d3a5d87d5bb401a9d1844b04db8e",
+      "feature_path": "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/f5e136e108b54090d647cba2b633c92f8e96d510d0082be1cf5a1caa288527e5.npz",
+      "feature_sha256": "663389c4f2d4499ecc9a85b9e263fcd2b52e1d276badbdd68f8199bef65bcb98",
+      "supervision_sha256": "558ae04afd6636301f71052f40358ac8af93dbc7976d0e852b9a508d7c0b5fae",
+      "windows": 151
+    }
+  ],
+  "test_features_read": false
+}

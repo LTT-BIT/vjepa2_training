@@ -1,0 +1,20 @@
+{
+  "version": "tomato-transition-time-v1",
+  "seeds": [42, 43, 44],
+  "bin_upper_s": [0.25, 0.5, 1.0, 1.5],
+  "max_epochs": 100,
+  "patience": 15,
+  "batch_size": 128,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "internal_holdout_recordings": 10,
+  "thresholds": [0.3, 0.5, 0.7],
+  "internal_split_seed": 20261109,
+  "normalization": "fit inner train for epoch selection; refit all retained74 train recordings for final fixed epoch training",
+  "selection": "Epoch by internal held-out censored NLL; B2 threshold by internal event recall subject to B0 rawFuture false/min cap, otherwise minimum false/min and retain B0",
+  "external_validation": "retained9 recordings,50 events,14 provisional truth boundary edits exactly matching frozen39/50 reference; false clip marks never create new events",
+  "current_future_heads": "reuse independently trained frozen heads, including their historical normalization and training-data provenance; not claimed clean retraining",
+  "test": "no test arrays, predictions or hyperparameter selection",
+  "B3": "only if B2 improves external event recall at no greater false/min across seeds; otherwise not run",
+  "remote_push": false
+}

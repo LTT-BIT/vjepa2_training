@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "input_hashes_unchanged": true,
+  "test_features_read": false,
+  "encoder_calls": 0,
+  "source_annotations_modified": false,
+  "remote_pushed": false,
+  "training_stages": 9,
+  "seeds": [
+    42,
+    43,
+    44
+  ]
+}

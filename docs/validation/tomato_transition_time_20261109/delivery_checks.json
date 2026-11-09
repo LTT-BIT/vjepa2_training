@@ -1,0 +1,29 @@
+{
+  "tomato_tests_passed": 132,
+  "training_forward_encoder_calls": 0,
+  "inference_benchmark_encoder_calls": 43,
+  "test_features_read": false,
+  "original_annotations_unchanged": true,
+  "original_checkpoint_hashes_verified": true,
+  "B0_seed42_hits": 39,
+  "B0_seed42_false_events": 13,
+  "final_time_heads": 3,
+  "training_stages": 9,
+  "B3_run": false,
+  "old_interface_default_unchanged": true,
+  "exact_executed_sources_preserved": true,
+  "inference_only_code_changes_replayed_all_saved_predictions_unchanged": true,
+  "annotation_grid_timestamp_max_difference_s": 0.0,
+  "remote_push_performed": false,
+  "current_sources": {
+    "tools/tomato_transition_time.py": "8f844edf9e01b188a0b5398d612b919940f22fcbc5e614c14fd8694c75b4e506",
+    "tools/train_tomato_transition_time.py": "d24ae13d52e76e8347a7ec7b81b29b8e966ed976ca8272e5ea8b15b547e8ca83",
+    "tools/tomato_time_inference.py": "2896433b7f04c193278321da960e771f46fb76b0fbb49e733b65d21d8579164e",
+    "tools/tomato_agent_inference.py": "c6047fb17051a21026b304c2d2f21b81566f7174ea468bc056f2595436a7997f"
+  },
+  "checkpoints": {
+    "runs/tomato/transition_time_20261109/seed42/hazard.pt": "9b7579ce22951c65d1189949631e3b9a0abf9279b61ac07ea052372dcef23176",
+    "runs/tomato/transition_time_20261109/seed43/hazard.pt": "6249c25a8c21ed91b4ce0f484d92ff890fae3091f1b45fdf29c51e65fc522133",
+    "runs/tomato/transition_time_20261109/seed44/hazard.pt": "cbd17863f4a2a7418025270d3be64835a8ecbf1cde9c95003e67e6d28c185fa4"
+  }
+}

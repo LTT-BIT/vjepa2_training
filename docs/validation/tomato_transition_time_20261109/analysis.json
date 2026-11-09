@@ -1,0 +1,3871 @@
+{
+  "constant_train_hazard_reference": {
+    "censored_nll": 0.3229194519839872,
+    "horizon_brier": 0.06064989635749019,
+    "observed_near_event_samples": 150,
+    "near_event_conditional_mae_s": 0.3774167963820307,
+    "near_event_signed_error_p50_s": -0.024308798439646062,
+    "near_event_bin_accuracy": 0.3333333333333333,
+    "timing_error_scope": "conditional within1.5s only; tail has no finite midpoint; no imputed censor labels"
+  },
+  "train_bin_counts": {
+    "at_risk": [
+      21359.0,
+      21139.0,
+      20802.0,
+      20284.0
+    ],
+    "events": [
+      181.0,
+      263.0,
+      444.0,
+      444.0
+    ],
+    "conditional_hazards": [
+      0.008474179543554783,
+      0.012441459111869335,
+      0.021344101056456566,
+      0.021889174357056618
+    ]
+  },
+  "per_seed": {
+    "42": {
+      "time_quality": {
+        "censored_nll": 0.16830652506242405,
+        "horizon_brier": 0.0299395600074234,
+        "observed_near_event_samples": 150,
+        "near_event_conditional_mae_s": 0.275852697618318,
+        "near_event_signed_error_p50_s": 0.04755601509543084,
+        "near_event_bin_accuracy": 0.56,
+        "timing_error_scope": "conditional within1.5s only; tail has no finite midpoint; no imputed censor labels"
+      },
+      "classification": {
+        "current": {
+          "samples": 2340,
+          "accuracy": 0.9854700854700855,
+          "macro_f1": 0.9715634847347413,
+          "nll": 0.07176524804164637,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9574468085106383,
+              "recall": 0.9574468085106383,
+              "f1": 0.9574468085106383,
+              "support": 282
+            },
+            "harvest": {
+              "precision": 0.9968132568514978,
+              "recall": 0.9961783439490446,
+              "f1": 0.9964956992672825,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.9726027397260274,
+              "recall": 0.9594594594594594,
+              "f1": 0.9659863945578231,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9620991253644315,
+              "recall": 0.9705882352941176,
+              "f1": 0.9663250366032211,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              270,
+              1,
+              0,
+              11
+            ],
+            [
+              4,
+              1564,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              142,
+              2
+            ],
+            [
+              8,
+              0,
+              2,
+              330
+            ]
+          ],
+          "return_adjust_confusions": 4,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "future": {
+          "samples": 2313,
+          "accuracy": 0.969303934284479,
+          "macro_f1": 0.9380843310031053,
+          "nll": 0.14296657731193899,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9206349206349206,
+              "recall": 0.9098039215686274,
+              "f1": 0.9151873767258383,
+              "support": 255
+            },
+            "harvest": {
+              "precision": 0.9898089171974522,
+              "recall": 0.9898089171974522,
+              "f1": 0.9898089171974522,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.9166666666666666,
+              "recall": 0.8918918918918919,
+              "f1": 0.9041095890410958,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9337175792507204,
+              "recall": 0.9529411764705882,
+              "f1": 0.9432314410480349,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              232,
+              5,
+              0,
+              18
+            ],
+            [
+              9,
+              1554,
+              7,
+              0
+            ],
+            [
+              0,
+              11,
+              132,
+              5
+            ],
+            [
+              11,
+              0,
+              5,
+              324
+            ]
+          ],
+          "return_adjust_confusions": 10,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      },
+      "threshold": 0.5,
+      "latency": {
+        "hazard_p50": 0.058277015341445804,
+        "hazard_p95": 0.06383499858202413,
+        "hazard_max": 0.08823201642371714,
+        "original_cf_p95": 0.1205759195727296
+      },
+      "training_s": 3.819852307991823,
+      "epoch": 7,
+      "parameters": 512644,
+      "gpu_training_peak_bytes": 433214976,
+      "methods": {
+        "B0": {
+          "total": 50,
+          "detected": 39,
+          "missed": 11,
+          "precision": 0.75,
+          "recall": 0.78,
+          "f1": 0.7647058823529411,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "minutes": 19.275,
+          "lead_p50_s": 0.5666666666666664,
+          "lead_p05_s": 0.09999999999999432,
+          "by_transition": {
+            "pickup->harvest": {
+              "total": 17,
+              "detected": 15
+            },
+            "harvest->return": {
+              "total": 17,
+              "detected": 16
+            },
+            "return->adjust": {
+              "total": 8,
+              "detected": 6
+            },
+            "adjust->pickup": {
+              "total": 8,
+              "detected": 2
+            }
+          },
+          "common_1s_hits": 35,
+          "unmatched_categories": {
+            "too_early": 4,
+            "late": 8,
+            "wrong_transition_type": 1
+          },
+          "jitter_reversals": 1
+        },
+        "B1_gate": {
+          "total": 50,
+          "detected": 32,
+          "missed": 18,
+          "precision": 0.9142857142857143,
+          "recall": 0.64,
+          "f1": 0.7529411764705883,
+          "false_events": 3,
+          "false_per_minute": 0.1556420233463035,
+          "minutes": 19.275,
+          "lead_p50_s": 0.5833333333333339,
+          "lead_p05_s": 0.09999999999999432,
+          "by_transition": {
+            "pickup->harvest": {
+              "total": 17,
+              "detected": 14
+            },
+            "harvest->return": {
+              "total": 17,
+              "detected": 14
+            },
+            "return->adjust": {
+              "total": 8,
+              "detected": 4
+            },
+            "adjust->pickup": {
+              "total": 8,
+              "detected": 0
+            }
+          },
+          "common_1s_hits": 28,
+          "unmatched_categories": {
+            "too_early": 2,
+            "late": 1
+          },
+          "jitter_reversals": 0
+        },
+        "B2": {
+          "total": 50,
+          "detected": 19,
+          "missed": 31,
+          "precision": 0.95,
+          "recall": 0.38,
+          "f1": 0.5428571428571428,
+          "false_events": 1,
+          "false_per_minute": 0.05188067444876784,
+          "minutes": 19.275,
+          "lead_p50_s": 0.6000000000000014,
+          "lead_p05_s": 0.12999999999999262,
+          "by_transition": {
+            "pickup->harvest": {
+              "total": 17,
+              "detected": 9
+            },
+            "harvest->return": {
+              "total": 17,
+              "detected": 8
+            },
+            "return->adjust": {
+              "total": 8,
+              "detected": 2
+            },
+            "adjust->pickup": {
+              "total": 8,
+              "detected": 0
+            }
+          },
+          "common_1s_hits": 18,
+          "unmatched_categories": {
+            "too_early": 1
+          },
+          "jitter_reversals": 0
+        }
+      },
+      "special_adjust": [
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 4,
+          "boundary_s": 74.23333333333333,
+          "window_times": [
+            73.0,
+            73.5,
+            74.0
+          ],
+          "hazard_within15": [
+            0.020034074783325195,
+            0.016102731227874756,
+            0.04844677448272705
+          ],
+          "current_pickup": [
+            0.9999397326730471,
+            0.9999931810545277,
+            0.9999032072701832
+          ],
+          "future_pickup": [
+            0.9999996456309533,
+            0.9999999177529745,
+            0.9999988981500166
+          ]
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 4,
+          "boundary_s": 109.6,
+          "window_times": [
+            108.5,
+            109.0,
+            109.5
+          ],
+          "hazard_within15": [
+            0.047087132930755615,
+            0.09823477268218994,
+            0.04031628370285034
+          ],
+          "current_pickup": [
+            0.26862713566854707,
+            0.7960484560556514,
+            0.9991761154964827
+          ],
+          "future_pickup": [
+            0.9998176788595204,
+            0.9999999167180484,
+            0.9999999941786728
+          ]
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 4,
+          "boundary_s": 99.13333333333334,
+          "window_times": [
+            98.0,
+            98.5,
+            99.0
+          ],
+          "hazard_within15": [
+            0.15107208490371704,
+            0.13068675994873047,
+            0.12988930940628052
+          ],
+          "current_pickup": [
+            0.00029608429159377496,
+            0.005999886453913616,
+            0.012843309985471441
+          ],
+          "future_pickup": [
+            0.9638283280400672,
+            0.9998583040475582,
+            0.9980625161587428
+          ]
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 4,
+          "boundary_s": 90.4,
+          "window_times": [
+            89.0,
+            89.5,
+            90.0
+          ],
+          "hazard_within15": [
+            0.6298133730888367,
+            0.6724417209625244,
+            0.3662463426589966
+          ],
+          "current_pickup": [
+            1.101816959774383e-06,
+            6.003336618416312e-05,
+            0.00012132464531583268
+          ],
+          "future_pickup": [
+            0.09342948021797243,
+            0.9731269783815486,
+            0.9964802411418296
+          ]
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 4,
+          "boundary_s": 90.3,
+          "window_times": [
+            89.0,
+            89.5,
+            90.0
+          ],
+          "hazard_within15": [
+            0.24510157108306885,
+            0.4004620313644409,
+            0.41919153928756714
+          ],
+          "current_pickup": [
+            4.595718254916536e-06,
+            3.0097073250817175e-05,
+            0.0005216782319458563
+          ],
+          "future_pickup": [
+            0.04105549540821598,
+            0.04413499481497365,
+            0.8614758542253118
+          ]
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 4,
+          "boundary_s": 94.86666666666666,
+          "window_times": [
+            93.5,
+            94.0,
+            94.5
+          ],
+          "hazard_within15": [
+            0.0907907485961914,
+            0.09966301918029785,
+            0.29640722274780273
+          ],
+          "current_pickup": [
+            0.0019192253963540879,
+            1.5077682779051129e-05,
+            0.0002503829689957602
+          ],
+          "future_pickup": [
+            0.2692254282905229,
+            0.0033922839816268795,
+            0.8385897260367705
+          ]
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 4,
+          "boundary_s": 65.26666666666667,
+          "window_times": [
+            64.0,
+            64.5,
+            65.0
+          ],
+          "hazard_within15": [
+            0.08932465314865112,
+            0.12757885456085205,
+            0.2093130350112915
+          ],
+          "current_pickup": [
+            1.6820648300144924e-07,
+            1.093285799056237e-07,
+            0.0003936424356520066
+          ],
+          "future_pickup": [
+            0.053663873639102425,
+            0.010279880475929475,
+            0.90563963802302
+          ]
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 4,
+          "boundary_s": 65.6,
+          "window_times": [
+            64.5,
+            65.0,
+            65.5
+          ],
+          "hazard_within15": [
+            0.04773092269897461,
+            0.12330061197280884,
+            0.1459011435508728
+          ],
+          "current_pickup": [
+            0.00013060429282736778,
+            0.0015225874706691963,
+            0.19367668775281713
+          ],
+          "future_pickup": [
+            0.03809005289760923,
+            0.040474278911021164,
+            0.997312452485724
+          ]
+        }
+      ],
+      "decision_events": [
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 1,
+          "time": 9.5,
+          "boundary_s": 8.833333333333334,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 2,
+          "time": 130.0,
+          "boundary_s": 55.8,
+          "outcome": "late"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 61.766666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 74.23333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 81.0,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 129.2,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 1,
+          "time": 11.0,
+          "boundary_s": 10.233333333333333,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 2,
+          "time": 77.5,
+          "boundary_s": 76.6,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 82.46666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 109.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 119.4,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 169.9,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 1,
+          "time": 8.5,
+          "boundary_s": 7.566666666666666,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 2,
+          "time": 74.5,
+          "boundary_s": 73.86666666666666,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 3,
+          "time": 81.5,
+          "boundary_s": 80.66666666666667,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 99.13333333333334,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 113.76666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 175.56666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 1,
+          "time": 10.5,
+          "boundary_s": 9.566666666666666,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 2,
+          "time": 139.5,
+          "boundary_s": 71.0,
+          "outcome": "late"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 77.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 90.4,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 100.66666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 138.63333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 1,
+          "time": 8.5,
+          "boundary_s": 7.366666666666666,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 2,
+          "time": 58.5,
+          "boundary_s": 57.6,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 62.8,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 90.3,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 99.1,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 136.96666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 1,
+          "time": 107.5,
+          "boundary_s": 7.0,
+          "outcome": "late"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 62.96666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 66.2,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 94.86666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 106.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 175.43333333333334,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "ca784332e44d979f99018a52",
+          "ordinal": 1,
+          "time": 7.0,
+          "boundary_s": 6.3,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "ca784332e44d979f99018a52",
+          "ordinal": 2,
+          "time": 33.0,
+          "boundary_s": 32.0,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 1,
+          "time": 6.0,
+          "boundary_s": 5.5,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 2,
+          "time": 38.0,
+          "boundary_s": 37.13333333333333,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 40.13333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 65.26666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 70.46666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 86.7,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 1,
+          "time": 5.5,
+          "boundary_s": 5.0,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 2,
+          "time": 45.5,
+          "boundary_s": 44.833333333333336,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 3,
+          "time": 48.5,
+          "boundary_s": 47.93333333333333,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 65.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 70.9,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 89.6,
+          "outcome": "never"
+        }
+      ],
+      "decision_outcomes": {
+        "on_time": 16,
+        "late": 3,
+        "never": 31
+      },
+      "early_prompt_case": {
+        "episode_id": "3e645bf4e137d0f836c9d7ff",
+        "ordinal": 4,
+        "new_confirmation_s": null,
+        "original_boundary_s": 73.3,
+        "provisional_boundary_s": 74.23333333333333,
+        "old_confirmation_s": 72.0,
+        "note": "Absent confirmation means missed/stalled, not successful correction of timing."
+      }
+    },
+    "43": {
+      "time_quality": {
+        "censored_nll": 0.17608058780699318,
+        "horizon_brier": 0.03257255213474925,
+        "observed_near_event_samples": 150,
+        "near_event_conditional_mae_s": 0.28045001639311584,
+        "near_event_signed_error_p50_s": 0.07015944074909652,
+        "near_event_bin_accuracy": 0.56,
+        "timing_error_scope": "conditional within1.5s only; tail has no finite midpoint; no imputed censor labels"
+      },
+      "classification": {
+        "current": {
+          "samples": 2340,
+          "accuracy": 0.9837606837606837,
+          "macro_f1": 0.9674165173401404,
+          "nll": 0.07891836294652346,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9413793103448276,
+              "recall": 0.9680851063829787,
+              "f1": 0.9545454545454546,
+              "support": 282
+            },
+            "harvest": {
+              "precision": 0.9987212276214834,
+              "recall": 0.9949044585987261,
+              "f1": 0.9968091895341417,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.9533333333333334,
+              "recall": 0.9662162162162162,
+              "f1": 0.959731543624161,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9642857142857143,
+              "recall": 0.9529411764705882,
+              "f1": 0.9585798816568047,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              273,
+              1,
+              0,
+              8
+            ],
+            [
+              4,
+              1562,
+              4,
+              0
+            ],
+            [
+              0,
+              1,
+              143,
+              4
+            ],
+            [
+              13,
+              0,
+              3,
+              324
+            ]
+          ],
+          "return_adjust_confusions": 7,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "future": {
+          "samples": 2313,
+          "accuracy": 0.964548205793342,
+          "macro_f1": 0.9286499760047725,
+          "nll": 0.10164595146473619,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9019607843137255,
+              "recall": 0.9019607843137255,
+              "f1": 0.9019607843137255,
+              "support": 255
+            },
+            "harvest": {
+              "precision": 0.9904153354632588,
+              "recall": 0.9872611464968153,
+              "f1": 0.988835725677831,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.8866666666666667,
+              "recall": 0.8986486486486487,
+              "f1": 0.8926174496644296,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9271137026239067,
+              "recall": 0.9352941176470588,
+              "f1": 0.931185944363104,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              230,
+              6,
+              0,
+              19
+            ],
+            [
+              7,
+              1550,
+              13,
+              0
+            ],
+            [
+              0,
+              9,
+              133,
+              6
+            ],
+            [
+              18,
+              0,
+              4,
+              318
+            ]
+          ],
+          "return_adjust_confusions": 10,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      },
+      "threshold": 0.5,
+      "latency": {
+        "hazard_p50": 0.05808101559523493,
+        "hazard_p95": 0.0867125010699965,
+        "hazard_max": 0.2063280262518674,
+        "original_cf_p95": 0.2305419911863282
+      },
+      "training_s": 3.922796600032598,
+      "epoch": 8,
+      "parameters": 512644,
+      "gpu_training_peak_bytes": 433247744,
+      "methods": {
+        "B0": {
+          "total": 50,
+          "detected": 35,
+          "missed": 15,
+          "precision": 0.6481481481481481,
+          "recall": 0.7,
+          "f1": 0.673076923076923,
+          "false_events": 19,
+          "false_per_minute": 0.9857328145265889,
+          "minutes": 19.275,
+          "lead_p50_s": 0.6000000000000014,
+          "lead_p05_s": 0.13333333333333072,
+          "by_transition": {
+            "pickup->harvest": {
+              "total": 17,
+              "detected": 15
+            },
+            "harvest->return": {
+              "total": 17,
+              "detected": 13
+            },
+            "return->adjust": {
+              "total": 8,
+              "detected": 6
+            },
+            "adjust->pickup": {
+              "total": 8,
+              "detected": 1
+            }
+          },
+          "common_1s_hits": 31,
+          "unmatched_categories": {
+            "late": 8,
+            "too_early": 9,
+            "wrong_transition_type": 2
+          },
+          "jitter_reversals": 1
+        },
+        "B1_gate": {
+          "total": 50,
+          "detected": 24,
+          "missed": 26,
+          "precision": 0.96,
+          "recall": 0.48,
+          "f1": 0.64,
+          "false_events": 1,
+          "false_per_minute": 0.05188067444876784,
+          "minutes": 19.275,
+          "lead_p50_s": 0.6166666666666671,
+          "lead_p05_s": 0.2150000000000024,
+          "by_transition": {
+            "pickup->harvest": {
+              "total": 17,
+              "detected": 11
+            },
+            "harvest->return": {
+              "total": 17,
+              "detected": 11
+            },
+            "return->adjust": {
+              "total": 8,
+              "detected": 2
+            },
+            "adjust->pickup": {
+              "total": 8,
+              "detected": 0
+            }
+          },
+          "common_1s_hits": 22,
+          "unmatched_categories": {
+            "too_early": 1
+          },
+          "jitter_reversals": 0
+        },
+        "B2": {
+          "total": 50,
+          "detected": 14,
+          "missed": 36,
+          "precision": 1.0,
+          "recall": 0.28,
+          "f1": 0.43750000000000006,
+          "false_events": 0,
+          "false_per_minute": 0.0,
+          "minutes": 19.275,
+          "lead_p50_s": 0.5,
+          "lead_p05_s": 0.06666666666666643,
+          "by_transition": {
+            "pickup->harvest": {
+              "total": 17,
+              "detected": 8
+            },
+            "harvest->return": {
+              "total": 17,
+              "detected": 5
+            },
+            "return->adjust": {
+              "total": 8,
+              "detected": 1
+            },
+            "adjust->pickup": {
+              "total": 8,
+              "detected": 0
+            }
+          },
+          "common_1s_hits": 14,
+          "unmatched_categories": {},
+          "jitter_reversals": 0
+        }
+      },
+      "special_adjust": [
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 4,
+          "boundary_s": 74.23333333333333,
+          "window_times": [
+            73.0,
+            73.5,
+            74.0
+          ],
+          "hazard_within15": [
+            0.009161293506622314,
+            0.008572041988372803,
+            0.023604512214660645
+          ],
+          "current_pickup": [
+            0.9999697225205275,
+            0.9999731958054094,
+            0.9998930742462357
+          ],
+          "future_pickup": [
+            0.9995886599120583,
+            0.9998763250493454,
+            0.9990083270837276
+          ]
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 4,
+          "boundary_s": 109.6,
+          "window_times": [
+            108.5,
+            109.0,
+            109.5
+          ],
+          "hazard_within15": [
+            0.038447678089141846,
+            0.0716552734375,
+            0.03734046220779419
+          ],
+          "current_pickup": [
+            0.46304739549577173,
+            0.858292445355813,
+            0.9939855183671338
+          ],
+          "future_pickup": [
+            0.9989956662700216,
+            0.9999514963091664,
+            0.9999812991239247
+          ]
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 4,
+          "boundary_s": 99.13333333333334,
+          "window_times": [
+            98.0,
+            98.5,
+            99.0
+          ],
+          "hazard_within15": [
+            0.0648421049118042,
+            0.06291598081588745,
+            0.055988430976867676
+          ],
+          "current_pickup": [
+            0.023204145710403235,
+            0.07854963031023492,
+            0.22106192162502847
+          ],
+          "future_pickup": [
+            0.8246864147184241,
+            0.8703241611381759,
+            0.8916409593420791
+          ]
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 4,
+          "boundary_s": 90.4,
+          "window_times": [
+            89.0,
+            89.5,
+            90.0
+          ],
+          "hazard_within15": [
+            0.2821162939071655,
+            0.3524896502494812,
+            0.13871979713439941
+          ],
+          "current_pickup": [
+            0.0003128680576096661,
+            0.001759420132031146,
+            0.02150832598913587
+          ],
+          "future_pickup": [
+            0.6586937455751951,
+            0.86126719672501,
+            0.9785064559380587
+          ]
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 4,
+          "boundary_s": 90.3,
+          "window_times": [
+            89.0,
+            89.5,
+            90.0
+          ],
+          "hazard_within15": [
+            0.15176111459732056,
+            0.24085015058517456,
+            0.24408990144729614
+          ],
+          "current_pickup": [
+            0.000398549312042286,
+            0.0016002003545953112,
+            0.06580574257051723
+          ],
+          "future_pickup": [
+            0.34874057726596297,
+            0.4941790594999268,
+            0.8296651607463396
+          ]
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 4,
+          "boundary_s": 94.86666666666666,
+          "window_times": [
+            93.5,
+            94.0,
+            94.5
+          ],
+          "hazard_within15": [
+            0.07965433597564697,
+            0.055491864681243896,
+            0.22661131620407104
+          ],
+          "current_pickup": [
+            0.03489256224812014,
+            0.001582118258306219,
+            0.004729170449234467
+          ],
+          "future_pickup": [
+            0.5546033443665467,
+            0.05875502184466353,
+            0.5576751990661605
+          ]
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 4,
+          "boundary_s": 65.26666666666667,
+          "window_times": [
+            64.0,
+            64.5,
+            65.0
+          ],
+          "hazard_within15": [
+            0.07815217971801758,
+            0.08845716714859009,
+            0.1253644824028015
+          ],
+          "current_pickup": [
+            3.529301346443999e-05,
+            1.8424710859446324e-05,
+            0.024685300749004706
+          ],
+          "future_pickup": [
+            0.692862203384294,
+            0.358472325478977,
+            0.978841405118495
+          ]
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 4,
+          "boundary_s": 65.6,
+          "window_times": [
+            64.5,
+            65.0,
+            65.5
+          ],
+          "hazard_within15": [
+            0.037992775440216064,
+            0.06920629739761353,
+            0.10470569133758545
+          ],
+          "current_pickup": [
+            0.0031048044292459557,
+            0.021128305037280727,
+            0.5448365944578855
+          ],
+          "future_pickup": [
+            0.02002333616322743,
+            0.11375876697739382,
+            0.9540464179788077
+          ]
+        }
+      ],
+      "decision_events": [
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 1,
+          "time": 9.5,
+          "boundary_s": 8.833333333333334,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 2,
+          "time": 130.0,
+          "boundary_s": 55.8,
+          "outcome": "late"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 61.766666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 74.23333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 81.0,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 129.2,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 1,
+          "time": null,
+          "boundary_s": 10.233333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 76.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 82.46666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 109.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 119.4,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 169.9,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 1,
+          "time": 114.5,
+          "boundary_s": 7.566666666666666,
+          "outcome": "late"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 2,
+          "time": 177.0,
+          "boundary_s": 73.86666666666666,
+          "outcome": "late"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 80.66666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 99.13333333333334,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 113.76666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 175.56666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 1,
+          "time": null,
+          "boundary_s": 9.566666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 71.0,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 77.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 90.4,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 100.66666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 138.63333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 1,
+          "time": null,
+          "boundary_s": 7.366666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 57.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 62.8,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 90.3,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 99.1,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 136.96666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 1,
+          "time": 107.5,
+          "boundary_s": 7.0,
+          "outcome": "late"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 62.96666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 66.2,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 94.86666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 106.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 175.43333333333334,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "ca784332e44d979f99018a52",
+          "ordinal": 1,
+          "time": 7.0,
+          "boundary_s": 6.3,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "ca784332e44d979f99018a52",
+          "ordinal": 2,
+          "time": 32.5,
+          "boundary_s": 32.0,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 1,
+          "time": 6.0,
+          "boundary_s": 5.5,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 2,
+          "time": 38.0,
+          "boundary_s": 37.13333333333333,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 40.13333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 65.26666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 70.46666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 86.7,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 1,
+          "time": 6.0,
+          "boundary_s": 5.0,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 2,
+          "time": 45.5,
+          "boundary_s": 44.833333333333336,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 3,
+          "time": 48.5,
+          "boundary_s": 47.93333333333333,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 65.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 70.9,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 89.6,
+          "outcome": "never"
+        }
+      ],
+      "decision_outcomes": {
+        "on_time": 8,
+        "late": 4,
+        "never": 38
+      },
+      "early_prompt_case": {
+        "episode_id": "3e645bf4e137d0f836c9d7ff",
+        "ordinal": 4,
+        "new_confirmation_s": null,
+        "original_boundary_s": 73.3,
+        "provisional_boundary_s": 74.23333333333333,
+        "old_confirmation_s": 72.0,
+        "note": "Absent confirmation means missed/stalled, not successful correction of timing."
+      }
+    },
+    "44": {
+      "time_quality": {
+        "censored_nll": 0.1696811585650071,
+        "horizon_brier": 0.030576321296725,
+        "observed_near_event_samples": 150,
+        "near_event_conditional_mae_s": 0.2686245991106399,
+        "near_event_signed_error_p50_s": 0.031431374471885806,
+        "near_event_bin_accuracy": 0.5666666666666667,
+        "timing_error_scope": "conditional within1.5s only; tail has no finite midpoint; no imputed censor labels"
+      },
+      "classification": {
+        "current": {
+          "samples": 2340,
+          "accuracy": 0.9850427350427351,
+          "macro_f1": 0.9704832460784201,
+          "nll": 0.1542037118044613,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9444444444444444,
+              "recall": 0.9645390070921985,
+              "f1": 0.9543859649122807,
+              "support": 282
+            },
+            "harvest": {
+              "precision": 0.9993606138107417,
+              "recall": 0.9955414012738854,
+              "f1": 0.9974473516273133,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.954248366013072,
+              "recall": 0.9864864864864865,
+              "f1": 0.9700996677740864,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9671641791044776,
+              "recall": 0.9529411764705882,
+              "f1": 0.96,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              272,
+              1,
+              0,
+              9
+            ],
+            [
+              2,
+              1563,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              146,
+              2
+            ],
+            [
+              14,
+              0,
+              2,
+              324
+            ]
+          ],
+          "return_adjust_confusions": 4,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "future": {
+          "samples": 2313,
+          "accuracy": 0.9684392563769996,
+          "macro_f1": 0.9381429028669772,
+          "nll": 0.1574736048332847,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9297520661157025,
+              "recall": 0.8823529411764706,
+              "f1": 0.9054325955734407,
+              "support": 255
+            },
+            "harvest": {
+              "precision": 0.9910428662827895,
+              "recall": 0.986624203821656,
+              "f1": 0.988828598787105,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.9066666666666666,
+              "recall": 0.918918918918919,
+              "f1": 0.912751677852349,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9217877094972067,
+              "recall": 0.9705882352941176,
+              "f1": 0.9455587392550143,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              225,
+              6,
+              0,
+              24
+            ],
+            [
+              12,
+              1549,
+              9,
+              0
+            ],
+            [
+              0,
+              8,
+              136,
+              4
+            ],
+            [
+              5,
+              0,
+              5,
+              330
+            ]
+          ],
+          "return_adjust_confusions": 9,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      },
+      "threshold": 0.7,
+      "latency": {
+        "hazard_p50": 0.05835699266754091,
+        "hazard_p95": 0.07246318855322897,
+        "hazard_max": 0.22793698008172214,
+        "original_cf_p95": 0.19944581290474156
+      },
+      "training_s": 4.854819752014009,
+      "epoch": 11,
+      "parameters": 512644,
+      "gpu_training_peak_bytes": 432756224,
+      "methods": {
+        "B0": {
+          "total": 50,
+          "detected": 36,
+          "missed": 14,
+          "precision": 0.6923076923076923,
+          "recall": 0.72,
+          "f1": 0.7058823529411765,
+          "false_events": 16,
+          "false_per_minute": 0.8300907911802854,
+          "minutes": 19.275,
+          "lead_p50_s": 0.6333333333333293,
+          "lead_p05_s": 0.09999999999999432,
+          "by_transition": {
+            "pickup->harvest": {
+              "total": 17,
+              "detected": 13
+            },
+            "harvest->return": {
+              "total": 17,
+              "detected": 14
+            },
+            "return->adjust": {
+              "total": 8,
+              "detected": 6
+            },
+            "adjust->pickup": {
+              "total": 8,
+              "detected": 3
+            }
+          },
+          "common_1s_hits": 33,
+          "unmatched_categories": {
+            "too_early": 5,
+            "late": 10,
+            "wrong_transition_type": 1
+          },
+          "jitter_reversals": 0
+        },
+        "B1_gate": {
+          "total": 50,
+          "detected": 21,
+          "missed": 29,
+          "precision": 0.875,
+          "recall": 0.42,
+          "f1": 0.5675675675675675,
+          "false_events": 3,
+          "false_per_minute": 0.1556420233463035,
+          "minutes": 19.275,
+          "lead_p50_s": 0.6999999999999886,
+          "lead_p05_s": 0.09999999999999432,
+          "by_transition": {
+            "pickup->harvest": {
+              "total": 17,
+              "detected": 9
+            },
+            "harvest->return": {
+              "total": 17,
+              "detected": 11
+            },
+            "return->adjust": {
+              "total": 8,
+              "detected": 1
+            },
+            "adjust->pickup": {
+              "total": 8,
+              "detected": 0
+            }
+          },
+          "common_1s_hits": 19,
+          "unmatched_categories": {
+            "too_early": 2,
+            "late": 1
+          },
+          "jitter_reversals": 0
+        },
+        "B2": {
+          "total": 50,
+          "detected": 10,
+          "missed": 40,
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.33333333333333337,
+          "false_events": 0,
+          "false_per_minute": 0.0,
+          "minutes": 19.275,
+          "lead_p50_s": 0.5,
+          "lead_p05_s": 0.22333333333333333,
+          "by_transition": {
+            "pickup->harvest": {
+              "total": 17,
+              "detected": 6
+            },
+            "harvest->return": {
+              "total": 17,
+              "detected": 3
+            },
+            "return->adjust": {
+              "total": 8,
+              "detected": 1
+            },
+            "adjust->pickup": {
+              "total": 8,
+              "detected": 0
+            }
+          },
+          "common_1s_hits": 10,
+          "unmatched_categories": {},
+          "jitter_reversals": 0
+        }
+      },
+      "special_adjust": [
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 4,
+          "boundary_s": 74.23333333333333,
+          "window_times": [
+            73.0,
+            73.5,
+            74.0
+          ],
+          "hazard_within15": [
+            0.0076323747634887695,
+            0.004490017890930176,
+            0.013720691204071045
+          ],
+          "current_pickup": [
+            0.9999999988126826,
+            0.9999999981794614,
+            0.9999998821399453
+          ],
+          "future_pickup": [
+            0.9999979988366011,
+            0.9999999439957485,
+            0.9999966104559357
+          ]
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 4,
+          "boundary_s": 109.6,
+          "window_times": [
+            108.5,
+            109.0,
+            109.5
+          ],
+          "hazard_within15": [
+            0.060665011405944824,
+            0.16057229042053223,
+            0.04283499717712402
+          ],
+          "current_pickup": [
+            0.9365431174118913,
+            0.9601674794440922,
+            0.9999891970083085
+          ],
+          "future_pickup": [
+            0.9988414734810469,
+            0.9999971606561008,
+            0.9999976286571111
+          ]
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 4,
+          "boundary_s": 99.13333333333334,
+          "window_times": [
+            98.0,
+            98.5,
+            99.0
+          ],
+          "hazard_within15": [
+            0.14607447385787964,
+            0.12558317184448242,
+            0.08893013000488281
+          ],
+          "current_pickup": [
+            0.00022716924090443347,
+            0.00022424283853148937,
+            0.08954223536910645
+          ],
+          "future_pickup": [
+            0.6062433970635233,
+            0.9263502326596392,
+            0.8821447933695427
+          ]
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 4,
+          "boundary_s": 90.4,
+          "window_times": [
+            89.0,
+            89.5,
+            90.0
+          ],
+          "hazard_within15": [
+            0.58575439453125,
+            0.4875739812850952,
+            0.29237496852874756
+          ],
+          "current_pickup": [
+            4.6405710021927485e-08,
+            4.846516175886314e-05,
+            0.008375477754338686
+          ],
+          "future_pickup": [
+            0.14139981918416838,
+            0.9084816856854848,
+            0.9665508964925026
+          ]
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 4,
+          "boundary_s": 90.3,
+          "window_times": [
+            89.0,
+            89.5,
+            90.0
+          ],
+          "hazard_within15": [
+            0.29564398527145386,
+            0.42855602502822876,
+            0.6092993021011353
+          ],
+          "current_pickup": [
+            7.050274350538597e-09,
+            4.633308083408307e-07,
+            0.00031520291518606874
+          ],
+          "future_pickup": [
+            0.03639268144946577,
+            0.2956098050796109,
+            0.8555429678607746
+          ]
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 4,
+          "boundary_s": 94.86666666666666,
+          "window_times": [
+            93.5,
+            94.0,
+            94.5
+          ],
+          "hazard_within15": [
+            0.15289849042892456,
+            0.09527051448822021,
+            0.4921432137489319
+          ],
+          "current_pickup": [
+            4.36214391018422e-06,
+            1.724973155919374e-08,
+            1.5029893757708707e-06
+          ],
+          "future_pickup": [
+            0.4857292170055127,
+            5.201198122826e-05,
+            0.09773955829635725
+          ]
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 4,
+          "boundary_s": 65.26666666666667,
+          "window_times": [
+            64.0,
+            64.5,
+            65.0
+          ],
+          "hazard_within15": [
+            0.0712619423866272,
+            0.13019698858261108,
+            0.20586031675338745
+          ],
+          "current_pickup": [
+            3.633894123210157e-09,
+            3.393128295071685e-09,
+            0.015546739966315695
+          ],
+          "future_pickup": [
+            0.07408250807410328,
+            0.0018828076673073132,
+            0.3780904716053433
+          ]
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 4,
+          "boundary_s": 65.6,
+          "window_times": [
+            64.5,
+            65.0,
+            65.5
+          ],
+          "hazard_within15": [
+            0.0256575345993042,
+            0.08846026659011841,
+            0.09252995252609253
+          ],
+          "current_pickup": [
+            5.944017569536021e-06,
+            0.0012077217331263365,
+            0.8574961317951797
+          ],
+          "future_pickup": [
+            0.0002802845873149532,
+            0.0009280702385798021,
+            0.8161408816490555
+          ]
+        }
+      ],
+      "decision_events": [
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 1,
+          "time": 9.5,
+          "boundary_s": 8.833333333333334,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 2,
+          "time": 129.5,
+          "boundary_s": 55.8,
+          "outcome": "late"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 61.766666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 74.23333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 81.0,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 129.2,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 1,
+          "time": null,
+          "boundary_s": 10.233333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 76.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 82.46666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 109.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 119.4,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 169.9,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 1,
+          "time": null,
+          "boundary_s": 7.566666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 73.86666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 80.66666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 99.13333333333334,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 113.76666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 175.56666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 1,
+          "time": null,
+          "boundary_s": 9.566666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 71.0,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 77.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 90.4,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 100.66666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 138.63333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 1,
+          "time": 100.0,
+          "boundary_s": 7.366666666666666,
+          "outcome": "late"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 57.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 62.8,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 90.3,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 99.1,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 136.96666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 1,
+          "time": null,
+          "boundary_s": 7.0,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 62.96666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 66.2,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 94.86666666666666,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 106.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 175.43333333333334,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "ca784332e44d979f99018a52",
+          "ordinal": 1,
+          "time": null,
+          "boundary_s": 6.3,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "ca784332e44d979f99018a52",
+          "ordinal": 2,
+          "time": null,
+          "boundary_s": 32.0,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 1,
+          "time": 6.0,
+          "boundary_s": 5.5,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 2,
+          "time": 38.0,
+          "boundary_s": 37.13333333333333,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 3,
+          "time": null,
+          "boundary_s": 40.13333333333333,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 65.26666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 70.46666666666667,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 86.7,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 1,
+          "time": 5.5,
+          "boundary_s": 5.0,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 2,
+          "time": 45.5,
+          "boundary_s": 44.833333333333336,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 3,
+          "time": 48.5,
+          "boundary_s": 47.93333333333333,
+          "outcome": "on_time"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 4,
+          "time": null,
+          "boundary_s": 65.6,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 5,
+          "time": null,
+          "boundary_s": 70.9,
+          "outcome": "never"
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "ordinal": 6,
+          "time": null,
+          "boundary_s": 89.6,
+          "outcome": "never"
+        }
+      ],
+      "decision_outcomes": {
+        "on_time": 6,
+        "late": 2,
+        "never": 42
+      },
+      "early_prompt_case": {
+        "episode_id": "3e645bf4e137d0f836c9d7ff",
+        "ordinal": 4,
+        "new_confirmation_s": null,
+        "original_boundary_s": 73.3,
+        "provisional_boundary_s": 74.23333333333333,
+        "old_confirmation_s": 72.0,
+        "note": "Absent confirmation means missed/stalled, not successful correction of timing."
+      }
+    }
+  },
+  "state_evidence": [
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "ordinal": 1,
+      "transition": "pickup->harvest",
+      "boundary_s": 8.833333333333334,
+      "right_arm_rms_before": 0.028015547618951895,
+      "right_arm_rms_after": 0.0005950220354649211,
+      "right_hand_rms_before": 0.004298230310478569,
+      "right_hand_rms_after": 0.003455352079640005,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        9.222729682922363,
+        9.134389877319336,
+        4.124373912811279
+      ],
+      "visual_feature_change_after": [
+        9.647905349731445,
+        8.435673713684082,
+        7.034906387329102
+      ]
+    },
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "ordinal": 2,
+      "transition": "harvest->return",
+      "boundary_s": 55.8,
+      "right_arm_rms_before": 0.001378903270810729,
+      "right_arm_rms_after": 0.07575610026203165,
+      "right_hand_rms_before": 0.006228027363047958,
+      "right_hand_rms_after": 0.0009828530298746482,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.886538028717041,
+        6.1871137619018555,
+        7.115161895751953
+      ],
+      "visual_feature_change_after": [
+        9.076452255249023,
+        9.620148658752441,
+        7.024700164794922
+      ]
+    },
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "ordinal": 3,
+      "transition": "return->adjust",
+      "boundary_s": 61.766666666666666,
+      "right_arm_rms_before": 0.06981895278901702,
+      "right_arm_rms_after": 0.08986210000466315,
+      "right_hand_rms_before": 0.08828426818127738,
+      "right_hand_rms_after": 0.08771098559695065,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.564729690551758,
+        9.041693687438965,
+        5.3472700119018555
+      ],
+      "visual_feature_change_after": [
+        7.293220520019531,
+        7.95499324798584,
+        4.627375602722168
+      ]
+    },
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "ordinal": 4,
+      "transition": "adjust->pickup",
+      "boundary_s": 74.23333333333333,
+      "right_arm_rms_before": 0.011244465875104004,
+      "right_arm_rms_after": 0.02036240981939177,
+      "right_hand_rms_before": 0.11097634326926603,
+      "right_hand_rms_after": 0.12909361924648022,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.050982475280762,
+        6.73443603515625,
+        4.600011825561523
+      ],
+      "visual_feature_change_after": [
+        6.2674055099487305,
+        6.284344673156738,
+        3.531778335571289
+      ]
+    },
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "ordinal": 5,
+      "transition": "pickup->harvest",
+      "boundary_s": 81.0,
+      "right_arm_rms_before": 0.0418954531818134,
+      "right_arm_rms_after": 0.002455535800532917,
+      "right_hand_rms_before": 0.0030445438397221744,
+      "right_hand_rms_after": 0.008771224752272343,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.69351577758789,
+        5.508572578430176,
+        4.164339065551758
+      ],
+      "visual_feature_change_after": [
+        10.017412185668945,
+        8.641552925109863,
+        8.088828086853027
+      ]
+    },
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "ordinal": 6,
+      "transition": "harvest->return",
+      "boundary_s": 129.2,
+      "right_arm_rms_before": 0.003295951356550114,
+      "right_arm_rms_after": 0.07629369445487945,
+      "right_hand_rms_before": 0.003895781944935148,
+      "right_hand_rms_after": 0.0015625289783371564,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.632911682128906,
+        5.597997665405273,
+        7.471284866333008
+      ],
+      "visual_feature_change_after": [
+        7.659587860107422,
+        9.431836128234863,
+        6.692994117736816
+      ]
+    },
+    {
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "ordinal": 1,
+      "transition": "pickup->harvest",
+      "boundary_s": 10.233333333333333,
+      "right_arm_rms_before": 0.01625028869211875,
+      "right_arm_rms_after": 0.0005365839779364722,
+      "right_hand_rms_before": 0.0012135855926115153,
+      "right_hand_rms_after": 0.002865300335296444,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.386603355407715,
+        8.470099449157715,
+        4.238718509674072
+      ],
+      "visual_feature_change_after": [
+        8.759969711303711,
+        6.393106460571289,
+        9.797636032104492
+      ]
+    },
+    {
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "ordinal": 2,
+      "transition": "harvest->return",
+      "boundary_s": 76.6,
+      "right_arm_rms_before": 3.0793632937084825e-05,
+      "right_arm_rms_after": 0.06541560926501068,
+      "right_hand_rms_before": 0.00018048257163572425,
+      "right_hand_rms_after": 0.0015100137853821674,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.436398506164551,
+        5.076503276824951,
+        8.837376594543457
+      ],
+      "visual_feature_change_after": [
+        9.181623458862305,
+        9.969846725463867,
+        5.954794883728027
+      ]
+    },
+    {
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "ordinal": 3,
+      "transition": "return->adjust",
+      "boundary_s": 82.46666666666667,
+      "right_arm_rms_before": 0.010191530187270816,
+      "right_arm_rms_after": 0.06230055622960279,
+      "right_hand_rms_before": 0.14528592234424034,
+      "right_hand_rms_after": 0.377194500843655,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.293424606323242,
+        5.288379192352295,
+        5.0154128074646
+      ],
+      "visual_feature_change_after": [
+        7.276914596557617,
+        8.84146785736084,
+        3.8680386543273926
+      ]
+    },
+    {
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "ordinal": 4,
+      "transition": "adjust->pickup",
+      "boundary_s": 109.6,
+      "right_arm_rms_before": 0.016845788109432637,
+      "right_arm_rms_after": 0.036757995781429985,
+      "right_hand_rms_before": 0.3149069192755638,
+      "right_hand_rms_after": 0.08378869278251301,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.368366241455078,
+        6.8349714279174805,
+        4.07197380065918
+      ],
+      "visual_feature_change_after": [
+        5.390249252319336,
+        7.697777271270752,
+        3.991103410720825
+      ]
+    },
+    {
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "ordinal": 5,
+      "transition": "pickup->harvest",
+      "boundary_s": 119.4,
+      "right_arm_rms_before": 0.019879327355910123,
+      "right_arm_rms_after": 0.0014124272649234115,
+      "right_hand_rms_before": 0.004872331703087926,
+      "right_hand_rms_after": 0.008073647396567121,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.893612861633301,
+        5.57601261138916,
+        4.389272689819336
+      ],
+      "visual_feature_change_after": [
+        9.66843318939209,
+        8.778207778930664,
+        8.751800537109375
+      ]
+    },
+    {
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "ordinal": 6,
+      "transition": "harvest->return",
+      "boundary_s": 169.9,
+      "right_arm_rms_before": 9.308936630055177e-06,
+      "right_arm_rms_after": 0.07693719941503722,
+      "right_hand_rms_before": 0.002255725428056004,
+      "right_hand_rms_after": 0.002262710687568111,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.519136428833008,
+        5.701291084289551,
+        8.44239330291748
+      ],
+      "visual_feature_change_after": [
+        9.479583740234375,
+        10.623441696166992,
+        9.217691421508789
+      ]
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "ordinal": 1,
+      "transition": "pickup->harvest",
+      "boundary_s": 7.566666666666666,
+      "right_arm_rms_before": 0.004576039862907948,
+      "right_arm_rms_after": 0.0004115817942822067,
+      "right_hand_rms_before": 0.002084236647748074,
+      "right_hand_rms_after": 0.008047074042876115,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.037757873535156,
+        8.929448127746582,
+        4.766857147216797
+      ],
+      "visual_feature_change_after": [
+        11.521491050720215,
+        8.951348304748535,
+        9.160303115844727
+      ]
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "ordinal": 2,
+      "transition": "harvest->return",
+      "boundary_s": 73.86666666666666,
+      "right_arm_rms_before": 1.1080264822737379e-05,
+      "right_arm_rms_after": 0.05343544945882925,
+      "right_hand_rms_before": 2.9624640899191207e-05,
+      "right_hand_rms_after": 0.00518342334720041,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.188411712646484,
+        5.651043891906738,
+        8.813732147216797
+      ],
+      "visual_feature_change_after": [
+        9.472587585449219,
+        10.61849594116211,
+        5.9376606941223145
+      ]
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "ordinal": 3,
+      "transition": "return->adjust",
+      "boundary_s": 80.66666666666667,
+      "right_arm_rms_before": 0.020083354442983908,
+      "right_arm_rms_after": 0.0594111510142472,
+      "right_hand_rms_before": 0.03385264322020132,
+      "right_hand_rms_after": 0.3169447076212013,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.332461833953857,
+        6.212967395782471,
+        4.543690204620361
+      ],
+      "visual_feature_change_after": [
+        7.495593547821045,
+        12.273696899414062,
+        4.1397247314453125
+      ]
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "ordinal": 4,
+      "transition": "adjust->pickup",
+      "boundary_s": 99.13333333333334,
+      "right_arm_rms_before": 0.1759910656267413,
+      "right_arm_rms_after": 0.1423076005373902,
+      "right_hand_rms_before": 0.48602802382564736,
+      "right_hand_rms_after": 0.19531492198023767,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.5133771896362305,
+        8.40156364440918,
+        4.5491719245910645
+      ],
+      "visual_feature_change_after": [
+        6.748546600341797,
+        9.153324127197266,
+        5.419310569763184
+      ]
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "ordinal": 5,
+      "transition": "pickup->harvest",
+      "boundary_s": 113.76666666666667,
+      "right_arm_rms_before": 0.011036425681626319,
+      "right_arm_rms_after": 0.00010438430447140085,
+      "right_hand_rms_before": 0.0016094768515785079,
+      "right_hand_rms_after": 0.003869973273318705,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.740623474121094,
+        8.036446571350098,
+        3.6819448471069336
+      ],
+      "visual_feature_change_after": [
+        8.118354797363281,
+        8.974639892578125,
+        11.965522766113281
+      ]
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "ordinal": 6,
+      "transition": "harvest->return",
+      "boundary_s": 175.56666666666666,
+      "right_arm_rms_before": 5.278407830607396e-05,
+      "right_arm_rms_after": 0.10652456075779572,
+      "right_hand_rms_before": 0.0018835390524918475,
+      "right_hand_rms_after": 0.0028870027315679226,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.259223937988281,
+        6.561580657958984,
+        10.509963989257812
+      ],
+      "visual_feature_change_after": [
+        8.963645935058594,
+        12.345775604248047,
+        7.581365585327148
+      ]
+    },
+    {
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "ordinal": 1,
+      "transition": "pickup->harvest",
+      "boundary_s": 9.566666666666666,
+      "right_arm_rms_before": 0.010232880122884426,
+      "right_arm_rms_after": 0.00056531764869578,
+      "right_hand_rms_before": 0.0030689176565097775,
+      "right_hand_rms_after": 0.008880541184540172,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.123398780822754,
+        9.065210342407227,
+        5.152225494384766
+      ],
+      "visual_feature_change_after": [
+        9.109285354614258,
+        9.024068832397461,
+        12.640483856201172
+      ]
+    },
+    {
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "ordinal": 2,
+      "transition": "harvest->return",
+      "boundary_s": 71.0,
+      "right_arm_rms_before": 1.2637198814276431e-05,
+      "right_arm_rms_after": 1.4383426407207023e-05,
+      "right_hand_rms_before": 0.0019394538634499314,
+      "right_hand_rms_after": 0.0011981394180958491,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.25649356842041,
+        4.592755317687988,
+        5.59820556640625
+      ],
+      "visual_feature_change_after": [
+        6.475406646728516,
+        5.549570083618164,
+        5.863377571105957
+      ]
+    },
+    {
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "ordinal": 3,
+      "transition": "return->adjust",
+      "boundary_s": 77.6,
+      "right_arm_rms_before": 0.03600863830476427,
+      "right_arm_rms_after": 0.07047901472247284,
+      "right_hand_rms_before": 0.14871890410230998,
+      "right_hand_rms_after": 0.2171460907774255,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.631693363189697,
+        6.846987724304199,
+        4.61892557144165
+      ],
+      "visual_feature_change_after": [
+        7.610052108764648,
+        8.933237075805664,
+        3.4316186904907227
+      ]
+    },
+    {
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "ordinal": 4,
+      "transition": "adjust->pickup",
+      "boundary_s": 90.4,
+      "right_arm_rms_before": 0.022059413034598057,
+      "right_arm_rms_after": 0.08966017953456266,
+      "right_hand_rms_before": 0.07775246883731227,
+      "right_hand_rms_after": 0.33505072613978,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.398530960083008,
+        6.275052547454834,
+        3.72916316986084
+      ],
+      "visual_feature_change_after": [
+        7.04157829284668,
+        10.958641052246094,
+        4.463556289672852
+      ]
+    },
+    {
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "ordinal": 5,
+      "transition": "pickup->harvest",
+      "boundary_s": 100.66666666666667,
+      "right_arm_rms_before": 0.01718713049978234,
+      "right_arm_rms_after": 0.0005057973133193123,
+      "right_hand_rms_before": 0.0029788353747934797,
+      "right_hand_rms_after": 0.010780308498534176,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.062865734100342,
+        10.650917053222656,
+        6.355770111083984
+      ],
+      "visual_feature_change_after": [
+        8.506963729858398,
+        6.470951080322266,
+        9.163956642150879
+      ]
+    },
+    {
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "ordinal": 6,
+      "transition": "harvest->return",
+      "boundary_s": 138.63333333333333,
+      "right_arm_rms_before": 3.250309493732765e-05,
+      "right_arm_rms_after": 0.0658250528653574,
+      "right_hand_rms_before": 0.0025230219887913603,
+      "right_hand_rms_after": 0.012783910708623256,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.496397018432617,
+        5.66705846786499,
+        7.193449020385742
+      ],
+      "visual_feature_change_after": [
+        10.065825462341309,
+        11.221707344055176,
+        7.337762355804443
+      ]
+    },
+    {
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "ordinal": 1,
+      "transition": "pickup->harvest",
+      "boundary_s": 7.366666666666666,
+      "right_arm_rms_before": 0.0395750275927698,
+      "right_arm_rms_after": 0.0012903507178668899,
+      "right_hand_rms_before": 0.004870421058157094,
+      "right_hand_rms_after": 0.008977305077191773,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.902534008026123,
+        9.610041618347168,
+        4.227664947509766
+      ],
+      "visual_feature_change_after": [
+        9.01015853881836,
+        9.429191589355469,
+        7.083132743835449
+      ]
+    },
+    {
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "ordinal": 2,
+      "transition": "harvest->return",
+      "boundary_s": 57.6,
+      "right_arm_rms_before": 0.009165605549225428,
+      "right_arm_rms_after": 0.10622618498301005,
+      "right_hand_rms_before": 0.004058224863932293,
+      "right_hand_rms_after": 0.0023576810783793906,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.964868545532227,
+        8.397929191589355,
+        5.382213592529297
+      ],
+      "visual_feature_change_after": [
+        8.860485076904297,
+        9.544981002807617,
+        5.856357574462891
+      ]
+    },
+    {
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "ordinal": 3,
+      "transition": "return->adjust",
+      "boundary_s": 62.8,
+      "right_arm_rms_before": 0.030221191021846745,
+      "right_arm_rms_after": 0.05192873319526111,
+      "right_hand_rms_before": 0.2829820870717881,
+      "right_hand_rms_after": 0.43767742928576164,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.385393142700195,
+        7.225829601287842,
+        4.532971382141113
+      ],
+      "visual_feature_change_after": [
+        8.287064552307129,
+        7.168413162231445,
+        5.744222640991211
+      ]
+    },
+    {
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "ordinal": 4,
+      "transition": "adjust->pickup",
+      "boundary_s": 90.3,
+      "right_arm_rms_before": 0.0500703691315083,
+      "right_arm_rms_after": 0.11681074299795732,
+      "right_hand_rms_before": 0.10690557636210918,
+      "right_hand_rms_after": 0.35045946544032736,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.059664249420166,
+        8.384416580200195,
+        3.249629497528076
+      ],
+      "visual_feature_change_after": [
+        5.908510208129883,
+        6.926684379577637,
+        6.578104019165039
+      ]
+    },
+    {
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "ordinal": 5,
+      "transition": "pickup->harvest",
+      "boundary_s": 99.1,
+      "right_arm_rms_before": 0.03910018165653599,
+      "right_arm_rms_after": 0.0004393336541035576,
+      "right_hand_rms_before": 0.002306339479515679,
+      "right_hand_rms_after": 0.00675114380151664,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.153803825378418,
+        10.034126281738281,
+        3.866389751434326
+      ],
+      "visual_feature_change_after": [
+        8.95000171661377,
+        8.28230094909668,
+        9.062614440917969
+      ]
+    },
+    {
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "ordinal": 6,
+      "transition": "harvest->return",
+      "boundary_s": 136.96666666666667,
+      "right_arm_rms_before": 1.3752492000693253e-05,
+      "right_arm_rms_after": 0.05719588863594807,
+      "right_hand_rms_before": 0.0013405119828625613,
+      "right_hand_rms_after": 0.004189095924298673,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.011652946472168,
+        7.08781623840332,
+        5.6680192947387695
+      ],
+      "visual_feature_change_after": [
+        9.074897766113281,
+        11.398664474487305,
+        5.108457088470459
+      ]
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "ordinal": 1,
+      "transition": "pickup->harvest",
+      "boundary_s": 7.0,
+      "right_arm_rms_before": 0.02866022402166827,
+      "right_arm_rms_after": 0.0024076367165407437,
+      "right_hand_rms_before": 0.0029783582863214973,
+      "right_hand_rms_after": 0.01223512599708228,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.922069549560547,
+        9.031280517578125,
+        4.270992279052734
+      ],
+      "visual_feature_change_after": [
+        9.548179626464844,
+        9.921958923339844,
+        8.463545799255371
+      ]
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "ordinal": 2,
+      "transition": "harvest->return",
+      "boundary_s": 62.96666666666667,
+      "right_arm_rms_before": 0.060346505202953656,
+      "right_arm_rms_after": 0.12649771694357576,
+      "right_hand_rms_before": 0.005234283332664151,
+      "right_hand_rms_after": 0.001001670824006372,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.621279716491699,
+        10.863409042358398,
+        6.8588762283325195
+      ],
+      "visual_feature_change_after": [
+        6.224878311157227,
+        7.203234672546387,
+        8.64765453338623
+      ]
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "ordinal": 3,
+      "transition": "return->adjust",
+      "boundary_s": 66.2,
+      "right_arm_rms_before": 0.028791157048543996,
+      "right_arm_rms_after": 0.07080931267318939,
+      "right_hand_rms_before": 0.41385977402165425,
+      "right_hand_rms_after": 0.22630406648949092,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.047037124633789,
+        10.723100662231445,
+        4.3432936668396
+      ],
+      "visual_feature_change_after": [
+        6.044017791748047,
+        12.013774871826172,
+        4.06289529800415
+      ]
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "ordinal": 4,
+      "transition": "adjust->pickup",
+      "boundary_s": 94.86666666666666,
+      "right_arm_rms_before": 0.10770204641998327,
+      "right_arm_rms_after": 0.13485412503789318,
+      "right_hand_rms_before": 0.20083418433671527,
+      "right_hand_rms_after": 0.34268528376055696,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        5.491188049316406,
+        12.357364654541016,
+        5.053116798400879
+      ],
+      "visual_feature_change_after": [
+        7.536416053771973,
+        8.63824462890625,
+        3.2110252380371094
+      ]
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "ordinal": 5,
+      "transition": "pickup->harvest",
+      "boundary_s": 106.6,
+      "right_arm_rms_before": 0.023022649761660314,
+      "right_arm_rms_after": 0.0005341850708168459,
+      "right_hand_rms_before": 0.0030839017708877772,
+      "right_hand_rms_after": 0.006001368112279884,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.221782684326172,
+        9.360401153564453,
+        4.563806533813477
+      ],
+      "visual_feature_change_after": [
+        7.964945316314697,
+        10.554367065429688,
+        9.796010971069336
+      ]
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "ordinal": 6,
+      "transition": "harvest->return",
+      "boundary_s": 175.43333333333334,
+      "right_arm_rms_before": 2.5522314362465157e-05,
+      "right_arm_rms_after": 0.0776705941496702,
+      "right_hand_rms_before": 0.0019366190797325967,
+      "right_hand_rms_after": 0.0025717870024878214,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.594790458679199,
+        5.389096260070801,
+        8.703608512878418
+      ],
+      "visual_feature_change_after": [
+        7.209515571594238,
+        10.369922637939453,
+        8.601005554199219
+      ]
+    },
+    {
+      "episode_id": "ca784332e44d979f99018a52",
+      "ordinal": 1,
+      "transition": "pickup->harvest",
+      "boundary_s": 6.3,
+      "right_arm_rms_before": 0.05770910685334481,
+      "right_arm_rms_after": 0.000543792690861088,
+      "right_hand_rms_before": 0.004681042261759928,
+      "right_hand_rms_after": 0.00332719404309628,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.710247993469238,
+        7.104394435882568,
+        3.8456106185913086
+      ],
+      "visual_feature_change_after": [
+        8.314228057861328,
+        9.214447021484375,
+        8.499120712280273
+      ]
+    },
+    {
+      "episode_id": "ca784332e44d979f99018a52",
+      "ordinal": 2,
+      "transition": "harvest->return",
+      "boundary_s": 32.0,
+      "right_arm_rms_before": 3.378556847378467e-05,
+      "right_arm_rms_after": 0.02481862872700428,
+      "right_hand_rms_before": 0.0001117117051135996,
+      "right_hand_rms_after": 0.002955941994362869,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.227314949035645,
+        5.852057456970215,
+        6.153833389282227
+      ],
+      "visual_feature_change_after": [
+        8.383995056152344,
+        9.291563987731934,
+        6.558681964874268
+      ]
+    },
+    {
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "ordinal": 1,
+      "transition": "pickup->harvest",
+      "boundary_s": 5.5,
+      "right_arm_rms_before": 0.03732847111544789,
+      "right_arm_rms_after": 0.0005198433515641636,
+      "right_hand_rms_before": 0.001299734234672255,
+      "right_hand_rms_after": 0.006698993032462806,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        10.258550643920898,
+        10.28866195678711,
+        4.2496795654296875
+      ],
+      "visual_feature_change_after": [
+        7.823587894439697,
+        7.702055931091309,
+        9.802665710449219
+      ]
+    },
+    {
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "ordinal": 2,
+      "transition": "harvest->return",
+      "boundary_s": 37.13333333333333,
+      "right_arm_rms_before": 5.0844974284817973e-05,
+      "right_arm_rms_after": 0.1528625516974999,
+      "right_hand_rms_before": 7.052228112440898e-05,
+      "right_hand_rms_after": 0.0018213734033539844,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.470134258270264,
+        5.354266166687012,
+        5.772230625152588
+      ],
+      "visual_feature_change_after": [
+        9.417386054992676,
+        11.123906135559082,
+        9.237069129943848
+      ]
+    },
+    {
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "ordinal": 3,
+      "transition": "return->adjust",
+      "boundary_s": 40.13333333333333,
+      "right_arm_rms_before": 0.047727363526512905,
+      "right_arm_rms_after": 0.08890555483337155,
+      "right_hand_rms_before": 0.3020294199878654,
+      "right_hand_rms_after": 0.3342613114932657,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.347053527832031,
+        8.226431846618652,
+        4.506910800933838
+      ],
+      "visual_feature_change_after": [
+        7.898921489715576,
+        8.117664337158203,
+        4.635429382324219
+      ]
+    },
+    {
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "ordinal": 4,
+      "transition": "adjust->pickup",
+      "boundary_s": 65.26666666666667,
+      "right_arm_rms_before": 0.084043216559051,
+      "right_arm_rms_after": 0.11745828387049594,
+      "right_hand_rms_before": 0.16827984659587508,
+      "right_hand_rms_after": 0.19196776886535055,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.99166202545166,
+        7.47466516494751,
+        4.343209743499756
+      ],
+      "visual_feature_change_after": [
+        7.099556922912598,
+        7.266867637634277,
+        4.343422889709473
+      ]
+    },
+    {
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "ordinal": 5,
+      "transition": "pickup->harvest",
+      "boundary_s": 70.46666666666667,
+      "right_arm_rms_before": 0.15455601720711976,
+      "right_arm_rms_after": 0.001705378731953471,
+      "right_hand_rms_before": 0.012735451489174007,
+      "right_hand_rms_after": 0.008770459850620787,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        9.347770690917969,
+        10.547114372253418,
+        6.248699188232422
+      ],
+      "visual_feature_change_after": [
+        9.93411636352539,
+        10.284758567810059,
+        8.520520210266113
+      ]
+    },
+    {
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "ordinal": 6,
+      "transition": "harvest->return",
+      "boundary_s": 86.7,
+      "right_arm_rms_before": 2.0605738320865176e-05,
+      "right_arm_rms_after": 0.14571551633805283,
+      "right_hand_rms_before": 0.0021418318147890443,
+      "right_hand_rms_after": 0.0031629060822265112,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        5.761221408843994,
+        4.838377952575684,
+        5.694672584533691
+      ],
+      "visual_feature_change_after": [
+        8.784416198730469,
+        11.416498184204102,
+        6.521127700805664
+      ]
+    },
+    {
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "ordinal": 1,
+      "transition": "pickup->harvest",
+      "boundary_s": 5.0,
+      "right_arm_rms_before": 0.029004813268774302,
+      "right_arm_rms_after": 0.0010600375773729314,
+      "right_hand_rms_before": 0.0029448414865434593,
+      "right_hand_rms_after": 0.007712265474998246,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.523093223571777,
+        9.189495086669922,
+        5.350793838500977
+      ],
+      "visual_feature_change_after": [
+        9.870783805847168,
+        8.63994026184082,
+        8.307437896728516
+      ]
+    },
+    {
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "ordinal": 2,
+      "transition": "harvest->return",
+      "boundary_s": 44.833333333333336,
+      "right_arm_rms_before": 0.000694534562903091,
+      "right_arm_rms_after": 0.2133159874846352,
+      "right_hand_rms_before": 0.0036272504250384864,
+      "right_hand_rms_after": 0.0007599967208149441,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.120255947113037,
+        5.010386943817139,
+        8.450643539428711
+      ],
+      "visual_feature_change_after": [
+        7.920319080352783,
+        11.891948699951172,
+        8.183552742004395
+      ]
+    },
+    {
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "ordinal": 3,
+      "transition": "return->adjust",
+      "boundary_s": 47.93333333333333,
+      "right_arm_rms_before": 0.02371019791447685,
+      "right_arm_rms_after": 0.11606310126013848,
+      "right_hand_rms_before": 0.33210353106933127,
+      "right_hand_rms_after": 0.18196526172404995,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        7.845920562744141,
+        9.459346771240234,
+        4.3585896492004395
+      ],
+      "visual_feature_change_after": [
+        7.703494071960449,
+        9.14374828338623,
+        5.583356857299805
+      ]
+    },
+    {
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "ordinal": 4,
+      "transition": "adjust->pickup",
+      "boundary_s": 65.6,
+      "right_arm_rms_before": 0.08777324876517989,
+      "right_arm_rms_after": 0.04195354151469148,
+      "right_hand_rms_before": 0.1508649810203274,
+      "right_hand_rms_after": 0.2494999725934458,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        5.6930060386657715,
+        7.228009223937988,
+        3.8509974479675293
+      ],
+      "visual_feature_change_after": [
+        5.697296142578125,
+        6.01555061340332,
+        4.427948474884033
+      ]
+    },
+    {
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "ordinal": 5,
+      "transition": "pickup->harvest",
+      "boundary_s": 70.9,
+      "right_arm_rms_before": 0.0069095960560242795,
+      "right_arm_rms_after": 0.000127634974455962,
+      "right_hand_rms_before": 0.01765354192719736,
+      "right_hand_rms_after": 0.004909208712826434,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        8.401725769042969,
+        8.998937606811523,
+        7.91098690032959
+      ],
+      "visual_feature_change_after": [
+        8.748424530029297,
+        7.517285346984863,
+        10.686689376831055
+      ]
+    },
+    {
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "ordinal": 6,
+      "transition": "harvest->return",
+      "boundary_s": 89.6,
+      "right_arm_rms_before": 8.97103301054755e-05,
+      "right_arm_rms_after": 0.1380723655166918,
+      "right_hand_rms_before": 0.0017001394175486038,
+      "right_hand_rms_after": 0.006547757654182471,
+      "camera_keys": [
+        "observation.images.cam0",
+        "observation.images.cam1",
+        "observation.images.cam2"
+      ],
+      "visual_feature_change_before": [
+        6.603095054626465,
+        6.978679656982422,
+        6.467646598815918
+      ],
+      "visual_feature_change_after": [
+        9.39434814453125,
+        11.974967956542969,
+        7.404673099517822
+      ]
+    }
+  ],
+  "paired_recording_uncertainty": {
+    "B1_gate": {
+      "recall_delta_ci95": [
+        -0.34782608695652173,
+        -0.11333333333333334
+      ],
+      "scope": "paired9 recording bootstrap, seed-mean difference; exploratory validation, not generalization CI"
+    },
+    "B2": {
+      "recall_delta_ci95": [
+        -0.5864197530864197,
+        -0.3115942028985507
+      ],
+      "scope": "paired9 recording bootstrap, seed-mean difference; exploratory validation, not generalization CI"
+    }
+  },
+  "aggregate": {
+    "B0": {
+      "recall": {
+        "mean": 0.7333333333333334,
+        "sample_sd": 0.04163331998932269
+      },
+      "precision": {
+        "mean": 0.6968186134852802,
+        "sample_sd": 0.051075544429949084
+      },
+      "f1": {
+        "mean": 0.7145550527903469,
+        "sample_sd": 0.04642605234679011
+      },
+      "false_per_minute": {
+        "mean": 0.8300907911802854,
+        "sample_sd": 0.1556420233463035
+      }
+    },
+    "B1_gate": {
+      "recall": {
+        "mean": 0.5133333333333333,
+        "sample_sd": 0.11372481406154657
+      },
+      "precision": {
+        "mean": 0.9164285714285714,
+        "sample_sd": 0.04254049691236598
+      },
+      "f1": {
+        "mean": 0.6535029146793853,
+        "sample_sd": 0.09342157271241797
+      },
+      "false_per_minute": {
+        "mean": 0.12105490704712496,
+        "sample_sd": 0.05990664271747089
+      }
+    },
+    "B2": {
+      "recall": {
+        "mean": 0.2866666666666667,
+        "sample_sd": 0.09018499505645788
+      },
+      "precision": {
+        "mean": 0.9833333333333334,
+        "sample_sd": 0.028867513459481315
+      },
+      "f1": {
+        "mean": 0.4378968253968254,
+        "sample_sd": 0.10476246843282698
+      },
+      "false_per_minute": {
+        "mean": 0.01729355814958928,
+        "sample_sd": 0.02995332135873545
+      }
+    }
+  },
+  "B3_run": false,
+  "decision": "retain_B0; B1/B2 do not improve recall at the false-positive cap; no external threshold selection"
+}
