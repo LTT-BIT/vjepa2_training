@@ -1,0 +1,952 @@
+{
+  "human_opinions_completed": 0,
+  "notes": [
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_b3",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b3",
+      "source_annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "original_boundary_frame": 1813,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        1693,
+        1932
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_b4",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b4",
+      "source_annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "original_boundary_frame": 2199,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2040,
+        2318
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": [],
+      "agent_visual_triage": "已查看70、71、71.5、72、73.3、74秒三视角帧：71.5/72秒物体仍靠近盘，围拢/调整的接触语义无法仅凭静帧确定。没有证据据模型把标签前移1.3秒，建议保留原标签至两人复核。",
+      "visual_evidence_path": "/home/user/vjepa2_training/runs/tomato/boundary_review_20261109/review_package/3e645bf4e137d0f836c9d7ff_b4/semantic_review_contact.jpg"
+    },
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_b5",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b5",
+      "source_annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "original_boundary_frame": 2434,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2314,
+        2553
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 1,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "27d8bc0413a42341c7e8c3e5_b4",
+      "target_event_id": "27d8bc0413a42341c7e8c3e5_b4",
+      "source_annotation_sha256": "88f06ef9f62f5626b7f518c87da5e3960f1ab346c8ce34ae75068577eed64cba",
+      "original_boundary_frame": 3249,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        3129,
+        3368
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_b3",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b3",
+      "source_annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "original_boundary_frame": 2424,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2280,
+        2543
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "source_annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "original_boundary_frame": 2975,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2835,
+        3094
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_b5",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b5",
+      "source_annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "original_boundary_frame": 3408,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        3270,
+        3527
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "61c420843f11ca54bfe804ee_b4",
+      "target_event_id": "61c420843f11ca54bfe804ee_b4",
+      "source_annotation_sha256": "64b6044cceda07ad70f19899f39910de4ba1324550b3a5aa1ec18d493ffb3ac7",
+      "original_boundary_frame": 2722,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2580,
+        2841
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": true
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "5b82f4bb76e70d8bf12c0798_b4",
+      "target_event_id": "5b82f4bb76e70d8bf12c0798_b4",
+      "source_annotation_sha256": "ece74cd377bfa49fd37c358efdb3900cae8f7ec5844859aadea3466b450f7564",
+      "original_boundary_frame": 2725,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2595,
+        2844
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 2,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": true
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_b3",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b3",
+      "source_annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "original_boundary_frame": 1987,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        1867,
+        2106
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_b4",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b4",
+      "source_annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "original_boundary_frame": 2888,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2768,
+        3029
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_b6",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b6",
+      "source_annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "original_boundary_frame": 5262,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        5142,
+        5370
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 1,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "a8b23394b642f0bb769a0391_b4",
+      "target_event_id": "a8b23394b642f0bb769a0391_b4",
+      "source_annotation_sha256": "66b4431c3d08b810a7a3ecc8f22793fe8bd58118f4428d8beb152b5c4cce3b77",
+      "original_boundary_frame": 1949,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        1829,
+        2068
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b2",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b2",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 2753,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2633,
+        2879
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 3130,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        3010,
+        3249
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 2,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b4",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b4",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 3810,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        3690,
+        3929
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b5",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b5",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 4179,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        4059,
+        4298
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "d0f8727d35eced697dcf79fe_b4",
+      "target_event_id": "d0f8727d35eced697dcf79fe_b4",
+      "source_annotation_sha256": "c8ab7d1086a70bf97b65058409154fb0b1c8c90f3ceaadcb0e833b94e7e7c87e",
+      "original_boundary_frame": 1943,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        1823,
+        2062
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_fp1",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b3",
+      "source_annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "original_boundary_frame": 1813,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        1693,
+        1949
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_fp2",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b4",
+      "source_annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "original_boundary_frame": 2199,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        1980,
+        2318
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_fp3",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b5",
+      "source_annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "original_boundary_frame": 2434,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2314,
+        2564
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 1,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "27d8bc0413a42341c7e8c3e5_fp1",
+      "target_event_id": "27d8bc0413a42341c7e8c3e5_b4",
+      "source_annotation_sha256": "88f06ef9f62f5626b7f518c87da5e3960f1ab346c8ce34ae75068577eed64cba",
+      "original_boundary_frame": 3249,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        3129,
+        3389
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_fp1",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b3",
+      "source_annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "original_boundary_frame": 2424,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2220,
+        2543
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_fp2",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "source_annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "original_boundary_frame": 2975,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2775,
+        3094
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_fp3",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "source_annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "original_boundary_frame": 2975,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2855,
+        3194
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_fp4",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "source_annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "original_boundary_frame": 2975,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2855,
+        3224
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_fp5",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b5",
+      "source_annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "original_boundary_frame": 3408,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        3210,
+        3527
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_fp1",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b3",
+      "source_annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "original_boundary_frame": 1987,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        1867,
+        2129
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_fp2",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b4",
+      "source_annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "original_boundary_frame": 2888,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2768,
+        3089
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_fp3",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b6",
+      "source_annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "original_boundary_frame": 5262,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        5142,
+        5370
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 1,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "a8b23394b642f0bb769a0391_fp1",
+      "target_event_id": "a8b23394b642f0bb769a0391_b4",
+      "source_annotation_sha256": "66b4431c3d08b810a7a3ecc8f22793fe8bd58118f4428d8beb152b5c4cce3b77",
+      "original_boundary_frame": 1949,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        1829,
+        2084
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp1",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b2",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 2753,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2633,
+        2939
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp2",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 3130,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2835,
+        3249
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 2,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp3",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 3130,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        2925,
+        3249
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 2,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp4",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 3130,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        3010,
+        3269
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 2,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp5",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 3130,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        3010,
+        3329
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 2,
+        "future_strict_k1_hit": true,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp6",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b4",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 3810,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        3630,
+        3929
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp7",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b5",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 4179,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        4059,
+        4334
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp8",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b6",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 8103,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        7740,
+        8222
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": true
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp9",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b6",
+      "source_annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "original_boundary_frame": 8103,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        7800,
+        8222
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 3,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": true
+      },
+      "question": "复核原阶段开始/结束动作锚点、遮挡、重复/失败尝试；不能根据模型高概率自动移动边界",
+      "revision_history": []
+    },
+    {
+      "case_id": "d0f8727d35eced697dcf79fe_fp1",
+      "target_event_id": "d0f8727d35eced697dcf79fe_b4",
+      "source_annotation_sha256": "c8ab7d1086a70bf97b65058409154fb0b1c8c90f3ceaadcb0e833b94e7e7c87e",
+      "original_boundary_frame": 1943,
+      "human_review_status": "pending",
+      "analyst_type": "automated_initial_triage",
+      "proposed_boundary_frame": null,
+      "earliest_plausible_frame": null,
+      "latest_plausible_frame": null,
+      "suggested_search_window_frames": [
+        1823,
+        2099
+      ],
+      "search_window_is_not_label_uncertainty": true,
+      "model_evidence": {
+        "future_target_samples_in_valid_window": 0,
+        "future_strict_k1_hit": false,
+        "future_strict_k2_hit": false
+      },
+      "question": "区分盘内重定位与新的拿起抓握序列；分别标接触、闭合、带动物体、离盘。不要把握住不抬起预先当作负例。",
+      "revision_history": []
+    }
+  ],
+  "labels_revised": 0,
+  "policy": "No fabricated human consensus; proposed boundaries remain null until human review."
+}

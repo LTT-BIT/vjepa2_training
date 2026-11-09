@@ -1,0 +1,46 @@
+{
+  "parent_sha": "412fbc17861f19b7187e7c78236c476bf43316b9",
+  "split": "val",
+  "train": false,
+  "test_used": false,
+  "thresholds": [
+    0.5,
+    0.8
+  ],
+  "confirmations": [
+    1,
+    2
+  ],
+  "horizon_s": 1.5,
+  "policies": [
+    "current_argmax",
+    "current_conf05",
+    "current_conf05_k2",
+    "current_conf08",
+    "current_conf08_k2",
+    "ordered_current08_k1",
+    "ordered_current08_k2",
+    "ordered_current_future08_k2"
+  ],
+  "joint_rule": "Current must predict expected next class at>=.8 AND Future must predict same class at>=.8, on two consecutive observations. Future never advances stage by itself.",
+  "matching": "Unchanged exact from/to one-to-one. Current [b,min(b+2s,end)); Future[b-1.5,b). Same truth events for every policy; oracle probes separately identified.",
+  "no_parameter_search": true,
+  "read_only_sources": {
+    "runs/tomato/transition_audit_20261109/events.json": "9900d23ff8aa2a59861d97f31dfbbc7c2634799c544fca3168cb2d267cd30883",
+    "runs/tomato/transition_audit_20261109/false_events.json": "b891a89bb7f487bf4bbda9b76357c11d304789a51046e7db0d5ed5cf26d3c3d8",
+    "runs/tomato/transition_audit_20261109/comparison.json": "8b37e1e905870b2027cc8f226689a310c2a2e266efc439c1ec9c00c828499ed2",
+    "runs/tomato/transition_audit_20261109/openpi_replay.json": "4f0291e1cc9b941691f74ebd217b89de2a3ce669cfbb34a1ec51c587075f9282"
+  },
+  "historical_openpi": {
+    "commit": "33ce417344b22ecd66e362e5daab6946fab439ae",
+    "files": {
+      "subtasks/agent_bridge.py": "3219d01e6c8602a2d6fc5fdcb555c10ac9d5b6187e876ae03fd1ad8b903282d0",
+      "subtasks/tomato.py": "9cc0220ee8f180f1dba4dab529d93e3ac072404a7f16aec40c86892c7ab843a0",
+      "policies/fr3_sharpa_protocol.py": "0bfc02c27e52292f330f08cc8879529f7f3d5257d6b0171b7a95c6d5232853d8"
+    }
+  },
+  "live_openpi": {
+    "branch": "tomato-subtasks-ab-train",
+    "sha": "7b8305769fc3617f50fa1986ed9d9cd3fa37e8bb"
+  }
+}

@@ -1,0 +1,2314 @@
+{
+  "convention": "tomato-boundary-review-v1-proposal",
+  "cases": [
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_b3",
+      "kind": "truth",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b3",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "tags": [
+        "strict_miss"
+      ],
+      "original_boundary_frame": 1813,
+      "boundary_s": 60.43333333333333,
+      "prediction_time": null,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "nearest_model_event_s": 61.0,
+      "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 4016,
+      "clip_start_frame": 1693,
+      "clip_end_frame": 1933,
+      "clip_start_s": 56.43333333333333,
+      "clip_end_s": 64.43333333333334,
+      "video": "3e645bf4e137d0f836c9d7ff_b3/views30hz.mp4",
+      "position_velocity_plot": "3e645bf4e137d0f836c9d7ff_b3/joints.png",
+      "probability_plot": "3e645bf4e137d0f836c9d7ff_b3/probabilities.png",
+      "state_csv": "3e645bf4e137d0f836c9d7ff_b3/state.csv",
+      "trace_json": "3e645bf4e137d0f836c9d7ff_b3/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 60.43333333333333,
+          "previous": 2,
+          "label": 3,
+          "end": 73.3
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 56.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 61.5,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 61.0,
+            "previous": 2,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_b4",
+      "kind": "truth",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b4",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "tags": [
+        "strict_miss",
+        "all_adjust_pickup",
+        "early_prompt_1p3s"
+      ],
+      "original_boundary_frame": 2199,
+      "boundary_s": 73.3,
+      "prediction_time": null,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "nearest_model_event_s": 70.0,
+      "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 4016,
+      "clip_start_frame": 2040,
+      "clip_end_frame": 2319,
+      "clip_start_s": 68.0,
+      "clip_end_s": 77.3,
+      "video": "3e645bf4e137d0f836c9d7ff_b4/views30hz.mp4",
+      "position_velocity_plot": "3e645bf4e137d0f836c9d7ff_b4/joints.png",
+      "probability_plot": "3e645bf4e137d0f836c9d7ff_b4/probabilities.png",
+      "state_csv": "3e645bf4e137d0f836c9d7ff_b4/state.csv",
+      "trace_json": "3e645bf4e137d0f836c9d7ff_b4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 73.3,
+          "previous": 3,
+          "label": 0,
+          "end": 81.13333333333334
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 72.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 70.0,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_b5",
+      "kind": "truth",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b5",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "tags": [
+        "strict_miss"
+      ],
+      "original_boundary_frame": 2434,
+      "boundary_s": 81.13333333333334,
+      "prediction_time": null,
+      "from_stage": "pickup",
+      "to_stage": "harvest",
+      "nearest_model_event_s": 81.5,
+      "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 4016,
+      "clip_start_frame": 2314,
+      "clip_end_frame": 2554,
+      "clip_start_s": 77.13333333333334,
+      "clip_end_s": 85.13333333333334,
+      "video": "3e645bf4e137d0f836c9d7ff_b5/views30hz.mp4",
+      "position_velocity_plot": "3e645bf4e137d0f836c9d7ff_b5/joints.png",
+      "probability_plot": "3e645bf4e137d0f836c9d7ff_b5/probabilities.png",
+      "state_csv": "3e645bf4e137d0f836c9d7ff_b5/state.csv",
+      "trace_json": "3e645bf4e137d0f836c9d7ff_b5/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 81.13333333333334,
+          "previous": 0,
+          "label": 1,
+          "end": 129.2
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 82.0,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "future": [
+          {
+            "time": 81.5,
+            "previous": 0,
+            "label": 1
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "27d8bc0413a42341c7e8c3e5_b4",
+      "kind": "truth",
+      "target_event_id": "27d8bc0413a42341c7e8c3e5_b4",
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+      "tags": [
+        "strict_miss",
+        "all_adjust_pickup"
+      ],
+      "original_boundary_frame": 3249,
+      "boundary_s": 108.3,
+      "prediction_time": null,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "nearest_model_event_s": 109.0,
+      "annotation_sha256": "88f06ef9f62f5626b7f518c87da5e3960f1ab346c8ce34ae75068577eed64cba",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "fps": 30.0,
+      "episode_length": 5250,
+      "clip_start_frame": 3129,
+      "clip_end_frame": 3369,
+      "clip_start_s": 104.3,
+      "clip_end_s": 112.3,
+      "video": "27d8bc0413a42341c7e8c3e5_b4/views30hz.mp4",
+      "position_velocity_plot": "27d8bc0413a42341c7e8c3e5_b4/joints.png",
+      "probability_plot": "27d8bc0413a42341c7e8c3e5_b4/probabilities.png",
+      "state_csv": "27d8bc0413a42341c7e8c3e5_b4/state.csv",
+      "trace_json": "27d8bc0413a42341c7e8c3e5_b4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 108.3,
+          "previous": 3,
+          "label": 0,
+          "end": 119.4
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 109.5,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 109.0,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_b3",
+      "kind": "truth",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b3",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "tags": [
+        "strict_miss"
+      ],
+      "original_boundary_frame": 2424,
+      "boundary_s": 80.8,
+      "prediction_time": null,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "nearest_model_event_s": 78.0,
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "fps": 30.0,
+      "episode_length": 5415,
+      "clip_start_frame": 2280,
+      "clip_end_frame": 2544,
+      "clip_start_s": 76.0,
+      "clip_end_s": 84.8,
+      "video": "0b12ac0fda9d7cd77dee6e60_b3/views30hz.mp4",
+      "position_velocity_plot": "0b12ac0fda9d7cd77dee6e60_b3/joints.png",
+      "probability_plot": "0b12ac0fda9d7cd77dee6e60_b3/probabilities.png",
+      "state_csv": "0b12ac0fda9d7cd77dee6e60_b3/state.csv",
+      "trace_json": "0b12ac0fda9d7cd77dee6e60_b3/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 80.8,
+          "previous": 2,
+          "label": 3,
+          "end": 99.16666666666667
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 81.5,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 78.0,
+            "previous": 2,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "kind": "truth",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "tags": [
+        "strict_miss",
+        "all_adjust_pickup"
+      ],
+      "original_boundary_frame": 2975,
+      "boundary_s": 99.16666666666667,
+      "prediction_time": null,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "nearest_model_event_s": 96.5,
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "fps": 30.0,
+      "episode_length": 5415,
+      "clip_start_frame": 2835,
+      "clip_end_frame": 3095,
+      "clip_start_s": 94.5,
+      "clip_end_s": 103.16666666666667,
+      "video": "0b12ac0fda9d7cd77dee6e60_b4/views30hz.mp4",
+      "position_velocity_plot": "0b12ac0fda9d7cd77dee6e60_b4/joints.png",
+      "probability_plot": "0b12ac0fda9d7cd77dee6e60_b4/probabilities.png",
+      "state_csv": "0b12ac0fda9d7cd77dee6e60_b4/state.csv",
+      "trace_json": "0b12ac0fda9d7cd77dee6e60_b4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 99.16666666666667,
+          "previous": 3,
+          "label": 0,
+          "end": 113.6
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 102.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 96.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 102.5,
+            "previous": 0,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_b5",
+      "kind": "truth",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b5",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "tags": [
+        "strict_miss"
+      ],
+      "original_boundary_frame": 3408,
+      "boundary_s": 113.6,
+      "prediction_time": null,
+      "from_stage": "pickup",
+      "to_stage": "harvest",
+      "nearest_model_event_s": 111.0,
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "fps": 30.0,
+      "episode_length": 5415,
+      "clip_start_frame": 3270,
+      "clip_end_frame": 3528,
+      "clip_start_s": 109.0,
+      "clip_end_s": 117.6,
+      "video": "0b12ac0fda9d7cd77dee6e60_b5/views30hz.mp4",
+      "position_velocity_plot": "0b12ac0fda9d7cd77dee6e60_b5/joints.png",
+      "probability_plot": "0b12ac0fda9d7cd77dee6e60_b5/probabilities.png",
+      "state_csv": "0b12ac0fda9d7cd77dee6e60_b5/state.csv",
+      "trace_json": "0b12ac0fda9d7cd77dee6e60_b5/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 113.6,
+          "previous": 0,
+          "label": 1,
+          "end": 175.56666666666666
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 114.5,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "future": [
+          {
+            "time": 111.0,
+            "previous": 0,
+            "label": 1
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "61c420843f11ca54bfe804ee_b4",
+      "kind": "truth",
+      "target_event_id": "61c420843f11ca54bfe804ee_b4",
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+      "tags": [
+        "all_adjust_pickup"
+      ],
+      "original_boundary_frame": 2722,
+      "boundary_s": 90.73333333333333,
+      "prediction_time": 90.0,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "nearest_model_event_s": 90.0,
+      "annotation_sha256": "64b6044cceda07ad70f19899f39910de4ba1324550b3a5aa1ec18d493ffb3ac7",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000007.json",
+      "fps": 30.0,
+      "episode_length": 4285,
+      "clip_start_frame": 2580,
+      "clip_end_frame": 2842,
+      "clip_start_s": 86.0,
+      "clip_end_s": 94.73333333333333,
+      "video": "61c420843f11ca54bfe804ee_b4/views30hz.mp4",
+      "position_velocity_plot": "61c420843f11ca54bfe804ee_b4/joints.png",
+      "probability_plot": "61c420843f11ca54bfe804ee_b4/probabilities.png",
+      "state_csv": "61c420843f11ca54bfe804ee_b4/state.csv",
+      "trace_json": "61c420843f11ca54bfe804ee_b4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 90.73333333333333,
+          "previous": 3,
+          "label": 0,
+          "end": 100.66666666666667
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 91.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 90.0,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "5b82f4bb76e70d8bf12c0798_b4",
+      "kind": "truth",
+      "target_event_id": "5b82f4bb76e70d8bf12c0798_b4",
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+      "tags": [
+        "all_adjust_pickup"
+      ],
+      "original_boundary_frame": 2725,
+      "boundary_s": 90.83333333333333,
+      "prediction_time": 90.5,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "nearest_model_event_s": 90.5,
+      "annotation_sha256": "ece74cd377bfa49fd37c358efdb3900cae8f7ec5844859aadea3466b450f7564",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000009.json",
+      "fps": 30.0,
+      "episode_length": 4212,
+      "clip_start_frame": 2595,
+      "clip_end_frame": 2845,
+      "clip_start_s": 86.5,
+      "clip_end_s": 94.83333333333333,
+      "video": "5b82f4bb76e70d8bf12c0798_b4/views30hz.mp4",
+      "position_velocity_plot": "5b82f4bb76e70d8bf12c0798_b4/joints.png",
+      "probability_plot": "5b82f4bb76e70d8bf12c0798_b4/probabilities.png",
+      "state_csv": "5b82f4bb76e70d8bf12c0798_b4/state.csv",
+      "trace_json": "5b82f4bb76e70d8bf12c0798_b4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 90.83333333333333,
+          "previous": 3,
+          "label": 0,
+          "end": 99.1
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 91.5,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 90.5,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_b3",
+      "kind": "truth",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b3",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "tags": [
+        "strict_miss"
+      ],
+      "original_boundary_frame": 1987,
+      "boundary_s": 66.23333333333333,
+      "prediction_time": null,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "nearest_model_event_s": 67.0,
+      "annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+      "fps": 30.0,
+      "episode_length": 5371,
+      "clip_start_frame": 1867,
+      "clip_end_frame": 2107,
+      "clip_start_s": 62.233333333333334,
+      "clip_end_s": 70.23333333333333,
+      "video": "f53f0b6fb7f3888f87a0f8ff_b3/views30hz.mp4",
+      "position_velocity_plot": "f53f0b6fb7f3888f87a0f8ff_b3/joints.png",
+      "probability_plot": "f53f0b6fb7f3888f87a0f8ff_b3/probabilities.png",
+      "state_csv": "f53f0b6fb7f3888f87a0f8ff_b3/state.csv",
+      "trace_json": "f53f0b6fb7f3888f87a0f8ff_b3/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 62.96666666666667,
+          "previous": 1,
+          "label": 2,
+          "end": 66.23333333333333
+        },
+        {
+          "time": 66.23333333333333,
+          "previous": 2,
+          "label": 3,
+          "end": 96.26666666666667
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 63.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 67.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 67.0,
+            "previous": 2,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_b4",
+      "kind": "truth",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b4",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "tags": [
+        "strict_miss",
+        "all_adjust_pickup"
+      ],
+      "original_boundary_frame": 2888,
+      "boundary_s": 96.26666666666667,
+      "prediction_time": null,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "nearest_model_event_s": 99.0,
+      "annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+      "fps": 30.0,
+      "episode_length": 5371,
+      "clip_start_frame": 2768,
+      "clip_end_frame": 3030,
+      "clip_start_s": 92.26666666666667,
+      "clip_end_s": 101.0,
+      "video": "f53f0b6fb7f3888f87a0f8ff_b4/views30hz.mp4",
+      "position_velocity_plot": "f53f0b6fb7f3888f87a0f8ff_b4/joints.png",
+      "probability_plot": "f53f0b6fb7f3888f87a0f8ff_b4/probabilities.png",
+      "state_csv": "f53f0b6fb7f3888f87a0f8ff_b4/state.csv",
+      "trace_json": "f53f0b6fb7f3888f87a0f8ff_b4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 96.26666666666667,
+          "previous": 3,
+          "label": 0,
+          "end": 106.6
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 99.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 99.0,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_b6",
+      "kind": "truth",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b6",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "tags": [
+        "strict_miss"
+      ],
+      "original_boundary_frame": 5262,
+      "boundary_s": 175.4,
+      "prediction_time": null,
+      "from_stage": "harvest",
+      "to_stage": "return",
+      "nearest_model_event_s": 175.5,
+      "annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+      "fps": 30.0,
+      "episode_length": 5371,
+      "clip_start_frame": 5142,
+      "clip_end_frame": 5371,
+      "clip_start_s": 171.4,
+      "clip_end_s": 179.03333333333333,
+      "video": "f53f0b6fb7f3888f87a0f8ff_b6/views30hz.mp4",
+      "position_velocity_plot": "f53f0b6fb7f3888f87a0f8ff_b6/joints.png",
+      "probability_plot": "f53f0b6fb7f3888f87a0f8ff_b6/probabilities.png",
+      "state_csv": "f53f0b6fb7f3888f87a0f8ff_b6/state.csv",
+      "trace_json": "f53f0b6fb7f3888f87a0f8ff_b6/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 175.4,
+          "previous": 1,
+          "label": 2,
+          "end": 179.03333333333333
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 176.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "future": [
+          {
+            "time": 175.5,
+            "previous": 1,
+            "label": 2
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "a8b23394b642f0bb769a0391_b4",
+      "kind": "truth",
+      "target_event_id": "a8b23394b642f0bb769a0391_b4",
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+      "tags": [
+        "strict_miss",
+        "all_adjust_pickup"
+      ],
+      "original_boundary_frame": 1949,
+      "boundary_s": 64.96666666666667,
+      "prediction_time": null,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "nearest_model_event_s": 65.5,
+      "annotation_sha256": "66b4431c3d08b810a7a3ecc8f22793fe8bd58118f4428d8beb152b5c4cce3b77",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 2685,
+      "clip_start_frame": 1829,
+      "clip_end_frame": 2069,
+      "clip_start_s": 60.96666666666667,
+      "clip_end_s": 68.96666666666667,
+      "video": "a8b23394b642f0bb769a0391_b4/views30hz.mp4",
+      "position_velocity_plot": "a8b23394b642f0bb769a0391_b4/joints.png",
+      "probability_plot": "a8b23394b642f0bb769a0391_b4/probabilities.png",
+      "state_csv": "a8b23394b642f0bb769a0391_b4/state.csv",
+      "trace_json": "a8b23394b642f0bb769a0391_b4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 64.96666666666667,
+          "previous": 3,
+          "label": 0,
+          "end": 70.46666666666667
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 66.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 65.5,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b2",
+      "kind": "truth",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b2",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "strict_miss"
+      ],
+      "original_boundary_frame": 2753,
+      "boundary_s": 91.76666666666667,
+      "prediction_time": null,
+      "from_stage": "harvest",
+      "to_stage": "return",
+      "nearest_model_event_s": 94.0,
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 2633,
+      "clip_end_frame": 2880,
+      "clip_start_s": 87.76666666666667,
+      "clip_end_s": 96.0,
+      "video": "6d46f3c8c5c61bd2c6d22973_b2/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_b2/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_b2/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_b2/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_b2/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 91.76666666666667,
+          "previous": 1,
+          "label": 2,
+          "end": 104.33333333333333
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 92.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "future": [
+          {
+            "time": 94.0,
+            "previous": 1,
+            "label": 2
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "kind": "truth",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "strict_miss"
+      ],
+      "original_boundary_frame": 3130,
+      "boundary_s": 104.33333333333333,
+      "prediction_time": null,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 3010,
+      "clip_end_frame": 3250,
+      "clip_start_s": 100.33333333333333,
+      "clip_end_s": 108.33333333333333,
+      "video": "6d46f3c8c5c61bd2c6d22973_b3/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_b3/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_b3/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_b3/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_b3/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 104.33333333333333,
+          "previous": 2,
+          "label": 3,
+          "end": 127.0
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 105.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 101.5,
+            "previous": 0,
+            "label": 2
+          },
+          {
+            "time": 105.0,
+            "previous": 2,
+            "label": 0
+          },
+          {
+            "time": 107.0,
+            "previous": 0,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b4",
+      "kind": "truth",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b4",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "strict_miss",
+        "all_adjust_pickup"
+      ],
+      "original_boundary_frame": 3810,
+      "boundary_s": 127.0,
+      "prediction_time": null,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "nearest_model_event_s": 125.0,
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 3690,
+      "clip_end_frame": 3930,
+      "clip_start_s": 123.0,
+      "clip_end_s": 131.0,
+      "video": "6d46f3c8c5c61bd2c6d22973_b4/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_b4/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_b4/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_b4/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_b4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 127.0,
+          "previous": 3,
+          "label": 0,
+          "end": 139.3
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 128.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 125.0,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_b5",
+      "kind": "truth",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b5",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "strict_miss"
+      ],
+      "original_boundary_frame": 4179,
+      "boundary_s": 139.3,
+      "prediction_time": null,
+      "from_stage": "pickup",
+      "to_stage": "harvest",
+      "nearest_model_event_s": 140.5,
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 4059,
+      "clip_end_frame": 4299,
+      "clip_start_s": 135.3,
+      "clip_end_s": 143.3,
+      "video": "6d46f3c8c5c61bd2c6d22973_b5/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_b5/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_b5/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_b5/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_b5/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 139.3,
+          "previous": 0,
+          "label": 1,
+          "end": 270.1
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 140.5,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "future": [
+          {
+            "time": 140.5,
+            "previous": 0,
+            "label": 1
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "d0f8727d35eced697dcf79fe_b4",
+      "kind": "truth",
+      "target_event_id": "d0f8727d35eced697dcf79fe_b4",
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+      "tags": [
+        "strict_miss",
+        "all_adjust_pickup"
+      ],
+      "original_boundary_frame": 1943,
+      "boundary_s": 64.76666666666667,
+      "prediction_time": null,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "nearest_model_event_s": 66.0,
+      "annotation_sha256": "c8ab7d1086a70bf97b65058409154fb0b1c8c90f3ceaadcb0e833b94e7e7c87e",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000005.json",
+      "fps": 30.0,
+      "episode_length": 2773,
+      "clip_start_frame": 1823,
+      "clip_end_frame": 2063,
+      "clip_start_s": 60.766666666666666,
+      "clip_end_s": 68.76666666666667,
+      "video": "d0f8727d35eced697dcf79fe_b4/views30hz.mp4",
+      "position_velocity_plot": "d0f8727d35eced697dcf79fe_b4/joints.png",
+      "probability_plot": "d0f8727d35eced697dcf79fe_b4/probabilities.png",
+      "state_csv": "d0f8727d35eced697dcf79fe_b4/state.csv",
+      "trace_json": "d0f8727d35eced697dcf79fe_b4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 64.76666666666667,
+          "previous": 3,
+          "label": 0,
+          "end": 70.9
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 67.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 66.0,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_fp1",
+      "kind": "false",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b3",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 1813,
+      "boundary_s": 60.43333333333333,
+      "prediction_time": 61.0,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 4016,
+      "clip_start_frame": 1693,
+      "clip_end_frame": 1950,
+      "clip_start_s": 56.43333333333333,
+      "clip_end_s": 65.0,
+      "video": "3e645bf4e137d0f836c9d7ff_fp1/views30hz.mp4",
+      "position_velocity_plot": "3e645bf4e137d0f836c9d7ff_fp1/joints.png",
+      "probability_plot": "3e645bf4e137d0f836c9d7ff_fp1/probabilities.png",
+      "state_csv": "3e645bf4e137d0f836c9d7ff_fp1/state.csv",
+      "trace_json": "3e645bf4e137d0f836c9d7ff_fp1/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 60.43333333333333,
+          "previous": 2,
+          "label": 3,
+          "end": 73.3
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 56.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 61.5,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 61.0,
+            "previous": 2,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_fp2",
+      "kind": "false",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b4",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 2199,
+      "boundary_s": 73.3,
+      "prediction_time": 70.0,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 4016,
+      "clip_start_frame": 1980,
+      "clip_end_frame": 2319,
+      "clip_start_s": 66.0,
+      "clip_end_s": 77.3,
+      "video": "3e645bf4e137d0f836c9d7ff_fp2/views30hz.mp4",
+      "position_velocity_plot": "3e645bf4e137d0f836c9d7ff_fp2/joints.png",
+      "probability_plot": "3e645bf4e137d0f836c9d7ff_fp2/probabilities.png",
+      "state_csv": "3e645bf4e137d0f836c9d7ff_fp2/state.csv",
+      "trace_json": "3e645bf4e137d0f836c9d7ff_fp2/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 73.3,
+          "previous": 3,
+          "label": 0,
+          "end": 81.13333333333334
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 72.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 70.0,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "3e645bf4e137d0f836c9d7ff_fp3",
+      "kind": "false",
+      "target_event_id": "3e645bf4e137d0f836c9d7ff_b5",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 2434,
+      "boundary_s": 81.13333333333334,
+      "prediction_time": 81.5,
+      "from_stage": "pickup",
+      "to_stage": "harvest",
+      "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 4016,
+      "clip_start_frame": 2314,
+      "clip_end_frame": 2565,
+      "clip_start_s": 77.13333333333334,
+      "clip_end_s": 85.5,
+      "video": "3e645bf4e137d0f836c9d7ff_fp3/views30hz.mp4",
+      "position_velocity_plot": "3e645bf4e137d0f836c9d7ff_fp3/joints.png",
+      "probability_plot": "3e645bf4e137d0f836c9d7ff_fp3/probabilities.png",
+      "state_csv": "3e645bf4e137d0f836c9d7ff_fp3/state.csv",
+      "trace_json": "3e645bf4e137d0f836c9d7ff_fp3/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 81.13333333333334,
+          "previous": 0,
+          "label": 1,
+          "end": 129.2
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 82.0,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "future": [
+          {
+            "time": 81.5,
+            "previous": 0,
+            "label": 1
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "27d8bc0413a42341c7e8c3e5_fp1",
+      "kind": "false",
+      "target_event_id": "27d8bc0413a42341c7e8c3e5_b4",
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 3249,
+      "boundary_s": 108.3,
+      "prediction_time": 109.0,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "annotation_sha256": "88f06ef9f62f5626b7f518c87da5e3960f1ab346c8ce34ae75068577eed64cba",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "fps": 30.0,
+      "episode_length": 5250,
+      "clip_start_frame": 3129,
+      "clip_end_frame": 3390,
+      "clip_start_s": 104.3,
+      "clip_end_s": 113.0,
+      "video": "27d8bc0413a42341c7e8c3e5_fp1/views30hz.mp4",
+      "position_velocity_plot": "27d8bc0413a42341c7e8c3e5_fp1/joints.png",
+      "probability_plot": "27d8bc0413a42341c7e8c3e5_fp1/probabilities.png",
+      "state_csv": "27d8bc0413a42341c7e8c3e5_fp1/state.csv",
+      "trace_json": "27d8bc0413a42341c7e8c3e5_fp1/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 108.3,
+          "previous": 3,
+          "label": 0,
+          "end": 119.4
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 109.5,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 109.0,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_fp1",
+      "kind": "false",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b3",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 2424,
+      "boundary_s": 80.8,
+      "prediction_time": 78.0,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "fps": 30.0,
+      "episode_length": 5415,
+      "clip_start_frame": 2220,
+      "clip_end_frame": 2544,
+      "clip_start_s": 74.0,
+      "clip_end_s": 84.8,
+      "video": "0b12ac0fda9d7cd77dee6e60_fp1/views30hz.mp4",
+      "position_velocity_plot": "0b12ac0fda9d7cd77dee6e60_fp1/joints.png",
+      "probability_plot": "0b12ac0fda9d7cd77dee6e60_fp1/probabilities.png",
+      "state_csv": "0b12ac0fda9d7cd77dee6e60_fp1/state.csv",
+      "trace_json": "0b12ac0fda9d7cd77dee6e60_fp1/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 80.8,
+          "previous": 2,
+          "label": 3,
+          "end": 99.16666666666667
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 74.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 81.5,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 78.0,
+            "previous": 2,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_fp2",
+      "kind": "false",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 2975,
+      "boundary_s": 99.16666666666667,
+      "prediction_time": 96.5,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "fps": 30.0,
+      "episode_length": 5415,
+      "clip_start_frame": 2775,
+      "clip_end_frame": 3095,
+      "clip_start_s": 92.5,
+      "clip_end_s": 103.16666666666667,
+      "video": "0b12ac0fda9d7cd77dee6e60_fp2/views30hz.mp4",
+      "position_velocity_plot": "0b12ac0fda9d7cd77dee6e60_fp2/joints.png",
+      "probability_plot": "0b12ac0fda9d7cd77dee6e60_fp2/probabilities.png",
+      "state_csv": "0b12ac0fda9d7cd77dee6e60_fp2/state.csv",
+      "trace_json": "0b12ac0fda9d7cd77dee6e60_fp2/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 99.16666666666667,
+          "previous": 3,
+          "label": 0,
+          "end": 113.6
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 102.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 96.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 102.5,
+            "previous": 0,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_fp3",
+      "kind": "false",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 2975,
+      "boundary_s": 99.16666666666667,
+      "prediction_time": 102.5,
+      "from_stage": "pickup",
+      "to_stage": "adjust",
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "fps": 30.0,
+      "episode_length": 5415,
+      "clip_start_frame": 2855,
+      "clip_end_frame": 3195,
+      "clip_start_s": 95.16666666666667,
+      "clip_end_s": 106.5,
+      "video": "0b12ac0fda9d7cd77dee6e60_fp3/views30hz.mp4",
+      "position_velocity_plot": "0b12ac0fda9d7cd77dee6e60_fp3/joints.png",
+      "probability_plot": "0b12ac0fda9d7cd77dee6e60_fp3/probabilities.png",
+      "state_csv": "0b12ac0fda9d7cd77dee6e60_fp3/state.csv",
+      "trace_json": "0b12ac0fda9d7cd77dee6e60_fp3/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 99.16666666666667,
+          "previous": 3,
+          "label": 0,
+          "end": 113.6
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 102.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 96.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 102.5,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 103.5,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_fp4",
+      "kind": "false",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b4",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 2975,
+      "boundary_s": 99.16666666666667,
+      "prediction_time": 103.5,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "fps": 30.0,
+      "episode_length": 5415,
+      "clip_start_frame": 2855,
+      "clip_end_frame": 3225,
+      "clip_start_s": 95.16666666666667,
+      "clip_end_s": 107.5,
+      "video": "0b12ac0fda9d7cd77dee6e60_fp4/views30hz.mp4",
+      "position_velocity_plot": "0b12ac0fda9d7cd77dee6e60_fp4/joints.png",
+      "probability_plot": "0b12ac0fda9d7cd77dee6e60_fp4/probabilities.png",
+      "state_csv": "0b12ac0fda9d7cd77dee6e60_fp4/state.csv",
+      "trace_json": "0b12ac0fda9d7cd77dee6e60_fp4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 99.16666666666667,
+          "previous": 3,
+          "label": 0,
+          "end": 113.6
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 102.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 96.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 102.5,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 103.5,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "0b12ac0fda9d7cd77dee6e60_fp5",
+      "kind": "false",
+      "target_event_id": "0b12ac0fda9d7cd77dee6e60_b5",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 3408,
+      "boundary_s": 113.6,
+      "prediction_time": 111.0,
+      "from_stage": "pickup",
+      "to_stage": "harvest",
+      "annotation_sha256": "109708e7d940abb8a44e64d9e61297c3ce4805a97efc9128152a4566551e9e3d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/annotations/subtasks/coarse/episode_000002.json",
+      "fps": 30.0,
+      "episode_length": 5415,
+      "clip_start_frame": 3210,
+      "clip_end_frame": 3528,
+      "clip_start_s": 107.0,
+      "clip_end_s": 117.6,
+      "video": "0b12ac0fda9d7cd77dee6e60_fp5/views30hz.mp4",
+      "position_velocity_plot": "0b12ac0fda9d7cd77dee6e60_fp5/joints.png",
+      "probability_plot": "0b12ac0fda9d7cd77dee6e60_fp5/probabilities.png",
+      "state_csv": "0b12ac0fda9d7cd77dee6e60_fp5/state.csv",
+      "trace_json": "0b12ac0fda9d7cd77dee6e60_fp5/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 113.6,
+          "previous": 0,
+          "label": 1,
+          "end": 175.56666666666666
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 114.5,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "future": [
+          {
+            "time": 111.0,
+            "previous": 0,
+            "label": 1
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_fp1",
+      "kind": "false",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b3",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 1987,
+      "boundary_s": 66.23333333333333,
+      "prediction_time": 67.0,
+      "from_stage": "return",
+      "to_stage": "adjust",
+      "annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+      "fps": 30.0,
+      "episode_length": 5371,
+      "clip_start_frame": 1867,
+      "clip_end_frame": 2130,
+      "clip_start_s": 62.233333333333334,
+      "clip_end_s": 71.0,
+      "video": "f53f0b6fb7f3888f87a0f8ff_fp1/views30hz.mp4",
+      "position_velocity_plot": "f53f0b6fb7f3888f87a0f8ff_fp1/joints.png",
+      "probability_plot": "f53f0b6fb7f3888f87a0f8ff_fp1/probabilities.png",
+      "state_csv": "f53f0b6fb7f3888f87a0f8ff_fp1/state.csv",
+      "trace_json": "f53f0b6fb7f3888f87a0f8ff_fp1/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 62.96666666666667,
+          "previous": 1,
+          "label": 2,
+          "end": 66.23333333333333
+        },
+        {
+          "time": 66.23333333333333,
+          "previous": 2,
+          "label": 3,
+          "end": 96.26666666666667
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 63.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 67.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 67.0,
+            "previous": 2,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_fp2",
+      "kind": "false",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b4",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 2888,
+      "boundary_s": 96.26666666666667,
+      "prediction_time": 99.0,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+      "fps": 30.0,
+      "episode_length": 5371,
+      "clip_start_frame": 2768,
+      "clip_end_frame": 3090,
+      "clip_start_s": 92.26666666666667,
+      "clip_end_s": 103.0,
+      "video": "f53f0b6fb7f3888f87a0f8ff_fp2/views30hz.mp4",
+      "position_velocity_plot": "f53f0b6fb7f3888f87a0f8ff_fp2/joints.png",
+      "probability_plot": "f53f0b6fb7f3888f87a0f8ff_fp2/probabilities.png",
+      "state_csv": "f53f0b6fb7f3888f87a0f8ff_fp2/state.csv",
+      "trace_json": "f53f0b6fb7f3888f87a0f8ff_fp2/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 96.26666666666667,
+          "previous": 3,
+          "label": 0,
+          "end": 106.6
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 99.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 99.0,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "f53f0b6fb7f3888f87a0f8ff_fp3",
+      "kind": "false",
+      "target_event_id": "f53f0b6fb7f3888f87a0f8ff_b6",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 5262,
+      "boundary_s": 175.4,
+      "prediction_time": 175.5,
+      "from_stage": "harvest",
+      "to_stage": "return",
+      "annotation_sha256": "a144b16699679e341ab853261fa7b544229cf909679b4aa95875972787e3139d",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/annotations/subtasks/coarse/episode_000004.json",
+      "fps": 30.0,
+      "episode_length": 5371,
+      "clip_start_frame": 5142,
+      "clip_end_frame": 5371,
+      "clip_start_s": 171.4,
+      "clip_end_s": 179.03333333333333,
+      "video": "f53f0b6fb7f3888f87a0f8ff_fp3/views30hz.mp4",
+      "position_velocity_plot": "f53f0b6fb7f3888f87a0f8ff_fp3/joints.png",
+      "probability_plot": "f53f0b6fb7f3888f87a0f8ff_fp3/probabilities.png",
+      "state_csv": "f53f0b6fb7f3888f87a0f8ff_fp3/state.csv",
+      "trace_json": "f53f0b6fb7f3888f87a0f8ff_fp3/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 175.4,
+          "previous": 1,
+          "label": 2,
+          "end": 179.03333333333333
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 176.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "future": [
+          {
+            "time": 175.5,
+            "previous": 1,
+            "label": 2
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "a8b23394b642f0bb769a0391_fp1",
+      "kind": "false",
+      "target_event_id": "a8b23394b642f0bb769a0391_b4",
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 1949,
+      "boundary_s": 64.96666666666667,
+      "prediction_time": 65.5,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "annotation_sha256": "66b4431c3d08b810a7a3ecc8f22793fe8bd58118f4428d8beb152b5c4cce3b77",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 2685,
+      "clip_start_frame": 1829,
+      "clip_end_frame": 2085,
+      "clip_start_s": 60.96666666666667,
+      "clip_end_s": 69.5,
+      "video": "a8b23394b642f0bb769a0391_fp1/views30hz.mp4",
+      "position_velocity_plot": "a8b23394b642f0bb769a0391_fp1/joints.png",
+      "probability_plot": "a8b23394b642f0bb769a0391_fp1/probabilities.png",
+      "state_csv": "a8b23394b642f0bb769a0391_fp1/state.csv",
+      "trace_json": "a8b23394b642f0bb769a0391_fp1/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 64.96666666666667,
+          "previous": 3,
+          "label": 0,
+          "end": 70.46666666666667
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 66.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 65.5,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp1",
+      "kind": "false",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b2",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 2753,
+      "boundary_s": 91.76666666666667,
+      "prediction_time": 94.0,
+      "from_stage": "harvest",
+      "to_stage": "return",
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 2633,
+      "clip_end_frame": 2940,
+      "clip_start_s": 87.76666666666667,
+      "clip_end_s": 98.0,
+      "video": "6d46f3c8c5c61bd2c6d22973_fp1/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_fp1/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_fp1/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_fp1/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_fp1/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 91.76666666666667,
+          "previous": 1,
+          "label": 2,
+          "end": 104.33333333333333
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 92.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "future": [
+          {
+            "time": 94.0,
+            "previous": 1,
+            "label": 2
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp2",
+      "kind": "false",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 3130,
+      "boundary_s": 104.33333333333333,
+      "prediction_time": 98.5,
+      "from_stage": "return",
+      "to_stage": "pickup",
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 2835,
+      "clip_end_frame": 3250,
+      "clip_start_s": 94.5,
+      "clip_end_s": 108.33333333333333,
+      "video": "6d46f3c8c5c61bd2c6d22973_fp2/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_fp2/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_fp2/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_fp2/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_fp2/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 104.33333333333333,
+          "previous": 2,
+          "label": 3,
+          "end": 127.0
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 105.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 98.5,
+            "previous": 2,
+            "label": 0
+          },
+          {
+            "time": 101.5,
+            "previous": 0,
+            "label": 2
+          },
+          {
+            "time": 105.0,
+            "previous": 2,
+            "label": 0
+          },
+          {
+            "time": 107.0,
+            "previous": 0,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp3",
+      "kind": "false",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 3130,
+      "boundary_s": 104.33333333333333,
+      "prediction_time": 101.5,
+      "from_stage": "pickup",
+      "to_stage": "return",
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 2925,
+      "clip_end_frame": 3250,
+      "clip_start_s": 97.5,
+      "clip_end_s": 108.33333333333333,
+      "video": "6d46f3c8c5c61bd2c6d22973_fp3/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_fp3/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_fp3/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_fp3/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_fp3/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 104.33333333333333,
+          "previous": 2,
+          "label": 3,
+          "end": 127.0
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 105.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 98.5,
+            "previous": 2,
+            "label": 0
+          },
+          {
+            "time": 101.5,
+            "previous": 0,
+            "label": 2
+          },
+          {
+            "time": 105.0,
+            "previous": 2,
+            "label": 0
+          },
+          {
+            "time": 107.0,
+            "previous": 0,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp4",
+      "kind": "false",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 3130,
+      "boundary_s": 104.33333333333333,
+      "prediction_time": 105.0,
+      "from_stage": "return",
+      "to_stage": "pickup",
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 3010,
+      "clip_end_frame": 3270,
+      "clip_start_s": 100.33333333333333,
+      "clip_end_s": 109.0,
+      "video": "6d46f3c8c5c61bd2c6d22973_fp4/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_fp4/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_fp4/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_fp4/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_fp4/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 104.33333333333333,
+          "previous": 2,
+          "label": 3,
+          "end": 127.0
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 105.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 101.5,
+            "previous": 0,
+            "label": 2
+          },
+          {
+            "time": 105.0,
+            "previous": 2,
+            "label": 0
+          },
+          {
+            "time": 107.0,
+            "previous": 0,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp5",
+      "kind": "false",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b3",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 3130,
+      "boundary_s": 104.33333333333333,
+      "prediction_time": 107.0,
+      "from_stage": "pickup",
+      "to_stage": "adjust",
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 3010,
+      "clip_end_frame": 3330,
+      "clip_start_s": 100.33333333333333,
+      "clip_end_s": 111.0,
+      "video": "6d46f3c8c5c61bd2c6d22973_fp5/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_fp5/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_fp5/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_fp5/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_fp5/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 104.33333333333333,
+          "previous": 2,
+          "label": 3,
+          "end": 127.0
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 105.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "future": [
+          {
+            "time": 101.5,
+            "previous": 0,
+            "label": 2
+          },
+          {
+            "time": 105.0,
+            "previous": 2,
+            "label": 0
+          },
+          {
+            "time": 107.0,
+            "previous": 0,
+            "label": 3
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp6",
+      "kind": "false",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b4",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 3810,
+      "boundary_s": 127.0,
+      "prediction_time": 125.0,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 3630,
+      "clip_end_frame": 3930,
+      "clip_start_s": 121.0,
+      "clip_end_s": 131.0,
+      "video": "6d46f3c8c5c61bd2c6d22973_fp6/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_fp6/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_fp6/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_fp6/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_fp6/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 127.0,
+          "previous": 3,
+          "label": 0,
+          "end": 139.3
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 128.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 125.0,
+            "previous": 3,
+            "label": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp7",
+      "kind": "false",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b5",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 4179,
+      "boundary_s": 139.3,
+      "prediction_time": 140.5,
+      "from_stage": "pickup",
+      "to_stage": "harvest",
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 4059,
+      "clip_end_frame": 4335,
+      "clip_start_s": 135.3,
+      "clip_end_s": 144.5,
+      "video": "6d46f3c8c5c61bd2c6d22973_fp7/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_fp7/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_fp7/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_fp7/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_fp7/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 139.3,
+          "previous": 0,
+          "label": 1,
+          "end": 270.1
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 140.5,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "future": [
+          {
+            "time": 140.5,
+            "previous": 0,
+            "label": 1
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp8",
+      "kind": "false",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b6",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 8103,
+      "boundary_s": 270.1,
+      "prediction_time": 262.0,
+      "from_stage": "harvest",
+      "to_stage": "return",
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 7740,
+      "clip_end_frame": 8223,
+      "clip_start_s": 258.0,
+      "clip_end_s": 274.1,
+      "video": "6d46f3c8c5c61bd2c6d22973_fp8/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_fp8/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_fp8/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_fp8/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_fp8/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 270.1,
+          "previous": 1,
+          "label": 2,
+          "end": 278.9
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 271.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "future": [
+          {
+            "time": 262.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 264.0,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 269.0,
+            "previous": 1,
+            "label": 2
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "6d46f3c8c5c61bd2c6d22973_fp9",
+      "kind": "false",
+      "target_event_id": "6d46f3c8c5c61bd2c6d22973_b6",
+      "episode_id": "6d46f3c8c5c61bd2c6d22973",
+      "source_recording_id": "c0298a852584430885235869cde14f02",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 8103,
+      "boundary_s": 270.1,
+      "prediction_time": 264.0,
+      "from_stage": "return",
+      "to_stage": "harvest",
+      "annotation_sha256": "21d04381b0510de746a51e14bb11d40ec0c0ec5455ceadee6624e7d99db3bd11",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1101_572_601_normal_lerobot/annotations/subtasks/coarse/episode_000000.json",
+      "fps": 30.0,
+      "episode_length": 8367,
+      "clip_start_frame": 7800,
+      "clip_end_frame": 8223,
+      "clip_start_s": 260.0,
+      "clip_end_s": 274.1,
+      "video": "6d46f3c8c5c61bd2c6d22973_fp9/views30hz.mp4",
+      "position_velocity_plot": "6d46f3c8c5c61bd2c6d22973_fp9/joints.png",
+      "probability_plot": "6d46f3c8c5c61bd2c6d22973_fp9/probabilities.png",
+      "state_csv": "6d46f3c8c5c61bd2c6d22973_fp9/state.csv",
+      "trace_json": "6d46f3c8c5c61bd2c6d22973_fp9/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 270.1,
+          "previous": 1,
+          "label": 2,
+          "end": 278.9
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 271.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "future": [
+          {
+            "time": 262.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 264.0,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 269.0,
+            "previous": 1,
+            "label": 2
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "d0f8727d35eced697dcf79fe_fp1",
+      "kind": "false",
+      "target_event_id": "d0f8727d35eced697dcf79fe_b4",
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+      "tags": [
+        "unmatched_warning"
+      ],
+      "original_boundary_frame": 1943,
+      "boundary_s": 64.76666666666667,
+      "prediction_time": 66.0,
+      "from_stage": "adjust",
+      "to_stage": "pickup",
+      "annotation_sha256": "c8ab7d1086a70bf97b65058409154fb0b1c8c90f3ceaadcb0e833b94e7e7c87e",
+      "annotation_path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000005.json",
+      "fps": 30.0,
+      "episode_length": 2773,
+      "clip_start_frame": 1823,
+      "clip_end_frame": 2100,
+      "clip_start_s": 60.766666666666666,
+      "clip_end_s": 70.0,
+      "video": "d0f8727d35eced697dcf79fe_fp1/views30hz.mp4",
+      "position_velocity_plot": "d0f8727d35eced697dcf79fe_fp1/joints.png",
+      "probability_plot": "d0f8727d35eced697dcf79fe_fp1/probabilities.png",
+      "state_csv": "d0f8727d35eced697dcf79fe_fp1/state.csv",
+      "trace_json": "d0f8727d35eced697dcf79fe_fp1/prompt_trace.json",
+      "truth_boundaries": [
+        {
+          "time": 64.76666666666667,
+          "previous": 3,
+          "label": 0,
+          "end": 70.9
+        }
+      ],
+      "model_boundaries": {
+        "current": [
+          {
+            "time": 67.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "future": [
+          {
+            "time": 66.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 69.5,
+            "previous": 0,
+            "label": 1
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,775 @@
+{
+  "current": {
+    "current_argmax": {
+      "head": "current",
+      "total": 56,
+      "hits": 49,
+      "recall": 0.875,
+      "false_events": 13,
+      "false_per_minute": 0.5383022774327122,
+      "conditional_offset_p50_s": 0.40000000000000036,
+      "conditional_offset_p95_s": 0.8199999999999863,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 18,
+          "false": 1
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 16,
+          "false": 3
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 6,
+          "false": 5
+        },
+        "pickup->adjust": {
+          "total": 0,
+          "hits": 0,
+          "false": 2
+        },
+        "return->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        },
+        "pickup->return": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        }
+      }
+    },
+    "current_conf05": {
+      "head": "current",
+      "total": 56,
+      "hits": 49,
+      "recall": 0.875,
+      "false_events": 13,
+      "false_per_minute": 0.5383022774327122,
+      "conditional_offset_p50_s": 0.40000000000000036,
+      "conditional_offset_p95_s": 0.8199999999999863,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 18,
+          "false": 1
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 16,
+          "false": 3
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 6,
+          "false": 5
+        },
+        "pickup->adjust": {
+          "total": 0,
+          "hits": 0,
+          "false": 2
+        },
+        "return->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        },
+        "pickup->return": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        }
+      }
+    },
+    "current_conf05_k2": {
+      "head": "current",
+      "total": 56,
+      "hits": 52,
+      "recall": 0.9285714285714286,
+      "false_events": 5,
+      "false_per_minute": 0.2070393374741201,
+      "conditional_offset_p50_s": 0.8666666666666671,
+      "conditional_offset_p95_s": 1.2000000000000028,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 5,
+          "false": 4
+        },
+        "return->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        }
+      }
+    },
+    "current_conf08": {
+      "head": "current",
+      "total": 56,
+      "hits": 50,
+      "recall": 0.8928571428571429,
+      "false_events": 7,
+      "false_per_minute": 0.2898550724637681,
+      "conditional_offset_p50_s": 0.4000000000000057,
+      "conditional_offset_p95_s": 0.9183333333333251,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 18,
+          "false": 1
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 18,
+          "false": 1
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 5,
+          "false": 4
+        },
+        "return->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        }
+      }
+    },
+    "current_conf08_k2": {
+      "head": "current",
+      "total": 56,
+      "hits": 51,
+      "recall": 0.9107142857142857,
+      "false_events": 6,
+      "false_per_minute": 0.24844720496894412,
+      "conditional_offset_p50_s": 0.9000000000000004,
+      "conditional_offset_p95_s": 1.3333333333333215,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 4,
+          "false": 5
+        },
+        "return->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        }
+      }
+    },
+    "ordered_current08_k1": {
+      "head": "current",
+      "total": 56,
+      "hits": 50,
+      "recall": 0.8928571428571429,
+      "false_events": 6,
+      "false_per_minute": 0.24844720496894412,
+      "conditional_offset_p50_s": 0.4000000000000057,
+      "conditional_offset_p95_s": 0.9183333333333251,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 18,
+          "false": 1
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 18,
+          "false": 1
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 5,
+          "false": 4
+        }
+      }
+    },
+    "ordered_current08_k2": {
+      "head": "current",
+      "total": 56,
+      "hits": 51,
+      "recall": 0.9107142857142857,
+      "false_events": 5,
+      "false_per_minute": 0.2070393374741201,
+      "conditional_offset_p50_s": 0.9000000000000004,
+      "conditional_offset_p95_s": 1.3333333333333215,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 4,
+          "false": 5
+        }
+      }
+    },
+    "ordered_current_future08_k2": {
+      "head": "current",
+      "total": 56,
+      "hits": 49,
+      "recall": 0.875,
+      "false_events": 7,
+      "false_per_minute": 0.2898550724637681,
+      "conditional_offset_p50_s": 0.8999999999999986,
+      "conditional_offset_p95_s": 1.3466666666666518,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 18,
+          "false": 1
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 8,
+          "false": 1
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 4,
+          "false": 5
+        }
+      }
+    }
+  },
+  "future": {
+    "future_argmax": {
+      "head": "future",
+      "total": 56,
+      "hits": 38,
+      "recall": 0.6785714285714286,
+      "false_events": 50,
+      "false_per_minute": 2.092050209205021,
+      "conditional_offset_p50_s": -1.0,
+      "conditional_offset_p95_s": -0.5699999999999963,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 15,
+          "false": 5
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 16,
+          "false": 10
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 5,
+          "false": 4
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 2,
+          "false": 13
+        },
+        "pickup->adjust": {
+          "total": 0,
+          "hits": 0,
+          "false": 6
+        },
+        "return->harvest": {
+          "total": 0,
+          "hits": 0,
+          "false": 7
+        },
+        "harvest->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        },
+        "return->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 2
+        },
+        "pickup->return": {
+          "total": 0,
+          "hits": 0,
+          "false": 2
+        }
+      }
+    },
+    "future_conf05": {
+      "head": "future",
+      "total": 56,
+      "hits": 38,
+      "recall": 0.6785714285714286,
+      "false_events": 50,
+      "false_per_minute": 2.092050209205021,
+      "conditional_offset_p50_s": -1.0,
+      "conditional_offset_p95_s": -0.5699999999999963,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 15,
+          "false": 5
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 16,
+          "false": 10
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 5,
+          "false": 4
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 2,
+          "false": 13
+        },
+        "pickup->adjust": {
+          "total": 0,
+          "hits": 0,
+          "false": 6
+        },
+        "return->harvest": {
+          "total": 0,
+          "hits": 0,
+          "false": 7
+        },
+        "harvest->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        },
+        "return->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 2
+        },
+        "pickup->return": {
+          "total": 0,
+          "hits": 0,
+          "false": 2
+        }
+      }
+    },
+    "future_conf05_k2": {
+      "head": "future",
+      "total": 56,
+      "hits": 40,
+      "recall": 0.7142857142857143,
+      "false_events": 23,
+      "false_per_minute": 0.9623430962343097,
+      "conditional_offset_p50_s": -0.5666666666666664,
+      "conditional_offset_p95_s": -0.09999999999999432,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 16,
+          "false": 3
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 17,
+          "false": 3
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 5,
+          "false": 3
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 2,
+          "false": 8
+        },
+        "pickup->adjust": {
+          "total": 0,
+          "hits": 0,
+          "false": 2
+        },
+        "return->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 2
+        },
+        "pickup->return": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        },
+        "return->harvest": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        }
+      }
+    },
+    "future_conf08": {
+      "head": "future",
+      "total": 56,
+      "hits": 40,
+      "recall": 0.7142857142857143,
+      "false_events": 32,
+      "false_per_minute": 1.3389121338912136,
+      "conditional_offset_p50_s": -0.9833333333333343,
+      "conditional_offset_p95_s": -0.4000000000000057,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 16,
+          "false": 3
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 16,
+          "false": 6
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 6,
+          "false": 3
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 2,
+          "false": 10
+        },
+        "return->harvest": {
+          "total": 0,
+          "hits": 0,
+          "false": 3
+        },
+        "pickup->adjust": {
+          "total": 0,
+          "hits": 0,
+          "false": 3
+        },
+        "return->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 2
+        },
+        "pickup->return": {
+          "total": 0,
+          "hits": 0,
+          "false": 2
+        }
+      }
+    },
+    "future_conf08_k2": {
+      "head": "future",
+      "total": 56,
+      "hits": 38,
+      "recall": 0.6785714285714286,
+      "false_events": 22,
+      "false_per_minute": 0.9205020920502093,
+      "conditional_offset_p50_s": -0.599999999999997,
+      "conditional_offset_p95_s": -0.09999999999999432,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 14,
+          "false": 5
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 15,
+          "false": 5
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 5,
+          "false": 4
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 4,
+          "false": 5
+        },
+        "return->pickup": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        },
+        "pickup->return": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        },
+        "return->harvest": {
+          "total": 0,
+          "hits": 0,
+          "false": 1
+        }
+      }
+    }
+  },
+  "oracles": {
+    "current": {
+      "head": "current",
+      "total": 56,
+      "hits": 56,
+      "recall": 1.0,
+      "false_events": 0,
+      "false_per_minute": 0.0,
+      "conditional_offset_p50_s": 0.7000000000000028,
+      "conditional_offset_p95_s": 0.9083333333333377,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        }
+      }
+    },
+    "future": {
+      "head": "future",
+      "total": 56,
+      "hits": 56,
+      "recall": 1.0,
+      "false_events": 0,
+      "false_per_minute": 0.0,
+      "conditional_offset_p50_s": -0.7999999999999972,
+      "conditional_offset_p95_s": -0.5916666666666623,
+      "by_transition": {
+        "pickup->harvest": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "harvest->return": {
+          "total": 19,
+          "hits": 19,
+          "false": 0
+        },
+        "return->adjust": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        },
+        "adjust->pickup": {
+          "total": 9,
+          "hits": 9,
+          "false": 0
+        }
+      }
+    }
+  },
+  "classifications": {
+    "current": {
+      "samples": 2898,
+      "accuracy": 0.9879227053140096,
+      "macro_f1": 0.9748113511302597,
+      "nll": 0.04944464997389019,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.9661538461538461,
+          "recall": 0.9602446483180428,
+          "f1": 0.9631901840490797,
+          "support": 327
+        },
+        "harvest": {
+          "precision": 0.996996996996997,
+          "recall": 0.9964982491245623,
+          "f1": 0.9967475606705029,
+          "support": 1999
+        },
+        "return": {
+          "precision": 0.967741935483871,
+          "recall": 0.9625668449197861,
+          "f1": 0.9651474530831099,
+          "support": 187
+        },
+        "adjust": {
+          "precision": 0.9691516709511568,
+          "recall": 0.9792207792207792,
+          "f1": 0.9741602067183462,
+          "support": 385
+        }
+      },
+      "confusion_true_rows": [
+        [
+          314,
+          1,
+          0,
+          12
+        ],
+        [
+          4,
+          1992,
+          3,
+          0
+        ],
+        [
+          2,
+          5,
+          180,
+          0
+        ],
+        [
+          5,
+          0,
+          3,
+          377
+        ]
+      ],
+      "return_adjust_confusions": 3,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    },
+    "future": {
+      "samples": 2868,
+      "accuracy": 0.9647838214783822,
+      "macro_f1": 0.9235554086433571,
+      "nll": 0.20665614655473352,
+      "label_order": [
+        "pickup",
+        "harvest",
+        "return",
+        "adjust"
+      ],
+      "per_class": {
+        "pickup": {
+          "precision": 0.8888888888888888,
+          "recall": 0.9158249158249159,
+          "f1": 0.9021558872305141,
+          "support": 297
+        },
+        "harvest": {
+          "precision": 0.9889834752128193,
+          "recall": 0.9879939969984992,
+          "f1": 0.9884884884884885,
+          "support": 1999
+        },
+        "return": {
+          "precision": 0.8876404494382022,
+          "recall": 0.8449197860962567,
+          "f1": 0.8657534246575342,
+          "support": 187
+        },
+        "adjust": {
+          "precision": 0.9354005167958657,
+          "recall": 0.9402597402597402,
+          "f1": 0.9378238341968912,
+          "support": 385
+        }
+      },
+      "confusion_true_rows": [
+        [
+          272,
+          5,
+          0,
+          20
+        ],
+        [
+          12,
+          1975,
+          12,
+          0
+        ],
+        [
+          7,
+          17,
+          158,
+          5
+        ],
+        [
+          15,
+          0,
+          8,
+          362
+        ]
+      ],
+      "return_adjust_confusions": 13,
+      "missing_classes": [],
+      "macro_definition": "unweighted four-class mean, zero_division=0"
+    }
+  },
+  "scope": "Policies fixed before analysis, val only, no model selection/default changes. Oracle truth is diagnostic ONLY, never an online input."
+}

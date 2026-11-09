@@ -1,0 +1,187 @@
+{
+  "passed": false,
+  "validation_evidence_passed": true,
+  "global_annotation_snapshot_intact": false,
+  "historical_files_checked": 1204,
+  "changed": [],
+  "annotations_checked": 94,
+  "changed_annotations": [
+    {
+      "episode_id": "e80436dea962fa58288fd8f9",
+      "split": "train",
+      "source_recording_id": "651eb2271bae4971a62273985ed85c2d",
+      "path": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/annotations/subtasks/coarse/episode_000004.json",
+      "expected_sha256": "ca93d3c93e66508fbddfadeda3954b6a1bf65d29b15d4b7328aac91544a99008",
+      "actual_sha256": "4b64e72b2f5274e1b747c9f8b133b27f77b341c45c5c786d57d156152ed9c373",
+      "frozen_segments": [
+        {
+          "end_frame": 168,
+          "end_seconds": 5.6,
+          "label": "pickup",
+          "reviewed": true,
+          "segment_index": 1,
+          "start_frame": 0,
+          "start_seconds": 0.0,
+          "text": "Right hand grasps and lifts the truss to the center"
+        },
+        {
+          "end_frame": 1129,
+          "end_seconds": 37.63333333333333,
+          "label": "harvest",
+          "reviewed": true,
+          "segment_index": 2,
+          "start_frame": 168,
+          "start_seconds": 5.6,
+          "text": "Right hand holds truss while left hand picks tomatoes into left basket"
+        },
+        {
+          "end_frame": 1243,
+          "end_seconds": 41.43333333333333,
+          "label": "return",
+          "reviewed": true,
+          "segment_index": 3,
+          "start_frame": 1129,
+          "start_seconds": 37.63333333333333,
+          "text": "Right hand returns the held object to the right plate"
+        },
+        {
+          "end_frame": 1395,
+          "end_seconds": 46.5,
+          "label": "adjust",
+          "reviewed": true,
+          "segment_index": 4,
+          "start_frame": 1243,
+          "start_seconds": 41.43333333333333,
+          "text": "Right fingers reposition the truss on the right plate"
+        },
+        {
+          "end_frame": 1603,
+          "end_seconds": 53.43333333333333,
+          "label": "pickup",
+          "reviewed": true,
+          "segment_index": 5,
+          "start_frame": 1395,
+          "start_seconds": 46.5,
+          "text": "Right hand grasps and lifts the truss to the center"
+        },
+        {
+          "end_frame": 2989,
+          "end_seconds": 99.63333333333334,
+          "label": "harvest",
+          "reviewed": true,
+          "segment_index": 6,
+          "start_frame": 1603,
+          "start_seconds": 53.43333333333333,
+          "text": "Right hand holds truss while left hand picks tomatoes into left basket"
+        },
+        {
+          "end_frame": 2990,
+          "end_seconds": 99.66666666666667,
+          "label": "return",
+          "reviewed": true,
+          "segment_index": 7,
+          "start_frame": 2989,
+          "start_seconds": 99.63333333333334,
+          "text": "Right hand returns the held object to the right plate"
+        }
+      ],
+      "current_segments": [
+        {
+          "end_frame": 168,
+          "end_seconds": 5.6,
+          "label": "pickup",
+          "reviewed": true,
+          "segment_index": 1,
+          "start_frame": 0,
+          "start_seconds": 0.0,
+          "text": "Right hand grasps and lifts the truss to the center"
+        },
+        {
+          "end_frame": 1129,
+          "end_seconds": 37.63333333333333,
+          "label": "harvest",
+          "reviewed": true,
+          "segment_index": 2,
+          "start_frame": 168,
+          "start_seconds": 5.6,
+          "text": "Right hand holds truss while left hand picks tomatoes into left basket"
+        },
+        {
+          "end_frame": 1243,
+          "end_seconds": 41.43333333333333,
+          "label": "return",
+          "reviewed": true,
+          "segment_index": 3,
+          "start_frame": 1129,
+          "start_seconds": 37.63333333333333,
+          "text": "Right hand returns the held object to the right plate"
+        },
+        {
+          "end_frame": 1395,
+          "end_seconds": 46.5,
+          "label": "adjust",
+          "reviewed": true,
+          "segment_index": 4,
+          "start_frame": 1243,
+          "start_seconds": 41.43333333333333,
+          "text": "Right fingers reposition the truss on the right plate"
+        },
+        {
+          "end_frame": 1603,
+          "end_seconds": 53.43333333333333,
+          "label": "pickup",
+          "reviewed": true,
+          "segment_index": 5,
+          "start_frame": 1395,
+          "start_seconds": 46.5,
+          "text": "Right hand grasps and lifts the truss to the center"
+        },
+        {
+          "end_frame": 2908,
+          "end_seconds": 96.93333333333334,
+          "label": "harvest",
+          "reviewed": true,
+          "segment_index": 6,
+          "start_frame": 1603,
+          "start_seconds": 53.43333333333333,
+          "text": "Right hand holds truss while left hand picks tomatoes into left basket"
+        },
+        {
+          "end_frame": 2990,
+          "end_seconds": 99.66666666666667,
+          "label": "return",
+          "reviewed": true,
+          "segment_index": 7,
+          "start_frame": 2908,
+          "start_seconds": 96.93333333333334,
+          "text": "Right hand returns the held object to the right plate"
+        }
+      ],
+      "current_revision": 2,
+      "mtime": 1794195755.124407,
+      "agent_modified": false
+    }
+  ],
+  "training_runs": 0,
+  "encoder_calls": 0,
+  "test_inference_calls": 0,
+  "source_split_sha256": "00783ed7fbcc45ba8d160049f5a6764e8cec832977055b72ba4d4f8a01d3e0e0",
+  "historical_source": {
+    "commit": "33ce417344b22ecd66e362e5daab6946fab439ae",
+    "files": {
+      "subtasks/agent_bridge.py": "3219d01e6c8602a2d6fc5fdcb555c10ac9d5b6187e876ae03fd1ad8b903282d0",
+      "subtasks/tomato.py": "9cc0220ee8f180f1dba4dab529d93e3ac072404a7f16aec40c86892c7ab843a0",
+      "policies/fr3_sharpa_protocol.py": "0bfc02c27e52292f330f08cc8879529f7f3d5257d6b0171b7a95c6d5232853d8"
+    }
+  },
+  "active_openpi_start": {
+    "branch": "tomato-subtasks-ab-train",
+    "sha": "7b8305769fc3617f50fa1986ed9d9cd3fa37e8bb"
+  },
+  "active_openpi_at_report": {
+    "branch": "tomato-subtasks-ab-train",
+    "sha": "6242e4a2fa6a00398baaff7069a52c4fbc5b3762",
+    "status": ""
+  },
+  "statement": "Historical bridge isolated from33ce417; active OpenPI branch left untouched. Model candidate and stable default configs unchanged."
+}

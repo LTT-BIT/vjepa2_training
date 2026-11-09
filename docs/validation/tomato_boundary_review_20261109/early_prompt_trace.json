@@ -1,0 +1,1088 @@
+{
+  "event": {
+    "event_id": "3e645bf4e137d0f836c9d7ff_b4",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 4,
+    "from_stage": "adjust",
+    "to_stage": "pickup",
+    "boundary_s": 73.3,
+    "future_strict_k1": {
+      "time": 73.3,
+      "previous": 3,
+      "label": 0,
+      "end": 81.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "future_strict_k2": {
+      "time": 73.3,
+      "previous": 3,
+      "label": 0,
+      "end": 81.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "window_target_argmax_count": 3,
+    "window_stable_target_present": true,
+    "window_max_target_probability": 0.9999996456300607,
+    "future_nearby_k1_same_path": [
+      {
+        "time": 69.5,
+        "previous": 3,
+        "label": 0
+      },
+      {
+        "time": 71.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "current_new_class_before_boundary": 3,
+    "current_wrong_after_boundary": 0,
+    "current_policy_results": {
+      "current_argmax": {
+        "time": 73.3,
+        "previous": 3,
+        "label": 0,
+        "end": 81.13333333333334,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "current_conf05": {
+        "time": 73.3,
+        "previous": 3,
+        "label": 0,
+        "end": 81.13333333333334,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "current_conf05_k2": {
+        "time": 73.3,
+        "previous": 3,
+        "label": 0,
+        "end": 81.13333333333334,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "current_conf08": {
+        "time": 73.3,
+        "previous": 3,
+        "label": 0,
+        "end": 81.13333333333334,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "current_conf08_k2": {
+        "time": 73.3,
+        "previous": 3,
+        "label": 0,
+        "end": 81.13333333333334,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "ordered_current08_k1": {
+        "time": 73.3,
+        "previous": 3,
+        "label": 0,
+        "end": 81.13333333333334,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "ordered_current08_k2": {
+        "time": 73.3,
+        "previous": 3,
+        "label": 0,
+        "end": 81.13333333333334,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      },
+      "ordered_current_future08_k2": {
+        "time": 73.3,
+        "previous": 3,
+        "label": 0,
+        "end": 81.13333333333334,
+        "detected": false,
+        "event_time": null,
+        "offset_s": null
+      }
+    },
+    "confirmation_lost_future_event": false,
+    "stage_order_changed_outcome": false,
+    "joint_changed_outcome": false
+  },
+  "annotated_boundary_s": 73.3,
+  "rows": [
+    {
+      "time": 68.5,
+      "anchor_frame": 2055,
+      "human_label": "adjust",
+      "current_probabilities": [
+        0.006971112740928686,
+        6.577792951296513e-08,
+        2.8184513486181684e-06,
+        0.9930260030297932
+      ],
+      "future_probabilities": [
+        0.05476318068194038,
+        1.2635333514943622e-07,
+        1.0769488007248427e-12,
+        0.9452366929636475
+      ],
+      "before": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "expected_next": "pickup",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "context": {
+        "phase": "adjust",
+        "phase_index": 3,
+        "action_class": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "version": 3,
+        "input_timestamp": 1000068.5,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "137",
+        "confidence": 0.9930260030297932,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "137",
+        "prompt_version": 3,
+        "phase": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "input_timestamp": 1000068.5,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "137"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 69.0,
+      "anchor_frame": 2070,
+      "human_label": "adjust",
+      "current_probabilities": [
+        0.0014251293560217635,
+        1.7199132709826796e-07,
+        9.333987107525361e-06,
+        0.9985653646655437
+      ],
+      "future_probabilities": [
+        0.0907601826572719,
+        5.845912217240053e-07,
+        2.575434969026314e-11,
+        0.909239232725752
+      ],
+      "before": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "expected_next": "pickup",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "context": {
+        "phase": "adjust",
+        "phase_index": 3,
+        "action_class": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "version": 3,
+        "input_timestamp": 1000069.0,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "138",
+        "confidence": 0.9985653646655437,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "138",
+        "prompt_version": 3,
+        "phase": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "input_timestamp": 1000069.0,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "138"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 69.5,
+      "anchor_frame": 2085,
+      "human_label": "adjust",
+      "current_probabilities": [
+        0.05093111541541515,
+        6.369312656189341e-07,
+        4.338815742536032e-06,
+        0.9490639088375766
+      ],
+      "future_probabilities": [
+        0.7525030835610271,
+        5.9427499654143174e-06,
+        3.303934168434145e-13,
+        0.2474909736886771
+      ],
+      "before": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "expected_next": "pickup",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "context": {
+        "phase": "adjust",
+        "phase_index": 3,
+        "action_class": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "version": 3,
+        "input_timestamp": 1000069.5,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "139",
+        "confidence": 0.9490639088375766,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "139",
+        "prompt_version": 3,
+        "phase": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "input_timestamp": 1000069.5,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "139"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 70.0,
+      "anchor_frame": 2100,
+      "human_label": "adjust",
+      "current_probabilities": [
+        0.017973495163626486,
+        1.5295957430197107e-06,
+        2.3145173913666264e-05,
+        0.9820018300667168
+      ],
+      "future_probabilities": [
+        0.549935853257944,
+        0.00012179026423873678,
+        4.377404513737355e-11,
+        0.4499423564340433
+      ],
+      "before": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "expected_next": "pickup",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "context": {
+        "phase": "adjust",
+        "phase_index": 3,
+        "action_class": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "version": 3,
+        "input_timestamp": 1000070.0,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "140",
+        "confidence": 0.9820018300667168,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "140",
+        "prompt_version": 3,
+        "phase": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "input_timestamp": 1000070.0,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "140"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 70.5,
+      "anchor_frame": 2115,
+      "human_label": "adjust",
+      "current_probabilities": [
+        0.033460321351716685,
+        3.4890540454556095e-06,
+        0.0003457754287371342,
+        0.9661904141655007
+      ],
+      "future_probabilities": [
+        0.3831178243879374,
+        2.0253568092096657e-05,
+        5.263096053281961e-09,
+        0.6168619167808744
+      ],
+      "before": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "expected_next": "pickup",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "context": {
+        "phase": "adjust",
+        "phase_index": 3,
+        "action_class": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "version": 3,
+        "input_timestamp": 1000070.5,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "141",
+        "confidence": 0.9661904141655007,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "141",
+        "prompt_version": 3,
+        "phase": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "input_timestamp": 1000070.5,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "141"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 71.0,
+      "anchor_frame": 2130,
+      "human_label": "adjust",
+      "current_probabilities": [
+        0.45941181665992525,
+        2.011288438078108e-05,
+        0.0002706285768642234,
+        0.5402974418788297
+      ],
+      "future_probabilities": [
+        0.9926516644195598,
+        1.8034451670043291e-07,
+        8.309869495672217e-12,
+        0.007348155227613643
+      ],
+      "before": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "expected_next": "pickup",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "context": {
+        "phase": "adjust",
+        "phase_index": 3,
+        "action_class": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "version": 3,
+        "input_timestamp": 1000071.0,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": "pickup",
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "142",
+        "confidence": 0.5402974418788297,
+        "needs_review": true,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "142",
+        "prompt_version": 3,
+        "phase": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "input_timestamp": 1000071.0,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "142"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 71.5,
+      "anchor_frame": 2145,
+      "human_label": "adjust",
+      "current_probabilities": [
+        0.9922725945177561,
+        1.3467124476790708e-05,
+        1.6073043205816573e-05,
+        0.007697865314561165
+      ],
+      "future_probabilities": [
+        0.9999910902304692,
+        1.5710564095650564e-08,
+        4.875543356223696e-14,
+        8.894058917866433e-06
+      ],
+      "before": {
+        "phase": 3,
+        "count": 0,
+        "version": 3
+      },
+      "expected_next": "pickup",
+      "qualifies": true,
+      "count_on_arrival": 1,
+      "after": {
+        "phase": 3,
+        "count": 1,
+        "version": 3
+      },
+      "context": {
+        "phase": "adjust",
+        "phase_index": 3,
+        "action_class": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "version": 3,
+        "input_timestamp": 1000071.5,
+        "changed": false,
+        "reason": "awaiting_confirmation",
+        "source": "vjepa2",
+        "future_warning": "pickup",
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "143",
+        "confidence": 0.007697865314561165,
+        "needs_review": true,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "143",
+        "prompt_version": 3,
+        "phase": "adjust",
+        "prompt": "Right fingers reposition the truss on the right plate",
+        "input_timestamp": 1000071.5,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "143"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 72.0,
+      "anchor_frame": 2160,
+      "human_label": "adjust",
+      "current_probabilities": [
+        0.9889040484968544,
+        2.4376592246518476e-06,
+        6.431087508241153e-06,
+        0.011087082756412778
+      ],
+      "future_probabilities": [
+        0.9999116103125363,
+        1.0518402705983604e-06,
+        8.689815397392378e-13,
+        8.733784632401942e-05
+      ],
+      "before": {
+        "phase": 3,
+        "count": 1,
+        "version": 3
+      },
+      "expected_next": "pickup",
+      "qualifies": true,
+      "count_on_arrival": 2,
+      "after": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "context": {
+        "phase": "pickup_2",
+        "phase_index": 4,
+        "action_class": "pickup",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "version": 4,
+        "input_timestamp": 1000072.0,
+        "changed": true,
+        "reason": "confirmed_next_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "144",
+        "confidence": 0.9889040484968544,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "144",
+        "prompt_version": 4,
+        "phase": "pickup_2",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "input_timestamp": 1000072.0,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "144"
+      },
+      "previous_chunk_still_matches": false,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 72.5,
+      "anchor_frame": 2175,
+      "human_label": "adjust",
+      "current_probabilities": [
+        0.9996675240209434,
+        1.3798573286173152e-06,
+        1.63384619705189e-06,
+        0.0003294622755309794
+      ],
+      "future_probabilities": [
+        0.9999982867730753,
+        8.758684858318462e-07,
+        4.0766869156220096e-14,
+        8.373583979014592e-07
+      ],
+      "before": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "expected_next": "harvest",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "context": {
+        "phase": "pickup_2",
+        "phase_index": 4,
+        "action_class": "pickup",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "version": 4,
+        "input_timestamp": 1000072.5,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "145",
+        "confidence": 0.9996675240209434,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "145",
+        "prompt_version": 4,
+        "phase": "pickup_2",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "input_timestamp": 1000072.5,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "145"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 73.0,
+      "anchor_frame": 2190,
+      "human_label": "adjust",
+      "current_probabilities": [
+        0.9999397325729258,
+        2.557694562490608e-07,
+        8.962510861374563e-08,
+        5.992203250953703e-05
+      ],
+      "future_probabilities": [
+        0.9999996456300607,
+        2.8098508640865247e-07,
+        2.5999161662872912e-17,
+        7.338485292502022e-08
+      ],
+      "before": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "expected_next": "harvest",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "context": {
+        "phase": "pickup_2",
+        "phase_index": 4,
+        "action_class": "pickup",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "version": 4,
+        "input_timestamp": 1000073.0,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "146",
+        "confidence": 0.9999397325729258,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "146",
+        "prompt_version": 4,
+        "phase": "pickup_2",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "input_timestamp": 1000073.0,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "146"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 73.5,
+      "anchor_frame": 2205,
+      "human_label": "pickup",
+      "current_probabilities": [
+        0.9999931810518561,
+        1.1971098643861735e-06,
+        1.05696634418356e-07,
+        5.516141645196421e-06
+      ],
+      "future_probabilities": [
+        0.9999999177528883,
+        7.86973477923635e-08,
+        6.10961582758102e-17,
+        3.549763905865772e-09
+      ],
+      "before": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "expected_next": "harvest",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "context": {
+        "phase": "pickup_2",
+        "phase_index": 4,
+        "action_class": "pickup",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "version": 4,
+        "input_timestamp": 1000073.5,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "147",
+        "confidence": 0.9999931810518561,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "147",
+        "prompt_version": 4,
+        "phase": "pickup_2",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "input_timestamp": 1000073.5,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "147"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 74.0,
+      "anchor_frame": 2220,
+      "human_label": "pickup",
+      "current_probabilities": [
+        0.9999032075446894,
+        7.908426514510441e-06,
+        4.2365196045853036e-06,
+        8.464750919145647e-05
+      ],
+      "future_probabilities": [
+        0.9999988981544902,
+        4.5112090464113875e-07,
+        4.307868980392141e-15,
+        6.507246007922041e-07
+      ],
+      "before": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "expected_next": "harvest",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "context": {
+        "phase": "pickup_2",
+        "phase_index": 4,
+        "action_class": "pickup",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "version": 4,
+        "input_timestamp": 1000074.0,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "148",
+        "confidence": 0.9999032075446894,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "148",
+        "prompt_version": 4,
+        "phase": "pickup_2",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "input_timestamp": 1000074.0,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "148"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 74.5,
+      "anchor_frame": 2235,
+      "human_label": "pickup",
+      "current_probabilities": [
+        0.9999549688999164,
+        2.459441686314585e-06,
+        6.930780934068404e-07,
+        4.187858030402884e-05
+      ],
+      "future_probabilities": [
+        0.9999999860018822,
+        6.401894121897432e-09,
+        1.977735287253488e-17,
+        7.596223733285075e-09
+      ],
+      "before": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "expected_next": "harvest",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "context": {
+        "phase": "pickup_2",
+        "phase_index": 4,
+        "action_class": "pickup",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "version": 4,
+        "input_timestamp": 1000074.5,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "149",
+        "confidence": 0.9999549688999164,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "149",
+        "prompt_version": 4,
+        "phase": "pickup_2",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "input_timestamp": 1000074.5,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "149"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 75.0,
+      "anchor_frame": 2250,
+      "human_label": "pickup",
+      "current_probabilities": [
+        0.9998548781102081,
+        1.634252929689185e-06,
+        1.2120840098567824e-06,
+        0.0001422755528524275
+      ],
+      "future_probabilities": [
+        0.999999966216309,
+        2.0922039207454842e-08,
+        1.0195087526768433e-16,
+        1.2861651823545702e-08
+      ],
+      "before": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "expected_next": "harvest",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "context": {
+        "phase": "pickup_2",
+        "phase_index": 4,
+        "action_class": "pickup",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "version": 4,
+        "input_timestamp": 1000075.0,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "150",
+        "confidence": 0.9998548781102081,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "150",
+        "prompt_version": 4,
+        "phase": "pickup_2",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "input_timestamp": 1000075.0,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "150"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 75.5,
+      "anchor_frame": 2265,
+      "human_label": "pickup",
+      "current_probabilities": [
+        0.9999742800079787,
+        8.073775227570131e-07,
+        2.992701314950878e-07,
+        2.4613344366946278e-05
+      ],
+      "future_probabilities": [
+        0.9999997896042111,
+        3.061279836271291e-08,
+        1.9916960557567183e-15,
+        1.7978298867774325e-07
+      ],
+      "before": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "expected_next": "harvest",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "context": {
+        "phase": "pickup_2",
+        "phase_index": 4,
+        "action_class": "pickup",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "version": 4,
+        "input_timestamp": 1000075.5,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "151",
+        "confidence": 0.9999742800079787,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "151",
+        "prompt_version": 4,
+        "phase": "pickup_2",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "input_timestamp": 1000075.5,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "151"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    },
+    {
+      "time": 76.0,
+      "anchor_frame": 2280,
+      "human_label": "pickup",
+      "current_probabilities": [
+        0.9999979319497092,
+        7.331257534528972e-07,
+        1.2972527424942849e-07,
+        1.2051992630969494e-06
+      ],
+      "future_probabilities": [
+        0.9999986304046127,
+        1.36736148979715e-06,
+        5.078324891637128e-15,
+        2.2338923664662894e-09
+      ],
+      "before": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "expected_next": "harvest",
+      "qualifies": false,
+      "count_on_arrival": 0,
+      "after": {
+        "phase": 4,
+        "count": 0,
+        "version": 4
+      },
+      "context": {
+        "phase": "pickup_2",
+        "phase_index": 4,
+        "action_class": "pickup",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "version": 4,
+        "input_timestamp": 1000076.0,
+        "changed": false,
+        "reason": "hold_current_phase",
+        "source": "vjepa2",
+        "future_warning": null,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "152",
+        "confidence": 0.9999979319497092,
+        "needs_review": false,
+        "task_complete": false
+      },
+      "chunk": {
+        "chunk_id": "152",
+        "prompt_version": 4,
+        "phase": "pickup_2",
+        "prompt": "Right hand grasps and lifts the truss to the center",
+        "input_timestamp": 1000076.0,
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "observation_id": "152"
+      },
+      "previous_chunk_still_matches": true,
+      "counterfactual_future_prompt_unchanged": true
+    }
+  ],
+  "full_episode_history_replayed": true,
+  "truth_not_used_by_provider": true,
+  "defect_status": "No implementation contract violation found; early Current prediction satisfies documented .8/K2 rule. Human boundary semantics still unresolved."
+}
