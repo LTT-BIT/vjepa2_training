@@ -1,0 +1,42 @@
+{
+  "/home/user/vjepa2_training/runs/tomato/optimization_20261108/bundles/independent_h15_s42.pt": {
+    "bytes": 8280151,
+    "sha256": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00"
+  },
+  "/home/user/vjepa2_training/runs/tomato/optimization_20261108/bundles/independent_h15_s43.pt": {
+    "bytes": 8280151,
+    "sha256": "794a42e17dad0b4e6f028c39497b029f56f6aa3f410ed40eb72accec89a2bea6"
+  },
+  "/home/user/vjepa2_training/runs/tomato/optimization_20261108/bundles/independent_h15_s44.pt": {
+    "bytes": 8280151,
+    "sha256": "b5989cddcad1ee1c391723660a547060cbb97efc8cdb44553ee8894194014362"
+  },
+  "/home/user/vjepa2_training/runs/tomato/campaign94_20261107/experiments/joint_s42/best_head.pt": {
+    "bytes": 4145057,
+    "sha256": "92e4b2dbd3dbdcb287fa0c4e29a6020679a90c58bf1777a324826f7ff53c5bcc"
+  },
+  "/home/user/vjepa2_training/runs/tomato/refresh101_20261109_v2/finalized_exports/clean91_control/independent_h15_s42.pt": {
+    "bytes": 8280855,
+    "sha256": "395402e4d3af0a3b9be1e2e220df7d8cf83dd5c6f1bdb220b0fce3d040ec76cd"
+  },
+  "/home/user/vjepa2_training/runs/tomato/refresh101_20261109_v2/finalized_exports/clean91_control/independent_h15_s43.pt": {
+    "bytes": 8280855,
+    "sha256": "6f1dadb8cd7913e0c7863838dc58d1940a231dfb6a586e686d0d5fdcf52b7c46"
+  },
+  "/home/user/vjepa2_training/runs/tomato/refresh101_20261109_v2/finalized_exports/clean91_control/independent_h15_s44.pt": {
+    "bytes": 8280855,
+    "sha256": "82d5c0ac68ff141b3f8bd8509d7042b3bb6e5e46f11373629a5a06e7c1c5210d"
+  },
+  "/home/user/vjepa2_training/runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/independent_h15_s42.pt": {
+    "bytes": 8280791,
+    "sha256": "db7bfea7072136776dc651c72b2cc66b3ccfad961b760c4248ab240d1517fc64"
+  },
+  "/home/user/vjepa2_training/runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/independent_h15_s43.pt": {
+    "bytes": 8280791,
+    "sha256": "2c6aa41a12c8893e04d11db0e224ae03b3735f2faad39867e9bf350c6b0ba28d"
+  },
+  "/home/user/vjepa2_training/runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/independent_h15_s44.pt": {
+    "bytes": 8280791,
+    "sha256": "4050069aa9a09381c3296105f4d31fd5865414049d5da5442b03f8e6a27a1d4d"
+  }
+}

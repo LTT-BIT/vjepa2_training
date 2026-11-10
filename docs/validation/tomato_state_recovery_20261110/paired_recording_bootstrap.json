@@ -1,0 +1,38 @@
+{
+  "42": {
+    "mismatch_delta_sum_s": 19.5,
+    "mismatch_delta_ci95_s": [
+      15.5,
+      23.0
+    ],
+    "on_time_delta": 1,
+    "on_time_delta_ci95": [
+      0.0,
+      3.0
+    ]
+  },
+  "43": {
+    "mismatch_delta_sum_s": 10.5,
+    "mismatch_delta_ci95_s": [
+      1.0,
+      18.0
+    ],
+    "on_time_delta": 2,
+    "on_time_delta_ci95": [
+      0.0,
+      5.0
+    ]
+  },
+  "44": {
+    "mismatch_delta_sum_s": 17.5,
+    "mismatch_delta_ci95_s": [
+      13.0,
+      22.0
+    ],
+    "on_time_delta": 2,
+    "on_time_delta_ci95": [
+      0.0,
+      5.0
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "new_unit_tests": {
+    "command": ".venv-tomato/bin/python -m pytest tests/test_tomato_state_recovery.py -q",
+    "passed": 13,
+    "elapsed_s": 0.65
+  },
+  "tomato_regression": {
+    "file_selection": "sorted tests/test_*tomato*.py, passed explicitly to pytest",
+    "passed": 171,
+    "elapsed_s": 9.9
+  },
+  "whole_directory_collection": {
+    "command": "pytest tests -q -k tomato",
+    "status": "failed_during_collection",
+    "reason": "Unrelated tests/test_lemon_doubao_vjepa.py imports missing tools.annotate_lemon_doubao; not repaired in this scope"
+  },
+  "replay": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "episodes": 9,
+    "events": 50,
+    "baseline_warning_exact_parity": true,
+    "historical_interface_phase_parity_seed42": true,
+    "training": false,
+    "robot_io": false
+  }
+}

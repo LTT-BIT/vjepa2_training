@@ -1,0 +1,868 @@
+[
+  {
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot",
+    "episode_index": 2,
+    "first_disagreement": {
+      "time_s": 10.5,
+      "maintained_phase": 0,
+      "truth_phase_offline": 1,
+      "current": [
+        0.008187882811622358,
+        0.9910120031897752,
+        0.000799015586099164,
+        1.0984125033449216e-06
+      ],
+      "future": [
+        3.01514320576005e-10,
+        0.99999993767724,
+        6.202124562695199e-08,
+        5.913197076135103e-20
+      ],
+      "time_distribution": [
+        0.01537176314741373,
+        0.00472385436296463,
+        0.0038992720656096935,
+        0.0023135021328926086,
+        0.9736916422843933
+      ]
+    },
+    "first_persistent_disagreement": {
+      "time_s": 82.5,
+      "maintained_phase": 2,
+      "truth_phase_offline": 3,
+      "current": [
+        0.03017451288923828,
+        0.0016387931478237159,
+        0.5648071670027481,
+        0.40337952696018997
+      ],
+      "future": [
+        1.4788088096242815e-07,
+        1.0378412605744135e-08,
+        0.08376370068793089,
+        0.9162361410527755
+      ],
+      "time_distribution": [
+        0.005795543547719717,
+        0.15516917407512665,
+        0.049119360744953156,
+        0.025995710864663124,
+        0.763920247554779
+      ]
+    },
+    "root_failure": {
+      "seed": 42,
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "ordinal": 3,
+      "boundary_s": 82.46666666666667,
+      "transition": "return->adjust",
+      "baseline_arrival_s": 83.5,
+      "baseline_outcome": "on_time",
+      "B2_arrival_s": null,
+      "B2_outcome": "missing",
+      "current_opportunities": [
+        {
+          "time_s": 83.5,
+          "current": [
+            4.404124880312627e-05,
+            2.0054418699205724e-06,
+            0.0006904604628597957,
+            0.9992634928464672
+          ],
+          "future": [
+            8.026399705701373e-13,
+            2.685698333104091e-15,
+            4.512563734418375e-09,
+            0.999999995486631
+          ],
+          "time_distribution": [
+            0.001875974703580141,
+            0.019009681418538094,
+            0.014740764163434505,
+            0.0197698213160038,
+            0.9446037411689758
+          ],
+          "online_phase_before": 2,
+          "truth_phase_offline": 3,
+          "predicted_window": null,
+          "switched": false,
+          "reason": "no_time_window"
+        }
+      ],
+      "cause": "time_gate_blocks_available_current"
+    },
+    "affected_event_ordinals": [
+      6
+    ],
+    "persistent_drift_runs": [
+      {
+        "start_s": 82.5,
+        "end_s": 173.5,
+        "duration_s": 91.0,
+        "first_index": 165,
+        "last_index": 346,
+        "recovered": false,
+        "subsequent_boundaries": [
+          4,
+          5,
+          6
+        ],
+        "online_phase_at_start": 2
+      }
+    ],
+    "self_recovered": false,
+    "first_report_only_alert_s": 110.0,
+    "videos": [
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam0/episode_000002.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam1/episode_000002.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam2/episode_000002.mp4"
+    ],
+    "plot": "/home/user/vjepa2_training/runs/tomato/state_recovery_20261110_release/plots/27d8bc0413a42341c7e8c3e5_root.png"
+  },
+  {
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "episode_index": 2,
+    "first_disagreement": {
+      "time_s": 8.0,
+      "maintained_phase": 0,
+      "truth_phase_offline": 1,
+      "current": [
+        0.146661516449813,
+        0.8523503176470619,
+        0.0009699286702636906,
+        1.823723286153161e-05
+      ],
+      "future": [
+        7.823005718024626e-11,
+        0.9999998937520509,
+        1.0616963993678466e-07,
+        7.914295432238922e-14
+      ],
+      "time_distribution": [
+        0.028982119634747505,
+        0.0031115757301449776,
+        0.004287706222385168,
+        0.0017932472983375192,
+        0.9618253111839294
+      ]
+    },
+    "first_persistent_disagreement": {
+      "time_s": 99.5,
+      "maintained_phase": 3,
+      "truth_phase_offline": 4,
+      "current": [
+        0.6069410459861548,
+        0.00017478445222249547,
+        0.001226911862109192,
+        0.3916572576995136
+      ],
+      "future": [
+        0.9992363897551296,
+        1.2652443623459252e-14,
+        1.6344718239639442e-13,
+        0.0007636102446941493
+      ],
+      "time_distribution": [
+        0.008623355068266392,
+        0.019261248409748077,
+        0.0338965468108654,
+        0.02594950422644615,
+        0.9122693538665771
+      ]
+    },
+    "root_failure": {
+      "seed": 42,
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "ordinal": 4,
+      "boundary_s": 99.13333333333334,
+      "transition": "adjust->pickup",
+      "baseline_arrival_s": 103.0,
+      "baseline_outcome": "late",
+      "B2_arrival_s": null,
+      "B2_outcome": "missing",
+      "current_opportunities": [
+        {
+          "time_s": 103.0,
+          "current": [
+            0.8111478230353659,
+            6.672690968766849e-07,
+            3.1240662994501595e-07,
+            0.18885119728890717
+          ],
+          "future": [
+            0.8474084943111776,
+            3.882936153958031e-10,
+            2.227395442912039e-16,
+            0.15259150530052862
+          ],
+          "time_distribution": [
+            0.005646270699799061,
+            0.0020054446067661047,
+            0.009078665636479855,
+            0.009743871167302132,
+            0.9735257029533386
+          ],
+          "online_phase_before": 3,
+          "truth_phase_offline": 4,
+          "predicted_window": null,
+          "switched": false,
+          "reason": "no_time_window"
+        }
+      ],
+      "cause": "time_gate_blocks_available_current"
+    },
+    "affected_event_ordinals": [
+      6
+    ],
+    "persistent_drift_runs": [
+      {
+        "start_s": 99.5,
+        "end_s": 179.0,
+        "duration_s": 79.5,
+        "first_index": 199,
+        "last_index": 357,
+        "recovered": false,
+        "subsequent_boundaries": [
+          5,
+          6
+        ],
+        "online_phase_at_start": 3
+      }
+    ],
+    "self_recovered": false,
+    "first_report_only_alert_s": 114.5,
+    "videos": [
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/videos/chunk-000/observation.images.cam0/episode_000002.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/videos/chunk-000/observation.images.cam1/episode_000002.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/videos/chunk-000/observation.images.cam2/episode_000002.mp4"
+    ],
+    "plot": "/home/user/vjepa2_training/runs/tomato/state_recovery_20261110_release/plots/0b12ac0fda9d7cd77dee6e60_root.png"
+  },
+  {
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "episode_index": 7,
+    "first_disagreement": {
+      "time_s": 10.0,
+      "maintained_phase": 0,
+      "truth_phase_offline": 1,
+      "current": [
+        0.0008066562627013946,
+        0.9983746205406715,
+        0.0008137091645903118,
+        5.014032036840248e-06
+      ],
+      "future": [
+        5.936577703164554e-11,
+        0.9999999999248519,
+        1.5691693292302708e-11,
+        9.058317581620864e-14
+      ],
+      "time_distribution": [
+        0.005552820861339569,
+        0.0036227779928594828,
+        0.0011854077456519008,
+        0.0005480431136675179,
+        0.9890908598899841
+      ]
+    },
+    "first_persistent_disagreement": {
+      "time_s": 71.0,
+      "maintained_phase": 1,
+      "truth_phase_offline": 2,
+      "current": [
+        1.7470499848843347e-05,
+        0.9110677846491038,
+        0.08879932534707734,
+        0.00011541950397006764
+      ],
+      "future": [
+        2.89445134260624e-18,
+        4.430513999201127e-07,
+        0.9999995569479527,
+        6.471737438962686e-13
+      ],
+      "time_distribution": [
+        0.07428961992263794,
+        0.28528866171836853,
+        0.3445970416069031,
+        0.11629614979028702,
+        0.17952854931354523
+      ]
+    },
+    "root_failure": {
+      "seed": 42,
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "ordinal": 2,
+      "boundary_s": 71.0,
+      "transition": "harvest->return",
+      "baseline_arrival_s": 72.0,
+      "baseline_outcome": "on_time",
+      "B2_arrival_s": 139.5,
+      "B2_outcome": "late",
+      "current_opportunities": [
+        {
+          "time_s": 72.0,
+          "current": [
+            8.80436148233697e-07,
+            0.003095988010615532,
+            0.9968942005262924,
+            8.931026943807624e-06
+          ],
+          "future": [
+            5.491653451923585e-16,
+            7.176755716765852e-09,
+            0.9999999928232395,
+            4.124608873286586e-15
+          ],
+          "time_distribution": [
+            0.03886452317237854,
+            0.016545230522751808,
+            0.005293595138937235,
+            0.0017039444064721465,
+            0.9375928044319153
+          ],
+          "online_phase_before": 1,
+          "truth_phase_offline": 2,
+          "predicted_window": null,
+          "switched": false,
+          "reason": "no_time_window"
+        }
+      ],
+      "cause": "time_gate_blocks_available_current"
+    },
+    "affected_event_ordinals": [
+      3,
+      5
+    ],
+    "persistent_drift_runs": [
+      {
+        "start_s": 71.0,
+        "end_s": 141.5,
+        "duration_s": 70.5,
+        "first_index": 142,
+        "last_index": 282,
+        "recovered": false,
+        "subsequent_boundaries": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "online_phase_at_start": 1
+      }
+    ],
+    "self_recovered": false,
+    "first_report_only_alert_s": 78.5,
+    "videos": [
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/videos/chunk-000/observation.images.cam0/episode_000007.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/videos/chunk-000/observation.images.cam1/episode_000007.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/videos/chunk-000/observation.images.cam2/episode_000007.mp4"
+    ],
+    "plot": "/home/user/vjepa2_training/runs/tomato/state_recovery_20261110_release/plots/61c420843f11ca54bfe804ee_root.png"
+  },
+  {
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+    "episode_index": 9,
+    "first_disagreement": {
+      "time_s": 7.5,
+      "maintained_phase": 0,
+      "truth_phase_offline": 1,
+      "current": [
+        0.9641345565429973,
+        0.03584522294692763,
+        5.369720241186598e-06,
+        1.4850789833918655e-05
+      ],
+      "future": [
+        1.5818744930973748e-15,
+        0.9999999999994518,
+        5.46657006482697e-13,
+        1.0459824480042643e-18
+      ],
+      "time_distribution": [
+        0.16048365831375122,
+        0.18470217287540436,
+        0.17947255074977875,
+        0.06580589711666107,
+        0.4095357358455658
+      ]
+    },
+    "first_persistent_disagreement": {
+      "time_s": 63.0,
+      "maintained_phase": 2,
+      "truth_phase_offline": 3,
+      "current": [
+        1.9116513491181607e-05,
+        1.422448822959405e-05,
+        0.7555286772709788,
+        0.2444379817273003
+      ],
+      "future": [
+        2.2921695666911574e-10,
+        1.5401935293438176e-12,
+        1.4661189976996033e-07,
+        0.9999998531573431
+      ],
+      "time_distribution": [
+        0.09504690766334534,
+        0.14865171909332275,
+        0.1624624878168106,
+        0.13482004404067993,
+        0.45901885628700256
+      ]
+    },
+    "root_failure": {
+      "seed": 42,
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "ordinal": 3,
+      "boundary_s": 62.8,
+      "transition": "return->adjust",
+      "baseline_arrival_s": 64.0,
+      "baseline_outcome": "on_time",
+      "B2_arrival_s": null,
+      "B2_outcome": "missing",
+      "current_opportunities": [
+        {
+          "time_s": 64.0,
+          "current": [
+            2.418749237994533e-07,
+            3.8615136898216894e-08,
+            0.00029714842135306464,
+            0.9997025710885863
+          ],
+          "future": [
+            2.5639420010875533e-08,
+            2.972508018275806e-13,
+            1.9408178647401965e-09,
+            0.9999999724194649
+          ],
+          "time_distribution": [
+            0.014026319608092308,
+            0.0401962511241436,
+            0.05554035305976868,
+            0.04653998091816902,
+            0.8436971306800842
+          ],
+          "online_phase_before": 2,
+          "truth_phase_offline": 3,
+          "predicted_window": [
+            62.5,
+            63.0
+          ],
+          "switched": false,
+          "reason": "outside_time_window"
+        }
+      ],
+      "cause": "time_gate_blocks_available_current"
+    },
+    "affected_event_ordinals": [
+      5,
+      6
+    ],
+    "persistent_drift_runs": [
+      {
+        "start_s": 63.0,
+        "end_s": 139.0,
+        "duration_s": 76.0,
+        "first_index": 126,
+        "last_index": 277,
+        "recovered": false,
+        "subsequent_boundaries": [
+          4,
+          5,
+          6
+        ],
+        "online_phase_at_start": 2
+      }
+    ],
+    "self_recovered": false,
+    "first_report_only_alert_s": 91.5,
+    "videos": [
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/videos/chunk-000/observation.images.cam0/episode_000009.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/videos/chunk-000/observation.images.cam1/episode_000009.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/videos/chunk-000/observation.images.cam2/episode_000009.mp4"
+    ],
+    "plot": "/home/user/vjepa2_training/runs/tomato/state_recovery_20261110_release/plots/5b82f4bb76e70d8bf12c0798_root.png"
+  },
+  {
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+    "episode_index": 4,
+    "first_disagreement": {
+      "time_s": 7.0,
+      "maintained_phase": 0,
+      "truth_phase_offline": 1,
+      "current": [
+        0.9964920906341659,
+        0.0035079044223451684,
+        3.381628805669375e-09,
+        1.5618600919676917e-09
+      ],
+      "future": [
+        5.3033151716431064e-14,
+        0.9999999999999463,
+        6.832446440483441e-16,
+        4.2915009826239133e-26
+      ],
+      "time_distribution": [
+        0.07018015533685684,
+        0.15897323191165924,
+        0.15243679285049438,
+        0.03639417141675949,
+        0.5820155739784241
+      ]
+    },
+    "first_persistent_disagreement": {
+      "time_s": 7.0,
+      "maintained_phase": 0,
+      "truth_phase_offline": 1,
+      "current": [
+        0.9964920906341659,
+        0.0035079044223451684,
+        3.381628805669375e-09,
+        1.5618600919676917e-09
+      ],
+      "future": [
+        5.3033151716431064e-14,
+        0.9999999999999463,
+        6.832446440483441e-16,
+        4.2915009826239133e-26
+      ],
+      "time_distribution": [
+        0.07018015533685684,
+        0.15897323191165924,
+        0.15243679285049438,
+        0.03639417141675949,
+        0.5820155739784241
+      ]
+    },
+    "root_failure": {
+      "seed": 42,
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "ordinal": 1,
+      "boundary_s": 7.0,
+      "transition": "pickup->harvest",
+      "baseline_arrival_s": 8.0,
+      "baseline_outcome": "on_time",
+      "B2_arrival_s": 107.5,
+      "B2_outcome": "late",
+      "current_opportunities": [
+        {
+          "time_s": 8.0,
+          "current": [
+            0.0006487090080222441,
+            0.9993512659652485,
+            2.203228797703628e-08,
+            2.994441185936135e-09
+          ],
+          "future": [
+            1.287209078595576e-25,
+            1.0,
+            4.720556386830386e-28,
+            2.8979725631746374e-36
+          ],
+          "time_distribution": [
+            9.826907444221433e-06,
+            7.577390988444677e-06,
+            6.966472483327379e-07,
+            5.403813361226639e-07,
+            0.9999813437461853
+          ],
+          "online_phase_before": 0,
+          "truth_phase_offline": 1,
+          "predicted_window": [
+            6.5,
+            7.0
+          ],
+          "switched": false,
+          "reason": "outside_time_window"
+        }
+      ],
+      "cause": "time_gate_blocks_available_current"
+    },
+    "affected_event_ordinals": [
+      2,
+      5
+    ],
+    "persistent_drift_runs": [
+      {
+        "start_s": 7.0,
+        "end_s": 178.0,
+        "duration_s": 171.0,
+        "first_index": 14,
+        "last_index": 355,
+        "recovered": false,
+        "subsequent_boundaries": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "online_phase_at_start": 0
+      }
+    ],
+    "self_recovered": false,
+    "first_report_only_alert_s": 63.0,
+    "videos": [
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/videos/chunk-000/observation.images.cam0/episode_000004.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/videos/chunk-000/observation.images.cam1/episode_000004.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/videos/chunk-000/observation.images.cam2/episode_000004.mp4"
+    ],
+    "plot": "/home/user/vjepa2_training/runs/tomato/state_recovery_20261110_release/plots/f53f0b6fb7f3888f87a0f8ff_root.png"
+  },
+  {
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal",
+    "episode_index": 0,
+    "first_disagreement": {
+      "time_s": 5.5,
+      "maintained_phase": 0,
+      "truth_phase_offline": 1,
+      "current": [
+        0.04885881372598452,
+        0.9511172452226745,
+        1.8557675840788432e-05,
+        5.3833755001231015e-06
+      ],
+      "future": [
+        1.3333447950144036e-14,
+        0.9999999999987426,
+        1.2270212203076654e-12,
+        1.719529776426741e-14
+      ],
+      "time_distribution": [
+        0.0174353439360857,
+        0.04713917896151543,
+        0.019297106191515923,
+        0.00768436212092638,
+        0.9084439873695374
+      ]
+    },
+    "first_persistent_disagreement": {
+      "time_s": 40.5,
+      "maintained_phase": 2,
+      "truth_phase_offline": 3,
+      "current": [
+        2.7858371504856236e-05,
+        2.8085664776079385e-05,
+        0.07487158117671178,
+        0.9250724747870074
+      ],
+      "future": [
+        2.6328120319728746e-07,
+        7.474776502672018e-10,
+        0.0012455631958796446,
+        0.9987541727754395
+      ],
+      "time_distribution": [
+        0.022607991471886635,
+        0.03317321091890335,
+        0.06923174113035202,
+        0.09910574555397034,
+        0.7758813500404358
+      ]
+    },
+    "root_failure": {
+      "seed": 42,
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "ordinal": 3,
+      "boundary_s": 40.13333333333333,
+      "transition": "return->adjust",
+      "baseline_arrival_s": 41.0,
+      "baseline_outcome": "on_time",
+      "B2_arrival_s": null,
+      "B2_outcome": "missing",
+      "current_opportunities": [
+        {
+          "time_s": 41.0,
+          "current": [
+            3.8445031503708945e-05,
+            3.4428847434615897e-06,
+            0.004560516234539386,
+            0.9953975958492134
+          ],
+          "future": [
+            7.5749301838777735e-06,
+            1.2331693783318558e-12,
+            1.3591288311385103e-07,
+            0.9999922891556998
+          ],
+          "time_distribution": [
+            0.015407977625727654,
+            0.014956498518586159,
+            0.03759598359465599,
+            0.05400647222995758,
+            0.8780330419540405
+          ],
+          "online_phase_before": 2,
+          "truth_phase_offline": 3,
+          "predicted_window": null,
+          "switched": false,
+          "reason": "no_time_window"
+        }
+      ],
+      "cause": "time_gate_blocks_available_current"
+    },
+    "affected_event_ordinals": [
+      5,
+      6
+    ],
+    "persistent_drift_runs": [
+      {
+        "start_s": 40.5,
+        "end_s": 88.0,
+        "duration_s": 47.5,
+        "first_index": 81,
+        "last_index": 175,
+        "recovered": false,
+        "subsequent_boundaries": [
+          4,
+          5,
+          6
+        ],
+        "online_phase_at_start": 2
+      }
+    ],
+    "self_recovered": false,
+    "first_report_only_alert_s": 66.0,
+    "videos": [
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal/videos/chunk-000/observation.images.cam0/episode_000000.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal/videos/chunk-000/observation.images.cam1/episode_000000.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal/videos/chunk-000/observation.images.cam2/episode_000000.mp4"
+    ],
+    "plot": "/home/user/vjepa2_training/runs/tomato/state_recovery_20261110_release/plots/a8b23394b642f0bb769a0391_root.png"
+  },
+  {
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal",
+    "episode_index": 5,
+    "first_disagreement": {
+      "time_s": 5.0,
+      "maintained_phase": 0,
+      "truth_phase_offline": 1,
+      "current": [
+        0.052236271917603605,
+        0.947730233392016,
+        2.971383082863286e-05,
+        3.7808595518037487e-06
+      ],
+      "future": [
+        4.3497716617522895e-13,
+        0.9999999999995597,
+        5.2230021149432354e-15,
+        2.184226633044143e-18
+      ],
+      "time_distribution": [
+        0.015987422317266464,
+        0.03183843195438385,
+        0.012039689347147942,
+        0.007384645286947489,
+        0.93274986743927
+      ]
+    },
+    "first_persistent_disagreement": {
+      "time_s": 66.0,
+      "maintained_phase": 3,
+      "truth_phase_offline": 4,
+      "current": [
+        0.286810353058756,
+        4.799230866132887e-07,
+        2.7931052605729234e-06,
+        0.7131863739128967
+      ],
+      "future": [
+        0.9880412116333108,
+        3.6396278955969757e-10,
+        3.3614887382992857e-15,
+        0.011958788002723226
+      ],
+      "time_distribution": [
+        0.013086201623082161,
+        0.012841551564633846,
+        0.020841894671320915,
+        0.013627423904836178,
+        0.9396029710769653
+      ]
+    },
+    "root_failure": {
+      "seed": 42,
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "ordinal": 4,
+      "boundary_s": 65.6,
+      "transition": "adjust->pickup",
+      "baseline_arrival_s": 67.5,
+      "baseline_outcome": "on_time",
+      "B2_arrival_s": null,
+      "B2_outcome": "missing",
+      "current_opportunities": [
+        {
+          "time_s": 67.5,
+          "current": [
+            0.997416391384367,
+            6.216968428207062e-05,
+            3.7481094531829147e-06,
+            0.0025176908218977226
+          ],
+          "future": [
+            0.9999982358077395,
+            8.495606459296012e-08,
+            6.938154138898698e-13,
+            1.679235502097665e-06
+          ],
+          "time_distribution": [
+            0.00217964849434793,
+            0.008024835027754307,
+            0.01263139583170414,
+            0.008514951914548874,
+            0.9686492681503296
+          ],
+          "online_phase_before": 3,
+          "truth_phase_offline": 4,
+          "predicted_window": null,
+          "switched": false,
+          "reason": "no_time_window"
+        }
+      ],
+      "cause": "time_gate_blocks_available_current"
+    },
+    "affected_event_ordinals": [
+      5,
+      6
+    ],
+    "persistent_drift_runs": [
+      {
+        "start_s": 66.0,
+        "end_s": 91.0,
+        "duration_s": 25.0,
+        "first_index": 132,
+        "last_index": 181,
+        "recovered": false,
+        "subsequent_boundaries": [
+          5,
+          6
+        ],
+        "online_phase_at_start": 3
+      }
+    ],
+    "self_recovered": false,
+    "first_report_only_alert_s": 71.0,
+    "videos": [
+      "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/videos/chunk-000/observation.images.cam0/episode_000005.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/videos/chunk-000/observation.images.cam1/episode_000005.mp4",
+      "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/videos/chunk-000/observation.images.cam2/episode_000005.mp4"
+    ],
+    "plot": "/home/user/vjepa2_training/runs/tomato/state_recovery_20261110_release/plots/d0f8727d35eced697dcf79fe_root.png"
+  }
+]

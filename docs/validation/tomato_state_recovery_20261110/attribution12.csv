@@ -1,0 +1,13 @@
+episode_id,source_recording_id,recording,episode_index,event_ordinal,transition,boundary_s,correct_B1_warning_s,B2_phase,expected_phase,first_persistent_drift_s,root_ordinal,first_blocked_current_s,root_cause,B0_phase,hypothesis_phase
+27d8bc0413a42341c7e8c3e5,7d879f9d5d5a4be09beb55cf88591b0d,/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot,2,6,harvest->return,169.9,169.5,2,5,82.5,3,83.5,no_time_window,5,5
+0b12ac0fda9d7cd77dee6e60,2c30455ce7794b87af8b0a60af0a0dab,/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot,2,6,harvest->return,175.56666666666666,175.0,3,5,99.5,4,103.0,no_time_window,5,5
+61c420843f11ca54bfe804ee,1b2e1a577afa442cb057c595cf27c48f,/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot,7,3,return->adjust,77.6,76.5,1,2,71.0,2,72.0,no_time_window,2,2
+61c420843f11ca54bfe804ee,1b2e1a577afa442cb057c595cf27c48f,/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot,7,5,pickup->harvest,100.66666666666667,100.0,1,4,71.0,2,72.0,no_time_window,4,4
+5b82f4bb76e70d8bf12c0798,9a90a945e77e49aabb7a3d4e44246155,/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot,9,5,pickup->harvest,99.1,99.0,2,4,63.0,3,64.0,outside_time_window,4,4
+5b82f4bb76e70d8bf12c0798,9a90a945e77e49aabb7a3d4e44246155,/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot,9,6,harvest->return,136.96666666666667,136.5,2,5,63.0,3,64.0,outside_time_window,5,5
+f53f0b6fb7f3888f87a0f8ff,7bedea6b1c034982bf1cec5050ad2dc3,/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot,4,2,harvest->return,62.96666666666667,61.5,0,1,7.0,1,8.0,outside_time_window,1,1
+f53f0b6fb7f3888f87a0f8ff,7bedea6b1c034982bf1cec5050ad2dc3,/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot,4,5,pickup->harvest,106.6,106.5,0,4,7.0,1,8.0,outside_time_window,4,4
+a8b23394b642f0bb769a0391,5befbcd6c7f143028144b68d754c6883,/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal,0,5,pickup->harvest,70.46666666666667,70.0,2,4,40.5,3,41.0,no_time_window,4,4
+a8b23394b642f0bb769a0391,5befbcd6c7f143028144b68d754c6883,/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal,0,6,harvest->return,86.7,86.0,2,5,40.5,3,41.0,no_time_window,5,5
+d0f8727d35eced697dcf79fe,471c02da39ac4fa7ba4fcd140f9cb1ed,/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal,5,5,pickup->harvest,70.9,69.5,3,4,66.0,4,67.5,no_time_window,4,4
+d0f8727d35eced697dcf79fe,471c02da39ac4fa7ba4fcd140f9cb1ed,/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal,5,6,harvest->return,89.6,89.5,3,5,66.0,4,67.5,no_time_window,5,5
