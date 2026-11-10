@@ -1,0 +1,535 @@
+{
+  "episode_id": "3e645bf4e137d0f836c9d7ff",
+  "scenario": "single_class_error",
+  "fault_start_s": 44.5,
+  "samples": [
+    {
+      "input": {
+        "schedule_time": 43.5,
+        "messages": [
+          {
+            "sequence": 87,
+            "observation_id": "3e645bf4e137d0f836c9d7ff:87",
+            "timestamp": 43.5,
+            "arrival_timestamp": 43.51,
+            "current": [
+              2.7467412206276296e-11,
+              0.9999999960004571,
+              2.848530315919283e-09,
+              1.1235452846796517e-09
+            ],
+            "future": [
+              6.0656914271309105e-30,
+              1.0,
+              1.1375779703803413e-17,
+              4.4688794766118e-25
+            ],
+            "state_timestamp": 43.5
+          }
+        ]
+      },
+      "B0_phase": 1,
+      "memory": {
+        "schema_version": "tomato-task-memory-v1",
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "valid": true,
+        "memory_version": 12,
+        "confirmed_phase": 1,
+        "confirmed_phase_name": "harvest_1",
+        "candidate_phase": null,
+        "pending_event_id": null,
+        "current_candidate": null,
+        "future_candidate": null,
+        "last_valid_timestamp": 43.5,
+        "progress": {
+          "ordered_transition_count": 1,
+          "decision_fraction": 0.16666666666666666,
+          "physical_completion": "unknown",
+          "task_complete": false
+        },
+        "uncertainty": [],
+        "suggests_prompt_update": false,
+        "mode": "M2",
+        "short_samples": 16,
+        "recent_events": 9,
+        "confirmed_event_ids": [
+          "3e645bf4e137d0f836c9d7ff:g0:e6"
+        ],
+        "history_entered_positions": [
+          0,
+          1
+        ],
+        "motion": {
+          "interval_s": 0.5,
+          "arm_velocity_rms": 0.05921717756404638,
+          "hand_velocity_rms": 0.09157858781362466,
+          "source": "causal_observed_interval_difference_not_success"
+        }
+      }
+    },
+    {
+      "input": {
+        "schedule_time": 44.0,
+        "messages": [
+          {
+            "sequence": 88,
+            "observation_id": "3e645bf4e137d0f836c9d7ff:88",
+            "timestamp": 44.0,
+            "arrival_timestamp": 44.01,
+            "current": [
+              2.1416892713946512e-11,
+              0.9999999993480537,
+              4.4477439404364427e-10,
+              1.8575493837093366e-10
+            ],
+            "future": [
+              1.474016438408159e-30,
+              1.0,
+              9.563374734524483e-18,
+              9.554821232116381e-26
+            ],
+            "state_timestamp": 44.0
+          }
+        ]
+      },
+      "B0_phase": 1,
+      "memory": {
+        "schema_version": "tomato-task-memory-v1",
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "valid": true,
+        "memory_version": 12,
+        "confirmed_phase": 1,
+        "confirmed_phase_name": "harvest_1",
+        "candidate_phase": null,
+        "pending_event_id": null,
+        "current_candidate": null,
+        "future_candidate": null,
+        "last_valid_timestamp": 44.0,
+        "progress": {
+          "ordered_transition_count": 1,
+          "decision_fraction": 0.16666666666666666,
+          "physical_completion": "unknown",
+          "task_complete": false
+        },
+        "uncertainty": [],
+        "suggests_prompt_update": false,
+        "mode": "M2",
+        "short_samples": 16,
+        "recent_events": 9,
+        "confirmed_event_ids": [
+          "3e645bf4e137d0f836c9d7ff:g0:e6"
+        ],
+        "history_entered_positions": [
+          0,
+          1
+        ],
+        "motion": {
+          "interval_s": 0.5,
+          "arm_velocity_rms": 0.03334109663752486,
+          "hand_velocity_rms": 0.032240784370138796,
+          "source": "causal_observed_interval_difference_not_success"
+        }
+      }
+    },
+    {
+      "input": {
+        "schedule_time": 44.5,
+        "messages": [
+          {
+            "sequence": 89,
+            "observation_id": "3e645bf4e137d0f836c9d7ff:89",
+            "timestamp": 44.5,
+            "arrival_timestamp": 44.51,
+            "current": [
+              0.0033333333333333335,
+              0.0033333333333333335,
+              0.99,
+              0.0033333333333333335
+            ],
+            "future": [
+              7.933683229013631e-30,
+              1.0,
+              9.207191040667602e-21,
+              7.64564298234278e-26
+            ],
+            "state_timestamp": 44.5
+          }
+        ]
+      },
+      "B0_phase": 1,
+      "memory": {
+        "schema_version": "tomato-task-memory-v1",
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "valid": true,
+        "memory_version": 14,
+        "confirmed_phase": 1,
+        "confirmed_phase_name": "harvest_1",
+        "candidate_phase": 2,
+        "pending_event_id": "3e645bf4e137d0f836c9d7ff:g0:e11",
+        "current_candidate": {
+          "event_id": "3e645bf4e137d0f836c9d7ff:g0:e11",
+          "status": "candidate",
+          "confidence": 0.99,
+          "evidence_time": 44.5,
+          "support_observation_ids": [
+            "3e645bf4e137d0f836c9d7ff:89"
+          ]
+        },
+        "future_candidate": null,
+        "last_valid_timestamp": 44.5,
+        "progress": {
+          "ordered_transition_count": 1,
+          "decision_fraction": 0.16666666666666666,
+          "physical_completion": "unknown",
+          "task_complete": false
+        },
+        "uncertainty": [],
+        "suggests_prompt_update": false,
+        "mode": "M2",
+        "short_samples": 16,
+        "recent_events": 11,
+        "confirmed_event_ids": [
+          "3e645bf4e137d0f836c9d7ff:g0:e6"
+        ],
+        "history_entered_positions": [
+          0,
+          1
+        ],
+        "motion": {
+          "interval_s": 0.5,
+          "arm_velocity_rms": 0.02543899609724479,
+          "hand_velocity_rms": 0.029249373957492664,
+          "source": "causal_observed_interval_difference_not_success"
+        }
+      }
+    },
+    {
+      "input": {
+        "schedule_time": 45.0,
+        "messages": [
+          {
+            "sequence": 90,
+            "observation_id": "3e645bf4e137d0f836c9d7ff:90",
+            "timestamp": 45.0,
+            "arrival_timestamp": 45.01,
+            "current": [
+              4.4733586647360736e-11,
+              0.9999999991010387,
+              3.366567131117784e-10,
+              5.175711639461098e-10
+            ],
+            "future": [
+              3.079173596554772e-36,
+              1.0,
+              2.072969578017275e-24,
+              3.4729279804879574e-28
+            ],
+            "state_timestamp": 45.0
+          }
+        ]
+      },
+      "B0_phase": 1,
+      "memory": {
+        "schema_version": "tomato-task-memory-v1",
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "valid": true,
+        "memory_version": 16,
+        "confirmed_phase": 1,
+        "confirmed_phase_name": "harvest_1",
+        "candidate_phase": null,
+        "pending_event_id": null,
+        "current_candidate": null,
+        "future_candidate": null,
+        "last_valid_timestamp": 45.0,
+        "progress": {
+          "ordered_transition_count": 1,
+          "decision_fraction": 0.16666666666666666,
+          "physical_completion": "unknown",
+          "task_complete": false
+        },
+        "uncertainty": [],
+        "suggests_prompt_update": false,
+        "mode": "M2",
+        "short_samples": 16,
+        "recent_events": 12,
+        "confirmed_event_ids": [
+          "3e645bf4e137d0f836c9d7ff:g0:e6"
+        ],
+        "history_entered_positions": [
+          0,
+          1
+        ],
+        "motion": {
+          "interval_s": 0.5,
+          "arm_velocity_rms": 0.028552165463611775,
+          "hand_velocity_rms": 0.006320389074782206,
+          "source": "causal_observed_interval_difference_not_success"
+        }
+      }
+    },
+    {
+      "input": {
+        "schedule_time": 45.5,
+        "messages": [
+          {
+            "sequence": 91,
+            "observation_id": "3e645bf4e137d0f836c9d7ff:91",
+            "timestamp": 45.5,
+            "arrival_timestamp": 45.51,
+            "current": [
+              2.3361443073772984e-10,
+              0.9999999991120372,
+              4.69627771799994e-11,
+              6.073854314846223e-10
+            ],
+            "future": [
+              3.99214359207789e-31,
+              1.0,
+              1.7936550560871732e-22,
+              3.8605797164550503e-25
+            ],
+            "state_timestamp": 45.5
+          }
+        ]
+      },
+      "B0_phase": 1,
+      "memory": {
+        "schema_version": "tomato-task-memory-v1",
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "valid": true,
+        "memory_version": 16,
+        "confirmed_phase": 1,
+        "confirmed_phase_name": "harvest_1",
+        "candidate_phase": null,
+        "pending_event_id": null,
+        "current_candidate": null,
+        "future_candidate": null,
+        "last_valid_timestamp": 45.5,
+        "progress": {
+          "ordered_transition_count": 1,
+          "decision_fraction": 0.16666666666666666,
+          "physical_completion": "unknown",
+          "task_complete": false
+        },
+        "uncertainty": [],
+        "suggests_prompt_update": false,
+        "mode": "M2",
+        "short_samples": 16,
+        "recent_events": 12,
+        "confirmed_event_ids": [
+          "3e645bf4e137d0f836c9d7ff:g0:e6"
+        ],
+        "history_entered_positions": [
+          0,
+          1
+        ],
+        "motion": {
+          "interval_s": 0.5,
+          "arm_velocity_rms": 0.02341552076513705,
+          "hand_velocity_rms": 0.007042652582539069,
+          "source": "causal_observed_interval_difference_not_success"
+        }
+      }
+    },
+    {
+      "input": {
+        "schedule_time": 46.0,
+        "messages": [
+          {
+            "sequence": 92,
+            "observation_id": "3e645bf4e137d0f836c9d7ff:92",
+            "timestamp": 46.0,
+            "arrival_timestamp": 46.01,
+            "current": [
+              3.089248642345952e-11,
+              0.9999999982664336,
+              3.384430018429213e-10,
+              1.3642310428670686e-09
+            ],
+            "future": [
+              3.457169811243343e-33,
+              1.0,
+              2.286410812417528e-21,
+              2.909260533141863e-24
+            ],
+            "state_timestamp": 46.0
+          }
+        ]
+      },
+      "B0_phase": 1,
+      "memory": {
+        "schema_version": "tomato-task-memory-v1",
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "valid": true,
+        "memory_version": 16,
+        "confirmed_phase": 1,
+        "confirmed_phase_name": "harvest_1",
+        "candidate_phase": null,
+        "pending_event_id": null,
+        "current_candidate": null,
+        "future_candidate": null,
+        "last_valid_timestamp": 46.0,
+        "progress": {
+          "ordered_transition_count": 1,
+          "decision_fraction": 0.16666666666666666,
+          "physical_completion": "unknown",
+          "task_complete": false
+        },
+        "uncertainty": [],
+        "suggests_prompt_update": false,
+        "mode": "M2",
+        "short_samples": 16,
+        "recent_events": 12,
+        "confirmed_event_ids": [
+          "3e645bf4e137d0f836c9d7ff:g0:e6"
+        ],
+        "history_entered_positions": [
+          0,
+          1
+        ],
+        "motion": {
+          "interval_s": 0.5,
+          "arm_velocity_rms": 0.03653735295556515,
+          "hand_velocity_rms": 0.017959504987369323,
+          "source": "causal_observed_interval_difference_not_success"
+        }
+      }
+    },
+    {
+      "input": {
+        "schedule_time": 46.5,
+        "messages": [
+          {
+            "sequence": 93,
+            "observation_id": "3e645bf4e137d0f836c9d7ff:93",
+            "timestamp": 46.5,
+            "arrival_timestamp": 46.51,
+            "current": [
+              4.1905176055063456e-11,
+              0.9999999999041274,
+              1.159082101856142e-12,
+              5.280831708415976e-11
+            ],
+            "future": [
+              2.6472568691169583e-34,
+              1.0,
+              8.333168063599123e-25,
+              4.238601771130325e-29
+            ],
+            "state_timestamp": 46.5
+          }
+        ]
+      },
+      "B0_phase": 1,
+      "memory": {
+        "schema_version": "tomato-task-memory-v1",
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "valid": true,
+        "memory_version": 16,
+        "confirmed_phase": 1,
+        "confirmed_phase_name": "harvest_1",
+        "candidate_phase": null,
+        "pending_event_id": null,
+        "current_candidate": null,
+        "future_candidate": null,
+        "last_valid_timestamp": 46.5,
+        "progress": {
+          "ordered_transition_count": 1,
+          "decision_fraction": 0.16666666666666666,
+          "physical_completion": "unknown",
+          "task_complete": false
+        },
+        "uncertainty": [],
+        "suggests_prompt_update": false,
+        "mode": "M2",
+        "short_samples": 16,
+        "recent_events": 12,
+        "confirmed_event_ids": [
+          "3e645bf4e137d0f836c9d7ff:g0:e6"
+        ],
+        "history_entered_positions": [
+          0,
+          1
+        ],
+        "motion": {
+          "interval_s": 0.5,
+          "arm_velocity_rms": 0.01911397146336129,
+          "hand_velocity_rms": 0.03642977136960531,
+          "source": "causal_observed_interval_difference_not_success"
+        }
+      }
+    },
+    {
+      "input": {
+        "schedule_time": 47.0,
+        "messages": [
+          {
+            "sequence": 94,
+            "observation_id": "3e645bf4e137d0f836c9d7ff:94",
+            "timestamp": 47.0,
+            "arrival_timestamp": 47.01,
+            "current": [
+              4.02334949721942e-11,
+              0.9999999995795752,
+              1.1045914525675326e-10,
+              2.6973200483562003e-10
+            ],
+            "future": [
+              1.5145215541686092e-31,
+              1.0,
+              1.642655971825185e-18,
+              1.5486067761603157e-25
+            ],
+            "state_timestamp": 47.0
+          }
+        ]
+      },
+      "B0_phase": 1,
+      "memory": {
+        "schema_version": "tomato-task-memory-v1",
+        "session_id": "3e645bf4e137d0f836c9d7ff",
+        "model_version": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+        "valid": true,
+        "memory_version": 16,
+        "confirmed_phase": 1,
+        "confirmed_phase_name": "harvest_1",
+        "candidate_phase": null,
+        "pending_event_id": null,
+        "current_candidate": null,
+        "future_candidate": null,
+        "last_valid_timestamp": 47.0,
+        "progress": {
+          "ordered_transition_count": 1,
+          "decision_fraction": 0.16666666666666666,
+          "physical_completion": "unknown",
+          "task_complete": false
+        },
+        "uncertainty": [],
+        "suggests_prompt_update": false,
+        "mode": "M2",
+        "short_samples": 16,
+        "recent_events": 12,
+        "confirmed_event_ids": [
+          "3e645bf4e137d0f836c9d7ff:g0:e6"
+        ],
+        "history_entered_positions": [
+          0,
+          1
+        ],
+        "motion": {
+          "interval_s": 0.5,
+          "arm_velocity_rms": 0.010623544816587666,
+          "hand_velocity_rms": 0.07907116112565035,
+          "source": "causal_observed_interval_difference_not_success"
+        }
+      }
+    }
+  ]
+}

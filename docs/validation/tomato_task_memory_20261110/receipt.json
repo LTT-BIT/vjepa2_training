@@ -1,0 +1,74 @@
+{
+  "start_git_sha": "9a63961115956111d9603c610656718204c19701",
+  "inputs": {
+    "configs/tomato_task_memory_20261110/protocol.json": "e26e43159c1d5c2d78a0a3d817686affb7777d40c9a405225dee9af9fb6f71e1",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/data/chunk-000/episode_000000.parquet": "dc91046b1caea319bbdc23f3d56c7ca557e997ff7b9cae24937d7c58aaf9de01",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/data/chunk-000/episode_000002.parquet": "765a7e45dfde724724c5f663131bcd72d56a9f3084c3566dc0bf8941e31c0822",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/data/chunk-000/episode_000002.parquet": "b6da932d18fbb3eb9de2bffce8cfdfe4942611e3c5de813ad162cdf7e18cf30a",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/data/chunk-000/episode_000007.parquet": "f4f0cd85f6a1dd3498434662b63f13eade3f606af57c40f533783e9b5bda6b08",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot/data/chunk-000/episode_000009.parquet": "8850a739c2d495d03edc6c8cba74558a87d909d26be84363f26dc19d5293c29e",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot/data/chunk-000/episode_000004.parquet": "b8fd267e008d0cbb7da3f295fd329332fbd5f46b364ebeb406be5ce727a92eda",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal/data/chunk-000/episode_000009.parquet": "46106c91cb6cf044c5fd384e06f64ce15f3071226558312b75c71e585d4d6b8f",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1107_783_783_normal/data/chunk-000/episode_000000.parquet": "38da5690a898addc45d759d7a03585749d0654c8ae5533cd57391bb2749b5bea",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal/data/chunk-000/episode_000005.parquet": "1d719d80206589377eee2b9eafad391b21b826e67bd4bb37d6d062ef1ac4c478",
+    "runs/tomato/optimization_20261108/bundles/independent_h15_s42.pt": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+    "runs/tomato/transition_time_20261109/seed42/3e645bf4e137d0f836c9d7ff.npz": "4698537e7661cec69e25d34c134b3d50802570a960bcc684df3b6d1fb749c298",
+    "runs/tomato/transition_time_20261109/seed42/27d8bc0413a42341c7e8c3e5.npz": "02883d5bf159b297dd7da41e2bf9bab30276f176c52b7b4d838b9ff9f3c8a7c8",
+    "runs/tomato/transition_time_20261109/seed42/0b12ac0fda9d7cd77dee6e60.npz": "93379d6479a8eff66eecbe3efa83c15be08a87e6fd4402800065a671094b769a",
+    "runs/tomato/transition_time_20261109/seed42/61c420843f11ca54bfe804ee.npz": "986d8e296057d531bf07a950d934b0a90c1d1fdb1135c039ff8e92a3e18fd13f",
+    "runs/tomato/transition_time_20261109/seed42/5b82f4bb76e70d8bf12c0798.npz": "d07bd068800c9df1df4dd4d6fa95bf57cf0060f812b94906dfee5cfa4a4e75ae",
+    "runs/tomato/transition_time_20261109/seed42/f53f0b6fb7f3888f87a0f8ff.npz": "4825807d0e9270b59160663b1de1326af289c93bd92e684f3ff41d4da0e183a1",
+    "runs/tomato/transition_time_20261109/seed42/ca784332e44d979f99018a52.npz": "53d70947a0cf0f0738c92838595fa9b8f2b10e510cbfe6e632e90e08e13daf4e",
+    "runs/tomato/transition_time_20261109/seed42/a8b23394b642f0bb769a0391.npz": "7afd4b6169ca46ef1da256c04b0be4069bb193c6d2aa5c1c69f04a2ecae9d356",
+    "runs/tomato/transition_time_20261109/seed42/d0f8727d35eced697dcf79fe.npz": "62f9e23a104158866a714e2d06a18c78e1f2948881e5b48f8af2c9ae76054fe0",
+    "runs/tomato/optimization_20261108/bundles/independent_h15_s43.pt": "794a42e17dad0b4e6f028c39497b029f56f6aa3f410ed40eb72accec89a2bea6",
+    "runs/tomato/transition_time_20261109/seed43/3e645bf4e137d0f836c9d7ff.npz": "ce345031c84b34132da2144729d1bc7c8a8b81a33335589c037562dbbb0e8343",
+    "runs/tomato/transition_time_20261109/seed43/27d8bc0413a42341c7e8c3e5.npz": "99f3f019409434c678d62406205063673c481a9a2b0433bef595f3fc85a23f9b",
+    "runs/tomato/transition_time_20261109/seed43/0b12ac0fda9d7cd77dee6e60.npz": "8a328e7bbc18bd34589f1b34d866bb40ca79fb9b5f3a7b5a1de35ebf2ad7bd78",
+    "runs/tomato/transition_time_20261109/seed43/61c420843f11ca54bfe804ee.npz": "1650ec3e555187c49ffad9922bb81278ddddee1fd6d6f63159ff3ec2fb8f66a2",
+    "runs/tomato/transition_time_20261109/seed43/5b82f4bb76e70d8bf12c0798.npz": "bdd7dca3307383ee29a47e24aaa46ea21510e6ea410db2d76b071616ccf8f0da",
+    "runs/tomato/transition_time_20261109/seed43/f53f0b6fb7f3888f87a0f8ff.npz": "61f3593bae8b24565ce4430ec569d115f42371694f80f35757778870f4998502",
+    "runs/tomato/transition_time_20261109/seed43/ca784332e44d979f99018a52.npz": "c4d32fa6d5ec76d4ff6366789093f237d32a29a9116f95247629c355d29fba71",
+    "runs/tomato/transition_time_20261109/seed43/a8b23394b642f0bb769a0391.npz": "f109dffe4871c7c0bb7625a3324461125ce7f72fc35c6ee220a8a296570ddb25",
+    "runs/tomato/transition_time_20261109/seed43/d0f8727d35eced697dcf79fe.npz": "f335f6b94b935903f2648b37323538fc4157c6320fc1d7f4fbacc9c358d14c33",
+    "runs/tomato/optimization_20261108/bundles/independent_h15_s44.pt": "b5989cddcad1ee1c391723660a547060cbb97efc8cdb44553ee8894194014362",
+    "runs/tomato/transition_time_20261109/seed44/3e645bf4e137d0f836c9d7ff.npz": "671107a1551b3c6793647a5883e972106509dcd43090452c0221741c93356e62",
+    "runs/tomato/transition_time_20261109/seed44/27d8bc0413a42341c7e8c3e5.npz": "ef308119540414632df966649d59e86b16a096a73534054aa2079e779c213649",
+    "runs/tomato/transition_time_20261109/seed44/0b12ac0fda9d7cd77dee6e60.npz": "b276d3c2d75349e8599e818272ce5028f3a5fe3aa0665a1a195d9f97d9e3ea97",
+    "runs/tomato/transition_time_20261109/seed44/61c420843f11ca54bfe804ee.npz": "acbc6c012660b80ae11b61030bab602407a255872bea159895c959004d0426e7",
+    "runs/tomato/transition_time_20261109/seed44/5b82f4bb76e70d8bf12c0798.npz": "711b1773011f0419e48e8ad0ea14fc5f9656d32f811134c3ef891896287d8206",
+    "runs/tomato/transition_time_20261109/seed44/f53f0b6fb7f3888f87a0f8ff.npz": "81e119d2ed9f8d04be31c081a27c74f568bb3d50a16478bcf2700cd522ef6b83",
+    "runs/tomato/transition_time_20261109/seed44/ca784332e44d979f99018a52.npz": "5ea74f0b02b3025a65afbeeac541a2849430b5b02e5334a0c9e0cb3ff24190e6",
+    "runs/tomato/transition_time_20261109/seed44/a8b23394b642f0bb769a0391.npz": "c177a8ff4ee650eec60dce4b6126f604004f00c7e9d365acc08576088797470e",
+    "runs/tomato/transition_time_20261109/seed44/d0f8727d35eced697dcf79fe.npz": "bd1f532663718dee62e7df5eecbf21fe759cd17e5d1f052e8399e41dfbf09e1c"
+  },
+  "prior_baseline_receipt_sha": "a424e6b63218b1568961c06c12acc87c15faf74731b95f4f4cdbefe7c487e3c1",
+  "models": {
+    "42": {
+      "path": "runs/tomato/optimization_20261108/bundles/independent_h15_s42.pt",
+      "sha256": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+      "historical_cf_norm": true
+    },
+    "43": {
+      "path": "runs/tomato/optimization_20261108/bundles/independent_h15_s43.pt",
+      "sha256": "794a42e17dad0b4e6f028c39497b029f56f6aa3f410ed40eb72accec89a2bea6",
+      "historical_cf_norm": true
+    },
+    "44": {
+      "path": "runs/tomato/optimization_20261108/bundles/independent_h15_s44.pt",
+      "sha256": "b5989cddcad1ee1c391723660a547060cbb97efc8cdb44553ee8894194014362",
+      "historical_cf_norm": true
+    }
+  },
+  "source_hashes": {
+    "tools/tomato_task_memory.py": "d693a394b278868f0ed103fb19b54fccc996016bda3f254f436ea0362b0f9114",
+    "/home/user/vjepa2_training/tools/evaluate_tomato_task_memory.py": "0ed2955ee40f3bd08392fdb3091ec75201c1108a5025c1adc81c4d2a41c6fc06"
+  },
+  "test_arrays_read": false,
+  "encoder_calls": 0,
+  "training": false,
+  "remote_push": false,
+  "baseline_parity": true,
+  "shadow_isolation": true,
+  "truth_used_only_in_scorers": true
+}

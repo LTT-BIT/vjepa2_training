@@ -1,0 +1,18 @@
+{
+  "version": "tomato-task-memory-v1",
+  "seeds": [42, 43, 44],
+  "short_term_samples": 16,
+  "long_term_recent_events": 256,
+  "current_threshold": 0.8,
+  "confirmations": 2,
+  "candidate_ttl_s": 1.5,
+  "max_gap_s": 0.75,
+  "max_observation_age_s": 1.0,
+  "scope": "M0 unchanged B0; M1 shadow ledger; M2 independent event-ledger phase estimate only, no active Prompt updates. No M3 absent positive evidence.",
+  "input": "Canonical session:sequence observation IDs; explicit pickup/harvest/return/adjust order; optional 58D named positions at observation timestamp or earlier. No GT input.",
+  "progress": "Ordered decision progress phase_index/6, not physical success or within-stage completion. Terminal return entry never means task completed.",
+  "rules_origin": "Existing Current 0.8/K2 unchanged; expiry 1.5s and freshness 0.75s inherited from source horizon/2Hz sampling. Fixed before new replay; no threshold sweep.",
+  "fault_injection": "Fixed observation-index schedule, independent of labels/boundaries: single wrong class, six wrong classifications, four dropped samples, four stale results, duplicate, out-of-order, one wrong next-stage candidate. One scenario at a time on all full validation episodes.",
+  "selection": "9 development recordings only; old test and new10 (already trained) never blind selection. Original annotations never overwritten. Freeze 14-proposal label SHA from prior release.",
+  "default": "B0 retained; memory output suggests_prompt_update=false; no OpenPI/RTC/encoder changes, training or remote push."
+}

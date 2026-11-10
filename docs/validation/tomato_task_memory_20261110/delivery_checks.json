@@ -1,0 +1,27 @@
+{
+  "tests": 197,
+  "new_memory_tests": 26,
+  "shadow_B0_exact_parity": true,
+  "all_normal_seeds": [
+    42,
+    43,
+    44
+  ],
+  "fault_seed": 42,
+  "normal_episodes": 9,
+  "fault_scenarios": 7,
+  "full_episode_replays": 90,
+  "future_warning_events_unchanged": true,
+  "model_training": false,
+  "encoder_calls": 0,
+  "source_annotations_changed": false,
+  "OpenPI_RTC_changed": false,
+  "remote_push": false,
+  "checkpoint_checks": 10,
+  "code_sha256": {
+    "tools/tomato_task_memory.py": "d693a394b278868f0ed103fb19b54fccc996016bda3f254f436ea0362b0f9114",
+    "tools/evaluate_tomato_task_memory.py": "0ed2955ee40f3bd08392fdb3091ec75201c1108a5025c1adc81c4d2a41c6fc06",
+    "tools/render_tomato_task_memory.py": "888dce3248e52a8f77849219694009ecc60d7a684ebdc2d0cd60e0e8d94c61e3",
+    "tools/inspect_tomato_task_memory.py": "28f6d4587fde494a90e8695983f7f85020c2177881a44b3af2eaf98cc6e10d41"
+  }
+}

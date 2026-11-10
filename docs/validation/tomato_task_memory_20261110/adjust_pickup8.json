@@ -1,0 +1,114 @@
+[
+  {
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "boundary_s": 74.23333333333333,
+    "future_hit": false,
+    "nearest_future_offset_s": -4.233333333333334,
+    "prompt": {
+      "ordinal": 4,
+      "boundary_s": 74.23333333333333,
+      "transition": "adjust->pickup",
+      "outcome": "early",
+      "arrival_s": 72.0,
+      "offset_s": -2.2333333333333343
+    }
+  },
+  {
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "boundary_s": 109.6,
+    "future_hit": true,
+    "nearest_future_offset_s": -0.5999999999999943,
+    "prompt": {
+      "ordinal": 4,
+      "boundary_s": 109.6,
+      "transition": "adjust->pickup",
+      "outcome": "on_time",
+      "arrival_s": 110.0,
+      "offset_s": 0.4000000000000057
+    }
+  },
+  {
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "boundary_s": 99.13333333333334,
+    "future_hit": false,
+    "nearest_future_offset_s": -2.63333333333334,
+    "prompt": {
+      "ordinal": 4,
+      "boundary_s": 99.13333333333334,
+      "transition": "adjust->pickup",
+      "outcome": "late",
+      "arrival_s": 103.0,
+      "offset_s": 3.86666666666666
+    }
+  },
+  {
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "boundary_s": 90.4,
+    "future_hit": true,
+    "nearest_future_offset_s": -0.4000000000000057,
+    "prompt": {
+      "ordinal": 4,
+      "boundary_s": 90.4,
+      "transition": "adjust->pickup",
+      "outcome": "on_time",
+      "arrival_s": 91.5,
+      "offset_s": 1.0999999999999943
+    }
+  },
+  {
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "boundary_s": 90.3,
+    "future_hit": false,
+    "nearest_future_offset_s": 0.20000000000000284,
+    "prompt": {
+      "ordinal": 4,
+      "boundary_s": 90.3,
+      "transition": "adjust->pickup",
+      "outcome": "on_time",
+      "arrival_s": 91.5,
+      "offset_s": 1.2000000000000028
+    }
+  },
+  {
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "boundary_s": 94.86666666666666,
+    "future_hit": false,
+    "nearest_future_offset_s": 4.13333333333334,
+    "prompt": {
+      "ordinal": 4,
+      "boundary_s": 94.86666666666666,
+      "transition": "adjust->pickup",
+      "outcome": "late",
+      "arrival_s": 99.5,
+      "offset_s": 4.63333333333334
+    }
+  },
+  {
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "boundary_s": 65.26666666666667,
+    "future_hit": false,
+    "nearest_future_offset_s": 0.23333333333333428,
+    "prompt": {
+      "ordinal": 4,
+      "boundary_s": 65.26666666666667,
+      "transition": "adjust->pickup",
+      "outcome": "on_time",
+      "arrival_s": 66.0,
+      "offset_s": 0.7333333333333343
+    }
+  },
+  {
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "boundary_s": 65.6,
+    "future_hit": false,
+    "nearest_future_offset_s": 0.4000000000000057,
+    "prompt": {
+      "ordinal": 4,
+      "boundary_s": 65.6,
+      "transition": "adjust->pickup",
+      "outcome": "on_time",
+      "arrival_s": 67.5,
+      "offset_s": 1.9000000000000057
+    }
+  }
+]

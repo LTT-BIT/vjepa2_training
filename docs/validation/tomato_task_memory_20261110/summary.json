@@ -1,0 +1,4927 @@
+{
+  "42": {
+    "normal": {
+      "M0": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ]
+      },
+      "M1": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ]
+      },
+      "M2": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ]
+      }
+    },
+    "single_class_error": {
+      "M0": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M1": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M2": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      }
+    },
+    "consecutive_class_errors": {
+      "M0": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 37,
+          "early": 11,
+          "late": 2
+        },
+        "mismatch_s": 156.5,
+        "mismatch_runs": 48,
+        "persistent_mismatch_s": 132.0,
+        "persistent_runs": 12,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 8,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "early": 9,
+            "on_time": 8
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.8715241736446943,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            635,
+            243,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            86,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 9.5,
+            "return_to_truth_s": 9.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 17.0,
+            "return_to_truth_s": 16.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 12.0,
+            "return_to_truth_s": 11.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 22.0,
+            "return_to_truth_s": 21.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 9.5,
+            "return_to_truth_s": 9.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 1.0,
+            "return_to_truth_s": 1.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 19.0,
+            "return_to_truth_s": 18.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 6.0,
+            "return_to_truth_s": 5.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 12.5,
+            "return_to_truth_s": 12.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M1": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 37,
+          "early": 11,
+          "late": 2
+        },
+        "mismatch_s": 156.5,
+        "mismatch_runs": 48,
+        "persistent_mismatch_s": 132.0,
+        "persistent_runs": 12,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 8,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "early": 9,
+            "on_time": 8
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.8715241736446943,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            635,
+            243,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            86,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 9.5,
+            "return_to_truth_s": 9.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 17.0,
+            "return_to_truth_s": 16.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 12.0,
+            "return_to_truth_s": 11.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 22.0,
+            "return_to_truth_s": 21.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 9.5,
+            "return_to_truth_s": 9.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 1.0,
+            "return_to_truth_s": 1.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 19.0,
+            "return_to_truth_s": 18.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 6.0,
+            "return_to_truth_s": 5.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 12.5,
+            "return_to_truth_s": 12.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M2": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 37,
+          "early": 11,
+          "late": 2
+        },
+        "mismatch_s": 156.5,
+        "mismatch_runs": 48,
+        "persistent_mismatch_s": 132.0,
+        "persistent_runs": 12,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 8,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "early": 9,
+            "on_time": 8
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.8715241736446943,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            635,
+            243,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            86,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 9.5,
+            "return_to_truth_s": 9.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 17.0,
+            "return_to_truth_s": 16.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 12.0,
+            "return_to_truth_s": 11.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 22.0,
+            "return_to_truth_s": 21.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 9.5,
+            "return_to_truth_s": 9.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 1.0,
+            "return_to_truth_s": 1.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 19.0,
+            "return_to_truth_s": 18.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 6.0,
+            "return_to_truth_s": 5.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": true,
+            "return_to_clean_policy_s": 12.5,
+            "return_to_truth_s": 12.0,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      }
+    },
+    "missing_observations": {
+      "M0": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M1": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M2": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      }
+    },
+    "stale_results": {
+      "M0": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M1": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M2": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      }
+    },
+    "duplicate_message": {
+      "M0": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M1": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M2": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      }
+    },
+    "out_of_order": {
+      "M0": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M1": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M2": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      }
+    },
+    "wrong_candidate": {
+      "M0": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M1": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      },
+      "M2": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "recovery_by_episode": {
+          "3e645bf4e137d0f836c9d7ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "27d8bc0413a42341c7e8c3e5": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "0b12ac0fda9d7cd77dee6e60": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "61c420843f11ca54bfe804ee": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "5b82f4bb76e70d8bf12c0798": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "f53f0b6fb7f3888f87a0f8ff": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "ca784332e44d979f99018a52": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "a8b23394b642f0bb769a0391": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          },
+          "d0f8727d35eced697dcf79fe": {
+            "state_deviation_from_clean": false,
+            "return_to_clean_policy_s": null,
+            "return_to_truth_s": 0.5,
+            "definition": "First two consecutive matching scheduled samples after last injected index; GT scorer only, no online reset"
+          }
+        }
+      }
+    }
+  },
+  "43": {
+    "normal": {
+      "M0": {
+        "warnings": {
+          "hits": 35,
+          "total": 50,
+          "false_events": 19,
+          "false_per_minute": 0.9857328145265889,
+          "recall": 0.7,
+          "precision": 0.6481481481481481,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 1,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 13,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 46.5,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 13.0,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 2,
+            "late": 2,
+            "on_time": 4
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "on_time": 8
+          }
+        },
+        "second_half_position_accuracy_mean": 0.949021379903681,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            875,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9,
+            78,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            320,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            26,
+            118,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            12,
+            669,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            49
+          ]
+        ]
+      },
+      "M1": {
+        "warnings": {
+          "hits": 35,
+          "total": 50,
+          "false_events": 19,
+          "false_per_minute": 0.9857328145265889,
+          "recall": 0.7,
+          "precision": 0.6481481481481481,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 1,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 13,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 46.5,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 13.0,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 2,
+            "late": 2,
+            "on_time": 4
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "on_time": 8
+          }
+        },
+        "second_half_position_accuracy_mean": 0.949021379903681,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            875,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9,
+            78,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            320,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            26,
+            118,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            12,
+            669,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            49
+          ]
+        ]
+      },
+      "M2": {
+        "warnings": {
+          "hits": 35,
+          "total": 50,
+          "false_events": 19,
+          "false_per_minute": 0.9857328145265889,
+          "recall": 0.7,
+          "precision": 0.6481481481481481,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 1,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 13,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 46.5,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 13.0,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 2,
+            "late": 2,
+            "on_time": 4
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "on_time": 8
+          }
+        },
+        "second_half_position_accuracy_mean": 0.949021379903681,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            875,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9,
+            78,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            320,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            26,
+            118,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            12,
+            669,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            49
+          ]
+        ]
+      }
+    }
+  },
+  "44": {
+    "normal": {
+      "M0": {
+        "warnings": {
+          "hits": 36,
+          "total": 50,
+          "false_events": 16,
+          "false_per_minute": 0.8300907911802854,
+          "recall": 0.72,
+          "precision": 0.6923076923076923,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 3,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 14,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 13,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 45,
+          "early": 4,
+          "late": 1
+        },
+        "mismatch_s": 37.0,
+        "mismatch_runs": 48,
+        "persistent_mismatch_s": 8.0,
+        "persistent_runs": 2,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 2,
+            "on_time": 5,
+            "late": 1
+          },
+          "harvest->return": {
+            "on_time": 16,
+            "early": 1
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9588962781589517,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            877,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            11,
+            320,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            16,
+            128,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            8,
+            673,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7,
+            54
+          ]
+        ]
+      },
+      "M1": {
+        "warnings": {
+          "hits": 36,
+          "total": 50,
+          "false_events": 16,
+          "false_per_minute": 0.8300907911802854,
+          "recall": 0.72,
+          "precision": 0.6923076923076923,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 3,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 14,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 13,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 45,
+          "early": 4,
+          "late": 1
+        },
+        "mismatch_s": 37.0,
+        "mismatch_runs": 48,
+        "persistent_mismatch_s": 8.0,
+        "persistent_runs": 2,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 2,
+            "on_time": 5,
+            "late": 1
+          },
+          "harvest->return": {
+            "on_time": 16,
+            "early": 1
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9588962781589517,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            877,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            11,
+            320,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            16,
+            128,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            8,
+            673,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7,
+            54
+          ]
+        ]
+      },
+      "M2": {
+        "warnings": {
+          "hits": 36,
+          "total": 50,
+          "false_events": 16,
+          "false_per_minute": 0.8300907911802854,
+          "recall": 0.72,
+          "precision": 0.6923076923076923,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 3,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 14,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 13,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 45,
+          "early": 4,
+          "late": 1
+        },
+        "mismatch_s": 37.0,
+        "mismatch_runs": 48,
+        "persistent_mismatch_s": 8.0,
+        "persistent_runs": 2,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 2,
+            "on_time": 5,
+            "late": 1
+          },
+          "harvest->return": {
+            "on_time": 16,
+            "early": 1
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9588962781589517,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            877,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            11,
+            320,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            16,
+            128,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            8,
+            673,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7,
+            54
+          ]
+        ]
+      }
+    }
+  }
+}

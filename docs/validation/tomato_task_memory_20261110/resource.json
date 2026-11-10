@@ -1,0 +1,31 @@
+{
+  "cpu_update_ms": {
+    "M0": {
+      "p50": 0.013135,
+      "p95": 0.01854405,
+      "maximum": 0.05819,
+      "n": 7020
+    },
+    "M1": {
+      "p50": 0.036398,
+      "p95": 0.07808899999999998,
+      "maximum": 0.179047,
+      "n": 7020
+    },
+    "M2": {
+      "p50": 0.032341,
+      "p95": 0.06812099999999997,
+      "maximum": 0.155262,
+      "n": 7020
+    }
+  },
+  "max_serialized_snapshot_bytes": {
+    "M1": 44769,
+    "M2": 45153
+  },
+  "max_resident_object_bytes": {
+    "M1": 84041,
+    "M2": 84057
+  },
+  "note": "CPU state update only. No encoder/head timing included; audit JSONL and saved full traces live on disk, not resident memory. No CUDA allocations by TaskMemory."
+}

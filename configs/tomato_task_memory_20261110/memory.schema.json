@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tomato:task-memory:v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "session_id",
+    "model_version",
+    "memory_version",
+    "confirmed_phase",
+    "candidate_phase",
+    "last_valid_timestamp",
+    "progress",
+    "uncertainty",
+    "suggests_prompt_update",
+    "short_term",
+    "long_term",
+    "confirmed_transitions",
+    "pending"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "tomato-task-memory-v1"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "model_version": {
+      "type": "string"
+    },
+    "memory_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "confirmed_phase": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 6
+    },
+    "candidate_phase": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 6
+    },
+    "last_valid_timestamp": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "progress": {
+      "type": "object",
+      "required": [
+        "decision_fraction",
+        "physical_completion",
+        "task_complete"
+      ],
+      "properties": {
+        "decision_fraction": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "physical_completion": {
+          "const": "unknown"
+        },
+        "task_complete": {
+          "const": false
+        }
+      }
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "suggests_prompt_update": {
+      "const": false
+    },
+    "short_term": {
+      "type": "array"
+    },
+    "long_term": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/EventRecord"
+      }
+    },
+    "confirmed_transitions": {
+      "type": "array",
+      "maxItems": 6,
+      "items": {
+        "$ref": "#/$defs/EventRecord"
+      }
+    },
+    "pending": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/EventRecord"
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "EventRecord": {
+      "type": "object",
+      "required": [
+        "event_id",
+        "event_type",
+        "event_time",
+        "updated_at",
+        "from_phase",
+        "to_phase",
+        "prediction_source",
+        "confidence",
+        "support_observation_ids",
+        "status",
+        "reason",
+        "version",
+        "scope",
+        "physical_success",
+        "revisions"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string"
+        },
+        "event_type": {
+          "type": "string"
+        },
+        "event_time": {
+          "type": "number"
+        },
+        "updated_at": {
+          "type": "number"
+        },
+        "from_phase": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 6
+        },
+        "to_phase": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 6
+        },
+        "prediction_source": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "support_observation_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "enum": [
+            "candidate",
+            "confirmed",
+            "rejected",
+            "expired",
+            "uncertain"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "scope": {
+          "enum": [
+            "recognition",
+            "prediction",
+            "decision",
+            "protocol",
+            "transport",
+            "command",
+            "physical_outcome"
+          ]
+        },
+        "physical_success": {
+          "enum": [
+            "unobserved",
+            "verified_success",
+            "verified_failure"
+          ]
+        },
+        "confirmation_time": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "revisions": {
+          "type": "array"
+        },
+        "details": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

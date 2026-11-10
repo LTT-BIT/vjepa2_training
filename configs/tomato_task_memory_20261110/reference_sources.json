@@ -1,0 +1,24 @@
+{
+  "ProTAS": {
+    "commit": "0f04ee6b3c4370ce22f9230bca42e9aabe47b428",
+    "files": {
+      "model.py": "dd42974e5dbc9d496a3cd111617c4a7d14aeae8107d3a88aaedfd2b60f3f6423",
+      "utils/write_progress_values.py": "cb377d87c5398445dca8fe5363445b7a4e710a06788c0ab73246661283d22aa2",
+      "utils/write_graph.py": "3b9b6901f8b883678a4a026bbc597c0e0d5f273dfe858515e8876aa02a5d6ad5"
+    }
+  },
+  "HeLM": {
+    "commit": "50b13bd5d772603be44bb1b90465dcc1e0624de5",
+    "files": {
+      "evaluate/eval_HLP_LLP/eval_real_time_qwen.py": "a96407d07c5d768aa7218cbd17aa7d50045228946726c5a6466ff7b4696cbf2d"
+    }
+  },
+  "HiMe": {
+    "commit": "261766e3b067db8cf92fe2d34cc7da32034d142a",
+    "files": {
+      "memory/multitag_recorder.py": "ccb0dfbec077913975cd008701b1e6870e75dbb6664a8c40c863aac15cd08768",
+      "agent/observer.py": "481b04e8c5bf4cad51d02a7cfd616606358320a20215ecc113a7ec07d195cf25",
+      "server/task_state.py": "46f35a7afbf359705d9e04e9ec24c10aaf6de637cad4a19738834ef49a766557"
+    }
+  }
+}
