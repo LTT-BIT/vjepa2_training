@@ -1,0 +1,80 @@
+{
+  "recordings": 101,
+  "split_counts": {
+    "train": 84,
+    "val": 9,
+    "test": 8
+  },
+  "phase_segment_counts": {
+    "7": 100,
+    "3": 1
+  },
+  "independent_annotation_candidates": [],
+  "approved_outcome_labels": 0,
+  "training_readiness": {
+    "counts": {
+      "right_grasp_started": {
+        "positive": 0,
+        "negative": 0,
+        "unknown": 0
+      },
+      "truss_stably_lifted": {
+        "positive": 0,
+        "negative": 0,
+        "unknown": 0
+      },
+      "left_pick_started": {
+        "positive": 0,
+        "negative": 0,
+        "unknown": 0
+      },
+      "tomato_detached": {
+        "positive": 0,
+        "negative": 0,
+        "unknown": 0
+      },
+      "truss_returned": {
+        "positive": 0,
+        "negative": 0,
+        "unknown": 0
+      },
+      "adjustment_ended": {
+        "positive": 0,
+        "negative": 0,
+        "unknown": 0
+      },
+      "right_regrasp_started": {
+        "positive": 0,
+        "negative": 0,
+        "unknown": 0
+      },
+      "second_grasp_verified": {
+        "positive": 0,
+        "negative": 0,
+        "unknown": 0
+      }
+    },
+    "eligible_events": [],
+    "can_train": false,
+    "rule": "At least10 independent positive/negative intervals across6 recordings for initial development smoke, not evidence of final sufficiency"
+  },
+  "camera_role_evidence": "cam0/1/2 roles unproven by archived metadata",
+  "deployment_signals": {
+    "rgb_and_position": "supported_by_existing_input_interfaces",
+    "velocity": "causal finite differences available",
+    "tactile_depth_grasp_feedback": "not recorded here; live hardware availability not verified"
+  },
+  "test_values_read": false,
+  "state_shapes": [
+    [
+      116
+    ]
+  ],
+  "action_shapes": [
+    [
+      58
+    ]
+  ],
+  "recorded_sensor_keys": [],
+  "raw_audit_sha256": "c43a23df6870c0a0059a14d402be930a738f7c3af701a88eb7786834eda92175"
+}

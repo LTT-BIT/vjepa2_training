@@ -1,0 +1,43 @@
+{
+  "version": "tomato-operation-memory-v1",
+  "shadow": true,
+  "default_stage_model": "original independent_h15_s42",
+  "stable_default_unchanged": true,
+  "labels": {
+    "source": "independent_operation_review",
+    "approved_count": 0,
+    "phase_labels_are_not_outcome_truth": true,
+    "unknown_masked": true,
+    "consensus_reviewers": 2
+  },
+  "verifier_modes": {
+    "A": "928D causal robot history only",
+    "B": "3072D pooled visual only",
+    "C": "4000D vision+state",
+    "D": "8000D current+same-episode causal feature differences"
+  },
+  "encoder_frozen": true,
+  "training": {
+    "enabled": false,
+    "reason": "No approved independent operation labels",
+    "seed": 42,
+    "epochs": 10,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "weights": "new isolated output only",
+    "normalization": "fit labelled training windows only",
+    "test_data_excluded": true
+  },
+  "pi05": {
+    "memory_default": "none",
+    "training_enabled": false,
+    "max_tokens": 256,
+    "action_shape": [
+      50,
+      58
+    ],
+    "reason": "Oracle incremental information not established"
+  },
+  "audit_manifest": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/dataset_manifest.json",
+  "audit_manifest_sha256": "d268001110c737e77bdd511f86ee1651b9d669798c166249938c1bc7addc9880"
+}

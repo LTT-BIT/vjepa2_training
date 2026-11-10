@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tomato:memory-input:v1",
+  "type": "object",
+  "required": [
+    "protocol",
+    "mode",
+    "session_id",
+    "episode_id",
+    "observation_id",
+    "input_timestamp",
+    "valid_until",
+    "memory_version",
+    "phase_index",
+    "verified_facts",
+    "picked_count"
+  ],
+  "properties": {
+    "protocol": {
+      "const": "tomato-memory-input-v1"
+    },
+    "mode": {
+      "enum": [
+        "oracle",
+        "predicted"
+      ]
+    },
+    "session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "episode_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_timestamp": {
+      "type": "number"
+    },
+    "valid_until": {
+      "type": "number"
+    },
+    "memory_version": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "phase_index": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 6
+    },
+    "picked_count": {
+      "type": "null"
+    },
+    "verified_facts": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "event_type",
+          "event_time",
+          "evidence_time",
+          "source",
+          "independent"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string"
+          },
+          "event_type": {
+            "enum": [
+              "right_grasp_started",
+              "truss_stably_lifted",
+              "left_pick_started",
+              "tomato_detached",
+              "truss_returned",
+              "adjustment_ended",
+              "right_regrasp_started",
+              "second_grasp_verified"
+            ]
+          },
+          "event_time": {
+            "type": "number"
+          },
+          "evidence_time": {
+            "type": "number"
+          },
+          "source": {
+            "type": "string"
+          },
+          "independent": {
+            "const": true
+          }
+        }
+      }
+    }
+  },
+  "description": "No-memory mode sends no memory payload. Stage and command outputs never qualify as verified_facts. Relational time/source constraints are enforced by the provider."
+}

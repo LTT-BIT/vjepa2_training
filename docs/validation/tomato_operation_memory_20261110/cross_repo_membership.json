@@ -1,0 +1,11 @@
+{
+  "openpi_selection": "/home/user/tomato-openpi/training_configs/experiments/tomato_sharpa/subtasks/records/normal93_20261109_selection.json",
+  "sha256": "fcf1a1b9e4db11d2b187f95c119711a709ad44debcb38d094fbde23109f1fc2c",
+  "openpi_records": 93,
+  "agent_overlap_by_split": {
+    "train": 74,
+    "val": 8,
+    "test": 8
+  },
+  "note": "OpenPI all93-trained action baseline overlaps Agent partitions; Agent val/test cannot be called held-out action evaluation without checking action model training membership"
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-10",
+  "agent_base": "686f68a",
+  "openpi_base": "33ce417",
+  "agent_branch": "research-tomato-agent",
+  "openpi_branch": "tomato-coarse-subtasks-agent",
+  "shared_schema_sha256": "b00323823dfad738bf2ce8044813ac174b98f12f296354e6f9dc86c741959c4c",
+  "data_identity": {
+    "manifest": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/dataset_manifest.json",
+    "manifest_sha256": "d268001110c737e77bdd511f86ee1651b9d669798c166249938c1bc7addc9880",
+    "catalog_sha256": "60150bc712efe60bf2baee0d35552c084eeea59df49e978492d8f72d1260abc2",
+    "original_annotations_modified": false,
+    "review_label_status": "all_unreviewed"
+  },
+  "tests": {
+    "vjepa_tomato": 218,
+    "openpi_related": 43
+  },
+  "artifacts": {
+    "audit101.json": "c43a23df6870c0a0059a14d402be930a738f7c3af701a88eb7786834eda92175",
+    "catalog.json": "60150bc712efe60bf2baee0d35552c084eeea59df49e978492d8f72d1260abc2",
+    "cases.json": "f9b70c6a98c16addc55ca782ba7dc9dac926d2673f69ac39f3129f8addbbbfe3",
+    "approved.json": "59b48d17426a7319c9d7f4e377055d9a839d6d44065758745a8731426101ded3",
+    "openpi_tokens_release.json": "df45fa1fc8a0ee507b093479800247dfa229573c25d2691122041d3aa55641f2",
+    "joint_replay_delivery/result.json": "45255c220d3f82f9c3f10f5d2a7942029e1a8b7026fc5b26e68eb861578222fb"
+  },
+  "source_sha256": {
+    "/home/user/vjepa2_training/configs/tomato_operation_memory_20261110/experiment.json": "c6675f9f19ba3f3518c0b0fb64133b7e5c635860df24f78c77f8409a56af247e",
+    "/home/user/vjepa2_training/configs/tomato_operation_memory_20261110/memory_input.schema.json": "b00323823dfad738bf2ce8044813ac174b98f12f296354e6f9dc86c741959c4c",
+    "/home/user/vjepa2_training/tests/test_tomato_operation_memory.py": "a3f59bea1ae66b23f57c790c22cc42ee6ea9bd8e302d47c56fb4e619805d7e56",
+    "/home/user/vjepa2_training/tools/prepare_tomato_operation_review.py": "e8d3a80ed4efbf3eebe8bea390d3996d86a3399424888ec44fbd7f9e50550653",
+    "/home/user/vjepa2_training/tools/replay_tomato_operation_memory.py": "c6f1d8aff10512e7fba9187e7f796cc3ff674caece6d3754b2fdb83ed5227777",
+    "/home/user/vjepa2_training/tools/serve_tomato_operation_review.py": "0a06041ba9f699845e867e10b908b1c8a8eeff88a0486072c932bb2b7079b691",
+    "/home/user/vjepa2_training/tools/tomato_operation_memory.py": "7b6b17358291475fd7309a71aaab96902f81f3a2bf3da5c4e43746e7f9ecf1a5",
+    "/home/user/vjepa2_training/tools/tomato_operation_review.html": "08ccae964326fa6b0895ec0f7d25bb2f33d2bf02f606b022c82ac0badb7dbf81",
+    "/home/user/vjepa2_training/tools/tomato_operation_sidecar.py": "c6ea7bc47c1db50e03b28b7ec32b5cfebbc118b6909d4e69a0351030e02c4465",
+    "/home/user/vjepa2_training/tools/tomato_outcome_verifier.py": "ace7a1f362667e741e52b0c84df1b67e0dbc49182b0e37744395bb62bbf78ed6",
+    "/home/user/vjepa2_training/tools/train_tomato_outcome_verifier.py": "bb1ed528a3dc3732dc2238f63a0282abb8f2179d54b90506b10fb0f02dabbc49",
+    "/home/user/tomato-openpi-agent/src/openpi/subtasks/memory_bridge.py": "dffb988558184b56d25665e3ec8ece019df22fbb71ab6115dccc6c19b2ae5a0d",
+    "/home/user/tomato-openpi-agent/tests/test_tomato_memory_bridge.py": "15f5dd7a5515812491ddb40c5c0f8580c9eeb22bfb672c23a88c6aa09a23b84d",
+    "/home/user/tomato-openpi-agent/configs/tomato_memory.schema.json": "b00323823dfad738bf2ce8044813ac174b98f12f296354e6f9dc86c741959c4c",
+    "/home/user/tomato-openpi-agent/configs/tomato_memory_experiment.json": "b798438d93cbd0352384b0d88d725f697f87e40144193c5ca5f49408623afdb3",
+    "/home/user/tomato-openpi-agent/scripts/audit_tomato_memory_tokens.py": "918423b4e130894156d7d15ec4dfa412fa6a2049f137db8aa34b4ee890b0d00c"
+  },
+  "experiments": {
+    "real_cache_prediction_replay": true,
+    "real_tokenizer": true,
+    "real_outcome_training": false,
+    "physical_labels": 0,
+    "action_model_calls": 0,
+    "robot_calls": 0,
+    "action_mae": null,
+    "action_rmse": null,
+    "oracle_utility": null,
+    "predicted_oracle_gap": null
+  },
+  "sidecar_cpu_ms": {
+    "p50": 0.08508750000000001,
+    "p95": 0.10536299999999998,
+    "maximum": 0.216042
+  },
+  "boundary_source": "historical 14 review proposals, not newly approved source labels",
+  "training_result": {
+    "status": "not_trained",
+    "reason": "insufficient_independent_outcome_labels",
+    "real_labels": 0,
+    "test_read": false
+  }
+}

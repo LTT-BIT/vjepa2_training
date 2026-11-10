@@ -1,0 +1,47 @@
+{
+  "counts": {
+    "right_grasp_started": {
+      "positive": 0,
+      "negative": 0,
+      "unknown": 0
+    },
+    "truss_stably_lifted": {
+      "positive": 0,
+      "negative": 0,
+      "unknown": 0
+    },
+    "left_pick_started": {
+      "positive": 0,
+      "negative": 0,
+      "unknown": 0
+    },
+    "tomato_detached": {
+      "positive": 0,
+      "negative": 0,
+      "unknown": 0
+    },
+    "truss_returned": {
+      "positive": 0,
+      "negative": 0,
+      "unknown": 0
+    },
+    "adjustment_ended": {
+      "positive": 0,
+      "negative": 0,
+      "unknown": 0
+    },
+    "right_regrasp_started": {
+      "positive": 0,
+      "negative": 0,
+      "unknown": 0
+    },
+    "second_grasp_verified": {
+      "positive": 0,
+      "negative": 0,
+      "unknown": 0
+    }
+  },
+  "eligible_events": [],
+  "can_train": false,
+  "rule": "At least10 independent positive/negative intervals across6 recordings for initial development smoke, not evidence of final sufficiency"
+}

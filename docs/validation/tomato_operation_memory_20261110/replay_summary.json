@@ -1,0 +1,76 @@
+{
+  "summary": {
+    "warnings": {
+      "hits": 39,
+      "total": 50,
+      "false_events": 13,
+      "false_per_minute": 0.6744487678339819,
+      "recall": 0.78,
+      "precision": 0.75,
+      "by_transition": {
+        "adjust->pickup": {
+          "hits": 2,
+          "total": 8
+        },
+        "harvest->return": {
+          "hits": 16,
+          "total": 17
+        },
+        "pickup->harvest": {
+          "hits": 15,
+          "total": 17
+        },
+        "return->adjust": {
+          "hits": 6,
+          "total": 8
+        }
+      }
+    },
+    "prompt_counts": {
+      "on_time": 46,
+      "early": 2,
+      "late": 2
+    },
+    "mismatch_s": 40.0,
+    "mismatch_runs": 47,
+    "persistent_mismatch_s": 10.5,
+    "persistent_runs": 3,
+    "resync_updates": 0,
+    "skipped_prompt_positions": 0,
+    "illegal_updates": 0,
+    "cascade_events": 1,
+    "prompt_by_transition": {
+      "adjust->pickup": {
+        "early": 1,
+        "on_time": 5,
+        "late": 2
+      },
+      "harvest->return": {
+        "on_time": 17
+      },
+      "pickup->harvest": {
+        "on_time": 17
+      },
+      "return->adjust": {
+        "early": 1,
+        "on_time": 7
+      }
+    }
+  },
+  "observations": 2340,
+  "sidecar_cpu_ms": {
+    "p50": 0.08508750000000001,
+    "p95": 0.10536299999999998,
+    "maximum": 0.216042
+  },
+  "independent_operation_labels": 0,
+  "oracle_vs_predicted": "not_estimable_empty_oracle_no_incremental_information",
+  "action_mae": null,
+  "action_rmse": null,
+  "action_model_calls": 0,
+  "state_bin_fixture": "58 zeros, tokenizer/interface test only; not measured normalized Pi05 robot state",
+  "real_probabilities": true,
+  "openpi_checkout": "/home/user/tomato-openpi-agent",
+  "tokenizer_sha256": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6",
+  "original_stage_outputs_preserved": true
+}
