@@ -1,0 +1,250 @@
+{
+  "seeds": {
+    "42": {
+      "summary": {
+        "B0": {
+          "hits": 37,
+          "total": 48,
+          "misses": 11,
+          "recall": 0.7708333333333334,
+          "precision": 0.74,
+          "f1": 0.7551020408163265,
+          "false_events": 13,
+          "false_per_minute": 0.6948775055679288,
+          "lead_s": {
+            "10": 0.11999999999999318,
+            "50": 0.5666666666666664,
+            "95": 1.2666666666666664
+          },
+          "by_transition": {
+            "pickup->harvest": {
+              "hits": 14,
+              "total": 16
+            },
+            "harvest->return": {
+              "hits": 15,
+              "total": 16
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            },
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            }
+          }
+        },
+        "causal_ema": {
+          "hits": 29,
+          "total": 48,
+          "misses": 19,
+          "recall": 0.6041666666666666,
+          "precision": 0.6041666666666666,
+          "f1": 0.6041666666666666,
+          "false_events": 19,
+          "false_per_minute": 1.0155902004454345,
+          "lead_s": {
+            "10": 0.13333333333333144,
+            "50": 0.5,
+            "95": 1.2533333333333323
+          },
+          "by_transition": {
+            "pickup->harvest": {
+              "hits": 11,
+              "total": 16
+            },
+            "harvest->return": {
+              "hits": 11,
+              "total": 16
+            },
+            "return->adjust": {
+              "hits": 5,
+              "total": 8
+            },
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            }
+          }
+        }
+      },
+      "changes": {
+        "retained": 28,
+        "lost": 9,
+        "still_missed": 10,
+        "recovered": 1
+      },
+      "passes_paired_screen": false,
+      "prompt_and_position_traces_identical": true
+    },
+    "43": {
+      "summary": {
+        "B0": {
+          "hits": 34,
+          "total": 48,
+          "misses": 14,
+          "recall": 0.7083333333333334,
+          "precision": 0.6538461538461539,
+          "f1": 0.68,
+          "false_events": 18,
+          "false_per_minute": 0.9621380846325167,
+          "lead_s": {
+            "10": 0.26000000000000373,
+            "50": 0.6166666666666671,
+            "95": 1.244999999999999
+          },
+          "by_transition": {
+            "pickup->harvest": {
+              "hits": 14,
+              "total": 16
+            },
+            "harvest->return": {
+              "hits": 13,
+              "total": 16
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            },
+            "adjust->pickup": {
+              "hits": 1,
+              "total": 8
+            }
+          }
+        },
+        "causal_ema": {
+          "hits": 29,
+          "total": 48,
+          "misses": 19,
+          "recall": 0.6041666666666666,
+          "precision": 0.5576923076923077,
+          "f1": 0.58,
+          "false_events": 23,
+          "false_per_minute": 1.2293986636971048,
+          "lead_s": {
+            "10": 0.09333333333332874,
+            "50": 0.43333333333333,
+            "95": 0.9600000000000021
+          },
+          "by_transition": {
+            "pickup->harvest": {
+              "hits": 11,
+              "total": 16
+            },
+            "harvest->return": {
+              "hits": 11,
+              "total": 16
+            },
+            "return->adjust": {
+              "hits": 5,
+              "total": 8
+            },
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            }
+          }
+        }
+      },
+      "changes": {
+        "retained": 28,
+        "still_missed": 13,
+        "recovered": 1,
+        "lost": 6
+      },
+      "passes_paired_screen": false,
+      "prompt_and_position_traces_identical": true
+    },
+    "44": {
+      "summary": {
+        "B0": {
+          "hits": 35,
+          "total": 48,
+          "misses": 13,
+          "recall": 0.7291666666666666,
+          "precision": 0.7,
+          "f1": 0.7142857142857143,
+          "false_events": 15,
+          "false_per_minute": 0.801781737193764,
+          "lead_s": {
+            "10": 0.13999999999999777,
+            "50": 0.6333333333333329,
+            "95": 1.2833333333333339
+          },
+          "by_transition": {
+            "pickup->harvest": {
+              "hits": 12,
+              "total": 16
+            },
+            "harvest->return": {
+              "hits": 14,
+              "total": 16
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            },
+            "adjust->pickup": {
+              "hits": 3,
+              "total": 8
+            }
+          }
+        },
+        "causal_ema": {
+          "hits": 29,
+          "total": 48,
+          "misses": 19,
+          "recall": 0.6041666666666666,
+          "precision": 0.58,
+          "f1": 0.5918367346938775,
+          "false_events": 21,
+          "false_per_minute": 1.1224944320712695,
+          "lead_s": {
+            "10": 0.09333333333332874,
+            "50": 0.36666666666666625,
+            "95": 0.9200000000000003
+          },
+          "by_transition": {
+            "pickup->harvest": {
+              "hits": 10,
+              "total": 16
+            },
+            "harvest->return": {
+              "hits": 11,
+              "total": 16
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            },
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            }
+          }
+        }
+      },
+      "changes": {
+        "retained": 29,
+        "lost": 6,
+        "still_missed": 13
+      },
+      "passes_paired_screen": false,
+      "prompt_and_position_traces_identical": true
+    }
+  },
+  "all_seeds_pass": false,
+  "filter_cpu_ms": {
+    "50": 0.059897,
+    "95": 0.064565,
+    "100": 0.203306
+  },
+  "latency_scope": "Filter only, CPU replay. No encoder/GPU inference measured.",
+  "new_model_trained": false,
+  "production_changed": false,
+  "labels_changed": false,
+  "test_arrays_read": false,
+  "horizon_audit": "1.5 seconds =45 original frames at30Hz; labels match Subtask(t+45); input observations unchanged.",
+  "evidence_scope": "Exposed development set exploratory ablation. Not independent generalization evidence."
+}

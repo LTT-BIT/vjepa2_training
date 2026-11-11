@@ -1,0 +1,16 @@
+{
+  "version": "causal-future-ema-pilot-v1",
+  "base_git_sha": "bc5ab1ea9607b9f0c98051501fa77a4002730bf0",
+  "seeds": [42,43,44],
+  "half_life_s": 0.5,
+  "max_gap_s": 0.75,
+  "rationale": "Single predetermined low-cost ablation: EMA half-life equals one 2Hz observation interval. May reduce transient premature evidence but can delay already-late predictions.",
+  "future_horizon_s": 1.5,
+  "warning_threshold": 0.5,
+  "warning_confirmations": 2,
+  "current_prompt_policy": "Unchanged B0 Current0.8/K2, seven ordered positions",
+  "selection": "No parameter sweep or validation fitting. Research-only comparison; never automatically promotes a model.",
+  "acceptance": "Paired-seed recall must improve without increasing paired false/min or changing Prompt timing. Report lost as well as recovered events. Independent recordings still required.",
+  "evaluation": "Frozen complete100, eight development recordings, exact-edge one-to-one [boundary-1.5,boundary). No backdating, no expanded window, no test arrays.",
+  "production_default_changed": false
+}

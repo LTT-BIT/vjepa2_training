@@ -1,0 +1,232 @@
+[
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "status": "lost",
+    "B0_offset_s": -0.29999999999999716,
+    "candidate_closest_same_edge_offset_s": 0.20000000000000284,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "status": "lost",
+    "B0_offset_s": -0.4000000000000057,
+    "candidate_closest_same_edge_offset_s": 0.09999999999999432,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "status": "lost",
+    "B0_offset_s": -0.4000000000000057,
+    "candidate_closest_same_edge_offset_s": 0.09999999999999432,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "status": "recovered",
+    "B0_offset_s": null,
+    "candidate_closest_same_edge_offset_s": -1.2666666666666657,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "status": "lost",
+    "B0_offset_s": -0.5,
+    "candidate_closest_same_edge_offset_s": 0.0,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "status": "lost",
+    "B0_offset_s": -0.09999999999999432,
+    "candidate_closest_same_edge_offset_s": 0.4000000000000057,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "status": "lost",
+    "B0_offset_s": -0.09999999999999432,
+    "candidate_closest_same_edge_offset_s": 0.4000000000000057,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "status": "lost",
+    "B0_offset_s": -0.13333333333333286,
+    "candidate_closest_same_edge_offset_s": 0.36666666666666714,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "status": "lost",
+    "B0_offset_s": -0.46666666666666856,
+    "candidate_closest_same_edge_offset_s": 0.03333333333333144,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "status": "lost",
+    "B0_offset_s": -0.09999999999999432,
+    "candidate_closest_same_edge_offset_s": 0.4000000000000057,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "status": "recovered",
+    "B0_offset_s": null,
+    "candidate_closest_same_edge_offset_s": -0.5999999999999943,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "status": "lost",
+    "B0_offset_s": -0.4000000000000057,
+    "candidate_closest_same_edge_offset_s": 0.5999999999999943,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "status": "lost",
+    "B0_offset_s": -0.09999999999999432,
+    "candidate_closest_same_edge_offset_s": 0.4000000000000057,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "status": "lost",
+    "B0_offset_s": -0.46666666666666856,
+    "candidate_closest_same_edge_offset_s": 0.03333333333333144,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "status": "lost",
+    "B0_offset_s": -0.4333333333333371,
+    "candidate_closest_same_edge_offset_s": 0.06666666666666288,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "status": "lost",
+    "B0_offset_s": -0.13333333333333286,
+    "candidate_closest_same_edge_offset_s": 0.36666666666666714,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "status": "lost",
+    "B0_offset_s": -0.46666666666666856,
+    "candidate_closest_same_edge_offset_s": 0.03333333333333144,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "status": "lost",
+    "B0_offset_s": -0.29999999999999716,
+    "candidate_closest_same_edge_offset_s": 0.20000000000000284,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "status": "lost",
+    "B0_offset_s": -0.4000000000000057,
+    "candidate_closest_same_edge_offset_s": 0.09999999999999432,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "status": "lost",
+    "B0_offset_s": -0.09999999999999432,
+    "candidate_closest_same_edge_offset_s": 0.4000000000000057,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "status": "lost",
+    "B0_offset_s": -0.20000000000000284,
+    "candidate_closest_same_edge_offset_s": 0.29999999999999716,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "status": "lost",
+    "B0_offset_s": -0.5,
+    "candidate_closest_same_edge_offset_s": 0.0,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "status": "lost",
+    "B0_offset_s": -0.09999999999999432,
+    "candidate_closest_same_edge_offset_s": 0.4000000000000057,
+    "scope": "Posthoc nearest same-edge diagnostic only; does not change matching or count as a match"
+  }
+]

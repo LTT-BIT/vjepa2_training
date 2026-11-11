@@ -1,0 +1,3890 @@
+[
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 8.833333333333334,
+    "B0": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.0,
+      "offset_s": -0.8333333333333339
+    },
+    "candidate": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.5,
+      "offset_s": -0.3333333333333339
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 55.8,
+    "B0": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": true,
+      "event_time": 55.5,
+      "offset_s": -0.29999999999999716
+    },
+    "candidate": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 61.766666666666666,
+    "B0": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.0,
+      "offset_s": -0.7666666666666657
+    },
+    "candidate": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.0,
+      "offset_s": -0.7666666666666657
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 74.23333333333333,
+    "B0": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 81.0,
+    "B0": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 129.2,
+    "B0": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 128.5,
+      "offset_s": -0.6999999999999886
+    },
+    "candidate": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 129.0,
+      "offset_s": -0.19999999999998863
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 10.233333333333333,
+    "B0": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -1.2333333333333325
+    },
+    "candidate": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -1.2333333333333325
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 76.6,
+    "B0": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -0.09999999999999432
+    },
+    "candidate": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 82.46666666666667,
+    "B0": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "candidate": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 109.6,
+    "B0": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    },
+    "candidate": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 119.4,
+    "B0": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": true,
+      "event_time": 119.0,
+      "offset_s": -0.4000000000000057
+    },
+    "candidate": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 169.9,
+    "B0": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": true,
+      "event_time": 169.5,
+      "offset_s": -0.4000000000000057
+    },
+    "candidate": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 7.566666666666666,
+    "B0": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.0,
+      "offset_s": -0.5666666666666664
+    },
+    "candidate": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.0,
+      "offset_s": -0.5666666666666664
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 73.86666666666666,
+    "B0": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.5,
+      "offset_s": -0.36666666666666003
+    },
+    "candidate": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.5,
+      "offset_s": -0.36666666666666003
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 80.66666666666667,
+    "B0": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 99.13333333333334,
+    "B0": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 113.76666666666667,
+    "B0": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": true,
+      "event_time": 112.5,
+      "offset_s": -1.2666666666666657
+    },
+    "status": "recovered"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 175.56666666666666,
+    "B0": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.5666666666666629
+    },
+    "candidate": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.5,
+      "offset_s": -0.06666666666666288
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 9.566666666666666,
+    "B0": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -0.5666666666666664
+    },
+    "candidate": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -0.5666666666666664
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 71.0,
+    "B0": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "candidate": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 77.6,
+    "B0": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -1.0999999999999943
+    },
+    "candidate": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 77.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 90.4,
+    "B0": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 90.0,
+      "offset_s": -0.4000000000000057
+    },
+    "candidate": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 90.0,
+      "offset_s": -0.4000000000000057
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 100.66666666666667,
+    "B0": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "candidate": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 138.63333333333333,
+    "B0": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.5,
+      "offset_s": -0.13333333333332575
+    },
+    "candidate": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.5,
+      "offset_s": -0.13333333333332575
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 7.366666666666666,
+    "B0": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.8666666666666663
+    },
+    "candidate": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 7.0,
+      "offset_s": -0.36666666666666625
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 57.6,
+    "B0": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "candidate": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 62.8,
+    "B0": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "candidate": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 90.3,
+    "B0": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 99.1,
+    "B0": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": true,
+      "event_time": 99.0,
+      "offset_s": -0.09999999999999432
+    },
+    "candidate": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 136.96666666666667,
+    "B0": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": true,
+      "event_time": 136.5,
+      "offset_s": -0.46666666666666856
+    },
+    "candidate": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": true,
+      "event_time": 136.5,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 7.0,
+    "B0": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.0,
+      "offset_s": -1.0
+    },
+    "candidate": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.5
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 62.96666666666667,
+    "B0": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "candidate": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 66.2,
+    "B0": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 94.86666666666666,
+    "B0": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 106.6,
+    "B0": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.5,
+      "offset_s": -0.09999999999999432
+    },
+    "candidate": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 175.43333333333334,
+    "B0": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 5.5,
+    "B0": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -1.0
+    },
+    "candidate": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 5.0,
+      "offset_s": -0.5
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 37.13333333333333,
+    "B0": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 37.0,
+      "offset_s": -0.13333333333333286
+    },
+    "candidate": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 37.0,
+      "offset_s": -0.13333333333333286
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 40.13333333333333,
+    "B0": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": true,
+      "event_time": 40.0,
+      "offset_s": -0.13333333333333286
+    },
+    "candidate": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 65.26666666666667,
+    "B0": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 70.46666666666667,
+    "B0": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.46666666666666856
+    },
+    "candidate": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 86.7,
+    "B0": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.0,
+      "offset_s": -0.7000000000000028
+    },
+    "candidate": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.5,
+      "offset_s": -0.20000000000000284
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 5.0,
+    "B0": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "candidate": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 44.833333333333336,
+    "B0": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.0,
+      "offset_s": -0.8333333333333357
+    },
+    "candidate": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.5,
+      "offset_s": -0.3333333333333357
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 47.93333333333333,
+    "B0": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "candidate": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 65.6,
+    "B0": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 70.9,
+    "B0": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 69.5,
+      "offset_s": -1.4000000000000057
+    },
+    "candidate": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.9000000000000057
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 89.6,
+    "B0": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": true,
+      "event_time": 89.5,
+      "offset_s": -0.09999999999999432
+    },
+    "candidate": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 8.833333333333334,
+    "B0": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.0,
+      "offset_s": -0.8333333333333339
+    },
+    "candidate": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.5,
+      "offset_s": -0.3333333333333339
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 55.8,
+    "B0": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 61.766666666666666,
+    "B0": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 60.5,
+      "offset_s": -1.2666666666666657
+    },
+    "candidate": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.0,
+      "offset_s": -0.7666666666666657
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 74.23333333333333,
+    "B0": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 81.0,
+    "B0": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 129.2,
+    "B0": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 128.5,
+      "offset_s": -0.6999999999999886
+    },
+    "candidate": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 129.0,
+      "offset_s": -0.19999999999998863
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 10.233333333333333,
+    "B0": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -1.2333333333333325
+    },
+    "candidate": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.5,
+      "offset_s": -0.7333333333333325
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 76.6,
+    "B0": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.0,
+      "offset_s": -0.5999999999999943
+    },
+    "candidate": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 82.46666666666667,
+    "B0": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "candidate": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 109.6,
+    "B0": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "recovered"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 119.4,
+    "B0": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": true,
+      "event_time": 119.0,
+      "offset_s": -0.4000000000000057
+    },
+    "candidate": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 169.9,
+    "B0": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 7.566666666666666,
+    "B0": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.0,
+      "offset_s": -0.5666666666666664
+    },
+    "candidate": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.5,
+      "offset_s": -0.06666666666666643
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 73.86666666666666,
+    "B0": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.0,
+      "offset_s": -0.86666666666666
+    },
+    "candidate": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.5,
+      "offset_s": -0.36666666666666003
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 80.66666666666667,
+    "B0": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 99.13333333333334,
+    "B0": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 113.76666666666667,
+    "B0": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 175.56666666666666,
+    "B0": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.5666666666666629
+    },
+    "candidate": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.5,
+      "offset_s": -0.06666666666666288
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 9.566666666666666,
+    "B0": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -0.5666666666666664
+    },
+    "candidate": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.5,
+      "offset_s": -0.06666666666666643
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 71.0,
+    "B0": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "candidate": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 77.6,
+    "B0": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -1.0999999999999943
+    },
+    "candidate": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 77.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 90.4,
+    "B0": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 89.5,
+      "offset_s": -0.9000000000000057
+    },
+    "candidate": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 90.0,
+      "offset_s": -0.4000000000000057
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 100.66666666666667,
+    "B0": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "candidate": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 138.63333333333333,
+    "B0": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.5,
+      "offset_s": -0.13333333333332575
+    },
+    "candidate": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.5,
+      "offset_s": -0.13333333333332575
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 7.366666666666666,
+    "B0": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.8666666666666663
+    },
+    "candidate": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 7.0,
+      "offset_s": -0.36666666666666625
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 57.6,
+    "B0": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "candidate": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 62.8,
+    "B0": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "candidate": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 90.3,
+    "B0": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 99.1,
+    "B0": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": true,
+      "event_time": 99.0,
+      "offset_s": -0.09999999999999432
+    },
+    "candidate": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 136.96666666666667,
+    "B0": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": true,
+      "event_time": 136.5,
+      "offset_s": -0.46666666666666856
+    },
+    "candidate": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 7.0,
+    "B0": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.0,
+      "offset_s": -1.0
+    },
+    "candidate": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.0,
+      "offset_s": -1.0
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 62.96666666666667,
+    "B0": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "candidate": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 66.2,
+    "B0": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 94.86666666666666,
+    "B0": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 106.6,
+    "B0": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.0,
+      "offset_s": -0.5999999999999943
+    },
+    "candidate": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.5,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 175.43333333333334,
+    "B0": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.4333333333333371
+    },
+    "candidate": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 5.5,
+    "B0": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -1.0
+    },
+    "candidate": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 5.0,
+      "offset_s": -0.5
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 37.13333333333333,
+    "B0": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 36.5,
+      "offset_s": -0.6333333333333329
+    },
+    "candidate": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 37.0,
+      "offset_s": -0.13333333333333286
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 40.13333333333333,
+    "B0": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": true,
+      "event_time": 40.0,
+      "offset_s": -0.13333333333333286
+    },
+    "candidate": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 65.26666666666667,
+    "B0": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 70.46666666666667,
+    "B0": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.46666666666666856
+    },
+    "candidate": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 86.7,
+    "B0": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.5,
+      "offset_s": -0.20000000000000284
+    },
+    "candidate": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.5,
+      "offset_s": -0.20000000000000284
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 5.0,
+    "B0": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "candidate": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 44.833333333333336,
+    "B0": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.0,
+      "offset_s": -0.8333333333333357
+    },
+    "candidate": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.5,
+      "offset_s": -0.3333333333333357
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 47.93333333333333,
+    "B0": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "candidate": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.5,
+      "offset_s": -0.43333333333333
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 65.6,
+    "B0": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 70.9,
+    "B0": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.9000000000000057
+    },
+    "candidate": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.9000000000000057
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 89.6,
+    "B0": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 8.833333333333334,
+    "B0": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.0,
+      "offset_s": -0.8333333333333339
+    },
+    "candidate": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.5,
+      "offset_s": -0.3333333333333339
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 55.8,
+    "B0": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": true,
+      "event_time": 55.5,
+      "offset_s": -0.29999999999999716
+    },
+    "candidate": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 61.766666666666666,
+    "B0": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.0,
+      "offset_s": -0.7666666666666657
+    },
+    "candidate": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.0,
+      "offset_s": -0.7666666666666657
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 74.23333333333333,
+    "B0": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 81.0,
+    "B0": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 129.2,
+    "B0": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 128.5,
+      "offset_s": -0.6999999999999886
+    },
+    "candidate": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 129.0,
+      "offset_s": -0.19999999999998863
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 10.233333333333333,
+    "B0": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -1.2333333333333325
+    },
+    "candidate": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.5,
+      "offset_s": -0.7333333333333325
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 76.6,
+    "B0": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.0,
+      "offset_s": -0.5999999999999943
+    },
+    "candidate": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 82.46666666666667,
+    "B0": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "candidate": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 109.6,
+    "B0": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    },
+    "candidate": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 119.4,
+    "B0": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 169.9,
+    "B0": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": true,
+      "event_time": 169.0,
+      "offset_s": -0.9000000000000057
+    },
+    "candidate": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": true,
+      "event_time": 169.0,
+      "offset_s": -0.9000000000000057
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 7.566666666666666,
+    "B0": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.5,
+      "offset_s": -0.06666666666666643
+    },
+    "candidate": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.5,
+      "offset_s": -0.06666666666666643
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 73.86666666666666,
+    "B0": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.0,
+      "offset_s": -0.86666666666666
+    },
+    "candidate": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.5,
+      "offset_s": -0.36666666666666003
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 80.66666666666667,
+    "B0": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 99.13333333333334,
+    "B0": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": true,
+      "event_time": 98.5,
+      "offset_s": -0.63333333333334
+    },
+    "candidate": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": true,
+      "event_time": 99.0,
+      "offset_s": -0.13333333333333997
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 113.76666666666667,
+    "B0": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 175.56666666666666,
+    "B0": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.5666666666666629
+    },
+    "candidate": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.5,
+      "offset_s": -0.06666666666666288
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 9.566666666666666,
+    "B0": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -0.5666666666666664
+    },
+    "candidate": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.5,
+      "offset_s": -0.06666666666666643
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 71.0,
+    "B0": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "candidate": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 77.6,
+    "B0": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 77.0,
+      "offset_s": -0.5999999999999943
+    },
+    "candidate": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 77.5,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 90.4,
+    "B0": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 90.0,
+      "offset_s": -0.4000000000000057
+    },
+    "candidate": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 100.66666666666667,
+    "B0": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "candidate": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 138.63333333333333,
+    "B0": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.0,
+      "offset_s": -0.6333333333333258
+    },
+    "candidate": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.5,
+      "offset_s": -0.13333333333332575
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 7.366666666666666,
+    "B0": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.8666666666666663
+    },
+    "candidate": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 7.0,
+      "offset_s": -0.36666666666666625
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 57.6,
+    "B0": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "candidate": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 62.8,
+    "B0": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "candidate": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.5,
+      "offset_s": -0.29999999999999716
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 90.3,
+    "B0": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 99.1,
+    "B0": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": true,
+      "event_time": 99.0,
+      "offset_s": -0.09999999999999432
+    },
+    "candidate": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 136.96666666666667,
+    "B0": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 7.0,
+    "B0": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.0,
+      "offset_s": -1.0
+    },
+    "candidate": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.5
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 62.96666666666667,
+    "B0": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "candidate": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 66.2,
+    "B0": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 94.86666666666666,
+    "B0": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 106.6,
+    "B0": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.5,
+      "offset_s": -0.09999999999999432
+    },
+    "candidate": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.5,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 175.43333333333334,
+    "B0": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 5.5,
+    "B0": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -1.0
+    },
+    "candidate": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 5.0,
+      "offset_s": -0.5
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 37.13333333333333,
+    "B0": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 36.5,
+      "offset_s": -0.6333333333333329
+    },
+    "candidate": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 37.0,
+      "offset_s": -0.13333333333333286
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 40.13333333333333,
+    "B0": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": true,
+      "event_time": 39.5,
+      "offset_s": -0.6333333333333329
+    },
+    "candidate": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": true,
+      "event_time": 40.0,
+      "offset_s": -0.13333333333333286
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 65.26666666666667,
+    "B0": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 70.46666666666667,
+    "B0": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 86.7,
+    "B0": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.5,
+      "offset_s": -0.20000000000000284
+    },
+    "candidate": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "boundary_s": 5.0,
+    "B0": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "candidate": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "boundary_s": 44.833333333333336,
+    "B0": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.0,
+      "offset_s": -0.8333333333333357
+    },
+    "candidate": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.0,
+      "offset_s": -0.8333333333333357
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "boundary_s": 47.93333333333333,
+    "B0": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "candidate": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "boundary_s": 65.6,
+    "B0": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "candidate": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "boundary_s": 70.9,
+    "B0": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 69.5,
+      "offset_s": -1.4000000000000057
+    },
+    "candidate": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.9000000000000057
+    },
+    "status": "retained"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "boundary_s": 89.6,
+    "B0": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": true,
+      "event_time": 89.5,
+      "offset_s": -0.09999999999999432
+    },
+    "candidate": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "lost"
+  }
+]

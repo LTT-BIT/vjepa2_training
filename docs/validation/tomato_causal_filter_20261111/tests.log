@@ -1,0 +1,8 @@
+Command: .venv-tomato/bin/python -m pytest -q tests/test_tomato_causal_probability_filter.py
+5 passed in 0.05s
+
+Command: .venv-tomato/bin/python -m pytest -q tests/test_tomato*.py
+240 passed in 6.23s
+
+Initial broad collection: .venv-tomato/bin/python -m pytest -q tests -k tomato
+Collection failed in unrelated tests/test_lemon_doubao_vjepa.py because tools.annotate_lemon_doubao is unavailable. No lemon files changed.
