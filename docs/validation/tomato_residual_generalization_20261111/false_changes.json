@@ -1,0 +1,1201 @@
+[
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "method": "S1",
+    "preserved_exact": 2,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "method": "S2",
+    "preserved_exact": 2,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 62.0,
+        "previous": 2,
+        "label": 3
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "method": "S1",
+    "preserved_exact": 0,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "method": "S2",
+    "preserved_exact": 0,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 58.5,
+        "previous": 1,
+        "label": 2
+      },
+      {
+        "time": 59.5,
+        "previous": 2,
+        "label": 1
+      },
+      {
+        "time": 84.0,
+        "previous": 2,
+        "label": 3
+      },
+      {
+        "time": 168.0,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "method": "S1",
+    "preserved_exact": 4,
+    "removed_exact": [
+      {
+        "time": 96.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 96.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 96.5,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 96.0,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": -0.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "method": "S2",
+    "preserved_exact": 1,
+    "removed_exact": [
+      {
+        "time": 78.0,
+        "previous": 2,
+        "label": 3
+      },
+      {
+        "time": 102.5,
+        "previous": 0,
+        "label": 3
+      },
+      {
+        "time": 103.5,
+        "previous": 3,
+        "label": 0
+      },
+      {
+        "time": 111.0,
+        "previous": 0,
+        "label": 1
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 79.0,
+        "previous": 2,
+        "label": 3
+      },
+      {
+        "time": 176.5,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 78.0,
+          "previous": 2,
+          "label": 3
+        },
+        "after": {
+          "time": 79.0,
+          "previous": 2,
+          "label": 3
+        },
+        "delta_s": 1.0
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "method": "S1",
+    "preserved_exact": 0,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "method": "S2",
+    "preserved_exact": 0,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 78.5,
+        "previous": 2,
+        "label": 3
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "method": "S1",
+    "preserved_exact": 1,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "method": "S2",
+    "preserved_exact": 1,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 51.0,
+        "previous": 1,
+        "label": 2
+      },
+      {
+        "time": 52.0,
+        "previous": 2,
+        "label": 1
+      },
+      {
+        "time": 134.5,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "method": "S1",
+    "preserved_exact": 3,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "method": "S2",
+    "preserved_exact": 2,
+    "removed_exact": [
+      {
+        "time": 67.0,
+        "previous": 2,
+        "label": 3
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 67.5,
+        "previous": 2,
+        "label": 3
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 67.0,
+          "previous": 2,
+          "label": 3
+        },
+        "after": {
+          "time": 67.5,
+          "previous": 2,
+          "label": 3
+        },
+        "delta_s": 0.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "method": "S1",
+    "preserved_exact": 1,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "method": "S2",
+    "preserved_exact": 1,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 40.5,
+        "previous": 2,
+        "label": 3
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "method": "S1",
+    "preserved_exact": 1,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 78.5,
+        "previous": 1,
+        "label": 2
+      },
+      {
+        "time": 79.5,
+        "previous": 2,
+        "label": 1
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "method": "S2",
+    "preserved_exact": 1,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 78.5,
+        "previous": 1,
+        "label": 2
+      },
+      {
+        "time": 79.5,
+        "previous": 2,
+        "label": 1
+      },
+      {
+        "time": 90.0,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "method": "S1",
+    "preserved_exact": 2,
+    "removed_exact": [
+      {
+        "time": 70.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 71.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 70.0,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 71.5,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": 1.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "method": "S2",
+    "preserved_exact": 2,
+    "removed_exact": [
+      {
+        "time": 56.0,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "method": "S1",
+    "preserved_exact": 1,
+    "removed_exact": [
+      {
+        "time": 107.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "method": "S2",
+    "preserved_exact": 1,
+    "removed_exact": [
+      {
+        "time": 167.0,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 166.0,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 167.0,
+          "previous": 1,
+          "label": 2
+        },
+        "after": {
+          "time": 166.0,
+          "previous": 1,
+          "label": 2
+        },
+        "delta_s": -1.0
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "method": "S1",
+    "preserved_exact": 3,
+    "removed_exact": [
+      {
+        "time": 97.0,
+        "previous": 3,
+        "label": 0
+      },
+      {
+        "time": 104.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 97.5,
+        "previous": 3,
+        "label": 0
+      },
+      {
+        "time": 105.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 97.0,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 97.5,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": 0.5
+      },
+      {
+        "before": {
+          "time": 104.5,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 105.0,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": 0.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "method": "S2",
+    "preserved_exact": 3,
+    "removed_exact": [
+      {
+        "time": 78.0,
+        "previous": 2,
+        "label": 3
+      },
+      {
+        "time": 97.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 78.5,
+        "previous": 2,
+        "label": 3
+      },
+      {
+        "time": 96.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 97.0,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 96.5,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": -0.5
+      },
+      {
+        "before": {
+          "time": 78.0,
+          "previous": 2,
+          "label": 3
+        },
+        "after": {
+          "time": 78.5,
+          "previous": 2,
+          "label": 3
+        },
+        "delta_s": 0.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "method": "S1",
+    "preserved_exact": 0,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "method": "S2",
+    "preserved_exact": 0,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 78.5,
+        "previous": 2,
+        "label": 3
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "method": "S1",
+    "preserved_exact": 1,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "method": "S2",
+    "preserved_exact": 1,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 63.5,
+        "previous": 2,
+        "label": 3
+      },
+      {
+        "time": 134.5,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "method": "S1",
+    "preserved_exact": 1,
+    "removed_exact": [
+      {
+        "time": 98.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 99.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 98.5,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 99.0,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": 0.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "method": "S2",
+    "preserved_exact": 0,
+    "removed_exact": [
+      {
+        "time": 66.5,
+        "previous": 2,
+        "label": 3
+      },
+      {
+        "time": 98.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 61.0,
+        "previous": 1,
+        "label": 2
+      },
+      {
+        "time": 67.0,
+        "previous": 2,
+        "label": 3
+      },
+      {
+        "time": 99.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 98.5,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 99.0,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": 0.5
+      },
+      {
+        "before": {
+          "time": 66.5,
+          "previous": 2,
+          "label": 3
+        },
+        "after": {
+          "time": 67.0,
+          "previous": 2,
+          "label": 3
+        },
+        "delta_s": 0.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "method": "S1",
+    "preserved_exact": 2,
+    "removed_exact": [
+      {
+        "time": 63.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 63.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 63.0,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 63.5,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": 0.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "method": "S2",
+    "preserved_exact": 3,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 41.0,
+        "previous": 2,
+        "label": 3
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "method": "S1",
+    "preserved_exact": 2,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "method": "S2",
+    "preserved_exact": 1,
+    "removed_exact": [
+      {
+        "time": 90.0,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "method": "S1",
+    "preserved_exact": 2,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "method": "S2",
+    "preserved_exact": 1,
+    "removed_exact": [
+      {
+        "time": 71.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 70.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 71.5,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 70.0,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": -1.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "method": "S1",
+    "preserved_exact": 0,
+    "removed_exact": [
+      {
+        "time": 119.5,
+        "previous": 0,
+        "label": 1
+      }
+    ],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "method": "S2",
+    "preserved_exact": 0,
+    "removed_exact": [
+      {
+        "time": 119.5,
+        "previous": 0,
+        "label": 1
+      }
+    ],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "method": "S1",
+    "preserved_exact": 4,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "method": "S2",
+    "preserved_exact": 2,
+    "removed_exact": [
+      {
+        "time": 101.5,
+        "previous": 0,
+        "label": 3
+      },
+      {
+        "time": 104.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 96.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "method": "S1",
+    "preserved_exact": 0,
+    "removed_exact": [],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "method": "S2",
+    "preserved_exact": 0,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 79.5,
+        "previous": 2,
+        "label": 3
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "method": "S1",
+    "preserved_exact": 1,
+    "removed_exact": [
+      {
+        "time": 90.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "method": "S2",
+    "preserved_exact": 1,
+    "removed_exact": [
+      {
+        "time": 90.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 63.0,
+        "previous": 2,
+        "label": 3
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "method": "S1",
+    "preserved_exact": 2,
+    "removed_exact": [
+      {
+        "time": 99.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 98.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 99.0,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 98.5,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": -0.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "method": "S2",
+    "preserved_exact": 0,
+    "removed_exact": [
+      {
+        "time": 67.5,
+        "previous": 2,
+        "label": 3
+      },
+      {
+        "time": 99.0,
+        "previous": 3,
+        "label": 0
+      },
+      {
+        "time": 176.5,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 66.5,
+        "previous": 2,
+        "label": 3
+      },
+      {
+        "time": 98.5,
+        "previous": 3,
+        "label": 0
+      },
+      {
+        "time": 176.0,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 176.5,
+          "previous": 1,
+          "label": 2
+        },
+        "after": {
+          "time": 176.0,
+          "previous": 1,
+          "label": 2
+        },
+        "delta_s": -0.5
+      },
+      {
+        "before": {
+          "time": 99.0,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 98.5,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": -0.5
+      },
+      {
+        "before": {
+          "time": 67.5,
+          "previous": 2,
+          "label": 3
+        },
+        "after": {
+          "time": 66.5,
+          "previous": 2,
+          "label": 3
+        },
+        "delta_s": -1.0
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "method": "S1",
+    "preserved_exact": 0,
+    "removed_exact": [
+      {
+        "time": 66.0,
+        "previous": 3,
+        "label": 0
+      },
+      {
+        "time": 70.5,
+        "previous": 0,
+        "label": 1
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 65.5,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [
+      {
+        "before": {
+          "time": 66.0,
+          "previous": 3,
+          "label": 0
+        },
+        "after": {
+          "time": 65.5,
+          "previous": 3,
+          "label": 0
+        },
+        "delta_s": -0.5
+      }
+    ],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "method": "S2",
+    "preserved_exact": 0,
+    "removed_exact": [
+      {
+        "time": 66.0,
+        "previous": 3,
+        "label": 0
+      },
+      {
+        "time": 70.5,
+        "previous": 0,
+        "label": 1
+      }
+    ],
+    "added_exact": [
+      {
+        "time": 63.0,
+        "previous": 3,
+        "label": 0
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "method": "S1",
+    "preserved_exact": 1,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 78.5,
+        "previous": 1,
+        "label": 2
+      },
+      {
+        "time": 79.5,
+        "previous": 2,
+        "label": 1
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "method": "S2",
+    "preserved_exact": 1,
+    "removed_exact": [],
+    "added_exact": [
+      {
+        "time": 90.5,
+        "previous": 1,
+        "label": 2
+      }
+    ],
+    "shifted_false_to_false_diagnostic": [],
+    "scope": "Exact set differences include shifted events. Shift hints pair once within1.5s only for attribution; never alter strict truth matching."
+  }
+]

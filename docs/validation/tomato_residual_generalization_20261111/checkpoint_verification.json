@@ -1,0 +1,538 @@
+{
+  "checks": [
+    {
+      "seed": 42,
+      "scope": "oof",
+      "episode_id": "f5f45674ba11f7f1c266776b",
+      "maximum_probability_error": 2.384185791015625e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "oof",
+      "episode_id": "943dd481c0f37b921a3912b4",
+      "maximum_probability_error": 2.980232238769531e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "oof",
+      "episode_id": "32cba3eecb1d98e78b914611",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "oof",
+      "episode_id": "d11360e8662efcc1e2972811",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "oof",
+      "episode_id": "603c11bbee3eec719e38973e",
+      "maximum_probability_error": 2.980232238769531e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "oof",
+      "episode_id": "da9a9ee05f8293df1591d448",
+      "maximum_probability_error": 5.066394805908203e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "oof",
+      "episode_id": "d7386f672b184f6fd3ce826c",
+      "maximum_probability_error": 3.5762786865234375e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "oof",
+      "episode_id": "6d19dc89e407f785df4ee2c6",
+      "maximum_probability_error": 1.4901161193847656e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "oof",
+      "episode_id": "a81e13951489b866c2710d81",
+      "maximum_probability_error": 2.086162567138672e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "oof",
+      "episode_id": "72b720c740242be509750414",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "development",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "maximum_probability_error": 1.4901161193847656e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "development",
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "development",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "maximum_probability_error": 2.086162567138672e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "development",
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "development",
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "maximum_probability_error": 2.384185791015625e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "development",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "development",
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "maximum_probability_error": 2.980232238769531e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 42,
+      "scope": "development",
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "oof",
+      "episode_id": "f5f45674ba11f7f1c266776b",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "oof",
+      "episode_id": "943dd481c0f37b921a3912b4",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "oof",
+      "episode_id": "32cba3eecb1d98e78b914611",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "oof",
+      "episode_id": "d11360e8662efcc1e2972811",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "oof",
+      "episode_id": "603c11bbee3eec719e38973e",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "oof",
+      "episode_id": "da9a9ee05f8293df1591d448",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "oof",
+      "episode_id": "d7386f672b184f6fd3ce826c",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "oof",
+      "episode_id": "6d19dc89e407f785df4ee2c6",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "oof",
+      "episode_id": "a81e13951489b866c2710d81",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "oof",
+      "episode_id": "72b720c740242be509750414",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "development",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "development",
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "development",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "development",
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "development",
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "development",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "development",
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 43,
+      "scope": "development",
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "oof",
+      "episode_id": "f5f45674ba11f7f1c266776b",
+      "maximum_probability_error": 3.5762786865234375e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "oof",
+      "episode_id": "943dd481c0f37b921a3912b4",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "oof",
+      "episode_id": "32cba3eecb1d98e78b914611",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "oof",
+      "episode_id": "d11360e8662efcc1e2972811",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "oof",
+      "episode_id": "603c11bbee3eec719e38973e",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "oof",
+      "episode_id": "da9a9ee05f8293df1591d448",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "oof",
+      "episode_id": "d7386f672b184f6fd3ce826c",
+      "maximum_probability_error": 2.384185791015625e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "oof",
+      "episode_id": "6d19dc89e407f785df4ee2c6",
+      "maximum_probability_error": 2.384185791015625e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "oof",
+      "episode_id": "a81e13951489b866c2710d81",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "oof",
+      "episode_id": "72b720c740242be509750414",
+      "maximum_probability_error": 2.384185791015625e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "development",
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "development",
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "development",
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "maximum_probability_error": 2.384185791015625e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "development",
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "maximum_probability_error": 2.384185791015625e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "development",
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "maximum_probability_error": 4.172325134277344e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "development",
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "maximum_probability_error": 1.7881393432617188e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "development",
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "maximum_probability_error": 1.1920928955078125e-07,
+      "events_identical": true
+    },
+    {
+      "seed": 44,
+      "scope": "development",
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "maximum_probability_error": 2.384185791015625e-07,
+      "events_identical": true
+    }
+  ],
+  "exports": [
+    {
+      "seed": 42,
+      "fold": 0,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed42/fold0.pt",
+      "original_sha256": "ed82277c4b186bf88ba5c9d2aa60b5ef0d7e152b4f334d38cda570f226816ba4",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed42_fold0.pt",
+      "export_sha256": "1cc76118bd1eb80880808d58f2807de6e4f95a71ce83cbcdbcbfb592da9adfe8",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 42,
+      "fold": 1,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed42/fold1.pt",
+      "original_sha256": "6ed576262db2d687e670291855b269edbe6771946ae0c63b64081b7bf9b53a08",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed42_fold1.pt",
+      "export_sha256": "810ae4c8fd5894f156043e90e503677e6b3e675df574851ea84baaf4731a0ef6",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 42,
+      "fold": 2,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed42/fold2.pt",
+      "original_sha256": "ff7f992dd9d95260a3adee3e74fab4bc25b8d4ec1994128217f6a2fbcc1ff1ac",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed42_fold2.pt",
+      "export_sha256": "df3a664c238469c11f408ff527d2d10f9aa11051223d494d301805ba091308e0",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 42,
+      "fold": 3,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed42/fold3.pt",
+      "original_sha256": "3a8e015443e32650b6e79423b326140881da190a3738f8c608b72ec287aa70c2",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed42_fold3.pt",
+      "export_sha256": "3dcd4a657d9fe4fcc798dba0e87180581daf1f9e29542ac18113b01d03428ade",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 42,
+      "fold": 4,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed42/fold4.pt",
+      "original_sha256": "94f4daf96d0dad7e41d9cb5999c371c6f7dab0708dfbe88bebf742eb39aaaa3e",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed42_fold4.pt",
+      "export_sha256": "fc3b7c5ddb9beb69d385cd6a758f967aa1215024d433409776ddeb39921f8587",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 43,
+      "fold": 0,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed43/fold0.pt",
+      "original_sha256": "77501ab3d337b0cd3f170e58d0d66e3808c686f8435895f847c84d75fe016a86",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed43_fold0.pt",
+      "export_sha256": "fdcf0d9a925f15775b9cb52a0f404ae8ed2bd737974527fe3bbfbc204311aa7f",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 43,
+      "fold": 1,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed43/fold1.pt",
+      "original_sha256": "bff558ffbb749712d5c977f3654183e1d1838553e09ed54aa9e700078682c264",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed43_fold1.pt",
+      "export_sha256": "d6ea909bc4b21202ce0bfc76f446c7d57def702fd426300ab954578b8a24a1dd",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 43,
+      "fold": 2,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed43/fold2.pt",
+      "original_sha256": "502fefdfe55da94ea2fdfcb8496edbc6d97da14a46a8575a3d4805eef7f8afa8",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed43_fold2.pt",
+      "export_sha256": "d7ad7c550916a03fdf06be2764ecb8fe4bb375b5b6428855e0b8be26fb3a28cc",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 43,
+      "fold": 3,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed43/fold3.pt",
+      "original_sha256": "1c197eaca69ca48e37ad33b564fc5886cfd28cef50df665cfb314859184af221",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed43_fold3.pt",
+      "export_sha256": "eec4d3d7157c581f0eb619f4ee3ab9b59443d02e54161a3fc62f52f563422208",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 43,
+      "fold": 4,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed43/fold4.pt",
+      "original_sha256": "23dfff913cca2343160307a1b29910a745aa8fa62dfafefe7c689a713043daf3",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed43_fold4.pt",
+      "export_sha256": "2bcad540364f4bca5b9bb685136c623ec95adc0672d477520630d0610383fe70",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 44,
+      "fold": 0,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed44/fold0.pt",
+      "original_sha256": "ee12dd64fdab94eaa7688ed5ea4bfe768a0032aee6109a41aaba38a349f3b894",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed44_fold0.pt",
+      "export_sha256": "a45fea769196f30582baa4eb9b7e06923a09335039ecdc2ac86f829049a6bc52",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 44,
+      "fold": 1,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed44/fold1.pt",
+      "original_sha256": "9897484d5fb946cda96838900346cab2ced05f7855d8e04a58436f279781932f",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed44_fold1.pt",
+      "export_sha256": "e3ba596395eba4df53a226db79e5e6f17bc6a6a3d1077b3650591fc12dedef46",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 44,
+      "fold": 2,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed44/fold2.pt",
+      "original_sha256": "228916f7f54e8b644add4ac56ed3cd33004400ae04c1adca6ba87d28f22c0427",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed44_fold2.pt",
+      "export_sha256": "b4d1beaa3a01110ebb92eb0c29785251ef1dee178e0855041e80199f1ec621f3",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 44,
+      "fold": 3,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed44/fold3.pt",
+      "original_sha256": "3fbc90f3ea978c504dd8e55ca63327973da4cfa5112679cd33c28d496dc07fb6",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed44_fold3.pt",
+      "export_sha256": "b8ba1ef0e78f86b216fc30f47c18d296dfbf0c574d115d6a21f0e765b5b932ee",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    },
+    {
+      "seed": 44,
+      "fold": 4,
+      "original": "runs/tomato/residual_crossfit_20261111_v1/seed44/fold4.pt",
+      "original_sha256": "4a32f1a2630f00524fe957e1d3fc0e0ac095a523c42c8fcecf6621598f4381dc",
+      "export": "runs/tomato/residual_crossfit_20261111_v1/verification_v2/seed44_fold4.pt",
+      "export_sha256": "47a9316bb9df5529ba2f53abf2226b27cbab5f0b986fd58d5d356a67aa98826c",
+      "tensors_identical": true,
+      "refit_normalization_verified": true
+    }
+  ],
+  "input_hashes_unchanged": true,
+  "original_checkpoints_unchanged": true,
+  "normalization_train_only_verified": true,
+  "metadata_fix": "Numpy string fold IDs converted to plain strings in separate safe-load exports. No weight changes or repeated training. Nested fold creator fixed for future runs."
+}

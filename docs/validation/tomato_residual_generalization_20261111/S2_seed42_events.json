@@ -1,0 +1,4030 @@
+{
+  "oof": {
+    "S0": {
+      "f5f45674ba11f7f1c266776b": {
+        "boundaries": [
+          {
+            "time": 7.966666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 52.53333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 52.53333333333333,
+            "previous": 1,
+            "label": 2,
+            "end": 59.7,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 59.7,
+            "previous": 2,
+            "label": 3,
+            "end": 91.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 91.3,
+            "previous": 3,
+            "label": 0,
+            "end": 114.7,
+            "detected": true,
+            "event_time": 91.0,
+            "offset_s": -0.29999999999999716
+          },
+          {
+            "time": 114.7,
+            "previous": 0,
+            "label": 1,
+            "end": 150.2,
+            "detected": true,
+            "event_time": 114.5,
+            "offset_s": -0.20000000000000284
+          },
+          {
+            "time": 150.2,
+            "previous": 1,
+            "label": 2,
+            "end": 156.56666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 5.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 50.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 57.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 151.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 5.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 50.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 57.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 91.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 114.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 151.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 155.5
+      },
+      "943dd481c0f37b921a3912b4": {
+        "boundaries": [
+          {
+            "time": 10.4,
+            "previous": 0,
+            "label": 1,
+            "end": 44.266666666666666,
+            "detected": true,
+            "event_time": 9.5,
+            "offset_s": -0.9000000000000004
+          },
+          {
+            "time": 44.266666666666666,
+            "previous": 1,
+            "label": 2,
+            "end": 48.53333333333333,
+            "detected": true,
+            "event_time": 43.0,
+            "offset_s": -1.2666666666666657
+          },
+          {
+            "time": 48.53333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 66.93333333333334,
+            "detected": true,
+            "event_time": 47.5,
+            "offset_s": -1.0333333333333314
+          },
+          {
+            "time": 66.93333333333334,
+            "previous": 3,
+            "label": 0,
+            "end": 76.23333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 76.23333333333333,
+            "previous": 0,
+            "label": 1,
+            "end": 101.66666666666667,
+            "detected": true,
+            "event_time": 76.0,
+            "offset_s": -0.23333333333333428
+          },
+          {
+            "time": 101.66666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 109.9,
+            "detected": true,
+            "event_time": 101.5,
+            "offset_s": -0.1666666666666714
+          }
+        ],
+        "false_events": [
+          {
+            "time": 69.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 106.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 107.5,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "events": [
+          {
+            "time": 9.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 43.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 47.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 69.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 76.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 101.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 106.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 107.5,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "duration_s": 108.5
+      },
+      "32cba3eecb1d98e78b914611": {
+        "boundaries": [
+          {
+            "time": 6.966666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 48.333333333333336,
+            "detected": true,
+            "event_time": 6.5,
+            "offset_s": -0.4666666666666668
+          },
+          {
+            "time": 48.333333333333336,
+            "previous": 1,
+            "label": 2,
+            "end": 52.833333333333336,
+            "detected": true,
+            "event_time": 47.5,
+            "offset_s": -0.8333333333333357
+          },
+          {
+            "time": 52.833333333333336,
+            "previous": 2,
+            "label": 3,
+            "end": 75.66666666666667,
+            "detected": true,
+            "event_time": 51.5,
+            "offset_s": -1.3333333333333357
+          },
+          {
+            "time": 75.66666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 83.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 83.46666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 112.96666666666667,
+            "detected": true,
+            "event_time": 82.5,
+            "offset_s": -0.9666666666666686
+          },
+          {
+            "time": 112.96666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 117.96666666666667,
+            "detected": true,
+            "event_time": 112.5,
+            "offset_s": -0.46666666666666856
+          }
+        ],
+        "false_events": [
+          {
+            "time": 79.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "events": [
+          {
+            "time": 6.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 47.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 51.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 79.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 82.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 112.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 116.5
+      },
+      "d11360e8662efcc1e2972811": {
+        "boundaries": [
+          {
+            "time": 6.433333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 37.93333333333333,
+            "detected": true,
+            "event_time": 5.5,
+            "offset_s": -0.9333333333333336
+          },
+          {
+            "time": 37.93333333333333,
+            "previous": 1,
+            "label": 2,
+            "end": 42.266666666666666,
+            "detected": true,
+            "event_time": 37.5,
+            "offset_s": -0.43333333333333
+          },
+          {
+            "time": 42.266666666666666,
+            "previous": 2,
+            "label": 3,
+            "end": 49.7,
+            "detected": true,
+            "event_time": 41.0,
+            "offset_s": -1.2666666666666657
+          },
+          {
+            "time": 49.7,
+            "previous": 3,
+            "label": 0,
+            "end": 62.666666666666664,
+            "detected": true,
+            "event_time": 49.5,
+            "offset_s": -0.20000000000000284
+          },
+          {
+            "time": 62.666666666666664,
+            "previous": 0,
+            "label": 1,
+            "end": 103.86666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 103.86666666666666,
+            "previous": 1,
+            "label": 2,
+            "end": 108.73333333333333,
+            "detected": true,
+            "event_time": 103.0,
+            "offset_s": -0.86666666666666
+          }
+        ],
+        "false_events": [
+          {
+            "time": 51.0,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 52.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 59.5,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "events": [
+          {
+            "time": 5.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 37.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 41.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 49.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 51.0,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 52.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 59.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 103.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 107.5
+      },
+      "603c11bbee3eec719e38973e": {
+        "boundaries": [
+          {
+            "time": 8.0,
+            "previous": 0,
+            "label": 1,
+            "end": 45.36666666666667,
+            "detected": true,
+            "event_time": 7.0,
+            "offset_s": -1.0
+          },
+          {
+            "time": 45.36666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 50.2,
+            "detected": true,
+            "event_time": 44.5,
+            "offset_s": -0.8666666666666671
+          },
+          {
+            "time": 50.2,
+            "previous": 2,
+            "label": 3,
+            "end": 68.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 68.3,
+            "previous": 3,
+            "label": 0,
+            "end": 76.8,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 76.8,
+            "previous": 0,
+            "label": 1,
+            "end": 88.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 88.1,
+            "previous": 1,
+            "label": 2,
+            "end": 93.26666666666667,
+            "detected": true,
+            "event_time": 88.0,
+            "offset_s": -0.09999999999999432
+          }
+        ],
+        "false_events": [
+          {
+            "time": 48.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 68.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 77.0,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "events": [
+          {
+            "time": 7.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 44.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 48.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 68.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 77.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 88.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 92.0
+      },
+      "da9a9ee05f8293df1591d448": {
+        "boundaries": [
+          {
+            "time": 6.333333333333333,
+            "previous": 0,
+            "label": 1,
+            "end": 36.333333333333336,
+            "detected": true,
+            "event_time": 5.5,
+            "offset_s": -0.833333333333333
+          },
+          {
+            "time": 36.333333333333336,
+            "previous": 1,
+            "label": 2,
+            "end": 41.4,
+            "detected": true,
+            "event_time": 36.0,
+            "offset_s": -0.3333333333333357
+          },
+          {
+            "time": 41.4,
+            "previous": 2,
+            "label": 3,
+            "end": 66.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 66.2,
+            "previous": 3,
+            "label": 0,
+            "end": 74.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 74.9,
+            "previous": 0,
+            "label": 1,
+            "end": 112.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 112.9,
+            "previous": 1,
+            "label": 2,
+            "end": 118.66666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 39.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 67.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 73.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 113.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 116.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "events": [
+          {
+            "time": 5.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 36.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 39.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 67.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 73.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 113.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 116.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "duration_s": 117.5
+      },
+      "d7386f672b184f6fd3ce826c": {
+        "boundaries": [
+          {
+            "time": 6.766666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 41.733333333333334,
+            "detected": true,
+            "event_time": 5.5,
+            "offset_s": -1.2666666666666666
+          },
+          {
+            "time": 41.733333333333334,
+            "previous": 1,
+            "label": 2,
+            "end": 48.7,
+            "detected": true,
+            "event_time": 41.5,
+            "offset_s": -0.23333333333333428
+          },
+          {
+            "time": 48.7,
+            "previous": 2,
+            "label": 3,
+            "end": 64.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 64.46666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 73.73333333333333,
+            "detected": true,
+            "event_time": 63.0,
+            "offset_s": -1.4666666666666686
+          },
+          {
+            "time": 73.73333333333333,
+            "previous": 0,
+            "label": 1,
+            "end": 122.36666666666666,
+            "detected": true,
+            "event_time": 73.5,
+            "offset_s": -0.23333333333333428
+          },
+          {
+            "time": 122.36666666666666,
+            "previous": 1,
+            "label": 2,
+            "end": 126.76666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 45.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 48.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 49.5,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 123.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 5.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 41.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 45.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 48.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 49.5,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 63.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 73.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 123.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 125.5
+      },
+      "6d19dc89e407f785df4ee2c6": {
+        "boundaries": [
+          {
+            "time": 7.433333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 69.7,
+            "detected": true,
+            "event_time": 6.5,
+            "offset_s": -0.9333333333333336
+          },
+          {
+            "time": 69.7,
+            "previous": 1,
+            "label": 2,
+            "end": 74.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 74.2,
+            "previous": 2,
+            "label": 3,
+            "end": 86.03333333333333,
+            "detected": true,
+            "event_time": 73.5,
+            "offset_s": -0.7000000000000028
+          },
+          {
+            "time": 86.03333333333333,
+            "previous": 3,
+            "label": 0,
+            "end": 95.93333333333334,
+            "detected": true,
+            "event_time": 86.0,
+            "offset_s": -0.03333333333333144
+          },
+          {
+            "time": 95.93333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 131.7,
+            "detected": true,
+            "event_time": 95.0,
+            "offset_s": -0.9333333333333371
+          },
+          {
+            "time": 131.7,
+            "previous": 1,
+            "label": 2,
+            "end": 136.36666666666667,
+            "detected": true,
+            "event_time": 131.0,
+            "offset_s": -0.6999999999999886
+          }
+        ],
+        "false_events": [
+          {
+            "time": 67.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 6.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 67.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 73.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 86.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 95.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 131.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 135.0
+      },
+      "a81e13951489b866c2710d81": {
+        "boundaries": [
+          {
+            "time": 9.4,
+            "previous": 0,
+            "label": 1,
+            "end": 47.833333333333336,
+            "detected": true,
+            "event_time": 8.0,
+            "offset_s": -1.4000000000000004
+          },
+          {
+            "time": 47.833333333333336,
+            "previous": 1,
+            "label": 2,
+            "end": 51.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 51.6,
+            "previous": 2,
+            "label": 3,
+            "end": 60.63333333333333,
+            "detected": true,
+            "event_time": 51.0,
+            "offset_s": -0.6000000000000014
+          },
+          {
+            "time": 60.63333333333333,
+            "previous": 3,
+            "label": 0,
+            "end": 68.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 68.4,
+            "previous": 0,
+            "label": 1,
+            "end": 88.3,
+            "detected": true,
+            "event_time": 67.5,
+            "offset_s": -0.9000000000000057
+          },
+          {
+            "time": 88.3,
+            "previous": 1,
+            "label": 2,
+            "end": 92.43333333333334,
+            "detected": true,
+            "event_time": 88.0,
+            "offset_s": -0.29999999999999716
+          }
+        ],
+        "false_events": [
+          {
+            "time": 46.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 62.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "events": [
+          {
+            "time": 8.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 46.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 51.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 62.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 67.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 88.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 91.0
+      },
+      "72b720c740242be509750414": {
+        "boundaries": [
+          {
+            "time": 7.833333333333333,
+            "previous": 0,
+            "label": 1,
+            "end": 39.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 39.1,
+            "previous": 1,
+            "label": 2,
+            "end": 43.06666666666667,
+            "detected": true,
+            "event_time": 39.0,
+            "offset_s": -0.10000000000000142
+          },
+          {
+            "time": 43.06666666666667,
+            "previous": 2,
+            "label": 3,
+            "end": 57.733333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 57.733333333333334,
+            "previous": 3,
+            "label": 0,
+            "end": 75.86666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 75.86666666666666,
+            "previous": 0,
+            "label": 1,
+            "end": 103.26666666666667,
+            "detected": true,
+            "event_time": 75.5,
+            "offset_s": -0.36666666666666003
+          },
+          {
+            "time": 103.26666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 107.66666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 8.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 41.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 60.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 103.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 106.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "events": [
+          {
+            "time": 8.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 39.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 41.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 60.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 75.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 103.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 106.0,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "duration_s": 106.5
+      }
+    },
+    "S2": {
+      "f5f45674ba11f7f1c266776b": {
+        "boundaries": [
+          {
+            "time": 7.966666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 52.53333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 52.53333333333333,
+            "previous": 1,
+            "label": 2,
+            "end": 59.7,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 59.7,
+            "previous": 2,
+            "label": 3,
+            "end": 91.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 91.3,
+            "previous": 3,
+            "label": 0,
+            "end": 114.7,
+            "detected": true,
+            "event_time": 90.0,
+            "offset_s": -1.2999999999999972
+          },
+          {
+            "time": 114.7,
+            "previous": 0,
+            "label": 1,
+            "end": 150.2,
+            "detected": true,
+            "event_time": 114.5,
+            "offset_s": -0.20000000000000284
+          },
+          {
+            "time": 150.2,
+            "previous": 1,
+            "label": 2,
+            "end": 156.56666666666666,
+            "detected": true,
+            "event_time": 149.0,
+            "offset_s": -1.1999999999999886
+          }
+        ],
+        "false_events": [
+          {
+            "time": 5.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 50.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 57.5,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "events": [
+          {
+            "time": 5.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 50.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 57.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 90.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 114.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 149.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 155.5
+      },
+      "943dd481c0f37b921a3912b4": {
+        "boundaries": [
+          {
+            "time": 10.4,
+            "previous": 0,
+            "label": 1,
+            "end": 44.266666666666666,
+            "detected": true,
+            "event_time": 9.5,
+            "offset_s": -0.9000000000000004
+          },
+          {
+            "time": 44.266666666666666,
+            "previous": 1,
+            "label": 2,
+            "end": 48.53333333333333,
+            "detected": true,
+            "event_time": 43.0,
+            "offset_s": -1.2666666666666657
+          },
+          {
+            "time": 48.53333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 66.93333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 66.93333333333334,
+            "previous": 3,
+            "label": 0,
+            "end": 76.23333333333333,
+            "detected": true,
+            "event_time": 66.5,
+            "offset_s": -0.4333333333333371
+          },
+          {
+            "time": 76.23333333333333,
+            "previous": 0,
+            "label": 1,
+            "end": 101.66666666666667,
+            "detected": true,
+            "event_time": 76.0,
+            "offset_s": -0.23333333333333428
+          },
+          {
+            "time": 101.66666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 109.9,
+            "detected": true,
+            "event_time": 101.5,
+            "offset_s": -0.1666666666666714
+          }
+        ],
+        "false_events": [
+          {
+            "time": 49.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 107.5,
+            "previous": 2,
+            "label": 0
+          }
+        ],
+        "events": [
+          {
+            "time": 9.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 43.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 49.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 66.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 76.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 101.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 107.5,
+            "previous": 2,
+            "label": 0
+          }
+        ],
+        "duration_s": 108.5
+      },
+      "32cba3eecb1d98e78b914611": {
+        "boundaries": [
+          {
+            "time": 6.966666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 48.333333333333336,
+            "detected": true,
+            "event_time": 6.5,
+            "offset_s": -0.4666666666666668
+          },
+          {
+            "time": 48.333333333333336,
+            "previous": 1,
+            "label": 2,
+            "end": 52.833333333333336,
+            "detected": true,
+            "event_time": 47.5,
+            "offset_s": -0.8333333333333357
+          },
+          {
+            "time": 52.833333333333336,
+            "previous": 2,
+            "label": 3,
+            "end": 75.66666666666667,
+            "detected": true,
+            "event_time": 52.5,
+            "offset_s": -0.3333333333333357
+          },
+          {
+            "time": 75.66666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 83.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 83.46666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 112.96666666666667,
+            "detected": true,
+            "event_time": 82.5,
+            "offset_s": -0.9666666666666686
+          },
+          {
+            "time": 112.96666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 117.96666666666667,
+            "detected": true,
+            "event_time": 112.5,
+            "offset_s": -0.46666666666666856
+          }
+        ],
+        "false_events": [
+          {
+            "time": 76.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "events": [
+          {
+            "time": 6.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 47.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 52.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 76.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 82.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 112.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 116.5
+      },
+      "d11360e8662efcc1e2972811": {
+        "boundaries": [
+          {
+            "time": 6.433333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 37.93333333333333,
+            "detected": true,
+            "event_time": 5.5,
+            "offset_s": -0.9333333333333336
+          },
+          {
+            "time": 37.93333333333333,
+            "previous": 1,
+            "label": 2,
+            "end": 42.266666666666666,
+            "detected": true,
+            "event_time": 37.5,
+            "offset_s": -0.43333333333333
+          },
+          {
+            "time": 42.266666666666666,
+            "previous": 2,
+            "label": 3,
+            "end": 49.7,
+            "detected": true,
+            "event_time": 41.0,
+            "offset_s": -1.2666666666666657
+          },
+          {
+            "time": 49.7,
+            "previous": 3,
+            "label": 0,
+            "end": 62.666666666666664,
+            "detected": true,
+            "event_time": 49.0,
+            "offset_s": -0.7000000000000028
+          },
+          {
+            "time": 62.666666666666664,
+            "previous": 0,
+            "label": 1,
+            "end": 103.86666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 103.86666666666666,
+            "previous": 1,
+            "label": 2,
+            "end": 108.73333333333333,
+            "detected": true,
+            "event_time": 103.0,
+            "offset_s": -0.86666666666666
+          }
+        ],
+        "false_events": [
+          {
+            "time": 51.0,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 52.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 59.5,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "events": [
+          {
+            "time": 5.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 37.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 41.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 49.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 51.0,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 52.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 59.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 103.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 107.5
+      },
+      "603c11bbee3eec719e38973e": {
+        "boundaries": [
+          {
+            "time": 8.0,
+            "previous": 0,
+            "label": 1,
+            "end": 45.36666666666667,
+            "detected": true,
+            "event_time": 7.0,
+            "offset_s": -1.0
+          },
+          {
+            "time": 45.36666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 50.2,
+            "detected": true,
+            "event_time": 44.5,
+            "offset_s": -0.8666666666666671
+          },
+          {
+            "time": 50.2,
+            "previous": 2,
+            "label": 3,
+            "end": 68.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 68.3,
+            "previous": 3,
+            "label": 0,
+            "end": 76.8,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 76.8,
+            "previous": 0,
+            "label": 1,
+            "end": 88.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 88.1,
+            "previous": 1,
+            "label": 2,
+            "end": 93.26666666666667,
+            "detected": true,
+            "event_time": 88.0,
+            "offset_s": -0.09999999999999432
+          }
+        ],
+        "false_events": [
+          {
+            "time": 48.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 59.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 61.0,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 68.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 77.0,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "events": [
+          {
+            "time": 7.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 44.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 48.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 59.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 61.0,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 68.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 77.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 88.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 92.0
+      },
+      "da9a9ee05f8293df1591d448": {
+        "boundaries": [
+          {
+            "time": 6.333333333333333,
+            "previous": 0,
+            "label": 1,
+            "end": 36.333333333333336,
+            "detected": true,
+            "event_time": 5.5,
+            "offset_s": -0.833333333333333
+          },
+          {
+            "time": 36.333333333333336,
+            "previous": 1,
+            "label": 2,
+            "end": 41.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 41.4,
+            "previous": 2,
+            "label": 3,
+            "end": 66.2,
+            "detected": true,
+            "event_time": 41.0,
+            "offset_s": -0.3999999999999986
+          },
+          {
+            "time": 66.2,
+            "previous": 3,
+            "label": 0,
+            "end": 74.9,
+            "detected": true,
+            "event_time": 66.0,
+            "offset_s": -0.20000000000000284
+          },
+          {
+            "time": 74.9,
+            "previous": 0,
+            "label": 1,
+            "end": 112.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 112.9,
+            "previous": 1,
+            "label": 2,
+            "end": 118.66666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 37.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 73.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 113.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 5.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 37.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 41.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 66.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 73.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 113.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 117.5
+      },
+      "d7386f672b184f6fd3ce826c": {
+        "boundaries": [
+          {
+            "time": 6.766666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 41.733333333333334,
+            "detected": true,
+            "event_time": 5.5,
+            "offset_s": -1.2666666666666666
+          },
+          {
+            "time": 41.733333333333334,
+            "previous": 1,
+            "label": 2,
+            "end": 48.7,
+            "detected": true,
+            "event_time": 41.5,
+            "offset_s": -0.23333333333333428
+          },
+          {
+            "time": 48.7,
+            "previous": 2,
+            "label": 3,
+            "end": 64.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 64.46666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 73.73333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 73.73333333333333,
+            "previous": 0,
+            "label": 1,
+            "end": 122.36666666666666,
+            "detected": true,
+            "event_time": 73.5,
+            "offset_s": -0.23333333333333428
+          },
+          {
+            "time": 122.36666666666666,
+            "previous": 1,
+            "label": 2,
+            "end": 126.76666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 46.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 49.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 50.5,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 59.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 122.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 5.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 41.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 46.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 49.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 50.5,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 59.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 73.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 122.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 125.5
+      },
+      "6d19dc89e407f785df4ee2c6": {
+        "boundaries": [
+          {
+            "time": 7.433333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 69.7,
+            "detected": true,
+            "event_time": 6.5,
+            "offset_s": -0.9333333333333336
+          },
+          {
+            "time": 69.7,
+            "previous": 1,
+            "label": 2,
+            "end": 74.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 74.2,
+            "previous": 2,
+            "label": 3,
+            "end": 86.03333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 86.03333333333333,
+            "previous": 3,
+            "label": 0,
+            "end": 95.93333333333334,
+            "detected": true,
+            "event_time": 85.5,
+            "offset_s": -0.5333333333333314
+          },
+          {
+            "time": 95.93333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 131.7,
+            "detected": true,
+            "event_time": 94.5,
+            "offset_s": -1.4333333333333371
+          },
+          {
+            "time": 131.7,
+            "previous": 1,
+            "label": 2,
+            "end": 136.36666666666667,
+            "detected": true,
+            "event_time": 131.0,
+            "offset_s": -0.6999999999999886
+          }
+        ],
+        "false_events": [
+          {
+            "time": 67.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 74.5,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "events": [
+          {
+            "time": 6.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 67.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 74.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 85.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 94.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 131.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 135.0
+      },
+      "a81e13951489b866c2710d81": {
+        "boundaries": [
+          {
+            "time": 9.4,
+            "previous": 0,
+            "label": 1,
+            "end": 47.833333333333336,
+            "detected": true,
+            "event_time": 8.0,
+            "offset_s": -1.4000000000000004
+          },
+          {
+            "time": 47.833333333333336,
+            "previous": 1,
+            "label": 2,
+            "end": 51.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 51.6,
+            "previous": 2,
+            "label": 3,
+            "end": 60.63333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 60.63333333333333,
+            "previous": 3,
+            "label": 0,
+            "end": 68.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 68.4,
+            "previous": 0,
+            "label": 1,
+            "end": 88.3,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 88.3,
+            "previous": 1,
+            "label": 2,
+            "end": 92.43333333333334,
+            "detected": true,
+            "event_time": 88.0,
+            "offset_s": -0.29999999999999716
+          }
+        ],
+        "false_events": [
+          {
+            "time": 46.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 52.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 61.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 68.5,
+            "previous": 0,
+            "label": 2
+          },
+          {
+            "time": 69.5,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 78.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 79.5,
+            "previous": 2,
+            "label": 1
+          }
+        ],
+        "events": [
+          {
+            "time": 8.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 46.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 52.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 61.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 68.5,
+            "previous": 0,
+            "label": 2
+          },
+          {
+            "time": 69.5,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 78.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 79.5,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 88.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 91.0
+      },
+      "72b720c740242be509750414": {
+        "boundaries": [
+          {
+            "time": 7.833333333333333,
+            "previous": 0,
+            "label": 1,
+            "end": 39.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 39.1,
+            "previous": 1,
+            "label": 2,
+            "end": 43.06666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 43.06666666666667,
+            "previous": 2,
+            "label": 3,
+            "end": 57.733333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 57.733333333333334,
+            "previous": 3,
+            "label": 0,
+            "end": 75.86666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 75.86666666666666,
+            "previous": 0,
+            "label": 1,
+            "end": 103.26666666666667,
+            "detected": true,
+            "event_time": 75.5,
+            "offset_s": -0.36666666666666003
+          },
+          {
+            "time": 103.26666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 107.66666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 8.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 39.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 43.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 60.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 73.0,
+            "previous": 0,
+            "label": 2
+          },
+          {
+            "time": 74.0,
+            "previous": 2,
+            "label": 0
+          },
+          {
+            "time": 103.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 8.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 39.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 43.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 60.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 73.0,
+            "previous": 0,
+            "label": 2
+          },
+          {
+            "time": 74.0,
+            "previous": 2,
+            "label": 0
+          },
+          {
+            "time": 75.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 103.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 106.5
+      }
+    }
+  },
+  "development": {
+    "S0": {
+      "3e645bf4e137d0f836c9d7ff": {
+        "boundaries": [
+          {
+            "time": 8.833333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 55.8,
+            "detected": true,
+            "event_time": 8.0,
+            "offset_s": -0.8333333333333339
+          },
+          {
+            "time": 55.8,
+            "previous": 1,
+            "label": 2,
+            "end": 61.766666666666666,
+            "detected": true,
+            "event_time": 55.5,
+            "offset_s": -0.29999999999999716
+          },
+          {
+            "time": 61.766666666666666,
+            "previous": 2,
+            "label": 3,
+            "end": 74.23333333333333,
+            "detected": true,
+            "event_time": 61.0,
+            "offset_s": -0.7666666666666657
+          },
+          {
+            "time": 74.23333333333333,
+            "previous": 3,
+            "label": 0,
+            "end": 81.0,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 81.0,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 129.2,
+            "previous": 1,
+            "label": 2,
+            "end": 133.86666666666667,
+            "detected": true,
+            "event_time": 128.5,
+            "offset_s": -0.6999999999999886
+          }
+        ],
+        "false_events": [
+          {
+            "time": 70.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 81.5,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "events": [
+          {
+            "time": 8.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 55.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 61.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 70.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 81.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 128.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 132.5
+      },
+      "27d8bc0413a42341c7e8c3e5": {
+        "boundaries": [
+          {
+            "time": 10.233333333333333,
+            "previous": 0,
+            "label": 1,
+            "end": 76.6,
+            "detected": true,
+            "event_time": 9.0,
+            "offset_s": -1.2333333333333325
+          },
+          {
+            "time": 76.6,
+            "previous": 1,
+            "label": 2,
+            "end": 82.46666666666667,
+            "detected": true,
+            "event_time": 76.5,
+            "offset_s": -0.09999999999999432
+          },
+          {
+            "time": 82.46666666666667,
+            "previous": 2,
+            "label": 3,
+            "end": 109.6,
+            "detected": true,
+            "event_time": 82.0,
+            "offset_s": -0.46666666666666856
+          },
+          {
+            "time": 109.6,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.0,
+            "offset_s": -0.5999999999999943
+          },
+          {
+            "time": 119.4,
+            "previous": 0,
+            "label": 1,
+            "end": 169.9,
+            "detected": true,
+            "event_time": 119.0,
+            "offset_s": -0.4000000000000057
+          },
+          {
+            "time": 169.9,
+            "previous": 1,
+            "label": 2,
+            "end": 175.0,
+            "detected": true,
+            "event_time": 169.5,
+            "offset_s": -0.4000000000000057
+          }
+        ],
+        "false_events": [],
+        "events": [
+          {
+            "time": 9.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 76.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 82.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 109.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 119.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 169.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 173.5
+      },
+      "0b12ac0fda9d7cd77dee6e60": {
+        "boundaries": [
+          {
+            "time": 7.566666666666666,
+            "previous": 0,
+            "label": 1,
+            "end": 73.86666666666666,
+            "detected": true,
+            "event_time": 7.0,
+            "offset_s": -0.5666666666666664
+          },
+          {
+            "time": 73.86666666666666,
+            "previous": 1,
+            "label": 2,
+            "end": 80.66666666666667,
+            "detected": true,
+            "event_time": 73.5,
+            "offset_s": -0.36666666666666003
+          },
+          {
+            "time": 80.66666666666667,
+            "previous": 2,
+            "label": 3,
+            "end": 99.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 99.13333333333334,
+            "previous": 3,
+            "label": 0,
+            "end": 113.76666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 113.76666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 175.56666666666666,
+            "previous": 1,
+            "label": 2,
+            "end": 180.5,
+            "detected": true,
+            "event_time": 175.0,
+            "offset_s": -0.5666666666666629
+          }
+        ],
+        "false_events": [
+          {
+            "time": 78.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 96.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 102.5,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 103.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 111.0,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "events": [
+          {
+            "time": 7.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 73.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 78.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 96.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 102.5,
+            "previous": 0,
+            "label": 3
+          },
+          {
+            "time": 103.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 111.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 175.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 179.0
+      },
+      "61c420843f11ca54bfe804ee": {
+        "boundaries": [
+          {
+            "time": 9.566666666666666,
+            "previous": 0,
+            "label": 1,
+            "end": 71.0,
+            "detected": true,
+            "event_time": 9.0,
+            "offset_s": -0.5666666666666664
+          },
+          {
+            "time": 71.0,
+            "previous": 1,
+            "label": 2,
+            "end": 77.6,
+            "detected": true,
+            "event_time": 70.5,
+            "offset_s": -0.5
+          },
+          {
+            "time": 77.6,
+            "previous": 2,
+            "label": 3,
+            "end": 90.4,
+            "detected": true,
+            "event_time": 76.5,
+            "offset_s": -1.0999999999999943
+          },
+          {
+            "time": 90.4,
+            "previous": 3,
+            "label": 0,
+            "end": 100.66666666666667,
+            "detected": true,
+            "event_time": 90.0,
+            "offset_s": -0.4000000000000057
+          },
+          {
+            "time": 100.66666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 138.63333333333333,
+            "detected": true,
+            "event_time": 100.0,
+            "offset_s": -0.6666666666666714
+          },
+          {
+            "time": 138.63333333333333,
+            "previous": 1,
+            "label": 2,
+            "end": 142.83333333333334,
+            "detected": true,
+            "event_time": 138.5,
+            "offset_s": -0.13333333333332575
+          }
+        ],
+        "false_events": [],
+        "events": [
+          {
+            "time": 9.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 70.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 76.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 90.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 100.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 138.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 141.5
+      },
+      "5b82f4bb76e70d8bf12c0798": {
+        "boundaries": [
+          {
+            "time": 7.366666666666666,
+            "previous": 0,
+            "label": 1,
+            "end": 57.6,
+            "detected": true,
+            "event_time": 6.5,
+            "offset_s": -0.8666666666666663
+          },
+          {
+            "time": 57.6,
+            "previous": 1,
+            "label": 2,
+            "end": 62.8,
+            "detected": true,
+            "event_time": 57.0,
+            "offset_s": -0.6000000000000014
+          },
+          {
+            "time": 62.8,
+            "previous": 2,
+            "label": 3,
+            "end": 90.3,
+            "detected": true,
+            "event_time": 62.0,
+            "offset_s": -0.7999999999999972
+          },
+          {
+            "time": 90.3,
+            "previous": 3,
+            "label": 0,
+            "end": 99.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 99.1,
+            "previous": 0,
+            "label": 1,
+            "end": 136.96666666666667,
+            "detected": true,
+            "event_time": 99.0,
+            "offset_s": -0.09999999999999432
+          },
+          {
+            "time": 136.96666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 140.4,
+            "detected": true,
+            "event_time": 136.5,
+            "offset_s": -0.46666666666666856
+          }
+        ],
+        "false_events": [
+          {
+            "time": 90.5,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "events": [
+          {
+            "time": 6.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 57.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 62.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 90.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 99.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 136.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 139.0
+      },
+      "f53f0b6fb7f3888f87a0f8ff": {
+        "boundaries": [
+          {
+            "time": 7.0,
+            "previous": 0,
+            "label": 1,
+            "end": 62.96666666666667,
+            "detected": true,
+            "event_time": 6.0,
+            "offset_s": -1.0
+          },
+          {
+            "time": 62.96666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 66.2,
+            "detected": true,
+            "event_time": 61.5,
+            "offset_s": -1.4666666666666686
+          },
+          {
+            "time": 66.2,
+            "previous": 2,
+            "label": 3,
+            "end": 94.86666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 94.86666666666666,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 106.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.43333333333334,
+            "detected": true,
+            "event_time": 106.5,
+            "offset_s": -0.09999999999999432
+          },
+          {
+            "time": 175.43333333333334,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 67.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 99.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 175.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 6.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 61.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 67.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 99.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 106.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 175.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 178.0
+      },
+      "a8b23394b642f0bb769a0391": {
+        "boundaries": [
+          {
+            "time": 5.5,
+            "previous": 0,
+            "label": 1,
+            "end": 37.13333333333333,
+            "detected": true,
+            "event_time": 4.5,
+            "offset_s": -1.0
+          },
+          {
+            "time": 37.13333333333333,
+            "previous": 1,
+            "label": 2,
+            "end": 40.13333333333333,
+            "detected": true,
+            "event_time": 37.0,
+            "offset_s": -0.13333333333333286
+          },
+          {
+            "time": 40.13333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 65.26666666666667,
+            "detected": true,
+            "event_time": 40.0,
+            "offset_s": -0.13333333333333286
+          },
+          {
+            "time": 65.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 70.46666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 86.7,
+            "detected": true,
+            "event_time": 70.0,
+            "offset_s": -0.46666666666666856
+          },
+          {
+            "time": 86.7,
+            "previous": 1,
+            "label": 2,
+            "end": 89.5,
+            "detected": true,
+            "event_time": 86.0,
+            "offset_s": -0.7000000000000028
+          }
+        ],
+        "false_events": [
+          {
+            "time": 65.5,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "events": [
+          {
+            "time": 4.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 37.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 40.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 65.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 70.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 86.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 88.0
+      },
+      "d0f8727d35eced697dcf79fe": {
+        "boundaries": [
+          {
+            "time": 5.0,
+            "previous": 0,
+            "label": 1,
+            "end": 44.833333333333336,
+            "detected": true,
+            "event_time": 4.5,
+            "offset_s": -0.5
+          },
+          {
+            "time": 44.833333333333336,
+            "previous": 1,
+            "label": 2,
+            "end": 47.93333333333333,
+            "detected": true,
+            "event_time": 44.0,
+            "offset_s": -0.8333333333333357
+          },
+          {
+            "time": 47.93333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 65.6,
+            "detected": true,
+            "event_time": 47.0,
+            "offset_s": -0.93333333333333
+          },
+          {
+            "time": 65.6,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 70.9,
+            "previous": 0,
+            "label": 1,
+            "end": 89.6,
+            "detected": true,
+            "event_time": 69.5,
+            "offset_s": -1.4000000000000057
+          },
+          {
+            "time": 89.6,
+            "previous": 1,
+            "label": 2,
+            "end": 92.43333333333334,
+            "detected": true,
+            "event_time": 89.5,
+            "offset_s": -0.09999999999999432
+          }
+        ],
+        "false_events": [
+          {
+            "time": 66.0,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "events": [
+          {
+            "time": 4.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 44.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 47.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 66.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 69.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 89.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 91.0
+      }
+    },
+    "S2": {
+      "3e645bf4e137d0f836c9d7ff": {
+        "boundaries": [
+          {
+            "time": 8.833333333333334,
+            "previous": 0,
+            "label": 1,
+            "end": 55.8,
+            "detected": true,
+            "event_time": 8.0,
+            "offset_s": -0.8333333333333339
+          },
+          {
+            "time": 55.8,
+            "previous": 1,
+            "label": 2,
+            "end": 61.766666666666666,
+            "detected": true,
+            "event_time": 55.5,
+            "offset_s": -0.29999999999999716
+          },
+          {
+            "time": 61.766666666666666,
+            "previous": 2,
+            "label": 3,
+            "end": 74.23333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 74.23333333333333,
+            "previous": 3,
+            "label": 0,
+            "end": 81.0,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 81.0,
+            "previous": 0,
+            "label": 1,
+            "end": 129.2,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 129.2,
+            "previous": 1,
+            "label": 2,
+            "end": 133.86666666666667,
+            "detected": true,
+            "event_time": 128.5,
+            "offset_s": -0.6999999999999886
+          }
+        ],
+        "false_events": [
+          {
+            "time": 62.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 70.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 81.5,
+            "previous": 0,
+            "label": 1
+          }
+        ],
+        "events": [
+          {
+            "time": 8.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 55.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 62.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 70.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 81.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 128.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 132.5
+      },
+      "27d8bc0413a42341c7e8c3e5": {
+        "boundaries": [
+          {
+            "time": 10.233333333333333,
+            "previous": 0,
+            "label": 1,
+            "end": 76.6,
+            "detected": true,
+            "event_time": 9.0,
+            "offset_s": -1.2333333333333325
+          },
+          {
+            "time": 76.6,
+            "previous": 1,
+            "label": 2,
+            "end": 82.46666666666667,
+            "detected": true,
+            "event_time": 76.0,
+            "offset_s": -0.5999999999999943
+          },
+          {
+            "time": 82.46666666666667,
+            "previous": 2,
+            "label": 3,
+            "end": 109.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 109.6,
+            "previous": 3,
+            "label": 0,
+            "end": 119.4,
+            "detected": true,
+            "event_time": 109.0,
+            "offset_s": -0.5999999999999943
+          },
+          {
+            "time": 119.4,
+            "previous": 0,
+            "label": 1,
+            "end": 169.9,
+            "detected": true,
+            "event_time": 119.0,
+            "offset_s": -0.4000000000000057
+          },
+          {
+            "time": 169.9,
+            "previous": 1,
+            "label": 2,
+            "end": 175.0,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 58.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 59.5,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 84.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 168.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 9.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 58.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 59.5,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 76.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 84.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 109.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 119.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 168.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 173.5
+      },
+      "0b12ac0fda9d7cd77dee6e60": {
+        "boundaries": [
+          {
+            "time": 7.566666666666666,
+            "previous": 0,
+            "label": 1,
+            "end": 73.86666666666666,
+            "detected": true,
+            "event_time": 7.0,
+            "offset_s": -0.5666666666666664
+          },
+          {
+            "time": 73.86666666666666,
+            "previous": 1,
+            "label": 2,
+            "end": 80.66666666666667,
+            "detected": true,
+            "event_time": 73.5,
+            "offset_s": -0.36666666666666003
+          },
+          {
+            "time": 80.66666666666667,
+            "previous": 2,
+            "label": 3,
+            "end": 99.13333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 99.13333333333334,
+            "previous": 3,
+            "label": 0,
+            "end": 113.76666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 113.76666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 175.56666666666666,
+            "detected": true,
+            "event_time": 112.5,
+            "offset_s": -1.2666666666666657
+          },
+          {
+            "time": 175.56666666666666,
+            "previous": 1,
+            "label": 2,
+            "end": 180.5,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 79.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 96.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 176.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 7.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 73.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 79.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 96.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 112.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 176.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 179.0
+      },
+      "61c420843f11ca54bfe804ee": {
+        "boundaries": [
+          {
+            "time": 9.566666666666666,
+            "previous": 0,
+            "label": 1,
+            "end": 71.0,
+            "detected": true,
+            "event_time": 9.0,
+            "offset_s": -0.5666666666666664
+          },
+          {
+            "time": 71.0,
+            "previous": 1,
+            "label": 2,
+            "end": 77.6,
+            "detected": true,
+            "event_time": 70.5,
+            "offset_s": -0.5
+          },
+          {
+            "time": 77.6,
+            "previous": 2,
+            "label": 3,
+            "end": 90.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 90.4,
+            "previous": 3,
+            "label": 0,
+            "end": 100.66666666666667,
+            "detected": true,
+            "event_time": 90.0,
+            "offset_s": -0.4000000000000057
+          },
+          {
+            "time": 100.66666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 138.63333333333333,
+            "detected": true,
+            "event_time": 99.5,
+            "offset_s": -1.1666666666666714
+          },
+          {
+            "time": 138.63333333333333,
+            "previous": 1,
+            "label": 2,
+            "end": 142.83333333333334,
+            "detected": true,
+            "event_time": 138.5,
+            "offset_s": -0.13333333333332575
+          }
+        ],
+        "false_events": [
+          {
+            "time": 78.5,
+            "previous": 2,
+            "label": 3
+          }
+        ],
+        "events": [
+          {
+            "time": 9.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 70.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 78.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 90.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 99.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 138.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 141.5
+      },
+      "5b82f4bb76e70d8bf12c0798": {
+        "boundaries": [
+          {
+            "time": 7.366666666666666,
+            "previous": 0,
+            "label": 1,
+            "end": 57.6,
+            "detected": true,
+            "event_time": 6.5,
+            "offset_s": -0.8666666666666663
+          },
+          {
+            "time": 57.6,
+            "previous": 1,
+            "label": 2,
+            "end": 62.8,
+            "detected": true,
+            "event_time": 57.0,
+            "offset_s": -0.6000000000000014
+          },
+          {
+            "time": 62.8,
+            "previous": 2,
+            "label": 3,
+            "end": 90.3,
+            "detected": true,
+            "event_time": 62.5,
+            "offset_s": -0.29999999999999716
+          },
+          {
+            "time": 90.3,
+            "previous": 3,
+            "label": 0,
+            "end": 99.1,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 99.1,
+            "previous": 0,
+            "label": 1,
+            "end": 136.96666666666667,
+            "detected": true,
+            "event_time": 99.0,
+            "offset_s": -0.09999999999999432
+          },
+          {
+            "time": 136.96666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 140.4,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 51.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 52.0,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 90.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 134.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 6.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 51.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 52.0,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 57.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 62.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 90.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 99.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 134.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 139.0
+      },
+      "f53f0b6fb7f3888f87a0f8ff": {
+        "boundaries": [
+          {
+            "time": 7.0,
+            "previous": 0,
+            "label": 1,
+            "end": 62.96666666666667,
+            "detected": true,
+            "event_time": 6.0,
+            "offset_s": -1.0
+          },
+          {
+            "time": 62.96666666666667,
+            "previous": 1,
+            "label": 2,
+            "end": 66.2,
+            "detected": true,
+            "event_time": 61.5,
+            "offset_s": -1.4666666666666686
+          },
+          {
+            "time": 66.2,
+            "previous": 2,
+            "label": 3,
+            "end": 94.86666666666666,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 94.86666666666666,
+            "previous": 3,
+            "label": 0,
+            "end": 106.6,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 106.6,
+            "previous": 0,
+            "label": 1,
+            "end": 175.43333333333334,
+            "detected": true,
+            "event_time": 106.5,
+            "offset_s": -0.09999999999999432
+          },
+          {
+            "time": 175.43333333333334,
+            "previous": 1,
+            "label": 2,
+            "end": 179.03333333333333,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 67.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 99.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 175.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 6.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 61.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 67.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 99.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 106.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 175.5,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 178.0
+      },
+      "a8b23394b642f0bb769a0391": {
+        "boundaries": [
+          {
+            "time": 5.5,
+            "previous": 0,
+            "label": 1,
+            "end": 37.13333333333333,
+            "detected": true,
+            "event_time": 4.5,
+            "offset_s": -1.0
+          },
+          {
+            "time": 37.13333333333333,
+            "previous": 1,
+            "label": 2,
+            "end": 40.13333333333333,
+            "detected": true,
+            "event_time": 36.5,
+            "offset_s": -0.6333333333333329
+          },
+          {
+            "time": 40.13333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 65.26666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 65.26666666666667,
+            "previous": 3,
+            "label": 0,
+            "end": 70.46666666666667,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 70.46666666666667,
+            "previous": 0,
+            "label": 1,
+            "end": 86.7,
+            "detected": true,
+            "event_time": 70.0,
+            "offset_s": -0.46666666666666856
+          },
+          {
+            "time": 86.7,
+            "previous": 1,
+            "label": 2,
+            "end": 89.5,
+            "detected": true,
+            "event_time": 86.0,
+            "offset_s": -0.7000000000000028
+          }
+        ],
+        "false_events": [
+          {
+            "time": 40.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 65.5,
+            "previous": 3,
+            "label": 0
+          }
+        ],
+        "events": [
+          {
+            "time": 4.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 36.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 40.5,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 65.5,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 70.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 86.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 88.0
+      },
+      "d0f8727d35eced697dcf79fe": {
+        "boundaries": [
+          {
+            "time": 5.0,
+            "previous": 0,
+            "label": 1,
+            "end": 44.833333333333336,
+            "detected": true,
+            "event_time": 4.5,
+            "offset_s": -0.5
+          },
+          {
+            "time": 44.833333333333336,
+            "previous": 1,
+            "label": 2,
+            "end": 47.93333333333333,
+            "detected": true,
+            "event_time": 44.0,
+            "offset_s": -0.8333333333333357
+          },
+          {
+            "time": 47.93333333333333,
+            "previous": 2,
+            "label": 3,
+            "end": 65.6,
+            "detected": true,
+            "event_time": 47.0,
+            "offset_s": -0.93333333333333
+          },
+          {
+            "time": 65.6,
+            "previous": 3,
+            "label": 0,
+            "end": 70.9,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          },
+          {
+            "time": 70.9,
+            "previous": 0,
+            "label": 1,
+            "end": 89.6,
+            "detected": true,
+            "event_time": 70.0,
+            "offset_s": -0.9000000000000057
+          },
+          {
+            "time": 89.6,
+            "previous": 1,
+            "label": 2,
+            "end": 92.43333333333334,
+            "detected": false,
+            "event_time": null,
+            "offset_s": null
+          }
+        ],
+        "false_events": [
+          {
+            "time": 66.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 78.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 79.5,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 90.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "events": [
+          {
+            "time": 4.5,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 44.0,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 47.0,
+            "previous": 2,
+            "label": 3
+          },
+          {
+            "time": 66.0,
+            "previous": 3,
+            "label": 0
+          },
+          {
+            "time": 70.0,
+            "previous": 0,
+            "label": 1
+          },
+          {
+            "time": 78.5,
+            "previous": 1,
+            "label": 2
+          },
+          {
+            "time": 79.5,
+            "previous": 2,
+            "label": 1
+          },
+          {
+            "time": 90.0,
+            "previous": 1,
+            "label": 2
+          }
+        ],
+        "duration_s": 91.0
+      }
+    }
+  }
+}

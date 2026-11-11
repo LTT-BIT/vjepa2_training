@@ -1,0 +1,8 @@
+New unit tests:4 passed in0.06s.
+Full tomato suite:248 passed in7.93s.
+Checkpoint audit:54 CPU streaming replays, maximum probability discrepancy5.066394805908203e-07, event timestamps identical.
+15 separate safe-load fold checkpoint exports, original tensors unchanged; refit and final normalization verified from fit-only valid windows.
+Initial verification helper included unlabeled tail windows in normalization recomputation and failed. Helper corrected to match training valid mask; verification_v2 passed. No model/label changes or repeated training.
+
+Final full test suite after diagnostic corrections:248 passed in7.80s.
+8770 experiment status remains paused_no_duplicate_annotation.

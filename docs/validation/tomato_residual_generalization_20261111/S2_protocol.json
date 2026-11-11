@@ -1,0 +1,25 @@
+{
+  "version": "nested-b0-unseen-calibration-v1",
+  "base_git_sha": "fc9de0a66bbd77901e916139249366955f88861c",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "fold_seed": 20261112,
+  "outer_folds": 5,
+  "nested_selection_recordings": 2,
+  "source_pool": "Exactly10 current training recordings absent from original B0 train split. No old B0 in-sample predictions used to fit S2.",
+  "architecture": "Unchanged148-parameter probability-history residual",
+  "epochs": 100,
+  "patience": 15,
+  "learning_rate": 0.01,
+  "batch_size": 512,
+  "residual_penalty": 0.01,
+  "selection": "Per outer fold:6 inner-fit/2 inner-select choose NLL epoch including identity0; refit8 for fixed chosen epochs; evaluate untouched outer2. Final10 fit for integer median of five nested-selected epochs. Development8 never used to select epochs or thresholds.",
+  "fixed_epoch_rule": "Floor of median; no parameter search; train-only normalization independently fitted in each fit/refit",
+  "evaluation": "Same Future1.5s,2Hz,.5/K2,exact from/to one-to-one [b-1.5,b); no backdating. Current and Prompt unchanged.",
+  "gate": "OOF AND development three-seed mean recall strictly improves with no increase in mean false/min; no seed may lose hits or increase false count; at least two seeds improve hits. No automatic promotion even if passed: independent new recordings required.",
+  "limits": "10 source recordings already exposed to other past experiments; OOF is strict for current frozen-B0 plus S2 estimator, but not a new independent blind test or unbiased comparison across historical model selection.",
+  "S3": "Deferred unless P1 and OOF establish consistent benefit; no oracle stage/remaining-time inputs. No large networks or B0 retraining."
+}
