@@ -1,0 +1,163 @@
+{
+  "scope": "real-video frozen four-view encoding and full-state memory wiring only",
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "annotation_sha256": "4eb20369cbe9c5ccfdbce542937df44e1aadd5ab751ea7e787119157c619e826",
+  "episode_id": "e80436dea962fa58288fd8f9",
+  "split": "train",
+  "source_recording": "B/1106_750_791_normal/episode_000004",
+  "source_sha256": {
+    "tools/tomato_rgb_memory.py": "9dc61a97c5d4af002360a8263432651a08acaed2d724eae732ad87947dae22b1",
+    "tools/tomato_interaction_rgb.py": "f66799b386919d07518895dee8fe842a2f70fb9d4808534aee344e04ef4e8e38",
+    "tools/tomato_rgb_memory_model.py": "2513378762baad1f3cb987acd7fb9213e73f00cdfb4f5df516e4eef9190850dc",
+    "tools/smoke_tomato_rgb_memory.py": "0897472164792782403a4e15e95e6686b59ba5273410190b792b9f00fbfa3a65",
+    "tests/test_tomato_rgb_memory.py": "44c9bc9af34c1d012a13f9d117ef1104e02a90b58cfba89c5d0383cea66539d0",
+    "configs/tomato_rgb_memory_v2/experiment.json": "30038e33ea5e4b6fe2d9cc9d90507f02d15155c38b5fe80c3583eaf22d71748f"
+  },
+  "encoder": {
+    "model_id": "facebook/vjepa2-vitl-fpc64-256",
+    "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+    "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+    "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+  },
+  "device": "cuda",
+  "feature_sha256": "ebc48cf21fd33ac5c610ebf182ad8a72c5394c2b25568f678bdb35c77cb63ba0",
+  "windows": [
+    {
+      "clip": "pickup_right_hand_truss",
+      "anchor": 45,
+      "indices": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21,
+        24,
+        27,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45
+      ],
+      "four_view_encoder_ms": 196.47518097190186,
+      "gap_reset": false,
+      "retained_windows": 1,
+      "roi_mode": "manual_offline",
+      "state_shape": [
+        16,
+        58
+      ]
+    },
+    {
+      "clip": "pickup_right_hand_truss",
+      "anchor": 60,
+      "indices": [
+        15,
+        18,
+        21,
+        24,
+        27,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48,
+        51,
+        54,
+        57,
+        60
+      ],
+      "four_view_encoder_ms": 57.26972396951169,
+      "gap_reset": false,
+      "retained_windows": 2,
+      "roi_mode": "manual_offline",
+      "state_shape": [
+        16,
+        58
+      ]
+    },
+    {
+      "clip": "harvest_first_pluck",
+      "anchor": 270,
+      "indices": [
+        225,
+        228,
+        231,
+        234,
+        237,
+        240,
+        243,
+        246,
+        249,
+        252,
+        255,
+        258,
+        261,
+        264,
+        267,
+        270
+      ],
+      "four_view_encoder_ms": 54.05162199167535,
+      "gap_reset": true,
+      "retained_windows": 1,
+      "roi_mode": "manual_offline",
+      "state_shape": [
+        16,
+        58
+      ]
+    },
+    {
+      "clip": "harvest_first_pluck",
+      "anchor": 285,
+      "indices": [
+        240,
+        243,
+        246,
+        249,
+        252,
+        255,
+        258,
+        261,
+        264,
+        267,
+        270,
+        273,
+        276,
+        279,
+        282,
+        285
+      ],
+      "four_view_encoder_ms": 55.234136001672596,
+      "gap_reset": false,
+      "retained_windows": 2,
+      "roi_mode": "manual_offline",
+      "state_shape": [
+        16,
+        58
+      ]
+    }
+  ],
+  "visual_shape": [
+    4,
+    4,
+    1024
+  ],
+  "training": false,
+  "robot_calls": 0,
+  "automatic_roi": false,
+  "physical_success_inferred": false,
+  "performance_improvement_claim": false,
+  "timing_scope": "encoding helper including preprocessing/transfers; excludes decode, ROI, policy and capture",
+  "state_timestamp_handling": "verified recorded float32 times against nominal30Hz; represented on nominal timeline",
+  "tests": {
+    "tomato_suite_passed": 252,
+    "new_rgb_memory_tests_passed": 20,
+    "scope": "synthetic contracts/routing/gradient plus existing regression suite; not accuracy"
+  }
+}
