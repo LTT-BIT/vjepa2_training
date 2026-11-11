@@ -1,29 +1,51 @@
-<!doctype html><html lang="zh"><meta charset="utf-8"><title>操作结果双人独立复核</title>
-<style>body{font:17px system-ui;max-width:1200px;margin:24px auto;background:#f6f7f9;color:#17202b}section{background:white;padding:18px;margin:14px 0;border-radius:10px}video{width:32%;background:#111}button,input,select,textarea{font:inherit;margin:5px;padding:7px}textarea{width:95%;height:70px}.warn{color:#a24900}#counter{font-weight:bold}label{display:inline-block;margin:5px}</style>
-<h1>操作结果双人独立复核</h1>
-<p>只标独立可见结果，不重标Subtask。开始抓握/摘取只表示尝试，不能当作成功持有/果实脱离。</p>
-<p id="scope" class="warn"></p>
-<section><label>本人审核者编号 <input id="reviewer" autocomplete="off"></label><button id="workspace">打开个人工作区</button>
-<p>两人分别使用自己的浏览器配置或机器，不查看对方意见。本页面按编号隔离保存，但编号不是身份认证。旧意见保留，需明确补充首次证据时间。</p>
-<button id="prev">上一项</button><button id="next">下一项</button><select id="item"></select><span id="counter"></span><p id="desc"></p><p id="id"></p></section>
-<section><p>cam0/1/2的物理角色未确认。观察目标本身；遮挡、看不清或无法确定结果时选Unknown。</p>
-<div id="videos"></div><button id="back">后退1帧</button><button id="forward">前进1帧</button><button id="play">同步播放/暂停</button>
-<button id="markStart">当前帧记为区间开始</button><button id="markEnd">当前帧记为区间结束</button><button id="markEvidence">当前帧记为首次可确认</button><p id="time"></p></section>
-<section><label>结果 <select id="verdict"><option value="">未审核</option><option value="positive">Success：该事件条件有可见证据</option><option value="negative">Failure：可见且事件条件不成立</option><option value="unknown">Unknown：无法确定</option></select></label>
-<label>区间开始帧 <input id="start" type="number"></label><label>区间结束帧（不包含）<input id="end" type="number"></label>
-<label>首次可确认帧 <input id="evidence" type="number" placeholder="必须由本人确认；Unknown留空"></label>
-<p>首次可确认＝仅看到该帧及以前，就足以判断当前结果。Failure也需明确可见反例；Unknown不填写虚构的结果时间。</p>
-<p id="relation">Subtask仅作时机比较，不是成功标签。</p>
-<p><label><input type="checkbox" class="camera" value="cam0">cam0提供证据</label><label><input type="checkbox" class="camera" value="cam1">cam1提供证据</label><label><input type="checkbox" class="camera" value="cam2">cam2提供证据</label></p>
-<textarea id="note" placeholder="描述物体状态、直接证据或遮挡原因，不要只写阶段名称或关节闭合。"></textarea>
-<button id="save">保存本人意见（本浏览器）</button><button id="export">导出本人审核JSON</button>
-<p class="warn">两人导出后再检查结论、证据帧和区间分歧。不会自动平均边界，不改原Subtask，不自动训练。</p><p id="message"></p></section>
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>番茄操作结果标注</title>
+<style>
+*{box-sizing:border-box}body{font:16px/1.6 system-ui;margin:0;background:#f3f5f8;color:#1c2a3a}main{max-width:1160px;margin:auto;padding:22px}h1{font-size:24px;margin:0}h2{font-size:28px;line-height:1.4;margin:8px 0}.muted{color:#5e6b7c}.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.card,details{background:#fff;border:1px solid #dfe5ec;border-radius:14px;padding:20px;margin-top:16px}.intro{background:#eaf1ff}.layout{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(290px,1fr);gap:18px;margin-top:16px}.layout .card{margin:0}button,input,textarea,select{font:inherit}button{border:1px solid #ccd5e1;background:#fff;border-radius:9px;padding:9px 14px;cursor:pointer}button:hover{background:#f0f4fb}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #8ab3ff;outline-offset:2px}button.primary{background:#245ad6;color:white;border-color:#245ad6;font-weight:600}.camera-tabs{display:flex;gap:8px;margin-bottom:12px}.camera-tabs button[aria-pressed="true"]{background:#20324b;color:white}video{display:none;width:100%;max-height:470px;background:#111;border-radius:8px}video.active{display:block}.controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.step{margin:0 0 20px}.step-title{font-weight:700;margin:0 0 10px}.number{display:inline-block;background:#eaf1ff;color:#245ad6;border-radius:50%;text-align:center;width:28px;margin-right:7px}.choices{display:grid;gap:8px}.choices button{text-align:left;padding:12px;font-weight:600}.choices button.selected{border:2px solid #245ad6;background:#edf3ff}.reason-chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.reason-chips button{font-size:14px;padding:5px 8px}textarea{width:100%;height:72px;border:1px solid #ccd5e1;border-radius:8px;padding:10px}input{border:1px solid #bdc8d7;border-radius:7px;padding:8px;max-width:100%}.save{width:100%;margin-top:10px}#message{color:#a04416;font-weight:600;margin-top:10px;min-height:25px}#evidenceStatus{color:#245438}summary{cursor:pointer;color:#536277}details label{display:inline-block;margin:8px}#technical{font-size:14px}#scope{margin-top:8px}.small{font-size:14px}[hidden]{display:none!important}@media(max-width:780px){main{padding:14px}.layout{grid-template-columns:1fr}h2{font-size:24px}}
+</style>
+<main><header class="bar"><div><h1>看视频，确认一个结果</h1><div class="muted">① 看视频　② 选结果　③ 记下时间并保存</div></div><button id="export">导出我的标注</button></header>
+<section id="setup" class="card intro"><strong>先填一个名字，用来保存你的进度</strong><div class="controls"><input id="reviewer" aria-label="你的名字" placeholder="例如：小王" autocomplete="off"><button id="workspace" class="primary">开始标注</button></div><div class="small muted">两个人各用自己的浏览器或机器，分别填写，不看对方答案。</div></section>
+<div id="personal" class="bar" hidden><span id="currentName"></span><button id="changeReviewer">换一个标注人</button></div>
+<section class="card"><div class="bar"><span id="counter" class="muted"></span><span class="muted small">只判断视频里发生的结果，不重标动作阶段</span></div><h2 id="question"></h2><p id="desc" class="muted"></p></section>
+<div class="layout"><section class="card"><p class="step-title"><span class="number">1</span>先看这段视频</p><div class="camera-tabs"><button id="camera0" aria-pressed="true">画面一</button><button id="camera1" aria-pressed="false">画面二</button><button id="camera2" aria-pressed="false">画面三</button></div><div id="videos"></div><div class="controls"><button id="rewind">从提示位置重看</button><button id="play" class="primary">播放 / 暂停</button><button id="halfBack">后退半秒</button><button id="halfForward">前进半秒</button></div><p id="time" class="small muted"></p><p class="small muted">看不清就换另一个画面。可以拖动视频进度条，查看更早或更晚的内容。</p></section>
+<section class="card"><div class="step"><p class="step-title"><span class="number">2</span>你看到的结果是什么？</p><div class="choices"><button id="yes"></button><button id="no"></button><button id="unclear">看不清，无法确定</button></div></div>
+<div class="step"><p class="step-title"><span class="number">3</span><span id="timeInstruction">选好结果后，再记录时间</span></p><div id="capture"><p class="small">把视频停在<strong>第一次能确定结果</strong>的画面，再点下面这个按钮。</p><button id="markEvidence">记住当前画面</button></div><p id="evidenceStatus" class="small"></p><label for="note">你看到了什么？</label><div id="reasonChips" class="reason-chips"></div><textarea id="note" placeholder="点一句符合画面的描述，或自己简单写一句。"></textarea></div>
+<button id="save" class="primary save">保存，查看下一项 →</button><div id="message" role="status" aria-live="polite"></div><div class="bar"><button id="prev">← 上一项</button><button id="next">暂时跳过 →</button></div></section></div>
+<details id="technical"><summary>需要精确到一帧，或查看录制信息？点这里</summary><p id="id"></p><label>跳到某一项 <select id="item"></select></label><div class="controls"><button id="back">后退1帧</button><button id="forward">前进1帧</button><button id="markStart">当前帧设为区间开始</button><button id="markEnd">当前帧设为区间结束</button></div><label>区间开始帧 <input id="start" type="number"></label><label>区间结束帧（不包含） <input id="end" type="number"></label><label>首次确认帧 <input id="evidence" type="number"></label><select id="verdict" hidden><option value="">未审核</option><option value="positive">成功</option><option value="negative">失败</option><option value="unknown">不确定</option></select><p id="relation"></p><p>补充证据来自哪个画面：</p><label><input type="checkbox" class="camera" value="cam0">画面一</label><label><input type="checkbox" class="camera" value="cam1">画面二</label><label><input type="checkbox" class="camera" value="cam2">画面三</label><button id="undo">撤销本项未保存修改</button><p id="scope" class="muted"></p><p>意见先保存在本浏览器；结束时请导出。原阶段标签不会被修改，意见合并与分歧处理由后台工具完成。</p></details></main>
 <script>
-let cases,catalog,identity,index=0,store={},key,reviewer='',dirty=false;
+let cases,catalog,identity,index=0,store={},key,reviewer='',dirty=false,activeCamera=0;
 const $=id=>document.getElementById(id), outcome={positive:'success',negative:'failure',unknown:'unknown'};
-const rules={right_grasp_started:'右手开始抓握：新的接触/闭合尝试，不代表抓握成功',truss_stably_lifted:'稳定拿起：物体离开支撑并随手共同运动；空抬为Failure，遮挡为Unknown',left_pick_started:'左手开始摘取：新的接近/接触尝试，不代表果实脱离',tomato_detached:'果实实际脱离：有果实与果梗分离及后续状态证据，不按harvest次数判断',truss_returned:'稳定放回：盘面支撑且释放/卸载可见，机械臂返程不算',adjustment_ended:'调整结束：需可见独立结束证据，仅照搬Subtask或暂停应保留不确定',right_regrasp_started:'再次抓握：新的接触尝试，不代表第二次持有成功',second_grasp_verified:'第二次抓握结果：新的物体-手共同运动或稳定持有证据'};
+const questions={
+truss_stably_lifted:['番茄串真的被拿起来了吗？','看番茄串有没有离开盘子，并跟着手一起移动。手臂抬起、物体还在盘里，不算拿起。','确实拿起来了','没有拿起来','物体离开盘子并随手移动','手空抬了，物体还在盘里'],
+tomato_detached:['这颗番茄真的从果梗上摘下来了吗？','看果实和果梗是否真的分开。只看到手在摘、看不到分离过程时，可以选看不清。','确实摘下来了','没有摘下来','看到了果实与果梗分开','果实仍然连在果梗上'],
+truss_returned:['番茄串已经放稳在盘子上了吗？','看盘子是否托住物体，手是否卸下重量。仅仅向盘子移动，还不算放稳。','已经放稳了','还没有放稳','物体落在盘子上并保持稳定','物体还悬空，或没有稳定放下'],
+right_grasp_started:['右手开始抓番茄串了吗？','这一项只看有没有开始接触、闭合抓握，不判断最后抓成功了没有。','开始抓了','没有开始抓','看到了新的接触和抓握动作','只有移动，没有开始抓握'],
+left_pick_started:['左手开始摘番茄了吗？','这一项只看有没有接近、接触并开始摘取，不判断果实是否已经脱离。','开始摘了','没有开始摘','看到了接触目标并开始摘取','左手只是经过，没有开始摘取'],
+adjustment_ended:['右手这次调整已经结束了吗？','要看到调整停止的明确迹象。只是停顿一下，或看不出是否还会继续，可以选看不清。','能确定结束了','还在调整','看到了这次调整明确结束','右手仍在重新调整位置'],
+right_regrasp_started:['右手开始第二次抓握了吗？','看是否出现了新的一次接触、抓握，而不是继续前面的调整。','开始第二次抓了','还没有开始','看到了新一次接触和抓握','仍在调整，没有新的抓握'],
+second_grasp_verified:['第二次抓握真的拿稳了吗？','看物体有没有被稳定持住、跟着手一起移动。手指闭合不等于拿稳。','确实拿稳了','没有拿稳','看到了物体被稳定持住并随手移动','空抓、滑落，或物体仍在盘面上']};
+function refreshChoice(){
+ const q=questions[cases[index].event_type],v=$('verdict').value;
+ for(const [id,label] of [['yes','positive'],['no','negative'],['unclear','unknown']])$(id).classList.toggle('selected',v===label);
+ $('capture').hidden=!v||v==='unknown';$('timeInstruction').textContent=!v?'选好结果后，再记录时间':v==='unknown'?'看不清就说明原因':'停在最早能确定结果的位置';
+ const first=$('evidence').value,e=catalog.find(e=>e.episode_id===cases[index].episode_id);
+ $('evidenceStatus').textContent=v==='unknown'?'看不清不需要标时间，选一句原因后保存即可。':first===''?'尚未记录时间。':`已记住 ${(Number(first)/e.fps).toFixed(2)} 秒的画面。`;
+ $('reasonChips').replaceChildren();
+ const texts=v==='positive'?[q[4]]:v==='negative'?[q[5]]:v==='unknown'?['被手或物体挡住了','目标没有拍到','看到了，但暂时判断不了']:[];
+ for(const text of texts){const b=document.createElement('button');b.textContent=text;b.onclick=()=>{$('note').value=text;dirty=!!reviewer};$('reasonChips').append(b)}
+}
+function choose(v){
+ if(!reviewer){$('message').textContent='先在上方填名字，点“开始标注”。';return}
+ $('verdict').value=v;$('evidence').value='';document.querySelectorAll('.camera').forEach(x=>x.checked=false);
+ if(v==='unknown')document.querySelectorAll('.camera')[activeCamera].checked=true;
+ dirty=true;refreshChoice();relation();
+}
+function setCamera(i){
+ const t=vids()[activeCamera]?.currentTime||0;vids().forEach(v=>{v.pause();v.currentTime=t});activeCamera=i;
+ vids().forEach((v,j)=>v.classList.toggle('active',j===i));for(let j=0;j<3;j++)$('camera'+j).setAttribute('aria-pressed',String(j===i));updateTime();
+}
+function updateTime(){const v=vids()[activeCamera];if(v)$('time').textContent=`正在看画面${['一','二','三'][activeCamera]} · ${v.currentTime.toFixed(2)} 秒`}
 function vids(){return [...document.querySelectorAll('video')]}
-function frame(){return Math.floor(vids()[0].currentTime*catalog.find(e=>e.episode_id===cases[index].episode_id).fps+1e-4)}
+function frame(){const e=catalog.find(e=>e.episode_id===cases[index].episode_id);return Math.max(0,Math.min(e.length-1,Math.floor(vids()[activeCamera].currentTime*e.fps+1e-4)))}
 function relation(){
  const c=cases[index],e=catalog.find(e=>e.episode_id===c.episode_id),s=$('evidence').value;
  if(c.reference_kind!=='stage_transition'){$('relation').textContent='本项参考录制开始；不计入阶段转换前后统计。';return}
@@ -31,19 +53,22 @@ function relation(){
  $('relation').textContent=`比较参考：${c.reference_transition_description}，帧${c.reference_transition_frame}。`+(delta===null?'填写首次证据时间后计算前/后关系。':`首次证据在转换${delta<0?'前':delta>0?'后':'当帧'} ${Math.abs(delta).toFixed(3)} 秒。`);
 }
 function draw(){
- const c=cases[index],e=catalog.find(e=>e.episode_id===c.episode_id),r=store[c.case_id];
- $('item').value=index;$('counter').textContent=`${index+1}/${cases.length} · 本人已填 ${Object.keys(store).length}`;
- $('desc').textContent=rules[c.event_type];$('id').textContent=`${c.split} / ${c.episode_id} / ${c.event_type}`;$('videos').replaceChildren();
- e.videos.forEach((_,i)=>{const v=document.createElement('video');v.controls=true;v.preload='metadata';v.src=`/media/${c.episode_id}/${i}`;v.onloadedmetadata=()=>v.currentTime=c.suggested_frame/e.fps;v.ontimeupdate=()=>{$('time').textContent=`首路时间 ${vids()[0].currentTime.toFixed(3)} 秒 / 帧 ${Math.floor(vids()[0].currentTime*e.fps+1e-4)}`};$('videos').append(v)});
+ const c=cases[index],e=catalog.find(e=>e.episode_id===c.episode_id),r=store[c.case_id],q=questions[c.event_type];
+ $('item').value=index;$('counter').textContent=`第 ${index+1} 项 / 共 ${cases.length} 项 · 已保存 ${Object.keys(store).length} 项`;
+ $('question').textContent=q[0];$('desc').textContent=q[1];$('yes').textContent='✓ '+q[2];$('no').textContent='× '+q[3];
+ $('id').textContent=`录制：${String(e.videos[0]).split('/videos/')[0].split('/').pop()} / ${String(e.videos[0]).split('/').pop()}；内部编号：${c.episode_id}`;
+ $('videos').replaceChildren();activeCamera=0;
+ e.videos.forEach((_,i)=>{const v=document.createElement('video');v.controls=true;v.preload='metadata';v.src=`/media/${c.episode_id}/${i}`;v.classList.toggle('active',i===0);v.onloadedmetadata=()=>{v.currentTime=Math.max(0,c.suggested_frame/e.fps-2)};v.ontimeupdate=updateTime;$('videos').append(v)});
+ for(let i=0;i<3;i++)$('camera'+i).setAttribute('aria-pressed',String(i===0));
  $('verdict').value=r?.verdict||'';$('start').value=r?.start_frame??Math.max(0,c.suggested_frame-30);$('end').value=r?.end_frame??Math.min(e.length,c.suggested_frame+31);
  $('evidence').value=r?.first_confirmable_frame??'';$('note').value=r?.evidence_note||'';document.querySelectorAll('.camera').forEach(x=>x.checked=(r?.visible_cameras||[]).includes(x.value));
- $('message').textContent=r&&!r.review_schema?'旧意见已保留；需本人补充首次证据时间后再保存。':'';dirty=false;relation();
+ $('message').textContent=r&&!r.review_schema?'旧意见还在。请重新确认结果，记下最早能确定的画面。':'';dirty=false;relation();refreshChoice();
 }
-function navigate(i){if(dirty){$('message').textContent='当前意见未保存，请先保存或导出已有意见。';return}index=i;draw()}
-function step(n){const e=catalog.find(e=>e.episode_id===cases[index].episode_id),t=Math.max(0,vids()[0].currentTime+n/e.fps);vids().forEach(v=>{v.pause();v.currentTime=t})}
+function navigate(i){if(dirty){$('message').textContent='这项还没保存。请先保存，或在下方展开区撤销修改。';return}index=i;draw()}
+function step(n){const e=catalog.find(e=>e.episode_id===cases[index].episode_id),t=Math.min((e.length-1)/e.fps,Math.max(0,vids()[activeCamera].currentTime+n/e.fps));vids().forEach(v=>{v.pause();v.currentTime=t})}
 $('workspace').onclick=()=>{
- if(dirty){$('message').textContent='请先保存当前意见再切换工作区。';return}
- const name=$('reviewer').value.trim();if(!name){$('message').textContent='请填写本人编号。';return}
+ if(dirty){$('message').textContent='请先保存这项，再更换名字。';return}
+ const name=$('reviewer').value.trim();if(!name){$('message').textContent='请先填一个名字。';return}
  reviewer=name;key='tomato-operation-review:'+identity.catalog_sha256+':reviewer:'+encodeURIComponent(name);store=JSON.parse(localStorage.getItem(key)||'{}');
  const eligible=new Map(cases.map(c=>[c.case_id,c]));
  for(const sha of [identity.catalog_sha256,...(identity.previous_catalog_sha256||[])]){
@@ -51,21 +76,26 @@ $('workspace').onclick=()=>{
    const prior=JSON.parse(localStorage.getItem(oldKey)||'{}');for(const [id,r] of Object.entries(prior)){if(r.reviewer===name&&!store[id]&&eligible.get(id)?.annotation_sha256===r.annotation_sha256)store[id]=r}
   }
  }
- store=Object.fromEntries(Object.entries(store).filter(([id,r])=>r.reviewer===name&&eligible.get(id)?.annotation_sha256===r.annotation_sha256));localStorage.setItem(key,JSON.stringify(store));draw();
+ store=Object.fromEntries(Object.entries(store).filter(([id,r])=>r.reviewer===name&&eligible.get(id)?.annotation_sha256===r.annotation_sha256));localStorage.setItem(key,JSON.stringify(store));const pending=cases.findIndex(c=>!store[c.case_id]||store[c.case_id].review_schema!=='tomato-operation-review-v2');index=pending<0?0:pending;$('setup').hidden=true;$('personal').hidden=false;$('currentName').textContent='当前标注人：'+reviewer;draw();
 };
-$('back').onclick=()=>step(-1);$('forward').onclick=()=>step(1);$('play').onclick=()=>vids().forEach(v=>v.paused?v.play():v.pause());
+$('back').onclick=()=>step(-1);$('forward').onclick=()=>step(1);$('play').onclick=()=>{const v=vids()[activeCamera];if(v.paused)v.play();else v.pause()};
 $('prev').onclick=()=>navigate(Math.max(0,index-1));$('next').onclick=()=>navigate(Math.min(cases.length-1,index+1));$('item').onchange=()=>navigate(+$('item').value);
-$('markStart').onclick=()=>{$('start').value=frame();dirty=true};$('markEnd').onclick=()=>{$('end').value=frame()+1;dirty=true};$('markEvidence').onclick=()=>{$('evidence').value=frame();dirty=true;relation()};
-for(const id of ['verdict','start','end','evidence','note'])$(id).oninput=()=>{dirty=true;if(id==='verdict'&&$('verdict').value==='unknown')$('evidence').value='';relation()};document.querySelectorAll('.camera').forEach(x=>x.onchange=()=>dirty=true);
+$('markStart').onclick=()=>{$('start').value=frame();dirty=!!reviewer};$('markEnd').onclick=()=>{$('end').value=frame()+1;dirty=!!reviewer};$('markEvidence').onclick=()=>{if(!reviewer||!['positive','negative'].includes($('verdict').value)){$('message').textContent='先选好能确定的结果，再记住画面。';return}if(vids()[activeCamera].readyState<2){$('message').textContent='画面还在加载，请等视频显示出来再记录。';return}vids().forEach(v=>v.pause());const f=frame();$('evidence').value=f;$('start').value=Math.min(Number($('start').value),f);$('end').value=Math.max(Number($('end').value),f+1);document.querySelectorAll('.camera')[activeCamera].checked=true;dirty=true;relation();refreshChoice()};
+for(const id of ['verdict','start','end','evidence','note'])$(id).oninput=()=>{dirty=!!reviewer;if(id==='verdict'&&$('verdict').value==='unknown')$('evidence').value='';relation();refreshChoice()};document.querySelectorAll('.camera').forEach(x=>x.onchange=()=>dirty=!!reviewer);
 $('save').onclick=()=>{
- if(!reviewer||$('reviewer').value.trim()!==reviewer){$('message').textContent='请先打开本人工作区。';return}
+ if(!reviewer||$('reviewer').value.trim()!==reviewer){$('message').textContent='先在上方填名字，点“开始标注”。';return}
  const c=cases[index],e=catalog.find(e=>e.episode_id===c.episode_id),a=Number($('start').value),b=Number($('end').value),v=$('verdict').value,raw=$('evidence').value,first=raw===''?null:Number(raw),cams=[...document.querySelectorAll('.camera:checked')].map(x=>x.value);
- if(!v||!$('note').value.trim()||!cams.length||![a,b].every(Number.isInteger)||!(0<=a&&a<b&&b<=e.length)||(v==='unknown'?first!==null:!Number.isInteger(first)||first<a||first>=b)){$('message').textContent='请填写结果、可见相机、区间和证据说明；Success/Failure需明确首次证据帧，Unknown留空。';return}
+ if(!v||!$('note').value.trim()||!cams.length||![a,b].every(Number.isInteger)||!(0<=a&&a<b&&b<=e.length)||(v==='unknown'?first!==null:!Number.isInteger(first)||first<a||first>=b)){$('message').textContent='还差一步：选好结果，点“记住当前画面”，再选一句或写一句你看到的现象。看不清则不用记时间。';return}
  const prior=store[c.case_id],history=prior?[...(prior.revisions||[]),Object.fromEntries(Object.entries(prior).filter(([k])=>k!=='revisions'))]:[];
  const delta=first!==null&&c.reference_kind==='stage_transition'?(first-c.reference_transition_frame)/e.fps:null;
  store[c.case_id]={review_schema:'tomato-operation-review-v2',revisions:history,case_id:c.case_id,episode_id:c.episode_id,source_recording_id:c.source_recording_id,event_type:c.event_type,annotation_sha256:c.annotation_sha256,reviewer,verdict:v,outcome:outcome[v],start_frame:a,end_frame:b,first_confirmable_frame:first,evidence_end_frame:first??b-1,reference_transition_frame:c.reference_transition_frame,relative_to_transition:delta===null?'not_applicable':delta<0?'before':delta>0?'after':'at',evidence_minus_transition_s:delta,visible_cameras:cams,evidence_note:$('note').value.trim(),reviewed_at:new Date().toISOString()};
- localStorage.setItem(key,JSON.stringify(store));dirty=false;$('message').textContent='本人意见已保存；尚未双人批准。';$('counter').textContent=`${index+1}/${cases.length} · 本人已填 ${Object.keys(store).length}`;
+ localStorage.setItem(key,JSON.stringify(store));dirty=false;if(index<cases.length-1){index++;draw();$('message').textContent='上一项已保存。现在看这一项。'}else{$('message').textContent='这一项已保存。结束时请点上方“导出我的标注”。'}
 };
-$('export').onclick=()=>{if(!reviewer){$('message').textContent='先打开本人工作区。';return}const value={schema_version:'tomato-operation-review-v2',reviewer,identity,reviews:Object.values(store)},blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='operation-review-'+reviewer+'.json';a.click();URL.revokeObjectURL(a.href)};
-(async()=>{[cases,catalog,identity]=await Promise.all(['cases.json','catalog.json','identity.json'].map(p=>fetch(p,{cache:'no-store'}).then(r=>r.json())));cases.forEach((c,i)=>{const o=document.createElement('option');o.value=i;o.textContent=`${i+1} ${c.event_type} ${c.episode_id.slice(0,8)}`;$('item').append(o)});$('scope').textContent=identity.selection_note||'';draw()})()
+$('yes').onclick=()=>choose('positive');$('no').onclick=()=>choose('negative');$('unclear').onclick=()=>choose('unknown');
+for(let i=0;i<3;i++)$('camera'+i).onclick=()=>setCamera(i);
+$('halfBack').onclick=()=>step(-.5*catalog.find(e=>e.episode_id===cases[index].episode_id).fps);$('halfForward').onclick=()=>step(.5*catalog.find(e=>e.episode_id===cases[index].episode_id).fps);
+$('rewind').onclick=()=>{const c=cases[index],e=catalog.find(e=>e.episode_id===c.episode_id);vids().forEach(v=>{v.pause();v.currentTime=Math.max(0,c.suggested_frame/e.fps-2)});updateTime()};
+$('undo').onclick=()=>draw();$('changeReviewer').onclick=()=>{if(dirty){$('message').textContent='请先保存这项。';return}$('setup').hidden=false};
+$('export').onclick=()=>{if(!reviewer){$('message').textContent='先在上方填名字，点“开始标注”。';return}const value={schema_version:'tomato-operation-review-v2',reviewer,identity,reviews:Object.values(store)},blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='operation-review-'+reviewer+'.json';a.click();URL.revokeObjectURL(a.href)};
+(async()=>{[cases,catalog,identity]=await Promise.all(['cases.json','catalog.json','identity.json'].map(p=>fetch(p,{cache:'no-store'}).then(r=>r.json())));cases.forEach((c,i)=>{const o=document.createElement('option');o.value=i;o.textContent=`第${i+1}项：${questions[c.event_type][0]}`;$('item').append(o)});$('scope').textContent=identity.selection_note||'';draw()})()
 </script></html>

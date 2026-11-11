@@ -1,0 +1,16 @@
+{
+  "ui_version": "guided-three-step-v1",
+  "unchanged_input_sha256": {
+    "catalog.json": "5f5d69cfc9735c52d89daf73fc25aef0bd9069effc2ee841c9a2aedef77df980",
+    "cases.json": "3716f9c63f4c7c8942cbaeeaa5aa89d342a0939d6b38c9742886c19f1987f97e",
+    "identity.json": "0155b806aba744f89da6d3af12df9eea342853fd54f5dfa1de29ed0e3b9a9df9",
+    "reviews.json": "7a77d995d72c4f8a2c8eace2e0a8a9cbae0a75e8edf9a97cd048c343f8acf604",
+    "approved.json": "59b48d17426a7319c9d7f4e377055d9a839d6d44065758745a8731426101ded3"
+  },
+  "source_sha256": "6f60993a228d8d4c7f42563f291b14ed3326c81eb12c9bae7265e574a4259454",
+  "old_ui_preserved": "runs/tomato/operation_pilot16_v2_20261111/index_before_guided_20261111.html",
+  "real_labels_created": 0,
+  "node_ui_test": "passed: guided Success/Unknown, explicit capture, camera binding, next-item blank, own workspace and legacy preservation",
+  "test_source_sha256": "e42921ce9ad2b8e552c429d1ffde24bfec0f2e4db4bc923a517072ababcbc73d",
+  "browser_validation": "Chinese task question visible, camera tabs switch large video; advanced controls collapsed, no real outcomes submitted"
+}
