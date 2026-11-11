@@ -1,0 +1,1624 @@
+{
+  "old9": {
+    "42": {
+      "summary": {
+        "warnings": {
+          "hits": 39,
+          "total": 50,
+          "false_events": 13,
+          "false_per_minute": 0.6744487678339819,
+          "recall": 0.78,
+          "precision": 0.75,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 16,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 40.0,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9540805062010267,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            878,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ]
+      },
+      "classification": {
+        "current": {
+          "samples": 2340,
+          "accuracy": 0.9854700854700855,
+          "macro_f1": 0.9715634847347413,
+          "nll": 0.07176524804164637,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9574468085106383,
+              "recall": 0.9574468085106383,
+              "f1": 0.9574468085106383,
+              "support": 282
+            },
+            "harvest": {
+              "precision": 0.9968132568514978,
+              "recall": 0.9961783439490446,
+              "f1": 0.9964956992672825,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.9726027397260274,
+              "recall": 0.9594594594594594,
+              "f1": 0.9659863945578231,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9620991253644315,
+              "recall": 0.9705882352941176,
+              "f1": 0.9663250366032211,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              270,
+              1,
+              0,
+              11
+            ],
+            [
+              4,
+              1564,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              142,
+              2
+            ],
+            [
+              8,
+              0,
+              2,
+              330
+            ]
+          ],
+          "return_adjust_confusions": 4,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "future": {
+          "samples": 2313,
+          "accuracy": 0.969303934284479,
+          "macro_f1": 0.9380843310031053,
+          "nll": 0.14296657731193899,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9206349206349206,
+              "recall": 0.9098039215686274,
+              "f1": 0.9151873767258383,
+              "support": 255
+            },
+            "harvest": {
+              "precision": 0.9898089171974522,
+              "recall": 0.9898089171974522,
+              "f1": 0.9898089171974522,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.9166666666666666,
+              "recall": 0.8918918918918919,
+              "f1": 0.9041095890410958,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9337175792507204,
+              "recall": 0.9529411764705882,
+              "f1": 0.9432314410480349,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              232,
+              5,
+              0,
+              18
+            ],
+            [
+              9,
+              1554,
+              7,
+              0
+            ],
+            [
+              0,
+              11,
+              132,
+              5
+            ],
+            [
+              11,
+              0,
+              5,
+              324
+            ]
+          ],
+          "return_adjust_confusions": 10,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      }
+    },
+    "43": {
+      "summary": {
+        "warnings": {
+          "hits": 35,
+          "total": 50,
+          "false_events": 19,
+          "false_per_minute": 0.9857328145265889,
+          "recall": 0.7,
+          "precision": 0.6481481481481481,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 1,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 13,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 15,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 46,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 46.5,
+        "mismatch_runs": 47,
+        "persistent_mismatch_s": 13.0,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 2,
+            "late": 2,
+            "on_time": 4
+          },
+          "harvest->return": {
+            "on_time": 17
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "on_time": 8
+          }
+        },
+        "second_half_position_accuracy_mean": 0.949021379903681,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            14,
+            875,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            9,
+            78,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            320,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            26,
+            118,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            12,
+            669,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            49
+          ]
+        ]
+      },
+      "classification": {
+        "current": {
+          "samples": 2340,
+          "accuracy": 0.9837606837606837,
+          "macro_f1": 0.9674165173401404,
+          "nll": 0.07891836294652346,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9413793103448276,
+              "recall": 0.9680851063829787,
+              "f1": 0.9545454545454546,
+              "support": 282
+            },
+            "harvest": {
+              "precision": 0.9987212276214834,
+              "recall": 0.9949044585987261,
+              "f1": 0.9968091895341417,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.9533333333333334,
+              "recall": 0.9662162162162162,
+              "f1": 0.959731543624161,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9642857142857143,
+              "recall": 0.9529411764705882,
+              "f1": 0.9585798816568047,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              273,
+              1,
+              0,
+              8
+            ],
+            [
+              4,
+              1562,
+              4,
+              0
+            ],
+            [
+              0,
+              1,
+              143,
+              4
+            ],
+            [
+              13,
+              0,
+              3,
+              324
+            ]
+          ],
+          "return_adjust_confusions": 7,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "future": {
+          "samples": 2313,
+          "accuracy": 0.964548205793342,
+          "macro_f1": 0.9286499760047725,
+          "nll": 0.10164595146473619,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9019607843137255,
+              "recall": 0.9019607843137255,
+              "f1": 0.9019607843137255,
+              "support": 255
+            },
+            "harvest": {
+              "precision": 0.9904153354632588,
+              "recall": 0.9872611464968153,
+              "f1": 0.988835725677831,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.8866666666666667,
+              "recall": 0.8986486486486487,
+              "f1": 0.8926174496644296,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9271137026239067,
+              "recall": 0.9352941176470588,
+              "f1": 0.931185944363104,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              230,
+              6,
+              0,
+              19
+            ],
+            [
+              7,
+              1550,
+              13,
+              0
+            ],
+            [
+              0,
+              9,
+              133,
+              6
+            ],
+            [
+              18,
+              0,
+              4,
+              318
+            ]
+          ],
+          "return_adjust_confusions": 10,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      }
+    },
+    "44": {
+      "summary": {
+        "warnings": {
+          "hits": 36,
+          "total": 50,
+          "false_events": 16,
+          "false_per_minute": 0.8300907911802854,
+          "recall": 0.72,
+          "precision": 0.6923076923076923,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 3,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 14,
+              "total": 17
+            },
+            "pickup->harvest": {
+              "hits": 13,
+              "total": 17
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          }
+        },
+        "prompt_counts": {
+          "on_time": 45,
+          "early": 4,
+          "late": 1
+        },
+        "mismatch_s": 37.0,
+        "mismatch_runs": 48,
+        "persistent_mismatch_s": 8.0,
+        "persistent_runs": 2,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 2,
+            "on_time": 5,
+            "late": 1
+          },
+          "harvest->return": {
+            "on_time": 16,
+            "early": 1
+          },
+          "pickup->harvest": {
+            "on_time": 17
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "second_half_position_accuracy_mean": 0.9588962781589517,
+        "position_confusion": [
+          [
+            138,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            877,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            76,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            11,
+            320,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            16,
+            128,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            8,
+            673,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7,
+            54
+          ]
+        ]
+      },
+      "classification": {
+        "current": {
+          "samples": 2340,
+          "accuracy": 0.9850427350427351,
+          "macro_f1": 0.9704832460784201,
+          "nll": 0.1542037118044613,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9444444444444444,
+              "recall": 0.9645390070921985,
+              "f1": 0.9543859649122807,
+              "support": 282
+            },
+            "harvest": {
+              "precision": 0.9993606138107417,
+              "recall": 0.9955414012738854,
+              "f1": 0.9974473516273133,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.954248366013072,
+              "recall": 0.9864864864864865,
+              "f1": 0.9700996677740864,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9671641791044776,
+              "recall": 0.9529411764705882,
+              "f1": 0.96,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              272,
+              1,
+              0,
+              9
+            ],
+            [
+              2,
+              1563,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              146,
+              2
+            ],
+            [
+              14,
+              0,
+              2,
+              324
+            ]
+          ],
+          "return_adjust_confusions": 4,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "future": {
+          "samples": 2313,
+          "accuracy": 0.9684392563769996,
+          "macro_f1": 0.9381429028669772,
+          "nll": 0.1574736048332847,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9297520661157025,
+              "recall": 0.8823529411764706,
+              "f1": 0.9054325955734407,
+              "support": 255
+            },
+            "harvest": {
+              "precision": 0.9910428662827895,
+              "recall": 0.986624203821656,
+              "f1": 0.988828598787105,
+              "support": 1570
+            },
+            "return": {
+              "precision": 0.9066666666666666,
+              "recall": 0.918918918918919,
+              "f1": 0.912751677852349,
+              "support": 148
+            },
+            "adjust": {
+              "precision": 0.9217877094972067,
+              "recall": 0.9705882352941176,
+              "f1": 0.9455587392550143,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              225,
+              6,
+              0,
+              24
+            ],
+            [
+              12,
+              1549,
+              9,
+              0
+            ],
+            [
+              0,
+              8,
+              136,
+              4
+            ],
+            [
+              5,
+              0,
+              5,
+              330
+            ]
+          ],
+          "return_adjust_confusions": 9,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      }
+    }
+  },
+  "new8": {
+    "42": {
+      "summary": {
+        "warnings": {
+          "hits": 37,
+          "total": 48,
+          "false_events": 13,
+          "false_per_minute": 0.6948775055679288,
+          "recall": 0.7708333333333334,
+          "precision": 0.74,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 2,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 15,
+              "total": 16
+            },
+            "pickup->harvest": {
+              "hits": 14,
+              "total": 16
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          },
+          "f1": 0.7551020408163265,
+          "missed": 11,
+          "lead_s": {
+            "n": 37,
+            "p10": 0.11999999999999318,
+            "p50": 0.5666666666666664,
+            "p95": 1.2666666666666664
+          }
+        },
+        "prompt_counts": {
+          "on_time": 44,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 38.5,
+        "mismatch_runs": 45,
+        "persistent_mismatch_s": 10.5,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 1,
+            "on_time": 5,
+            "late": 2
+          },
+          "harvest->return": {
+            "on_time": 16
+          },
+          "pickup->harvest": {
+            "on_time": 16
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "seven_position_accuracy": 0.9660643455266638,
+        "seven_position_confusion": [
+          [
+            125,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            828,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            71,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            325,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            24,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            9,
+            672,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            51
+          ]
+        ],
+        "history_corrections": 0,
+        "prompt_offset_s": {
+          "n": 48,
+          "p10": 0.47000000000000175,
+          "p50": 0.8666666666666707,
+          "p95": 1.736666666666671
+        }
+      },
+      "classification": {
+        "current": {
+          "samples": 2269,
+          "accuracy": 0.9854561480828559,
+          "macro_f1": 0.9715982734457971,
+          "nll": 0.07270552006185205,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9553903345724907,
+              "recall": 0.9553903345724907,
+              "f1": 0.9553903345724907,
+              "support": 269
+            },
+            "harvest": {
+              "precision": 0.997363216875412,
+              "recall": 0.9960500329163924,
+              "f1": 0.9967061923583662,
+              "support": 1519
+            },
+            "return": {
+              "precision": 0.9714285714285714,
+              "recall": 0.9645390070921985,
+              "f1": 0.9679715302491103,
+              "support": 141
+            },
+            "adjust": {
+              "precision": 0.9620991253644315,
+              "recall": 0.9705882352941176,
+              "f1": 0.9663250366032211,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              257,
+              1,
+              0,
+              11
+            ],
+            [
+              4,
+              1513,
+              2,
+              0
+            ],
+            [
+              0,
+              3,
+              136,
+              2
+            ],
+            [
+              8,
+              0,
+              2,
+              330
+            ]
+          ],
+          "return_adjust_confusions": 4,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "future": {
+          "samples": 2245,
+          "accuracy": 0.9692650334075724,
+          "macro_f1": 0.9373675856803144,
+          "nll": 0.14484626389444066,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.921161825726141,
+              "recall": 0.9061224489795918,
+              "f1": 0.9135802469135802,
+              "support": 245
+            },
+            "harvest": {
+              "precision": 0.9894806048652203,
+              "recall": 0.9907834101382489,
+              "f1": 0.9901315789473685,
+              "support": 1519
+            },
+            "return": {
+              "precision": 0.9191176470588235,
+              "recall": 0.8865248226950354,
+              "f1": 0.9025270758122743,
+              "support": 141
+            },
+            "adjust": {
+              "precision": 0.9337175792507204,
+              "recall": 0.9529411764705882,
+              "f1": 0.9432314410480349,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              222,
+              5,
+              0,
+              18
+            ],
+            [
+              8,
+              1505,
+              6,
+              0
+            ],
+            [
+              0,
+              11,
+              125,
+              5
+            ],
+            [
+              11,
+              0,
+              5,
+              324
+            ]
+          ],
+          "return_adjust_confusions": 10,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      }
+    },
+    "43": {
+      "summary": {
+        "warnings": {
+          "hits": 34,
+          "total": 48,
+          "false_events": 18,
+          "false_per_minute": 0.9621380846325167,
+          "recall": 0.7083333333333334,
+          "precision": 0.6538461538461539,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 1,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 13,
+              "total": 16
+            },
+            "pickup->harvest": {
+              "hits": 14,
+              "total": 16
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          },
+          "f1": 0.68,
+          "missed": 14,
+          "lead_s": {
+            "n": 34,
+            "p10": 0.26000000000000373,
+            "p50": 0.6166666666666671,
+            "p95": 1.244999999999999
+          }
+        },
+        "prompt_counts": {
+          "on_time": 44,
+          "early": 2,
+          "late": 2
+        },
+        "mismatch_s": 45.5,
+        "mismatch_runs": 45,
+        "persistent_mismatch_s": 13.0,
+        "persistent_runs": 3,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 2,
+            "late": 2,
+            "on_time": 4
+          },
+          "harvest->return": {
+            "on_time": 16
+          },
+          "pickup->harvest": {
+            "on_time": 16
+          },
+          "return->adjust": {
+            "on_time": 8
+          }
+        },
+        "seven_position_accuracy": 0.9598942265315117,
+        "seven_position_confusion": [
+          [
+            125,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            13,
+            825,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            72,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            320,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            26,
+            118,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            12,
+            669,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            49
+          ]
+        ],
+        "history_corrections": 0,
+        "prompt_offset_s": {
+          "n": 48,
+          "p10": 0.4200000000000003,
+          "p50": 0.9000000000000021,
+          "p95": 1.9216666666666689
+        }
+      },
+      "classification": {
+        "current": {
+          "samples": 2269,
+          "accuracy": 0.9832525341560159,
+          "macro_f1": 0.9663522899691739,
+          "nll": 0.08127461785953058,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9386281588447654,
+              "recall": 0.966542750929368,
+              "f1": 0.9523809523809523,
+              "support": 269
+            },
+            "harvest": {
+              "precision": 0.998678122934567,
+              "recall": 0.9947333772218565,
+              "f1": 0.9967018469656992,
+              "support": 1519
+            },
+            "return": {
+              "precision": 0.951048951048951,
+              "recall": 0.9645390070921985,
+              "f1": 0.9577464788732394,
+              "support": 141
+            },
+            "adjust": {
+              "precision": 0.9642857142857143,
+              "recall": 0.9529411764705882,
+              "f1": 0.9585798816568047,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              260,
+              1,
+              0,
+              8
+            ],
+            [
+              4,
+              1511,
+              4,
+              0
+            ],
+            [
+              0,
+              1,
+              136,
+              4
+            ],
+            [
+              13,
+              0,
+              3,
+              324
+            ]
+          ],
+          "return_adjust_confusions": 7,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "future": {
+          "samples": 2245,
+          "accuracy": 0.9648106904231626,
+          "macro_f1": 0.9285145705522416,
+          "nll": 0.10209476962864003,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9016393442622951,
+              "recall": 0.8979591836734694,
+              "f1": 0.8997955010224948,
+              "support": 245
+            },
+            "harvest": {
+              "precision": 0.990112063282795,
+              "recall": 0.9888084265964451,
+              "f1": 0.9894598155467721,
+              "support": 1519
+            },
+            "return": {
+              "precision": 0.8936170212765957,
+              "recall": 0.8936170212765957,
+              "f1": 0.8936170212765957,
+              "support": 141
+            },
+            "adjust": {
+              "precision": 0.9271137026239067,
+              "recall": 0.9352941176470588,
+              "f1": 0.931185944363104,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              220,
+              6,
+              0,
+              19
+            ],
+            [
+              6,
+              1502,
+              11,
+              0
+            ],
+            [
+              0,
+              9,
+              126,
+              6
+            ],
+            [
+              18,
+              0,
+              4,
+              318
+            ]
+          ],
+          "return_adjust_confusions": 10,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      }
+    },
+    "44": {
+      "summary": {
+        "warnings": {
+          "hits": 35,
+          "total": 48,
+          "false_events": 15,
+          "false_per_minute": 0.801781737193764,
+          "recall": 0.7291666666666666,
+          "precision": 0.7,
+          "by_transition": {
+            "adjust->pickup": {
+              "hits": 3,
+              "total": 8
+            },
+            "harvest->return": {
+              "hits": 14,
+              "total": 16
+            },
+            "pickup->harvest": {
+              "hits": 12,
+              "total": 16
+            },
+            "return->adjust": {
+              "hits": 6,
+              "total": 8
+            }
+          },
+          "f1": 0.7142857142857143,
+          "missed": 13,
+          "lead_s": {
+            "n": 35,
+            "p10": 0.13999999999999777,
+            "p50": 0.6333333333333329,
+            "p95": 1.2833333333333339
+          }
+        },
+        "prompt_counts": {
+          "on_time": 43,
+          "early": 4,
+          "late": 1
+        },
+        "mismatch_s": 35.5,
+        "mismatch_runs": 46,
+        "persistent_mismatch_s": 8.0,
+        "persistent_runs": 2,
+        "resync_updates": 0,
+        "skipped_prompt_positions": 0,
+        "illegal_updates": 0,
+        "cascade_events": 1,
+        "prompt_by_transition": {
+          "adjust->pickup": {
+            "early": 2,
+            "on_time": 5,
+            "late": 1
+          },
+          "harvest->return": {
+            "on_time": 15,
+            "early": 1
+          },
+          "pickup->harvest": {
+            "on_time": 16
+          },
+          "return->adjust": {
+            "early": 1,
+            "on_time": 7
+          }
+        },
+        "seven_position_accuracy": 0.9687086822388717,
+        "seven_position_confusion": [
+          [
+            125,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            827,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            71,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            11,
+            320,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            16,
+            128,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            8,
+            673,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7,
+            54
+          ]
+        ],
+        "history_corrections": 0,
+        "prompt_offset_s": {
+          "n": 48,
+          "p10": 0.2400000000000063,
+          "p50": 0.8333333333333286,
+          "p95": 1.3650000000000027
+        }
+      },
+      "classification": {
+        "current": {
+          "samples": 2269,
+          "accuracy": 0.9845747025121199,
+          "macro_f1": 0.9695521187270197,
+          "nll": 0.15891157126123942,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9418181818181818,
+              "recall": 0.9628252788104089,
+              "f1": 0.9522058823529411,
+              "support": 269
+            },
+            "harvest": {
+              "precision": 0.9993390614672836,
+              "recall": 0.9953917050691244,
+              "f1": 0.9973614775725593,
+              "support": 1519
+            },
+            "return": {
+              "precision": 0.952054794520548,
+              "recall": 0.9858156028368794,
+              "f1": 0.9686411149825784,
+              "support": 141
+            },
+            "adjust": {
+              "precision": 0.9671641791044776,
+              "recall": 0.9529411764705882,
+              "f1": 0.96,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              259,
+              1,
+              0,
+              9
+            ],
+            [
+              2,
+              1512,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              139,
+              2
+            ],
+            [
+              14,
+              0,
+              2,
+              324
+            ]
+          ],
+          "return_adjust_confusions": 4,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        },
+        "future": {
+          "samples": 2245,
+          "accuracy": 0.9688195991091314,
+          "macro_f1": 0.9383166420789385,
+          "nll": 0.15873501253755132,
+          "label_order": [
+            "pickup",
+            "harvest",
+            "return",
+            "adjust"
+          ],
+          "per_class": {
+            "pickup": {
+              "precision": 0.9307359307359307,
+              "recall": 0.8775510204081632,
+              "f1": 0.9033613445378151,
+              "support": 245
+            },
+            "harvest": {
+              "precision": 0.9907590759075907,
+              "recall": 0.9881500987491771,
+              "f1": 0.989452867501648,
+              "support": 1519
+            },
+            "return": {
+              "precision": 0.9148936170212766,
+              "recall": 0.9148936170212766,
+              "f1": 0.9148936170212766,
+              "support": 141
+            },
+            "adjust": {
+              "precision": 0.9217877094972067,
+              "recall": 0.9705882352941176,
+              "f1": 0.9455587392550143,
+              "support": 340
+            }
+          },
+          "confusion_true_rows": [
+            [
+              215,
+              6,
+              0,
+              24
+            ],
+            [
+              11,
+              1501,
+              7,
+              0
+            ],
+            [
+              0,
+              8,
+              129,
+              4
+            ],
+            [
+              5,
+              0,
+              5,
+              330
+            ]
+          ],
+          "return_adjust_confusions": 9,
+          "missing_classes": [],
+          "macro_definition": "unweighted four-class mean, zero_division=0"
+        }
+      }
+    }
+  },
+  "reason": "Only validation membership changes: excluded three-phase episode ca784332e44d979f99018a52 contributed2 correctly warned events; no model improvement/regression inferred from this comparison"
+}

@@ -1,0 +1,288 @@
+{
+  "version": "tomato-operation-pilot16-v1",
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "selection_rule": "Training only; one central recording from each source package, then farthest standardized log-duration and7 phase-fractions; no validation/test/model scores used",
+  "source_packages": 11,
+  "count": 16,
+  "cases": 128,
+  "independent_outcome_truth": false,
+  "success_failure_balance": "Unknown until human review; representative timing does not prove representative outcome difficulty",
+  "recordings": [
+    {
+      "episode_id": "32cba3eecb1d98e78b914611",
+      "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+      "dataset_root": "/home/user/datasets/tomato_independent10_20261109/A/1109_783_818_normal",
+      "episode_index": 3,
+      "split": "train",
+      "duration_s": 117.96666666666667,
+      "phase_duration_s": [
+        6.966666666666667,
+        41.36666666666667,
+        4.5,
+        22.833333333333332,
+        7.8,
+        29.5,
+        5.0
+      ]
+    },
+    {
+      "episode_id": "6d19dc89e407f785df4ee2c6",
+      "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+      "dataset_root": "/home/user/datasets/tomato_independent10_20261109/B/1109_696_811_normal",
+      "episode_index": 1,
+      "split": "train",
+      "duration_s": 136.36666666666667,
+      "phase_duration_s": [
+        7.433333333333334,
+        62.266666666666666,
+        4.5,
+        11.833333333333334,
+        9.9,
+        35.766666666666666,
+        4.666666666666667
+      ]
+    },
+    {
+      "episode_id": "4b9725d5a798ea8ae1ea0e69",
+      "source_recording_id": "435fc6da99284d7ba15cf09193352c06",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1102_588_616_normal_lerobot",
+      "episode_index": 1,
+      "split": "train",
+      "duration_s": 151.4,
+      "phase_duration_s": [
+        9.466666666666667,
+        68.73333333333333,
+        7.2,
+        19.166666666666668,
+        8.933333333333334,
+        33.6,
+        4.3
+      ]
+    },
+    {
+      "episode_id": "9c9c0e8ab7577ddfda0e3b7c",
+      "source_recording_id": "b0e4b49bfa1641beb783ec4a2e4e66ee",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot",
+      "episode_index": 4,
+      "split": "train",
+      "duration_s": 175.53333333333333,
+      "phase_duration_s": [
+        10.066666666666666,
+        67.03333333333333,
+        4.8,
+        27.466666666666665,
+        9.966666666666667,
+        51.766666666666666,
+        4.433333333333334
+      ]
+    },
+    {
+      "episode_id": "7d3563e229737ee222cdea43",
+      "source_recording_id": "15cf727eaed2406fb2ea6dc7fd4e52e9",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1104_652_697_normal_lerobot",
+      "episode_index": 14,
+      "split": "train",
+      "duration_s": 147.16666666666666,
+      "phase_duration_s": [
+        7.966666666666667,
+        58.0,
+        5.7,
+        10.666666666666666,
+        8.566666666666666,
+        51.36666666666667,
+        4.9
+      ]
+    },
+    {
+      "episode_id": "8432adc20e1292edecedeb42",
+      "source_recording_id": "e5b435cf5e6442a2bfb0046bc163bb6a",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_702_739_normal_lerobot",
+      "episode_index": 11,
+      "split": "train",
+      "duration_s": 119.03333333333333,
+      "phase_duration_s": [
+        7.5,
+        41.7,
+        4.566666666666666,
+        14.2,
+        7.166666666666667,
+        39.666666666666664,
+        4.233333333333333
+      ]
+    },
+    {
+      "episode_id": "e1ec4ab1d4f49e5af9ceeecc",
+      "source_recording_id": "08145c5d72af443dad2b3c80c3541b49",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+      "episode_index": 10,
+      "split": "train",
+      "duration_s": 128.26666666666668,
+      "phase_duration_s": [
+        5.666666666666667,
+        47.96666666666667,
+        3.7,
+        15.033333333333333,
+        9.633333333333333,
+        41.833333333333336,
+        4.433333333333334
+      ]
+    },
+    {
+      "episode_id": "d960895f8962550cb7520398",
+      "source_recording_id": "20ad614dc0de475d9c04f2f26d110386",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1103_604_632_normal_lerobot",
+      "episode_index": 4,
+      "split": "train",
+      "duration_s": 143.36666666666667,
+      "phase_duration_s": [
+        7.9,
+        59.9,
+        4.466666666666667,
+        21.766666666666666,
+        14.566666666666666,
+        31.4,
+        3.3666666666666667
+      ]
+    },
+    {
+      "episode_id": "ae8648d89618a1cc243fd08e",
+      "source_recording_id": "4cffd838ea0e4b81af120d4236bbeb93",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+      "episode_index": 8,
+      "split": "train",
+      "duration_s": 174.13333333333333,
+      "phase_duration_s": [
+        8.0,
+        54.86666666666667,
+        5.933333333333334,
+        26.666666666666668,
+        15.366666666666667,
+        58.8,
+        4.5
+      ]
+    },
+    {
+      "episode_id": "134ac3106b3dc875a778e01f",
+      "source_recording_id": "7ed15b57f5fc4643a0333cfd99c1edd6",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1105_703_713_normal_lerobot",
+      "episode_index": 0,
+      "split": "train",
+      "duration_s": 156.16666666666666,
+      "phase_duration_s": [
+        7.4,
+        69.6,
+        2.6,
+        17.533333333333335,
+        26.9,
+        26.366666666666667,
+        5.766666666666667
+      ]
+    },
+    {
+      "episode_id": "5049c3974e64cbcd114c66fb",
+      "source_recording_id": "bcd0001b7394475e9a178740c81cc79d",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1106_750_791_normal",
+      "episode_index": 1,
+      "split": "train",
+      "duration_s": 128.23333333333332,
+      "phase_duration_s": [
+        6.7,
+        45.36666666666667,
+        5.133333333333334,
+        17.3,
+        6.133333333333334,
+        44.6,
+        3.0
+      ]
+    },
+    {
+      "episode_id": "ac4f2f10de4532e9dab3017d",
+      "source_recording_id": "2c7dea1400834c86bd057bf60f0db9e2",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+      "episode_index": 10,
+      "split": "train",
+      "duration_s": 165.93333333333334,
+      "phase_duration_s": [
+        6.6,
+        45.333333333333336,
+        7.433333333333334,
+        24.933333333333334,
+        54.3,
+        21.966666666666665,
+        5.366666666666666
+      ]
+    },
+    {
+      "episode_id": "35b98fead313ad3adb9e2263",
+      "source_recording_id": "209695586e5d42a092580087e8595080",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/B/1104_637_701_normal_lerobot",
+      "episode_index": 1,
+      "split": "train",
+      "duration_s": 217.8,
+      "phase_duration_s": [
+        18.466666666666665,
+        37.06666666666667,
+        7.7,
+        81.33333333333333,
+        13.966666666666667,
+        51.333333333333336,
+        7.933333333333334
+      ]
+    },
+    {
+      "episode_id": "943dd481c0f37b921a3912b4",
+      "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+      "dataset_root": "/home/user/datasets/tomato_independent10_20261109/A/1109_783_818_normal",
+      "episode_index": 2,
+      "split": "train",
+      "duration_s": 109.9,
+      "phase_duration_s": [
+        10.4,
+        33.86666666666667,
+        4.266666666666667,
+        18.4,
+        9.3,
+        25.433333333333334,
+        8.233333333333333
+      ]
+    },
+    {
+      "episode_id": "e00eabcc5afc0a1fb422e819",
+      "source_recording_id": "ffdd92b4f7924956acd476e88f2ff1a6",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+      "episode_index": 17,
+      "split": "train",
+      "duration_s": 85.56666666666666,
+      "phase_duration_s": [
+        5.5,
+        23.133333333333333,
+        3.3666666666666667,
+        14.5,
+        16.933333333333334,
+        19.066666666666666,
+        3.066666666666667
+      ]
+    },
+    {
+      "episode_id": "a81e13951489b866c2710d81",
+      "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+      "dataset_root": "/home/user/datasets/tomato_independent10_20261109/B/1109_696_811_normal",
+      "episode_index": 2,
+      "split": "train",
+      "duration_s": 92.43333333333334,
+      "phase_duration_s": [
+        9.4,
+        38.43333333333333,
+        3.7666666666666666,
+        9.033333333333333,
+        7.766666666666667,
+        19.9,
+        4.133333333333334
+      ]
+    }
+  ],
+  "catalog_sha256": "5f5d69cfc9735c52d89daf73fc25aef0bd9069effc2ee841c9a2aedef77df980",
+  "cases_sha256": "ad4d7d91716d81fb553f18373e1e4ef37efa4c8f8d50b0d420ecefa0a6bab098",
+  "labels_changed": false,
+  "training": false
+}

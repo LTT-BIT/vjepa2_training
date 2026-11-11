@@ -40,5 +40,12 @@
   },
   "audit_manifest": "runs/tomato/complete100_20261111/dataset_manifest.json",
   "audit_manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
-  "complete_task_selection": "configs/tomato_complete100_20261111/selection.json"
+  "complete_task_selection": "configs/tomato_complete100_20261111/selection.json",
+  "operation_review_pilot": {
+    "recordings": 16,
+    "source": "train_only",
+    "directory": "runs/tomato/operation_pilot16_20261111_final",
+    "selection": "configs/tomato_stage_history_20261111/pilot16.json",
+    "approved_labels": 0
+  }
 }

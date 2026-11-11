@@ -1,0 +1,33 @@
+{
+  "version": "tomato-stage-history100-v1",
+  "manifest": "runs/tomato/complete100_20261111/dataset_manifest.json",
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "training": false,
+  "b0": "Existing independent1.5s heads; original normalization and checkpoints unchanged",
+  "current_confirmation": {
+    "threshold": 0.8,
+    "k": 2
+  },
+  "future_warning": {
+    "threshold": 0.5,
+    "k": 2,
+    "horizon_s": 1.5
+  },
+  "future_match": "Exact from/to one-to-one in [b-1.5,b)",
+  "prompt_match": "First actual ordered arrival in [b,min(b+2,segment_end))",
+  "history_arms": {
+    "none": "Original B0",
+    "predicted": "Own past confirmed ordered transitions, no labels",
+    "oracle": "Explicit offline diagnostic: only transitions available at previous observation; at most one forward correction; no rollback, no current/future annotation, segment end, duration or physical truth input"
+  },
+  "pilot_review_directory": "runs/tomato/operation_pilot16_20261111_final",
+  "pilot_count": 16,
+  "pilot_cases": 128,
+  "labels": "Independent outcomes still unreviewed; no supervised outcome training",
+  "preserved_default": "OpenPI Joint, RTC, old101 and checkpoint untouched"
+}

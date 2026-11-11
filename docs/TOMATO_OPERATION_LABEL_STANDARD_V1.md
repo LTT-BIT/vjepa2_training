@@ -19,13 +19,12 @@
 
 两名审核者独立填写直接证据说明、可见相机和帧区间。每个导出保留源标注SHA和审核者身份；完全一致才由merge工具批准，分歧交人工裁决，不自动平均边界。相机角色尚无归档映射证据，先保留cam0/1/2，不擅自称其右腕/左腕。工具不展示模型分数，阶段标签仅用于后台寻找候选。
 
-2026-11-11按用户要求从完整任务实验排除一条三阶段验证录制；当前100条清单为84训练、8验证、8历史测试。审核队列来自训练/验证92条，共736个候选；原101条及741候选版本保留。一个harvest候选不能代表所有摘取；当前页面不提供新增候选功能，后续必须扩充候选目录、逐次独立审核真正可见的分离事件后才可能讨论计数。当前版本不分配Tomato ID、不把阶段次数当摘取数，picked_count一直为Unknown。
+2026-11-11按用户要求从完整任务实验排除一条三阶段验证录制；当前100条清单为84训练、8验证、8历史测试。完整队列来自训练/验证92条，共736个候选；当前8770先展示训练集16条试点、128个候选，覆盖11个来源包。名单和选择规范见`configs/tomato_stage_history_20261111/pilot16.json`，原100条完整队列、101条及741候选版本保留。一个harvest候选不能代表所有摘取；当前页面不提供新增候选功能，后续必须扩充候选目录、逐次独立审核真正可见的分离事件后才可能讨论计数。当前版本不分配Tomato ID、不把阶段次数当摘取数，picked_count一直为Unknown。
 
 打开`http://127.0.0.1:8770/`：选项目→查看三路视频→逐帧定位→填写正/负/Unknown及证据→保存个人意见→分别导出两位审核文件。未审核项不会导出为标签。两名审核者应使用独立浏览器配置/机器，不能在同一LocalStorage共享意见后声称独立。
 
 ```bash
-.venv-tomato/bin/python -m tools.select_tomato_complete_episodes
-.venv-tomato/bin/python -m tools.serve_tomato_operation_review --directory runs/tomato/operation_memory_20261111_complete100 --port 8770
+.venv-tomato/bin/python -m tools.serve_tomato_operation_review --directory runs/tomato/operation_pilot16_20261111_final --port 8770
 .venv-tomato/bin/python -m tools.prepare_tomato_operation_review --merge /path/reviewer_a.json /path/reviewer_b.json --out /new/path/consensus.json
 ```
 
