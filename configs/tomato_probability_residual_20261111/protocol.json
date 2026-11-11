@@ -1,0 +1,23 @@
+{
+  "version": "probability-history-residual-v1",
+  "base_git_sha": "34b29673d058006a33836aad88d900a7032f1985",
+  "seeds": [42,43,44],
+  "internal_split_seed": 20261111,
+  "internal_holdout_recordings": 16,
+  "history_lags_s": [0,0.5,1.0,1.5],
+  "architecture": "36 causal log-probability history + availability masks -> 4 centered residual logits;148 parameters; zero initialization",
+  "future_horizon_s": 1.5,
+  "epochs": 100,
+  "patience": 15,
+  "learning_rate": 0.01,
+  "batch_size": 512,
+  "residual_penalty": 0.01,
+  "loss": "Unweighted future CE +0.01 mean squared centered logit correction",
+  "normalization": "68 internal-fit training recordings only; never development or historical test",
+  "epoch_selection": "16 internal holdout recordings mean window NLL; keep zero-residual identity when no epoch improves",
+  "refit": false,
+  "decision": "Original Future0.5/K2; unchanged Current0.8/K2 Prompt; exact from/to one-to-one [b-1.5,b)",
+  "candidate_gate": "Three-seed mean strict recall improves without increasing mean false/min; seed42 recall improves without increasing its false/min. Prompt traces must be identical. No automatic deployment.",
+  "validation": "One fixed exploratory evaluation on eight development recordings; no parameter sweep; no historical test arrays",
+  "limitations": "Frozen B0 previously fit some internal-holdout recordings; holdout is independent for residual fitting only, not the whole pipeline. B0 original normalization retained. New independent recordings still required."
+}

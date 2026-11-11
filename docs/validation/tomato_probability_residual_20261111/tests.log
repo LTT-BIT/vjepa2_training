@@ -1,0 +1,9 @@
+Command: .venv-tomato/bin/python -m pytest -q tests/test_tomato_probability_residual.py
+4 passed in0.59s
+Command: .venv-tomato/bin/python -m pytest -q tests/test_tomato*.py
+244 passed in6.28s
+Checkpoint replay:48 episode-seed records across two experiments; CPU maximum error<2e-6; all class argmax and strict event timestamps identical to saved GPU predictions. See per-experiment quality.json.
+
+Final code check: .venv-tomato/bin/python -m pytest -q tests/test_tomato*.py
+244 passed in6.52s
+All recorded model/cache/config input hashes rechecked after both runs: unchanged.

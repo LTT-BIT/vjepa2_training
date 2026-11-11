@@ -1,0 +1,3890 @@
+[
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.0,
+      "offset_s": -0.8333333333333339
+    },
+    "residual": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.0,
+      "offset_s": -0.8333333333333339
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.8333333333333339,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": true,
+      "event_time": 55.5,
+      "offset_s": -0.29999999999999716
+    },
+    "residual": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": true,
+      "event_time": 55.5,
+      "offset_s": -0.29999999999999716
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.29999999999999716,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.0,
+      "offset_s": -0.7666666666666657
+    },
+    "residual": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.0,
+      "offset_s": -0.7666666666666657
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.7666666666666657,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -4.233333333333334,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.5,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 128.5,
+      "offset_s": -0.6999999999999886
+    },
+    "residual": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 128.5,
+      "offset_s": -0.6999999999999886
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6999999999999886,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -1.2333333333333325
+    },
+    "residual": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -1.2333333333333325
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.2333333333333325,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -0.09999999999999432
+    },
+    "residual": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5999999999999943,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "residual": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.46666666666666856,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    },
+    "residual": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5999999999999943,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": true,
+      "event_time": 119.0,
+      "offset_s": -0.4000000000000057
+    },
+    "residual": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": true,
+      "event_time": 119.0,
+      "offset_s": -0.4000000000000057
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": true,
+      "event_time": 169.5,
+      "offset_s": -0.4000000000000057
+    },
+    "residual": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": true,
+      "event_time": 169.0,
+      "offset_s": -0.9000000000000057
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.9000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.0,
+      "offset_s": -0.5666666666666664
+    },
+    "residual": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.0,
+      "offset_s": -0.5666666666666664
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5666666666666664,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.5,
+      "offset_s": -0.36666666666666003
+    },
+    "residual": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.5,
+      "offset_s": -0.36666666666666003
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.36666666666666003,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -2.6666666666666714,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -3.13333333333334,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -2.7666666666666657,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.5666666666666629
+    },
+    "residual": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.5666666666666629
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5666666666666629,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -0.5666666666666664
+    },
+    "residual": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -0.5666666666666664
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5666666666666664,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "residual": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -1.0999999999999943
+    },
+    "residual": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -1.0999999999999943
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.0999999999999943,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 90.0,
+      "offset_s": -0.4000000000000057
+    },
+    "residual": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 90.0,
+      "offset_s": -0.4000000000000057
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "residual": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6666666666666714,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.5,
+      "offset_s": -0.13333333333332575
+    },
+    "residual": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.5,
+      "offset_s": -0.13333333333332575
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.13333333333332575,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.8666666666666663
+    },
+    "residual": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.8666666666666663
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.8666666666666663,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "residual": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6000000000000014,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "residual": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.7999999999999972,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.20000000000000284,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": true,
+      "event_time": 99.0,
+      "offset_s": -0.09999999999999432
+    },
+    "residual": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": true,
+      "event_time": 99.0,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.09999999999999432,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": true,
+      "event_time": 136.5,
+      "offset_s": -0.46666666666666856
+    },
+    "residual": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": true,
+      "event_time": 136.5,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.46666666666666856,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.0,
+      "offset_s": -1.0
+    },
+    "residual": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.0,
+      "offset_s": -1.0
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.0,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "residual": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.4666666666666686,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.7999999999999972,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 4.13333333333334,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.5,
+      "offset_s": -0.09999999999999432
+    },
+    "residual": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.5,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.09999999999999432,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.06666666666666288,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -1.0
+    },
+    "residual": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -1.0
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.0,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 37.0,
+      "offset_s": -0.13333333333333286
+    },
+    "residual": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 37.0,
+      "offset_s": -0.13333333333333286
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.13333333333333286,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": true,
+      "event_time": 40.0,
+      "offset_s": -0.13333333333333286
+    },
+    "residual": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": true,
+      "event_time": 40.0,
+      "offset_s": -0.13333333333333286
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.13333333333333286,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.23333333333333428,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.46666666666666856
+    },
+    "residual": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.46666666666666856,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.0,
+      "offset_s": -0.7000000000000028
+    },
+    "residual": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.0,
+      "offset_s": -0.7000000000000028
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.7000000000000028,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "residual": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.0,
+      "offset_s": -0.8333333333333357
+    },
+    "residual": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.0,
+      "offset_s": -0.8333333333333357
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.8333333333333357,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "residual": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.93333333333333,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 69.5,
+      "offset_s": -1.4000000000000057
+    },
+    "residual": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 69.5,
+      "offset_s": -1.4000000000000057
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": true,
+      "event_time": 89.5,
+      "offset_s": -0.09999999999999432
+    },
+    "residual": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": true,
+      "event_time": 89.5,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.09999999999999432,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.0,
+      "offset_s": -0.8333333333333339
+    },
+    "residual": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.0,
+      "offset_s": -0.8333333333333339
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.8333333333333339,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.20000000000000284,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 60.5,
+      "offset_s": -1.2666666666666657
+    },
+    "residual": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 60.5,
+      "offset_s": -1.2666666666666657
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.2666666666666657,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -2.7333333333333343,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.0,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 128.5,
+      "offset_s": -0.6999999999999886
+    },
+    "residual": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 128.5,
+      "offset_s": -0.6999999999999886
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6999999999999886,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -1.2333333333333325
+    },
+    "residual": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -1.2333333333333325
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.2333333333333325,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.0,
+      "offset_s": -0.5999999999999943
+    },
+    "residual": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5999999999999943,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "residual": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.46666666666666856,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "recovered",
+    "nearest_candidate_same_edge_offset_s": -0.5999999999999943,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": true,
+      "event_time": 119.0,
+      "offset_s": -0.4000000000000057
+    },
+    "residual": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": true,
+      "event_time": 119.0,
+      "offset_s": -0.4000000000000057
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -2.9000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.0,
+      "offset_s": -0.5666666666666664
+    },
+    "residual": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.0,
+      "offset_s": -0.5666666666666664
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5666666666666664,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.0,
+      "offset_s": -0.86666666666666
+    },
+    "residual": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.0,
+      "offset_s": -0.86666666666666
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.86666666666666,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -2.6666666666666714,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -1.63333333333334,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -3.2666666666666657,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.5666666666666629
+    },
+    "residual": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.5666666666666629
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5666666666666629,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -0.5666666666666664
+    },
+    "residual": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -0.5666666666666664
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5666666666666664,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "residual": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -1.0999999999999943
+    },
+    "residual": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -1.0999999999999943
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.0999999999999943,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 89.5,
+      "offset_s": -0.9000000000000057
+    },
+    "residual": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 89.5,
+      "offset_s": -0.9000000000000057
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.9000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "residual": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6666666666666714,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.5,
+      "offset_s": -0.13333333333332575
+    },
+    "residual": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.5,
+      "offset_s": -0.13333333333332575
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.13333333333332575,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.8666666666666663
+    },
+    "residual": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.8666666666666663
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.8666666666666663,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "residual": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6000000000000014,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "residual": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.7999999999999972,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.20000000000000284,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": true,
+      "event_time": 99.0,
+      "offset_s": -0.09999999999999432
+    },
+    "residual": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": true,
+      "event_time": 99.0,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.09999999999999432,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": true,
+      "event_time": 136.5,
+      "offset_s": -0.46666666666666856
+    },
+    "residual": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": true,
+      "event_time": 136.5,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.46666666666666856,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.0,
+      "offset_s": -1.0
+    },
+    "residual": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.0,
+      "offset_s": -1.0
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.0,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "residual": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.4666666666666686,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.29999999999999716,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 4.13333333333334,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.0,
+      "offset_s": -0.5999999999999943
+    },
+    "residual": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5999999999999943,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.4333333333333371
+    },
+    "residual": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.4333333333333371
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.4333333333333371,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -1.0
+    },
+    "residual": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -1.0
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.0,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 36.5,
+      "offset_s": -0.6333333333333329
+    },
+    "residual": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 36.5,
+      "offset_s": -0.6333333333333329
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6333333333333329,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": true,
+      "event_time": 40.0,
+      "offset_s": -0.13333333333333286
+    },
+    "residual": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": true,
+      "event_time": 40.0,
+      "offset_s": -0.13333333333333286
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.13333333333333286,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -1.7666666666666657,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.46666666666666856
+    },
+    "residual": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.46666666666666856,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.5,
+      "offset_s": -0.20000000000000284
+    },
+    "residual": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.5,
+      "offset_s": -0.20000000000000284
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.20000000000000284,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "residual": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.0,
+      "offset_s": -0.8333333333333357
+    },
+    "residual": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.0,
+      "offset_s": -0.8333333333333357
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.8333333333333357,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "residual": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.93333333333333,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.9000000000000057
+    },
+    "residual": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.9000000000000057
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.9000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.0,
+      "offset_s": -0.8333333333333339
+    },
+    "residual": {
+      "time": 8.833333333333334,
+      "previous": 0,
+      "label": 1,
+      "end": 55.8,
+      "detected": true,
+      "event_time": 8.0,
+      "offset_s": -0.8333333333333339
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.8333333333333339,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": true,
+      "event_time": 55.5,
+      "offset_s": -0.29999999999999716
+    },
+    "residual": {
+      "time": 55.8,
+      "previous": 1,
+      "label": 2,
+      "end": 61.766666666666666,
+      "detected": true,
+      "event_time": 55.5,
+      "offset_s": -0.29999999999999716
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.29999999999999716,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.0,
+      "offset_s": -0.7666666666666657
+    },
+    "residual": {
+      "time": 61.766666666666666,
+      "previous": 2,
+      "label": 3,
+      "end": 74.23333333333333,
+      "detected": true,
+      "event_time": 61.0,
+      "offset_s": -0.7666666666666657
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.7666666666666657,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 74.23333333333333,
+      "previous": 3,
+      "label": 0,
+      "end": 81.0,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -2.7333333333333343,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 81.0,
+      "previous": 0,
+      "label": 1,
+      "end": 129.2,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.5,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 128.5,
+      "offset_s": -0.6999999999999886
+    },
+    "residual": {
+      "time": 129.2,
+      "previous": 1,
+      "label": 2,
+      "end": 133.86666666666667,
+      "detected": true,
+      "event_time": 128.5,
+      "offset_s": -0.6999999999999886
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6999999999999886,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -1.2333333333333325
+    },
+    "residual": {
+      "time": 10.233333333333333,
+      "previous": 0,
+      "label": 1,
+      "end": 76.6,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -1.2333333333333325
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.2333333333333325,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.0,
+      "offset_s": -0.5999999999999943
+    },
+    "residual": {
+      "time": 76.6,
+      "previous": 1,
+      "label": 2,
+      "end": 82.46666666666667,
+      "detected": true,
+      "event_time": 76.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5999999999999943,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 82.0,
+      "offset_s": -0.46666666666666856
+    },
+    "residual": {
+      "time": 82.46666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 109.6,
+      "detected": true,
+      "event_time": 81.5,
+      "offset_s": -0.9666666666666686
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.9666666666666686,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    },
+    "residual": {
+      "time": 109.6,
+      "previous": 3,
+      "label": 0,
+      "end": 119.4,
+      "detected": true,
+      "event_time": 109.0,
+      "offset_s": -0.5999999999999943
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5999999999999943,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 119.4,
+      "previous": 0,
+      "label": 1,
+      "end": 169.9,
+      "detected": true,
+      "event_time": 119.0,
+      "offset_s": -0.4000000000000057
+    },
+    "status": "recovered",
+    "nearest_candidate_same_edge_offset_s": -0.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": true,
+      "event_time": 169.0,
+      "offset_s": -0.9000000000000057
+    },
+    "residual": {
+      "time": 169.9,
+      "previous": 1,
+      "label": 2,
+      "end": 175.0,
+      "detected": true,
+      "event_time": 169.0,
+      "offset_s": -0.9000000000000057
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.9000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.5,
+      "offset_s": -0.06666666666666643
+    },
+    "residual": {
+      "time": 7.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 73.86666666666666,
+      "detected": true,
+      "event_time": 7.5,
+      "offset_s": -0.06666666666666643
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.06666666666666643,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.0,
+      "offset_s": -0.86666666666666
+    },
+    "residual": {
+      "time": 73.86666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 80.66666666666667,
+      "detected": true,
+      "event_time": 73.0,
+      "offset_s": -0.86666666666666
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.86666666666666,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 80.66666666666667,
+      "previous": 2,
+      "label": 3,
+      "end": 99.13333333333334,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -2.6666666666666714,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": true,
+      "event_time": 98.5,
+      "offset_s": -0.63333333333334
+    },
+    "residual": {
+      "time": 99.13333333333334,
+      "previous": 3,
+      "label": 0,
+      "end": 113.76666666666667,
+      "detected": true,
+      "event_time": 98.5,
+      "offset_s": -0.63333333333334
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.63333333333334,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 113.76666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 175.56666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -2.7666666666666657,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.5666666666666629
+    },
+    "residual": {
+      "time": 175.56666666666666,
+      "previous": 1,
+      "label": 2,
+      "end": 180.5,
+      "detected": true,
+      "event_time": 175.0,
+      "offset_s": -0.5666666666666629
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5666666666666629,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -0.5666666666666664
+    },
+    "residual": {
+      "time": 9.566666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 71.0,
+      "detected": true,
+      "event_time": 9.0,
+      "offset_s": -0.5666666666666664
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5666666666666664,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "residual": {
+      "time": 71.0,
+      "previous": 1,
+      "label": 2,
+      "end": 77.6,
+      "detected": true,
+      "event_time": 70.5,
+      "offset_s": -0.5
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 77.0,
+      "offset_s": -0.5999999999999943
+    },
+    "residual": {
+      "time": 77.6,
+      "previous": 2,
+      "label": 3,
+      "end": 90.4,
+      "detected": true,
+      "event_time": 76.5,
+      "offset_s": -1.0999999999999943
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.0999999999999943,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 90.0,
+      "offset_s": -0.4000000000000057
+    },
+    "residual": {
+      "time": 90.4,
+      "previous": 3,
+      "label": 0,
+      "end": 100.66666666666667,
+      "detected": true,
+      "event_time": 90.0,
+      "offset_s": -0.4000000000000057
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "residual": {
+      "time": 100.66666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 138.63333333333333,
+      "detected": true,
+      "event_time": 100.0,
+      "offset_s": -0.6666666666666714
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6666666666666714,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.0,
+      "offset_s": -0.6333333333333258
+    },
+    "residual": {
+      "time": 138.63333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 142.83333333333334,
+      "detected": true,
+      "event_time": 138.0,
+      "offset_s": -0.6333333333333258
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6333333333333258,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.8666666666666663
+    },
+    "residual": {
+      "time": 7.366666666666666,
+      "previous": 0,
+      "label": 1,
+      "end": 57.6,
+      "detected": true,
+      "event_time": 6.5,
+      "offset_s": -0.8666666666666663
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.8666666666666663,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "residual": {
+      "time": 57.6,
+      "previous": 1,
+      "label": 2,
+      "end": 62.8,
+      "detected": true,
+      "event_time": 57.0,
+      "offset_s": -0.6000000000000014
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6000000000000014,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "residual": {
+      "time": 62.8,
+      "previous": 2,
+      "label": 3,
+      "end": 90.3,
+      "detected": true,
+      "event_time": 62.0,
+      "offset_s": -0.7999999999999972
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.7999999999999972,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 90.3,
+      "previous": 3,
+      "label": 0,
+      "end": 99.1,
+      "detected": true,
+      "event_time": 90.0,
+      "offset_s": -0.29999999999999716
+    },
+    "status": "recovered",
+    "nearest_candidate_same_edge_offset_s": -0.29999999999999716,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": true,
+      "event_time": 99.0,
+      "offset_s": -0.09999999999999432
+    },
+    "residual": {
+      "time": 99.1,
+      "previous": 0,
+      "label": 1,
+      "end": 136.96666666666667,
+      "detected": true,
+      "event_time": 99.0,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.09999999999999432,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 136.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 140.4,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": -2.4666666666666686,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.0,
+      "offset_s": -1.0
+    },
+    "residual": {
+      "time": 7.0,
+      "previous": 0,
+      "label": 1,
+      "end": 62.96666666666667,
+      "detected": true,
+      "event_time": 6.0,
+      "offset_s": -1.0
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.0,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "residual": {
+      "time": 62.96666666666667,
+      "previous": 1,
+      "label": 2,
+      "end": 66.2,
+      "detected": true,
+      "event_time": 61.5,
+      "offset_s": -1.4666666666666686
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.4666666666666686,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 66.2,
+      "previous": 2,
+      "label": 3,
+      "end": 94.86666666666666,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 1.2999999999999972,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 94.86666666666666,
+      "previous": 3,
+      "label": 0,
+      "end": 106.6,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 3.63333333333334,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.5,
+      "offset_s": -0.09999999999999432
+    },
+    "residual": {
+      "time": 106.6,
+      "previous": 0,
+      "label": 1,
+      "end": 175.43333333333334,
+      "detected": true,
+      "event_time": 106.5,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.09999999999999432,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 175.43333333333334,
+      "previous": 1,
+      "label": 2,
+      "end": 179.03333333333333,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 1.0666666666666629,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -1.0
+    },
+    "residual": {
+      "time": 5.5,
+      "previous": 0,
+      "label": 1,
+      "end": 37.13333333333333,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -1.0
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.0,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 36.5,
+      "offset_s": -0.6333333333333329
+    },
+    "residual": {
+      "time": 37.13333333333333,
+      "previous": 1,
+      "label": 2,
+      "end": 40.13333333333333,
+      "detected": true,
+      "event_time": 36.5,
+      "offset_s": -0.6333333333333329
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6333333333333329,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": true,
+      "event_time": 39.5,
+      "offset_s": -0.6333333333333329
+    },
+    "residual": {
+      "time": 40.13333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.26666666666667,
+      "detected": true,
+      "event_time": 39.5,
+      "offset_s": -0.6333333333333329
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.6333333333333329,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 65.26666666666667,
+      "previous": 3,
+      "label": 0,
+      "end": 70.46666666666667,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.23333333333333428,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 70.46666666666667,
+      "previous": 0,
+      "label": 1,
+      "end": 86.7,
+      "detected": true,
+      "event_time": 70.0,
+      "offset_s": -0.46666666666666856
+    },
+    "status": "recovered",
+    "nearest_candidate_same_edge_offset_s": -0.46666666666666856,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.5,
+      "offset_s": -0.20000000000000284
+    },
+    "residual": {
+      "time": 86.7,
+      "previous": 1,
+      "label": 2,
+      "end": 89.5,
+      "detected": true,
+      "event_time": 86.5,
+      "offset_s": -0.20000000000000284
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.20000000000000284,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 1,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "residual": {
+      "time": 5.0,
+      "previous": 0,
+      "label": 1,
+      "end": 44.833333333333336,
+      "detected": true,
+      "event_time": 4.5,
+      "offset_s": -0.5
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.5,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 2,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.0,
+      "offset_s": -0.8333333333333357
+    },
+    "residual": {
+      "time": 44.833333333333336,
+      "previous": 1,
+      "label": 2,
+      "end": 47.93333333333333,
+      "detected": true,
+      "event_time": 44.0,
+      "offset_s": -0.8333333333333357
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.8333333333333357,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 3,
+    "transition": "return->adjust",
+    "B0": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "residual": {
+      "time": 47.93333333333333,
+      "previous": 2,
+      "label": 3,
+      "end": 65.6,
+      "detected": true,
+      "event_time": 47.0,
+      "offset_s": -0.93333333333333
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.93333333333333,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 4,
+    "transition": "adjust->pickup",
+    "B0": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "residual": {
+      "time": 65.6,
+      "previous": 3,
+      "label": 0,
+      "end": 70.9,
+      "detected": false,
+      "event_time": null,
+      "offset_s": null
+    },
+    "status": "still_missed",
+    "nearest_candidate_same_edge_offset_s": 0.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 5,
+    "transition": "pickup->harvest",
+    "B0": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 69.5,
+      "offset_s": -1.4000000000000057
+    },
+    "residual": {
+      "time": 70.9,
+      "previous": 0,
+      "label": 1,
+      "end": 89.6,
+      "detected": true,
+      "event_time": 69.5,
+      "offset_s": -1.4000000000000057
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -1.4000000000000057,
+    "nearest_scope": "diagnostic only, not a match"
+  },
+  {
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "ordinal": 6,
+    "transition": "harvest->return",
+    "B0": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": true,
+      "event_time": 89.5,
+      "offset_s": -0.09999999999999432
+    },
+    "residual": {
+      "time": 89.6,
+      "previous": 1,
+      "label": 2,
+      "end": 92.43333333333334,
+      "detected": true,
+      "event_time": 89.5,
+      "offset_s": -0.09999999999999432
+    },
+    "status": "retained",
+    "nearest_candidate_same_edge_offset_s": -0.09999999999999432,
+    "nearest_scope": "diagnostic only, not a match"
+  }
+]

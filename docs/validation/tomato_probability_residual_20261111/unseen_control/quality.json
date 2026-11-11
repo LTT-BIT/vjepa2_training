@@ -1,0 +1,176 @@
+{
+  "checkpoint_replay": [
+    {
+      "seed": 42,
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 42,
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 42,
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 42,
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 42,
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 42,
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 42,
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 42,
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 43,
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 43,
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 43,
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 43,
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 43,
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 43,
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 43,
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 43,
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 44,
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 44,
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 44,
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 44,
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 44,
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 44,
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 44,
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    },
+    {
+      "seed": 44,
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "cpu_max_abs_error": 1.1920928955078125e-07,
+      "argmax_and_events_identical": true
+    }
+  ],
+  "changes": {
+    "42": {
+      "retained": 37,
+      "still_missed": 11
+    },
+    "43": {
+      "retained": 34,
+      "still_missed": 13,
+      "recovered": 1
+    },
+    "44": {
+      "retained": 35,
+      "still_missed": 10,
+      "recovered": 3
+    }
+  },
+  "recording_paired_bootstrap_delta95": {
+    "recall": [
+      0.006944444444444346,
+      0.05555555555555566
+    ],
+    "false_per_minute": [
+      -0.13228743634536483,
+      0.20991682387240615
+    ],
+    "scope": "4000 paired resamples of eight recordings; average seeds within recording; exploratory development uncertainty, not independent generalization"
+  },
+  "frozen_executed_source_hash_verified": true
+}
