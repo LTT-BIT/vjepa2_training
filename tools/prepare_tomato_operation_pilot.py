@@ -4,6 +4,7 @@ import argparse
 import numpy as np
 from . import tomato_dataset as ds
 from .select_tomato_complete_episodes import ACTIVE
+from .tomato_operation_review_quality import enrich_cases
 
 
 def select_pilot(episodes, count=16):
@@ -30,6 +31,7 @@ def run(out):
     m=ds.read_json(ACTIVE);selected=select_pilot(m['episodes']);ids={e['episode_id'] for e in selected}
     parent=Path('runs/tomato/operation_memory_20261111_complete100');catalog=[r for r in ds.read_json(parent/'catalog.json') if r['episode_id'] in ids]
     cases=[r for r in ds.read_json(parent/'cases.json') if r['episode_id'] in ids]
+    cases=enrich_cases(cases,m['episodes'])
     rank={e['episode_id']:i for i,e in enumerate(selected)};priority={'truss_stably_lifted':0,'tomato_detached':1,'truss_returned':2}
     cases.sort(key=lambda r:(rank[r['episode_id']],priority.get(r['event_type'],3),r['event_type']))
     assert len(catalog)==16 and len(cases)==128 and all(r['split']=='train' for r in catalog)
@@ -39,6 +41,7 @@ def run(out):
                   previous_catalog_sha256=[old['catalog_sha256']]+old.get('previous_catalog_sha256',[]),
                   selection_note='训练集操作结果试点：16条录制、128项。先看稳定拿起、实际脱离、稳定放回。不是重标Subtask；遮挡请选Unknown。非试点的原保存意见仍保留在原目录/浏览器存储。',
                   original_annotations_modified=False,review_label_status='awaiting_independent_review',pilot=True)
+    identity['review_schema']='tomato-operation-review-v2'
     ds.write_json(out/'identity.json',identity)
     for name in ('reviews.json','approved.json'):
         source=ds.read_json(parent/name)

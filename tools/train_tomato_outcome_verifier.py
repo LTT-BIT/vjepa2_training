@@ -33,6 +33,7 @@ def run(labels_path,out,mode,seed=42,epochs=10):
     ds.write_json(out/'readiness.json',ready)
     if not ready['can_train']:
         ds.write_json(out/'result.json',dict(status='not_trained',reason='insufficient_independent_outcome_labels',real_labels=len(labels),test_read=False));print('NOT TRAINED: independent outcome labels insufficient');return
+    labels=[r for r in labels if r.get('review_schema')=='tomato-operation-review-v2']
     import torch
     manifest=ds.read_json(ACTIVE);identity=ds.read_json(ACTIVE.parent/'data_identity.json');data=examples(manifest,identity,labels,mode)
     if any(v is None or len(v[0])==0 for v in data.values()):raise ValueError('Both grouped train and val supervision required')

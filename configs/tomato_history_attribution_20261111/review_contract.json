@@ -1,0 +1,30 @@
+{
+  "schema": "tomato-operation-review-v2",
+  "outcomes": {
+    "positive": "success",
+    "negative": "failure",
+    "unknown": "unknown"
+  },
+  "fields": [
+    "reviewer",
+    "case_id",
+    "episode_id",
+    "source_recording_id",
+    "event_type",
+    "annotation_sha256",
+    "start_frame",
+    "end_frame",
+    "first_confirmable_frame",
+    "evidence_end_frame",
+    "visible_cameras",
+    "evidence_note",
+    "reference_transition_frame"
+  ],
+  "first_time": "Explicit human entry, no suggestion default; Unknown must be null; earliest evidence available at or before result observation",
+  "independence": "Reviewer-specific browser storage; separate people/profiles, no identity authentication claim",
+  "agreement": "Exact interval/outcome/first frame; disagreements pending, never average; all source opinions retained",
+  "training_gate": "At least10 approved v2 positive and10 negative intervals across6 sources, train/val split and valid causal window coverage still required",
+  "comparison_boundaries_sha256": "3716f9c63f4c7c8942cbaeeaa5aa89d342a0939d6b38c9742886c19f1987f97e",
+  "catalog_sha256": "5f5d69cfc9735c52d89daf73fc25aef0bd9069effc2ee841c9a2aedef77df980",
+  "subtask_changed": false
+}

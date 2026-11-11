@@ -10,6 +10,13 @@ def validate_label(row):
     if any(type(row.get(k)) is not int for k in ('start_frame','end_frame','evidence_end_frame')):raise ValueError('Frame indices must be integers')
     if not 0<=row['start_frame']<row['end_frame'] or row['evidence_end_frame']<row['start_frame'] or row['evidence_end_frame']>=row['end_frame']:raise ValueError('Invalid observable interval')
     if not row.get('visible_cameras') or not row.get('evidence_note') or not row.get('annotation_sha256'):raise ValueError('Missing visual evidence/source identity')
+    if row.get('review_schema')=='tomato-operation-review-v2':
+        if row.get('outcome')!={'positive':'success','negative':'failure','unknown':'unknown'}[row['verdict']]:raise ValueError('Outcome/verdict mismatch')
+        if any(c not in ('cam0','cam1','cam2') for c in row['visible_cameras']):raise ValueError('Invalid camera source')
+        first=row.get('first_confirmable_frame')
+        if row['verdict']=='unknown':
+            if first is not None:raise ValueError('Unknown first-confirmable time must be null')
+        elif type(first) is not int or first!=row['evidence_end_frame']:raise ValueError('First result evidence must determine causal release')
     return row
 
 
@@ -63,5 +70,7 @@ def training_readiness(labels):
     rows=[validate_label(r) for r in labels]
     if len({r['case_id'] for r in rows})!=len(rows):raise ValueError('Duplicate review intervals do not add independent supervision')
     counts={e:{v:sum(r['event_type']==e and r['verdict']==v for r in rows) for v in ('positive','negative','unknown')} for e in EVENTS}
-    eligible=[e for e,c in counts.items() if c['positive']>=10 and c['negative']>=10 and len({r['source_recording_id'] for r in rows if r['event_type']==e and r['verdict']!='unknown'})>=6]
-    return dict(counts=counts,eligible_events=eligible,can_train=bool(eligible),rule='At least10 independent positive/negative intervals across6 recordings for initial development smoke, not evidence of final sufficiency')
+    timed=[r for r in rows if r.get('review_schema')=='tomato-operation-review-v2']
+    qualified={e:{v:sum(r['event_type']==e and r['verdict']==v for r in timed) for v in ('positive','negative','unknown')} for e in EVENTS}
+    eligible=[e for e,c in qualified.items() if c['positive']>=10 and c['negative']>=10 and len({r['source_recording_id'] for r in timed if r['event_type']==e and r['verdict']!='unknown'})>=6]
+    return dict(counts=counts,timed_v2_counts=qualified,eligible_events=eligible,can_train=bool(eligible),rule='At least10 independently approved v2 positive/negative intervals across6 recordings; explicit first evidence required. Development smoke only, not final sufficiency')

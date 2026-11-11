@@ -1,0 +1,27 @@
+{
+  "version": "tomato-history-anchor-attribution-v1",
+  "parent_git": "01ffba1",
+  "data_lock": "configs/tomato_stage_history_20261111/dataset_lock.json",
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "validation_recordings": 8,
+  "events_per_seed": 48,
+  "arms": {
+    "H0": "original B0",
+    "H1": "Previous-observation true phase only: phase,available_at",
+    "H2": "Full causal true transition prefix, existing decoder projects to latest phase",
+    "H3": "Own full predicted confirmation history"
+  },
+  "fixed_policy": "Same Current0.8/K2, Future0.5/K2, forward-only at most one phase correction; never change frozen head outputs",
+  "oracle": "Explicit offline diagnostic only, no current/future truth/end/duration; not an online Prompt input",
+  "pilot": "runs/tomato/operation_pilot16_v2_20261111",
+  "pilot_case_count": 128,
+  "review_schema": "tomato-operation-review-v2",
+  "supervised_training": false,
+  "reason": "No independently approved timed result labels",
+  "default_B0_unchanged": true
+}

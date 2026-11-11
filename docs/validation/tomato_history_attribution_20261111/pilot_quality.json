@@ -1,0 +1,32 @@
+{
+  "schema": "tomato-operation-review-v2",
+  "candidate_count": 128,
+  "review_rows": 0,
+  "valid_rows": 0,
+  "invalid": [],
+  "distinct_reviewers": [],
+  "cases_reviewed": 0,
+  "paired_comparisons": [],
+  "outcome_agreement": null,
+  "first_evidence_difference_p50_s": null,
+  "first_evidence_difference_p95_s": null,
+  "unknown_rate": null,
+  "paired_case_count": 0,
+  "camera_sources": {},
+  "by_event": {
+    "adjustment_ended": {},
+    "left_pick_started": {},
+    "right_grasp_started": {},
+    "right_regrasp_started": {},
+    "second_grasp_verified": {},
+    "tomato_detached": {},
+    "truss_returned": {},
+    "truss_stably_lifted": {}
+  },
+  "timing_vs_subtask": {},
+  "can_assess_label_reliability": false,
+  "human_independence": "Separate people/browser profiles required; reviewer names alone are not identity authentication",
+  "physical_accuracy": null,
+  "training": false,
+  "normalized_reviews": []
+}

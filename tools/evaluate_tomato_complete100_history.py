@@ -7,7 +7,7 @@ import time
 import numpy as np
 from . import tomato_dataset as ds, tomato_metrics as metrics, tomato_boundary_metrics as bm
 from .select_tomato_complete_episodes import ACTIVE, ORDER
-from .tomato_stage_history import HistoryReplay, oracle_prefix
+from .tomato_stage_history import HistoryReplay, oracle_prefix, oracle_anchor
 from .evaluate_tomato_state_recovery import state_score, annotate_state, prompt_score, event_score, summarize
 
 SOURCE=Path('runs/tomato/transition_time_20261109')
@@ -51,7 +51,8 @@ def score_arm(e,z,mode):
     model=HistoryReplay(mode); trace=[]; warnings=[]; cpu=[]
     for i,t in enumerate(z['times']):
         history=oracle_prefix(e['annotation']['segments'],e['fps'],float(z['times'][i-1]) if i else None) if mode=='oracle' else None
-        start=time.perf_counter_ns();r=model.update(z['current_probabilities'][i],z['future_probabilities'][i],float(t),oracle_history=history);cpu.append((time.perf_counter_ns()-start)/1e6)
+        anchor=oracle_anchor(e['annotation']['segments'],e['fps'],float(z['times'][i-1]) if i else None) if mode=='anchor' else None
+        start=time.perf_counter_ns();r=model.update(z['current_probabilities'][i],z['future_probabilities'][i],float(t),oracle_history=history,oracle_position=anchor);cpu.append((time.perf_counter_ns()-start)/1e6)
         trace.append(r)
         if r['warning']:warnings.append(r['warning'])
     truth=bm.boundaries(dict(episode=e)); times=z['times'];ph=[r['phase'] for r in trace]

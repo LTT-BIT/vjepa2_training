@@ -1,21 +1,71 @@
-<!doctype html><html lang="zh"><meta charset="utf-8"><title>操作结果独立复核</title>
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>操作结果双人独立复核</title>
 <style>body{font:17px system-ui;max-width:1200px;margin:24px auto;background:#f6f7f9;color:#17202b}section{background:white;padding:18px;margin:14px 0;border-radius:10px}video{width:32%;background:#111}button,input,select,textarea{font:inherit;margin:5px;padding:7px}textarea{width:95%;height:70px}.warn{color:#a24900}#counter{font-weight:bold}label{display:inline-block;margin:5px}</style>
-<h1>操作结果独立复核</h1><p>这里判断<strong>物体是否真的发生变化</strong>，不是标阶段。所有项目初始未审核。关节闭合、手臂抬升和阶段名称都不能单独证明成功。</p>
+<h1>操作结果双人独立复核</h1>
+<p>只标独立可见结果，不重标Subtask。开始抓握/摘取只表示尝试，不能当作成功持有/果实脱离。</p>
 <p id="scope" class="warn"></p>
-<section><label>审核者姓名/编号 <input id="reviewer"></label><button id="prev">上一项</button><button id="next">下一项</button><select id="item"></select><span id="counter"></span><p id="desc"></p><p id="id"></p></section>
-<section><p>三路相机仅标cam0/1/2，物理角色尚未确认。请同时查看物体是否移动、分离或稳定接触，遮挡时选Unknown。</p><div id="videos"></div><button id="back">后退1帧</button><button id="forward">前进1帧</button><button id="play">同步播放/暂停</button><button id="markStart">当前帧记为开始</button><button id="markEnd">当前帧记为结束/证据完成</button><p id="time"></p></section>
-<section><p>正样本＝符合独立可见条件；负样本＝同一条件可观察且明确未发生；看不见/无法判定＝Unknown。未看到成功不能自动当负样本。</p>
-<label>结论 <select id="verdict"><option value="">未审核</option><option value="positive">Positive：有直接可见证据</option><option value="negative">Negative：可观察且明确未发生</option><option value="unknown">Unknown：证据不足</option></select></label>
-<label>区间开始帧 <input id="start" type="number"></label><label>区间结束帧（不包含）<input id="end" type="number"></label><label>证据完成帧 <input id="evidence" type="number"></label>
-<p><label><input type="checkbox" class="camera" value="cam0">cam0可见</label><label><input type="checkbox" class="camera" value="cam1">cam1可见</label><label><input type="checkbox" class="camera" value="cam2">cam2可见</label></p>
-<textarea id="note" placeholder="描述直接证据、遮挡与歧义。不要只写“进入harvest”或“手闭合”。"></textarea><button id="save">保存此项（仅本浏览器）</button><button id="export">导出个人审核JSON</button><p class="warn">两名审核者分别导出；一致的独立意见才可合并。此页面不会修改原始标签，也不会自动训练。</p><p id="message"></p></section>
+<section><label>本人审核者编号 <input id="reviewer" autocomplete="off"></label><button id="workspace">打开个人工作区</button>
+<p>两人分别使用自己的浏览器配置或机器，不查看对方意见。本页面按编号隔离保存，但编号不是身份认证。旧意见保留，需明确补充首次证据时间。</p>
+<button id="prev">上一项</button><button id="next">下一项</button><select id="item"></select><span id="counter"></span><p id="desc"></p><p id="id"></p></section>
+<section><p>cam0/1/2的物理角色未确认。观察目标本身；遮挡、看不清或无法确定结果时选Unknown。</p>
+<div id="videos"></div><button id="back">后退1帧</button><button id="forward">前进1帧</button><button id="play">同步播放/暂停</button>
+<button id="markStart">当前帧记为区间开始</button><button id="markEnd">当前帧记为区间结束</button><button id="markEvidence">当前帧记为首次可确认</button><p id="time"></p></section>
+<section><label>结果 <select id="verdict"><option value="">未审核</option><option value="positive">Success：该事件条件有可见证据</option><option value="negative">Failure：可见且事件条件不成立</option><option value="unknown">Unknown：无法确定</option></select></label>
+<label>区间开始帧 <input id="start" type="number"></label><label>区间结束帧（不包含）<input id="end" type="number"></label>
+<label>首次可确认帧 <input id="evidence" type="number" placeholder="必须由本人确认；Unknown留空"></label>
+<p>首次可确认＝仅看到该帧及以前，就足以判断当前结果。Failure也需明确可见反例；Unknown不填写虚构的结果时间。</p>
+<p id="relation">Subtask仅作时机比较，不是成功标签。</p>
+<p><label><input type="checkbox" class="camera" value="cam0">cam0提供证据</label><label><input type="checkbox" class="camera" value="cam1">cam1提供证据</label><label><input type="checkbox" class="camera" value="cam2">cam2提供证据</label></p>
+<textarea id="note" placeholder="描述物体状态、直接证据或遮挡原因，不要只写阶段名称或关节闭合。"></textarea>
+<button id="save">保存本人意见（本浏览器）</button><button id="export">导出本人审核JSON</button>
+<p class="warn">两人导出后再检查结论、证据帧和区间分歧。不会自动平均边界，不改原Subtask，不自动训练。</p><p id="message"></p></section>
 <script>
-let cases,catalog,identity,index=0,store,key;const $=id=>document.getElementById(id);const rules={right_grasp_started:'右手开始抓握：可见新的接触/闭合尝试；不表示抓握成功',truss_stably_lifted:'稳定拿起：物体随右手离开支撑并持续共同运动；手臂空抬为负，遮挡为Unknown',left_pick_started:'左手开始摘取：可见新的目标接近/接触尝试；不等于脱离',tomato_detached:'番茄脱离：可见目标从果梗分离且后续状态一致；不得按harvest次数计数',truss_returned:'放回：物体有稳定支撑/释放证据；机械臂返程不算完成',adjustment_ended:'调整结束：有可见结束锚点；静止不一定表示结束，不清楚则Unknown',right_regrasp_started:'再次抓握：可见新的接触/闭合序列；重复阶段信息不能代替证据',second_grasp_verified:'第二次抓握确认：新的物体-手共同运动/稳定持有证据；不能直接复制pickup_2'};
+let cases,catalog,identity,index=0,store={},key,reviewer='',dirty=false;
+const $=id=>document.getElementById(id), outcome={positive:'success',negative:'failure',unknown:'unknown'};
+const rules={right_grasp_started:'右手开始抓握：新的接触/闭合尝试，不代表抓握成功',truss_stably_lifted:'稳定拿起：物体离开支撑并随手共同运动；空抬为Failure，遮挡为Unknown',left_pick_started:'左手开始摘取：新的接近/接触尝试，不代表果实脱离',tomato_detached:'果实实际脱离：有果实与果梗分离及后续状态证据，不按harvest次数判断',truss_returned:'稳定放回：盘面支撑且释放/卸载可见，机械臂返程不算',adjustment_ended:'调整结束：需可见独立结束证据，仅照搬Subtask或暂停应保留不确定',right_regrasp_started:'再次抓握：新的接触尝试，不代表第二次持有成功',second_grasp_verified:'第二次抓握结果：新的物体-手共同运动或稳定持有证据'};
 function vids(){return [...document.querySelectorAll('video')]}
-function draw(){const c=cases[index],e=catalog.find(e=>e.episode_id===c.episode_id);$('item').value=index;$('counter').textContent=`${index+1}/${cases.length} · 已填 ${Object.keys(store).length}`;$('desc').textContent=rules[c.event_type];$('id').textContent=`${c.split} / ${c.episode_id} / ${c.event_type}`;$('videos').replaceChildren();e.videos.forEach((_,i)=>{const v=document.createElement('video');v.controls=true;v.preload='metadata';v.src=`/media/${c.episode_id}/${i}`;v.onloadedmetadata=()=>v.currentTime=c.suggested_frame/e.fps;v.ontimeupdate=()=>{$('time').textContent=`首路时间 ${vids()[0].currentTime.toFixed(3)} 秒 / 帧 ${Math.floor(vids()[0].currentTime*e.fps+1e-4)}`};$('videos').append(v)});const r=store[c.case_id];$('verdict').value=r?.verdict||'';$('start').value=r?.start_frame??Math.max(0,c.suggested_frame-30);$('end').value=r?.end_frame??Math.min(e.length,c.suggested_frame+31);$('evidence').value=r?.evidence_end_frame??c.suggested_frame;$('note').value=r?.evidence_note||'';document.querySelectorAll('.camera').forEach(x=>x.checked=(r?.visible_cameras||[]).includes(x.value));}
+function frame(){return Math.floor(vids()[0].currentTime*catalog.find(e=>e.episode_id===cases[index].episode_id).fps+1e-4)}
+function relation(){
+ const c=cases[index],e=catalog.find(e=>e.episode_id===c.episode_id),s=$('evidence').value;
+ if(c.reference_kind!=='stage_transition'){$('relation').textContent='本项参考录制开始；不计入阶段转换前后统计。';return}
+ const delta=s===''?null:(Number(s)-c.reference_transition_frame)/e.fps;
+ $('relation').textContent=`比较参考：${c.reference_transition_description}，帧${c.reference_transition_frame}。`+(delta===null?'填写首次证据时间后计算前/后关系。':`首次证据在转换${delta<0?'前':delta>0?'后':'当帧'} ${Math.abs(delta).toFixed(3)} 秒。`);
+}
+function draw(){
+ const c=cases[index],e=catalog.find(e=>e.episode_id===c.episode_id),r=store[c.case_id];
+ $('item').value=index;$('counter').textContent=`${index+1}/${cases.length} · 本人已填 ${Object.keys(store).length}`;
+ $('desc').textContent=rules[c.event_type];$('id').textContent=`${c.split} / ${c.episode_id} / ${c.event_type}`;$('videos').replaceChildren();
+ e.videos.forEach((_,i)=>{const v=document.createElement('video');v.controls=true;v.preload='metadata';v.src=`/media/${c.episode_id}/${i}`;v.onloadedmetadata=()=>v.currentTime=c.suggested_frame/e.fps;v.ontimeupdate=()=>{$('time').textContent=`首路时间 ${vids()[0].currentTime.toFixed(3)} 秒 / 帧 ${Math.floor(vids()[0].currentTime*e.fps+1e-4)}`};$('videos').append(v)});
+ $('verdict').value=r?.verdict||'';$('start').value=r?.start_frame??Math.max(0,c.suggested_frame-30);$('end').value=r?.end_frame??Math.min(e.length,c.suggested_frame+31);
+ $('evidence').value=r?.first_confirmable_frame??'';$('note').value=r?.evidence_note||'';document.querySelectorAll('.camera').forEach(x=>x.checked=(r?.visible_cameras||[]).includes(x.value));
+ $('message').textContent=r&&!r.review_schema?'旧意见已保留；需本人补充首次证据时间后再保存。':'';dirty=false;relation();
+}
+function navigate(i){if(dirty){$('message').textContent='当前意见未保存，请先保存或导出已有意见。';return}index=i;draw()}
 function step(n){const e=catalog.find(e=>e.episode_id===cases[index].episode_id),t=Math.max(0,vids()[0].currentTime+n/e.fps);vids().forEach(v=>{v.pause();v.currentTime=t})}
-$('back').onclick=()=>step(-1);$('forward').onclick=()=>step(1);$('play').onclick=()=>vids().forEach(v=>v.paused?v.play():v.pause());$('prev').onclick=()=>{index=Math.max(0,index-1);draw()};$('next').onclick=()=>{index=Math.min(cases.length-1,index+1);draw()};$('item').onchange=()=>{index=+$('item').value;draw()};$('markStart').onclick=()=>{$('start').value=Math.floor(vids()[0].currentTime*catalog.find(e=>e.episode_id===cases[index].episode_id).fps+1e-4)};$('markEnd').onclick=()=>{const f=Math.floor(vids()[0].currentTime*catalog.find(e=>e.episode_id===cases[index].episode_id).fps+1e-4);$('end').value=f+1;$('evidence').value=f};
-$('save').onclick=()=>{const c=cases[index],e=catalog.find(e=>e.episode_id===c.episode_id),start=+$('start').value,end=+$('end').value,ev=+$('evidence').value,cams=[...document.querySelectorAll('.camera:checked')].map(x=>x.value);if(!$('reviewer').value.trim()||!$('verdict').value||!$('note').value.trim()||!cams.length||![start,end,ev].every(Number.isInteger)||!(0<=start&&start<end&&end<=e.length&&start<=ev&&ev<end)){ $('message').textContent='请填写审核者、结论、可见相机、有效帧区间及直接证据说明';return}const prior=store[c.case_id],history=prior?[...(prior.revisions||[]),{verdict:prior.verdict,start_frame:prior.start_frame,end_frame:prior.end_frame,evidence_end_frame:prior.evidence_end_frame,evidence_note:prior.evidence_note,reviewed_at:prior.reviewed_at}]:[];store[c.case_id]={revisions:history,case_id:c.case_id,episode_id:c.episode_id,source_recording_id:c.source_recording_id,event_type:c.event_type,annotation_sha256:c.annotation_sha256,reviewer:$('reviewer').value.trim(),verdict:$('verdict').value,start_frame:start,end_frame:end,evidence_end_frame:ev,visible_cameras:cams,evidence_note:$('note').value.trim(),reviewed_at:new Date().toISOString()};localStorage.setItem(key,JSON.stringify(store));$('message').textContent='已保存个人意见；尚未双人批准';$('counter').textContent=`${index+1}/${cases.length} · 已填 ${Object.keys(store).length}`};
-$('export').onclick=()=>{const value={schema_version:'tomato-operation-review-v1',identity,reviews:Object.values(store)},blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='operation-review-'+($('reviewer').value||'reviewer')+'.json';a.click();URL.revokeObjectURL(a.href)};
-(async()=>{[cases,catalog,identity]=await Promise.all(['cases.json','catalog.json','identity.json'].map(p=>fetch(p,{cache:'no-store'}).then(r=>r.json())));key='tomato-operation-review:'+identity.catalog_sha256;store=JSON.parse(localStorage.getItem(key)||'{}');const eligible=new Map(cases.map(c=>[c.case_id,c]));for(const sha of identity.previous_catalog_sha256||[]){const prior=JSON.parse(localStorage.getItem('tomato-operation-review:'+sha)||'{}');for(const [id,r] of Object.entries(prior)){if(!store[id]&&eligible.get(id)?.annotation_sha256===r.annotation_sha256)store[id]=r}}store=Object.fromEntries(Object.entries(store).filter(([id,r])=>eligible.get(id)?.annotation_sha256===r.annotation_sha256));localStorage.setItem(key,JSON.stringify(store));cases.forEach((c,i)=>{const o=document.createElement('option');o.value=i;o.textContent=`${i+1} ${c.event_type} ${c.episode_id.slice(0,8)}`;$('item').append(o)});if(identity.selection_note)$('scope').textContent=identity.selection_note;draw()})()
+$('workspace').onclick=()=>{
+ if(dirty){$('message').textContent='请先保存当前意见再切换工作区。';return}
+ const name=$('reviewer').value.trim();if(!name){$('message').textContent='请填写本人编号。';return}
+ reviewer=name;key='tomato-operation-review:'+identity.catalog_sha256+':reviewer:'+encodeURIComponent(name);store=JSON.parse(localStorage.getItem(key)||'{}');
+ const eligible=new Map(cases.map(c=>[c.case_id,c]));
+ for(const sha of [identity.catalog_sha256,...(identity.previous_catalog_sha256||[])]){
+  for(const oldKey of ['tomato-operation-review:'+sha+':reviewer:'+encodeURIComponent(name),'tomato-operation-review:'+sha]){
+   const prior=JSON.parse(localStorage.getItem(oldKey)||'{}');for(const [id,r] of Object.entries(prior)){if(r.reviewer===name&&!store[id]&&eligible.get(id)?.annotation_sha256===r.annotation_sha256)store[id]=r}
+  }
+ }
+ store=Object.fromEntries(Object.entries(store).filter(([id,r])=>r.reviewer===name&&eligible.get(id)?.annotation_sha256===r.annotation_sha256));localStorage.setItem(key,JSON.stringify(store));draw();
+};
+$('back').onclick=()=>step(-1);$('forward').onclick=()=>step(1);$('play').onclick=()=>vids().forEach(v=>v.paused?v.play():v.pause());
+$('prev').onclick=()=>navigate(Math.max(0,index-1));$('next').onclick=()=>navigate(Math.min(cases.length-1,index+1));$('item').onchange=()=>navigate(+$('item').value);
+$('markStart').onclick=()=>{$('start').value=frame();dirty=true};$('markEnd').onclick=()=>{$('end').value=frame()+1;dirty=true};$('markEvidence').onclick=()=>{$('evidence').value=frame();dirty=true;relation()};
+for(const id of ['verdict','start','end','evidence','note'])$(id).oninput=()=>{dirty=true;if(id==='verdict'&&$('verdict').value==='unknown')$('evidence').value='';relation()};document.querySelectorAll('.camera').forEach(x=>x.onchange=()=>dirty=true);
+$('save').onclick=()=>{
+ if(!reviewer||$('reviewer').value.trim()!==reviewer){$('message').textContent='请先打开本人工作区。';return}
+ const c=cases[index],e=catalog.find(e=>e.episode_id===c.episode_id),a=Number($('start').value),b=Number($('end').value),v=$('verdict').value,raw=$('evidence').value,first=raw===''?null:Number(raw),cams=[...document.querySelectorAll('.camera:checked')].map(x=>x.value);
+ if(!v||!$('note').value.trim()||!cams.length||![a,b].every(Number.isInteger)||!(0<=a&&a<b&&b<=e.length)||(v==='unknown'?first!==null:!Number.isInteger(first)||first<a||first>=b)){$('message').textContent='请填写结果、可见相机、区间和证据说明；Success/Failure需明确首次证据帧，Unknown留空。';return}
+ const prior=store[c.case_id],history=prior?[...(prior.revisions||[]),Object.fromEntries(Object.entries(prior).filter(([k])=>k!=='revisions'))]:[];
+ const delta=first!==null&&c.reference_kind==='stage_transition'?(first-c.reference_transition_frame)/e.fps:null;
+ store[c.case_id]={review_schema:'tomato-operation-review-v2',revisions:history,case_id:c.case_id,episode_id:c.episode_id,source_recording_id:c.source_recording_id,event_type:c.event_type,annotation_sha256:c.annotation_sha256,reviewer,verdict:v,outcome:outcome[v],start_frame:a,end_frame:b,first_confirmable_frame:first,evidence_end_frame:first??b-1,reference_transition_frame:c.reference_transition_frame,relative_to_transition:delta===null?'not_applicable':delta<0?'before':delta>0?'after':'at',evidence_minus_transition_s:delta,visible_cameras:cams,evidence_note:$('note').value.trim(),reviewed_at:new Date().toISOString()};
+ localStorage.setItem(key,JSON.stringify(store));dirty=false;$('message').textContent='本人意见已保存；尚未双人批准。';$('counter').textContent=`${index+1}/${cases.length} · 本人已填 ${Object.keys(store).length}`;
+};
+$('export').onclick=()=>{if(!reviewer){$('message').textContent='先打开本人工作区。';return}const value={schema_version:'tomato-operation-review-v2',reviewer,identity,reviews:Object.values(store)},blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='operation-review-'+reviewer+'.json';a.click();URL.revokeObjectURL(a.href)};
+(async()=>{[cases,catalog,identity]=await Promise.all(['cases.json','catalog.json','identity.json'].map(p=>fetch(p,{cache:'no-store'}).then(r=>r.json())));cases.forEach((c,i)=>{const o=document.createElement('option');o.value=i;o.textContent=`${i+1} ${c.event_type} ${c.episode_id.slice(0,8)}`;$('item').append(o)});$('scope').textContent=identity.selection_note||'';draw()})()
 </script></html>

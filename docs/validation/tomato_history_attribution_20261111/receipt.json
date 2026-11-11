@@ -1,0 +1,91 @@
+{
+  "git_sha": "01ffba14ec10beefacf5553d46ecdfc156a02ab0",
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "arms": {
+    "H0": "none",
+    "H1": "anchor",
+    "H2": "oracle",
+    "H3": "predicted"
+  },
+  "input_sha256": {
+    "runs/tomato/optimization_20261108/bundles/independent_h15_s42.pt": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+    "runs/tomato/transition_time_20261109/seed42/3e645bf4e137d0f836c9d7ff.npz": "4698537e7661cec69e25d34c134b3d50802570a960bcc684df3b6d1fb749c298",
+    "runs/tomato/transition_time_20261109/seed42/27d8bc0413a42341c7e8c3e5.npz": "02883d5bf159b297dd7da41e2bf9bab30276f176c52b7b4d838b9ff9f3c8a7c8",
+    "runs/tomato/transition_time_20261109/seed42/0b12ac0fda9d7cd77dee6e60.npz": "93379d6479a8eff66eecbe3efa83c15be08a87e6fd4402800065a671094b769a",
+    "runs/tomato/transition_time_20261109/seed42/61c420843f11ca54bfe804ee.npz": "986d8e296057d531bf07a950d934b0a90c1d1fdb1135c039ff8e92a3e18fd13f",
+    "runs/tomato/transition_time_20261109/seed42/5b82f4bb76e70d8bf12c0798.npz": "d07bd068800c9df1df4dd4d6fa95bf57cf0060f812b94906dfee5cfa4a4e75ae",
+    "runs/tomato/transition_time_20261109/seed42/f53f0b6fb7f3888f87a0f8ff.npz": "4825807d0e9270b59160663b1de1326af289c93bd92e684f3ff41d4da0e183a1",
+    "runs/tomato/transition_time_20261109/seed42/a8b23394b642f0bb769a0391.npz": "7afd4b6169ca46ef1da256c04b0be4069bb193c6d2aa5c1c69f04a2ecae9d356",
+    "runs/tomato/transition_time_20261109/seed42/d0f8727d35eced697dcf79fe.npz": "62f9e23a104158866a714e2d06a18c78e1f2948881e5b48f8af2c9ae76054fe0",
+    "runs/tomato/optimization_20261108/bundles/independent_h15_s43.pt": "794a42e17dad0b4e6f028c39497b029f56f6aa3f410ed40eb72accec89a2bea6",
+    "runs/tomato/transition_time_20261109/seed43/3e645bf4e137d0f836c9d7ff.npz": "ce345031c84b34132da2144729d1bc7c8a8b81a33335589c037562dbbb0e8343",
+    "runs/tomato/transition_time_20261109/seed43/27d8bc0413a42341c7e8c3e5.npz": "99f3f019409434c678d62406205063673c481a9a2b0433bef595f3fc85a23f9b",
+    "runs/tomato/transition_time_20261109/seed43/0b12ac0fda9d7cd77dee6e60.npz": "8a328e7bbc18bd34589f1b34d866bb40ca79fb9b5f3a7b5a1de35ebf2ad7bd78",
+    "runs/tomato/transition_time_20261109/seed43/61c420843f11ca54bfe804ee.npz": "1650ec3e555187c49ffad9922bb81278ddddee1fd6d6f63159ff3ec2fb8f66a2",
+    "runs/tomato/transition_time_20261109/seed43/5b82f4bb76e70d8bf12c0798.npz": "bdd7dca3307383ee29a47e24aaa46ea21510e6ea410db2d76b071616ccf8f0da",
+    "runs/tomato/transition_time_20261109/seed43/f53f0b6fb7f3888f87a0f8ff.npz": "61f3593bae8b24565ce4430ec569d115f42371694f80f35757778870f4998502",
+    "runs/tomato/transition_time_20261109/seed43/a8b23394b642f0bb769a0391.npz": "f109dffe4871c7c0bb7625a3324461125ce7f72fc35c6ee220a8a296570ddb25",
+    "runs/tomato/transition_time_20261109/seed43/d0f8727d35eced697dcf79fe.npz": "f335f6b94b935903f2648b37323538fc4157c6320fc1d7f4fbacc9c358d14c33",
+    "runs/tomato/optimization_20261108/bundles/independent_h15_s44.pt": "b5989cddcad1ee1c391723660a547060cbb97efc8cdb44553ee8894194014362",
+    "runs/tomato/transition_time_20261109/seed44/3e645bf4e137d0f836c9d7ff.npz": "671107a1551b3c6793647a5883e972106509dcd43090452c0221741c93356e62",
+    "runs/tomato/transition_time_20261109/seed44/27d8bc0413a42341c7e8c3e5.npz": "ef308119540414632df966649d59e86b16a096a73534054aa2079e779c213649",
+    "runs/tomato/transition_time_20261109/seed44/0b12ac0fda9d7cd77dee6e60.npz": "b276d3c2d75349e8599e818272ce5028f3a5fe3aa0665a1a195d9f97d9e3ea97",
+    "runs/tomato/transition_time_20261109/seed44/61c420843f11ca54bfe804ee.npz": "acbc6c012660b80ae11b61030bab602407a255872bea159895c959004d0426e7",
+    "runs/tomato/transition_time_20261109/seed44/5b82f4bb76e70d8bf12c0798.npz": "711b1773011f0419e48e8ad0ea14fc5f9656d32f811134c3ef891896287d8206",
+    "runs/tomato/transition_time_20261109/seed44/f53f0b6fb7f3888f87a0f8ff.npz": "81e119d2ed9f8d04be31c081a27c74f568bb3d50a16478bcf2700cd522ef6b83",
+    "runs/tomato/transition_time_20261109/seed44/a8b23394b642f0bb769a0391.npz": "c177a8ff4ee650eec60dce4b6126f604004f00c7e9d365acc08576088797470e",
+    "runs/tomato/transition_time_20261109/seed44/d0f8727d35eced697dcf79fe.npz": "bd1f532663718dee62e7df5eecbf21fe759cd17e5d1f052e8399e41dfbf09e1c"
+  },
+  "old8_results_sha256": "61b2295fca5b6a5c141fe7aeea396750101ae9aca18c927a979106a98a2dfc59",
+  "training": false,
+  "test_values_read": false,
+  "encoder_calls": 0,
+  "robot_calls": 0,
+  "oracle_scope": "Offline only. Previous observation label, no current truth/future boundaries/end times; same one-step forward-only state correction in H1/H2.",
+  "cpu_ms": {
+    "H0": {
+      "n": 6807,
+      "p10": 0.0947754,
+      "p50": 0.109166,
+      "p95": 0.118965
+    },
+    "H1": {
+      "n": 6807,
+      "p10": 0.0960116,
+      "p50": 0.111531,
+      "p95": 0.153605
+    },
+    "H2": {
+      "n": 6807,
+      "p10": 0.097495,
+      "p50": 0.111652,
+      "p95": 0.1207753
+    },
+    "H3": {
+      "n": 6807,
+      "p10": 0.0973,
+      "p50": 0.111531,
+      "p95": 0.12037199999999999
+    }
+  },
+  "all_H1_H2_equal": true,
+  "all_H0_H3_equal": true,
+  "source_sha256": {
+    "tools/tomato_stage_history.py": "bd7505e03f66939332de7e5b62f5baa0690154fcfadef24edf4550f038583acf",
+    "tools/evaluate_tomato_complete100_history.py": "e23f5a34d5f0dfed730c522e34053aaff3e4bc623ab746a16f2c8606363c9e63",
+    "tools/evaluate_tomato_history_attribution.py": "94cf8f91b5d9e9172d2bf83ea0a2c6755d2275c9a492a2d25e8aeebeb9801b02",
+    "tools/tomato_operation_review_quality.py": "498eb07e3b3b0a1441302a9ba4ad4f99412e35cab4a066d7eab0fc545da4c7eb",
+    "tools/tomato_operation_review.html": "72a190f07773661e3eb5737d8675386d9a659e8a52b66bd7d359fb15a4a4c126",
+    "tools/prepare_tomato_operation_review.py": "924f6bedd94c06e61345950329a0b4b1079155c64a80a40ce3fd884518c71cc4",
+    "tools/prepare_tomato_operation_pilot.py": "aad537c36e739b5a1a5efa1dc8cb023726e586ae88c901dd9e0f440f06d63573",
+    "tools/tomato_outcome_verifier.py": "a639acc7bfe3a41ee52c666b6e3e2d42cd5ac4806b8ee21fcb66645b5a8a0275",
+    "tools/train_tomato_outcome_verifier.py": "fe1ef142acc0a512c6febc4c20d639575f06ab59ba4f42f576fb7b1478e35b50",
+    "tests/test_tomato_history_attribution.py": "7eaa22e0d47af050970910b7d63cb6ffd9e9de5b00e00dcd587145d1ba231fe8",
+    "tests/test_tomato_operation_review_ui.cjs": "e6106cfaf42bfb1082473b98b53491dd18a79543924ebda5f52b66c476d87b25"
+  },
+  "real_review_rows_imported": 0,
+  "approved_real_outcome_labels": 0,
+  "tests_passed": 232,
+  "ui_unit_test": "Node synthetic workspace isolation/legacy preservation/first-evidence guard passed; no real human reviews created",
+  "browser_check": "All3 videos loaded; empty result/first-evidence defaults; no reviewer form submitted"
+}

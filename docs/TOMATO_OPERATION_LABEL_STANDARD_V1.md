@@ -1,4 +1,4 @@
-# 番茄独立操作结果标签规范v1
+# 番茄独立操作结果标签规范（含v2审核契约）
 
 此规范是新标签任务，不等于已有pickup/harvest/return/adjust。阶段只定位候选区间；阶段边界、文件normal/C分组、关节闭合、手臂抬升都不能直接生成成功标签。初始全部未审核，Unknown也必须是实际审核后的结论；不能把未审核自动当Unknown或negative来训练。
 
@@ -21,11 +21,15 @@
 
 2026-11-11按用户要求从完整任务实验排除一条三阶段验证录制；当前100条清单为84训练、8验证、8历史测试。完整队列来自训练/验证92条，共736个候选；当前8770先展示训练集16条试点、128个候选，覆盖11个来源包。名单和选择规范见`configs/tomato_stage_history_20261111/pilot16.json`，原100条完整队列、101条及741候选版本保留。一个harvest候选不能代表所有摘取；当前页面不提供新增候选功能，后续必须扩充候选目录、逐次独立审核真正可见的分离事件后才可能讨论计数。当前版本不分配Tomato ID、不把阶段次数当摘取数，picked_count一直为Unknown。
 
-打开`http://127.0.0.1:8770/`：选项目→查看三路视频→逐帧定位→填写正/负/Unknown及证据→保存个人意见→分别导出两位审核文件。未审核项不会导出为标签。两名审核者应使用独立浏览器配置/机器，不能在同一LocalStorage共享意见后声称独立。
+打开`http://127.0.0.1:8770/`：输入本人编号→打开个人工作区→选项目→查看三路视频→逐帧定位→填写Success/Failure/Unknown及直接证据→保存本人意见→分别导出两位审核文件。Success/Failure指当前事件定义是否成立；开始尝试事件的Success不是抓握或摘取成功。未审核项不会导出为标签。两名审核者使用独立浏览器配置/机器；页面按本人编号隔离存储并只迁移同名旧意见，但编号不是身份认证，不能查看对方意见后声称独立。
+
+v2的first_confirmable_frame必须由审核者明确填写，不默认复制候选帧。它表示仅看到该帧及以前就足以作出结果判断；Unknown为null。evidence_end_frame对可判定结果等于该帧，Unknown仅保留已审核区间末帧作为观察截止，不代表任何结果发生。原v1意见与修订历史保留，但须补充首次证据时间才能进入v2监督训练资格检查。
+
+每项有固定Subtask参考边界，仅用于比较结果是在阶段转换前、当帧还是转换后才可观察，不据此生成成功标签。录制开始参考不算真实阶段转换。质量工具根据冻结参考帧重新计算差值，不信任表单自报的前后关系。两人结论、区间和首次证据帧不一致时保留双方原意见、差异字段和时间差，进入pending；不自动平均边界。合并的相机来源为双方并集，原始各人相机与证据说明仍保留。
 
 ```bash
-.venv-tomato/bin/python -m tools.serve_tomato_operation_review --directory runs/tomato/operation_pilot16_20261111_final --port 8770
-.venv-tomato/bin/python -m tools.prepare_tomato_operation_review --merge /path/reviewer_a.json /path/reviewer_b.json --out /new/path/consensus.json
+.venv-tomato/bin/python -m tools.serve_tomato_operation_review --directory runs/tomato/operation_pilot16_v2_20261111 --port 8770
+.venv-tomato/bin/python -m tools.tomato_operation_review_quality --pilot runs/tomato/operation_pilot16_v2_20261111 --reviews /path/reviewer_a.json /path/reviewer_b.json --out /new/path/quality.json --consensus-out /new/path/consensus.json
 ```
 
 当前候选区间不是穷尽标注。首轮先审核一组训练/开发录制的正例、明确失败和遮挡，检查标签一致性与有效样本支持，再开启A/B/C/D低成本训练。已有101条均已曝光或参与开发，新的独立盲测需另行录制并在规则锁定后一次验收。

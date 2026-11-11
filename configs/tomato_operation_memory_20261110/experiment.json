@@ -44,8 +44,9 @@
   "operation_review_pilot": {
     "recordings": 16,
     "source": "train_only",
-    "directory": "runs/tomato/operation_pilot16_20261111_final",
+    "directory": "runs/tomato/operation_pilot16_v2_20261111",
     "selection": "configs/tomato_stage_history_20261111/pilot16.json",
-    "approved_labels": 0
+    "approved_labels": 0,
+    "review_schema": "tomato-operation-review-v2"
   }
 }

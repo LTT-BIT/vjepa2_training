@@ -1,0 +1,1640 @@
+{
+  "42": {
+    "H0": {
+      "warnings": {
+        "hits": 37,
+        "total": 48,
+        "false_events": 13,
+        "false_per_minute": 0.6948775055679288,
+        "recall": 0.7708333333333334,
+        "precision": 0.74,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 2,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 15,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 14,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 44,
+        "early": 2,
+        "late": 2
+      },
+      "mismatch_s": 38.5,
+      "mismatch_runs": 45,
+      "persistent_mismatch_s": 10.5,
+      "persistent_runs": 3,
+      "resync_updates": 0,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 1,
+          "on_time": 5,
+          "late": 2
+        },
+        "harvest->return": {
+          "on_time": 16
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "early": 1,
+          "on_time": 7
+        }
+      },
+      "position_accuracy": 0.9660643455266638,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          828,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          71,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          325,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          24,
+          120,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          9,
+          672,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          51
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 45,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 2.299999999999997
+      },
+      "maximum_error_run_s": 4.5,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.47000000000000175,
+        "p50": 0.8666666666666707,
+        "p95": 1.736666666666671
+      }
+    },
+    "H1": {
+      "warnings": {
+        "hits": 37,
+        "total": 48,
+        "false_events": 13,
+        "false_per_minute": 0.6948775055679288,
+        "recall": 0.7708333333333334,
+        "precision": 0.74,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 2,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 15,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 14,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 46,
+        "early": 2
+      },
+      "mismatch_s": 24.5,
+      "mismatch_runs": 45,
+      "persistent_mismatch_s": 2.5,
+      "persistent_runs": 1,
+      "resync_updates": 43,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 1,
+          "on_time": 7
+        },
+        "harvest->return": {
+          "on_time": 16
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "early": 1,
+          "on_time": 7
+        }
+      },
+      "position_accuracy": 0.9784045835169678,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          830,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          72,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          328,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          138,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          7,
+          674,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          53
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 45,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 0.5
+      },
+      "maximum_error_run_s": 2.5,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.47000000000000175,
+        "p50": 0.7000000000000028,
+        "p95": 0.9216666666666687
+      }
+    },
+    "H2": {
+      "warnings": {
+        "hits": 37,
+        "total": 48,
+        "false_events": 13,
+        "false_per_minute": 0.6948775055679288,
+        "recall": 0.7708333333333334,
+        "precision": 0.74,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 2,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 15,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 14,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 46,
+        "early": 2
+      },
+      "mismatch_s": 24.5,
+      "mismatch_runs": 45,
+      "persistent_mismatch_s": 2.5,
+      "persistent_runs": 1,
+      "resync_updates": 43,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 1,
+          "on_time": 7
+        },
+        "harvest->return": {
+          "on_time": 16
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "early": 1,
+          "on_time": 7
+        }
+      },
+      "position_accuracy": 0.9784045835169678,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          830,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          72,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          328,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          138,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          7,
+          674,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          53
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 45,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 0.5
+      },
+      "maximum_error_run_s": 2.5,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.47000000000000175,
+        "p50": 0.7000000000000028,
+        "p95": 0.9216666666666687
+      }
+    },
+    "H3": {
+      "warnings": {
+        "hits": 37,
+        "total": 48,
+        "false_events": 13,
+        "false_per_minute": 0.6948775055679288,
+        "recall": 0.7708333333333334,
+        "precision": 0.74,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 2,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 15,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 14,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 44,
+        "early": 2,
+        "late": 2
+      },
+      "mismatch_s": 38.5,
+      "mismatch_runs": 45,
+      "persistent_mismatch_s": 10.5,
+      "persistent_runs": 3,
+      "resync_updates": 0,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 1,
+          "on_time": 5,
+          "late": 2
+        },
+        "harvest->return": {
+          "on_time": 16
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "early": 1,
+          "on_time": 7
+        }
+      },
+      "position_accuracy": 0.9660643455266638,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          828,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          71,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          325,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          24,
+          120,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          9,
+          672,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          51
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 45,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 2.299999999999997
+      },
+      "maximum_error_run_s": 4.5,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.47000000000000175,
+        "p50": 0.8666666666666707,
+        "p95": 1.736666666666671
+      }
+    }
+  },
+  "43": {
+    "H0": {
+      "warnings": {
+        "hits": 34,
+        "total": 48,
+        "false_events": 18,
+        "false_per_minute": 0.9621380846325167,
+        "recall": 0.7083333333333334,
+        "precision": 0.6538461538461539,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 1,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 13,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 14,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 44,
+        "early": 2,
+        "late": 2
+      },
+      "mismatch_s": 45.5,
+      "mismatch_runs": 45,
+      "persistent_mismatch_s": 13.0,
+      "persistent_runs": 3,
+      "resync_updates": 0,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 2,
+          "late": 2,
+          "on_time": 4
+        },
+        "harvest->return": {
+          "on_time": 16
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "on_time": 8
+        }
+      },
+      "position_accuracy": 0.9598942265315117,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          13,
+          825,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          72,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          13,
+          320,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          26,
+          118,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          12,
+          669,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          49
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 45,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 2.6999999999999957
+      },
+      "maximum_error_run_s": 5.0,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.4200000000000003,
+        "p50": 0.9000000000000021,
+        "p95": 1.9216666666666689
+      }
+    },
+    "H1": {
+      "warnings": {
+        "hits": 34,
+        "total": 48,
+        "false_events": 18,
+        "false_per_minute": 0.9621380846325167,
+        "recall": 0.7083333333333334,
+        "precision": 0.6538461538461539,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 1,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 13,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 14,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 46,
+        "early": 2
+      },
+      "mismatch_s": 25.0,
+      "mismatch_runs": 45,
+      "persistent_mismatch_s": 3.0,
+      "persistent_runs": 1,
+      "resync_updates": 43,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 2,
+          "on_time": 6
+        },
+        "harvest->return": {
+          "on_time": 16
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "on_time": 8
+        }
+      },
+      "position_accuracy": 0.9779638607315998,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          830,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          73,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          326,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          138,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          7,
+          674,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          53
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 45,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 0.5
+      },
+      "maximum_error_run_s": 3.0,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.4200000000000003,
+        "p50": 0.7000000000000028,
+        "p95": 0.9216666666666687
+      }
+    },
+    "H2": {
+      "warnings": {
+        "hits": 34,
+        "total": 48,
+        "false_events": 18,
+        "false_per_minute": 0.9621380846325167,
+        "recall": 0.7083333333333334,
+        "precision": 0.6538461538461539,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 1,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 13,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 14,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 46,
+        "early": 2
+      },
+      "mismatch_s": 25.0,
+      "mismatch_runs": 45,
+      "persistent_mismatch_s": 3.0,
+      "persistent_runs": 1,
+      "resync_updates": 43,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 2,
+          "on_time": 6
+        },
+        "harvest->return": {
+          "on_time": 16
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "on_time": 8
+        }
+      },
+      "position_accuracy": 0.9779638607315998,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          830,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          73,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          326,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          138,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          7,
+          674,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          53
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 45,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 0.5
+      },
+      "maximum_error_run_s": 3.0,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.4200000000000003,
+        "p50": 0.7000000000000028,
+        "p95": 0.9216666666666687
+      }
+    },
+    "H3": {
+      "warnings": {
+        "hits": 34,
+        "total": 48,
+        "false_events": 18,
+        "false_per_minute": 0.9621380846325167,
+        "recall": 0.7083333333333334,
+        "precision": 0.6538461538461539,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 1,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 13,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 14,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 44,
+        "early": 2,
+        "late": 2
+      },
+      "mismatch_s": 45.5,
+      "mismatch_runs": 45,
+      "persistent_mismatch_s": 13.0,
+      "persistent_runs": 3,
+      "resync_updates": 0,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 2,
+          "late": 2,
+          "on_time": 4
+        },
+        "harvest->return": {
+          "on_time": 16
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "on_time": 8
+        }
+      },
+      "position_accuracy": 0.9598942265315117,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          13,
+          825,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          72,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          13,
+          320,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          26,
+          118,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          12,
+          669,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          49
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 45,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 2.6999999999999957
+      },
+      "maximum_error_run_s": 5.0,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.4200000000000003,
+        "p50": 0.9000000000000021,
+        "p95": 1.9216666666666689
+      }
+    }
+  },
+  "44": {
+    "H0": {
+      "warnings": {
+        "hits": 35,
+        "total": 48,
+        "false_events": 15,
+        "false_per_minute": 0.801781737193764,
+        "recall": 0.7291666666666666,
+        "precision": 0.7,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 3,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 14,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 12,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 43,
+        "early": 4,
+        "late": 1
+      },
+      "mismatch_s": 35.5,
+      "mismatch_runs": 46,
+      "persistent_mismatch_s": 8.0,
+      "persistent_runs": 2,
+      "resync_updates": 0,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 2,
+          "on_time": 5,
+          "late": 1
+        },
+        "harvest->return": {
+          "on_time": 15,
+          "early": 1
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "early": 1,
+          "on_time": 7
+        }
+      },
+      "position_accuracy": 0.9687086822388717,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          827,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          71,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          11,
+          320,
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          16,
+          128,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          8,
+          673,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          54
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 46,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 1.0
+      },
+      "maximum_error_run_s": 4.5,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.2400000000000063,
+        "p50": 0.8333333333333286,
+        "p95": 1.3650000000000027
+      }
+    },
+    "H1": {
+      "warnings": {
+        "hits": 35,
+        "total": 48,
+        "false_events": 15,
+        "false_per_minute": 0.801781737193764,
+        "recall": 0.7291666666666666,
+        "precision": 0.7,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 3,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 14,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 12,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 44,
+        "early": 4
+      },
+      "mismatch_s": 26.5,
+      "mismatch_runs": 46,
+      "persistent_mismatch_s": 3.5,
+      "persistent_runs": 1,
+      "resync_updates": 42,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 2,
+          "on_time": 6
+        },
+        "harvest->return": {
+          "on_time": 15,
+          "early": 1
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "early": 1,
+          "on_time": 7
+        }
+      },
+      "position_accuracy": 0.9766416923754958,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          829,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          72,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          324,
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          138,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          7,
+          674,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          54
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 46,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 0.5
+      },
+      "maximum_error_run_s": 3.5,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.2400000000000063,
+        "p50": 0.6833333333333345,
+        "p95": 0.9216666666666687
+      }
+    },
+    "H2": {
+      "warnings": {
+        "hits": 35,
+        "total": 48,
+        "false_events": 15,
+        "false_per_minute": 0.801781737193764,
+        "recall": 0.7291666666666666,
+        "precision": 0.7,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 3,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 14,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 12,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 44,
+        "early": 4
+      },
+      "mismatch_s": 26.5,
+      "mismatch_runs": 46,
+      "persistent_mismatch_s": 3.5,
+      "persistent_runs": 1,
+      "resync_updates": 42,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 2,
+          "on_time": 6
+        },
+        "harvest->return": {
+          "on_time": 15,
+          "early": 1
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "early": 1,
+          "on_time": 7
+        }
+      },
+      "position_accuracy": 0.9766416923754958,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          829,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          72,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          324,
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          138,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          7,
+          674,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          54
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 46,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 0.5
+      },
+      "maximum_error_run_s": 3.5,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.2400000000000063,
+        "p50": 0.6833333333333345,
+        "p95": 0.9216666666666687
+      }
+    },
+    "H3": {
+      "warnings": {
+        "hits": 35,
+        "total": 48,
+        "false_events": 15,
+        "false_per_minute": 0.801781737193764,
+        "recall": 0.7291666666666666,
+        "precision": 0.7,
+        "by_transition": {
+          "adjust->pickup": {
+            "hits": 3,
+            "total": 8
+          },
+          "harvest->return": {
+            "hits": 14,
+            "total": 16
+          },
+          "pickup->harvest": {
+            "hits": 12,
+            "total": 16
+          },
+          "return->adjust": {
+            "hits": 6,
+            "total": 8
+          }
+        }
+      },
+      "prompt_counts": {
+        "on_time": 43,
+        "early": 4,
+        "late": 1
+      },
+      "mismatch_s": 35.5,
+      "mismatch_runs": 46,
+      "persistent_mismatch_s": 8.0,
+      "persistent_runs": 2,
+      "resync_updates": 0,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0,
+      "cascade_events": 1,
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 2,
+          "on_time": 5,
+          "late": 1
+        },
+        "harvest->return": {
+          "on_time": 15,
+          "early": 1
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "early": 1,
+          "on_time": 7
+        }
+      },
+      "position_accuracy": 0.9687086822388717,
+      "position_confusion": [
+        [
+          125,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          827,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          71,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          11,
+          320,
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          16,
+          128,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          8,
+          673,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          54
+        ]
+      ],
+      "error_run_duration_s": {
+        "n": 46,
+        "p10": 0.5,
+        "p50": 0.5,
+        "p95": 1.0
+      },
+      "maximum_error_run_s": 4.5,
+      "prompt_offset_s": {
+        "n": 48,
+        "p10": 0.2400000000000063,
+        "p50": 0.8333333333333286,
+        "p95": 1.3650000000000027
+      }
+    }
+  }
+}
