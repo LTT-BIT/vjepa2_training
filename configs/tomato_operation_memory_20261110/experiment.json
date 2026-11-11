@@ -38,6 +38,7 @@
     ],
     "reason": "Oracle incremental information not established"
   },
-  "audit_manifest": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/dataset_manifest.json",
-  "audit_manifest_sha256": "d268001110c737e77bdd511f86ee1651b9d669798c166249938c1bc7addc9880"
+  "audit_manifest": "runs/tomato/complete100_20261111/dataset_manifest.json",
+  "audit_manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "complete_task_selection": "configs/tomato_complete100_20261111/selection.json"
 }

@@ -1,4 +1,4 @@
-"""Audit101 recorded schemas and prepare independent outcome review, never labels."""
+"""Audit selected recorded schemas and prepare independent outcome review, never labels."""
 from pathlib import Path
 import argparse
 from collections import Counter
@@ -7,7 +7,7 @@ from . import tomato_dataset as ds
 from .tomato_operation_memory import EVENTS
 from .tomato_outcome_verifier import training_readiness, validate_label
 
-MANIFEST=Path('runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/dataset_manifest.json')
+from .select_tomato_complete_episodes import ACTIVE as MANIFEST
 
 
 def merge_reviews(rows):
@@ -28,7 +28,7 @@ def merge_reviews(rows):
 
 def run(out):
     if out.exists():raise FileExistsError('Fresh review version required')
-    out.mkdir(parents=True);m=ds.read_json(MANIFEST);episodes=m['episodes'];assert len(episodes)==101 and len({e['source_recording_id'] for e in episodes})==101
+    out.mkdir(parents=True);m=ds.read_json(MANIFEST);episodes=m['episodes'];assert len({e['source_recording_id'] for e in episodes})==len(episodes)
     audit=[];catalog=[];cases=[];independent=[]
     for e in episodes:
         info=e['info']['features'];schema=pq.read_schema(e['parquet']);meta=pq.read_metadata(e['parquet'])
@@ -50,7 +50,7 @@ def run(out):
             s=seg[i];frame=s['start_frame'] if edge=='start' else max(s['start_frame'],s['end_frame']-15) if edge=='end' else (s['start_frame']+s['end_frame'])//2
             cases.append(dict(case_id=e['episode_id']+':'+event,episode_id=e['episode_id'],source_recording_id=e['source_recording_id'],split=e['split'],event_type=event,suggested_frame=frame,annotation_sha256=ds.digest(e['annotation']['path']),phase_used_only_to_locate_review=True,verdict=None))
     # Deliberately do not silently load new labels from raw folders without identity review.
-    report=dict(recordings=101,split_counts=dict(Counter(e['split'] for e in episodes)),phase_segment_counts=dict(Counter(len(e['annotation']['segments']) for e in episodes)),records=audit,independent_annotation_candidates=sorted(set(independent)),approved_outcome_labels=0,training_readiness=training_readiness([]),camera_role_evidence='cam0/1/2 roles unproven by archived metadata',deployment_signals=dict(rgb_and_position='supported_by_existing_input_interfaces',velocity='causal finite differences available',tactile_depth_grasp_feedback='not recorded here; live hardware availability not verified'),test_values_read=False)
+    report=dict(recordings=len(episodes),split_counts=dict(Counter(e['split'] for e in episodes)),phase_segment_counts=dict(Counter(len(e['annotation']['segments']) for e in episodes)),records=audit,independent_annotation_candidates=sorted(set(independent)),approved_outcome_labels=0,training_readiness=training_readiness([]),camera_role_evidence='cam0/1/2 roles unproven by archived metadata',deployment_signals=dict(rgb_and_position='supported_by_existing_input_interfaces',velocity='causal finite differences available',tactile_depth_grasp_feedback='not recorded here; live hardware availability not verified'),test_values_read=False)
     ds.write_json(out/'audit101.json',report);ds.write_json(out/'catalog.json',catalog);ds.write_json(out/'cases.json',cases);ds.write_json(out/'reviews.json',dict(schema_version='tomato-operation-review-v1',reviews=[],note='Empty, awaiting real human reviews; no pseudo labels'))
     (out/'index.html').write_text((Path(__file__).with_name('tomato_operation_review.html')).read_text())
     ds.write_json(out/'identity.json',dict(manifest=str(MANIFEST),manifest_sha256=ds.digest(MANIFEST),catalog_sha256=ds.digest(out/'catalog.json'),original_annotations_modified=False,review_label_status='all_unreviewed'))

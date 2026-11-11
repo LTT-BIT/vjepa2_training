@@ -1,0 +1,38 @@
+{
+  "parent_manifest": "runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/dataset_manifest.json",
+  "parent_sha256": "d268001110c737e77bdd511f86ee1651b9d669798c166249938c1bc7addc9880",
+  "manifest": "runs/tomato/complete100_20261111/dataset_manifest.json",
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "recordings": 100,
+  "split_counts": {
+    "train": 84,
+    "val": 8,
+    "test": 8
+  },
+  "excluded": [
+    {
+      "episode_id": "ca784332e44d979f99018a52",
+      "source_recording_id": "ef866ed4c8f949d7b1a7d7fb3ef8ffbb",
+      "split": "val",
+      "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1106_740_796_normal",
+      "episode_index": 9,
+      "segment_count": 3,
+      "reason": "incomplete_seven_phase_task"
+    }
+  ],
+  "raw_data_deleted": false,
+  "historical_results_modified": false,
+  "training_repeated": false,
+  "preparation_command": ".venv-tomato/bin/python -m tools.select_tomato_complete_episodes",
+  "review_directory": "runs/tomato/operation_memory_20261111_complete100",
+  "review_catalog_recordings": 92,
+  "review_cases": 736,
+  "legacy_39_of_50_comparable_directly": false,
+  "note": "Validation membership changed; old models and original101 manifest retained. No new training or performance claim.",
+  "validation": {
+    "tomato_tests_passed": 220,
+    "review_http_verified": true,
+    "review_javascript_syntax_check": true,
+    "original101_manifest_sha256_unchanged": true
+  }
+}

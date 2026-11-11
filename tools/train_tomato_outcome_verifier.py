@@ -6,6 +6,7 @@ import numpy as np
 from . import tomato_dataset as ds
 from .tomato_outcome_verifier import validate_label,training_readiness,causal_features,build_model,masked_bce
 from .tomato_operation_memory import EVENTS
+from .select_tomato_complete_episodes import ACTIVE
 
 
 def examples(manifest,identity,labels,mode):
@@ -33,7 +34,7 @@ def run(labels_path,out,mode,seed=42,epochs=10):
     if not ready['can_train']:
         ds.write_json(out/'result.json',dict(status='not_trained',reason='insufficient_independent_outcome_labels',real_labels=len(labels),test_read=False));print('NOT TRAINED: independent outcome labels insufficient');return
     import torch
-    manifest=ds.read_json('runs/tomato/refresh101_20261109_v2/finalized_exports/refresh101/dataset_manifest.json');identity=ds.read_json('runs/tomato/refresh101_20261109_v2/data_identity.json');data=examples(manifest,identity,labels,mode)
+    manifest=ds.read_json(ACTIVE);identity=ds.read_json(ACTIVE.parent/'data_identity.json');data=examples(manifest,identity,labels,mode)
     if any(v is None or len(v[0])==0 for v in data.values()):raise ValueError('Both grouped train and val supervision required')
     torch.manual_seed(seed);device='cuda' if torch.cuda.is_available() else 'cpu';x,y,mask=data['train'];mean=x.mean(0);std=x.std(0).clip(.01);vx,vy,vm=data['val']
     model=build_model(mode).to(device);opt=torch.optim.AdamW(model.parameters(),lr=1e-3);rng=np.random.default_rng(seed);history=[];start=time.perf_counter();best=float('inf')
