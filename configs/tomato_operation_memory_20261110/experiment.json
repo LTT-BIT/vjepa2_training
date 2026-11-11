@@ -19,7 +19,7 @@
   "encoder_frozen": true,
   "training": {
     "enabled": false,
-    "reason": "No approved independent operation labels",
+    "reason": "Outcome-supervision experiment paused; existing Subtask remains primary Agent supervision, diagnose model timing first",
     "seed": 42,
     "epochs": 10,
     "batch_size": 256,
@@ -47,6 +47,8 @@
     "directory": "runs/tomato/operation_pilot16_v2_20261111",
     "selection": "configs/tomato_stage_history_20261111/pilot16.json",
     "approved_labels": 0,
-    "review_schema": "tomato-operation-review-v2"
+    "review_schema": "tomato-operation-review-v2",
+    "status": "paused_no_duplicate_annotation",
+    "required_for_agent_research": false
   }
 }

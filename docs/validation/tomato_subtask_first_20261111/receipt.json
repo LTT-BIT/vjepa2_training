@@ -1,0 +1,48 @@
+{
+  "base_git": "dbfe4ed",
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "input_sha256": {
+    "runs/tomato/transition_time_20261109/seed42/3e645bf4e137d0f836c9d7ff.npz": "4698537e7661cec69e25d34c134b3d50802570a960bcc684df3b6d1fb749c298",
+    "runs/tomato/transition_time_20261109/seed42/27d8bc0413a42341c7e8c3e5.npz": "02883d5bf159b297dd7da41e2bf9bab30276f176c52b7b4d838b9ff9f3c8a7c8",
+    "runs/tomato/transition_time_20261109/seed42/0b12ac0fda9d7cd77dee6e60.npz": "93379d6479a8eff66eecbe3efa83c15be08a87e6fd4402800065a671094b769a",
+    "runs/tomato/transition_time_20261109/seed42/61c420843f11ca54bfe804ee.npz": "986d8e296057d531bf07a950d934b0a90c1d1fdb1135c039ff8e92a3e18fd13f",
+    "runs/tomato/transition_time_20261109/seed42/5b82f4bb76e70d8bf12c0798.npz": "d07bd068800c9df1df4dd4d6fa95bf57cf0060f812b94906dfee5cfa4a4e75ae",
+    "runs/tomato/transition_time_20261109/seed42/f53f0b6fb7f3888f87a0f8ff.npz": "4825807d0e9270b59160663b1de1326af289c93bd92e684f3ff41d4da0e183a1",
+    "runs/tomato/transition_time_20261109/seed42/a8b23394b642f0bb769a0391.npz": "7afd4b6169ca46ef1da256c04b0be4069bb193c6d2aa5c1c69f04a2ecae9d356",
+    "runs/tomato/transition_time_20261109/seed42/d0f8727d35eced697dcf79fe.npz": "62f9e23a104158866a714e2d06a18c78e1f2948881e5b48f8af2c9ae76054fe0"
+  },
+  "status": {
+    "review_status": "paused_no_duplicate_annotation",
+    "reviewer_action_required": false,
+    "reason": "User confirms clear original Subtask criteria; reuse existing phase labels and diagnose model timing before requesting extra labels",
+    "baseline": {
+      "validation_recordings": 8,
+      "hits": 37,
+      "total": 48,
+      "misses": 11
+    },
+    "old_reviews_preserved": true,
+    "original_subtask_modified": false,
+    "training_started": false,
+    "default_RTC_changed": false,
+    "diagnosis_complete": true,
+    "diagnostic_causes": {
+      "too_early_accepted_transition": 4,
+      "no_qualifying_future_in_window": 2,
+      "K2_confirmation_crosses_boundary": 4,
+      "transient_future_candidate_not_stable": 1
+    }
+  },
+  "review_page_source_sha256": "13139b21ab32fd9b5376bf64b0f5d11dd4be4204146a6c75104373db12780492",
+  "source_sha256": {
+    "tools/analyze_tomato_b0_misses.py": "5cf7dbfcc70bfb2ebc9c2ed689889a30a386e04629a1ee2dd04f4161e9b34d91",
+    "tests/test_tomato_b0_misses.py": "ad8cdeaf4b8c85bad059faf8968df308838ec19d6867f2f1704de20abc8a8a2e",
+    "tests/test_tomato_review_paused_ui.cjs": "8491f40ea1612fce26e248a5547f1d94c39e234535b967a643c8709699451808"
+  },
+  "new_labels": 0,
+  "models_trained": 0,
+  "robot_calls": 0,
+  "legacy_review_files_modified": false,
+  "tests_passed": 256,
+  "paused_archive_node_test": "passed; no annotation save and no localStorage writes"
+}

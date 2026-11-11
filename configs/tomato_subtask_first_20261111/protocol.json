@@ -1,0 +1,27 @@
+{
+  "review_status": "paused_no_duplicate_annotation",
+  "reviewer_action_required": false,
+  "reason": "User confirms clear original Subtask criteria; reuse existing phase labels and diagnose model timing before requesting extra labels",
+  "baseline": {
+    "validation_recordings": 8,
+    "hits": 37,
+    "total": 48,
+    "misses": 11
+  },
+  "old_reviews_preserved": true,
+  "original_subtask_modified": false,
+  "training_started": false,
+  "default_RTC_changed": false,
+  "parent_git": "dbfe4ed",
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "primary_supervision": "existing clear Subtask segments, frozen boundaries",
+  "physical_success_relabelling": "not scheduled or prerequisite; do not automatically recode stages into new physical-result labels",
+  "preserve_rgb_state_memory_v2": true,
+  "ui_input_sha256_unchanged": {
+    "catalog.json": "5f5d69cfc9735c52d89daf73fc25aef0bd9069effc2ee841c9a2aedef77df980",
+    "cases.json": "3716f9c63f4c7c8942cbaeeaa5aa89d342a0939d6b38c9742886c19f1987f97e",
+    "identity.json": "0155b806aba744f89da6d3af12df9eea342853fd54f5dfa1de29ed0e3b9a9df9",
+    "reviews.json": "7a77d995d72c4f8a2c8eace2e0a8a9cbae0a75e8edf9a97cd048c343f8acf604",
+    "approved.json": "59b48d17426a7319c9d7f4e377055d9a839d6d44065758745a8731426101ded3"
+  }
+}

@@ -1,0 +1,899 @@
+{
+  "baseline": {
+    "hits": 37,
+    "total": 48,
+    "false_events": 13,
+    "false_per_minute": 0.6948775055679288
+  },
+  "causes": {
+    "too_early_accepted_transition": 4,
+    "no_qualifying_future_in_window": 2,
+    "K2_confirmation_crosses_boundary": 4,
+    "transient_future_candidate_not_stable": 1
+  },
+  "prompt_outcomes": {
+    "early": 1,
+    "on_time": 8,
+    "late": 2
+  },
+  "by_transition": {
+    "adjust->pickup": 6,
+    "pickup->harvest": 2,
+    "return->adjust": 2,
+    "harvest->return": 1
+  },
+  "current_order_blocks": 0,
+  "rows": [
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "recording": "A/1103_620_642_normal_lerobot/episode_000000",
+      "transition": "adjust->pickup",
+      "boundary_s": 74.23333333333333,
+      "ordinal": 4,
+      "future_diagnostic": {
+        "kind": "too_early_accepted_transition",
+        "qualifying_samples": 3,
+        "window_samples": 3,
+        "correct_argmax_samples": 3,
+        "max_target_probability": 0.9999999177529745,
+        "exact_related_events": [
+          {
+            "time": 70.0,
+            "previous": 3,
+            "label": 0,
+            "offset_s": -4.233333333333334
+          }
+        ],
+        "has_early_event": true,
+        "has_late_event": false,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 73.0,
+            "offset_s": -1.2333333333333343,
+            "probabilities": [
+              0.9999996456309533,
+              2.8098445626549796e-07,
+              2.5998988100346366e-17,
+              7.338459048086958e-08
+            ],
+            "qualifies": true
+          },
+          {
+            "time": 73.5,
+            "offset_s": -0.7333333333333343,
+            "probabilities": [
+              0.9999999177529745,
+              7.869727274076672e-08,
+              6.109604174425265e-17,
+              3.5497529035974624e-09
+            ],
+            "qualifies": true
+          },
+          {
+            "time": 74.0,
+            "offset_s": -0.23333333333333428,
+            "probabilities": [
+              0.9999988981500166,
+              4.5112192641852616e-07,
+              4.307901846930285e-15,
+              6.507280527710214e-07
+            ],
+            "qualifies": true
+          }
+        ],
+        "ordinal": 4
+      },
+      "prompt": {
+        "ordinal": 4,
+        "boundary_s": 74.23333333333333,
+        "transition": "adjust->pickup",
+        "outcome": "early",
+        "arrival_s": 72.0,
+        "offset_s": -2.2333333333333343
+      },
+      "independent_current_K2_s": 72.0,
+      "independent_current_K2_offset_s": -2.2333333333333343,
+      "phase_before_independent_current_K2": 3,
+      "expected_previous_phase": 3,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    },
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+      "recording": "A/1103_620_642_normal_lerobot/episode_000000",
+      "transition": "pickup->harvest",
+      "boundary_s": 81.0,
+      "ordinal": 5,
+      "future_diagnostic": {
+        "kind": "no_qualifying_future_in_window",
+        "qualifying_samples": 0,
+        "window_samples": 3,
+        "correct_argmax_samples": 0,
+        "max_target_probability": 0.21319107119611486,
+        "exact_related_events": [
+          {
+            "time": 81.5,
+            "previous": 0,
+            "label": 1,
+            "offset_s": 0.5
+          }
+        ],
+        "has_early_event": false,
+        "has_late_event": true,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 79.5,
+            "offset_s": -1.5,
+            "probabilities": [
+              0.9912080641903258,
+              0.008791935809380246,
+              2.921293580370941e-13,
+              1.9909467619346497e-15
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 80.0,
+            "offset_s": -1.0,
+            "probabilities": [
+              0.9774554894294916,
+              0.022544510528597368,
+              4.190520888382578e-11,
+              5.8800612087430986e-15
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 80.5,
+            "offset_s": -0.5,
+            "probabilities": [
+              0.7868089288038801,
+              0.21319107119611486,
+              5.098801543586277e-15,
+              4.3492778870953286e-17
+            ],
+            "qualifies": false
+          }
+        ],
+        "ordinal": 5
+      },
+      "prompt": {
+        "ordinal": 5,
+        "boundary_s": 81.0,
+        "transition": "pickup->harvest",
+        "outcome": "on_time",
+        "arrival_s": 82.0,
+        "offset_s": 1.0
+      },
+      "independent_current_K2_s": 82.0,
+      "independent_current_K2_offset_s": 1.0,
+      "phase_before_independent_current_K2": 4,
+      "expected_previous_phase": 4,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "recording": "A/1104_652_697_normal_lerobot/episode_000002",
+      "transition": "return->adjust",
+      "boundary_s": 80.66666666666667,
+      "ordinal": 3,
+      "future_diagnostic": {
+        "kind": "too_early_accepted_transition",
+        "qualifying_samples": 3,
+        "window_samples": 3,
+        "correct_argmax_samples": 3,
+        "max_target_probability": 0.9999999995938174,
+        "exact_related_events": [
+          {
+            "time": 78.0,
+            "previous": 2,
+            "label": 3,
+            "offset_s": -2.6666666666666714
+          }
+        ],
+        "has_early_event": true,
+        "has_late_event": false,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 79.5,
+            "offset_s": -1.1666666666666714,
+            "probabilities": [
+              3.5462568210497234e-10,
+              5.5275179895977755e-09,
+              2.8872718135947992e-06,
+              0.9999971068460427
+            ],
+            "qualifies": true
+          },
+          {
+            "time": 80.0,
+            "offset_s": -0.6666666666666714,
+            "probabilities": [
+              7.433592696225592e-09,
+              1.5288719998334018e-09,
+              9.052687979063727e-10,
+              0.9999999901322666
+            ],
+            "qualifies": true
+          },
+          {
+            "time": 80.5,
+            "offset_s": -0.1666666666666714,
+            "probabilities": [
+              4.8560417583890365e-12,
+              1.954565753269085e-11,
+              3.817810205705338e-10,
+              0.9999999995938174
+            ],
+            "qualifies": true
+          }
+        ],
+        "ordinal": 3
+      },
+      "prompt": {
+        "ordinal": 3,
+        "boundary_s": 80.66666666666667,
+        "transition": "return->adjust",
+        "outcome": "on_time",
+        "arrival_s": 81.5,
+        "offset_s": 0.8333333333333286
+      },
+      "independent_current_K2_s": 81.5,
+      "independent_current_K2_offset_s": 0.8333333333333286,
+      "phase_before_independent_current_K2": 2,
+      "expected_previous_phase": 2,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "recording": "A/1104_652_697_normal_lerobot/episode_000002",
+      "transition": "adjust->pickup",
+      "boundary_s": 99.13333333333334,
+      "ordinal": 4,
+      "future_diagnostic": {
+        "kind": "too_early_accepted_transition",
+        "qualifying_samples": 3,
+        "window_samples": 3,
+        "correct_argmax_samples": 3,
+        "max_target_probability": 0.9998583040475582,
+        "exact_related_events": [
+          {
+            "time": 96.5,
+            "previous": 3,
+            "label": 0,
+            "offset_s": -2.63333333333334
+          },
+          {
+            "time": 103.5,
+            "previous": 3,
+            "label": 0,
+            "offset_s": 4.36666666666666
+          }
+        ],
+        "has_early_event": true,
+        "has_late_event": true,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 98.0,
+            "offset_s": -1.13333333333334,
+            "probabilities": [
+              0.9638283280400672,
+              6.993119338336196e-09,
+              3.5480167039879942e-12,
+              0.0361716649632653
+            ],
+            "qualifies": true
+          },
+          {
+            "time": 98.5,
+            "offset_s": -0.63333333333334,
+            "probabilities": [
+              0.9998583040475582,
+              3.878347346045689e-13,
+              4.721769407795376e-13,
+              0.00014169595158169173
+            ],
+            "qualifies": true
+          },
+          {
+            "time": 99.0,
+            "offset_s": -0.13333333333333997,
+            "probabilities": [
+              0.9980625161587428,
+              4.7883044762379344e-14,
+              3.678617223666572e-14,
+              0.0019374838411725093
+            ],
+            "qualifies": true
+          }
+        ],
+        "ordinal": 4
+      },
+      "prompt": {
+        "ordinal": 4,
+        "boundary_s": 99.13333333333334,
+        "transition": "adjust->pickup",
+        "outcome": "late",
+        "arrival_s": 103.0,
+        "offset_s": 3.86666666666666
+      },
+      "independent_current_K2_s": 103.0,
+      "independent_current_K2_offset_s": 3.86666666666666,
+      "phase_before_independent_current_K2": 3,
+      "expected_previous_phase": 3,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+      "recording": "A/1104_652_697_normal_lerobot/episode_000002",
+      "transition": "pickup->harvest",
+      "boundary_s": 113.76666666666667,
+      "ordinal": 5,
+      "future_diagnostic": {
+        "kind": "too_early_accepted_transition",
+        "qualifying_samples": 3,
+        "window_samples": 3,
+        "correct_argmax_samples": 3,
+        "max_target_probability": 0.9999999999999742,
+        "exact_related_events": [
+          {
+            "time": 111.0,
+            "previous": 0,
+            "label": 1,
+            "offset_s": -2.7666666666666657
+          }
+        ],
+        "has_early_event": true,
+        "has_late_event": false,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 112.5,
+            "offset_s": -1.2666666666666657,
+            "probabilities": [
+              5.545533568599847e-05,
+              0.999944544664314,
+              6.154952054919387e-24,
+              1.310471912806297e-21
+            ],
+            "qualifies": true
+          },
+          {
+            "time": 113.0,
+            "offset_s": -0.7666666666666657,
+            "probabilities": [
+              1.1121715877296998e-09,
+              0.9999999988878283,
+              6.119971930935885e-23,
+              3.9757712520627497e-22
+            ],
+            "qualifies": true
+          },
+          {
+            "time": 113.5,
+            "offset_s": -0.2666666666666657,
+            "probabilities": [
+              2.5858516526456222e-14,
+              0.9999999999999742,
+              6.480497594283247e-30,
+              5.432871132435397e-28
+            ],
+            "qualifies": true
+          }
+        ],
+        "ordinal": 5
+      },
+      "prompt": {
+        "ordinal": 5,
+        "boundary_s": 113.76666666666667,
+        "transition": "pickup->harvest",
+        "outcome": "on_time",
+        "arrival_s": 114.5,
+        "offset_s": 0.7333333333333343
+      },
+      "independent_current_K2_s": 114.5,
+      "independent_current_K2_offset_s": 0.7333333333333343,
+      "phase_before_independent_current_K2": 4,
+      "expected_previous_phase": 4,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    },
+    {
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+      "recording": "A/1104_652_697_normal_lerobot/episode_000009",
+      "transition": "adjust->pickup",
+      "boundary_s": 90.3,
+      "ordinal": 4,
+      "future_diagnostic": {
+        "kind": "K2_confirmation_crosses_boundary",
+        "qualifying_samples": 1,
+        "window_samples": 3,
+        "correct_argmax_samples": 1,
+        "max_target_probability": 0.8614758542253118,
+        "exact_related_events": [
+          {
+            "time": 90.5,
+            "previous": 3,
+            "label": 0,
+            "offset_s": 0.20000000000000284
+          }
+        ],
+        "has_early_event": false,
+        "has_late_event": true,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 89.0,
+            "offset_s": -1.2999999999999972,
+            "probabilities": [
+              0.04105549540821598,
+              3.529062684313139e-08,
+              2.2038253594092497e-10,
+              0.9589444690807747
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 89.5,
+            "offset_s": -0.7999999999999972,
+            "probabilities": [
+              0.04413499481497365,
+              5.3376427430810315e-08,
+              2.1661946552719916e-09,
+              0.9558649496424042
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 90.0,
+            "offset_s": -0.29999999999999716,
+            "probabilities": [
+              0.8614758542253118,
+              2.8675542347438053e-10,
+              6.347039251863149e-10,
+              0.13852414485322884
+            ],
+            "qualifies": true
+          }
+        ],
+        "ordinal": 4
+      },
+      "prompt": {
+        "ordinal": 4,
+        "boundary_s": 90.3,
+        "transition": "adjust->pickup",
+        "outcome": "on_time",
+        "arrival_s": 91.5,
+        "offset_s": 1.2000000000000028
+      },
+      "independent_current_K2_s": 91.5,
+      "independent_current_K2_offset_s": 1.2000000000000028,
+      "phase_before_independent_current_K2": 3,
+      "expected_previous_phase": 3,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "recording": "A/1106_702_739_normal_lerobot/episode_000004",
+      "transition": "return->adjust",
+      "boundary_s": 66.2,
+      "ordinal": 3,
+      "future_diagnostic": {
+        "kind": "no_qualifying_future_in_window",
+        "qualifying_samples": 0,
+        "window_samples": 3,
+        "correct_argmax_samples": 0,
+        "max_target_probability": 0.127967729258807,
+        "exact_related_events": [
+          {
+            "time": 67.0,
+            "previous": 2,
+            "label": 3,
+            "offset_s": 0.7999999999999972
+          }
+        ],
+        "has_early_event": false,
+        "has_late_event": true,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 65.0,
+            "offset_s": -1.2000000000000028,
+            "probabilities": [
+              2.2060846870475587e-16,
+              3.7437064861084586e-13,
+              0.9999982024648402,
+              1.797534785292361e-06
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 65.5,
+            "offset_s": -0.7000000000000028,
+            "probabilities": [
+              2.6855701239750374e-17,
+              4.071400307966659e-13,
+              0.9996719941294698,
+              0.00032800587012313823
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 66.0,
+            "offset_s": -0.20000000000000284,
+            "probabilities": [
+              2.5215173642928168e-09,
+              1.5431022990745616e-09,
+              0.8720322666765734,
+              0.127967729258807
+            ],
+            "qualifies": false
+          }
+        ],
+        "ordinal": 3
+      },
+      "prompt": {
+        "ordinal": 3,
+        "boundary_s": 66.2,
+        "transition": "return->adjust",
+        "outcome": "on_time",
+        "arrival_s": 67.5,
+        "offset_s": 1.2999999999999972
+      },
+      "independent_current_K2_s": 67.5,
+      "independent_current_K2_offset_s": 1.2999999999999972,
+      "phase_before_independent_current_K2": 2,
+      "expected_previous_phase": 2,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "recording": "A/1106_702_739_normal_lerobot/episode_000004",
+      "transition": "adjust->pickup",
+      "boundary_s": 94.86666666666666,
+      "ordinal": 4,
+      "future_diagnostic": {
+        "kind": "transient_future_candidate_not_stable",
+        "qualifying_samples": 1,
+        "window_samples": 3,
+        "correct_argmax_samples": 1,
+        "max_target_probability": 0.8385897260367705,
+        "exact_related_events": [
+          {
+            "time": 99.0,
+            "previous": 3,
+            "label": 0,
+            "offset_s": 4.13333333333334
+          }
+        ],
+        "has_early_event": false,
+        "has_late_event": true,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 93.5,
+            "offset_s": -1.36666666666666,
+            "probabilities": [
+              0.2692254282905229,
+              8.651100410152377e-07,
+              6.307599496552597e-08,
+              0.7307736435234412
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 94.0,
+            "offset_s": -0.86666666666666,
+            "probabilities": [
+              0.0033922839816268795,
+              6.829049587497877e-08,
+              2.5396067289438033e-08,
+              0.99660762233181
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 94.5,
+            "offset_s": -0.36666666666666003,
+            "probabilities": [
+              0.8385897260367705,
+              1.8347177751553186e-09,
+              3.282933710739898e-07,
+              0.16140994383514068
+            ],
+            "qualifies": true
+          }
+        ],
+        "ordinal": 4
+      },
+      "prompt": {
+        "ordinal": 4,
+        "boundary_s": 94.86666666666666,
+        "transition": "adjust->pickup",
+        "outcome": "late",
+        "arrival_s": 99.5,
+        "offset_s": 4.63333333333334
+      },
+      "independent_current_K2_s": 99.5,
+      "independent_current_K2_offset_s": 4.63333333333334,
+      "phase_before_independent_current_K2": 3,
+      "expected_previous_phase": 3,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+      "recording": "A/1106_702_739_normal_lerobot/episode_000004",
+      "transition": "harvest->return",
+      "boundary_s": 175.43333333333334,
+      "ordinal": 6,
+      "future_diagnostic": {
+        "kind": "K2_confirmation_crosses_boundary",
+        "qualifying_samples": 1,
+        "window_samples": 3,
+        "correct_argmax_samples": 1,
+        "max_target_probability": 0.9991854839321184,
+        "exact_related_events": [
+          {
+            "time": 175.5,
+            "previous": 1,
+            "label": 2,
+            "offset_s": 0.06666666666666288
+          }
+        ],
+        "has_early_event": false,
+        "has_late_event": true,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 174.0,
+            "offset_s": -1.4333333333333371,
+            "probabilities": [
+              5.995098860591295e-14,
+              0.9755201067636876,
+              0.024479893236252385,
+              9.946941696864057e-29
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 174.5,
+            "offset_s": -0.9333333333333371,
+            "probabilities": [
+              1.5987980592443423e-15,
+              0.9780314697793719,
+              0.02196853022062651,
+              3.086736394002721e-29
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 175.0,
+            "offset_s": -0.4333333333333371,
+            "probabilities": [
+              1.2124883466328999e-14,
+              0.000814516067869412,
+              0.9991854839321184,
+              3.558284531241581e-31
+            ],
+            "qualifies": true
+          }
+        ],
+        "ordinal": 6
+      },
+      "prompt": {
+        "ordinal": 6,
+        "boundary_s": 175.43333333333334,
+        "transition": "harvest->return",
+        "outcome": "on_time",
+        "arrival_s": 176.0,
+        "offset_s": 0.5666666666666629
+      },
+      "independent_current_K2_s": 176.0,
+      "independent_current_K2_offset_s": 0.5666666666666629,
+      "phase_before_independent_current_K2": 5,
+      "expected_previous_phase": 5,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    },
+    {
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+      "recording": "A/1107_783_783_normal/episode_000000",
+      "transition": "adjust->pickup",
+      "boundary_s": 65.26666666666667,
+      "ordinal": 4,
+      "future_diagnostic": {
+        "kind": "K2_confirmation_crosses_boundary",
+        "qualifying_samples": 1,
+        "window_samples": 3,
+        "correct_argmax_samples": 1,
+        "max_target_probability": 0.90563963802302,
+        "exact_related_events": [
+          {
+            "time": 65.5,
+            "previous": 3,
+            "label": 0,
+            "offset_s": 0.23333333333333428
+          }
+        ],
+        "has_early_event": false,
+        "has_late_event": true,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 64.0,
+            "offset_s": -1.2666666666666657,
+            "probabilities": [
+              0.053663873639102425,
+              1.5522400089258637e-10,
+              8.207257947958408e-13,
+              0.9463361262048529
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 64.5,
+            "offset_s": -0.7666666666666657,
+            "probabilities": [
+              0.010279880475929475,
+              1.6393643489463138e-11,
+              1.733499835286903e-11,
+              0.9897201194903418
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 65.0,
+            "offset_s": -0.2666666666666657,
+            "probabilities": [
+              0.90563963802302,
+              8.094604191070967e-13,
+              3.03685043745943e-14,
+              0.09436036197614026
+            ],
+            "qualifies": true
+          }
+        ],
+        "ordinal": 4
+      },
+      "prompt": {
+        "ordinal": 4,
+        "boundary_s": 65.26666666666667,
+        "transition": "adjust->pickup",
+        "outcome": "on_time",
+        "arrival_s": 66.0,
+        "offset_s": 0.7333333333333343
+      },
+      "independent_current_K2_s": 66.0,
+      "independent_current_K2_offset_s": 0.7333333333333343,
+      "phase_before_independent_current_K2": 3,
+      "expected_previous_phase": 3,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    },
+    {
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+      "recording": "B/1106_750_791_normal/episode_000005",
+      "transition": "adjust->pickup",
+      "boundary_s": 65.6,
+      "ordinal": 4,
+      "future_diagnostic": {
+        "kind": "K2_confirmation_crosses_boundary",
+        "qualifying_samples": 1,
+        "window_samples": 3,
+        "correct_argmax_samples": 1,
+        "max_target_probability": 0.997312452485724,
+        "exact_related_events": [
+          {
+            "time": 66.0,
+            "previous": 3,
+            "label": 0,
+            "offset_s": 0.4000000000000057
+          }
+        ],
+        "has_early_event": false,
+        "has_late_event": true,
+        "wrong_source_events": [],
+        "window_samples_detail": [
+          {
+            "time": 64.5,
+            "offset_s": -1.0999999999999943,
+            "probabilities": [
+              0.03809005289760923,
+              3.218439079424371e-10,
+              2.4384668477010067e-14,
+              0.9619099467805224
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 65.0,
+            "offset_s": -0.5999999999999943,
+            "probabilities": [
+              0.040474278911021164,
+              5.8038365498924805e-11,
+              1.3944756270224358e-15,
+              0.9595257210309391
+            ],
+            "qualifies": false
+          },
+          {
+            "time": 65.5,
+            "offset_s": -0.09999999999999432,
+            "probabilities": [
+              0.997312452485724,
+              5.40730382601705e-10,
+              1.4012013351108761e-15,
+              0.0026875469735442095
+            ],
+            "qualifies": true
+          }
+        ],
+        "ordinal": 4
+      },
+      "prompt": {
+        "ordinal": 4,
+        "boundary_s": 65.6,
+        "transition": "adjust->pickup",
+        "outcome": "on_time",
+        "arrival_s": 67.5,
+        "offset_s": 1.9000000000000057
+      },
+      "independent_current_K2_s": 67.5,
+      "independent_current_K2_offset_s": 1.9000000000000057,
+      "phase_before_independent_current_K2": 3,
+      "expected_previous_phase": 3,
+      "current_candidate_blocked_by_order": false,
+      "future_warning_filtered_by_order": false,
+      "label_action": "retain_existing_subtask_no_revision"
+    }
+  ],
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "code_git_sha": "dbfe4ed538e8213abdc2dc0f9d852c630f507298",
+  "input_sha256": {
+    "runs/tomato/transition_time_20261109/seed42/3e645bf4e137d0f836c9d7ff.npz": "4698537e7661cec69e25d34c134b3d50802570a960bcc684df3b6d1fb749c298",
+    "runs/tomato/transition_time_20261109/seed42/27d8bc0413a42341c7e8c3e5.npz": "02883d5bf159b297dd7da41e2bf9bab30276f176c52b7b4d838b9ff9f3c8a7c8",
+    "runs/tomato/transition_time_20261109/seed42/0b12ac0fda9d7cd77dee6e60.npz": "93379d6479a8eff66eecbe3efa83c15be08a87e6fd4402800065a671094b769a",
+    "runs/tomato/transition_time_20261109/seed42/61c420843f11ca54bfe804ee.npz": "986d8e296057d531bf07a950d934b0a90c1d1fdb1135c039ff8e92a3e18fd13f",
+    "runs/tomato/transition_time_20261109/seed42/5b82f4bb76e70d8bf12c0798.npz": "d07bd068800c9df1df4dd4d6fa95bf57cf0060f812b94906dfee5cfa4a4e75ae",
+    "runs/tomato/transition_time_20261109/seed42/f53f0b6fb7f3888f87a0f8ff.npz": "4825807d0e9270b59160663b1de1326af289c93bd92e684f3ff41d4da0e183a1",
+    "runs/tomato/transition_time_20261109/seed42/a8b23394b642f0bb769a0391.npz": "7afd4b6169ca46ef1da256c04b0be4069bb193c6d2aa5c1c69f04a2ecae9d356",
+    "runs/tomato/transition_time_20261109/seed42/d0f8727d35eced697dcf79fe.npz": "62f9e23a104158866a714e2d06a18c78e1f2948881e5b48f8af2c9ae76054fe0"
+  },
+  "training": false,
+  "test_values_read": false,
+  "labels_modified": false,
+  "thresholds_modified": false,
+  "warning_policy": "Unchanged Future .5/K2, exact edge in [b-1.5,b). B0 warnings are not gated by maintained seven-stage position.",
+  "diagnosis_scope": "Explains timing and confidence under fixed Subtask; does not infer visual occlusion or label error from probabilities alone"
+}

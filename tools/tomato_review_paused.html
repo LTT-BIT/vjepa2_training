@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>当前不需要补充标注</title>
+<style>body{font:18px/1.8 system-ui;background:#f4f6f9;color:#203047;max-width:850px;margin:50px auto;padding:20px}section,details{background:white;border:1px solid #dce3ec;border-radius:14px;padding:24px;margin:20px 0}h1{font-size:30px}button,input{font:inherit;padding:8px;border:1px solid #c6d2e2;border-radius:7px}.muted{color:#617083}strong{color:#245ad6}summary{cursor:pointer}</style>
+<h1>你现在不需要再标一遍</h1>
+<section><p>这一轮操作结果补标已暂停。已有清晰的Subtask标注继续用于训练和评估。</p><p>原来的<strong>100条数据、旧模型和已保存意见</strong>都保留，不会被覆盖。</p></section>
+<section><h2>程序已完成首轮模型错误分析</h2><p id="baseline">新8条验证基线仍为37/48；已完成11次漏检的首轮诊断。</p><ul><li>预警是否过早或过晚？</li><li>是Future预测不稳定，还是Current确认延迟？</li><li>是否真的受到七阶段状态约束阻挡？</li></ul><p class="muted">不会为了增加Memory而要求你重复标注，也不自动改原Subtask边界。</p></section>
+<details><summary>可选：导出以前已保存的个人意见</summary><p>这里只读取旧记录，不新增标注。不需要导出也可以直接关闭页面。</p><input id="name" aria-label="原来填写的名字" placeholder="原来填写的名字"><button id="export">导出旧意见</button><p id="message" role="status"></p></details>
+<script>
+let identity,cases;
+function ownReviews(name){
+ const found={},eligible=new Map(cases.map(c=>[c.case_id,c]));
+ for(const sha of [identity.catalog_sha256,...(identity.previous_catalog_sha256||[])]){
+  for(const key of ['tomato-operation-review:'+sha+':reviewer:'+encodeURIComponent(name),'tomato-operation-review:'+sha]){
+   for(const [id,r] of Object.entries(JSON.parse(localStorage.getItem(key)||'{}'))){if(r.reviewer===name&&!found[id]&&eligible.get(id)?.annotation_sha256===r.annotation_sha256)found[id]=r}
+  }
+ }
+ return Object.values(found);
+}
+document.getElementById('export').onclick=()=>{
+ const name=document.getElementById('name').value.trim();if(!name){document.getElementById('message').textContent='请输入原来的名字。';return}
+ if(!identity||!cases){document.getElementById('message').textContent='记录信息还在加载，请稍后再试。';return}
+ const rows=ownReviews(name);if(!rows.length){document.getElementById('message').textContent='这个浏览器里没有找到该名字已保存的意见；其他浏览器中的记录不受影响。';return}
+ const a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify({schema_version:'tomato-operation-review-v2',reviewer:name,identity,reviews:rows},null,2)],{type:'application/json'}));a.href=url;a.download='operation-review-archive-'+name+'.json';a.click();URL.revokeObjectURL(url);document.getElementById('message').textContent='已导出原有意见，没有修改记录。';
+};
+(async()=>{[identity,cases]=await Promise.all(['identity.json','cases.json'].map(p=>fetch(p,{cache:'no-store'}).then(r=>r.json())))})()
+</script></html>
