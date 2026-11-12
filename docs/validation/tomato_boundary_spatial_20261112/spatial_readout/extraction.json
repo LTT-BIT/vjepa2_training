@@ -1,0 +1,31 @@
+{
+  "inputs": {
+    "configs/tomato_spatial_readout_20261112/protocol.json": "47cd908b03f9c4daa3bbf5afe70415dd9c9624fd31b6add26dd16f6f5d024a8d",
+    "/home/user/vjepa2_training/runs/tomato/complete100_20261111/dataset_manifest.json": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+    "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/afcb35c7bfcbe731a16aa4a30caa0ad501d7b5ce6ac8578c31afb085944d52ff.npz": "96cabfcc7ed28ce7c491c9b6fa61c2370b1a65173ac5a6effdcda4e998faf1db",
+    "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/35c84a66383011837cc3a0f33b03a7428b8a0ee42ae1e2d87f946a3574381707.npz": "8e23b5c33db48e8dd77c3e57436260906af8649303b4a2e07e59c4b43a2604d9",
+    "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/84d0d1efc6c7d65693a567ca0b4f16e639428d8ab0dd8f34877844c71c06dc4f.npz": "2c3047048aa9ab8a5cffabd634d5e9fbf4f06b5733038a8a6d3f67496ef44944",
+    "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/759d38c80ad38c11599e79006f466d9efde8fda6ff59d2a1f5593e034a34b5e2.npz": "8aa86d367de99f65e0d785337e146f2310861140c2e22c505c0c7a3be83c321a",
+    "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/29f4f5c72a525c3a90b43311ae21299ba5e7d6028bcfad40a6e8133392560d72.npz": "7faca27dabc11de5a3cab720ecd23327553bbb7b3866799d0fde57d0a4a4f48b",
+    "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/7fc309c597d34a8c6b23906b8770209315accdb73534194b8e5bb92d420934d5.npz": "15fceed4bdead9453e6cac557b1bcbd7a9c112b3dd6f54eb7a462a825653f85d",
+    "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/4c397d34da74d027c3c4b2179d53ed1d60005561a4b9f254e50f5fb0c7f2e979.npz": "8852a2928835aa988b704c1c30666d528c46682a75c92e0708dd3ef8af8f09fb",
+    "/home/user/vjepa2_training/runs/tomato/local94_20261107/shared_feature_cache/44434efbb7bfddb09e7ad85cdde98bae3b5c640431888041bf935673887ab3f6.npz": "506fff6bd3e0a4ea6558fb4c1c4aca40ee9d0f7cf45b86bf99a322afd901fc23",
+    "runs/tomato/independent10_20261109/features/967d0375a97eb5e515a1ee15ac35ff6d12a7763da5a82b092c89bcfb5c000194.npz": "7ac9cf316434c6713e34fc4fa0c5c96b62291ee63cf59c5a76c167263ca60ef2",
+    "runs/tomato/independent10_20261109/features/aa7b10894b772bdc49bb8cf840ab598338a3b9afff46e206b659ce726d2d7632.npz": "a5d44e1cb71771af77eb7b47e371f6597279e2067d7f0fe935f4eea37b7134cd",
+    "runs/tomato/independent10_20261109/features/f8c55a6b327365bafcac08ec8fbf6f60967ce74d1fd9a1e01927542058ddb17a.npz": "895bdf382a2deb88df524584dbf0fc4d5946fd9737cb806052cd61255218cb12",
+    "runs/tomato/independent10_20261109/features/a69eb33c427ee045190e07e1260c2b0248a98d68e5847673bf6e2a2491a5d048.npz": "9e34dd527664fa1a5103125aa99b7d0af8f8c411eae848a3b0333bf70a073837"
+  },
+  "encoder": {
+    "model_id": "facebook/vjepa2-vitl-fpc64-256",
+    "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+    "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+    "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+  },
+  "windows": 288,
+  "encoder_call_ms": {
+    "p50": 40.755680500296876,
+    "p95": 46.24285816680639,
+    "maximum": 173.90139400959015
+  },
+  "scope": "encoder only including preprocess/device transfer; no decode/readout/transport"
+}

@@ -1,0 +1,260 @@
+{
+  "checks": [
+    {
+      "seed": 42,
+      "method": "C0_standard",
+      "fold": 0,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "5b9459c0937ea613c7200f2ecf180001e7bae3a8f7dea3c1d2579b4cd45e94aa"
+    },
+    {
+      "seed": 42,
+      "method": "C1_boundary_weighted",
+      "fold": 0,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "b97ebd35cc247a7c680195e23b2fd07fe32c777c2eee1db79ae7efc603045b46"
+    },
+    {
+      "seed": 43,
+      "method": "C0_standard",
+      "fold": 0,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "443519932f3108d755170ece9e5c34fb05d767f15e78d3671de3d520b16adb87"
+    },
+    {
+      "seed": 43,
+      "method": "C1_boundary_weighted",
+      "fold": 0,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "805ebe89ab819dd025dc08f6ca5c6d1075e7c6853259d679fa8d55f400c6d2c4"
+    },
+    {
+      "seed": 44,
+      "method": "C0_standard",
+      "fold": 0,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "56cdfe58f977cb9485a73b48b50112b47ff6aa83c381d6322ba6347be582a573"
+    },
+    {
+      "seed": 44,
+      "method": "C1_boundary_weighted",
+      "fold": 0,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "bc2c28c73be67864187293b78cef92eb7706f56b82aad1d4a3da4cc4d88cc57c"
+    },
+    {
+      "seed": 42,
+      "method": "C0_standard",
+      "fold": 1,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "5462653dd39811c2e567fe86b3a485ff4c4222ac295db9d348b6dd87e16d3f36"
+    },
+    {
+      "seed": 42,
+      "method": "C1_boundary_weighted",
+      "fold": 1,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "818ef1ef06be8a6cbc42c18d5c3ea626076cb9666309e80734d07352b713c76e"
+    },
+    {
+      "seed": 43,
+      "method": "C0_standard",
+      "fold": 1,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "b5ff1a852758ab85bf4d481497e14ace4daedba923ea7d3d410fef96af7e136d"
+    },
+    {
+      "seed": 43,
+      "method": "C1_boundary_weighted",
+      "fold": 1,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "225eedaf4a76433444a96039a7d07e9cfcca8c5efa4097865952d74edb7cb56e"
+    },
+    {
+      "seed": 44,
+      "method": "C0_standard",
+      "fold": 1,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "3bd733b2a707bfc8d261978e6c6a13f508918a65bceeb0ca35f36be7e1c94164"
+    },
+    {
+      "seed": 44,
+      "method": "C1_boundary_weighted",
+      "fold": 1,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "93229f52e64ec9fdfce43ea3ac1455d11af68bce51d6a82c52e08f2897962394"
+    },
+    {
+      "seed": 42,
+      "method": "C0_standard",
+      "fold": 2,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "9b9457300c59f348955188b7c1ff5fa17368177eba4812ade9b707b1c7bec4a2"
+    },
+    {
+      "seed": 42,
+      "method": "C1_boundary_weighted",
+      "fold": 2,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "c22697c4ca7d28eeefb76a5b5133f55985d940d21c7d52804bd875ceb4ed783e"
+    },
+    {
+      "seed": 43,
+      "method": "C0_standard",
+      "fold": 2,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "b34a52dddd2f307ba4422b452c45e99e1d9c617f866ad188aa7ee28d54a83029"
+    },
+    {
+      "seed": 43,
+      "method": "C1_boundary_weighted",
+      "fold": 2,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "19130bd2f2709581caaf83b88d024ea5cb9d826a26af0c9be98f1371d8eac820"
+    },
+    {
+      "seed": 44,
+      "method": "C0_standard",
+      "fold": 2,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "d7085f9b2fac4da9af7c7bc1b9fc9d36667b71139bcfbf288820db08295355b1"
+    },
+    {
+      "seed": 44,
+      "method": "C1_boundary_weighted",
+      "fold": 2,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "b1b2329c36f84e8e1b8af6d76e25dfd14dba7c53566c6a1266a290b22d82f1fe"
+    },
+    {
+      "seed": 42,
+      "method": "C0_standard",
+      "fold": 3,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "9914bb6d302a882d3a95c22415005fe13b2dfc785953807b899009a5ddfec5cd"
+    },
+    {
+      "seed": 42,
+      "method": "C1_boundary_weighted",
+      "fold": 3,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "89b5c85098c9e9afc5d3c59a1e3a8756e2b5c5ffaa612ea2b6b60c7dbbb5abff"
+    },
+    {
+      "seed": 43,
+      "method": "C0_standard",
+      "fold": 3,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "8141645db07244d00153fb370b2e125db7d9a07059cbd359d6ff6562ed097d94"
+    },
+    {
+      "seed": 43,
+      "method": "C1_boundary_weighted",
+      "fold": 3,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "70812a12520dfbde179943381519cd8aeab8cbeddc662c8b9d5363b82beb02cc"
+    },
+    {
+      "seed": 44,
+      "method": "C0_standard",
+      "fold": 3,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "f8c0fca52a7445835ae1d9ed789c15994c8d8980589bf264f8705a837eff9333"
+    },
+    {
+      "seed": 44,
+      "method": "C1_boundary_weighted",
+      "fold": 3,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "509a53687d3118e48a468ee886bc3317f87670d8e553b7e31884d2225084deb5"
+    },
+    {
+      "seed": 42,
+      "method": "C0_standard",
+      "fold": 4,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "9a516780f1b0aa2ae2bd0220a1747753a2d61e730403dc79c92c03bff690cee7"
+    },
+    {
+      "seed": 42,
+      "method": "C1_boundary_weighted",
+      "fold": 4,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "55bf63ddb2720dc7858792e95486e8f2bb9d9bce9892638230fe5824fe7b10cb"
+    },
+    {
+      "seed": 43,
+      "method": "C0_standard",
+      "fold": 4,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "a166093dc4607ca8376ac79cc3fa6511b42e7b6023b18e6443f6c03b0961c193"
+    },
+    {
+      "seed": 43,
+      "method": "C1_boundary_weighted",
+      "fold": 4,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "b2e5451d8649c6a1ff82c9826c7e0189269a36eca47ef5103f098abd88acba67"
+    },
+    {
+      "seed": 44,
+      "method": "C0_standard",
+      "fold": 4,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "d87905ec69326a6bfbaf810251018cd6407f75a3a746badc8eb2b2e99fb14294"
+    },
+    {
+      "seed": 44,
+      "method": "C1_boundary_weighted",
+      "fold": 4,
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "4c4eb68920c036440cf5e7aebd94cd76d9838e79d34189db777bfddc0295131d"
+    },
+    {
+      "seed": 42,
+      "method": "C0_standard",
+      "fold": "final84",
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "71fbdf7024bb1b811e85f982714266910d65ddf5502e653e2c6b8cfbc3cda3e7"
+    },
+    {
+      "seed": 42,
+      "method": "C1_boundary_weighted",
+      "fold": "final84",
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "d85e48e6d2d4e65d769f5b60a0bb877c30391a486fae7751e0d139d11c77861b"
+    },
+    {
+      "seed": 43,
+      "method": "C0_standard",
+      "fold": "final84",
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "cb86baf2f08f1d85dcc22cadd0e33dd03d19f21b9986d9a5465ba92020fb3b17"
+    },
+    {
+      "seed": 43,
+      "method": "C1_boundary_weighted",
+      "fold": "final84",
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "6d888595a90150e3c610a63ce01cc63856eff69306975b1d468824519c4b8b1e"
+    },
+    {
+      "seed": 44,
+      "method": "C0_standard",
+      "fold": "final84",
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "06e7616bd98eda395fbdb7bfdf58fe6e9791b04b94f27255d0bad4af708f747a"
+    },
+    {
+      "seed": 44,
+      "method": "C1_boundary_weighted",
+      "fold": "final84",
+      "train_only_statistics_exact": true,
+      "checkpoint_sha256": "1e90b5a8b84b0d9eaca79ea9902ab3dea3c5c68441858c90da2f07f3b2bf3ca1"
+    }
+  ],
+  "models": 36,
+  "frozen_B0_verified": true,
+  "paired_initialization_exact": true,
+  "recording_overlap": 0
+}

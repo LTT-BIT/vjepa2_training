@@ -1,0 +1,154 @@
+{
+  "models": 18,
+  "checks": [
+    {
+      "seed": 42,
+      "method": "global_mean_control",
+      "fold": 0,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "602b9d4f8d0f880357c0ccf2bbbf1b8fe81b950bbc9c239b991c87fad4818e75"
+    },
+    {
+      "seed": 42,
+      "method": "spatial_4x4",
+      "fold": 0,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "dd33bd0788b818509ce7a27e02f64ac19abd9ff301203a1d05e8388d4c598746"
+    },
+    {
+      "seed": 43,
+      "method": "global_mean_control",
+      "fold": 0,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "34f15d36c3a96316740bffe52d7ab3dda74161af47c6219c3b18e7daecdb29cb"
+    },
+    {
+      "seed": 43,
+      "method": "spatial_4x4",
+      "fold": 0,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "cff025aa218dcc4b0aea296d686fea37650236a16939246c01b56405440f49b9"
+    },
+    {
+      "seed": 44,
+      "method": "global_mean_control",
+      "fold": 0,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "ec7677793376a5d1548a78e9901a5368367c75bf374436ed967b509c6087f380"
+    },
+    {
+      "seed": 44,
+      "method": "spatial_4x4",
+      "fold": 0,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "f60ec68baca8225b87ff4e4c78b9d530af5a86cf2e90db9fd5e35a0ee6f08428"
+    },
+    {
+      "seed": 42,
+      "method": "global_mean_control",
+      "fold": 1,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "94ff731fe2cf66bb544836328659b7a4ff4fae27024ea803a6bca842f989a0a1"
+    },
+    {
+      "seed": 42,
+      "method": "spatial_4x4",
+      "fold": 1,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "aad762dcaec2adeacf164955f527fcf29a1ee01a850d2f37b04e54529755b754"
+    },
+    {
+      "seed": 43,
+      "method": "global_mean_control",
+      "fold": 1,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "ee7098c45264f32ea9159864d8f2d6314484850a8042b63cf546fd9ea76cf544"
+    },
+    {
+      "seed": 43,
+      "method": "spatial_4x4",
+      "fold": 1,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "bb37ae8c0d1d6ad0a3901e1b3fe55c15cdde22777e100053d4649968f0a79348"
+    },
+    {
+      "seed": 44,
+      "method": "global_mean_control",
+      "fold": 1,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "a26bce5a7b528c1b7cfb694268c41c81edd85c7e5294a3050093746eb01cbe23"
+    },
+    {
+      "seed": 44,
+      "method": "spatial_4x4",
+      "fold": 1,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "f412d4610e9d4e1f7a8c0e2b7612ec6512759c10d307fbd0049d866ebc545276"
+    },
+    {
+      "seed": 42,
+      "method": "global_mean_control",
+      "fold": 2,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "095f82f9ab58d7d32d17897909f94979bb883089aebc66114554a3dc644ce714"
+    },
+    {
+      "seed": 42,
+      "method": "spatial_4x4",
+      "fold": 2,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "aad513eb0a2a5b88543ba7959f7cd668d92de76b683b6c85ae82723d8ff7e05b"
+    },
+    {
+      "seed": 43,
+      "method": "global_mean_control",
+      "fold": 2,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "e2628ee3abe7f2319d185c196402d46fbbfa348ef21b61a684f1cd051ba09cfe"
+    },
+    {
+      "seed": 43,
+      "method": "spatial_4x4",
+      "fold": 2,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "4feccccf3f6040d408c9925d001b881363b2bf651ccb4f5ca1f79c665d19fbee"
+    },
+    {
+      "seed": 44,
+      "method": "global_mean_control",
+      "fold": 2,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "66668ab2b3c0900df830722ee26b3da102b3e58947a50ab7f38af755ec846907"
+    },
+    {
+      "seed": 44,
+      "method": "spatial_4x4",
+      "fold": 2,
+      "normalization_exact": true,
+      "recording_overlap": 0,
+      "checkpoint_sha256": "5b5c6385ec433bc749b80a24b7e1d91dd9f9457c6ec09126e591a13f9127acc1"
+    }
+  ],
+  "source_recordings": 12,
+  "windows": 288,
+  "all_training_only": true,
+  "source_mean_vs_spatial_mean_max_error": 1.9073486328125e-06,
+  "frozen_B0_verified": true
+}

@@ -1,0 +1,14 @@
+{
+ "version":"frozen-spatial-readout-training-only-pilot-v1",
+ "recordings":12,"b0_seen_recordings":8,"b0_unseen_recordings":4,
+ "selection_seed":20261112,"sample_offsets_s":[-1.0,-0.5,0.5,1.0],
+ "methods":["global_mean_control","spatial_4x4"],
+ "token_processing":"same frozen VJEPA tokens; temporal mean and equal 4x4 spatial regions per cam; mean control broadcasts cam mean to same16 regions",
+ "architecture":"same 64D state-query attention over48 tokens; same parameter count and seed initialization",
+ "folds":3,"seeds":[42,43,44],"epochs":40,"learning_rate":0.001,"weight_decay":0.01,
+ "supervision":"existing Current four-class Subtask at sampled training timestamps",
+ "evaluation":"training recording group OOF only; diagnostic near-boundary subset, NOT full event evaluation",
+ "normalization":"same per-fold train-only global visual and measured58D position statistics for both methods",
+ "memory_enabled":false,"roi_required":false,"default_changed":false,"test_use":false,"development_use":false,
+ "scope":"small frozen spatial information probe; not fine object localization and not learned long-term memory"
+}

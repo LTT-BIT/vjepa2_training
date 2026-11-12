@@ -1,0 +1,14 @@
+{
+  "source_sha256": {
+    "tools/train_tomato_boundary_supervision.py": "443f7facfd3bed0c81fe61c38e3bcbd540ef1f6352702e415e412a2857f6ab56",
+    "tools/verify_tomato_boundary_supervision.py": "b697902587d3d5ab3934caa76fdfea5149b8c8b164abfbc2eb871e49d232821e",
+    "tools/tomato_spatial_readout.py": "0650212d56e3fcdcd28f1b827f4fb62c54c96607a7a6eb02bab1cd8fe9750c03",
+    "tools/probe_tomato_spatial_readout.py": "d8538e16df5578669ae2854d62a775b539c3cdfa89b4a0254110a23f0c756942",
+    "tools/verify_tomato_spatial_readout.py": "5b3444491bced926b0ff5134571b42c91ef658d6a1592a82c091721706682bdc"
+  },
+  "default_B0_changed": false,
+  "memory_decision_enabled": false,
+  "robot_calls": 0,
+  "tests_passed": 314,
+  "tests_skipped": 1
+}

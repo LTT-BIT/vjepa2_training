@@ -1,0 +1,30 @@
+{
+  "version": "matched-current-boundary-supervision-v1",
+  "methods": [
+    "C0_standard",
+    "C1_boundary_weighted"
+  ],
+  "architecture": "existing Current-only 4000-256-4 GELU/dropout0.3; fresh identical initialization within each seed/fold",
+  "epochs": 30,
+  "batch_size": 256,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "folds": 5,
+  "fold_seed": 20261112,
+  "boundary_radius_s": 1.0,
+  "boundary_weight": 3.0,
+  "normalization": "fold training recordings only; all training windows",
+  "data": "frozen100: train84 grouped OOF; dev8 exposed final comparison; historical test8 excluded",
+  "future": "original frozen B0 h1.5 probabilities unchanged",
+  "decision": "original seven-position Current0.8/K2; no threshold changes",
+  "selection": "none; fixed last epoch, all methods reported; no dev hyperparameter search",
+  "default_changed": false,
+  "memory_enabled": false,
+  "encoder_calls": 0,
+  "scope": "single-factor boundary emphasis, NOT temporal smoothing or a replication of full RoboMonitor"
+}

@@ -1,0 +1,31 @@
+{
+  "source_ids": [
+    "0e2221c7c284497098d5f1e509d36171",
+    "b0e4b49bfa1641beb783ec4a2e4e66ee",
+    "5d8ad555472e4581a1768e9c27eb03e2",
+    "0c4d5c84112d4f1f993877f6b854eaa0",
+    "3c153e6888614010895ac4158fb3733e",
+    "d7c0fe71a6ce4330a65beaf26c41c820",
+    "db91f18699b244b2a14687f538c00340",
+    "34a4b430af2c4fd6a1912ff03628ef3f",
+    "100189b6fc7541afbe8ed11a0c62fa22",
+    "40a09925ecca4a80a20d75b6d954401e",
+    "9d82f039d8504a8aa888aff08074a5b4",
+    "414680f4bdbb42afb8976f8163a45eb8"
+  ],
+  "episode_ids": [
+    "00c45ede978c60868ef794d5",
+    "9c9c0e8ab7577ddfda0e3b7c",
+    "c88604cfdfe181263bb04bd9",
+    "d1bea10cbee2dcf0a031297f",
+    "c2ab0294242e464ac8d8b6c5",
+    "dbe7c3fd1f63c53dd300df07",
+    "b2eca7ff88a204b94a54f9ad",
+    "15820aaaae4a64d0e4580be9",
+    "d11360e8662efcc1e2972811",
+    "6d19dc89e407f785df4ee2c6",
+    "f5f45674ba11f7f1c266776b",
+    "603c11bbee3eec719e38973e"
+  ],
+  "scope": "training only, fixed before extracting pixels"
+}

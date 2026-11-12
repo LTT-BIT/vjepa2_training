@@ -1,0 +1,89 @@
+{
+  "version": "tomato-memory-readiness-complete100-v1",
+  "dataset_manifest": "/home/user/vjepa2_training/runs/tomato/complete100_20261111/dataset_manifest.json",
+  "dataset_manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "split_counts": {
+    "train": 84,
+    "development": 8,
+    "historical_test": 8
+  },
+  "base_model_bindings": {
+    "42": {
+      "path": "/home/user/vjepa2_training/runs/tomato/optimization_20261108/bundles/independent_h15_s42.pt",
+      "sha256": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+      "model_version": "b0-independent-h15-s42-7b9275832dc5",
+      "normalization_sha256": "445d07dab40f742da22ed673860456aa8210f0b10b2247b2711a8773e3c7196c",
+      "original_training_split_sha256": "00783ed7fbcc45ba8d160049f5a6764e8cec832977055b72ba4d4f8a01d3e0e0"
+    },
+    "43": {
+      "path": "/home/user/vjepa2_training/runs/tomato/optimization_20261108/bundles/independent_h15_s43.pt",
+      "sha256": "794a42e17dad0b4e6f028c39497b029f56f6aa3f410ed40eb72accec89a2bea6",
+      "model_version": "b0-independent-h15-s43-794a42e17dad",
+      "normalization_sha256": "445d07dab40f742da22ed673860456aa8210f0b10b2247b2711a8773e3c7196c",
+      "original_training_split_sha256": "00783ed7fbcc45ba8d160049f5a6764e8cec832977055b72ba4d4f8a01d3e0e0"
+    },
+    "44": {
+      "path": "/home/user/vjepa2_training/runs/tomato/optimization_20261108/bundles/independent_h15_s44.pt",
+      "sha256": "b5989cddcad1ee1c391723660a547060cbb97efc8cdb44553ee8894194014362",
+      "model_version": "b0-independent-h15-s44-b5989cddcad1",
+      "normalization_sha256": "445d07dab40f742da22ed673860456aa8210f0b10b2247b2711a8773e3c7196c",
+      "original_training_split_sha256": "00783ed7fbcc45ba8d160049f5a6764e8cec832977055b72ba4d4f8a01d3e0e0"
+    }
+  },
+  "task_memory": {
+    "implemented": true,
+    "mode": "M1_shadow",
+    "fresh_replay_already_tested": true,
+    "prompt_write": false,
+    "learned": false,
+    "short_capacity": 16,
+    "recent_event_capacity": 256,
+    "confirmed_prefix_preserved": true,
+    "physical_success": "unknown",
+    "max_observation_age_s": 1.0
+  },
+  "rgb_state_memory": {
+    "implemented": true,
+    "visual_shape": [
+      4,
+      1024
+    ],
+    "state_shape": [
+      16,
+      58
+    ],
+    "history_capacity": 16,
+    "reader_implemented": true,
+    "reader_trained": false,
+    "full100_agent_four_view_cache_ready": false,
+    "connected_to_current_agent": false
+  },
+  "operation_memory": {
+    "implemented": true,
+    "supervised_outcome_verifier_trained": false,
+    "extra_annotation_workflow": "paused; not required to use stage-history shadow"
+  },
+  "external_roi": {
+    "repository": "/home/user/tomato-openpi",
+    "branch": "tomato-subtask-policy",
+    "sha": "6baa8e6c8b88c2fb1cece6b54d298187a90a1f77",
+    "causal_roi_candidate_code_present": true,
+    "agent_memory_adapter_validated": false,
+    "openpi_modified": false
+  },
+  "gaps": [
+    "Historical bridge2s vs TaskMemory1s admission mismatch requires explicit policy",
+    "Crash/restart restoration not validated",
+    "Refresh historical9-recording protocol bindings when running new8, use frozen100 lock",
+    "Reconcile ROI/data/model identities, pixel256 vs OpenPI preprocessing, frame availability and named116-to58 state alignment",
+    "Train/evaluate visual history reader against no-memory control before enabling learned memory"
+  ],
+  "sources": {
+    "tools/tomato_task_memory.py": "d693a394b278868f0ed103fb19b54fccc996016bda3f254f436ea0362b0f9114",
+    "tools/tomato_operation_memory.py": "7b6b17358291475fd7309a71aaab96902f81f3a2bf3da5c4e43746e7f9ecf1a5",
+    "tools/tomato_rgb_memory.py": "9dc61a97c5d4af002360a8263432651a08acaed2d724eae732ad87947dae22b1",
+    "tools/tomato_rgb_memory_model.py": "2513378762baad1f3cb987acd7fb9213e73f00cdfb4f5df516e4eef9190850dc"
+  },
+  "default_memory_participates_in_decision": false,
+  "new_memory_training_started": false
+}

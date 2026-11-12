@@ -1,0 +1,15 @@
+{
+  "wall_s": 56.98877564998111,
+  "model_fits": 18,
+  "source_sha256": {
+    "tools/probe_tomato_spatial_readout.py": "d8538e16df5578669ae2854d62a775b539c3cdfa89b4a0254110a23f0c756942",
+    "tools/tomato_spatial_readout.py": "0650212d56e3fcdcd28f1b827f4fb62c54c96607a7a6eb02bab1cd8fe9750c03"
+  },
+  "git_sha": "f5c65c0215e8ac1d352b0170fde15110c402a93b",
+  "training_recordings": 12,
+  "development_used": false,
+  "historical_test_used": false,
+  "roi_used": false,
+  "memory_enabled": false,
+  "default_changed": false
+}
