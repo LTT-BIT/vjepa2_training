@@ -1,0 +1,16 @@
+{
+ "version":"causal-current-objective-v1",
+ "methods":["T0_last","T1_dense","T2_overlap"],
+ "context":4,"hidden":128,"dropout":0.3,
+ "epochs":30,"batch_size":256,"learning_rate":0.0003,"weight_decay":0.01,
+ "seeds":[42,43,44],"folds":5,"fold_seed":20261112,
+ "earlier_readout_weight":0.25,"overlap_kl_weight":0.1,
+ "sampling_hz":2,"gap_reset_s":0.6,
+ "normalization":"training fold only, all individual observations",
+ "selection":"fixed final epoch; all results reported; no development threshold search",
+ "future":"frozen original B0 1.5s; unchanged",
+ "decision":"unchanged B0 Current0.8/K2, seven ordered positions",
+ "data":"frozen100; grouped OOF84 and exposed dev8; historical test excluded",
+ "oracle_inputs":false,"memory_enabled":false,"default_changed":false,
+ "scope":"matched causal GRU Current-only objectives; no adjacent-time smoothing; not full RoboMonitor replication"
+}

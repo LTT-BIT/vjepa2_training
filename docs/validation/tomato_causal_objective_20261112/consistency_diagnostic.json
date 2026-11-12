@@ -1,0 +1,431 @@
+{
+  "42": {
+    "T0_last": {
+      "same_timestamp_kl_mean": 0.003798142250446073,
+      "same_timestamp_argmax_disagreement": 0.0029590176061547566,
+      "pairs": 6759,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "same_timestamp_kl_mean": 0.0027271322295225548,
+          "same_timestamp_argmax_disagreement": 0.0012531328320802004,
+          "pairs": 798
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "same_timestamp_kl_mean": 0.003472335105773799,
+          "same_timestamp_argmax_disagreement": 0.0019157088122605363,
+          "pairs": 1044
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "same_timestamp_kl_mean": 0.002400645460529161,
+          "same_timestamp_argmax_disagreement": 0.0009285051067780873,
+          "pairs": 1077
+        },
+        "61c420843f11ca54bfe804ee": {
+          "same_timestamp_kl_mean": 0.008678612787916122,
+          "same_timestamp_argmax_disagreement": 0.008215962441314555,
+          "pairs": 852
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "same_timestamp_kl_mean": 0.00444873458802483,
+          "same_timestamp_argmax_disagreement": 0.005973715651135006,
+          "pairs": 837
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "same_timestamp_kl_mean": 0.0035524251365485525,
+          "same_timestamp_argmax_disagreement": 0.0009337068160597573,
+          "pairs": 1071
+        },
+        "a8b23394b642f0bb769a0391": {
+          "same_timestamp_kl_mean": 0.0015214248069656626,
+          "same_timestamp_argmax_disagreement": 0.003766478342749529,
+          "pairs": 531
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "same_timestamp_kl_mean": 0.0028314865227043236,
+          "same_timestamp_argmax_disagreement": 0.0018214936247723133,
+          "pairs": 549
+        }
+      }
+    },
+    "T1_dense": {
+      "same_timestamp_kl_mean": 0.0007181253168010919,
+      "same_timestamp_argmax_disagreement": 0.0007397544015386891,
+      "pairs": 6759,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "same_timestamp_kl_mean": 0.0005658318470731507,
+          "same_timestamp_argmax_disagreement": 0.002506265664160401,
+          "pairs": 798
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "same_timestamp_kl_mean": 0.0009794850190921246,
+          "same_timestamp_argmax_disagreement": 0.0009578544061302681,
+          "pairs": 1044
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "same_timestamp_kl_mean": 0.0008161736934833487,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 1077
+        },
+        "61c420843f11ca54bfe804ee": {
+          "same_timestamp_kl_mean": 0.0010547015341828981,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 852
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "same_timestamp_kl_mean": 0.0005060917535859013,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 837
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "same_timestamp_kl_mean": 0.0006854306752363274,
+          "same_timestamp_argmax_disagreement": 0.0009337068160597573,
+          "pairs": 1071
+        },
+        "a8b23394b642f0bb769a0391": {
+          "same_timestamp_kl_mean": 0.00027054475927986484,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 531
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "same_timestamp_kl_mean": 0.0005477481771393777,
+          "same_timestamp_argmax_disagreement": 0.0018214936247723133,
+          "pairs": 549
+        }
+      }
+    },
+    "T2_overlap": {
+      "same_timestamp_kl_mean": 0.0008819300392041026,
+      "same_timestamp_argmax_disagreement": 0.0005918035212309513,
+      "pairs": 6759,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "same_timestamp_kl_mean": 0.000294531360973942,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 798
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "same_timestamp_kl_mean": 0.0005506316448915304,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 1044
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "same_timestamp_kl_mean": 0.000949073976949474,
+          "same_timestamp_argmax_disagreement": 0.0009285051067780873,
+          "pairs": 1077
+        },
+        "61c420843f11ca54bfe804ee": {
+          "same_timestamp_kl_mean": 0.0038094845331246158,
+          "same_timestamp_argmax_disagreement": 0.0035211267605633804,
+          "pairs": 852
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "same_timestamp_kl_mean": 0.0002237939989956917,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 837
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "same_timestamp_kl_mean": 0.0005006622160818442,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 1071
+        },
+        "a8b23394b642f0bb769a0391": {
+          "same_timestamp_kl_mean": 9.904419680671645e-05,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 531
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "same_timestamp_kl_mean": 0.0001951163882921567,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 549
+        }
+      }
+    }
+  },
+  "43": {
+    "T0_last": {
+      "same_timestamp_kl_mean": 0.0031549198559665727,
+      "same_timestamp_argmax_disagreement": 0.0019233614440005919,
+      "pairs": 6759,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "same_timestamp_kl_mean": 0.0031949361596711715,
+          "same_timestamp_argmax_disagreement": 0.002506265664160401,
+          "pairs": 798
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "same_timestamp_kl_mean": 0.002710095003280758,
+          "same_timestamp_argmax_disagreement": 0.0009578544061302681,
+          "pairs": 1044
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "same_timestamp_kl_mean": 0.005100090184101284,
+          "same_timestamp_argmax_disagreement": 0.005571030640668524,
+          "pairs": 1077
+        },
+        "61c420843f11ca54bfe804ee": {
+          "same_timestamp_kl_mean": 0.0036063005433895016,
+          "same_timestamp_argmax_disagreement": 0.0011737089201877935,
+          "pairs": 852
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "same_timestamp_kl_mean": 0.003369817233024346,
+          "same_timestamp_argmax_disagreement": 0.0011947431302270011,
+          "pairs": 837
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "same_timestamp_kl_mean": 0.0022835663866394734,
+          "same_timestamp_argmax_disagreement": 0.0018674136321195146,
+          "pairs": 1071
+        },
+        "a8b23394b642f0bb769a0391": {
+          "same_timestamp_kl_mean": 0.0008191381827025504,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 531
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "same_timestamp_kl_mean": 0.003057633656180534,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 549
+        }
+      }
+    },
+    "T1_dense": {
+      "same_timestamp_kl_mean": 0.00116475159104086,
+      "same_timestamp_argmax_disagreement": 0.001035656162154165,
+      "pairs": 6759,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "same_timestamp_kl_mean": 0.000531777756861111,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 798
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "same_timestamp_kl_mean": 0.001743929028448943,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 1044
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "same_timestamp_kl_mean": 0.001869134868841625,
+          "same_timestamp_argmax_disagreement": 0.002785515320334262,
+          "pairs": 1077
+        },
+        "61c420843f11ca54bfe804ee": {
+          "same_timestamp_kl_mean": 0.0018440149101575107,
+          "same_timestamp_argmax_disagreement": 0.002347417840375587,
+          "pairs": 852
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "same_timestamp_kl_mean": 0.0004012615855885403,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 837
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "same_timestamp_kl_mean": 0.001236111812495398,
+          "same_timestamp_argmax_disagreement": 0.0018674136321195146,
+          "pairs": 1071
+        },
+        "a8b23394b642f0bb769a0391": {
+          "same_timestamp_kl_mean": 1.132878363579102e-05,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 531
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "same_timestamp_kl_mean": 0.0006878491958868778,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 549
+        }
+      }
+    },
+    "T2_overlap": {
+      "same_timestamp_kl_mean": 0.0011096345530023659,
+      "same_timestamp_argmax_disagreement": 0.0011836070424619026,
+      "pairs": 6759,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "same_timestamp_kl_mean": 0.0008825463422812914,
+          "same_timestamp_argmax_disagreement": 0.0012531328320802004,
+          "pairs": 798
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "same_timestamp_kl_mean": 0.0006296530657195503,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 1044
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "same_timestamp_kl_mean": 0.0020253232162200712,
+          "same_timestamp_argmax_disagreement": 0.0018570102135561746,
+          "pairs": 1077
+        },
+        "61c420843f11ca54bfe804ee": {
+          "same_timestamp_kl_mean": 0.0012485796787987157,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 852
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "same_timestamp_kl_mean": 0.0010998360986746044,
+          "same_timestamp_argmax_disagreement": 0.0011947431302270011,
+          "pairs": 837
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "same_timestamp_kl_mean": 0.0006604068207327455,
+          "same_timestamp_argmax_disagreement": 0.0009337068160597573,
+          "pairs": 1071
+        },
+        "a8b23394b642f0bb769a0391": {
+          "same_timestamp_kl_mean": 2.36319054331352e-05,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 531
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "same_timestamp_kl_mean": 0.002282185993452421,
+          "same_timestamp_argmax_disagreement": 0.00546448087431694,
+          "pairs": 549
+        }
+      }
+    }
+  },
+  "44": {
+    "T0_last": {
+      "same_timestamp_kl_mean": 0.0037394521340239945,
+      "same_timestamp_argmax_disagreement": 0.0038467228880011838,
+      "pairs": 6759,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "same_timestamp_kl_mean": 0.002345629616901565,
+          "same_timestamp_argmax_disagreement": 0.002506265664160401,
+          "pairs": 798
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "same_timestamp_kl_mean": 0.0034441322783334075,
+          "same_timestamp_argmax_disagreement": 0.0009578544061302681,
+          "pairs": 1044
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "same_timestamp_kl_mean": 0.0034267992025656595,
+          "same_timestamp_argmax_disagreement": 0.004642525533890436,
+          "pairs": 1077
+        },
+        "61c420843f11ca54bfe804ee": {
+          "same_timestamp_kl_mean": 0.0025026853934732264,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 852
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "same_timestamp_kl_mean": 0.007999098335427595,
+          "same_timestamp_argmax_disagreement": 0.013142174432497013,
+          "pairs": 837
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "same_timestamp_kl_mean": 0.003253411866570633,
+          "same_timestamp_argmax_disagreement": 0.0028011204481792717,
+          "pairs": 1071
+        },
+        "a8b23394b642f0bb769a0391": {
+          "same_timestamp_kl_mean": 0.0011491349469799623,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 531
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "same_timestamp_kl_mean": 0.005819088655558914,
+          "same_timestamp_argmax_disagreement": 0.007285974499089253,
+          "pairs": 549
+        }
+      }
+    },
+    "T1_dense": {
+      "same_timestamp_kl_mean": 0.0009270600804583016,
+      "same_timestamp_argmax_disagreement": 0.000887705281846427,
+      "pairs": 6759,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "same_timestamp_kl_mean": 0.0005292212201513583,
+          "same_timestamp_argmax_disagreement": 0.0012531328320802004,
+          "pairs": 798
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "same_timestamp_kl_mean": 0.0012804890638707374,
+          "same_timestamp_argmax_disagreement": 0.0009578544061302681,
+          "pairs": 1044
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "same_timestamp_kl_mean": 0.00204059679888965,
+          "same_timestamp_argmax_disagreement": 0.0018570102135561746,
+          "pairs": 1077
+        },
+        "61c420843f11ca54bfe804ee": {
+          "same_timestamp_kl_mean": 0.0011602366279619312,
+          "same_timestamp_argmax_disagreement": 0.002347417840375587,
+          "pairs": 852
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "same_timestamp_kl_mean": 0.0005227668394400657,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 837
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "same_timestamp_kl_mean": 0.0002886822147330956,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 1071
+        },
+        "a8b23394b642f0bb769a0391": {
+          "same_timestamp_kl_mean": 6.619838463480924e-05,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 531
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "same_timestamp_kl_mean": 0.000981274625130318,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 549
+        }
+      }
+    },
+    "T2_overlap": {
+      "same_timestamp_kl_mean": 0.0007423853910022423,
+      "same_timestamp_argmax_disagreement": 0.0007397544015386891,
+      "pairs": 6759,
+      "per_episode": {
+        "3e645bf4e137d0f836c9d7ff": {
+          "same_timestamp_kl_mean": 0.0004658971697953644,
+          "same_timestamp_argmax_disagreement": 0.0012531328320802004,
+          "pairs": 798
+        },
+        "27d8bc0413a42341c7e8c3e5": {
+          "same_timestamp_kl_mean": 0.0002341493126457329,
+          "same_timestamp_argmax_disagreement": 0.0009578544061302681,
+          "pairs": 1044
+        },
+        "0b12ac0fda9d7cd77dee6e60": {
+          "same_timestamp_kl_mean": 0.0012817067036896125,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 1077
+        },
+        "61c420843f11ca54bfe804ee": {
+          "same_timestamp_kl_mean": 0.001982970496971288,
+          "same_timestamp_argmax_disagreement": 0.002347417840375587,
+          "pairs": 852
+        },
+        "5b82f4bb76e70d8bf12c0798": {
+          "same_timestamp_kl_mean": 0.0006471672890595443,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 837
+        },
+        "f53f0b6fb7f3888f87a0f8ff": {
+          "same_timestamp_kl_mean": 0.0002101667742257086,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 1071
+        },
+        "a8b23394b642f0bb769a0391": {
+          "same_timestamp_kl_mean": 1.7276187594034198e-05,
+          "same_timestamp_argmax_disagreement": 0.0,
+          "pairs": 531
+        },
+        "d0f8727d35eced697dcf79fe": {
+          "same_timestamp_kl_mean": 0.001012230890420866,
+          "same_timestamp_argmax_disagreement": 0.0018214936247723133,
+          "pairs": 549
+        }
+      }
+    }
+  }
+}
