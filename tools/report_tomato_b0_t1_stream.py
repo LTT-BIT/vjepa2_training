@@ -1,0 +1,37 @@
+"""Summarize the paired streaming test and preserve every changed event."""
+import argparse
+from pathlib import Path
+from . import tomato_dataset as ds
+
+
+def run(root):
+    data=ds.read_json(root/'results.json');receipt=ds.read_json(root/'receipt.json');manifest=ds.read_json('runs/tomato/complete100_20261111/dataset_manifest.json');by={e['episode_id']:e for e in manifest['episodes']};summary={};events=[];decision=[]
+    for co in ['development8_exposed','oof10_base_unseen_exposed']:
+        summary[co]={}
+        for method in ['B0','T1']:
+            ss=[data[str(seed)]['summary'][co][method] for seed in [42,43,44]]
+            summary[co][method]=dict(prompt={k:sum(x['prompt_counts'].get(k,0) for x in ss) for k in ['on_time','early','late','missing']},within_delay={str(t):sum(x['within_delay'][str(t)] for x in ss) for t in [1.,1.5,2.]},current_f1_mean=sum(x['current']['macro_f1'] for x in ss)/3,mismatch_s=sum(x['mismatch_s'] for x in ss),severe_early=sum(len(x['severe_early_events']) for x in ss),adjust_pickup={k:sum(x['prompt_by_transition'].get('adjust->pickup',{}).get(k,0) for x in ss) for k in ['on_time','early','late']})
+        for seed in [42,43,44]:
+            per=data[str(seed)]['per_episode']
+            for eid,x in per['B0'].items():
+                if x['cohort']!=co:continue
+                for a,b in zip(x['prompt']['events'],per['T1'][eid]['prompt']['events']):events.append(dict(seed=seed,cohort=co,episode_id=eid,source_recording_id=by[eid]['source_recording_id'],ordinal=a['ordinal'],transition=a['transition'],boundary_s=a['boundary_s'],B0=a,T1=b,changed_time=a['arrival_s']!=b['arrival_s']))
+    import json
+    eid='3e645bf4e137d0f836c9d7ff';boundary=by[eid]['annotation']['segments'][4]['start_frame']/by[eid]['fps']
+    for seed in [42,43,44]:
+        for method in ['B0','T1']:
+            rows=[json.loads(line) for line in (root/f'seed{seed}'/f'{eid}_{method}.jsonl').read_text().splitlines()];i=next(i for i,x in enumerate(rows) if x['changed'] and x['phase']==4)
+            decision.append(dict(seed=seed,method=method,commit_time=rows[i]['time'],offset_s=rows[i]['time']-boundary,evidence=rows[max(0,i-2):i+1]))
+    ds.write_json(root/'summary.json',summary);ds.write_json(root/'event_comparison.json',events);ds.write_json(root/'persistent_adjust_pickup/decision_evidence.json',decision)
+    lines=['# B0与T1逐观测重新推理测试','', '2026-11-12；起点4d196e7；离线研究，未修改默认配置。','', '## 范围与实际执行','', '- 重新加载三个种子的原B0和T1 checkpoint，每条录制从空历史开始逐观测推理；不是直接复制上轮分数。', '- 8条开发录制使用T1 final84；另10条B0未见训练来源使用各自整录制留出折的T1，确认该折训练身份不含本条录制。共18条×3种子、13830个真实缓存锚点。', '- 复用严格因果的冻结视觉/58D状态特征；逐步重新运行分类头，不重复视频编码。Future由原B0现场推理，T1只替换研究回放中的Current。原Current0.8/K2、七阶段序列及事件评价均不改。', '- 逐时刻概率、观测时间、候选确认次数、已确认阶段、Prompt版本保存在每条录制jsonl；没有动作执行或机器人连接。', '- 本地/home/user/datasets扫描仅发现已有原始目录、已用于训练的旧10条、已剔除失败包和100条派生数据。未发现可直接作为新盲测的合格新录制；没有核查远端服务器。此测试不能成为独立泛化证明。', '- 不读取历史测试8条评分，不训练、不搜索阈值、不修改人工边界；8770补标继续暂停。', '', '## 结果（三种子累计；同一边界重复，不是独立样本）', '', '|集合/方法|Current F1均值|按时|提前|滞后|不提前且≤1.5s|状态不一致s|', '|---|---:|---:|---:|---:|---:|---:|']
+    for co,name in [('development8_exposed','开发8条/144边界'),('oof10_base_unseen_exposed','已暴露旧10条/180边界')]:
+        for method,v in summary[co].items():p=v['prompt'];lines.append(f"|{name} {method}|{v['current_f1_mean']:.5f}|{p['on_time']}|{p['early']}|{p['late']}|{v['within_delay']['1.5']}|{v['mismatch_s']:.1f}|")
+    lines += ['', '- 开发按时切换91.0%→93.1%，不提前且≤1.5s为87.5%→92.4%；均与上轮评估一致。Current F1略低，不能只报时机收益。', '- 旧10条按时159→161，但提前6→7。开发收益未在所有种子与录制稳定出现，不替换B0。', '- 开发adjust→pickup按时14/24→15/24；旧10条14/30→18/30。均为三个种子重复统计；不能据此宣称解决困难转换。', '- Future严格预警不变：开发seed42/43/44为37/48、34/48、35/48，误报13/18/15；每分钟0.695/0.962/0.802。Future失败和Prompt失败单独记录。', '', '## 严重提前案例的直接证据', '', '`A/1103_620_642_normal_lerobot/episode_000000`，人工adjust→pickup边界74.233s：', '', '|种子|B0确认s/提前s|T1确认s/提前s|','|---|---:|---:|']
+    for seed in [42,43,44]:
+        a=next(x for x in decision if x['seed']==seed and x['method']=='B0');b=next(x for x in decision if x['seed']==seed and x['method']=='T1');lines.append(f"|{seed}|{a['commit_time']:.3f}/{-a['offset_s']:.3f}|{b['commit_time']:.3f}/{-b['offset_s']:.3f}|")
+    lines += ['', '- 首次错误前，维护状态仍正确为第4位置adjust（零基phase3），不存在先前状态偏移。seed42在71.5s首次满足Current pickup≥0.8，72.0s第二次满足并切phase4；B0概率0.992/0.989，T1为0.997/1.000。', '- K2按既定规则运行，Future没有直接授权Prompt。观测与缓存时间逐项一致，排除了本次回放的时钟错位及批处理/流式差异。持续的错误Current证据足以造成这次提前；继续增加少量确认次数不能保证区分准备动作和真实转换。', '- 实际三视图关键帧中，边界前手与物体仍集中在盘边，后续手指姿态变化明显；仅凭这些抽帧不能确定物体脱离盘子的准确时刻。右手22D关节在边界后0–2s变化更强。手部平均速度范数：前2s约0.340 rad/s，后2s约1.142 rad/s。此为描述性证据，不是成功标签或可直接部署的速度阈值。', '- 证据支持“盘边调整/夹持准备与进入pickup混淆”，但没有证明均值池化就是唯一原因，不能据此自动修订边界或写该Episode专用规则。', '', '## 一致性、耗时与测试', '', f"- 主测试运行{receipt['wall_s']:.2f}s，编码器调用0次。与原保存概率最大绝对差：{receipt['probability_max_absolute_error']}。真实顺序流式输出和批量评估概率在3e-6容差内一致，阶段确认时间与旧评估一致。", '- 三种子B0双头P50约0.282ms、P95约0.46–0.48ms；T1 Current流式P50约0.724–0.726ms、P95约0.91–0.95ms。保留首调用峰值：B0最大75.63ms、T1最大50.88ms，未剔除冷启动。T1的Future还需要原B0 Future头，此处没有把单Current耗时当作整个Agent耗时。', '- 测量范围是主机缓存特征到分类概率，包含小张量传输与同步，不含原视频编码、网络、消息排队、动作执行。事件回放仍使用原观测时间轴，未将这些小耗时当作真实部署延迟注入。', '- 新增3项流式/批量等价、断帧重置、非法/乱序输入测试通过；番茄专项324 passed/1 skipped。没有重复运行已知缺模块的旧柠檬全仓库收集。', '', '## 决策', '', '**T1保持研究候选，B0继续默认。** 直接复测证实小幅时机收益真实存在于现有回放，但没有独立新数据、严重提前仍在，也存在Current分类退化与部分新提前。保留“严重提前优先、兼顾漏切和短延迟”的评价原则，不宣布候选晋级。', '', '下一项应验证的是通用、可观测的“盘边准备”和“进入pickup”证据，而不是调这一个案例的时间阈值。需要用训练来源的同类正负片段进行整录制留出对照，不能从此开发事件直接拟合规则。新独立录制到位后只执行已锁定评价，不再用其调参。Memory仍只做Shadow。', '', '## 可复现与本地产物', '', '```bash', '.venv-tomato/bin/python -m tools.test_tomato_b0_t1_stream --out runs/tomato/b0_t1_stream_NEW', 'PYTHONPATH=/tmp/tomato-transition-plotdeps .venv-tomato/bin/python -m tools.inspect_tomato_b0_t1_case --run runs/tomato/b0_t1_stream_NEW', '.venv-tomato/bin/python -m tools.report_tomato_b0_t1_stream --run runs/tomato/b0_t1_stream_NEW', '```', '', '完整结果：`runs/tomato/b0_t1_stream_20261112_v1/`。困难案例在其`persistent_adjust_pickup/`下，含12秒三视图视频、7个时刻×3相机关键帧、按关节名称提取的58D实测状态、单向差分速度、概率曲线、确认计数和原标注身份。视频从原录制68.233s开始，片中第6秒对应人工边界。原始画面与完整数据不纳入Git，仅保存在本地。', '']
+    (root/'REPORT.md').write_text('\n'.join(lines));print('REPORT',root/'REPORT.md')
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--run',required=True,type=Path);run(p.parse_args().run)

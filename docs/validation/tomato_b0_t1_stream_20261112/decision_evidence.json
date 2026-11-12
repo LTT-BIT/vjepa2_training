@@ -1,0 +1,612 @@
+[
+  {
+    "seed": 42,
+    "method": "B0",
+    "commit_time": 72.0,
+    "offset_s": -2.2333333333333343,
+    "evidence": [
+      {
+        "valid": true,
+        "time": 71.0,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 3,
+        "current_confirmations": 0,
+        "future_confirmations": 1,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.45941194891929626,
+          2.0112833226448856e-05,
+          0.000270628253929317,
+          0.5402973294258118
+        ],
+        "future_probabilities": [
+          0.992651641368866,
+          1.8034425863788783e-07,
+          8.30986234684472e-12,
+          0.0073481653816998005
+        ],
+        "observation_timestamp": 71.0
+      },
+      {
+        "valid": true,
+        "time": 71.5,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 1,
+        "future_confirmations": 2,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.9922726154327393,
+          1.3467140888678841e-05,
+          1.607305239303969e-05,
+          0.007697866763919592
+        ],
+        "future_probabilities": [
+          0.9999910593032837,
+          1.57105635167909e-08,
+          4.875552137581854e-14,
+          8.894015081750695e-06
+        ],
+        "observation_timestamp": 71.5
+      },
+      {
+        "valid": true,
+        "time": 72.0,
+        "phase": 4,
+        "previous_phase": 3,
+        "changed": true,
+        "prompt_version": 4,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_confirmed",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 0,
+        "future_confirmations": 3,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.9889040589332581,
+          2.4376533929171273e-06,
+          6.431076599255903e-06,
+          0.011087052524089813
+        ],
+        "future_probabilities": [
+          0.9999115467071533,
+          1.0518421049710014e-06,
+          8.689798555207295e-13,
+          8.733792492421344e-05
+        ],
+        "observation_timestamp": 72.0
+      }
+    ]
+  },
+  {
+    "seed": 42,
+    "method": "T1",
+    "commit_time": 72.0,
+    "offset_s": -2.2333333333333343,
+    "evidence": [
+      {
+        "valid": true,
+        "time": 71.0,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 0,
+        "future_confirmations": 1,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.5908019542694092,
+          0.00018831845954991877,
+          7.855703734094277e-05,
+          0.4089311957359314
+        ],
+        "future_probabilities": [
+          0.992651641368866,
+          1.8034425863788783e-07,
+          8.30986234684472e-12,
+          0.0073481653816998005
+        ],
+        "observation_timestamp": 71.0
+      },
+      {
+        "valid": true,
+        "time": 71.5,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 1,
+        "future_confirmations": 2,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.9966323971748352,
+          2.458763265167363e-05,
+          7.891994755482301e-06,
+          0.003335237270221114
+        ],
+        "future_probabilities": [
+          0.9999910593032837,
+          1.57105635167909e-08,
+          4.875552137581854e-14,
+          8.894015081750695e-06
+        ],
+        "observation_timestamp": 71.5
+      },
+      {
+        "valid": true,
+        "time": 72.0,
+        "phase": 4,
+        "previous_phase": 3,
+        "changed": true,
+        "prompt_version": 4,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_confirmed",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 0,
+        "future_confirmations": 3,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.9999011754989624,
+          1.4928584278095514e-05,
+          7.815560820745304e-07,
+          8.307943062391132e-05
+        ],
+        "future_probabilities": [
+          0.9999115467071533,
+          1.0518421049710014e-06,
+          8.689798555207295e-13,
+          8.733792492421344e-05
+        ],
+        "observation_timestamp": 72.0
+      }
+    ]
+  },
+  {
+    "seed": 43,
+    "method": "B0",
+    "commit_time": 71.5,
+    "offset_s": -2.7333333333333343,
+    "evidence": [
+      {
+        "valid": true,
+        "time": 70.5,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 3,
+        "current_argmax": 0,
+        "current_confirmations": 0,
+        "future_confirmations": 1,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.5555126070976257,
+          6.64508988847956e-05,
+          0.0019498520996421576,
+          0.44247108697891235
+        ],
+        "future_probabilities": [
+          0.1719057261943817,
+          4.6807239414192736e-05,
+          1.6159434380824678e-05,
+          0.8280313014984131
+        ],
+        "observation_timestamp": 70.5
+      },
+      {
+        "valid": true,
+        "time": 71.0,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 1,
+        "future_confirmations": 1,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.9358920454978943,
+          6.356843368848786e-05,
+          0.0004467565449886024,
+          0.06359770894050598
+        ],
+        "future_probabilities": [
+          0.8837106823921204,
+          1.6741620129323564e-05,
+          1.1021317050108337e-06,
+          0.11627152562141418
+        ],
+        "observation_timestamp": 71.0
+      },
+      {
+        "valid": true,
+        "time": 71.5,
+        "phase": 4,
+        "previous_phase": 3,
+        "changed": true,
+        "prompt_version": 4,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_confirmed",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 0,
+        "future_confirmations": 2,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.9948465824127197,
+          1.1449132216512226e-05,
+          3.9463375287596136e-05,
+          0.005102477036416531
+        ],
+        "future_probabilities": [
+          0.9927387833595276,
+          6.552706054208102e-06,
+          1.6562393057029112e-07,
+          0.007254492957144976
+        ],
+        "observation_timestamp": 71.5
+      }
+    ]
+  },
+  {
+    "seed": 43,
+    "method": "T1",
+    "commit_time": 71.5,
+    "offset_s": -2.7333333333333343,
+    "evidence": [
+      {
+        "valid": true,
+        "time": 70.5,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 3,
+        "current_argmax": 3,
+        "current_confirmations": 0,
+        "future_confirmations": 1,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.008274829015135765,
+          6.066312198527157e-05,
+          2.0779320038855076e-05,
+          0.9916437268257141
+        ],
+        "future_probabilities": [
+          0.1719057261943817,
+          4.6807239414192736e-05,
+          1.6159434380824678e-05,
+          0.8280313014984131
+        ],
+        "observation_timestamp": 70.5
+      },
+      {
+        "valid": true,
+        "time": 71.0,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 1,
+        "future_confirmations": 1,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.8907873034477234,
+          0.0002823940012603998,
+          3.4193682949990034e-05,
+          0.1088961735367775
+        ],
+        "future_probabilities": [
+          0.8837106823921204,
+          1.6741620129323564e-05,
+          1.1021317050108337e-06,
+          0.11627152562141418
+        ],
+        "observation_timestamp": 71.0
+      },
+      {
+        "valid": true,
+        "time": 71.5,
+        "phase": 4,
+        "previous_phase": 3,
+        "changed": true,
+        "prompt_version": 4,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_confirmed",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 0,
+        "future_confirmations": 2,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.9997286200523376,
+          1.056544715538621e-05,
+          1.0282054745403002e-06,
+          0.0002597625716589391
+        ],
+        "future_probabilities": [
+          0.9927387833595276,
+          6.552706054208102e-06,
+          1.6562393057029112e-07,
+          0.007254492957144976
+        ],
+        "observation_timestamp": 71.5
+      }
+    ]
+  },
+  {
+    "seed": 44,
+    "method": "B0",
+    "commit_time": 71.0,
+    "offset_s": -3.2333333333333343,
+    "evidence": [
+      {
+        "valid": true,
+        "time": 70.0,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 3,
+        "current_argmax": 0,
+        "current_confirmations": 0,
+        "future_confirmations": 0,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.6767364144325256,
+          1.0542559039095067e-06,
+          6.785356987393243e-08,
+          0.32326242327690125
+        ],
+        "future_probabilities": [
+          0.2406858503818512,
+          1.9004277419298887e-05,
+          4.5976511486856e-09,
+          0.7592951655387878
+        ],
+        "observation_timestamp": 70.0
+      },
+      {
+        "valid": true,
+        "time": 70.5,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 3,
+        "current_argmax": 0,
+        "current_confirmations": 1,
+        "future_confirmations": 1,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.940497100353241,
+          1.414757775819453e-06,
+          4.6416505483648507e-07,
+          0.0595010370016098
+        ],
+        "future_probabilities": [
+          0.021883390843868256,
+          5.220287675911095e-06,
+          8.970333453817148e-08,
+          0.9781112670898438
+        ],
+        "observation_timestamp": 70.5
+      },
+      {
+        "valid": true,
+        "time": 71.0,
+        "phase": 4,
+        "previous_phase": 3,
+        "changed": true,
+        "prompt_version": 4,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_confirmed",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 0,
+        "future_confirmations": 1,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.9997771382331848,
+          1.6322520650646766e-06,
+          3.884382948626808e-08,
+          0.00022126174008008093
+        ],
+        "future_probabilities": [
+          0.9971020817756653,
+          1.6475694053497136e-07,
+          6.4617804163003e-11,
+          0.0028977254405617714
+        ],
+        "observation_timestamp": 71.0
+      }
+    ]
+  },
+  {
+    "seed": 44,
+    "method": "T1",
+    "commit_time": 72.0,
+    "offset_s": -2.2333333333333343,
+    "evidence": [
+      {
+        "valid": true,
+        "time": 71.0,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 3,
+        "current_confirmations": 0,
+        "future_confirmations": 1,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.3117034137248993,
+          0.0003757800441235304,
+          3.251790258218534e-05,
+          0.6878882646560669
+        ],
+        "future_probabilities": [
+          0.9971020817756653,
+          1.6475694053497136e-07,
+          6.4617804163003e-11,
+          0.0028977254405617714
+        ],
+        "observation_timestamp": 71.0
+      },
+      {
+        "valid": true,
+        "time": 71.5,
+        "phase": 3,
+        "previous_phase": 3,
+        "changed": false,
+        "prompt_version": 3,
+        "warning": {
+          "time": 71.5,
+          "previous": 3,
+          "label": 0
+        },
+        "resynchronized": false,
+        "reason": "current_evidence_incomplete",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 1,
+        "future_confirmations": 2,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.9992401599884033,
+          2.017460974457208e-05,
+          1.462217369407881e-06,
+          0.0007382926996797323
+        ],
+        "future_probabilities": [
+          0.9999953508377075,
+          1.321567411061153e-09,
+          6.410571943074594e-13,
+          4.643316970032174e-06
+        ],
+        "observation_timestamp": 71.5
+      },
+      {
+        "valid": true,
+        "time": 72.0,
+        "phase": 4,
+        "previous_phase": 3,
+        "changed": true,
+        "prompt_version": 4,
+        "warning": null,
+        "resynchronized": false,
+        "reason": "current_confirmed",
+        "prepared_phase": null,
+        "future_argmax": 0,
+        "current_argmax": 0,
+        "current_confirmations": 0,
+        "future_confirmations": 3,
+        "estimated_transition_time": null,
+        "real_latency_measured": false,
+        "current_probabilities": [
+          0.9999676942825317,
+          6.9284656092349906e-06,
+          3.569331568087364e-07,
+          2.4998380467877723e-05
+        ],
+        "future_probabilities": [
+          0.9999158382415771,
+          1.7445277080696542e-06,
+          1.013338996047608e-10,
+          8.23826267151162e-05
+        ],
+        "observation_timestamp": 72.0
+      }
+    ]
+  }
+]

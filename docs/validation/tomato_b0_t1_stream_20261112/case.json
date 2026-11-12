@@ -1,0 +1,48 @@
+{
+  "episode_id": "3e645bf4e137d0f836c9d7ff",
+  "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+  "dataset_root": "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot",
+  "episode_index": 0,
+  "human_boundary_s": 74.23333333333333,
+  "annotation_sha256": "64e2f6bfa06b99f57ba29528580b8cf6c10ffb1dc3245502f448ab9fab6da446",
+  "clip_source_start_s": 68.23333333333333,
+  "clip_boundary_offset_s": 6.0,
+  "camera_order": [
+    "observation.images.cam0",
+    "observation.images.cam1",
+    "observation.images.cam2"
+  ],
+  "source_frame_indices": [
+    2107,
+    2137,
+    2167,
+    2197,
+    2227,
+    2257,
+    2287
+  ],
+  "state_bins": {
+    "-4:-2": {
+      "right_arm_mean_speed_norm": 0.06464405357837677,
+      "right_hand_mean_speed_norm": 0.364153116941452,
+      "samples": 60
+    },
+    "-2:0": {
+      "right_arm_mean_speed_norm": 0.060977645218372345,
+      "right_hand_mean_speed_norm": 0.3401193916797638,
+      "samples": 60
+    },
+    "0:2": {
+      "right_arm_mean_speed_norm": 0.05379876866936684,
+      "right_hand_mean_speed_norm": 1.1416774988174438,
+      "samples": 60
+    }
+  },
+  "interpretation": "Motion statistics and source imagery are descriptive, not independent operation-result labels. No automatic boundary repair.",
+  "source_sha256": {
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam0/episode_000000.mp4": "0cacd52d242adc33e90e376840099f51a480a49719da2c4b8decd73cab8f2f1c",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam1/episode_000000.mp4": "bf15360b9312ffe717318e8b7db076c241a57e85ce1a806c652957f6db9b64ef",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/videos/chunk-000/observation.images.cam2/episode_000000.mp4": "6b772384b4e634967b91391a6f9afae5041c7032668a407248bca4decf7c2570",
+    "/home/user/datasets/tomato_subtasks_normal_20261107/A/1103_620_642_normal_lerobot/data/chunk-000/episode_000000.parquet": "dc91046b1caea319bbdc23f3d56c7ca557e997ff7b9cae24937d7c58aaf9de01"
+  }
+}
