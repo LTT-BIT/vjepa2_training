@@ -1,0 +1,20 @@
+{
+ "version":"same-probabilities-seven-position-policy-comparison-v1",
+ "colleague_commit":"07f93115d5427b3ebaaf1735e9bd18a1e1240aa5",
+ "input":"Frozen B0 h1.5 probabilities seeds42/43/44; same tensors for all arms",
+ "horizon_s":1.5,
+ "arms":["B0_native","B0_same_clock","H1_future_k1_no_ack","H3_future_k1_ack","H2_future_k2_no_ack","H4_future_k2_ack"],
+ "simulated_availability_delay_s":0.09,
+ "planning_period_s":0.5,
+ "planning_offset_s":0.0,
+ "colleague_defaults":{"theta_prepare":0.65,"theta_commit":0.8,"theta_ack":0.7,"ack_timeout_s":1.5,"prediction_ttl_s":0.75},
+ "ordering":"All start pickup_1; one adjacent seven-position step per commit; stop after return_stem; labels never correct online state",
+ "evaluation":"same ordinal events; early before boundary; on-time [boundary,min(boundary+2,end)); late otherwise; also inclusive delay budgets0.5/1/1.5/2s",
+ "cohorts":"train74 B0 seen descriptive, train10 B0 unseen but exposed, dev8 exposed; historical test8 excluded",
+ "clock_control":"B0_native preserves original; B0_same_clock uses same delayed messages and planning ticks as colleague",
+ "threshold_search":false,
+ "training":false,
+ "default_changed":false,
+ "robot_calls":0,
+ "interpretation":"Decision mechanism comparison, NOT colleague Joint1s model comparison; simulated clocks NOT measured deployment latency"
+}

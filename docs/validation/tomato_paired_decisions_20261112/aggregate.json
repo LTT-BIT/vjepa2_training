@@ -1,0 +1,224 @@
+{
+  "development8": {
+    "B0_native": {
+      "events": 144,
+      "prompt_counts": {
+        "on_time": 131,
+        "early": 8,
+        "late": 5,
+        "missing": 0
+      },
+      "ordered_complete": 24,
+      "timeouts": 0,
+      "mismatch_exact_s": 147.60000000000008
+    },
+    "B0_same_clock": {
+      "events": 144,
+      "prompt_counts": {
+        "on_time": 130,
+        "early": 4,
+        "late": 10,
+        "missing": 0
+      },
+      "ordered_complete": 24,
+      "timeouts": 0,
+      "mismatch_exact_s": 213.4000000000001
+    },
+    "H1_future_k1_no_ack": {
+      "events": 144,
+      "prompt_counts": {
+        "on_time": 32,
+        "early": 110,
+        "late": 2,
+        "missing": 0
+      },
+      "ordered_complete": 24,
+      "timeouts": 0,
+      "mismatch_exact_s": 131.56666666666663
+    },
+    "H3_future_k1_ack": {
+      "events": 144,
+      "prompt_counts": {
+        "on_time": 19,
+        "early": 79,
+        "late": 1,
+        "missing": 45
+      },
+      "ordered_complete": 12,
+      "timeouts": 12,
+      "mismatch_exact_s": 1012.1666666666667
+    },
+    "H2_future_k2_no_ack": {
+      "events": 144,
+      "prompt_counts": {
+        "on_time": 65,
+        "early": 76,
+        "late": 3,
+        "missing": 0
+      },
+      "ordered_complete": 24,
+      "timeouts": 0,
+      "mismatch_exact_s": 107.06666666666673
+    },
+    "H4_future_k2_ack": {
+      "events": 144,
+      "prompt_counts": {
+        "on_time": 60,
+        "early": 67,
+        "late": 3,
+        "missing": 14
+      },
+      "ordered_complete": 19,
+      "timeouts": 6,
+      "mismatch_exact_s": 409.36666666666673
+    }
+  },
+  "training10_unseen_exposed": {
+    "B0_native": {
+      "events": 180,
+      "prompt_counts": {
+        "on_time": 159,
+        "early": 6,
+        "late": 15,
+        "missing": 0
+      },
+      "ordered_complete": 30,
+      "timeouts": 0,
+      "mismatch_exact_s": 189.16666666666663
+    },
+    "B0_same_clock": {
+      "events": 180,
+      "prompt_counts": {
+        "on_time": 154,
+        "early": 0,
+        "late": 26,
+        "missing": 0
+      },
+      "ordered_complete": 30,
+      "timeouts": 0,
+      "mismatch_exact_s": 275.5
+    },
+    "H1_future_k1_no_ack": {
+      "events": 180,
+      "prompt_counts": {
+        "on_time": 53,
+        "early": 121,
+        "late": 6,
+        "missing": 0
+      },
+      "ordered_complete": 30,
+      "timeouts": 0,
+      "mismatch_exact_s": 214.40000000000003
+    },
+    "H3_future_k1_ack": {
+      "events": 180,
+      "prompt_counts": {
+        "on_time": 21,
+        "early": 60,
+        "late": 4,
+        "missing": 95
+      },
+      "ordered_complete": 5,
+      "timeouts": 25,
+      "mismatch_exact_s": 1574.4666666666667
+    },
+    "H2_future_k2_no_ack": {
+      "events": 180,
+      "prompt_counts": {
+        "on_time": 78,
+        "early": 91,
+        "late": 11,
+        "missing": 0
+      },
+      "ordered_complete": 30,
+      "timeouts": 0,
+      "mismatch_exact_s": 189.23333333333335
+    },
+    "H4_future_k2_ack": {
+      "events": 180,
+      "prompt_counts": {
+        "on_time": 45,
+        "early": 57,
+        "late": 9,
+        "missing": 69
+      },
+      "ordered_complete": 10,
+      "timeouts": 20,
+      "mismatch_exact_s": 1155.8666666666666
+    }
+  },
+  "training74_seen": {
+    "B0_native": {
+      "events": 1332,
+      "prompt_counts": {
+        "on_time": 1311,
+        "early": 8,
+        "late": 12,
+        "missing": 1
+      },
+      "ordered_complete": 221,
+      "timeouts": 0,
+      "mismatch_exact_s": 1096.8666666666668
+    },
+    "B0_same_clock": {
+      "events": 1332,
+      "prompt_counts": {
+        "on_time": 1282,
+        "early": 2,
+        "late": 47,
+        "missing": 1
+      },
+      "ordered_complete": 221,
+      "timeouts": 0,
+      "mismatch_exact_s": 1757.5666666666668
+    },
+    "H1_future_k1_no_ack": {
+      "events": 1332,
+      "prompt_counts": {
+        "on_time": 72,
+        "early": 1257,
+        "late": 1,
+        "missing": 2
+      },
+      "ordered_complete": 220,
+      "timeouts": 0,
+      "mismatch_exact_s": 922.9333333333334
+    },
+    "H3_future_k1_ack": {
+      "events": 1332,
+      "prompt_counts": {
+        "on_time": 52,
+        "early": 1001,
+        "late": 0,
+        "missing": 279
+      },
+      "ordered_complete": 133,
+      "timeouts": 94,
+      "mismatch_exact_s": 6103.7
+    },
+    "H2_future_k2_no_ack": {
+      "events": 1332,
+      "prompt_counts": {
+        "on_time": 217,
+        "early": 1111,
+        "late": 2,
+        "missing": 2
+      },
+      "ordered_complete": 220,
+      "timeouts": 0,
+      "mismatch_exact_s": 410.1
+    },
+    "H4_future_k2_ack": {
+      "events": 1332,
+      "prompt_counts": {
+        "on_time": 209,
+        "early": 1064,
+        "late": 1,
+        "missing": 58
+      },
+      "ordered_complete": 197,
+      "timeouts": 24,
+      "mismatch_exact_s": 1625.6333333333334
+    }
+  }
+}
