@@ -1,0 +1,15 @@
+{
+  "frozen_lock_verified": true,
+  "frozen_model_and_source_hashes_unchanged": true,
+  "additional_identity_hashes": {
+    "runs/tomato/complete100_20261111/data_identity.json": "6278a7b96e9d45060889696f8049e7385cd6a5d7380288e1b8a3f89d4de33835",
+    "runs/tomato/campaign94_20261107/prepared/manifest.json": "0065e7c88efb97f8e85d72169aa49f24810d42983c03370f50e2f2b9b01b383c"
+  },
+  "source_sha256": {
+    "tools/tomato_disagreement_policy.py": "aa32e5a0101268df09a278c03c150d5dd340f7f8f21d8bb0ca2cac150767f7ef",
+    "tools/evaluate_tomato_disagreement.py": "1fdd10cf6025dc88ffb0f1fc4735c7a2ad60d09490422dba522c5d20580c1bf9",
+    "tools/audit_tomato_disagreement_events.py": "4c7bd280e19e4f318378d66d27fe39e5925a44b391dc92bc0986f603b6f66ef1",
+    "tools/plot_tomato_disagreement_cases.py": "dcde2d0c9b1547594900a18a33490fd7e1ca8061598b30fb1202ed72c322da3a",
+    "tests/test_tomato_disagreement_policy.py": "034f64f778ae587a31e7b9750dbf931f041780e72151f4be265b6db6e85c3c45"
+  }
+}

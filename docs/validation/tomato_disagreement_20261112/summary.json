@@ -1,0 +1,1454 @@
+{
+  "42": {
+    "summary": {
+      "development8": {
+        "B0": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 37,
+            "total": 48,
+            "false_events": 13
+          },
+          "prompt_counts": {
+            "on_time": 44,
+            "early": 2,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "early": 1,
+              "on_time": 7
+            }
+          },
+          "mismatch_s": 38.5,
+          "persistent_mismatch_s": 10.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 1.0055555555555562,
+          "latency_p95_episode_max_ms": 0.009210999999999999,
+          "defer_once": 0
+        },
+        "advisory": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 37,
+            "total": 48,
+            "false_events": 13
+          },
+          "prompt_counts": {
+            "on_time": 44,
+            "early": 2,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "early": 1,
+              "on_time": 7
+            }
+          },
+          "mismatch_s": 38.5,
+          "persistent_mismatch_s": 10.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 1.0055555555555562,
+          "latency_p95_episode_max_ms": 0.009274,
+          "defer_once": 0
+        },
+        "bounded_conflict": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 37,
+            "total": 48,
+            "false_events": 13
+          },
+          "prompt_counts": {
+            "on_time": 44,
+            "early": 2,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "early": 1,
+              "on_time": 7
+            }
+          },
+          "mismatch_s": 38.5,
+          "persistent_mismatch_s": 10.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 1.0055555555555562,
+          "latency_p95_episode_max_ms": 0.009099,
+          "defer_once": 0
+        },
+        "current_k3": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 37,
+            "total": 48,
+            "false_events": 13
+          },
+          "prompt_counts": {
+            "on_time": 44,
+            "early": 1,
+            "late": 3
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 4,
+              "late": 3
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 60.5,
+          "persistent_mismatch_s": 9.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 1.4736111111111116,
+          "latency_p95_episode_max_ms": 0.00898,
+          "defer_once": 0
+        }
+      },
+      "training10_b0_unseen_previously_explored": {
+        "B0": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 37,
+            "total": 60,
+            "false_events": 31
+          },
+          "prompt_counts": {
+            "on_time": 55,
+            "early": 1,
+            "late": 4
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 6,
+              "late": 3
+            },
+            "harvest->return": {
+              "on_time": 19,
+              "late": 1
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 10
+            }
+          },
+          "mismatch_s": 50.5,
+          "persistent_mismatch_s": 8.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 6,
+          "prompt_abs_error_s": 1.0488888888888885,
+          "latency_p95_episode_max_ms": 0.011693649999999996,
+          "defer_once": 0
+        },
+        "advisory": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 37,
+            "total": 60,
+            "false_events": 31
+          },
+          "prompt_counts": {
+            "on_time": 55,
+            "early": 1,
+            "late": 4
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 6,
+              "late": 3
+            },
+            "harvest->return": {
+              "on_time": 19,
+              "late": 1
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 10
+            }
+          },
+          "mismatch_s": 50.5,
+          "persistent_mismatch_s": 8.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 6,
+          "prompt_abs_error_s": 1.0488888888888885,
+          "latency_p95_episode_max_ms": 0.010052299999999976,
+          "defer_once": 0
+        },
+        "bounded_conflict": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 37,
+            "total": 60,
+            "false_events": 31
+          },
+          "prompt_counts": {
+            "on_time": 55,
+            "early": 1,
+            "late": 4
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 6,
+              "late": 3
+            },
+            "harvest->return": {
+              "on_time": 19,
+              "late": 1
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 10
+            }
+          },
+          "mismatch_s": 50.5,
+          "persistent_mismatch_s": 8.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 6,
+          "prompt_abs_error_s": 1.0488888888888885,
+          "latency_p95_episode_max_ms": 0.009101,
+          "defer_once": 0
+        },
+        "current_k3": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 37,
+            "total": 60,
+            "false_events": 31
+          },
+          "prompt_counts": {
+            "on_time": 52,
+            "late": 8
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 5,
+              "late": 5
+            },
+            "harvest->return": {
+              "on_time": 18,
+              "late": 2
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 9,
+              "late": 1
+            }
+          },
+          "mismatch_s": 79.5,
+          "persistent_mismatch_s": 12.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 3,
+          "prompt_abs_error_s": 1.5388888888888888,
+          "latency_p95_episode_max_ms": 0.008984,
+          "defer_once": 0
+        }
+      },
+      "training74_seen": {
+        "B0": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 442,
+            "total": 444,
+            "false_events": 3
+          },
+          "prompt_counts": {
+            "on_time": 431,
+            "late": 8,
+            "early": 5
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 67,
+              "late": 6,
+              "early": 1
+            },
+            "harvest->return": {
+              "on_time": 147,
+              "late": 1
+            },
+            "pickup->harvest": {
+              "on_time": 147,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 70,
+              "early": 4
+            }
+          },
+          "mismatch_s": 303.5,
+          "persistent_mismatch_s": 11.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 74,
+          "all_prompts_on_time": 62,
+          "prompt_abs_error_s": 0.8874624624624624,
+          "latency_p95_episode_max_ms": 0.012032,
+          "defer_once": 0
+        },
+        "advisory": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 442,
+            "total": 444,
+            "false_events": 3
+          },
+          "prompt_counts": {
+            "on_time": 431,
+            "late": 8,
+            "early": 5
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 67,
+              "late": 6,
+              "early": 1
+            },
+            "harvest->return": {
+              "on_time": 147,
+              "late": 1
+            },
+            "pickup->harvest": {
+              "on_time": 147,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 70,
+              "early": 4
+            }
+          },
+          "mismatch_s": 303.5,
+          "persistent_mismatch_s": 11.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 74,
+          "all_prompts_on_time": 62,
+          "prompt_abs_error_s": 0.8874624624624624,
+          "latency_p95_episode_max_ms": 0.012485999999999999,
+          "defer_once": 0
+        },
+        "bounded_conflict": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 442,
+            "total": 444,
+            "false_events": 3
+          },
+          "prompt_counts": {
+            "on_time": 431,
+            "late": 8,
+            "early": 5
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 67,
+              "late": 6,
+              "early": 1
+            },
+            "harvest->return": {
+              "on_time": 147,
+              "late": 1
+            },
+            "pickup->harvest": {
+              "on_time": 147,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 70,
+              "early": 4
+            }
+          },
+          "mismatch_s": 303.0,
+          "persistent_mismatch_s": 11.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 74,
+          "all_prompts_on_time": 62,
+          "prompt_abs_error_s": 0.8863363363363362,
+          "latency_p95_episode_max_ms": 0.012883,
+          "defer_once": 1
+        },
+        "current_k3": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 442,
+            "total": 444,
+            "false_events": 3
+          },
+          "prompt_counts": {
+            "on_time": 414,
+            "late": 28,
+            "early": 1,
+            "missing": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 51,
+              "late": 22,
+              "early": 1
+            },
+            "harvest->return": {
+              "late": 4,
+              "on_time": 143,
+              "missing": 1
+            },
+            "pickup->harvest": {
+              "on_time": 147,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 73,
+              "late": 1
+            }
+          },
+          "mismatch_s": 521.5,
+          "persistent_mismatch_s": 26.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 73,
+          "all_prompts_on_time": 45,
+          "prompt_abs_error_s": 1.3790067720090293,
+          "latency_p95_episode_max_ms": 0.012600800000000004,
+          "defer_once": 0
+        }
+      }
+    },
+    "current_future_argmax_pairs": {
+      "pickup->pickup": 2867,
+      "pickup->harvest": 585,
+      "harvest->harvest": 16545,
+      "harvest->return": 530,
+      "return->return": 1421,
+      "return->adjust": 286,
+      "adjust->adjust": 3454,
+      "adjust->pickup": 291,
+      "pickup->adjust": 9,
+      "return->pickup": 7,
+      "adjust->return": 6,
+      "return->harvest": 3
+    }
+  },
+  "43": {
+    "summary": {
+      "development8": {
+        "B0": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 34,
+            "total": 48,
+            "false_events": 18
+          },
+          "prompt_counts": {
+            "on_time": 44,
+            "early": 2,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "late": 2,
+              "on_time": 4
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 45.5,
+          "persistent_mismatch_s": 13.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 1.144444444444445,
+          "latency_p95_episode_max_ms": 0.00888,
+          "defer_once": 0
+        },
+        "advisory": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 34,
+            "total": 48,
+            "false_events": 18
+          },
+          "prompt_counts": {
+            "on_time": 44,
+            "early": 2,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "late": 2,
+              "on_time": 4
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 45.5,
+          "persistent_mismatch_s": 13.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 1.144444444444445,
+          "latency_p95_episode_max_ms": 0.009208,
+          "defer_once": 0
+        },
+        "bounded_conflict": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 34,
+            "total": 48,
+            "false_events": 18
+          },
+          "prompt_counts": {
+            "on_time": 44,
+            "early": 2,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "late": 2,
+              "on_time": 4
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 45.5,
+          "persistent_mismatch_s": 13.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 1.144444444444445,
+          "latency_p95_episode_max_ms": 0.009015249999999999,
+          "defer_once": 0
+        },
+        "current_k3": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 34,
+            "total": 48,
+            "false_events": 18
+          },
+          "prompt_counts": {
+            "on_time": 41,
+            "early": 1,
+            "late": 6
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 14,
+              "late": 2
+            },
+            "return->adjust": {
+              "on_time": 6,
+              "late": 2
+            }
+          },
+          "mismatch_s": 67.5,
+          "persistent_mismatch_s": 13.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 3,
+          "prompt_abs_error_s": 1.6194444444444451,
+          "latency_p95_episode_max_ms": 0.009062249999999999,
+          "defer_once": 0
+        }
+      },
+      "training10_b0_unseen_previously_explored": {
+        "B0": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 39,
+            "total": 60,
+            "false_events": 30
+          },
+          "prompt_counts": {
+            "on_time": 53,
+            "early": 1,
+            "late": 6
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 4
+            },
+            "harvest->return": {
+              "on_time": 19,
+              "late": 1
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 9,
+              "late": 1
+            }
+          },
+          "mismatch_s": 55.5,
+          "persistent_mismatch_s": 11.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 1.1322222222222218,
+          "latency_p95_episode_max_ms": 0.010953500000000001,
+          "defer_once": 0
+        },
+        "advisory": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 39,
+            "total": 60,
+            "false_events": 30
+          },
+          "prompt_counts": {
+            "on_time": 53,
+            "early": 1,
+            "late": 6
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 4
+            },
+            "harvest->return": {
+              "on_time": 19,
+              "late": 1
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 9,
+              "late": 1
+            }
+          },
+          "mismatch_s": 55.5,
+          "persistent_mismatch_s": 11.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 1.1322222222222218,
+          "latency_p95_episode_max_ms": 0.010613999999999998,
+          "defer_once": 0
+        },
+        "bounded_conflict": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 39,
+            "total": 60,
+            "false_events": 30
+          },
+          "prompt_counts": {
+            "on_time": 53,
+            "early": 1,
+            "late": 6
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 4
+            },
+            "harvest->return": {
+              "on_time": 19,
+              "late": 1
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 9,
+              "late": 1
+            }
+          },
+          "mismatch_s": 55.5,
+          "persistent_mismatch_s": 11.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 1.1322222222222218,
+          "latency_p95_episode_max_ms": 0.009180649999999999,
+          "defer_once": 0
+        },
+        "current_k3": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 39,
+            "total": 60,
+            "false_events": 30
+          },
+          "prompt_counts": {
+            "on_time": 51,
+            "late": 9
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 5,
+              "late": 5
+            },
+            "harvest->return": {
+              "on_time": 17,
+              "late": 3
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 9,
+              "late": 1
+            }
+          },
+          "mismatch_s": 84.5,
+          "persistent_mismatch_s": 18.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 2,
+          "prompt_abs_error_s": 1.6222222222222222,
+          "latency_p95_episode_max_ms": 0.009666,
+          "defer_once": 0
+        }
+      },
+      "training74_seen": {
+        "B0": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 425,
+            "total": 444,
+            "false_events": 22
+          },
+          "prompt_counts": {
+            "on_time": 438,
+            "late": 4,
+            "early": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 71,
+              "late": 2,
+              "early": 1
+            },
+            "harvest->return": {
+              "on_time": 148
+            },
+            "pickup->harvest": {
+              "on_time": 147,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 72,
+              "late": 1,
+              "early": 1
+            }
+          },
+          "mismatch_s": 299.5,
+          "persistent_mismatch_s": 10.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 74,
+          "all_prompts_on_time": 68,
+          "prompt_abs_error_s": 0.8819069069069069,
+          "latency_p95_episode_max_ms": 0.013486,
+          "defer_once": 0
+        },
+        "advisory": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 425,
+            "total": 444,
+            "false_events": 22
+          },
+          "prompt_counts": {
+            "on_time": 438,
+            "late": 4,
+            "early": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 71,
+              "late": 2,
+              "early": 1
+            },
+            "harvest->return": {
+              "on_time": 148
+            },
+            "pickup->harvest": {
+              "on_time": 147,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 72,
+              "late": 1,
+              "early": 1
+            }
+          },
+          "mismatch_s": 299.5,
+          "persistent_mismatch_s": 10.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 74,
+          "all_prompts_on_time": 68,
+          "prompt_abs_error_s": 0.8819069069069069,
+          "latency_p95_episode_max_ms": 0.013817,
+          "defer_once": 0
+        },
+        "bounded_conflict": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 425,
+            "total": 444,
+            "false_events": 22
+          },
+          "prompt_counts": {
+            "on_time": 438,
+            "late": 4,
+            "early": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 71,
+              "late": 2,
+              "early": 1
+            },
+            "harvest->return": {
+              "on_time": 148
+            },
+            "pickup->harvest": {
+              "on_time": 147,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 72,
+              "late": 1,
+              "early": 1
+            }
+          },
+          "mismatch_s": 299.5,
+          "persistent_mismatch_s": 10.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 74,
+          "all_prompts_on_time": 68,
+          "prompt_abs_error_s": 0.8819069069069069,
+          "latency_p95_episode_max_ms": 0.009231999999999999,
+          "defer_once": 0
+        },
+        "current_k3": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 425,
+            "total": 444,
+            "false_events": 22
+          },
+          "prompt_counts": {
+            "on_time": 424,
+            "late": 19,
+            "early": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 64,
+              "late": 9,
+              "early": 1
+            },
+            "harvest->return": {
+              "on_time": 146,
+              "late": 2
+            },
+            "pickup->harvest": {
+              "on_time": 146,
+              "late": 2
+            },
+            "return->adjust": {
+              "late": 6,
+              "on_time": 68
+            }
+          },
+          "mismatch_s": 521.0,
+          "persistent_mismatch_s": 17.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 74,
+          "all_prompts_on_time": 57,
+          "prompt_abs_error_s": 1.3816816816816817,
+          "latency_p95_episode_max_ms": 0.012648999999999999,
+          "defer_once": 0
+        }
+      }
+    },
+    "current_future_argmax_pairs": {
+      "pickup->pickup": 2908,
+      "pickup->harvest": 609,
+      "harvest->harvest": 16507,
+      "harvest->return": 539,
+      "return->return": 1424,
+      "return->adjust": 322,
+      "adjust->adjust": 3399,
+      "adjust->pickup": 250,
+      "pickup->adjust": 19,
+      "return->pickup": 25,
+      "return->harvest": 2
+    }
+  },
+  "44": {
+    "summary": {
+      "development8": {
+        "B0": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 35,
+            "total": 48,
+            "false_events": 15
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 4,
+            "late": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 5,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "early": 1
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "early": 1,
+              "on_time": 7
+            }
+          },
+          "mismatch_s": 35.5,
+          "persistent_mismatch_s": 8.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 0.9250000000000006,
+          "latency_p95_episode_max_ms": 0.010946000000000001,
+          "defer_once": 0
+        },
+        "advisory": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 35,
+            "total": 48,
+            "false_events": 15
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 4,
+            "late": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 5,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "early": 1
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "early": 1,
+              "on_time": 7
+            }
+          },
+          "mismatch_s": 35.5,
+          "persistent_mismatch_s": 8.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 0.9250000000000006,
+          "latency_p95_episode_max_ms": 0.010046799999999984,
+          "defer_once": 0
+        },
+        "bounded_conflict": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 35,
+            "total": 48,
+            "false_events": 15
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 4,
+            "late": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 5,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "early": 1
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "early": 1,
+              "on_time": 7
+            }
+          },
+          "mismatch_s": 35.5,
+          "persistent_mismatch_s": 8.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 0.9250000000000006,
+          "latency_p95_episode_max_ms": 0.009111,
+          "defer_once": 0
+        },
+        "current_k3": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 35,
+            "total": 48,
+            "false_events": 15
+          },
+          "prompt_counts": {
+            "on_time": 45,
+            "early": 2,
+            "late": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 5,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 55.5,
+          "persistent_mismatch_s": 8.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 1.3527777777777785,
+          "latency_p95_episode_max_ms": 0.009039999999999998,
+          "defer_once": 0
+        }
+      },
+      "training10_b0_unseen_previously_explored": {
+        "B0": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 33,
+            "total": 60,
+            "false_events": 34
+          },
+          "prompt_counts": {
+            "on_time": 51,
+            "early": 4,
+            "late": 5
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 3,
+              "late": 4,
+              "on_time": 3
+            },
+            "harvest->return": {
+              "early": 1,
+              "late": 1,
+              "on_time": 18
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 10
+            }
+          },
+          "mismatch_s": 47.0,
+          "persistent_mismatch_s": 8.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 3,
+          "prompt_abs_error_s": 0.9716666666666665,
+          "latency_p95_episode_max_ms": 0.01314825,
+          "defer_once": 0
+        },
+        "advisory": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 33,
+            "total": 60,
+            "false_events": 34
+          },
+          "prompt_counts": {
+            "on_time": 51,
+            "early": 4,
+            "late": 5
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 3,
+              "late": 4,
+              "on_time": 3
+            },
+            "harvest->return": {
+              "early": 1,
+              "late": 1,
+              "on_time": 18
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 10
+            }
+          },
+          "mismatch_s": 47.0,
+          "persistent_mismatch_s": 8.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 3,
+          "prompt_abs_error_s": 0.9716666666666665,
+          "latency_p95_episode_max_ms": 0.009257999999999999,
+          "defer_once": 0
+        },
+        "bounded_conflict": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 33,
+            "total": 60,
+            "false_events": 34
+          },
+          "prompt_counts": {
+            "on_time": 51,
+            "early": 4,
+            "late": 5
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 3,
+              "late": 4,
+              "on_time": 3
+            },
+            "harvest->return": {
+              "early": 1,
+              "late": 1,
+              "on_time": 18
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 10
+            }
+          },
+          "mismatch_s": 47.0,
+          "persistent_mismatch_s": 8.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 3,
+          "prompt_abs_error_s": 0.9716666666666665,
+          "latency_p95_episode_max_ms": 0.008989500000000001,
+          "defer_once": 0
+        },
+        "current_k3": {
+          "recordings": 10,
+          "warnings": {
+            "hits": 33,
+            "total": 60,
+            "false_events": 34
+          },
+          "prompt_counts": {
+            "on_time": 51,
+            "late": 9
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 5,
+              "late": 5
+            },
+            "harvest->return": {
+              "on_time": 18,
+              "late": 2
+            },
+            "pickup->harvest": {
+              "on_time": 20
+            },
+            "return->adjust": {
+              "on_time": 8,
+              "late": 2
+            }
+          },
+          "mismatch_s": 73.0,
+          "persistent_mismatch_s": 14.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 10,
+          "all_prompts_on_time": 2,
+          "prompt_abs_error_s": 1.4305555555555556,
+          "latency_p95_episode_max_ms": 0.012877,
+          "defer_once": 0
+        }
+      },
+      "training74_seen": {
+        "B0": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 432,
+            "total": 444,
+            "false_events": 11
+          },
+          "prompt_counts": {
+            "on_time": 442,
+            "early": 1,
+            "missing": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 74
+            },
+            "harvest->return": {
+              "on_time": 146,
+              "early": 1,
+              "missing": 1
+            },
+            "pickup->harvest": {
+              "on_time": 148
+            },
+            "return->adjust": {
+              "on_time": 74
+            }
+          },
+          "mismatch_s": 220.0,
+          "persistent_mismatch_s": 3.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 73,
+          "all_prompts_on_time": 72,
+          "prompt_abs_error_s": 0.6964635063957862,
+          "latency_p95_episode_max_ms": 0.013076999999999998,
+          "defer_once": 0
+        },
+        "advisory": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 432,
+            "total": 444,
+            "false_events": 11
+          },
+          "prompt_counts": {
+            "on_time": 442,
+            "early": 1,
+            "missing": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 74
+            },
+            "harvest->return": {
+              "on_time": 146,
+              "early": 1,
+              "missing": 1
+            },
+            "pickup->harvest": {
+              "on_time": 148
+            },
+            "return->adjust": {
+              "on_time": 74
+            }
+          },
+          "mismatch_s": 220.0,
+          "persistent_mismatch_s": 3.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 73,
+          "all_prompts_on_time": 72,
+          "prompt_abs_error_s": 0.6964635063957862,
+          "latency_p95_episode_max_ms": 0.009498400000000004,
+          "defer_once": 0
+        },
+        "bounded_conflict": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 432,
+            "total": 444,
+            "false_events": 11
+          },
+          "prompt_counts": {
+            "on_time": 442,
+            "early": 1,
+            "missing": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 74
+            },
+            "harvest->return": {
+              "on_time": 146,
+              "early": 1,
+              "missing": 1
+            },
+            "pickup->harvest": {
+              "on_time": 148
+            },
+            "return->adjust": {
+              "on_time": 74
+            }
+          },
+          "mismatch_s": 220.0,
+          "persistent_mismatch_s": 3.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 73,
+          "all_prompts_on_time": 72,
+          "prompt_abs_error_s": 0.6964635063957862,
+          "latency_p95_episode_max_ms": 0.009128999999999998,
+          "defer_once": 0
+        },
+        "current_k3": {
+          "recordings": 74,
+          "warnings": {
+            "hits": 432,
+            "total": 444,
+            "false_events": 11
+          },
+          "prompt_counts": {
+            "on_time": 443,
+            "missing": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "on_time": 74
+            },
+            "harvest->return": {
+              "on_time": 147,
+              "missing": 1
+            },
+            "pickup->harvest": {
+              "on_time": 148
+            },
+            "return->adjust": {
+              "on_time": 74
+            }
+          },
+          "mismatch_s": 440.5,
+          "persistent_mismatch_s": 3.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 73,
+          "all_prompts_on_time": 73,
+          "prompt_abs_error_s": 1.1961625282167043,
+          "latency_p95_episode_max_ms": 0.009953449999999999,
+          "defer_once": 0
+        }
+      }
+    },
+    "current_future_argmax_pairs": {
+      "pickup->pickup": 2903,
+      "pickup->harvest": 549,
+      "harvest->harvest": 16577,
+      "harvest->return": 516,
+      "return->return": 1459,
+      "return->adjust": 304,
+      "adjust->adjust": 3446,
+      "adjust->pickup": 213,
+      "pickup->adjust": 26,
+      "return->pickup": 6,
+      "return->harvest": 5
+    }
+  }
+}
