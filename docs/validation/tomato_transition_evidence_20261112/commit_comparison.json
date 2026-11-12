@@ -1,0 +1,5834 @@
+[
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 1,
+    "time": 8.5,
+    "boundary_s": 7.966666666666667,
+    "offset_s": 0.5333333333333332,
+    "already_begun": true,
+    "base_current_probability": 0.9999972026129954,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6174260973930359,
+      "E1": 0.9903372526168823,
+      "E2": 0.9946685433387756
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 2,
+    "time": 53.5,
+    "boundary_s": 52.53333333333333,
+    "offset_s": 0.9666666666666686,
+    "already_begun": true,
+    "base_current_probability": 0.906494945266576,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.707679033279419,
+      "E1": 0.8760159611701965,
+      "E2": 0.9188823103904724
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 3,
+    "time": 60.0,
+    "boundary_s": 59.7,
+    "offset_s": 0.29999999999999716,
+    "already_begun": true,
+    "base_current_probability": 0.9969655410572915,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7703360319137573,
+      "E1": 0.8388769030570984,
+      "E2": 0.8887535333633423
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 4,
+    "time": 91.0,
+    "boundary_s": 91.3,
+    "offset_s": -0.29999999999999716,
+    "already_begun": false,
+    "base_current_probability": 0.9204388677379468,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.4197482466697693,
+      "E1": 0.36479294300079346,
+      "E2": 0.4962383210659027
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 5,
+    "time": 115.5,
+    "boundary_s": 114.7,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9999880204710355,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5406979322433472,
+      "E1": 0.8120570182800293,
+      "E2": 0.9212719798088074
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 6,
+    "time": 152.5,
+    "boundary_s": 150.2,
+    "offset_s": 2.3000000000000114,
+    "already_begun": true,
+    "base_current_probability": 0.9743693859867418,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.8126734495162964,
+      "E1": 0.9384002089500427,
+      "E2": 0.970902144908905
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 1,
+    "time": 11.5,
+    "boundary_s": 10.4,
+    "offset_s": 1.0999999999999996,
+    "already_begun": true,
+    "base_current_probability": 0.9999801754548358,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6405177116394043,
+      "E1": 0.9999984502792358,
+      "E2": 1.0
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 2,
+    "time": 45.0,
+    "boundary_s": 44.266666666666666,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.9999395854169735,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.5685243010520935,
+      "E1": 0.9521932005882263,
+      "E2": 0.9709268808364868
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 3,
+    "time": 49.5,
+    "boundary_s": 48.53333333333333,
+    "offset_s": 0.9666666666666686,
+    "already_begun": true,
+    "base_current_probability": 0.8839812855105478,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.705263078212738,
+      "E1": 0.7786204218864441,
+      "E2": 0.7847061157226562
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 4,
+    "time": 68.0,
+    "boundary_s": 66.93333333333334,
+    "offset_s": 1.0666666666666629,
+    "already_begun": true,
+    "base_current_probability": 0.8986330021939783,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7294870615005493,
+      "E1": 0.6794184446334839,
+      "E2": 0.7884137034416199
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 5,
+    "time": 77.0,
+    "boundary_s": 76.23333333333333,
+    "offset_s": 0.7666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9999168876362271,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5187142491340637,
+      "E1": 0.9977309107780457,
+      "E2": 0.997060239315033
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 6,
+    "time": 103.0,
+    "boundary_s": 101.66666666666667,
+    "offset_s": 1.3333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.9984572010758482,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7799691557884216,
+      "E1": 0.9972666501998901,
+      "E2": 0.9987169504165649
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 1,
+    "time": 8.0,
+    "boundary_s": 6.966666666666667,
+    "offset_s": 1.0333333333333332,
+    "already_begun": true,
+    "base_current_probability": 0.9999945214670976,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.620598554611206,
+      "E1": 0.9999977350234985,
+      "E2": 0.9999990463256836
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 2,
+    "time": 49.5,
+    "boundary_s": 48.333333333333336,
+    "offset_s": 1.1666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9999371899104266,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6073671579360962,
+      "E1": 0.9971073269844055,
+      "E2": 0.9962818026542664
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 3,
+    "time": 53.0,
+    "boundary_s": 52.833333333333336,
+    "offset_s": 0.1666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9740552713908426,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7637394070625305,
+      "E1": 0.7489933967590332,
+      "E2": 0.8710055351257324
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 4,
+    "time": 79.0,
+    "boundary_s": 75.66666666666667,
+    "offset_s": 3.3333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.8861986822991114,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.5574929118156433,
+      "E1": 0.9972577691078186,
+      "E2": 0.9874188303947449
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 5,
+    "time": 84.5,
+    "boundary_s": 83.46666666666667,
+    "offset_s": 1.0333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9999981073091162,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5761866569519043,
+      "E1": 0.9993401169776917,
+      "E2": 0.999667763710022
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 6,
+    "time": 114.0,
+    "boundary_s": 112.96666666666667,
+    "offset_s": 1.0333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.997925837723478,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.8169381022453308,
+      "E1": 0.9865332841873169,
+      "E2": 0.9943786263465881
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 1,
+    "time": 7.0,
+    "boundary_s": 6.433333333333334,
+    "offset_s": 0.5666666666666664,
+    "already_begun": true,
+    "base_current_probability": 0.9997359700377302,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6200290322303772,
+      "E1": 0.9165747761726379,
+      "E2": 0.9602212309837341
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 2,
+    "time": 39.0,
+    "boundary_s": 37.93333333333333,
+    "offset_s": 1.06666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9999854477005373,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7698643207550049,
+      "E1": 0.9804447889328003,
+      "E2": 0.9859446287155151
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 3,
+    "time": 42.5,
+    "boundary_s": 42.266666666666666,
+    "offset_s": 0.23333333333333428,
+    "already_begun": true,
+    "base_current_probability": 0.9942768939790445,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.749601423740387,
+      "E1": 0.9582398533821106,
+      "E2": 0.9663299918174744
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 4,
+    "time": 52.5,
+    "boundary_s": 49.7,
+    "offset_s": 2.799999999999997,
+    "already_begun": true,
+    "base_current_probability": 0.8973938369602116,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.4496299624443054,
+      "E1": 0.9596971273422241,
+      "E2": 0.9293649792671204
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 5,
+    "time": 63.5,
+    "boundary_s": 62.666666666666664,
+    "offset_s": 0.8333333333333357,
+    "already_begun": true,
+    "base_current_probability": 0.9996911001244355,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.553646445274353,
+      "E1": 0.9438175559043884,
+      "E2": 0.9782189726829529
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 6,
+    "time": 104.5,
+    "boundary_s": 103.86666666666666,
+    "offset_s": 0.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.998433907821381,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7712205648422241,
+      "E1": 0.9513053894042969,
+      "E2": 0.9791107773780823
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 1,
+    "time": 9.0,
+    "boundary_s": 8.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9999846696793077,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6585237979888916,
+      "E1": 0.9999964237213135,
+      "E2": 0.9999997615814209
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 2,
+    "time": 46.0,
+    "boundary_s": 45.36666666666667,
+    "offset_s": 0.6333333333333329,
+    "already_begun": true,
+    "base_current_probability": 0.9980049143917917,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.5932291746139526,
+      "E1": 0.9900716543197632,
+      "E2": 0.9922618865966797
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 3,
+    "time": 52.0,
+    "boundary_s": 50.2,
+    "offset_s": 1.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9897087395404072,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7985401749610901,
+      "E1": 0.828413188457489,
+      "E2": 0.910903811454773
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 4,
+    "time": 70.0,
+    "boundary_s": 68.3,
+    "offset_s": 1.7000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9972312433164953,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8316771984100342,
+      "E1": 0.7163586616516113,
+      "E2": 0.9107952117919922
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 5,
+    "time": 78.0,
+    "boundary_s": 76.8,
+    "offset_s": 1.2000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9999330314861691,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6123644113540649,
+      "E1": 0.999972939491272,
+      "E2": 0.9999909400939941
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 6,
+    "time": 89.5,
+    "boundary_s": 88.1,
+    "offset_s": 1.4000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9916805687982091,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.8178554177284241,
+      "E1": 0.7977906465530396,
+      "E2": 0.9314231276512146
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 1,
+    "time": 7.0,
+    "boundary_s": 6.333333333333333,
+    "offset_s": 0.666666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9998613319761783,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6178978085517883,
+      "E1": 0.9529411792755127,
+      "E2": 0.9731402397155762
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 2,
+    "time": 37.5,
+    "boundary_s": 36.333333333333336,
+    "offset_s": 1.1666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9992107608898598,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.5961607098579407,
+      "E1": 0.9899718761444092,
+      "E2": 0.9927873015403748
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 3,
+    "time": 42.0,
+    "boundary_s": 41.4,
+    "offset_s": 0.6000000000000014,
+    "already_begun": true,
+    "base_current_probability": 0.9992132960197156,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7827194929122925,
+      "E1": 0.9411724805831909,
+      "E2": 0.9511580467224121
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 4,
+    "time": 67.5,
+    "boundary_s": 66.2,
+    "offset_s": 1.2999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9671850015081445,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.5986185073852539,
+      "E1": 0.6415031552314758,
+      "E2": 0.6785501837730408
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 5,
+    "time": 75.5,
+    "boundary_s": 74.9,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9989359603310684,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5408437252044678,
+      "E1": 0.9593861699104309,
+      "E2": 0.9839497804641724
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 6,
+    "time": 114.0,
+    "boundary_s": 112.9,
+    "offset_s": 1.0999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9996323363210922,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7784990072250366,
+      "E1": 0.9923620223999023,
+      "E2": 0.9959813356399536
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 1,
+    "time": 7.5,
+    "boundary_s": 6.766666666666667,
+    "offset_s": 0.7333333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9998936392971506,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6183720827102661,
+      "E1": 0.9290664792060852,
+      "E2": 0.9578844308853149
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 2,
+    "time": 43.5,
+    "boundary_s": 41.733333333333334,
+    "offset_s": 1.7666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9997985252983878,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7554905414581299,
+      "E1": 0.9958382844924927,
+      "E2": 0.9970811009407043
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 3,
+    "time": 49.0,
+    "boundary_s": 48.7,
+    "offset_s": 0.29999999999999716,
+    "already_begun": true,
+    "base_current_probability": 0.922126278537933,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7469307780265808,
+      "E1": 0.9967300891876221,
+      "E2": 0.9980632662773132
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 4,
+    "time": 65.0,
+    "boundary_s": 64.46666666666667,
+    "offset_s": 0.5333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9897950698283746,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8633890151977539,
+      "E1": 0.8011752963066101,
+      "E2": 0.945902943611145
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 5,
+    "time": 74.5,
+    "boundary_s": 73.73333333333333,
+    "offset_s": 0.7666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9999684006444127,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5408552289009094,
+      "E1": 0.9971057772636414,
+      "E2": 0.9971113204956055
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 6,
+    "time": 123.5,
+    "boundary_s": 122.36666666666666,
+    "offset_s": 1.13333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9734305056858003,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7257847785949707,
+      "E1": 0.9775386452674866,
+      "E2": 0.9855297803878784
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 1,
+    "time": 8.0,
+    "boundary_s": 7.433333333333334,
+    "offset_s": 0.5666666666666664,
+    "already_begun": true,
+    "base_current_probability": 0.9998266846438596,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6157024502754211,
+      "E1": 0.9309519529342651,
+      "E2": 0.9650869369506836
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 2,
+    "time": 70.5,
+    "boundary_s": 69.7,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9990873426001596,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6482718586921692,
+      "E1": 0.991409957408905,
+      "E2": 0.9944261312484741
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 3,
+    "time": 75.0,
+    "boundary_s": 74.2,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9527385629000176,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7729827761650085,
+      "E1": 0.9244443774223328,
+      "E2": 0.9376631379127502
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 4,
+    "time": 87.5,
+    "boundary_s": 86.03333333333333,
+    "offset_s": 1.4666666666666686,
+    "already_begun": true,
+    "base_current_probability": 0.9530707370287127,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8051385879516602,
+      "E1": 0.8075718283653259,
+      "E2": 0.9159249067306519
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 5,
+    "time": 97.0,
+    "boundary_s": 95.93333333333334,
+    "offset_s": 1.0666666666666629,
+    "already_begun": true,
+    "base_current_probability": 0.9999921551071523,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6118486523628235,
+      "E1": 0.9932182431221008,
+      "E2": 0.9970301389694214
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 6,
+    "time": 132.5,
+    "boundary_s": 131.7,
+    "offset_s": 0.8000000000000114,
+    "already_begun": true,
+    "base_current_probability": 0.9826454779138608,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7535879611968994,
+      "E1": 0.9815270304679871,
+      "E2": 0.9917863011360168
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 1,
+    "time": 10.5,
+    "boundary_s": 9.4,
+    "offset_s": 1.0999999999999996,
+    "already_begun": true,
+    "base_current_probability": 0.9999994506111017,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6521913409233093,
+      "E1": 0.9999986886978149,
+      "E2": 0.9999998807907104
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 2,
+    "time": 49.0,
+    "boundary_s": 47.833333333333336,
+    "offset_s": 1.1666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9994793953962791,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6416704654693604,
+      "E1": 0.9962846040725708,
+      "E2": 0.9967852830886841
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 3,
+    "time": 52.5,
+    "boundary_s": 51.6,
+    "offset_s": 0.8999999999999986,
+    "already_begun": true,
+    "base_current_probability": 0.9915862202355513,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7743298411369324,
+      "E1": 0.8705627918243408,
+      "E2": 0.9345614910125732
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 4,
+    "time": 62.5,
+    "boundary_s": 60.63333333333333,
+    "offset_s": 1.8666666666666671,
+    "already_begun": true,
+    "base_current_probability": 0.9978887278417614,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.5898826122283936,
+      "E1": 0.8707414269447327,
+      "E2": 0.9015859365463257
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 5,
+    "time": 69.0,
+    "boundary_s": 68.4,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9956059232715468,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5256450176239014,
+      "E1": 0.9935144186019897,
+      "E2": 0.9930353760719299
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 6,
+    "time": 89.5,
+    "boundary_s": 88.3,
+    "offset_s": 1.2000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9992952595922254,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.8153533339500427,
+      "E1": 0.9894355535507202,
+      "E2": 0.9966523051261902
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 1,
+    "time": 9.0,
+    "boundary_s": 7.833333333333333,
+    "offset_s": 1.166666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9999997067666475,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6190627813339233,
+      "E1": 0.9999998807907104,
+      "E2": 1.0
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 2,
+    "time": 40.0,
+    "boundary_s": 39.1,
+    "offset_s": 0.8999999999999986,
+    "already_begun": true,
+    "base_current_probability": 0.9994605787644952,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.5607194304466248,
+      "E1": 0.9681268334388733,
+      "E2": 0.9752315282821655
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 3,
+    "time": 43.5,
+    "boundary_s": 43.06666666666667,
+    "offset_s": 0.43333333333333,
+    "already_begun": true,
+    "base_current_probability": 0.9818315726108766,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7580137252807617,
+      "E1": 0.9199700355529785,
+      "E2": 0.9439975619316101
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 4,
+    "time": 61.0,
+    "boundary_s": 57.733333333333334,
+    "offset_s": 3.2666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9808767845854061,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.6912482380867004,
+      "E1": 0.23620010912418365,
+      "E2": 0.5216068029403687
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 5,
+    "time": 76.5,
+    "boundary_s": 75.86666666666666,
+    "offset_s": 0.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9991159690579734,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5179147124290466,
+      "E1": 0.993680477142334,
+      "E2": 0.9955553412437439
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 42,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 6,
+    "time": 104.0,
+    "boundary_s": 103.26666666666667,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.993740181886517,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.682628870010376,
+      "E1": 0.9532943367958069,
+      "E2": 0.9602847695350647
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 1,
+    "time": 8.5,
+    "boundary_s": 7.966666666666667,
+    "offset_s": 0.5333333333333332,
+    "already_begun": true,
+    "base_current_probability": 0.9999844161433931,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6872361302375793,
+      "E1": 0.9962300658226013,
+      "E2": 0.996298611164093
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 2,
+    "time": 53.5,
+    "boundary_s": 52.53333333333333,
+    "offset_s": 0.9666666666666686,
+    "already_begun": true,
+    "base_current_probability": 0.8651678674539535,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7399769425392151,
+      "E1": 0.9208763241767883,
+      "E2": 0.9481925964355469
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 3,
+    "time": 60.0,
+    "boundary_s": 59.7,
+    "offset_s": 0.29999999999999716,
+    "already_begun": true,
+    "base_current_probability": 0.9978966764332173,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7723379135131836,
+      "E1": 0.8461411595344543,
+      "E2": 0.9026243686676025
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 4,
+    "time": 91.0,
+    "boundary_s": 91.3,
+    "offset_s": -0.29999999999999716,
+    "already_begun": false,
+    "base_current_probability": 0.9508862877707491,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.789374053478241,
+      "E1": 0.3167586326599121,
+      "E2": 0.5021938681602478
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 5,
+    "time": 116.0,
+    "boundary_s": 114.7,
+    "offset_s": 1.2999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9999999625113668,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7257563471794128,
+      "E1": 0.6000391244888306,
+      "E2": 0.6841553449630737
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 6,
+    "time": 152.5,
+    "boundary_s": 150.2,
+    "offset_s": 2.3000000000000114,
+    "already_begun": true,
+    "base_current_probability": 0.993813289997491,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7091809511184692,
+      "E1": 0.9367076754570007,
+      "E2": 0.9742903709411621
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 1,
+    "time": 11.5,
+    "boundary_s": 10.4,
+    "offset_s": 1.0999999999999996,
+    "already_begun": true,
+    "base_current_probability": 0.9999891341836639,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7170297503471375,
+      "E1": 0.9999997615814209,
+      "E2": 0.9999997615814209
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 2,
+    "time": 45.0,
+    "boundary_s": 44.266666666666666,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.9999413121199219,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6469452381134033,
+      "E1": 0.9713109135627747,
+      "E2": 0.9798216819763184
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 3,
+    "time": 50.0,
+    "boundary_s": 48.53333333333333,
+    "offset_s": 1.4666666666666686,
+    "already_begun": true,
+    "base_current_probability": 0.9977899172764034,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7013533115386963,
+      "E1": 0.8973060250282288,
+      "E2": 0.9263077974319458
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 4,
+    "time": 67.0,
+    "boundary_s": 66.93333333333334,
+    "offset_s": 0.06666666666666288,
+    "already_begun": true,
+    "base_current_probability": 0.8805159655303171,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7005599737167358,
+      "E1": 0.6584124565124512,
+      "E2": 0.763920783996582
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 5,
+    "time": 77.0,
+    "boundary_s": 76.23333333333333,
+    "offset_s": 0.7666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9998479559098674,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6184048056602478,
+      "E1": 0.9973168969154358,
+      "E2": 0.9988413453102112
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 6,
+    "time": 103.0,
+    "boundary_s": 101.66666666666667,
+    "offset_s": 1.3333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.9980044940860883,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7136252522468567,
+      "E1": 0.9984089732170105,
+      "E2": 0.9990842342376709
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 1,
+    "time": 8.0,
+    "boundary_s": 6.966666666666667,
+    "offset_s": 1.0333333333333332,
+    "already_begun": true,
+    "base_current_probability": 0.9999888882726404,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6781735420227051,
+      "E1": 0.9999972581863403,
+      "E2": 0.999998927116394
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 2,
+    "time": 49.5,
+    "boundary_s": 48.333333333333336,
+    "offset_s": 1.1666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9997747553405397,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.688896656036377,
+      "E1": 0.9969714879989624,
+      "E2": 0.998282790184021
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 3,
+    "time": 53.5,
+    "boundary_s": 52.833333333333336,
+    "offset_s": 0.6666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9927315229594422,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7461792230606079,
+      "E1": 0.9346811175346375,
+      "E2": 0.9642223119735718
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 4,
+    "time": 79.0,
+    "boundary_s": 75.66666666666667,
+    "offset_s": 3.3333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.945841814484296,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8027403950691223,
+      "E1": 0.995184600353241,
+      "E2": 0.9975734353065491
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 5,
+    "time": 84.5,
+    "boundary_s": 83.46666666666667,
+    "offset_s": 1.0333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9999991059401463,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6871126890182495,
+      "E1": 0.9994382262229919,
+      "E2": 0.9996663331985474
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 6,
+    "time": 114.0,
+    "boundary_s": 112.96666666666667,
+    "offset_s": 1.0333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9962595046409555,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.73055100440979,
+      "E1": 0.9911409616470337,
+      "E2": 0.996498703956604
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 1,
+    "time": 7.5,
+    "boundary_s": 6.433333333333334,
+    "offset_s": 1.0666666666666664,
+    "already_begun": true,
+    "base_current_probability": 0.9999869783995093,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7221033573150635,
+      "E1": 0.9999839067459106,
+      "E2": 0.9999879598617554
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 2,
+    "time": 39.0,
+    "boundary_s": 37.93333333333333,
+    "offset_s": 1.06666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9998937857402302,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.8082943558692932,
+      "E1": 0.990888237953186,
+      "E2": 0.99303138256073
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 3,
+    "time": 42.5,
+    "boundary_s": 42.266666666666666,
+    "offset_s": 0.23333333333333428,
+    "already_begun": true,
+    "base_current_probability": 0.9920924997363977,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7338804006576538,
+      "E1": 0.956092119216919,
+      "E2": 0.966037929058075
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 4,
+    "time": 52.5,
+    "boundary_s": 49.7,
+    "offset_s": 2.799999999999997,
+    "already_begun": true,
+    "base_current_probability": 0.912284602111506,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7764189839363098,
+      "E1": 0.9591735601425171,
+      "E2": 0.9543161392211914
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 5,
+    "time": 63.5,
+    "boundary_s": 62.666666666666664,
+    "offset_s": 0.8333333333333357,
+    "already_begun": true,
+    "base_current_probability": 0.99980369716717,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6941553950309753,
+      "E1": 0.9544347524642944,
+      "E2": 0.9783492088317871
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 6,
+    "time": 104.5,
+    "boundary_s": 103.86666666666666,
+    "offset_s": 0.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9982662055981261,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7112730741500854,
+      "E1": 0.9660496115684509,
+      "E2": 0.9864440560340881
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 1,
+    "time": 9.0,
+    "boundary_s": 8.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9999663788996713,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7162736058235168,
+      "E1": 0.9999964237213135,
+      "E2": 0.999998927116394
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 2,
+    "time": 46.5,
+    "boundary_s": 45.36666666666667,
+    "offset_s": 1.1333333333333329,
+    "already_begun": true,
+    "base_current_probability": 0.9998424558261761,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7428625822067261,
+      "E1": 0.9986273050308228,
+      "E2": 0.9989745616912842
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 3,
+    "time": 52.5,
+    "boundary_s": 50.2,
+    "offset_s": 2.299999999999997,
+    "already_begun": true,
+    "base_current_probability": 0.9977824693859105,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.774318516254425,
+      "E1": 0.5999629497528076,
+      "E2": 0.8466687202453613
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 4,
+    "time": 69.5,
+    "boundary_s": 68.3,
+    "offset_s": 1.2000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.8620224345250482,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8095755577087402,
+      "E1": 0.840212881565094,
+      "E2": 0.8925930261611938
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 5,
+    "time": 77.5,
+    "boundary_s": 76.8,
+    "offset_s": 0.7000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9993635952513357,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5135080814361572,
+      "E1": 0.8454657196998596,
+      "E2": 0.8677579164505005
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 6,
+    "time": 89.5,
+    "boundary_s": 88.1,
+    "offset_s": 1.4000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9888424804440412,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.717206597328186,
+      "E1": 0.8284252882003784,
+      "E2": 0.9291954040527344
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 1,
+    "time": 7.0,
+    "boundary_s": 6.333333333333333,
+    "offset_s": 0.666666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9992341582831722,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6850833296775818,
+      "E1": 0.9462162256240845,
+      "E2": 0.9704141020774841
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 2,
+    "time": 37.5,
+    "boundary_s": 36.333333333333336,
+    "offset_s": 1.1666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9986521286368911,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.5967006087303162,
+      "E1": 0.9956056475639343,
+      "E2": 0.9948341846466064
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 3,
+    "time": 42.0,
+    "boundary_s": 41.4,
+    "offset_s": 0.6000000000000014,
+    "already_begun": true,
+    "base_current_probability": 0.988558351152259,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.6184448599815369,
+      "E1": 0.9548451900482178,
+      "E2": 0.9639487862586975
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 4,
+    "time": 67.5,
+    "boundary_s": 66.2,
+    "offset_s": 1.2999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.8998377568992413,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7601373195648193,
+      "E1": 0.6162669062614441,
+      "E2": 0.7485432624816895
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 5,
+    "time": 75.5,
+    "boundary_s": 74.9,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.999678186459094,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6863943934440613,
+      "E1": 0.9660466313362122,
+      "E2": 0.9733138680458069
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 6,
+    "time": 114.0,
+    "boundary_s": 112.9,
+    "offset_s": 1.0999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9995503731605273,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6887800097465515,
+      "E1": 0.9950284361839294,
+      "E2": 0.9965830445289612
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 1,
+    "time": 8.0,
+    "boundary_s": 6.766666666666667,
+    "offset_s": 1.2333333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.999974123989581,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7287279963493347,
+      "E1": 0.9997112154960632,
+      "E2": 0.9998144507408142
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 2,
+    "time": 43.5,
+    "boundary_s": 41.733333333333334,
+    "offset_s": 1.7666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9997135796971973,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7925328016281128,
+      "E1": 0.9981194138526917,
+      "E2": 0.9987218976020813
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 3,
+    "time": 50.0,
+    "boundary_s": 48.7,
+    "offset_s": 1.2999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9957889979751617,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7612122297286987,
+      "E1": 0.9468594789505005,
+      "E2": 0.9839701056480408
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 4,
+    "time": 65.0,
+    "boundary_s": 64.46666666666667,
+    "offset_s": 0.5333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9833381114519416,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.826907217502594,
+      "E1": 0.8057053685188293,
+      "E2": 0.9351536631584167
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 5,
+    "time": 74.5,
+    "boundary_s": 73.73333333333333,
+    "offset_s": 0.7666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9999878920489624,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.660808265209198,
+      "E1": 0.9948732256889343,
+      "E2": 0.9968581199645996
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 6,
+    "time": 124.0,
+    "boundary_s": 122.36666666666666,
+    "offset_s": 1.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9993280501357689,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7339795827865601,
+      "E1": 0.9975054860115051,
+      "E2": 0.9987664222717285
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 1,
+    "time": 8.0,
+    "boundary_s": 7.433333333333334,
+    "offset_s": 0.5666666666666664,
+    "already_begun": true,
+    "base_current_probability": 0.9991086584934491,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6773054003715515,
+      "E1": 0.9402104020118713,
+      "E2": 0.952508807182312
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 2,
+    "time": 71.0,
+    "boundary_s": 69.7,
+    "offset_s": 1.2999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9999823119208213,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.831325352191925,
+      "E1": 0.9997969269752502,
+      "E2": 0.9998130202293396
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 3,
+    "time": 75.0,
+    "boundary_s": 74.2,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.8484098289612197,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.69625324010849,
+      "E1": 0.9567722678184509,
+      "E2": 0.9248005747795105
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 4,
+    "time": 89.0,
+    "boundary_s": 86.03333333333333,
+    "offset_s": 2.9666666666666686,
+    "already_begun": true,
+    "base_current_probability": 0.948867809048901,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8216679096221924,
+      "E1": 0.3819683790206909,
+      "E2": 0.7683365941047668
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 5,
+    "time": 97.0,
+    "boundary_s": 95.93333333333334,
+    "offset_s": 1.0666666666666629,
+    "already_begun": true,
+    "base_current_probability": 0.9999977728316423,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7232704758644104,
+      "E1": 0.9960654377937317,
+      "E2": 0.9984503984451294
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 6,
+    "time": 132.5,
+    "boundary_s": 131.7,
+    "offset_s": 0.8000000000000114,
+    "already_begun": true,
+    "base_current_probability": 0.9708767965403458,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7071078419685364,
+      "E1": 0.9902265071868896,
+      "E2": 0.99455726146698
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 1,
+    "time": 10.5,
+    "boundary_s": 9.4,
+    "offset_s": 1.0999999999999996,
+    "already_begun": true,
+    "base_current_probability": 0.9999990156040033,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.698939323425293,
+      "E1": 0.9999988079071045,
+      "E2": 0.9999994039535522
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 2,
+    "time": 49.0,
+    "boundary_s": 47.833333333333336,
+    "offset_s": 1.1666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9985636278140673,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7252021431922913,
+      "E1": 0.9977895021438599,
+      "E2": 0.9977744221687317
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 3,
+    "time": 52.5,
+    "boundary_s": 51.6,
+    "offset_s": 0.8999999999999986,
+    "already_begun": true,
+    "base_current_probability": 0.9745005072532343,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7259300351142883,
+      "E1": 0.8371488451957703,
+      "E2": 0.9182223081588745
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 4,
+    "time": 62.5,
+    "boundary_s": 60.63333333333333,
+    "offset_s": 1.8666666666666671,
+    "already_begun": true,
+    "base_current_probability": 0.9796899968063469,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8169276118278503,
+      "E1": 0.8096470832824707,
+      "E2": 0.8904362916946411
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 5,
+    "time": 69.0,
+    "boundary_s": 68.4,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9969976675483241,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6690877079963684,
+      "E1": 0.9874953627586365,
+      "E2": 0.9950018525123596
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 6,
+    "time": 89.5,
+    "boundary_s": 88.3,
+    "offset_s": 1.2000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9984886561333087,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6917037963867188,
+      "E1": 0.994516909122467,
+      "E2": 0.9967461824417114
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 1,
+    "time": 9.0,
+    "boundary_s": 7.833333333333333,
+    "offset_s": 1.166666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9999992594683841,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6823900938034058,
+      "E1": 1.0,
+      "E2": 1.0
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 2,
+    "time": 40.0,
+    "boundary_s": 39.1,
+    "offset_s": 0.8999999999999986,
+    "already_begun": true,
+    "base_current_probability": 0.9998109055163691,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6205157041549683,
+      "E1": 0.9792563915252686,
+      "E2": 0.9806292057037354
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 3,
+    "time": 43.5,
+    "boundary_s": 43.06666666666667,
+    "offset_s": 0.43333333333333,
+    "already_begun": true,
+    "base_current_probability": 0.9338601246242533,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.6918742060661316,
+      "E1": 0.9028849005699158,
+      "E2": 0.9306260347366333
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 4,
+    "time": 61.0,
+    "boundary_s": 57.733333333333334,
+    "offset_s": 3.2666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9939060456919839,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8510851860046387,
+      "E1": 0.2639756202697754,
+      "E2": 0.5025337934494019
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 5,
+    "time": 76.5,
+    "boundary_s": 75.86666666666666,
+    "offset_s": 0.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9993347130677956,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6532849669456482,
+      "E1": 0.9946622252464294,
+      "E2": 0.9960196614265442
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 43,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 6,
+    "time": 104.0,
+    "boundary_s": 103.26666666666667,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.99526377245656,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6069888472557068,
+      "E1": 0.9705221056938171,
+      "E2": 0.9774330258369446
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 1,
+    "time": 8.5,
+    "boundary_s": 7.966666666666667,
+    "offset_s": 0.5333333333333332,
+    "already_begun": true,
+    "base_current_probability": 0.9999999999999878,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6373409032821655,
+      "E1": 0.9919731616973877,
+      "E2": 0.9964411854743958
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 2,
+    "time": 52.5,
+    "boundary_s": 52.53333333333333,
+    "offset_s": -0.03333333333333144,
+    "already_begun": false,
+    "base_current_probability": 0.9991138696795417,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6451679468154907,
+      "E1": 0.3857274055480957,
+      "E2": 0.652409553527832
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 3,
+    "time": 60.0,
+    "boundary_s": 59.7,
+    "offset_s": 0.29999999999999716,
+    "already_begun": true,
+    "base_current_probability": 0.9999993415282652,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.822104811668396,
+      "E1": 0.8185763359069824,
+      "E2": 0.8561235070228577
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 4,
+    "time": 91.0,
+    "boundary_s": 91.3,
+    "offset_s": -0.29999999999999716,
+    "already_begun": false,
+    "base_current_probability": 0.9809611220575808,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.4503030776977539,
+      "E1": 0.3281211256980896,
+      "E2": 0.4637039601802826
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 5,
+    "time": 115.5,
+    "boundary_s": 114.7,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9999999999982376,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7322331666946411,
+      "E1": 0.8920100331306458,
+      "E2": 0.9046452641487122
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "f5f45674ba11f7f1c266776b",
+    "source_recording_id": "9d82f039d8504a8aa888aff08074a5b4",
+    "ordinal": 6,
+    "time": 152.5,
+    "boundary_s": 150.2,
+    "offset_s": 2.3000000000000114,
+    "already_begun": true,
+    "base_current_probability": 0.9997875469357795,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6661872267723083,
+      "E1": 0.9462758898735046,
+      "E2": 0.9659961462020874
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 1,
+    "time": 11.0,
+    "boundary_s": 10.4,
+    "offset_s": 0.5999999999999996,
+    "already_begun": true,
+    "base_current_probability": 0.9999998756049063,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6342214941978455,
+      "E1": 0.977800726890564,
+      "E2": 0.9893201589584351
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 2,
+    "time": 45.0,
+    "boundary_s": 44.266666666666666,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.9999999996079825,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.738511323928833,
+      "E1": 0.954706609249115,
+      "E2": 0.9827478528022766
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 3,
+    "time": 50.5,
+    "boundary_s": 48.53333333333333,
+    "offset_s": 1.9666666666666686,
+    "already_begun": true,
+    "base_current_probability": 0.9999980600956144,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.909893274307251,
+      "E1": 0.6999540328979492,
+      "E2": 0.9159151911735535
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 4,
+    "time": 66.5,
+    "boundary_s": 66.93333333333334,
+    "offset_s": -0.4333333333333371,
+    "already_begun": false,
+    "base_current_probability": 0.9983881773195995,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.3257558345794678,
+      "E1": 0.5993291139602661,
+      "E2": 0.6200346946716309
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 5,
+    "time": 77.0,
+    "boundary_s": 76.23333333333333,
+    "offset_s": 0.7666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9999999993538411,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7160951495170593,
+      "E1": 0.9981023669242859,
+      "E2": 0.9992257356643677
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "943dd481c0f37b921a3912b4",
+    "source_recording_id": "b6cda8f38ada48f293f1f43b7fc8373c",
+    "ordinal": 6,
+    "time": 102.5,
+    "boundary_s": 101.66666666666667,
+    "offset_s": 0.8333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.9969513882607804,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6764032244682312,
+      "E1": 0.9124030470848083,
+      "E2": 0.9433017373085022
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 1,
+    "time": 7.5,
+    "boundary_s": 6.966666666666667,
+    "offset_s": 0.5333333333333332,
+    "already_begun": true,
+    "base_current_probability": 0.9999998945436077,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6306381225585938,
+      "E1": 0.9158186912536621,
+      "E2": 0.9612703323364258
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 2,
+    "time": 49.5,
+    "boundary_s": 48.333333333333336,
+    "offset_s": 1.1666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9999999796674357,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.735499918460846,
+      "E1": 0.9971331357955933,
+      "E2": 0.997395396232605
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 3,
+    "time": 53.5,
+    "boundary_s": 52.833333333333336,
+    "offset_s": 0.6666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9993307400406692,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.8437051773071289,
+      "E1": 0.9359851479530334,
+      "E2": 0.929965615272522
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 4,
+    "time": 79.0,
+    "boundary_s": 75.66666666666667,
+    "offset_s": 3.3333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.9949125320581037,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.4729384779930115,
+      "E1": 0.9966737031936646,
+      "E2": 0.9927451014518738
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 5,
+    "time": 84.0,
+    "boundary_s": 83.46666666666667,
+    "offset_s": 0.5333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9999999330674074,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7271022796630859,
+      "E1": 0.8397988677024841,
+      "E2": 0.9039304852485657
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "32cba3eecb1d98e78b914611",
+    "source_recording_id": "ab41cacd1b154778849b002cfde263dc",
+    "ordinal": 6,
+    "time": 113.5,
+    "boundary_s": 112.96666666666667,
+    "offset_s": 0.5333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.991859875234024,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6345467567443848,
+      "E1": 0.868330717086792,
+      "E2": 0.9056212902069092
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 1,
+    "time": 7.0,
+    "boundary_s": 6.433333333333334,
+    "offset_s": 0.5666666666666664,
+    "already_begun": true,
+    "base_current_probability": 0.9999999701538484,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6375355124473572,
+      "E1": 0.9082766771316528,
+      "E2": 0.9643160104751587
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 2,
+    "time": 38.5,
+    "boundary_s": 37.93333333333333,
+    "offset_s": 0.56666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9999915839827999,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7382696270942688,
+      "E1": 0.8370013236999512,
+      "E2": 0.9517155289649963
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 3,
+    "time": 42.5,
+    "boundary_s": 42.266666666666666,
+    "offset_s": 0.23333333333333428,
+    "already_begun": true,
+    "base_current_probability": 0.9992471076315378,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.8002392649650574,
+      "E1": 0.9634275436401367,
+      "E2": 0.9700274467468262
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 4,
+    "time": 52.0,
+    "boundary_s": 49.7,
+    "offset_s": 2.299999999999997,
+    "already_begun": true,
+    "base_current_probability": 0.989955145314505,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.33746472001075745,
+      "E1": 0.7484344244003296,
+      "E2": 0.7224448919296265
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 5,
+    "time": 63.5,
+    "boundary_s": 62.666666666666664,
+    "offset_s": 0.8333333333333357,
+    "already_begun": true,
+    "base_current_probability": 0.9999879942961876,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7376845479011536,
+      "E1": 0.9577427506446838,
+      "E2": 0.9793193936347961
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d11360e8662efcc1e2972811",
+    "source_recording_id": "100189b6fc7541afbe8ed11a0c62fa22",
+    "ordinal": 6,
+    "time": 104.5,
+    "boundary_s": 103.86666666666666,
+    "offset_s": 0.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9999970998240204,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.711866021156311,
+      "E1": 0.9609143137931824,
+      "E2": 0.9773129224777222
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 1,
+    "time": 8.5,
+    "boundary_s": 8.0,
+    "offset_s": 0.5,
+    "already_begun": true,
+    "base_current_probability": 0.9999990249747631,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6353935599327087,
+      "E1": 0.9858668446540833,
+      "E2": 0.992150068283081
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 2,
+    "time": 46.0,
+    "boundary_s": 45.36666666666667,
+    "offset_s": 0.6333333333333329,
+    "already_begun": true,
+    "base_current_probability": 0.9999993356415886,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7368836402893066,
+      "E1": 0.9912102222442627,
+      "E2": 0.9950030446052551
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 3,
+    "time": 51.0,
+    "boundary_s": 50.2,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9864943118784212,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.6552756428718567,
+      "E1": 0.9161208271980286,
+      "E2": 0.8616740703582764
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 4,
+    "time": 70.0,
+    "boundary_s": 68.3,
+    "offset_s": 1.7000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9998941884389457,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7104640603065491,
+      "E1": 0.5997009873390198,
+      "E2": 0.9000198245048523
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 5,
+    "time": 77.5,
+    "boundary_s": 76.8,
+    "offset_s": 0.7000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9990784860875712,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6953256130218506,
+      "E1": 0.8598212599754333,
+      "E2": 0.9424323439598083
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "603c11bbee3eec719e38973e",
+    "source_recording_id": "414680f4bdbb42afb8976f8163a45eb8",
+    "ordinal": 6,
+    "time": 89.5,
+    "boundary_s": 88.1,
+    "offset_s": 1.4000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9999973420583709,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7756837606430054,
+      "E1": 0.8038027882575989,
+      "E2": 0.9232731461524963
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 1,
+    "time": 7.0,
+    "boundary_s": 6.333333333333333,
+    "offset_s": 0.666666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9999999994034485,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6377593874931335,
+      "E1": 0.9333765506744385,
+      "E2": 0.9789628386497498
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 2,
+    "time": 37.5,
+    "boundary_s": 36.333333333333336,
+    "offset_s": 1.1666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9999987314901346,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7266094088554382,
+      "E1": 0.99504154920578,
+      "E2": 0.996551513671875
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 3,
+    "time": 42.5,
+    "boundary_s": 41.4,
+    "offset_s": 1.1000000000000014,
+    "already_begun": true,
+    "base_current_probability": 0.9999986797247046,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.8748388290405273,
+      "E1": 0.9079374074935913,
+      "E2": 0.9577081799507141
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 4,
+    "time": 67.5,
+    "boundary_s": 66.2,
+    "offset_s": 1.2999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9995881333362482,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.6639315485954285,
+      "E1": 0.6071176528930664,
+      "E2": 0.8429699540138245
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 5,
+    "time": 75.5,
+    "boundary_s": 74.9,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9999999706332121,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7332854270935059,
+      "E1": 0.9543453454971313,
+      "E2": 0.9854604601860046
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "da9a9ee05f8293df1591d448",
+    "source_recording_id": "e9f631dd459a4699b51e8a210747d693",
+    "ordinal": 6,
+    "time": 114.0,
+    "boundary_s": 112.9,
+    "offset_s": 1.0999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9999991942119759,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6691871285438538,
+      "E1": 0.9927263259887695,
+      "E2": 0.9940699934959412
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 1,
+    "time": 7.5,
+    "boundary_s": 6.766666666666667,
+    "offset_s": 0.7333333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9999999989586421,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6376662254333496,
+      "E1": 0.8979411125183105,
+      "E2": 0.9557232856750488
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 2,
+    "time": 43.5,
+    "boundary_s": 41.733333333333334,
+    "offset_s": 1.7666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9999998792002368,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7302814722061157,
+      "E1": 0.9975045323371887,
+      "E2": 0.9981166124343872
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 3,
+    "time": 50.5,
+    "boundary_s": 48.7,
+    "offset_s": 1.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9999503748087747,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.8807295560836792,
+      "E1": 0.8893153071403503,
+      "E2": 0.9545886516571045
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 4,
+    "time": 64.0,
+    "boundary_s": 64.46666666666667,
+    "offset_s": -0.46666666666666856,
+    "already_begun": false,
+    "base_current_probability": 0.97183032009013,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.5725064277648926,
+      "E1": 0.8896405100822449,
+      "E2": 0.921964168548584
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 5,
+    "time": 74.5,
+    "boundary_s": 73.73333333333333,
+    "offset_s": 0.7666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9999999999864171,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7324862480163574,
+      "E1": 0.9979143738746643,
+      "E2": 0.9987699389457703
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "d7386f672b184f6fd3ce826c",
+    "source_recording_id": "0b75cbb15ab347d1957f5b503b6c0a79",
+    "ordinal": 6,
+    "time": 123.5,
+    "boundary_s": 122.36666666666666,
+    "offset_s": 1.13333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.999466543551806,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.5855854153633118,
+      "E1": 0.9775204062461853,
+      "E2": 0.9824120402336121
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 1,
+    "time": 8.0,
+    "boundary_s": 7.433333333333334,
+    "offset_s": 0.5666666666666664,
+    "already_begun": true,
+    "base_current_probability": 0.9999999982078007,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6359197497367859,
+      "E1": 0.9336329698562622,
+      "E2": 0.9667638540267944
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 2,
+    "time": 70.5,
+    "boundary_s": 69.7,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9999848154501034,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.722870945930481,
+      "E1": 0.9932212829589844,
+      "E2": 0.9974937438964844
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 3,
+    "time": 75.0,
+    "boundary_s": 74.2,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9709729875970544,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7946419715881348,
+      "E1": 0.9444977641105652,
+      "E2": 0.9343188405036926
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 4,
+    "time": 89.0,
+    "boundary_s": 86.03333333333333,
+    "offset_s": 2.9666666666666686,
+    "already_begun": true,
+    "base_current_probability": 0.9962826901895411,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7189956903457642,
+      "E1": 0.39734065532684326,
+      "E2": 0.8009510636329651
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 5,
+    "time": 96.5,
+    "boundary_s": 95.93333333333334,
+    "offset_s": 0.5666666666666629,
+    "already_begun": true,
+    "base_current_probability": 0.9999984401370832,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.728491485118866,
+      "E1": 0.9777446389198303,
+      "E2": 0.9784084558486938
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "6d19dc89e407f785df4ee2c6",
+    "source_recording_id": "40a09925ecca4a80a20d75b6d954401e",
+    "ordinal": 6,
+    "time": 132.5,
+    "boundary_s": 131.7,
+    "offset_s": 0.8000000000000114,
+    "already_begun": true,
+    "base_current_probability": 0.9989498167992508,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7406633496284485,
+      "E1": 0.9871504306793213,
+      "E2": 0.9890841841697693
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 1,
+    "time": 10.0,
+    "boundary_s": 9.4,
+    "offset_s": 0.5999999999999996,
+    "already_begun": true,
+    "base_current_probability": 0.9999999974994198,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6372502446174622,
+      "E1": 0.999359667301178,
+      "E2": 0.9997703433036804
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 2,
+    "time": 49.0,
+    "boundary_s": 47.833333333333336,
+    "offset_s": 1.1666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9999998917503168,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7266178131103516,
+      "E1": 0.9978639483451843,
+      "E2": 0.9983463287353516
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 3,
+    "time": 52.5,
+    "boundary_s": 51.6,
+    "offset_s": 0.8999999999999986,
+    "already_begun": true,
+    "base_current_probability": 0.9994956875537737,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.8315995335578918,
+      "E1": 0.8702241778373718,
+      "E2": 0.9504494667053223
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 4,
+    "time": 62.0,
+    "boundary_s": 60.63333333333333,
+    "offset_s": 1.3666666666666671,
+    "already_begun": true,
+    "base_current_probability": 0.99999932902019,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.3531566262245178,
+      "E1": 0.8597166538238525,
+      "E2": 0.8261422514915466
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 5,
+    "time": 69.0,
+    "boundary_s": 68.4,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9987003170994414,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.733801543712616,
+      "E1": 0.9908190369606018,
+      "E2": 0.9970447421073914
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "a81e13951489b866c2710d81",
+    "source_recording_id": "d41b53c254f44184928bc21d4b4aee27",
+    "ordinal": 6,
+    "time": 89.0,
+    "boundary_s": 88.3,
+    "offset_s": 0.7000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9999932444853745,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.5415776968002319,
+      "E1": 0.985711395740509,
+      "E2": 0.9774888753890991
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 1,
+    "time": 9.0,
+    "boundary_s": 7.833333333333333,
+    "offset_s": 1.166666666666667,
+    "already_begun": true,
+    "base_current_probability": 1.0,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6834863424301147,
+      "E1": 0.9999998807907104,
+      "E2": 1.0
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 2,
+    "time": 40.0,
+    "boundary_s": 39.1,
+    "offset_s": 0.8999999999999986,
+    "already_begun": true,
+    "base_current_probability": 0.9999998475227204,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7027223706245422,
+      "E1": 0.9701663255691528,
+      "E2": 0.9857287406921387
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 3,
+    "time": 43.5,
+    "boundary_s": 43.06666666666667,
+    "offset_s": 0.43333333333333,
+    "already_begun": true,
+    "base_current_probability": 0.9993555654142356,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7703829407691956,
+      "E1": 0.9374434947967529,
+      "E2": 0.9418848156929016
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 4,
+    "time": 60.5,
+    "boundary_s": 57.733333333333334,
+    "offset_s": 2.7666666666666657,
+    "already_begun": true,
+    "base_current_probability": 0.9998844201460154,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.38440805673599243,
+      "E1": 0.7956985831260681,
+      "E2": 0.859890341758728
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 5,
+    "time": 76.5,
+    "boundary_s": 75.86666666666666,
+    "offset_s": 0.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9999999339639783,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7290867567062378,
+      "E1": 0.9961469173431396,
+      "E2": 0.9969127178192139
+    }
+  },
+  {
+    "cohort": "oof10_base_unseen_exposed",
+    "seed": 44,
+    "episode_id": "72b720c740242be509750414",
+    "source_recording_id": "3c29c0c5dde3471583caec540be40cbb",
+    "ordinal": 6,
+    "time": 104.0,
+    "boundary_s": 103.26666666666667,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.9999213839931707,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.5746910572052002,
+      "E1": 0.9679580330848694,
+      "E2": 0.9579480290412903
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 1,
+    "time": 9.5,
+    "boundary_s": 8.833333333333334,
+    "offset_s": 0.6666666666666661,
+    "already_begun": true,
+    "base_current_probability": 0.9972643018690858,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6182818412780762,
+      "E1": 0.9253800511360168,
+      "E2": 0.9566251039505005
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 2,
+    "time": 56.5,
+    "boundary_s": 55.8,
+    "offset_s": 0.7000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9927083758875039,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.5952680706977844,
+      "E1": 0.825483500957489,
+      "E2": 0.9136497974395752
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 3,
+    "time": 61.5,
+    "boundary_s": 61.766666666666666,
+    "offset_s": -0.2666666666666657,
+    "already_begun": false,
+    "base_current_probability": 0.9585951304745294,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.509480357170105,
+      "E1": 0.7858842015266418,
+      "E2": 0.6769403219223022
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 4,
+    "time": 72.0,
+    "boundary_s": 74.23333333333333,
+    "offset_s": -2.2333333333333343,
+    "already_begun": false,
+    "base_current_probability": 0.9889040537306228,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.5702142119407654,
+      "E1": 0.7885157465934753,
+      "E2": 0.8089644908905029
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 5,
+    "time": 82.0,
+    "boundary_s": 81.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9997441299726311,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.4984458386898041,
+      "E1": 0.9332894682884216,
+      "E2": 0.9592158198356628
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 6,
+    "time": 130.0,
+    "boundary_s": 129.2,
+    "offset_s": 0.8000000000000114,
+    "already_begun": true,
+    "base_current_probability": 0.9999686983227701,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7614010572433472,
+      "E1": 0.8964521288871765,
+      "E2": 0.9512313008308411
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 1,
+    "time": 11.0,
+    "boundary_s": 10.233333333333333,
+    "offset_s": 0.7666666666666675,
+    "already_begun": true,
+    "base_current_probability": 0.9944201194979099,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6166195273399353,
+      "E1": 0.9889011383056641,
+      "E2": 0.9943141341209412
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 2,
+    "time": 77.5,
+    "boundary_s": 76.6,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9981719639402106,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6183251142501831,
+      "E1": 0.7807682156562805,
+      "E2": 0.8676766157150269
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 3,
+    "time": 83.5,
+    "boundary_s": 82.46666666666667,
+    "offset_s": 1.0333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9992634928464672,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7437094449996948,
+      "E1": 0.5976355075836182,
+      "E2": 0.7941418886184692
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 4,
+    "time": 110.0,
+    "boundary_s": 109.6,
+    "offset_s": 0.4000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9998714500148959,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8117302060127258,
+      "E1": 0.6689135432243347,
+      "E2": 0.9159992933273315
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 5,
+    "time": 120.5,
+    "boundary_s": 119.4,
+    "offset_s": 1.0999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9989734018609066,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.559312641620636,
+      "E1": 0.9682933688163757,
+      "E2": 0.9826715588569641
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 6,
+    "time": 170.5,
+    "boundary_s": 169.9,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9935777871130148,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7307590246200562,
+      "E1": 0.9054778218269348,
+      "E2": 0.9662083387374878
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 1,
+    "time": 8.5,
+    "boundary_s": 7.566666666666666,
+    "offset_s": 0.9333333333333336,
+    "already_begun": true,
+    "base_current_probability": 0.9572544981025758,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6159796118736267,
+      "E1": 0.9910448789596558,
+      "E2": 0.9956484436988831
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 2,
+    "time": 74.5,
+    "boundary_s": 73.86666666666666,
+    "offset_s": 0.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9967608603060782,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.5763449668884277,
+      "E1": 0.8853506445884705,
+      "E2": 0.9278278946876526
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 3,
+    "time": 81.5,
+    "boundary_s": 80.66666666666667,
+    "offset_s": 0.8333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.9964123525644786,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7149635553359985,
+      "E1": 0.9947187900543213,
+      "E2": 0.9950319528579712
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 4,
+    "time": 103.0,
+    "boundary_s": 99.13333333333334,
+    "offset_s": 3.86666666666666,
+    "already_begun": true,
+    "base_current_probability": 0.8111478230353659,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8235487341880798,
+      "E1": 0.42959970235824585,
+      "E2": 0.6445575952529907
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 5,
+    "time": 114.5,
+    "boundary_s": 113.76666666666667,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.9994443814200425,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5399274826049805,
+      "E1": 0.7876587510108948,
+      "E2": 0.9266590476036072
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 6,
+    "time": 177.0,
+    "boundary_s": 175.56666666666666,
+    "offset_s": 1.4333333333333371,
+    "already_begun": true,
+    "base_current_probability": 0.9991345461186412,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.8043063282966614,
+      "E1": 0.9782199859619141,
+      "E2": 0.9882138967514038
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 1,
+    "time": 10.5,
+    "boundary_s": 9.566666666666666,
+    "offset_s": 0.9333333333333336,
+    "already_begun": true,
+    "base_current_probability": 0.999244439750108,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6168880462646484,
+      "E1": 0.9858450889587402,
+      "E2": 0.9921544194221497
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 2,
+    "time": 72.0,
+    "boundary_s": 71.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9968942005262924,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.62083899974823,
+      "E1": 0.5978353023529053,
+      "E2": 0.7501635551452637
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 3,
+    "time": 78.5,
+    "boundary_s": 77.6,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.96047520088649,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7264338731765747,
+      "E1": 0.9691010117530823,
+      "E2": 0.9862956404685974
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 4,
+    "time": 91.5,
+    "boundary_s": 90.4,
+    "offset_s": 1.0999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9843042303219882,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7433958649635315,
+      "E1": 0.902758002281189,
+      "E2": 0.9520946741104126
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 5,
+    "time": 101.5,
+    "boundary_s": 100.66666666666667,
+    "offset_s": 0.8333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.9964628913850752,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5503270030021667,
+      "E1": 0.9963036775588989,
+      "E2": 0.9976454377174377
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 6,
+    "time": 139.5,
+    "boundary_s": 138.63333333333333,
+    "offset_s": 0.8666666666666742,
+    "already_begun": true,
+    "base_current_probability": 0.9984906824639561,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.751667857170105,
+      "E1": 0.9232884049415588,
+      "E2": 0.954177737236023
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 1,
+    "time": 8.5,
+    "boundary_s": 7.366666666666666,
+    "offset_s": 1.1333333333333337,
+    "already_begun": true,
+    "base_current_probability": 0.9999205377029139,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6185796856880188,
+      "E1": 0.9466648101806641,
+      "E2": 0.9772475361824036
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 2,
+    "time": 58.5,
+    "boundary_s": 57.6,
+    "offset_s": 0.8999999999999986,
+    "already_begun": true,
+    "base_current_probability": 0.9988282179902443,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.746812105178833,
+      "E1": 0.9477216005325317,
+      "E2": 0.968575656414032
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 3,
+    "time": 64.0,
+    "boundary_s": 62.8,
+    "offset_s": 1.2000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9997025710885863,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7227318286895752,
+      "E1": 0.9898216724395752,
+      "E2": 0.9795761108398438
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 4,
+    "time": 91.5,
+    "boundary_s": 90.3,
+    "offset_s": 1.2000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.8873015537459739,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.6407376527786255,
+      "E1": 0.8682859539985657,
+      "E2": 0.9528663158416748
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 5,
+    "time": 100.0,
+    "boundary_s": 99.1,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9704169480165108,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5392218828201294,
+      "E1": 0.9716413021087646,
+      "E2": 0.9889472723007202
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 6,
+    "time": 138.0,
+    "boundary_s": 136.96666666666667,
+    "offset_s": 1.0333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9996052474047222,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.8020446300506592,
+      "E1": 0.9693982005119324,
+      "E2": 0.9847359657287598
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 1,
+    "time": 8.0,
+    "boundary_s": 7.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9993512659652485,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6168595552444458,
+      "E1": 0.9998342990875244,
+      "E2": 0.9999897480010986
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 2,
+    "time": 63.0,
+    "boundary_s": 62.96666666666667,
+    "offset_s": 0.03333333333333144,
+    "already_begun": true,
+    "base_current_probability": 0.9999630854443521,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6747022271156311,
+      "E1": 0.8937557339668274,
+      "E2": 0.9470921158790588
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 3,
+    "time": 67.5,
+    "boundary_s": 66.2,
+    "offset_s": 1.2999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9987056923417579,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.6114241480827332,
+      "E1": 0.8707467913627625,
+      "E2": 0.8770551681518555
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 4,
+    "time": 99.5,
+    "boundary_s": 94.86666666666666,
+    "offset_s": 4.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9779230744205396,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.4973452091217041,
+      "E1": 0.8723244071006775,
+      "E2": 0.9053769707679749
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 5,
+    "time": 107.5,
+    "boundary_s": 106.6,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9999741485533092,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5368117690086365,
+      "E1": 0.9997205138206482,
+      "E2": 0.9998207688331604
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 6,
+    "time": 176.0,
+    "boundary_s": 175.43333333333334,
+    "offset_s": 0.5666666666666629,
+    "already_begun": true,
+    "base_current_probability": 0.9999991185450201,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7066637873649597,
+      "E1": 0.8186620473861694,
+      "E2": 0.8045070767402649
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 1,
+    "time": 6.0,
+    "boundary_s": 5.5,
+    "offset_s": 0.5,
+    "already_begun": true,
+    "base_current_probability": 0.9998620963084095,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6181063055992126,
+      "E1": 0.9499325156211853,
+      "E2": 0.9822980165481567
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 2,
+    "time": 38.0,
+    "boundary_s": 37.13333333333333,
+    "offset_s": 0.8666666666666671,
+    "already_begun": true,
+    "base_current_probability": 0.9995149161028872,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6038908362388611,
+      "E1": 0.9960724115371704,
+      "E2": 0.9968425035476685
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 3,
+    "time": 41.0,
+    "boundary_s": 40.13333333333333,
+    "offset_s": 0.8666666666666671,
+    "already_begun": true,
+    "base_current_probability": 0.9953975958492134,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.6597256064414978,
+      "E1": 0.8619017601013184,
+      "E2": 0.9169718623161316
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 4,
+    "time": 66.0,
+    "boundary_s": 65.26666666666667,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.9808530653350562,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.37112584710121155,
+      "E1": 0.9241657257080078,
+      "E2": 0.9533255696296692
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 5,
+    "time": 71.0,
+    "boundary_s": 70.46666666666667,
+    "offset_s": 0.5333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.997648079052912,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5333936810493469,
+      "E1": 0.9223494529724121,
+      "E2": 0.9710021615028381
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 6,
+    "time": 87.5,
+    "boundary_s": 86.7,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9932798728915382,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7533645033836365,
+      "E1": 0.9664767980575562,
+      "E2": 0.9805037975311279
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 1,
+    "time": 5.5,
+    "boundary_s": 5.0,
+    "offset_s": 0.5,
+    "already_begun": true,
+    "base_current_probability": 0.9999474335537345,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6183927655220032,
+      "E1": 0.9928237199783325,
+      "E2": 0.9965395927429199
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 2,
+    "time": 45.5,
+    "boundary_s": 44.833333333333336,
+    "offset_s": 0.6666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.999670636640482,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6023359298706055,
+      "E1": 0.9996775388717651,
+      "E2": 0.9996330738067627
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 3,
+    "time": 48.5,
+    "boundary_s": 47.93333333333333,
+    "offset_s": 0.56666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9995063502416476,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.6675887703895569,
+      "E1": 0.8532114028930664,
+      "E2": 0.860419750213623
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 4,
+    "time": 67.5,
+    "boundary_s": 65.6,
+    "offset_s": 1.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.997416391384367,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8113150596618652,
+      "E1": 0.45635131001472473,
+      "E2": 0.6279357671737671
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 5,
+    "time": 71.0,
+    "boundary_s": 70.9,
+    "offset_s": 0.09999999999999432,
+    "already_begun": true,
+    "base_current_probability": 0.9998663371838361,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.5542218685150146,
+      "E1": 0.9997387528419495,
+      "E2": 0.9998763799667358
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 42,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 6,
+    "time": 90.5,
+    "boundary_s": 89.6,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9958016461414211,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7408561706542969,
+      "E1": 0.9988338351249695,
+      "E2": 0.999146580696106
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 1,
+    "time": 9.5,
+    "boundary_s": 8.833333333333334,
+    "offset_s": 0.6666666666666661,
+    "already_begun": true,
+    "base_current_probability": 0.9874021876914058,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6750693321228027,
+      "E1": 0.8881202936172485,
+      "E2": 0.948615312576294
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 2,
+    "time": 56.5,
+    "boundary_s": 55.8,
+    "offset_s": 0.7000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9925530941857916,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7273876070976257,
+      "E1": 0.8876811265945435,
+      "E2": 0.9316431283950806
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 3,
+    "time": 62.0,
+    "boundary_s": 61.766666666666666,
+    "offset_s": 0.23333333333333428,
+    "already_begun": true,
+    "base_current_probability": 0.9325873350202416,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7043356895446777,
+      "E1": 0.9662162065505981,
+      "E2": 0.9786961078643799
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 4,
+    "time": 71.5,
+    "boundary_s": 74.23333333333333,
+    "offset_s": -2.7333333333333343,
+    "already_begun": false,
+    "base_current_probability": 0.9948466165105445,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8183590769767761,
+      "E1": 0.9567604660987854,
+      "E2": 0.960419774055481
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 5,
+    "time": 82.0,
+    "boundary_s": 81.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9991739669159795,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6656006574630737,
+      "E1": 0.9346617460250854,
+      "E2": 0.9690194725990295
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 6,
+    "time": 130.0,
+    "boundary_s": 129.2,
+    "offset_s": 0.8000000000000114,
+    "already_begun": true,
+    "base_current_probability": 0.9999862143504902,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7473023533821106,
+      "E1": 0.9149008393287659,
+      "E2": 0.9749487042427063
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 1,
+    "time": 11.0,
+    "boundary_s": 10.233333333333333,
+    "offset_s": 0.7666666666666675,
+    "already_begun": true,
+    "base_current_probability": 0.9924434386442136,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6826752424240112,
+      "E1": 0.9815519452095032,
+      "E2": 0.9899083375930786
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 2,
+    "time": 77.5,
+    "boundary_s": 76.6,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9976203857530591,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6864671111106873,
+      "E1": 0.829679012298584,
+      "E2": 0.9040908813476562
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 3,
+    "time": 83.5,
+    "boundary_s": 82.46666666666667,
+    "offset_s": 1.0333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9939764027227879,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7330474257469177,
+      "E1": 0.6257532835006714,
+      "E2": 0.8745487928390503
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 4,
+    "time": 109.5,
+    "boundary_s": 109.6,
+    "offset_s": -0.09999999999999432,
+    "already_begun": false,
+    "base_current_probability": 0.9939855183671338,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7811715006828308,
+      "E1": 0.9320377111434937,
+      "E2": 0.9622377753257751
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 5,
+    "time": 120.5,
+    "boundary_s": 119.4,
+    "offset_s": 1.0999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9999814075608424,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6628063917160034,
+      "E1": 0.9688060879707336,
+      "E2": 0.9864618182182312
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 6,
+    "time": 171.0,
+    "boundary_s": 169.9,
+    "offset_s": 1.0999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9976832940693445,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7476363182067871,
+      "E1": 0.9583038687705994,
+      "E2": 0.9864278435707092
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 1,
+    "time": 9.5,
+    "boundary_s": 7.566666666666666,
+    "offset_s": 1.9333333333333336,
+    "already_begun": true,
+    "base_current_probability": 0.9799458938803804,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.8325850963592529,
+      "E1": 0.9979033470153809,
+      "E2": 0.9996817111968994
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 2,
+    "time": 74.5,
+    "boundary_s": 73.86666666666666,
+    "offset_s": 0.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9932886793574183,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6658279299736023,
+      "E1": 0.9285398125648499,
+      "E2": 0.9577745199203491
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 3,
+    "time": 81.5,
+    "boundary_s": 80.66666666666667,
+    "offset_s": 0.8333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.993264908359459,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.8007909059524536,
+      "E1": 0.995419979095459,
+      "E2": 0.9976072311401367
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 4,
+    "time": 104.5,
+    "boundary_s": 99.13333333333334,
+    "offset_s": 5.36666666666666,
+    "already_begun": true,
+    "base_current_probability": 0.9628745869268599,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7223514318466187,
+      "E1": 0.9720259308815002,
+      "E2": 0.9677321314811707
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 5,
+    "time": 114.5,
+    "boundary_s": 113.76666666666667,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.9979778631578407,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6850414276123047,
+      "E1": 0.8585278987884521,
+      "E2": 0.9391136169433594
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 6,
+    "time": 177.0,
+    "boundary_s": 175.56666666666666,
+    "offset_s": 1.4333333333333371,
+    "already_begun": true,
+    "base_current_probability": 0.9987559079577255,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6983761787414551,
+      "E1": 0.9822805523872375,
+      "E2": 0.9894436597824097
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 1,
+    "time": 10.5,
+    "boundary_s": 9.566666666666666,
+    "offset_s": 0.9333333333333336,
+    "already_begun": true,
+    "base_current_probability": 0.9809458150955106,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6836622357368469,
+      "E1": 0.9853326678276062,
+      "E2": 0.9844462275505066
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 2,
+    "time": 72.0,
+    "boundary_s": 71.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9899009170332931,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7317099571228027,
+      "E1": 0.6008458733558655,
+      "E2": 0.8141353726387024
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 3,
+    "time": 79.5,
+    "boundary_s": 77.6,
+    "offset_s": 1.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9894289593018318,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7964134812355042,
+      "E1": 0.9800308346748352,
+      "E2": 0.9913197159767151
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 4,
+    "time": 91.0,
+    "boundary_s": 90.4,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.985268679565633,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8041484355926514,
+      "E1": 0.880376935005188,
+      "E2": 0.9474153518676758
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 5,
+    "time": 101.5,
+    "boundary_s": 100.66666666666667,
+    "offset_s": 0.8333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.971775373210192,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6852508783340454,
+      "E1": 0.9957946538925171,
+      "E2": 0.9975142478942871
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 6,
+    "time": 139.5,
+    "boundary_s": 138.63333333333333,
+    "offset_s": 0.8666666666666742,
+    "already_begun": true,
+    "base_current_probability": 0.9974900596486188,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7206081748008728,
+      "E1": 0.9501895904541016,
+      "E2": 0.9715335965156555
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 1,
+    "time": 8.5,
+    "boundary_s": 7.366666666666666,
+    "offset_s": 1.1333333333333337,
+    "already_begun": true,
+    "base_current_probability": 0.9985703820643304,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6868079304695129,
+      "E1": 0.9600856304168701,
+      "E2": 0.9758687615394592
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 2,
+    "time": 58.5,
+    "boundary_s": 57.6,
+    "offset_s": 0.8999999999999986,
+    "already_begun": true,
+    "base_current_probability": 0.9982088146319176,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7810888290405273,
+      "E1": 0.9736401438713074,
+      "E2": 0.984096884727478
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 3,
+    "time": 64.5,
+    "boundary_s": 62.8,
+    "offset_s": 1.7000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9945352510945746,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7362117171287537,
+      "E1": 0.9826258420944214,
+      "E2": 0.9899145364761353
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 4,
+    "time": 91.5,
+    "boundary_s": 90.3,
+    "offset_s": 1.2000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9364575558983326,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8448073863983154,
+      "E1": 0.8728230595588684,
+      "E2": 0.952398419380188
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 5,
+    "time": 101.0,
+    "boundary_s": 99.1,
+    "offset_s": 1.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9999972058095405,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.8088776469230652,
+      "E1": 0.9852420687675476,
+      "E2": 0.9963345527648926
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 6,
+    "time": 138.0,
+    "boundary_s": 136.96666666666667,
+    "offset_s": 1.0333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9979953459138942,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7392627596855164,
+      "E1": 0.9827562570571899,
+      "E2": 0.9925325512886047
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 1,
+    "time": 8.0,
+    "boundary_s": 7.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9988244954242654,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6862855553627014,
+      "E1": 0.9998812675476074,
+      "E2": 0.9999196529388428
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 2,
+    "time": 63.0,
+    "boundary_s": 62.96666666666667,
+    "offset_s": 0.03333333333333144,
+    "already_begun": true,
+    "base_current_probability": 0.9999612923018553,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7953412532806396,
+      "E1": 0.9332168698310852,
+      "E2": 0.9663886427879333
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 3,
+    "time": 67.5,
+    "boundary_s": 66.2,
+    "offset_s": 1.2999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9869772995850895,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.6801272630691528,
+      "E1": 0.9015743136405945,
+      "E2": 0.9052631258964539
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 4,
+    "time": 100.0,
+    "boundary_s": 94.86666666666666,
+    "offset_s": 5.13333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9888808575304987,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8507964611053467,
+      "E1": 0.8234446048736572,
+      "E2": 0.9133870601654053
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 5,
+    "time": 107.5,
+    "boundary_s": 106.6,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.999990594106211,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6793432235717773,
+      "E1": 0.9997028708457947,
+      "E2": 0.9994726777076721
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 6,
+    "time": 176.0,
+    "boundary_s": 175.43333333333334,
+    "offset_s": 0.5666666666666629,
+    "already_begun": true,
+    "base_current_probability": 0.9999873693227338,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6564178466796875,
+      "E1": 0.8468092679977417,
+      "E2": 0.8991133570671082
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 1,
+    "time": 6.0,
+    "boundary_s": 5.5,
+    "offset_s": 0.5,
+    "already_begun": true,
+    "base_current_probability": 0.9990195000765466,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6765310168266296,
+      "E1": 0.951732337474823,
+      "E2": 0.9640098214149475
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 2,
+    "time": 38.0,
+    "boundary_s": 37.13333333333333,
+    "offset_s": 0.8666666666666671,
+    "already_begun": true,
+    "base_current_probability": 0.9994132761554436,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6834656000137329,
+      "E1": 0.9977891445159912,
+      "E2": 0.9979265928268433
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 3,
+    "time": 41.0,
+    "boundary_s": 40.13333333333333,
+    "offset_s": 0.8666666666666671,
+    "already_begun": true,
+    "base_current_probability": 0.9655359267077579,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.6946578621864319,
+      "E1": 0.8888840079307556,
+      "E2": 0.9045267105102539
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 4,
+    "time": 66.0,
+    "boundary_s": 65.26666666666667,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.9961932764924764,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7585862874984741,
+      "E1": 0.9150406718254089,
+      "E2": 0.9659661054611206
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 5,
+    "time": 71.5,
+    "boundary_s": 70.46666666666667,
+    "offset_s": 1.0333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9999986210465929,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7244747877120972,
+      "E1": 0.9984906911849976,
+      "E2": 0.998223602771759
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 6,
+    "time": 87.5,
+    "boundary_s": 86.7,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9942605491295555,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7121216654777527,
+      "E1": 0.9776516556739807,
+      "E2": 0.9882970452308655
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 1,
+    "time": 6.0,
+    "boundary_s": 5.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9993832392086341,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7386945486068726,
+      "E1": 0.9999748468399048,
+      "E2": 0.9999741315841675
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 2,
+    "time": 45.5,
+    "boundary_s": 44.833333333333336,
+    "offset_s": 0.6666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9995666388921141,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6778591275215149,
+      "E1": 0.9996490478515625,
+      "E2": 0.9997442364692688
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 3,
+    "time": 48.5,
+    "boundary_s": 47.93333333333333,
+    "offset_s": 0.56666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9929176118424311,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7312619090080261,
+      "E1": 0.794833242893219,
+      "E2": 0.8873119354248047
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 4,
+    "time": 67.0,
+    "boundary_s": 65.6,
+    "offset_s": 1.4000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9900131347105624,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.8280202746391296,
+      "E1": 0.9294568300247192,
+      "E2": 0.9658269882202148
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 5,
+    "time": 71.0,
+    "boundary_s": 70.9,
+    "offset_s": 0.09999999999999432,
+    "already_begun": true,
+    "base_current_probability": 0.999890861651626,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6716483235359192,
+      "E1": 0.9999003410339355,
+      "E2": 0.9996125102043152
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 43,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 6,
+    "time": 91.0,
+    "boundary_s": 89.6,
+    "offset_s": 1.4000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9992711985215393,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7196750044822693,
+      "E1": 0.9996498823165894,
+      "E2": 0.9998376369476318
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 1,
+    "time": 9.5,
+    "boundary_s": 8.833333333333334,
+    "offset_s": 0.6666666666666661,
+    "already_begun": true,
+    "base_current_probability": 0.9999982810826259,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6370985507965088,
+      "E1": 0.880706787109375,
+      "E2": 0.9524099826812744
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 2,
+    "time": 56.5,
+    "boundary_s": 55.8,
+    "offset_s": 0.7000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.998592181322565,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7213798761367798,
+      "E1": 0.8671717047691345,
+      "E2": 0.9465022683143616
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 3,
+    "time": 61.5,
+    "boundary_s": 61.766666666666666,
+    "offset_s": -0.2666666666666657,
+    "already_begun": false,
+    "base_current_probability": 0.9991903724585754,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.78835129737854,
+      "E1": 0.7950034737586975,
+      "E2": 0.7952272295951843
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 4,
+    "time": 71.0,
+    "boundary_s": 74.23333333333333,
+    "offset_s": -3.2333333333333343,
+    "already_begun": false,
+    "base_current_probability": 0.9997770669189266,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.5064237117767334,
+      "E1": 0.8001007437705994,
+      "E2": 0.8171401023864746
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 5,
+    "time": 82.0,
+    "boundary_s": 81.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9999999642805452,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6367941498756409,
+      "E1": 0.9372941255569458,
+      "E2": 0.9644758701324463
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+    "ordinal": 6,
+    "time": 129.5,
+    "boundary_s": 129.2,
+    "offset_s": 0.30000000000001137,
+    "already_begun": true,
+    "base_current_probability": 0.9999977146714836,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7265701293945312,
+      "E1": 0.732327401638031,
+      "E2": 0.8972817659378052
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 1,
+    "time": 11.0,
+    "boundary_s": 10.233333333333333,
+    "offset_s": 0.7666666666666675,
+    "already_begun": true,
+    "base_current_probability": 0.9999822870810375,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.642271101474762,
+      "E1": 0.9825779795646667,
+      "E2": 0.9930729269981384
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 2,
+    "time": 77.5,
+    "boundary_s": 76.6,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9999524463031227,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7306438684463501,
+      "E1": 0.840410590171814,
+      "E2": 0.9234192371368408
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 3,
+    "time": 83.5,
+    "boundary_s": 82.46666666666667,
+    "offset_s": 1.0333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9999870396430236,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.867063581943512,
+      "E1": 0.8082238435745239,
+      "E2": 0.8111985325813293
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 4,
+    "time": 109.0,
+    "boundary_s": 109.6,
+    "offset_s": -0.5999999999999943,
+    "already_begun": false,
+    "base_current_probability": 0.9601674794440922,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.33951693773269653,
+      "E1": 0.9845277667045593,
+      "E2": 0.9599062204360962
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 5,
+    "time": 120.0,
+    "boundary_s": 119.4,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9999905362757616,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6530313491821289,
+      "E1": 0.8068966865539551,
+      "E2": 0.8544608354568481
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "27d8bc0413a42341c7e8c3e5",
+    "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+    "ordinal": 6,
+    "time": 170.5,
+    "boundary_s": 169.9,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9999611103644215,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7483213543891907,
+      "E1": 0.936659574508667,
+      "E2": 0.9663313031196594
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 1,
+    "time": 8.5,
+    "boundary_s": 7.566666666666666,
+    "offset_s": 0.9333333333333336,
+    "already_begun": true,
+    "base_current_probability": 0.9897531982934504,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6311161518096924,
+      "E1": 0.9857382774353027,
+      "E2": 0.9935401082038879
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 2,
+    "time": 74.5,
+    "boundary_s": 73.86666666666666,
+    "offset_s": 0.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9999954293310727,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7398596405982971,
+      "E1": 0.9008658528327942,
+      "E2": 0.9601860642433167
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 3,
+    "time": 81.5,
+    "boundary_s": 80.66666666666667,
+    "offset_s": 0.8333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.9996209145362395,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7644968628883362,
+      "E1": 0.9986999034881592,
+      "E2": 0.9940199851989746
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 4,
+    "time": 100.0,
+    "boundary_s": 99.13333333333334,
+    "offset_s": 0.86666666666666,
+    "already_begun": true,
+    "base_current_probability": 0.9031432723681102,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.5721989870071411,
+      "E1": 0.9708979725837708,
+      "E2": 0.9754515290260315
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 5,
+    "time": 114.5,
+    "boundary_s": 113.76666666666667,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.9999999993250108,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7327636480331421,
+      "E1": 0.885586678981781,
+      "E2": 0.920954704284668
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "0b12ac0fda9d7cd77dee6e60",
+    "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+    "ordinal": 6,
+    "time": 176.5,
+    "boundary_s": 175.56666666666666,
+    "offset_s": 0.9333333333333371,
+    "already_begun": true,
+    "base_current_probability": 0.9998094630157458,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.735072910785675,
+      "E1": 0.9572015404701233,
+      "E2": 0.9831669926643372
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 1,
+    "time": 10.5,
+    "boundary_s": 9.566666666666666,
+    "offset_s": 0.9333333333333336,
+    "already_begun": true,
+    "base_current_probability": 0.9999996064884417,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6369644403457642,
+      "E1": 0.9790575504302979,
+      "E2": 0.9914371371269226
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 2,
+    "time": 72.0,
+    "boundary_s": 71.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9999603580364413,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.740378201007843,
+      "E1": 0.5642531514167786,
+      "E2": 0.8471239805221558
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 3,
+    "time": 79.0,
+    "boundary_s": 77.6,
+    "offset_s": 1.4000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9997280391983855,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.8582485318183899,
+      "E1": 0.9845497608184814,
+      "E2": 0.9870786666870117
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 4,
+    "time": 91.0,
+    "boundary_s": 90.4,
+    "offset_s": 0.5999999999999943,
+    "already_begun": true,
+    "base_current_probability": 0.9999642668407634,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.5844293236732483,
+      "E1": 0.895983099937439,
+      "E2": 0.9582489132881165
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 5,
+    "time": 101.5,
+    "boundary_s": 100.66666666666667,
+    "offset_s": 0.8333333333333286,
+    "already_begun": true,
+    "base_current_probability": 0.9999847401230121,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7334953546524048,
+      "E1": 0.9971797466278076,
+      "E2": 0.9986239671707153
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "61c420843f11ca54bfe804ee",
+    "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+    "ordinal": 6,
+    "time": 139.5,
+    "boundary_s": 138.63333333333333,
+    "offset_s": 0.8666666666666742,
+    "already_begun": true,
+    "base_current_probability": 0.9999991457391125,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7428929209709167,
+      "E1": 0.875153660774231,
+      "E2": 0.9671690464019775
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 1,
+    "time": 8.5,
+    "boundary_s": 7.366666666666666,
+    "offset_s": 1.1333333333333337,
+    "already_begun": true,
+    "base_current_probability": 0.9999999997465177,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6889381408691406,
+      "E1": 0.9533111453056335,
+      "E2": 0.9839453101158142
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 2,
+    "time": 58.5,
+    "boundary_s": 57.6,
+    "offset_s": 0.8999999999999986,
+    "already_begun": true,
+    "base_current_probability": 0.9999999037683,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7259767055511475,
+      "E1": 0.9587349891662598,
+      "E2": 0.9799348711967468
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 3,
+    "time": 64.0,
+    "boundary_s": 62.8,
+    "offset_s": 1.2000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9999985168086273,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7956459522247314,
+      "E1": 0.9955316781997681,
+      "E2": 0.9700412154197693
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 4,
+    "time": 91.5,
+    "boundary_s": 90.3,
+    "offset_s": 1.2000000000000028,
+    "already_begun": true,
+    "base_current_probability": 0.9996455421955286,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.6543034315109253,
+      "E1": 0.8644349575042725,
+      "E2": 0.9456048607826233
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 5,
+    "time": 100.0,
+    "boundary_s": 99.1,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9980830744244581,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6797763109207153,
+      "E1": 0.9835314750671387,
+      "E2": 0.9897584915161133
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "5b82f4bb76e70d8bf12c0798",
+    "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+    "ordinal": 6,
+    "time": 137.5,
+    "boundary_s": 136.96666666666667,
+    "offset_s": 0.5333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9999460552819837,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7645825147628784,
+      "E1": 0.9091740250587463,
+      "E2": 0.9530693888664246
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 1,
+    "time": 8.0,
+    "boundary_s": 7.0,
+    "offset_s": 1.0,
+    "already_begun": true,
+    "base_current_probability": 0.9999999997778033,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.709794819355011,
+      "E1": 0.9998071789741516,
+      "E2": 0.9999815225601196
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 2,
+    "time": 62.5,
+    "boundary_s": 62.96666666666667,
+    "offset_s": -0.46666666666666856,
+    "already_begun": false,
+    "base_current_probability": 0.9999983296426126,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7381740808486938,
+      "E1": 0.8518262505531311,
+      "E2": 0.9424882531166077
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 3,
+    "time": 67.5,
+    "boundary_s": 66.2,
+    "offset_s": 1.2999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.999918544478397,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7402330636978149,
+      "E1": 0.8741363883018494,
+      "E2": 0.8081558346748352
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 4,
+    "time": 99.5,
+    "boundary_s": 94.86666666666666,
+    "offset_s": 4.63333333333334,
+    "already_begun": true,
+    "base_current_probability": 0.9973524894910524,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.54042649269104,
+      "E1": 0.8594344854354858,
+      "E2": 0.858677327632904
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 5,
+    "time": 107.5,
+    "boundary_s": 106.6,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9999999999667157,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7303890585899353,
+      "E1": 0.9995278120040894,
+      "E2": 0.9998977184295654
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+    "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+    "ordinal": 6,
+    "time": 176.0,
+    "boundary_s": 175.43333333333334,
+    "offset_s": 0.5666666666666629,
+    "already_begun": true,
+    "base_current_probability": 0.9999999999999938,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.3954673707485199,
+      "E1": 0.8215522766113281,
+      "E2": 0.7910457253456116
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 1,
+    "time": 6.0,
+    "boundary_s": 5.5,
+    "offset_s": 0.5,
+    "already_begun": true,
+    "base_current_probability": 0.9999999996157631,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6371224522590637,
+      "E1": 0.9481959342956543,
+      "E2": 0.983502209186554
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 2,
+    "time": 38.0,
+    "boundary_s": 37.13333333333333,
+    "offset_s": 0.8666666666666671,
+    "already_begun": true,
+    "base_current_probability": 0.9999980691857436,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7389723658561707,
+      "E1": 0.9967807531356812,
+      "E2": 0.9981709718704224
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 3,
+    "time": 41.0,
+    "boundary_s": 40.13333333333333,
+    "offset_s": 0.8666666666666671,
+    "already_begun": true,
+    "base_current_probability": 0.9999027754663121,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7885873913764954,
+      "E1": 0.9056767225265503,
+      "E2": 0.9281182289123535
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 4,
+    "time": 66.0,
+    "boundary_s": 65.26666666666667,
+    "offset_s": 0.7333333333333343,
+    "already_begun": true,
+    "base_current_probability": 0.9999775771325412,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.41556185483932495,
+      "E1": 0.9508874416351318,
+      "E2": 0.9375820159912109
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 5,
+    "time": 71.0,
+    "boundary_s": 70.46666666666667,
+    "offset_s": 0.5333333333333314,
+    "already_begun": true,
+    "base_current_probability": 0.9999998381853712,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6632742881774902,
+      "E1": 0.9391887187957764,
+      "E2": 0.9633611440658569
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "a8b23394b642f0bb769a0391",
+    "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+    "ordinal": 6,
+    "time": 87.5,
+    "boundary_s": 86.7,
+    "offset_s": 0.7999999999999972,
+    "already_begun": true,
+    "base_current_probability": 0.9999923726114992,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.736229658126831,
+      "E1": 0.9607512354850769,
+      "E2": 0.9786719083786011
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 1,
+    "time": 5.5,
+    "boundary_s": 5.0,
+    "offset_s": 0.5,
+    "already_begun": true,
+    "base_current_probability": 0.9999999989070081,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.6369005441665649,
+      "E1": 0.990691065788269,
+      "E2": 0.9973132014274597
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 2,
+    "time": 45.5,
+    "boundary_s": 44.833333333333336,
+    "offset_s": 0.6666666666666643,
+    "already_begun": true,
+    "base_current_probability": 0.9999999703822919,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.7395457029342651,
+      "E1": 0.9996657371520996,
+      "E2": 0.9996249675750732
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 3,
+    "time": 48.5,
+    "boundary_s": 47.93333333333333,
+    "offset_s": 0.56666666666667,
+    "already_begun": true,
+    "base_current_probability": 0.9999514242853473,
+    "transition": "return->adjust",
+    "scores": {
+      "E0": 0.7746449708938599,
+      "E1": 0.8914968967437744,
+      "E2": 0.9134559035301208
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 4,
+    "time": 67.0,
+    "boundary_s": 65.6,
+    "offset_s": 1.4000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9808084121292567,
+    "transition": "adjust->pickup",
+    "scores": {
+      "E0": 0.7007115483283997,
+      "E1": 0.9249177575111389,
+      "E2": 0.9711889624595642
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 5,
+    "time": 71.0,
+    "boundary_s": 70.9,
+    "offset_s": 0.09999999999999432,
+    "already_begun": true,
+    "base_current_probability": 0.9999999997039517,
+    "transition": "pickup->harvest",
+    "scores": {
+      "E0": 0.7496861815452576,
+      "E1": 0.9996880292892456,
+      "E2": 0.9997914433479309
+    }
+  },
+  {
+    "cohort": "development8_exposed",
+    "seed": 44,
+    "episode_id": "d0f8727d35eced697dcf79fe",
+    "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+    "ordinal": 6,
+    "time": 90.5,
+    "boundary_s": 89.6,
+    "offset_s": 0.9000000000000057,
+    "already_begun": true,
+    "base_current_probability": 0.9999944387141712,
+    "transition": "harvest->return",
+    "scores": {
+      "E0": 0.6821725964546204,
+      "E1": 0.9987358450889587,
+      "E2": 0.9988288283348083
+    }
+  }
+]

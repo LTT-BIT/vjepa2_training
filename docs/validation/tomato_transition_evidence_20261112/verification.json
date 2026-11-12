@@ -1,0 +1,496 @@
+{
+  "checks": [
+    {
+      "seed": 42,
+      "arm": "E0",
+      "fold": 0,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.7881393432617188e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E0",
+      "fold": 1,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E0",
+      "fold": 2,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E0",
+      "fold": 3,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E0",
+      "fold": 4,
+      "training_groups": 68,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E0",
+      "fold": "final84",
+      "training_groups": 84,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": null
+    },
+    {
+      "seed": 42,
+      "arm": "E1",
+      "fold": 0,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 6.258487701416016e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E1",
+      "fold": 1,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 3.5762786865234375e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E1",
+      "fold": 2,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 4.172325134277344e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E1",
+      "fold": 3,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 4.172325134277344e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E1",
+      "fold": 4,
+      "training_groups": 68,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 2.980232238769531e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E1",
+      "fold": "final84",
+      "training_groups": 84,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": null
+    },
+    {
+      "seed": 42,
+      "arm": "E2",
+      "fold": 0,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 5.066394805908203e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E2",
+      "fold": 1,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 6.556510925292969e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E2",
+      "fold": 2,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 5.960464477539062e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E2",
+      "fold": 3,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 7.152557373046875e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E2",
+      "fold": 4,
+      "training_groups": 68,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 3.5762786865234375e-07
+    },
+    {
+      "seed": 42,
+      "arm": "E2",
+      "fold": "final84",
+      "training_groups": 84,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": null
+    },
+    {
+      "seed": 43,
+      "arm": "E0",
+      "fold": 0,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E0",
+      "fold": 1,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E0",
+      "fold": 2,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E0",
+      "fold": 3,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E0",
+      "fold": 4,
+      "training_groups": 68,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E0",
+      "fold": "final84",
+      "training_groups": 84,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": null
+    },
+    {
+      "seed": 43,
+      "arm": "E1",
+      "fold": 0,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 2.980232238769531e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E1",
+      "fold": 1,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 3.2782554626464844e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E1",
+      "fold": 2,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 3.8743019104003906e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E1",
+      "fold": 3,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 3.2782554626464844e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E1",
+      "fold": 4,
+      "training_groups": 68,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 2.980232238769531e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E1",
+      "fold": "final84",
+      "training_groups": 84,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": null
+    },
+    {
+      "seed": 43,
+      "arm": "E2",
+      "fold": 0,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 4.172325134277344e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E2",
+      "fold": 1,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 4.76837158203125e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E2",
+      "fold": 2,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 6.556510925292969e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E2",
+      "fold": 3,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 4.76837158203125e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E2",
+      "fold": 4,
+      "training_groups": 68,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 4.172325134277344e-07
+    },
+    {
+      "seed": 43,
+      "arm": "E2",
+      "fold": "final84",
+      "training_groups": 84,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": null
+    },
+    {
+      "seed": 44,
+      "arm": "E0",
+      "fold": 0,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E0",
+      "fold": 1,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E0",
+      "fold": 2,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E0",
+      "fold": 3,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.1920928955078125e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E0",
+      "fold": 4,
+      "training_groups": 68,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 1.7881393432617188e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E0",
+      "fold": "final84",
+      "training_groups": 84,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": null
+    },
+    {
+      "seed": 44,
+      "arm": "E1",
+      "fold": 0,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 3.8743019104003906e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E1",
+      "fold": 1,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 4.3213367462158203e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E1",
+      "fold": 2,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 3.2782554626464844e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E1",
+      "fold": 3,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 3.5762786865234375e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E1",
+      "fold": 4,
+      "training_groups": 68,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 2.980232238769531e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E1",
+      "fold": "final84",
+      "training_groups": 84,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": null
+    },
+    {
+      "seed": 44,
+      "arm": "E2",
+      "fold": 0,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 4.6193599700927734e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E2",
+      "fold": 1,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 5.066394805908203e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E2",
+      "fold": 2,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 5.364418029785156e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E2",
+      "fold": 3,
+      "training_groups": 67,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 4.76837158203125e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E2",
+      "fold": 4,
+      "training_groups": 68,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": 5.960464477539062e-07
+    },
+    {
+      "seed": 44,
+      "arm": "E2",
+      "fold": "final84",
+      "training_groups": 84,
+      "outer_overlap": 0,
+      "normalization_exact": true,
+      "saved_prediction_max_error": null
+    }
+  ],
+  "total_checkpoints": 54,
+  "historical_test_read": false,
+  "frozen_B0_verified": true,
+  "source_sha256": {
+    "/home/user/vjepa2_training/tools/verify_tomato_transition_evidence.py": "fc8aa5f57f13c50a907eb0189d72de983ee98598f8a15b59f8d712d01fe24355"
+  }
+}

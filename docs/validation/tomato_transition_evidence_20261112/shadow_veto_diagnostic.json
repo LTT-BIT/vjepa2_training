@@ -1,0 +1,102 @@
+{
+  "oof10_base_unseen_exposed": {
+    "E0": {
+      "0.5": {
+        "total_b0_commits": 180,
+        "early_total": 6,
+        "early_rejected": 3,
+        "post_boundary_rejected": 5,
+        "post_boundary_total": 174
+      },
+      "0.8": {
+        "total_b0_commits": 180,
+        "early_total": 6,
+        "early_rejected": 6,
+        "post_boundary_rejected": 152,
+        "post_boundary_total": 174
+      }
+    },
+    "E1": {
+      "0.5": {
+        "total_b0_commits": 180,
+        "early_total": 6,
+        "early_rejected": 4,
+        "post_boundary_rejected": 4,
+        "post_boundary_total": 174
+      },
+      "0.8": {
+        "total_b0_commits": 180,
+        "early_total": 6,
+        "early_rejected": 5,
+        "post_boundary_rejected": 19,
+        "post_boundary_total": 174
+      }
+    },
+    "E2": {
+      "0.5": {
+        "total_b0_commits": 180,
+        "early_total": 6,
+        "early_rejected": 2,
+        "post_boundary_rejected": 0,
+        "post_boundary_total": 174
+      },
+      "0.8": {
+        "total_b0_commits": 180,
+        "early_total": 6,
+        "early_rejected": 5,
+        "post_boundary_rejected": 10,
+        "post_boundary_total": 174
+      }
+    }
+  },
+  "development8_exposed": {
+    "E0": {
+      "0.5": {
+        "total_b0_commits": 144,
+        "early_total": 8,
+        "early_rejected": 1,
+        "post_boundary_rejected": 5,
+        "post_boundary_total": 136
+      },
+      "0.8": {
+        "total_b0_commits": 144,
+        "early_total": 8,
+        "early_rejected": 7,
+        "post_boundary_rejected": 122,
+        "post_boundary_total": 136
+      }
+    },
+    "E1": {
+      "0.5": {
+        "total_b0_commits": 144,
+        "early_total": 8,
+        "early_rejected": 0,
+        "post_boundary_rejected": 2,
+        "post_boundary_total": 136
+      },
+      "0.8": {
+        "total_b0_commits": 144,
+        "early_total": 8,
+        "early_rejected": 3,
+        "post_boundary_rejected": 12,
+        "post_boundary_total": 136
+      }
+    },
+    "E2": {
+      "0.5": {
+        "total_b0_commits": 144,
+        "early_total": 8,
+        "early_rejected": 0,
+        "post_boundary_rejected": 0,
+        "post_boundary_total": 136
+      },
+      "0.8": {
+        "total_b0_commits": 144,
+        "early_total": 8,
+        "early_rejected": 2,
+        "post_boundary_rejected": 5,
+        "post_boundary_total": 136
+      }
+    }
+  }
+}

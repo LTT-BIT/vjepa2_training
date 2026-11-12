@@ -1,0 +1,22 @@
+{
+  "oof10_base_unseen_exposed": {
+    "recordings": 10,
+    "mean_seed_paired_auc_delta": 0.14230065355009325,
+    "recording_bootstrap_95": [
+      0.08063888888888891,
+      0.19269428294281982
+    ],
+    "replicates": 1000,
+    "note": "Exploratory record-level bootstrap; seeds averaged within each paired draw, not independent replicas"
+  },
+  "development8_exposed": {
+    "recordings": 8,
+    "mean_seed_paired_auc_delta": 0.0661497462777112,
+    "recording_bootstrap_95": [
+      -0.023549573558186092,
+      0.1380687026278718
+    ],
+    "replicates": 1000,
+    "note": "Exploratory record-level bootstrap; seeds averaged within each paired draw, not independent replicas"
+  }
+}

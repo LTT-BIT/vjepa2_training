@@ -1,0 +1,20 @@
+{
+  "frozen_B0_verified": true,
+  "source_sha256": {
+    "tools/tomato_transition_evidence.py": "9f15f1a8a5d41d088dacc6886e1dede1570425df9e2bb0c7ef96b9992e4aec1b",
+    "tools/tomato_transition_evidence_runtime.py": "dfca4aa49628dd4f9a7e50e4906fb4432f5e52c5f5fed741f7820373c04b3024",
+    "tools/train_tomato_transition_evidence.py": "ad15adc1b39d0e48c6031233319f7c7ab311dd6db364c42b14f04ce9a3e4a32f",
+    "tools/report_tomato_transition_evidence.py": "2282238f9f9ab511776580f39ecf4f2e9076a1da6e7d5c66cc565c2a7308445c",
+    "tools/verify_tomato_transition_evidence.py": "fc8aa5f57f13c50a907eb0189d72de983ee98598f8a15b59f8d712d01fe24355",
+    "tools/plot_tomato_transition_evidence.py": "67caac7966d90275fb10c08218e67573587db99f3a72fc78ebd9e9fa55caafae",
+    "tests/test_tomato_transition_evidence.py": "8cbbac7f3c4f8a3b4acf94f91bc83d6f8723aba276a8a7de0380dfde43ee5a1a"
+  },
+  "tests": {
+    "passed": 306,
+    "skipped": 1
+  },
+  "default_changed": false,
+  "original_labels_changed": false,
+  "robot_calls": 0,
+  "models_promoted": []
+}
