@@ -1,0 +1,13 @@
+{
+  "episode_id": "3e645bf4e137d0f836c9d7ff",
+  "model": "B0 independent h1.5 seed42",
+  "future_display_shift_seconds": 1.5,
+  "human_boundary_seconds": 74.23333333333333,
+  "confirmed_boundary_seconds": 72.0,
+  "confirmation_early_seconds": 2.2333333333333343,
+  "inputs": {
+    "runs/tomato/complete100_20261111/dataset_manifest.json": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+    "runs/tomato/transition_time_20261109/seed42/3e645bf4e137d0f836c9d7ff.npz": "4698537e7661cec69e25d34c134b3d50802570a960bcc684df3b6d1fb749c298",
+    "runs/tomato/frozen_chain_20261112_release/seed42/3e645bf4e137d0f836c9d7ff_timeline.jsonl": "e84af70d60d8623cc18a6382def8d92b5748d585b710533c81b3faa83fc283c2"
+  }
+}
