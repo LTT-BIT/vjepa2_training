@@ -1,0 +1,15 @@
+{
+  "locked_protocol": "b0.lock.v3.json",
+  "locked_protocol_sha256": "f8ba41f61224756b1531cf5a39dde57846b6aca92bb9a6a1c3ab1ab3c5f237d8",
+  "real_independent_recordings_evaluated_this_round": 0,
+  "offline_evaluation_path_verified": true,
+  "current_openpi_checkout_has_agent_bridge": false,
+  "historical_bridge_snapshot_verified": true,
+  "bridge_max_prediction_age_s": 2.0,
+  "task_memory_max_observation_age_s": 1.0,
+  "reproduced_phase_divergence_at_age_s": 1.5,
+  "live_transport_alignment_required": true,
+  "defaults_changed": false,
+  "prompt_and_future_scoring_clock": "Observation-reference timestamps, preserving historical offline definitions; not measured hardware application/arrival time",
+  "physical_success_or_real_vla_continuity_verified": false
+}

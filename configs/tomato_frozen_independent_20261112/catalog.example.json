@@ -1,0 +1,22 @@
+{
+  "purpose": "independent_evaluation_only",
+  "collection_id": "NEW_UNSEEN_COLLECTION_AFTER_PROTOCOL_LOCK",
+  "used_for_training_or_selection": false,
+  "is_synthetic_test_fixture": false,
+  "records": [
+    {
+      "dataset_root": "/ABSOLUTE/PATH/TO/NEW_LEROBOT_PACKAGE",
+      "episode_index": 0,
+      "source_recording_id": "EXACT_ID_FROM_meta_episodes_jsonl",
+      "annotation_path": "/ABSOLUTE/PATH/TO/EXISTING_PUBLISHED_SUBTASK.json",
+      "conditions": {
+        "capture_session": "NEW_SESSION_ID",
+        "speed_profile": "normal_or_slow_or_fast_or_variable",
+        "adjust_profile": "normal_or_long",
+        "pause_profile": "none_or_before_pickup_2_or_other",
+        "occlusion": "describe_actual_condition",
+        "camera_roles": "record cam0/cam1/cam2 roles; do not guess wrist camera"
+      }
+    }
+  ]
+}

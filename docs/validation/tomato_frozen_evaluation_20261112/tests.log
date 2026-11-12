@@ -1,0 +1,4 @@
+Command: TOMATO_FROZEN_GPU_SMOKE=1 .venv-tomato/bin/python -m pytest -q tests/test_tomato*.py --basetemp runs/tomato/frozen_acceptance_tests_20261112_v1
+273 passed in10.37s
+Includes actual frozen GPU encoder synthetic-media smoke, full decode/annotation/identity gates, lock drift, registry bypass, mock chunk guards, shadow reconstruction and age-gap regression.
+No real robot, VLA action inference, training or new real independent recordings.

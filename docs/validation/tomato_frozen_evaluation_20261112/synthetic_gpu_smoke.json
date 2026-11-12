@@ -1,0 +1,31 @@
+{
+  "real_independent_recordings_evaluated": 0,
+  "synthetic_fixture": true,
+  "source_manifest_role": "synthetic_smoke_only",
+  "official_encoder_sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+  "feature_shape": [
+    8,
+    4000
+  ],
+  "causal_indices": true,
+  "model_seeds": [
+    "42",
+    "43",
+    "44"
+  ],
+  "receipt": {
+    "lock_sha256": "f8ba41f61224756b1531cf5a39dde57846b6aca92bb9a6a1c3ab1ab3c5f237d8",
+    "training": false,
+    "normalization_refit": false,
+    "threshold_or_model_selected": false,
+    "robot_connected": false,
+    "physical_success_evaluated": false,
+    "synthetic_fixture": true,
+    "source_sha256": {
+      "/home/user/vjepa2_training/tools/run_tomato_frozen_evaluation.py": "532c7727a15a35828065ed3e480b4a022d4a375fcead354cf8bb130e0de3b34c",
+      "tools/tomato_full_chain.py": "72e167f53d44c755f7fe471f6529464a618df597b5b51eb2830b6a005a199d3e",
+      "tools/tomato_independent_import.py": "2cbad8170a3e2b164113f59053abec367207323cb4f56370cffe0bd4c7b1ae0f"
+    }
+  },
+  "scope": "Actual frozen GPU encoder/heads on synthetic videos; software path only, no real-data quality result"
+}

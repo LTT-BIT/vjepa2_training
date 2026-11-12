@@ -1,0 +1,77 @@
+{
+  "cases": [
+    {
+      "age_s": 0.05,
+      "rows": [
+        {
+          "observation_timestamp": 0.0,
+          "age_s": 0.05,
+          "bridge_accepted": true,
+          "bridge_phase": 0,
+          "memory_valid": true,
+          "memory_phase": 0
+        },
+        {
+          "observation_timestamp": 0.5,
+          "age_s": 0.05,
+          "bridge_accepted": true,
+          "bridge_phase": 1,
+          "memory_valid": true,
+          "memory_phase": 1
+        }
+      ],
+      "phase_mismatch": false
+    },
+    {
+      "age_s": 1.5,
+      "rows": [
+        {
+          "observation_timestamp": 0.0,
+          "age_s": 1.5,
+          "bridge_accepted": true,
+          "bridge_phase": 0,
+          "memory_valid": false,
+          "memory_phase": 0
+        },
+        {
+          "observation_timestamp": 0.5,
+          "age_s": 1.5,
+          "bridge_accepted": true,
+          "bridge_phase": 1,
+          "memory_valid": false,
+          "memory_phase": 0
+        }
+      ],
+      "phase_mismatch": true
+    },
+    {
+      "age_s": 2.5,
+      "rows": [
+        {
+          "observation_timestamp": 0.0,
+          "age_s": 2.5,
+          "bridge_accepted": false,
+          "bridge_phase": 0,
+          "memory_valid": false,
+          "memory_phase": 0
+        },
+        {
+          "observation_timestamp": 0.5,
+          "age_s": 2.5,
+          "bridge_accepted": false,
+          "bridge_phase": 0,
+          "memory_valid": false,
+          "memory_phase": 0
+        }
+      ],
+      "phase_mismatch": false
+    }
+  ],
+  "bridge_max_age_s": 2.0,
+  "memory_max_age_s": 1.0,
+  "defaults_changed": false,
+  "issue": "Between1s and2s, pinned bridge can confirm Current while Shadow rejects the observations; fresh replay fidelity is not a universal transport guarantee.",
+  "next_step": "Before live integration explicitly unify ingress-age policy and replay delayed messages. This diagnostic does not tighten frozen B0 thresholds.",
+  "lock_sha256": "f8ba41f61224756b1531cf5a39dde57846b6aca92bb9a6a1c3ab1ab3c5f237d8",
+  "source_sha256": "dd6e2e305ab09c782ae2bda38a10effc67fe0c8b63051d5a99202087a5f084db"
+}
