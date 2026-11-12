@@ -1,0 +1,10 @@
+{
+  "clean_staged_code": true,
+  "legacy_active_exact_sources": 85,
+  "new_active_exact_sources": 85,
+  "train": 75,
+  "val": 9,
+  "external_case": 1,
+  "test_scored": false,
+  "reference_variant": "S5_lateACK2_hard5"
+}

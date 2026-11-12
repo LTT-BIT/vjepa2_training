@@ -45,7 +45,7 @@ def export_video(catalog,result,output,progress=lambda v:None):
             if sim:
                 events=[v for v in sim['events'] if v['time']<=i/e['fps']];state=events[-1] if events else dict(active_stage='pickup',policy_state='READY',pending=None)
                 text(canvas,f'SIMULATED Active={state["active_stage"]} state={state["policy_state"]} | prepare={sim["config"]["theta_prepare"]} commit={sim["config"]["theta_commit"]} K={sim["config"]["K"]}',12,465)
-                text(canvas,f'Pending={(state.get("pending") or {}).get("stage")} | ACK_at={next((v["time"] for v in reversed(events) if v["kind"]=="ack"),None)} | timeout_at={next((v["time"] for v in reversed(events) if v["kind"]=="timeout"),None)}',12,483,scale=.35)
+                text(canvas,f'Pending={(state.get("pending") or {}).get("stage")} | ACK_at={next((v["time"] for v in reversed(events) if v["kind"] in ("ack","late_ack")),None)} | timeout_at={next((v["time"] for v in reversed(events) if v["kind"] in ("timeout","hard_timeout")),None)}',12,483,scale=.35)
                 tracks += [('Simulated Active (commit clock)',sim['active_intervals']),('Pending',sim['pending_intervals'])]
             for j,(name,segs) in enumerate(tracks):
                 y=500+j*52;text(canvas,name,12,y-7)
