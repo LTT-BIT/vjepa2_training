@@ -1,0 +1,347 @@
+{
+  "episode_id": "3e645bf4e137d0f836c9d7ff",
+  "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+  "observations": 268,
+  "snapshots_compared": 134,
+  "restarts_verified": 1,
+  "abrupt_exit": true,
+  "retry_after_abrupt_verified": true,
+  "full_legacy_snapshot_parity": true,
+  "controller_prefix_preserved": true,
+  "confirmed_controller_facts": 6,
+  "journal_commands": 274,
+  "journal_sha256": "bb6b32e2882148652121ad029eb38ca27fce8af6b139fc74e335ae793d393de3",
+  "sqlite_integrity": "ok",
+  "shadow_false_prompt_updates": 0,
+  "latency_ms": {
+    "p50": 0.6251400336623192,
+    "p95": 0.7159446133300662,
+    "max": 1.9144450197927654
+  },
+  "scoring": {
+    "warnings": {
+      "boundaries": [
+        {
+          "time": 8.833333333333334,
+          "previous": 0,
+          "label": 1,
+          "end": 55.8,
+          "detected": true,
+          "event_time": 8.0,
+          "offset_s": -0.8333333333333339
+        },
+        {
+          "time": 55.8,
+          "previous": 1,
+          "label": 2,
+          "end": 61.766666666666666,
+          "detected": true,
+          "event_time": 55.5,
+          "offset_s": -0.29999999999999716
+        },
+        {
+          "time": 61.766666666666666,
+          "previous": 2,
+          "label": 3,
+          "end": 74.23333333333333,
+          "detected": true,
+          "event_time": 61.0,
+          "offset_s": -0.7666666666666657
+        },
+        {
+          "time": 74.23333333333333,
+          "previous": 3,
+          "label": 0,
+          "end": 81.0,
+          "detected": false,
+          "event_time": null,
+          "offset_s": null
+        },
+        {
+          "time": 81.0,
+          "previous": 0,
+          "label": 1,
+          "end": 129.2,
+          "detected": false,
+          "event_time": null,
+          "offset_s": null
+        },
+        {
+          "time": 129.2,
+          "previous": 1,
+          "label": 2,
+          "end": 133.86666666666667,
+          "detected": true,
+          "event_time": 128.5,
+          "offset_s": -0.6999999999999886
+        }
+      ],
+      "false_events": [
+        {
+          "time": 70.0,
+          "previous": 3,
+          "label": 0
+        },
+        {
+          "time": 81.5,
+          "previous": 0,
+          "label": 1
+        }
+      ],
+      "duration_s": 132.5,
+      "events": [
+        {
+          "time": 8.0,
+          "previous": 0,
+          "label": 1
+        },
+        {
+          "time": 55.5,
+          "previous": 1,
+          "label": 2
+        },
+        {
+          "time": 61.0,
+          "previous": 2,
+          "label": 3
+        },
+        {
+          "time": 70.0,
+          "previous": 3,
+          "label": 0
+        },
+        {
+          "time": 81.5,
+          "previous": 0,
+          "label": 1
+        },
+        {
+          "time": 128.5,
+          "previous": 1,
+          "label": 2
+        }
+      ]
+    },
+    "prompt": {
+      "events": [
+        {
+          "ordinal": 1,
+          "boundary_s": 8.833333333333334,
+          "transition": "pickup->harvest",
+          "outcome": "on_time",
+          "arrival_s": 9.5,
+          "offset_s": 0.6666666666666661
+        },
+        {
+          "ordinal": 2,
+          "boundary_s": 55.8,
+          "transition": "harvest->return",
+          "outcome": "on_time",
+          "arrival_s": 56.5,
+          "offset_s": 0.7000000000000028
+        },
+        {
+          "ordinal": 3,
+          "boundary_s": 61.766666666666666,
+          "transition": "return->adjust",
+          "outcome": "early",
+          "arrival_s": 61.5,
+          "offset_s": -0.2666666666666657
+        },
+        {
+          "ordinal": 4,
+          "boundary_s": 74.23333333333333,
+          "transition": "adjust->pickup",
+          "outcome": "early",
+          "arrival_s": 72.0,
+          "offset_s": -2.2333333333333343
+        },
+        {
+          "ordinal": 5,
+          "boundary_s": 81.0,
+          "transition": "pickup->harvest",
+          "outcome": "on_time",
+          "arrival_s": 82.0,
+          "offset_s": 1.0
+        },
+        {
+          "ordinal": 6,
+          "boundary_s": 129.2,
+          "transition": "harvest->return",
+          "outcome": "on_time",
+          "arrival_s": 130.0,
+          "offset_s": 0.8000000000000114
+        }
+      ],
+      "counts": {
+        "on_time": 4,
+        "early": 2
+      },
+      "updates": [
+        {
+          "time": 9.5,
+          "previous_phase": 0,
+          "phase": 1,
+          "version": 1,
+          "resync": false
+        },
+        {
+          "time": 56.5,
+          "previous_phase": 1,
+          "phase": 2,
+          "version": 2,
+          "resync": false
+        },
+        {
+          "time": 61.5,
+          "previous_phase": 2,
+          "phase": 3,
+          "version": 3,
+          "resync": false
+        },
+        {
+          "time": 72.0,
+          "previous_phase": 3,
+          "phase": 4,
+          "version": 4,
+          "resync": false
+        },
+        {
+          "time": 82.0,
+          "previous_phase": 4,
+          "phase": 5,
+          "version": 5,
+          "resync": false
+        },
+        {
+          "time": 130.0,
+          "previous_phase": 5,
+          "phase": 6,
+          "version": 6,
+          "resync": false
+        }
+      ],
+      "resync_updates": 0,
+      "skipped_prompt_positions": 0,
+      "illegal_updates": 0
+    },
+    "state": {
+      "mismatch_s": 5.5,
+      "mismatch_runs": 6,
+      "persistent_mismatch_s": 2.5,
+      "persistent_runs": 1,
+      "runs": [
+        {
+          "start_s": 9.0,
+          "end_s": 9.5,
+          "duration_s": 0.5,
+          "first_index": 18,
+          "last_index": 18,
+          "recovered": true
+        },
+        {
+          "start_s": 56.0,
+          "end_s": 56.5,
+          "duration_s": 0.5,
+          "first_index": 112,
+          "last_index": 112,
+          "recovered": true
+        },
+        {
+          "start_s": 61.5,
+          "end_s": 62.0,
+          "duration_s": 0.5,
+          "first_index": 123,
+          "last_index": 123,
+          "recovered": true
+        },
+        {
+          "start_s": 72.0,
+          "end_s": 74.5,
+          "duration_s": 2.5,
+          "first_index": 144,
+          "last_index": 148,
+          "recovered": true
+        },
+        {
+          "start_s": 81.0,
+          "end_s": 82.0,
+          "duration_s": 1.0,
+          "first_index": 162,
+          "last_index": 163,
+          "recovered": true
+        },
+        {
+          "start_s": 129.5,
+          "end_s": 130.0,
+          "duration_s": 0.5,
+          "first_index": 259,
+          "last_index": 259,
+          "recovered": true
+        }
+      ],
+      "persistent": [
+        {
+          "start_s": 72.0,
+          "end_s": 74.5,
+          "duration_s": 2.5,
+          "first_index": 144,
+          "last_index": 148,
+          "recovered": true
+        }
+      ]
+    },
+    "position_accuracy": 0.9589552238805971,
+    "cascade_affected_boundaries": 0,
+    "ordered_complete": true,
+    "all_prompts_on_time": false,
+    "decisions": {
+      "current_evidence_incomplete": 255,
+      "current_confirmed": 6,
+      "terminal": 7
+    },
+    "coordination_events": [
+      {
+        "time": 9.5,
+        "kind": "commit",
+        "phase": 1,
+        "version": 1
+      },
+      {
+        "time": 56.5,
+        "kind": "commit",
+        "phase": 2,
+        "version": 2
+      },
+      {
+        "time": 61.5,
+        "kind": "commit",
+        "phase": 3,
+        "version": 3
+      },
+      {
+        "time": 72.0,
+        "kind": "commit",
+        "phase": 4,
+        "version": 4
+      },
+      {
+        "time": 82.0,
+        "kind": "commit",
+        "phase": 5,
+        "version": 5
+      },
+      {
+        "time": 130.0,
+        "kind": "commit",
+        "phase": 6,
+        "version": 6
+      }
+    ],
+    "latency_ms": {
+      "p50": 0.008126,
+      "p95": 0.0086235,
+      "max": 0.027493
+    }
+  }
+}

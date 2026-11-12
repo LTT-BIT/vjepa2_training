@@ -1,0 +1,632 @@
+{
+  "42": {
+    "baseline_summary": {
+      "recordings": 8,
+      "warnings": {
+        "hits": 37,
+        "total": 48,
+        "false_events": 13
+      },
+      "prompt_counts": {
+        "on_time": 44,
+        "early": 2,
+        "late": 2
+      },
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 1,
+          "on_time": 5,
+          "late": 2
+        },
+        "harvest->return": {
+          "on_time": 16
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "early": 1,
+          "on_time": 7
+        }
+      },
+      "mismatch_s": 38.5,
+      "persistent_mismatch_s": 10.5,
+      "cascade_affected_boundaries": 0,
+      "ordered_complete": 8,
+      "all_prompts_on_time": 5,
+      "prompt_abs_error_s": 1.0055555555555562,
+      "latency_p95_episode_max_ms": 0.010956099999999998,
+      "defer_once": 0
+    },
+    "episodes": [
+      {
+        "episode_id": "3e645bf4e137d0f836c9d7ff",
+        "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+        "observations": 268,
+        "snapshots_compared": 268,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 274,
+        "journal_sha256": "bb6b32e2882148652121ad029eb38ca27fce8af6b139fc74e335ae793d393de3",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.626137014478445,
+          "p95": 0.6929262133780867,
+          "max": 1.2698470382019877
+        }
+      },
+      {
+        "episode_id": "27d8bc0413a42341c7e8c3e5",
+        "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+        "observations": 350,
+        "snapshots_compared": 350,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 356,
+        "journal_sha256": "d3cae6e7f0e4568d2475c9a44338d738a557f350a9d16e3448912b392065cfa4",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.636797514744103,
+          "p95": 0.6885967595735565,
+          "max": 1.24444899847731
+        }
+      },
+      {
+        "episode_id": "0b12ac0fda9d7cd77dee6e60",
+        "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+        "observations": 361,
+        "snapshots_compared": 361,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 367,
+        "journal_sha256": "d243d6e3524185a21c425f7b9f96be166fb99af61295a1db997e496d02bc4416",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6320429965853691,
+          "p95": 0.6923978333361447,
+          "max": 1.2099820305593312
+        }
+      },
+      {
+        "episode_id": "61c420843f11ca54bfe804ee",
+        "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+        "observations": 286,
+        "snapshots_compared": 286,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 292,
+        "journal_sha256": "420093ac8b8fc1be0f6576ce3870e005e8315dfae8795839258d4fe9bb37de7a",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6258869834709913,
+          "p95": 0.6863129965495318,
+          "max": 1.1711679981090128
+        }
+      },
+      {
+        "episode_id": "5b82f4bb76e70d8bf12c0798",
+        "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+        "observations": 281,
+        "snapshots_compared": 281,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 287,
+        "journal_sha256": "61433ee6d369c2a3a0e5bae749d8bff313698eb9482e78cbe2bb8ed6dffb540a",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6277750362642109,
+          "p95": 0.6891185243148357,
+          "max": 1.789315021596849
+        }
+      },
+      {
+        "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+        "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+        "observations": 359,
+        "snapshots_compared": 359,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 365,
+        "journal_sha256": "fcdec86834417c00f5fe63c953e79d484b76d173165bda537cfec197114665a6",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.636221026070416,
+          "p95": 0.6778989918529987,
+          "max": 1.186237030196935
+        }
+      },
+      {
+        "episode_id": "a8b23394b642f0bb769a0391",
+        "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+        "observations": 179,
+        "snapshots_compared": 179,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 185,
+        "journal_sha256": "53ea999357bca513dd9e2bb2457873b3226b00ed2e4401b7c1a7f3b51e82bb3e",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6237470079213381,
+          "p95": 0.6934332195669413,
+          "max": 1.2077779974788427
+        }
+      },
+      {
+        "episode_id": "d0f8727d35eced697dcf79fe",
+        "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+        "observations": 185,
+        "snapshots_compared": 185,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 191,
+        "journal_sha256": "aa76b1358d665d34019ba877f9c145bde1557c4a2223afc781e550eabee3cf0d",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6389160407707095,
+          "p95": 0.6867780175525695,
+          "max": 1.2124370550736785
+        }
+      }
+    ]
+  },
+  "43": {
+    "baseline_summary": {
+      "recordings": 8,
+      "warnings": {
+        "hits": 34,
+        "total": 48,
+        "false_events": 18
+      },
+      "prompt_counts": {
+        "on_time": 44,
+        "early": 2,
+        "late": 2
+      },
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 2,
+          "late": 2,
+          "on_time": 4
+        },
+        "harvest->return": {
+          "on_time": 16
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "on_time": 8
+        }
+      },
+      "mismatch_s": 45.5,
+      "persistent_mismatch_s": 13.0,
+      "cascade_affected_boundaries": 0,
+      "ordered_complete": 8,
+      "all_prompts_on_time": 4,
+      "prompt_abs_error_s": 1.144444444444445,
+      "latency_p95_episode_max_ms": 0.008906999999999998,
+      "defer_once": 0
+    },
+    "episodes": [
+      {
+        "episode_id": "3e645bf4e137d0f836c9d7ff",
+        "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+        "observations": 268,
+        "snapshots_compared": 268,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 274,
+        "journal_sha256": "936accc45ca87ef36f22c9fd8fc88f3cb016097a6652a546b3a3cb10cc3e000a",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6352795171551406,
+          "p95": 0.6999909557634963,
+          "max": 1.2411729549057782
+        }
+      },
+      {
+        "episode_id": "27d8bc0413a42341c7e8c3e5",
+        "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+        "observations": 350,
+        "snapshots_compared": 350,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 356,
+        "journal_sha256": "6e2e6d44e20a70003dddfe9307755ac6cf2d386eeb50348035ca1fbe5073b9e9",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6272789905779064,
+          "p95": 0.6768065068172291,
+          "max": 1.163212989922613
+        }
+      },
+      {
+        "episode_id": "0b12ac0fda9d7cd77dee6e60",
+        "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+        "observations": 361,
+        "snapshots_compared": 361,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 367,
+        "journal_sha256": "f0e34fa4018374502afa286ad3da735f4c1c8b7aa2625a82ade3fcfdf8bd2329",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6340480176731944,
+          "p95": 0.6800557021051645,
+          "max": 1.2122970074415207
+        }
+      },
+      {
+        "episode_id": "61c420843f11ca54bfe804ee",
+        "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+        "observations": 286,
+        "snapshots_compared": 286,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 292,
+        "journal_sha256": "4c80e0b5113883cf560ea48aac003275b286a3f03ba0d226e6d6441ae12ffa5c",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.62529047136195,
+          "p95": 0.7009449152974412,
+          "max": 5.030286032706499
+        }
+      },
+      {
+        "episode_id": "5b82f4bb76e70d8bf12c0798",
+        "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+        "observations": 281,
+        "snapshots_compared": 281,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 287,
+        "journal_sha256": "62fc62d66c9b78b75359665ed23ba79ca86f7a7e736c40aacaf6530977f6e1cd",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6267629796639085,
+          "p95": 0.6824808078818023,
+          "max": 1.198449986986816
+        }
+      },
+      {
+        "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+        "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+        "observations": 359,
+        "snapshots_compared": 359,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 365,
+        "journal_sha256": "635776e4c83cf0e18ae5f376f95c20e422870a20a94d21e8baf0348ed4e39bae",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6280450033955276,
+          "p95": 0.6932286079972982,
+          "max": 1.2103939661756158
+        }
+      },
+      {
+        "episode_id": "a8b23394b642f0bb769a0391",
+        "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+        "observations": 179,
+        "snapshots_compared": 179,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 185,
+        "journal_sha256": "1c4f5032b9342568e21ce16a0af1823c4c72bded01b9a6395e295cf4a56598c5",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6288670119829476,
+          "p95": 0.6864157621748745,
+          "max": 1.2149619869887829
+        }
+      },
+      {
+        "episode_id": "d0f8727d35eced697dcf79fe",
+        "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+        "observations": 185,
+        "snapshots_compared": 185,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 191,
+        "journal_sha256": "1859bdcf70acd12df7520caacb4a44eb4f27d3da460092eae165c3df3a051db3",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6248290301300585,
+          "p95": 0.6810119957663119,
+          "max": 1.2424149899743497
+        }
+      }
+    ]
+  },
+  "44": {
+    "baseline_summary": {
+      "recordings": 8,
+      "warnings": {
+        "hits": 35,
+        "total": 48,
+        "false_events": 15
+      },
+      "prompt_counts": {
+        "on_time": 43,
+        "early": 4,
+        "late": 1
+      },
+      "prompt_by_transition": {
+        "adjust->pickup": {
+          "early": 2,
+          "on_time": 5,
+          "late": 1
+        },
+        "harvest->return": {
+          "on_time": 15,
+          "early": 1
+        },
+        "pickup->harvest": {
+          "on_time": 16
+        },
+        "return->adjust": {
+          "early": 1,
+          "on_time": 7
+        }
+      },
+      "mismatch_s": 35.5,
+      "persistent_mismatch_s": 8.0,
+      "cascade_affected_boundaries": 0,
+      "ordered_complete": 8,
+      "all_prompts_on_time": 5,
+      "prompt_abs_error_s": 0.9250000000000006,
+      "latency_p95_episode_max_ms": 0.013418,
+      "defer_once": 0
+    },
+    "episodes": [
+      {
+        "episode_id": "3e645bf4e137d0f836c9d7ff",
+        "source_recording_id": "76354615cf9746758c5c7e6e5ab579d4",
+        "observations": 268,
+        "snapshots_compared": 268,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 274,
+        "journal_sha256": "03e1e3afe144f779c751e0aa0d6db6f401ff8d202551cdac9980860ace9034b9",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6222694937605411,
+          "p95": 0.6928573391633106,
+          "max": 1.280508004128933
+        }
+      },
+      {
+        "episode_id": "27d8bc0413a42341c7e8c3e5",
+        "source_recording_id": "7d879f9d5d5a4be09beb55cf88591b0d",
+        "observations": 350,
+        "snapshots_compared": 350,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 356,
+        "journal_sha256": "c9162a9b8a6fd47515f621d9bfb85cafb36b4e2fff4e9e218da0f89178f42379",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6275294872466475,
+          "p95": 0.6908539944561198,
+          "max": 1.208289002534002
+        }
+      },
+      {
+        "episode_id": "0b12ac0fda9d7cd77dee6e60",
+        "source_recording_id": "2c30455ce7794b87af8b0a60af0a0dab",
+        "observations": 361,
+        "snapshots_compared": 361,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 367,
+        "journal_sha256": "d244cd8facf777f8b14039a0cebdaf29d9b74e6d390c67a685b5750069b4933b",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6391670322045684,
+          "p95": 0.687642430420965,
+          "max": 1.273183966986835
+        }
+      },
+      {
+        "episode_id": "61c420843f11ca54bfe804ee",
+        "source_recording_id": "1b2e1a577afa442cb057c595cf27c48f",
+        "observations": 286,
+        "snapshots_compared": 286,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 292,
+        "journal_sha256": "a279e6792aa1834b15d0b9ca44c0b295e96702f69b1db3c58772cc7d65cb5b14",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6348634778987616,
+          "p95": 0.7583301921840757,
+          "max": 1.3093830202706158
+        }
+      },
+      {
+        "episode_id": "5b82f4bb76e70d8bf12c0798",
+        "source_recording_id": "9a90a945e77e49aabb7a3d4e44246155",
+        "observations": 281,
+        "snapshots_compared": 281,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 287,
+        "journal_sha256": "9a3620e4141d1721045ca4c71a82cd7015d3dafdd926ffe0e27124ca628d800f",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6241580122150481,
+          "p95": 0.6900520180352032,
+          "max": 1.2432659859769046
+        }
+      },
+      {
+        "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+        "source_recording_id": "7bedea6b1c034982bf1cec5050ad2dc3",
+        "observations": 359,
+        "snapshots_compared": 359,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 365,
+        "journal_sha256": "0293c499ddf521eb8eec429b0fdeb82f53821aa61f2607b1492c9426700640bb",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6374039803631604,
+          "p95": 0.7040913915261626,
+          "max": 1.1821900261566043
+        }
+      },
+      {
+        "episode_id": "a8b23394b642f0bb769a0391",
+        "source_recording_id": "5befbcd6c7f143028144b68d754c6883",
+        "observations": 179,
+        "snapshots_compared": 179,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 185,
+        "journal_sha256": "0c938af2c3838c0171760fe7e9d2d1dd11d180fc6cf3d77012f77bc0cbb07f99",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.629868998657912,
+          "p95": 0.7147583994083107,
+          "max": 1.2876620166935027
+        }
+      },
+      {
+        "episode_id": "d0f8727d35eced697dcf79fe",
+        "source_recording_id": "471c02da39ac4fa7ba4fcd140f9cb1ed",
+        "observations": 185,
+        "snapshots_compared": 185,
+        "restarts_verified": 3,
+        "abrupt_exit": false,
+        "retry_after_abrupt_verified": false,
+        "full_legacy_snapshot_parity": true,
+        "controller_prefix_preserved": true,
+        "confirmed_controller_facts": 6,
+        "journal_commands": 191,
+        "journal_sha256": "dfe246fc721a00c10ef3a5c64505a33b46506d5e00b5ee697102af38a5d626d5",
+        "sqlite_integrity": "ok",
+        "shadow_false_prompt_updates": 0,
+        "latency_ms": {
+          "p50": 0.6274449988268316,
+          "p95": 0.6857969856355339,
+          "max": 1.2139800237491727
+        }
+      }
+    ]
+  }
+}

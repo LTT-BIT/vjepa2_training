@@ -1,0 +1,154 @@
+{
+  "seed": 42,
+  "episode_id": "3e645bf4e137d0f836c9d7ff",
+  "context": {
+    "schema": "tomato-task-memory-context-v1",
+    "session_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff",
+    "episode_id": "3e645bf4e137d0f836c9d7ff",
+    "model_version": "b0-independent-h15-s42-7b9275832dc5",
+    "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+    "controller_reported_phase": 6,
+    "controller_prompt_version": 6,
+    "ordered_decision_history": [
+      {
+        "decision_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:prompt1",
+        "from_phase": 0,
+        "to_phase": 1,
+        "confirmation_timestamp": 9.5,
+        "evidence_timestamp": 9.5,
+        "prompt_version": 1
+      },
+      {
+        "decision_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:prompt2",
+        "from_phase": 1,
+        "to_phase": 2,
+        "confirmation_timestamp": 56.5,
+        "evidence_timestamp": 56.5,
+        "prompt_version": 2
+      },
+      {
+        "decision_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:prompt3",
+        "from_phase": 2,
+        "to_phase": 3,
+        "confirmation_timestamp": 61.5,
+        "evidence_timestamp": 61.5,
+        "prompt_version": 3
+      },
+      {
+        "decision_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:prompt4",
+        "from_phase": 3,
+        "to_phase": 4,
+        "confirmation_timestamp": 72.0,
+        "evidence_timestamp": 72.0,
+        "prompt_version": 4
+      },
+      {
+        "decision_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:prompt5",
+        "from_phase": 4,
+        "to_phase": 5,
+        "confirmation_timestamp": 82.0,
+        "evidence_timestamp": 82.0,
+        "prompt_version": 5
+      },
+      {
+        "decision_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:prompt6",
+        "from_phase": 5,
+        "to_phase": 6,
+        "confirmation_timestamp": 130.0,
+        "evidence_timestamp": 130.0,
+        "prompt_version": 6
+      }
+    ],
+    "recent_recognition_history": [
+      {
+        "observation_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:264",
+        "observation_timestamp": 132.0,
+        "current_probabilities": [
+          9.937342004993302e-06,
+          4.391850240989145e-07,
+          0.999978261805746,
+          1.1361667224933587e-05
+        ],
+        "future_probabilities": [
+          2.6215263130223927e-09,
+          1.575981705837053e-12,
+          0.9999999600342719,
+          3.734262577730247e-08
+        ],
+        "future_horizon_s": 1.5,
+        "scope": "historical_prediction_not_physical_outcome"
+      },
+      {
+        "observation_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:265",
+        "observation_timestamp": 132.5,
+        "current_probabilities": [
+          0.00044786040442287037,
+          4.2654298762342125e-05,
+          0.9993812190415027,
+          0.00012826625531224943
+        ],
+        "future_probabilities": [
+          4.4902896073795106e-10,
+          2.6973704640695567e-12,
+          0.9999996809081763,
+          3.186400974793866e-07
+        ],
+        "future_horizon_s": 1.5,
+        "scope": "historical_prediction_not_physical_outcome"
+      },
+      {
+        "observation_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:266",
+        "observation_timestamp": 133.0,
+        "current_probabilities": [
+          0.0011596948667396936,
+          2.8726498267142206e-05,
+          0.9982933280998569,
+          0.0005182505351361339
+        ],
+        "future_probabilities": [
+          2.4611539794368264e-05,
+          1.2121315653205828e-08,
+          0.9877313060121646,
+          0.01224407032672533
+        ],
+        "future_horizon_s": 1.5,
+        "scope": "historical_prediction_not_physical_outcome"
+      },
+      {
+        "observation_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:267",
+        "observation_timestamp": 133.5,
+        "current_probabilities": [
+          0.0014904620523003113,
+          0.00013968730032809791,
+          0.9560800678220739,
+          0.042289782825297655
+        ],
+        "future_probabilities": [
+          7.329937271929784e-07,
+          3.2055258670289685e-09,
+          0.3484122088344912,
+          0.6515870549662558
+        ],
+        "future_horizon_s": 1.5,
+        "scope": "historical_prediction_not_physical_outcome"
+      }
+    ],
+    "fresh_current": {
+      "observation_id": "memory-shadow-s42-3e645bf4e137d0f836c9d7ff:267",
+      "timestamp": 133.5,
+      "age_s": 0.03999999999999204,
+      "probabilities": [
+        0.0014904620523003113,
+        0.00013968730032809791,
+        0.9560800678220739,
+        0.042289782825297655
+      ]
+    },
+    "suggests_prompt_update": false,
+    "physical_success": "unknown",
+    "learned_memory": false,
+    "scope": "shadow_context_only"
+  },
+  "canonical_context_bytes": 3362,
+  "stale_fresh_current_is_none": true
+}

@@ -1,0 +1,29 @@
+{
+  "real_recordings": 8,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "observations_compared": 6807,
+  "restores_verified": 72,
+  "confirmed_controller_facts": 144,
+  "real_abrupt_replay_passed": true,
+  "named_state_recordings_checked": 92,
+  "roi_agent_orders_identical": false,
+  "compact_contexts": 24,
+  "compact_context_max_bytes": 3375,
+  "compact_context_budget_bytes": 8192,
+  "compact_budget_is_llm_token_budget": false,
+  "restored_stale_contexts_clear_current": true,
+  "source_sha256": {
+    "/home/user/vjepa2_training/tools/report_tomato_durable_memory.py": "386213f20c7a4f515c72d9a3a8817a4282aabe0117414d8c6a2c62941b1a6fb0",
+    "tools/tomato_memory_context.py": "f39a4511e7555433f6c947635d2087d35cc79aec08f2a7d695bf8c3b835557bb"
+  },
+  "stage_accuracy_improvement_claimed": false,
+  "learned_memory_trained": false,
+  "full100_four_view_cache_ready": false,
+  "roi_adapter_image_path_validated": false,
+  "default_changed": false,
+  "operation_annotation_paused": true
+}

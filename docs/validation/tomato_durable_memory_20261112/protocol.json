@@ -1,0 +1,26 @@
+{
+  "version": "durable-task-memory-shadow-complete100-v1",
+  "frozen_lock": "configs/tomato_frozen_independent_20261112/b0.lock.v3.json",
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "evaluation": "8 exposed development recordings; historical test excluded",
+  "short_capacity": 16,
+  "event_capacity": 256,
+  "max_observation_age_s": 1.0,
+  "candidate_ttl_s": 1.5,
+  "controller_facts": "Historical decisions remain auditable independently of perception age; physical outcome unknown",
+  "restart_cuts": "one third and two thirds of each episode",
+  "abrupt_exit": "one real seed42 replay exits without SQLite close after half the observations, then continues and retries committed commands",
+  "identity": "session, episode, model SHA, manifest SHA, joint names, code SHA",
+  "persistence": "single writer; SQLite WAL synchronous FULL; atomic command/result/hash-chain/tip; replay verified",
+  "clock": "Existing offline observation clock plus deterministic 0.04s arrival fixture; not measured network latency",
+  "new_memory_training": false,
+  "prompt_write": false,
+  "roi_executed": false,
+  "default_changed": false,
+  "operation_annotation": "paused; no new outcome labels"
+}
