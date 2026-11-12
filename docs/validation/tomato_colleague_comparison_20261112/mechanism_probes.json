@@ -1,0 +1,55 @@
+{
+  "scope": "synthetic mechanism probes only; not model accuracy or real recording scores",
+  "colleague_sha": "07f93115d5427b3ebaaf1735e9bd18a1e1240aa5",
+  "source_sha256": "90f8779ba044e02955167e5cdcacb97f71d457b144ba614c9104690c1b87ab23",
+  "future_only_support": {
+    "colleague_events": [
+      {
+        "kind": "commit",
+        "time": 0.5,
+        "active_stage": "harvest"
+      },
+      {
+        "kind": "timeout",
+        "time": 2.0,
+        "active_stage": "harvest"
+      }
+    ],
+    "ours_final_phase": 0
+  },
+  "after_seventh_position": {
+    "ack_enabled": false,
+    "reason": "isolate legal-edge topology from ACK gating",
+    "colleague_commits": [
+      {
+        "time": 1.5,
+        "stage": "harvest"
+      },
+      {
+        "time": 2.5,
+        "stage": "return"
+      },
+      {
+        "time": 3.5,
+        "stage": "adjust"
+      },
+      {
+        "time": 4.5,
+        "stage": "pickup"
+      },
+      {
+        "time": 5.5,
+        "stage": "harvest"
+      },
+      {
+        "time": 6.5,
+        "stage": "return"
+      },
+      {
+        "time": 7.5,
+        "stage": "adjust"
+      }
+    ],
+    "ours_final_phase": 6
+  }
+}
