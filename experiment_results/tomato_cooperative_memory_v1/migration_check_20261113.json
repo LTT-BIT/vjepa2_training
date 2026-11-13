@@ -1,0 +1,94 @@
+{
+  "test": "recorded_cache_wiring_only",
+  "validation_recordings": 8,
+  "observations": 2269,
+  "b0_phase_parity": true,
+  "independent_outcome_evidence": 0,
+  "outcome_status": "unknown",
+  "encoder_calls": 0,
+  "training": false,
+  "robot_calls": 0,
+  "performance_improvement_claim": false,
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "baseline_checkpoint": {
+    "path": "runs/tomato/optimization_20261108/bundles/independent_h15_s42.pt",
+    "sha256": "7b9275832dc559ad5f9b17faa6380bb5b7571897bcee8588cf91ad5e3c260b00",
+    "historical_cf_norm": true
+  },
+  "cpu_increment_ms": {
+    "p50": 0.225059,
+    "p95": 0.30046599999999996,
+    "maximum": 0.416402
+  },
+  "timing_scope": "Python prototype update and deep-copy read; excludes encoder and action model",
+  "episodes": [
+    {
+      "episode_id": "3e645bf4e137d0f836c9d7ff",
+      "observations": 268,
+      "phase_parity": true,
+      "feature_sha256": "d84136c842e3322e33a094242ead55c7fbd24c599474b91a70a600be297e3974",
+      "maximum_recent_frames": 16
+    },
+    {
+      "episode_id": "27d8bc0413a42341c7e8c3e5",
+      "observations": 350,
+      "phase_parity": true,
+      "feature_sha256": "19cf3fdc80d797d9f3080f015eecb42dc84a6369edeb82e6e70ad07cac34ace9",
+      "maximum_recent_frames": 16
+    },
+    {
+      "episode_id": "0b12ac0fda9d7cd77dee6e60",
+      "observations": 361,
+      "phase_parity": true,
+      "feature_sha256": "3648d97f2915ecd39302319dd1e6e6bd0b9b181297d4c9ec4d47c6db8d1f4f32",
+      "maximum_recent_frames": 16
+    },
+    {
+      "episode_id": "61c420843f11ca54bfe804ee",
+      "observations": 286,
+      "phase_parity": true,
+      "feature_sha256": "5a09bcd482531f83b6b799c169c67e953031f6c7fbc4ac7838425c0fbf255110",
+      "maximum_recent_frames": 16
+    },
+    {
+      "episode_id": "5b82f4bb76e70d8bf12c0798",
+      "observations": 281,
+      "phase_parity": true,
+      "feature_sha256": "f0c641ba5b0185a1a4718db6b25e77d56f82aeb2709f4e6ca28788773b1cd41d",
+      "maximum_recent_frames": 16
+    },
+    {
+      "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+      "observations": 359,
+      "phase_parity": true,
+      "feature_sha256": "4e7df0e70f77f81e63660c5dc9596ff4897a82cd22fc256d6540ccaba4dcf1e3",
+      "maximum_recent_frames": 16
+    },
+    {
+      "episode_id": "a8b23394b642f0bb769a0391",
+      "observations": 179,
+      "phase_parity": true,
+      "feature_sha256": "ebd46eed4f22484be914799ca50e1d8d88d346779db65000ca36602bc9664520",
+      "maximum_recent_frames": 16
+    },
+    {
+      "episode_id": "d0f8727d35eced697dcf79fe",
+      "observations": 185,
+      "phase_parity": true,
+      "feature_sha256": "a913f04fd1b02ccee974aed104e8460d8ca29fbbd9b32275b9ef41f63a44767d",
+      "maximum_recent_frames": 16
+    }
+  ],
+  "migration_date": "2026-11-13",
+  "contract_tests_passed": 93,
+  "migrated_runtime_ast_unchanged_except_docstring": true,
+  "external_prototype_directory_required": false,
+  "canonical_current_memory": "tools/tomato_rgb_memory.py",
+  "canonical_historical_memory": "tools/tomato_cooperative_memory.py",
+  "source_sha256": {
+    "tools/tomato_cooperative_memory.py": "be92cf6d008d74aac421f6a1d6031d475628e190f9da29b07e6857b2807a95e1",
+    "tools/smoke_tomato_cooperative_memory.py": "a59b4dba675d7545208d0999dfb1c759ca83947b3e3b9c64f02582e06086a68b",
+    "tests/test_tomato_cooperative_memory.py": "4c6606356abdb8b582993148aceb5dfacb8cc60cd36205d4819654d4c5918885",
+    "configs/tomato_cooperative_memory_v1/experiment.json": "f9ce790d3431904a4cacef279b41d44a261b573ebd13b7ca0ba2d1fd309c4389"
+  }
+}

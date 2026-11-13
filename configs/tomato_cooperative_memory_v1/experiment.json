@@ -1,0 +1,80 @@
+{
+  "version": "tomato-cooperative-memory-experiment-v1",
+  "default_integrated": false,
+  "baseline_git_sha": "47bba989d23d929fda70637a76c9b8d178ff4bf5",
+  "baseline_sources": {
+    "tools/tomato_operation_memory.py": "7b6b17358291475fd7309a71aaab96902f81f3a2bf3da5c4e43746e7f9ecf1a5",
+    "tools/tomato_task_memory.py": "d693a394b278868f0ed103fb19b54fccc996016bda3f254f436ea0362b0f9114",
+    "tools/tomato_state_recovery.py": "06e24c47c0c094ecf2b9881407b88c2feabde0bbab0892bba1271ad022f6fb3c"
+  },
+  "short_context_observations": 16,
+  "anchor_capacity": 12,
+  "camera_feature_shape": [
+    3,
+    1024
+  ],
+  "joint_dimension": 58,
+  "oracle_inputs": false,
+  "physical_outcomes_inferred_from_features": false,
+  "goals": [
+    "acquire_truss",
+    "detach_fruit_and_transfer",
+    "place_and_release_truss",
+    "reposition_on_plate",
+    "reacquire_after_adjustment",
+    "detach_fruit_and_transfer_again",
+    "place_remaining_object"
+  ],
+  "expected_results": [
+    "truss_stably_lifted",
+    "tomato_detached",
+    "truss_returned",
+    "adjustment_ended",
+    "second_grasp_verified",
+    "tomato_detached",
+    "truss_returned"
+  ],
+  "retrieved_phase_context": [
+    [
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "neural_memory_reader_trained": false,
+  "action_policy_modified": false,
+  "robot_calls": 0,
+  "tests_passed": 11,
+  "real_cache_smoke": "experiment_results/tomato_cooperative_memory_v1/historical_smoke_20261111.json",
+  "prototype_sources": {
+    "memory.py": "8fe3538d511350ee2cc54239d1b75515539b0324e6c180866e06839803f07a0a",
+    "test_memory.py": "cd2179381f01d4d00887bef3a29c0227c3ae890eda0bd74043a4804463f19835",
+    "smoke_cached.py": "6e635b5a9872fdf4ad59301e6753ad2682f86b335fbe6824ce4fefd15edcf30f"
+  },
+  "integration_status": "repository_module_opt_in_historical_protocol",
+  "current_research_module": "tools.tomato_rgb_memory",
+  "provenance_note": "baseline and prototype hashes are historical source identities, not current-module checksums"
+}
