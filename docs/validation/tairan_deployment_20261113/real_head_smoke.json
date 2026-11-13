@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "real frozen val features plus real Joint CPU head; no Encoder/online inference, no accuracy measurement",
+  "episode_id": "e7ff274a7ff410e58a47f485",
+  "source_recording_id": "6b8eb1ba3f3843e2b952e7a2228dedd1",
+  "split": "val",
+  "anchors": 8,
+  "features_shape": [
+    8,
+    4000
+  ],
+  "feature_cache_path": "/home/user/pi05/vjepa2_training/runs/tomato/local93_20261107/shared_feature_cache/4f741a529c742b09befce64a2e1196d068a95b6636b27f4b6b307a01ffd6001c.npz",
+  "feature_cache_sha256": "2a2b3b8af0c8fdcb9cc30030500936a0e8d9bbf6c29fd368c3ab2aa7f936f776",
+  "max_abs_probability_difference": {
+    "current": 6.122691242893552e-11,
+    "future": 2.061072144253712e-11
+  },
+  "checkpoint_sha256": "9324cdb3287c407c259eafbc725ac3bc3d3df6d38646545e8435e0faa9ad03d9",
+  "test_scored": false
+}

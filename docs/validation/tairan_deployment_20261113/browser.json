@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "downloaded_complete_config": true,
+  "backend_config_identical": true,
+  "ttl_edit_invalidates_simulation": true,
+  "nondefault_ttl_applied": true,
+  "reset_restores_defaults": true,
+  "source": "clean main baseline plus handoff UI changes",
+  "real_joint_2hz_cached_rows": true
+}

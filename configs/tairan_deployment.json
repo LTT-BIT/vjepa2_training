@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-11-13",
+  "timezone": "Asia/Shanghai",
+  "artifacts": {
+    "run": {
+      "best_head.pt": {
+        "path": "/home/user/pi05/vjepa2_training/runs/tomato/local93_20261107/joint/best_head.pt",
+        "sha256": "9324cdb3287c407c259eafbc725ac3bc3d3df6d38646545e8435e0faa9ad03d9",
+        "bytes": 4144993
+      },
+      "manifest.json": {
+        "path": "/home/user/pi05/vjepa2_training/runs/tomato/local93_20261107/joint/manifest.json",
+        "sha256": "474301f37a8dd65d78fdde4624abacc4d0644a5401598121231198e969f11750",
+        "bytes": 2646155
+      },
+      "split.json": {
+        "path": "/home/user/pi05/vjepa2_training/runs/tomato/local93_20261107/joint/split.json",
+        "sha256": "5ccda5a1499c01082c5223fbdb04d780f8cfb02da7146d5c50cc748ab32281de",
+        "bytes": 3771
+      },
+      "training_config.json": {
+        "path": "/home/user/pi05/vjepa2_training/runs/tomato/local93_20261107/joint/training_config.json",
+        "sha256": "6d704437c838cf50dbf8314fb697db1d01ed21d3c6c9211dfb64bf726cf3a553",
+        "bytes": 4594
+      },
+      "validation_lock.json": {
+        "path": "/home/user/pi05/vjepa2_training/runs/tomato/local93_20261107/joint/validation_lock.json",
+        "sha256": "78384e6670d800e11336b39362f601b439cfc30fb8b5943932c9c0a05053df5c",
+        "bytes": 271
+      },
+      "validation_receipt.json": {
+        "path": "/home/user/pi05/vjepa2_training/runs/tomato/local93_20261107/joint/validation_receipt.json",
+        "sha256": "8c532596fa3e8aea3fc8f53e56a179d6c005f8dba1923e7da8c09f2bfc71c7bb",
+        "bytes": 9667
+      }
+    },
+    "encoder": {
+      "config.json": {
+        "path": "/home/user/pi05/vjepa2_training/pretrained/vjepa2-vitl-fpc64-256/config.json",
+        "sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9",
+        "bytes": 785
+      },
+      "model.safetensors": {
+        "path": "/home/user/pi05/vjepa2_training/pretrained/vjepa2-vitl-fpc64-256/model.safetensors",
+        "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+        "bytes": 1303947864
+      },
+      "weights_metadata.json": {
+        "path": "/home/user/pi05/vjepa2_training/pretrained/vjepa2-vitl-fpc64-256/weights_metadata.json",
+        "sha256": "a8ef69890ac611854138c9da48fdf9c7c264f62b0268380943f02d2102189336",
+        "bytes": 211
+      }
+    }
+  },
+  "code": {
+    "base_commit": "db4cdad6e87af7c077f5be16a00bc277efeb54d9",
+    "handoff_branch": "feat/tairan-deployment-handoff-20261113",
+    "handoff_commit_resolution": "git rev-parse origin/feat/tairan-deployment-handoff-20261113",
+    "source_sha256": {
+      "tools/tomato_review_ui/handshake.py": "c45a09b97aec4199383f53027b5517eeaf96dc944bf82633a41495dc935d7a1e",
+      "tools/tomato_review_ui/handshake_service.py": "a14c186cdc1071dc17dbd29260b4eceb19f200ad75e0dec65b6992e3c2f2cccf",
+      "tools/tomato_review_ui/static/app.js": "098acda8c1679188ce689b813c9149a253ec8acf563c511ca8e795a82f4347bb",
+      "tools/tomato_review_ui/static/index.html": "ac7b6462339ce955c1e4c2f837d76a2058e3bc12bf5fa7df65da985284f9fba8",
+      "tools/tomato_phase_model.py": "3bd79ab1174ecb4c032a5ed057ca6bc3e40f91ad783d2058b67711f4ddd594a6",
+      "tools/tomato_dataset.py": "1d84d589095ecbda33c8be457ff1d10af880aca30df47f4062cfe2898d3ad3db",
+      "tools/tomato_runtime.py": "af4f822e7ccf7e13864be84ae572b73a6914e614876e851b5ac9d6f44b97575a",
+      "tools/verify_tairan_deployment.py": "7ed7b9c4e0461e57b5fd457657ac76fa3f4c156d7d11557ebf52e715ccac2464"
+    },
+    "training_commit": null,
+    "training_commit_note": "Original checkpoint and training files did not record a Git commit; do not infer one from file dates."
+  },
+  "handshake": {
+    "path": "configs/tairan_handshake.json",
+    "sha256": "8e0eabb78b523c514f12d07b409e166ea6e7fd0b094cd371662e0f36cc77aaa3",
+    "export_source": "Clean main UI default/reset configuration, downloaded and explicitly applied on 2026-11-13; includes TTL. Historical pre-WAIT_LATE_ACK recordings are not this configuration.",
+    "prediction_hz": 2,
+    "commit_mode": "planning",
+    "late_ack_required_support": 2,
+    "defer_s": 0,
+    "initial_active": "pickup",
+    "late_ack_timeout_semantics": "total seconds from actual commit, not additional seconds after soft timeout"
+  },
+  "environment": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "executable": "/home/user/pi05/vjepa2_training/.venv-tomato/bin/python",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.39",
+    "include_system_site_packages": true,
+    "packages": {
+      "numpy": "1.26.4",
+      "torch": "2.15.0",
+      "torchvision": "0.29.2",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pyarrow": "19.0.1",
+      "av": "19.0.2",
+      "PyYAML": "6.0.3",
+      "pytest": "9.2.0",
+      "huggingface_hub": "2.4.0"
+    },
+    "torch_runtime": "2.15.0+cu132",
+    "cuda_build": "13.2",
+    "opencv": {
+      "version": "4.6.0",
+      "module_path": "/usr/lib/python3/dist-packages/cv2.cpython-312-x86_64-linux-gnu.so",
+      "distribution_metadata": null,
+      "installation": "system site package, not pip opencv-python"
+    }
+  },
+  "model_contract": {
+    "prediction_mode": "joint",
+    "future_horizon_s": 1.0,
+    "dimension": 4000,
+    "joint_dimension": 58,
+    "labels": [
+      "pickup",
+      "harvest",
+      "return",
+      "adjust"
+    ],
+    "normalization": "mean/std embedded in best_head.pt; train-only; do not refit at deployment",
+    "camera_mapping_status": "Physical camera serial/extrinsic binding must be supplied and checked by deployment team",
+    "joint_units_status": "Checkpoint uses measured observation.state position values without a unit conversion; confirm real robot stream matches recording units"
+  },
+  "validation_scope": "Material/contract validation and offline CPU head replay only; no live cameras, online inference, robot execution or dual-device UI validation",
+  "input_contract": {
+    "project": "tomato_sharpa_four_stage",
+    "robot": "sharpa",
+    "variant": "normal",
+    "model_id": "facebook/vjepa2-vitl-fpc64-256",
+    "model_revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+    "cameras": [
+      "cam0",
+      "cam1",
+      "cam2"
+    ],
+    "labels": [
+      "pickup",
+      "harvest",
+      "return",
+      "adjust"
+    ],
+    "image_size": 256,
+    "history_frames": 16,
+    "history_sample_hz": 10,
+    "prediction_hz": 2,
+    "joint_mode": "arms-and-hands",
+    "joint_names": [
+      "left_fr3_joint1.position",
+      "left_fr3_joint2.position",
+      "left_fr3_joint3.position",
+      "left_fr3_joint4.position",
+      "left_fr3_joint5.position",
+      "left_fr3_joint6.position",
+      "left_fr3_joint7.position",
+      "right_fr3_joint1.position",
+      "right_fr3_joint2.position",
+      "right_fr3_joint3.position",
+      "right_fr3_joint4.position",
+      "right_fr3_joint5.position",
+      "right_fr3_joint6.position",
+      "right_fr3_joint7.position",
+      "left_thumb_CMC_FE.position",
+      "left_thumb_CMC_AA.position",
+      "left_thumb_MCP_FE.position",
+      "left_thumb_MCP_AA.position",
+      "left_thumb_IP.position",
+      "left_index_MCP_FE.position",
+      "left_index_MCP_AA.position",
+      "left_index_PIP.position",
+      "left_index_DIP.position",
+      "left_middle_MCP_FE.position",
+      "left_middle_MCP_AA.position",
+      "left_middle_PIP.position",
+      "left_middle_DIP.position",
+      "left_ring_MCP_FE.position",
+      "left_ring_MCP_AA.position",
+      "left_ring_PIP.position",
+      "left_ring_DIP.position",
+      "left_pinky_CMC.position",
+      "left_pinky_MCP_FE.position",
+      "left_pinky_MCP_AA.position",
+      "left_pinky_PIP.position",
+      "left_pinky_DIP.position",
+      "right_thumb_CMC_FE.position",
+      "right_thumb_CMC_AA.position",
+      "right_thumb_MCP_FE.position",
+      "right_thumb_MCP_AA.position",
+      "right_thumb_IP.position",
+      "right_index_MCP_FE.position",
+      "right_index_MCP_AA.position",
+      "right_index_PIP.position",
+      "right_index_DIP.position",
+      "right_middle_MCP_FE.position",
+      "right_middle_MCP_AA.position",
+      "right_middle_PIP.position",
+      "right_middle_DIP.position",
+      "right_ring_MCP_FE.position",
+      "right_ring_MCP_AA.position",
+      "right_ring_PIP.position",
+      "right_ring_DIP.position",
+      "right_pinky_CMC.position",
+      "right_pinky_MCP_FE.position",
+      "right_pinky_MCP_AA.position",
+      "right_pinky_PIP.position",
+      "right_pinky_DIP.position"
+    ],
+    "seed": 42,
+    "sampler_version": "uniform-integer-causal-v2"
+  },
+  "transport": {
+    "joint_archive": {
+      "path": "/home/user/pi05/vjepa2_training/runs/tomato/local93_20261107/tairan_handoff_20261113/joint_artifacts.tar.gz",
+      "bytes": 4053243,
+      "sha256": "6fc2c3bcbfa9ec79cbe3cb52dccf848dab074dd60a3aebc7ed19ed67709082fc",
+      "content": "Only the six bound run files; no Encoder, raw data, feature cache or robot code"
+    },
+    "encoder_directory": "/home/user/pi05/vjepa2_training/pretrained/vjepa2-vitl-fpc64-256",
+    "storage_status": "Local artifacts prepared; remote shared-storage destination not assigned"
+  }
+}

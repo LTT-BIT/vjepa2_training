@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "scope": "artifact/contract verification; no online or robot test",
+  "verified_artifacts": 9,
+  "baseline_commit": "db4cdad6e87af7c077f5be16a00bc277efeb54d9",
+  "model": {
+    "prediction_mode": "joint",
+    "future_horizon_s": 1.0,
+    "best_epoch": 7,
+    "dimension": 4000,
+    "joint_dimension": 58,
+    "label_order": [
+      "pickup",
+      "harvest",
+      "return",
+      "adjust"
+    ],
+    "head_parameters": 1026312
+  },
+  "normalization": {
+    "embedded": true,
+    "fit_split": "train",
+    "mean_shape": [
+      4000
+    ],
+    "std_shape": [
+      4000
+    ],
+    "positive_finite_std": true
+  },
+  "handshake": {
+    "margin": 0,
+    "theta_prepare": 0.65,
+    "theta_commit": 0.8,
+    "K": 1,
+    "min_confirm_span_s": 0,
+    "theta_ack": 0.7,
+    "ack_timeout_s": 1.5,
+    "late_ack_enabled": true,
+    "late_ack_timeout_s": 5,
+    "legal_edges": true,
+    "ack_enabled": true,
+    "latency_s": 0.09,
+    "plan_period_s": 0.5,
+    "plan_offset_s": 0,
+    "prediction_ttl_s": 0.75
+  }
+}
