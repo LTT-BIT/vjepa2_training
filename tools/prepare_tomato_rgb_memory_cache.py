@@ -17,10 +17,10 @@ DETECTOR=Path('/home/user/datasets/derived/tomato_roi_locator_experiment_r2')
 DETECTION_CACHE=Path('/home/user/datasets/derived/tomato_complete100_state_guarded_candidates_r1')
 
 
-def prepare(out):
+def prepare(out,reuse_partial=None):
     if ds.read_json(CONFIG).get('roi_source_mode')=='recorded_offline_r11':
         from .prepare_tomato_recorded_roi_cache import prepare_recorded
-        return prepare_recorded(out,CONFIG)
+        return prepare_recorded(out,CONFIG,reuse_partial=reuse_partial)
     import av
     if out.exists():raise FileExistsError('Preserve previous cache')
     cfg=ds.read_json(CONFIG);lock=verify(Path(cfg['frozen_lock']));manifest=ds.read_json(lock['manifest']);assert lock['manifest_sha256']==cfg['manifest_sha256'];episodes=[e for e in manifest['episodes'] if e['split']!='test'];by={r['episode_id']:r for r in ds.read_json('runs/tomato/complete100_20261111/data_identity.json')['episodes']}
@@ -72,4 +72,4 @@ def prepare(out):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--out',required=True,type=Path);prepare(p.parse_args().out)
+    p=argparse.ArgumentParser();p.add_argument('--out',required=True,type=Path);p.add_argument('--reuse-partial',type=Path);a=p.parse_args();prepare(a.out,reuse_partial=a.reuse_partial)

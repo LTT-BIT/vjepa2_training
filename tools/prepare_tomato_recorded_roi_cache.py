@@ -19,7 +19,7 @@ def validate_binding(manifest,bundle,info):
     if cams!={f'observation.images.cam{i}' for i in range(3)}|{'observation.images.interaction'} or info['total_frames']!=425556 or info['fps']!=30:raise ValueError('Old policy four-view schema mismatch')
 
 
-def prepare_recorded(out,config):
+def prepare_recorded(out,config,reuse_partial=None):
     import av,cv2,json
     from .tomato_phase_model import load_encoder,encode_clips
     if out.exists():raise FileExistsError('Preserve historical cache')
@@ -33,12 +33,28 @@ def prepare_recorded(out,config):
         if e['split']=='train':sums+=q.sum(0,dtype=np.float64);squares+=np.square(q.astype(np.float64)).sum(0);n+=len(q)
     mean=(sums/n).astype('float32');std=np.sqrt(np.maximum(squares/n-(sums/n)**2,0)).clip(.01).astype('float32');out.mkdir(parents=True);ds.write_json(out/'protocol.json',cfg);np.savez(out/'train_state_statistics.npz',mean=mean,std=std)
     signature=ds.fingerprint(dict(protocol=cfg,inputs=inputs,mean=mean.tolist(),std=std.tolist(),encoder=lock['pretrained'],source=ds.digest(__file__)))
+    parents={}
+    if reuse_partial is not None:
+        reuse_partial=Path(reuse_partial)
+        if ds.read_json(reuse_partial/'protocol.json')!=cfg:raise ValueError('Partial protocol mismatch')
+        legacy=np.load(reuse_partial/'train_state_statistics.npz');np.testing.assert_array_equal(legacy['mean'],mean);np.testing.assert_array_equal(legacy['std'],std)
+        legacy_signature=ds.fingerprint(dict(protocol=cfg,inputs=inputs,mean=mean.tolist(),std=std.tolist(),encoder=lock['pretrained'],source='ba276df21b15429a34e78ae1a702e704f1dcf29c1aa604a49e2d71aa6110ca06'))
+        parents={r['episode_id']:r for r in ds.read_json(reuse_partial/'progress.json')['episodes']}
     encoder,_=load_encoder('pretrained/vjepa2-vitl-fpc64-256','cuda');rows=[];start=time.perf_counter()
     for e in episodes:
         eid=e['episode_id'];row=mapping[(e['dataset_root'],e['episode_index'])];ep=row['episode_index'];path=Path(base[eid]['feature_path']);assert ds.digest(path)==base[eid]['feature_sha256'];z=np.load(path);q=positions[eid];assert np.array_equal(z['anchors'],e['anchors']);np.testing.assert_array_equal(z['features'][:,-928:],q[z['input_indices']].reshape(len(z['anchors']),928));keep=np.flatnonzero(z['anchors']>=45);request={int(z['anchors'][k]):k for k in keep}
         for cam in range(3):
             rel=info['video_path'].format(episode_chunk=0,episode_index=ep,video_key=f'observation.images.cam{cam}');vp=root/'b_coarse'/rel;orig=str(Path(e['videos'][cam]).relative_to(e['dataset_root']));assert ds.digest(vp)==e['input_sha256'][orig];inputs[str(vp)]=ds.digest(vp)
         video=root/'b_coarse'/info['video_path'].format(episode_chunk=0,episode_index=ep,video_key='observation.images.interaction');coords=root/f'roi_metadata/episode_{ep:06d}.jsonl.gz';inputs[str(video)]=ds.digest(video);inputs[str(coords)]=ds.digest(coords);inputs[str(path)]=ds.digest(path);recent=deque();queue=[];visual=[];meta=[];valids=[];anchors=[];timings=[];seen=0
+        if eid in parents:
+            parent=parents[eid];pp=Path(parent['path'])
+            if ds.digest(pp)!=parent['sha256'] or parent['roi_video_sha256']!=inputs[str(video)]:raise ValueError('Partial cached file/source changed')
+            with np.load(pp,allow_pickle=False) as old:
+                if str(old['cache_signature'])!=legacy_signature:raise ValueError('Unrecognized partial extraction signature')
+                np.testing.assert_array_equal(old['anchors'],z['anchors'][keep]);np.testing.assert_array_equal(old['input_indices'],z['input_indices'][keep]);np.testing.assert_array_equal(old['positions'],q[z['input_indices'][keep]]);np.testing.assert_array_equal(old['visual'][:,:3].reshape(-1,3072),z['features'][keep,:3072])
+                payload={k:old[k] for k in old.files};payload['cache_signature']=np.array(signature)
+            p=out/f'{eid}.npz';np.savez_compressed(p,**payload);inputs[str(pp)]=parent['sha256'];new=dict(parent,path=str(p),sha256=ds.digest(p),reused_from=str(pp),legacy_algorithm_sha256='ba276df21b15429a34e78ae1a702e704f1dcf29c1aa604a49e2d71aa6110ca06');rows.append(new);ds.write_json(out/'progress.json',dict(episodes=rows));print('R11_REUSED',len(rows),eid,flush=True);continue
+
         def flush():
             if not queue:return
             t=time.perf_counter();features=encode_clips(encoder,np.stack([r[0] for r in queue]));timings.append((time.perf_counter()-t)*1000)

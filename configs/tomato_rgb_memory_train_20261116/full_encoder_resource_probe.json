@@ -1,0 +1,56 @@
+{
+  "status": "full_encoder_trainability_verified_not_formal_finetuning",
+  "probes": [
+    {
+      "scope": "One real optimizer step, four views,16frames10Hz, batch1 and one history window; resource feasibility only, NOT eight-window unfreezing, convergence or accuracy",
+      "device": "NVIDIA GeForce RTX 5090",
+      "raw_inputs_old100_only": true,
+      "checkpoint_saved": false,
+      "pretrained_files_modified": false,
+      "gradient_checkpointing": true,
+      "parameter_storage": "FP32; autocast BF16; AdamW FP32 state",
+      "history_windows": 1,
+      "status": "passed",
+      "encoder_parameters": 303885312,
+      "encoder_gradient_parameters": 303885312,
+      "head_parameters": 725640,
+      "loss": 2.453125,
+      "optimizer_step_s": 0.5181304670404643,
+      "peak_allocated_bytes": 5000692224,
+      "peak_reserved_bytes": 5035261952,
+      "pretrained": {
+        "model_id": "facebook/vjepa2-vitl-fpc64-256",
+        "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+        "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+        "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+      }
+    },
+    {
+      "scope": "One real optimizer step, four views16frames10Hz, batch1; resource feasibility only, NOT a convergence or accuracy result",
+      "device": "NVIDIA GeForce RTX 5090",
+      "raw_inputs_old100_only": true,
+      "checkpoint_saved": false,
+      "pretrained_files_modified": false,
+      "gradient_checkpointing": true,
+      "parameter_storage": "FP32; autocast BF16; AdamW FP32 state",
+      "history_windows": 8,
+      "status": "passed",
+      "encoder_parameters": 303885312,
+      "encoder_gradient_parameters": 303885312,
+      "head_parameters": 725640,
+      "loss": 2.7421875,
+      "optimizer_step_s": 2.535053172032349,
+      "peak_allocated_bytes": 8447101952,
+      "peak_reserved_bytes": 9508487168,
+      "pretrained": {
+        "model_id": "facebook/vjepa2-vitl-fpc64-256",
+        "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+        "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+        "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+      }
+    }
+  ],
+  "train_windows": 23483,
+  "formal_full_encoder_training_started": false,
+  "note": "One optimizer step per configuration; batch1, gradient checkpointing, FP32 parameters/AdamW state, BF16 autocast. No checkpoint or original weight changes. Throughput/convergence/generalization unverified."
+}
