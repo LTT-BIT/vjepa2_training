@@ -1,0 +1,123 @@
+{
+  "models": [
+    {
+      "seed": 42,
+      "method": "G0_global_current",
+      "checkpoint_sha256": "4e3ec3528e9c6951c93477afe6e042c0440b63b0645ac09520baffb45c8e79ce",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 1.7881393432617188e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 0.9076509159058332,
+        "p95": 1.1064677732065311,
+        "max": 4.542573005892336
+      }
+    },
+    {
+      "seed": 42,
+      "method": "G1_local_current",
+      "checkpoint_sha256": "cca3ce3b21f5bfe3120f185691ee364de2d72e23ae40d03f6f20d453c1a871fd",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 1.0132789611816406e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 0.8990420028567314,
+        "p95": 1.1229844065383074,
+        "max": 2.0068089943379164
+      }
+    },
+    {
+      "seed": 42,
+      "method": "G3_local_only_history8",
+      "checkpoint_sha256": "bf18bf73f259cbe77715bbee13671cfacd385b2b130f8e0fc4960cd1b86c640d",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 8.344650268554688e-07,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 1.049748039804399,
+        "p95": 1.3464580057188864,
+        "max": 1.8626529490575194
+      }
+    },
+    {
+      "seed": 43,
+      "method": "G0_global_current",
+      "checkpoint_sha256": "10f9bc9905995bbadfc831a86814045c7fa72aff191ef0a56e4899fbe77c7a75",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 1.2069940567016602e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 0.9042610181495547,
+        "p95": 1.0732528055086732,
+        "max": 1.5044219326227903
+      }
+    },
+    {
+      "seed": 43,
+      "method": "G1_local_current",
+      "checkpoint_sha256": "21f2639ee683f1dc6cbcbb2497d27fb556c0c89efaed92a65422b07e03376e1b",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 1.6391277313232422e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 0.8941689739003778,
+        "p95": 1.134028378874063,
+        "max": 1.9937260076403618
+      }
+    },
+    {
+      "seed": 43,
+      "method": "G3_local_only_history8",
+      "checkpoint_sha256": "fc1d624464888d83fc470bd9c8ae79d8f8d0e3d1d7a9bef8340cabd9b06fc7f4",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 3.2186508178710938e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 1.056537963449955,
+        "p95": 1.4979766216129062,
+        "max": 2.192158019170165
+      }
+    },
+    {
+      "seed": 44,
+      "method": "G0_global_current",
+      "checkpoint_sha256": "fcf0503b1a53fc36899baac75ab7f265cc10b33824624d4b7448a77b39deed02",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 1.3113021850585938e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 0.9108969243243337,
+        "p95": 1.1609513778239484,
+        "max": 1.6701789572834969
+      }
+    },
+    {
+      "seed": 44,
+      "method": "G1_local_current",
+      "checkpoint_sha256": "451060900f0c76d7a07cc7ec93ab54d7e0b9f1780901b20938623580c012ae5f",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 1.2516975402832031e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 0.9027259657159448,
+        "p95": 1.2436673743650313,
+        "max": 1.8469919450581074
+      }
+    },
+    {
+      "seed": 44,
+      "method": "G3_local_only_history8",
+      "checkpoint_sha256": "de22ebd0a454d7b345f122444a76496572e2c249ea95be1dd55155025d045d2c",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 1.817941665649414e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 1.075193053111434,
+        "p95": 1.5968804014846676,
+        "max": 3.004178055562079
+      }
+    }
+  ],
+  "latency_scope": "cached features to two independent readouts; no encoder/ROI/network",
+  "historical_test_evaluated": false
+}

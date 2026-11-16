@@ -1,0 +1,43 @@
+{
+  "tests": "370 passed,1 skipped",
+  "gradient_isolation_test": true,
+  "encoder_once_for_both_readouts_test": true,
+  "total_streamed_observations": 20205,
+  "max_stream_batch_probability_error": 3.2186508178710938e-06,
+  "original_B0_sha_unchanged": {
+    "42": true,
+    "43": true,
+    "44": true
+  },
+  "artifact_root": "/home/user/vjepa2_training/runs/tomato/independent_rgb_memory_20261116_v1",
+  "command": ".venv-tomato/bin/python -m tools.train_tomato_independent_rgb_memory --cache runs/tomato/rgb_memory_cache_20261116_r11_v4 --out runs/tomato/independent_rgb_memory_NEW",
+  "report_command": "/home/user/sharpa-pi05/.venv/bin/python -m tools.report_tomato_independent_rgb_memory --run runs/tomato/independent_rgb_memory_NEW",
+  "conclusions_zh": [
+    "完成18个独立分支、9个双头包，不共享可训练参数；共享冻结编码特征与训练统计。",
+    "局部Memory相对独立四路：Current F1+0.486个百分点、Future F1-0.344个百分点、按时确认+3次、严格预警-4次、未匹配预警+7次。",
+    "Memory按时确认改善的录制配对95%区间跨0，不能宣称稳定或独立泛化增益。",
+    "原B0仍是不同架构/训练版本的历史参考，I0不等于原B0。",
+    "独立分支总参数1450248，联合参考725640，不把二者差值完全归因于训练目标。"
+  ],
+  "current_confirmation": {
+    "threshold": 0.8,
+    "K": 2,
+    "ordered_classes": [
+      0,
+      1,
+      2,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "future": {
+    "horizon_s": 1.5,
+    "threshold": 0.5,
+    "K": 2,
+    "matching": "[boundary-1.5s,boundary)"
+  },
+  "default_changed": false,
+  "robot_calls": 0
+}
