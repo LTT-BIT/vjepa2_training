@@ -1,5 +1,7 @@
 # RGB局部交互视觉与实测state Memory v2
 
+> 2026-11-16更新：已完成旧100条r11局部图／历史读出的9次正式训练和20,205次逐时刻概率复核。历史文档中的“未训练”描述保留为当时状态；当前结果见[TOMATO_RGB_MEMORY_TRAINING_20261116.md](TOMATO_RGB_MEMORY_TRAINING_20261116.md)。新权重仅用于离线研究，未替换B0、未通过在线ROI或真实控制验收。
+
 2026-11-11（北京时间）。本轮只修改`vjepa2_training`，起点`f2f2301`，分支`research-tomato-agent`。新增独立实验模块，不替换B0、既有TaskMemory/OperationMemory或默认推理。原`memory_cooperation_v1`保留。没有修改OpenPI训练端或部署端，没有训练模型、连接机器人或修改Subtask/结果审核标签。
 
 ## 本轮落实的输入与数据流

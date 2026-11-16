@@ -1,0 +1,137 @@
+{
+  "models": [
+    {
+      "seed": 42,
+      "method": "G0_global_current",
+      "checkpoint_sha256": "d76c2db533af35cc1286178191380aa54f9702e70e690f9cade8c277955e70dc",
+      "streamed_observations": 2245,
+      "stream_batch_max_abs_error": 1.7881393432617188e-06,
+      "head_only_latency_ms": {
+        "p50": 10.134859941899776,
+        "p95": 12.647972255945206,
+        "max": 102.10349108092487
+      },
+      "train_only_normalization_exact": true,
+      "train_dev_source_overlap": 0
+    },
+    {
+      "seed": 42,
+      "method": "G1_local_current",
+      "checkpoint_sha256": "5eca34e2b622aa8110ecbb25337575309bebdd541cdfd09d18af863b8e40f147",
+      "streamed_observations": 2245,
+      "stream_batch_max_abs_error": 1.1920928955078125e-06,
+      "head_only_latency_ms": {
+        "p50": 10.197299998253584,
+        "p95": 12.698212149553001,
+        "max": 14.210183988325298
+      },
+      "train_only_normalization_exact": true,
+      "train_dev_source_overlap": 0
+    },
+    {
+      "seed": 42,
+      "method": "G2_local_history8",
+      "checkpoint_sha256": "5e5143ef11e446d1dc02c3f392fa853bf11a09283a4c9af941dd85f7f81ebb3d",
+      "streamed_observations": 2245,
+      "stream_batch_max_abs_error": 2.9206275939941406e-06,
+      "head_only_latency_ms": {
+        "p50": 10.150964022614062,
+        "p95": 12.602974590845406,
+        "max": 18.280235002748668
+      },
+      "train_only_normalization_exact": true,
+      "train_dev_source_overlap": 0
+    },
+    {
+      "seed": 43,
+      "method": "G0_global_current",
+      "checkpoint_sha256": "0d9c6182553ef32fa57b561b10860dfea83a10ed2720d5bb71940710aa762a18",
+      "streamed_observations": 2245,
+      "stream_batch_max_abs_error": 1.2218952178955078e-06,
+      "head_only_latency_ms": {
+        "p50": 10.270316037349403,
+        "p95": 12.528701010160148,
+        "max": 14.828345971181989
+      },
+      "train_only_normalization_exact": true,
+      "train_dev_source_overlap": 0
+    },
+    {
+      "seed": 43,
+      "method": "G1_local_current",
+      "checkpoint_sha256": "c3e2a46aa8fdc90969027136f0d1df5288b61a090eb1883182e9c203f07ee4c5",
+      "streamed_observations": 2245,
+      "stream_batch_max_abs_error": 9.5367431640625e-07,
+      "head_only_latency_ms": {
+        "p50": 10.174055933021009,
+        "p95": 12.687876587733626,
+        "max": 13.701644027605653
+      },
+      "train_only_normalization_exact": true,
+      "train_dev_source_overlap": 0
+    },
+    {
+      "seed": 43,
+      "method": "G2_local_history8",
+      "checkpoint_sha256": "6ec3fe23200ecc9f45702da0c7118887da9da9366ed45c23c78e23f6539fcbbc",
+      "streamed_observations": 2245,
+      "stream_batch_max_abs_error": 3.516674041748047e-06,
+      "head_only_latency_ms": {
+        "p50": 10.037173982709646,
+        "p95": 12.711697374470532,
+        "max": 13.895630952902138
+      },
+      "train_only_normalization_exact": true,
+      "train_dev_source_overlap": 0
+    },
+    {
+      "seed": 44,
+      "method": "G0_global_current",
+      "checkpoint_sha256": "46d7644ee54b3a0e526bb4ec623dcb7e44e2128aa9de7819ad9860c5a88739da",
+      "streamed_observations": 2245,
+      "stream_batch_max_abs_error": 1.5795230865478516e-06,
+      "head_only_latency_ms": {
+        "p50": 10.089728981256485,
+        "p95": 12.48262021690607,
+        "max": 43.379797018133104
+      },
+      "train_only_normalization_exact": true,
+      "train_dev_source_overlap": 0
+    },
+    {
+      "seed": 44,
+      "method": "G1_local_current",
+      "checkpoint_sha256": "aa316cf546e01d2d3c12e3963f0a6dc4b36517e9c4fedbc81752f5a5efd36cdc",
+      "streamed_observations": 2245,
+      "stream_batch_max_abs_error": 1.7881393432617188e-06,
+      "head_only_latency_ms": {
+        "p50": 10.220012976787984,
+        "p95": 12.587217800319195,
+        "max": 14.117963961325586
+      },
+      "train_only_normalization_exact": true,
+      "train_dev_source_overlap": 0
+    },
+    {
+      "seed": 44,
+      "method": "G2_local_history8",
+      "checkpoint_sha256": "7df409f459ed9a89b9b1cacd178d7af07fc9a7a48c2cc2f473a7099d28a09c9e",
+      "streamed_observations": 2245,
+      "stream_batch_max_abs_error": 1.6689300537109375e-06,
+      "head_only_latency_ms": {
+        "p50": 10.156806092709303,
+        "p95": 12.811106373555958,
+        "max": 14.439736027270555
+      },
+      "train_only_normalization_exact": true,
+      "train_dev_source_overlap": 0
+    }
+  ],
+  "normalization_train_raw_frames": 355486,
+  "paired_initializations_identical": true,
+  "chronological_stream_batch_parity": true,
+  "strict_online_causality_validated": false,
+  "recorded_roi_uses_future_coordinates": true,
+  "latency_scope": "local host frozen-feature bank to current/future probabilities; no video encoding or network",
+  "historical_test_evaluated": false
+}

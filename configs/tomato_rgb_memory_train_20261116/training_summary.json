@@ -1,0 +1,2464 @@
+{
+  "methods": {
+    "B0_common_startup": {
+      "current_f1_mean": 0.968035481437064,
+      "current_f1_seed_sd": 0.002668780949126419,
+      "future_f1_mean": 0.9321316619323379,
+      "future_f1_seed_sd": 0.005502226885290634,
+      "prompt_counts": {
+        "on_time": 131,
+        "early": 8,
+        "late": 5,
+        "missing": 0
+      },
+      "within_delay": {
+        "1.0": 99,
+        "1.5": 126,
+        "2.0": 131
+      },
+      "mismatch_s": 119.5,
+      "severe_early_gt1s": 3,
+      "late_gt1p5s": 10,
+      "future_strict_hits": 106,
+      "future_strict_total": 144,
+      "future_false_events": 46,
+      "future_false_per_minute_mean": 0.8284556506078343,
+      "by_transition": {
+        "pickup->harvest": {
+          "on_time": 48,
+          "early": 0,
+          "late": 0,
+          "missing": 0
+        },
+        "harvest->return": {
+          "on_time": 47,
+          "early": 1,
+          "late": 0,
+          "missing": 0
+        },
+        "return->adjust": {
+          "on_time": 22,
+          "early": 2,
+          "late": 0,
+          "missing": 0
+        },
+        "adjust->pickup": {
+          "on_time": 14,
+          "early": 5,
+          "late": 5,
+          "missing": 0
+        }
+      },
+      "seed_summary": {
+        "42": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 37,
+            "total": 48,
+            "false_events": 13,
+            "false_per_minute": 0.7023863124718596
+          },
+          "prompt_counts": {
+            "on_time": 44,
+            "early": 2,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "early": 1,
+              "on_time": 7
+            }
+          },
+          "mismatch_s": 38.5,
+          "persistent_mismatch_s": 10.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 1.0055555555555562,
+          "latency_p95_episode_max_ms": 0.009141,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.9853006681514477,
+            "macro_f1": 0.9705057918434907,
+            "nll": 0.0734802666023508,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9510204081632653,
+                "recall": 0.9510204081632653,
+                "f1": 0.9510204081632653,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.997363216875412,
+                "recall": 0.9960500329163924,
+                "f1": 0.9967061923583662,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9714285714285714,
+                "recall": 0.9645390070921985,
+                "f1": 0.9679715302491103,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9620991253644315,
+                "recall": 0.9705882352941176,
+                "f1": 0.9663250366032211,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                233,
+                1,
+                0,
+                11
+              ],
+              [
+                4,
+                1513,
+                2,
+                0
+              ],
+              [
+                0,
+                3,
+                136,
+                2
+              ],
+              [
+                8,
+                0,
+                2,
+                330
+              ]
+            ],
+            "return_adjust_confusions": 4,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9689329131022062,
+            "macro_f1": 0.9349999212121934,
+            "nll": 0.14641146440334274,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9124423963133641,
+                "recall": 0.8959276018099548,
+                "f1": 0.9041095890410958,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.9894806048652203,
+                "recall": 0.9907834101382489,
+                "f1": 0.9901315789473685,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9191176470588235,
+                "recall": 0.8865248226950354,
+                "f1": 0.9025270758122743,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9337175792507204,
+                "recall": 0.9529411764705882,
+                "f1": 0.9432314410480349,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                198,
+                5,
+                0,
+                18
+              ],
+              [
+                8,
+                1505,
+                6,
+                0
+              ],
+              [
+                0,
+                11,
+                125,
+                5
+              ],
+              [
+                11,
+                0,
+                5,
+                324
+              ]
+            ],
+            "return_adjust_confusions": 10,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 34,
+            "1.5": 43,
+            "2.0": 44
+          },
+          "severe_early_gt1s": 1,
+          "late_gt1p5s": 3
+        },
+        "43": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 34,
+            "total": 48,
+            "false_events": 18,
+            "false_per_minute": 0.9725348941918055
+          },
+          "prompt_counts": {
+            "on_time": 44,
+            "early": 2,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "late": 2,
+              "on_time": 4
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 45.5,
+          "persistent_mismatch_s": 13.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 1.144444444444445,
+          "latency_p95_episode_max_ms": 0.0088495,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.9830734966592427,
+            "macro_f1": 0.9652048430385944,
+            "nll": 0.08214094521417678,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.932806324110672,
+                "recall": 0.963265306122449,
+                "f1": 0.9477911646586346,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.998678122934567,
+                "recall": 0.9947333772218565,
+                "f1": 0.9967018469656992,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.951048951048951,
+                "recall": 0.9645390070921985,
+                "f1": 0.9577464788732394,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9642857142857143,
+                "recall": 0.9529411764705882,
+                "f1": 0.9585798816568047,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                236,
+                1,
+                0,
+                8
+              ],
+              [
+                4,
+                1511,
+                4,
+                0
+              ],
+              [
+                0,
+                1,
+                136,
+                4
+              ],
+              [
+                13,
+                0,
+                3,
+                324
+              ]
+            ],
+            "return_adjust_confusions": 7,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9644304367402071,
+            "macro_f1": 0.92578791751884,
+            "nll": 0.1031979432407817,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8909090909090909,
+                "recall": 0.8868778280542986,
+                "f1": 0.8888888888888888,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.990112063282795,
+                "recall": 0.9888084265964451,
+                "f1": 0.9894598155467721,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.8936170212765957,
+                "recall": 0.8936170212765957,
+                "f1": 0.8936170212765957,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9271137026239067,
+                "recall": 0.9352941176470588,
+                "f1": 0.931185944363104,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                196,
+                6,
+                0,
+                19
+              ],
+              [
+                6,
+                1502,
+                11,
+                0
+              ],
+              [
+                0,
+                9,
+                126,
+                6
+              ],
+              [
+                18,
+                0,
+                4,
+                318
+              ]
+            ],
+            "return_adjust_confusions": 10,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 29,
+            "1.5": 40,
+            "2.0": 44
+          },
+          "severe_early_gt1s": 1,
+          "late_gt1p5s": 6
+        },
+        "44": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 35,
+            "total": 48,
+            "false_events": 15,
+            "false_per_minute": 0.8104457451598379
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 4,
+            "late": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 5,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "early": 1
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "early": 1,
+              "on_time": 7
+            }
+          },
+          "mismatch_s": 35.5,
+          "persistent_mismatch_s": 8.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 0.9250000000000006,
+          "latency_p95_episode_max_ms": 0.008916999999999998,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.9844097995545658,
+            "macro_f1": 0.968395809429107,
+            "nll": 0.16061040319113698,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9362549800796812,
+                "recall": 0.9591836734693877,
+                "f1": 0.9475806451612904,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.9993390614672836,
+                "recall": 0.9953917050691244,
+                "f1": 0.9973614775725593,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.952054794520548,
+                "recall": 0.9858156028368794,
+                "f1": 0.9686411149825784,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9671641791044776,
+                "recall": 0.9529411764705882,
+                "f1": 0.96,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                235,
+                1,
+                0,
+                9
+              ],
+              [
+                2,
+                1512,
+                5,
+                0
+              ],
+              [
+                0,
+                0,
+                139,
+                2
+              ],
+              [
+                14,
+                0,
+                2,
+                324
+              ]
+            ],
+            "return_adjust_confusions": 4,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9684826654660063,
+            "macro_f1": 0.93560714706598,
+            "nll": 0.1604502939972878,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9227053140096618,
+                "recall": 0.8642533936651584,
+                "f1": 0.8925233644859814,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.9907590759075907,
+                "recall": 0.9881500987491771,
+                "f1": 0.989452867501648,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9148936170212766,
+                "recall": 0.9148936170212766,
+                "f1": 0.9148936170212766,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9217877094972067,
+                "recall": 0.9705882352941176,
+                "f1": 0.9455587392550143,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                191,
+                6,
+                0,
+                24
+              ],
+              [
+                11,
+                1501,
+                7,
+                0
+              ],
+              [
+                0,
+                8,
+                129,
+                4
+              ],
+              [
+                5,
+                0,
+                5,
+                330
+              ]
+            ],
+            "return_adjust_confusions": 9,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 36,
+            "1.5": 43,
+            "2.0": 43
+          },
+          "severe_early_gt1s": 1,
+          "late_gt1p5s": 1
+        }
+      }
+    },
+    "G0_global_current": {
+      "current_f1_mean": 0.9510434349996341,
+      "current_f1_seed_sd": 0.007247997084506169,
+      "future_f1_mean": 0.9137834094661295,
+      "future_f1_seed_sd": 0.011882744354299164,
+      "prompt_counts": {
+        "on_time": 125,
+        "early": 8,
+        "late": 10,
+        "missing": 1
+      },
+      "within_delay": {
+        "1.0": 86,
+        "1.5": 122,
+        "2.0": 125
+      },
+      "mismatch_s": 134.5,
+      "severe_early_gt1s": 4,
+      "late_gt1p5s": 13,
+      "future_strict_hits": 90,
+      "future_strict_total": 144,
+      "future_false_events": 79,
+      "future_false_per_minute_mean": 1.4227825303917154,
+      "by_transition": {
+        "pickup->harvest": {
+          "on_time": 46,
+          "early": 0,
+          "late": 2,
+          "missing": 0
+        },
+        "harvest->return": {
+          "on_time": 47,
+          "early": 0,
+          "late": 0,
+          "missing": 1
+        },
+        "return->adjust": {
+          "on_time": 20,
+          "early": 1,
+          "late": 3,
+          "missing": 0
+        },
+        "adjust->pickup": {
+          "on_time": 12,
+          "early": 7,
+          "late": 5,
+          "missing": 0
+        }
+      },
+      "seed_summary": {
+        "42": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 29,
+            "total": 48,
+            "false_events": 35,
+            "false_per_minute": 1.8910400720396219
+          },
+          "prompt_counts": {
+            "on_time": 41,
+            "late": 4,
+            "early": 3
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "late": 2,
+              "on_time": 4
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "late": 1,
+              "on_time": 6,
+              "early": 1
+            }
+          },
+          "mismatch_s": 45.0,
+          "persistent_mismatch_s": 16.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 1.1201388888888897,
+          "latency_p95_episode_max_ms": 0.010054699999999998,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.976391982182628,
+            "macro_f1": 0.9510637510148365,
+            "nll": 0.09068619824032524,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9294605809128631,
+                "recall": 0.9142857142857143,
+                "f1": 0.9218106995884774,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.9967018469656992,
+                "recall": 0.9947333772218565,
+                "f1": 0.9957166392092257,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9370629370629371,
+                "recall": 0.950354609929078,
+                "f1": 0.9436619718309859,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.936231884057971,
+                "recall": 0.95,
+                "f1": 0.9430656934306569,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                224,
+                2,
+                0,
+                19
+              ],
+              [
+                3,
+                1511,
+                5,
+                0
+              ],
+              [
+                1,
+                3,
+                134,
+                3
+              ],
+              [
+                13,
+                0,
+                4,
+                323
+              ]
+            ],
+            "return_adjust_confusions": 7,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9486717694732103,
+            "macro_f1": 0.9015489472655172,
+            "nll": 0.14962934490883958,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8878923766816144,
+                "recall": 0.8959276018099548,
+                "f1": 0.8918918918918919,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.9931833674164963,
+                "recall": 0.9591836734693877,
+                "f1": 0.9758874748827864,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.6984126984126984,
+                "recall": 0.9361702127659575,
+                "f1": 0.8,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.935672514619883,
+                "recall": 0.9411764705882353,
+                "f1": 0.9384164222873901,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                198,
+                6,
+                0,
+                17
+              ],
+              [
+                10,
+                1457,
+                52,
+                0
+              ],
+              [
+                0,
+                4,
+                132,
+                5
+              ],
+              [
+                15,
+                0,
+                5,
+                320
+              ]
+            ],
+            "return_adjust_confusions": 10,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 31,
+            "1.5": 40,
+            "2.0": 41
+          },
+          "severe_early_gt1s": 1,
+          "late_gt1p5s": 5
+        },
+        "43": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 30,
+            "total": 48,
+            "false_events": 23,
+            "false_per_minute": 1.2426834759117515
+          },
+          "prompt_counts": {
+            "on_time": 41,
+            "late": 4,
+            "early": 2,
+            "missing": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 5,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "missing": 1
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "late": 2,
+              "on_time": 6
+            }
+          },
+          "mismatch_s": 47.5,
+          "persistent_mismatch_s": 17.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 7,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 1.1375886524822707,
+          "latency_p95_episode_max_ms": 0.009269999999999999,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.9723830734966592,
+            "macro_f1": 0.9437853012621028,
+            "nll": 0.1175826850650602,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8769230769230769,
+                "recall": 0.9306122448979591,
+                "f1": 0.902970297029703,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.9980145598941098,
+                "recall": 0.9927583936800527,
+                "f1": 0.9953795379537954,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9310344827586207,
+                "recall": 0.9574468085106383,
+                "f1": 0.9440559440559441,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9483282674772037,
+                "recall": 0.9176470588235294,
+                "f1": 0.9327354260089686,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                228,
+                1,
+                0,
+                16
+              ],
+              [
+                7,
+                1508,
+                4,
+                0
+              ],
+              [
+                3,
+                2,
+                135,
+                1
+              ],
+              [
+                22,
+                0,
+                6,
+                312
+              ]
+            ],
+            "return_adjust_confusions": 7,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9630796938316074,
+            "macro_f1": 0.9252800517224982,
+            "nll": 0.14184420738673145,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8471074380165289,
+                "recall": 0.9276018099547512,
+                "f1": 0.8855291576673866,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.9940079893475366,
+                "recall": 0.9828834759710335,
+                "f1": 0.9884144323071831,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.8775510204081632,
+                "recall": 0.9148936170212766,
+                "f1": 0.8958333333333334,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9454545454545454,
+                "recall": 0.9176470588235294,
+                "f1": 0.9313432835820895,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                205,
+                3,
+                0,
+                13
+              ],
+              [
+                15,
+                1493,
+                11,
+                0
+              ],
+              [
+                1,
+                6,
+                129,
+                5
+              ],
+              [
+                21,
+                0,
+                7,
+                312
+              ]
+            ],
+            "return_adjust_confusions": 12,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 27,
+            "1.5": 41,
+            "2.0": 41
+          },
+          "severe_early_gt1s": 2,
+          "late_gt1p5s": 4
+        },
+        "44": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 31,
+            "total": 48,
+            "false_events": 21,
+            "false_per_minute": 1.134624043223773
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 3,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 3,
+              "late": 2,
+              "on_time": 3
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 42.0,
+          "persistent_mismatch_s": 10.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 3,
+          "prompt_abs_error_s": 1.0673611111111119,
+          "latency_p95_episode_max_ms": 0.0096108,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.9795100222717149,
+            "macro_f1": 0.9582812527219629,
+            "nll": 0.07648235672742897,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9262295081967213,
+                "recall": 0.9224489795918367,
+                "f1": 0.9243353783231084,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.997364953886693,
+                "recall": 0.9967083607636603,
+                "f1": 0.9970365492262101,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9645390070921985,
+                "recall": 0.9645390070921985,
+                "f1": 0.9645390070921985,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9444444444444444,
+                "recall": 0.95,
+                "f1": 0.9472140762463344,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                226,
+                1,
+                0,
+                18
+              ],
+              [
+                2,
+                1514,
+                3,
+                0
+              ],
+              [
+                1,
+                3,
+                136,
+                1
+              ],
+              [
+                15,
+                0,
+                2,
+                323
+              ]
+            ],
+            "return_adjust_confusions": 3,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9581269698334084,
+            "macro_f1": 0.914521229410373,
+            "nll": 0.1242430087061333,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8412017167381974,
+                "recall": 0.8868778280542986,
+                "f1": 0.8634361233480177,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.988134475939354,
+                "recall": 0.9868334430546412,
+                "f1": 0.9874835309617919,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.8985507246376812,
+                "recall": 0.8794326241134752,
+                "f1": 0.8888888888888888,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9279279279279279,
+                "recall": 0.9088235294117647,
+                "f1": 0.9182763744427934,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                196,
+                9,
+                0,
+                16
+              ],
+              [
+                8,
+                1499,
+                12,
+                0
+              ],
+              [
+                0,
+                9,
+                124,
+                8
+              ],
+              [
+                29,
+                0,
+                2,
+                309
+              ]
+            ],
+            "return_adjust_confusions": 10,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 28,
+            "1.5": 41,
+            "2.0": 43
+          },
+          "severe_early_gt1s": 1,
+          "late_gt1p5s": 4
+        }
+      }
+    },
+    "G1_local_current": {
+      "current_f1_mean": 0.9574384362082257,
+      "current_f1_seed_sd": 0.0027243809293146324,
+      "future_f1_mean": 0.9195671819807106,
+      "future_f1_seed_sd": 0.005841076913005814,
+      "prompt_counts": {
+        "on_time": 131,
+        "early": 6,
+        "late": 7,
+        "missing": 0
+      },
+      "within_delay": {
+        "1.0": 91,
+        "1.5": 128,
+        "2.0": 131
+      },
+      "mismatch_s": 123.5,
+      "severe_early_gt1s": 2,
+      "late_gt1p5s": 10,
+      "future_strict_hits": 84,
+      "future_strict_total": 144,
+      "future_false_events": 76,
+      "future_false_per_minute_mean": 1.368752814047726,
+      "by_transition": {
+        "pickup->harvest": {
+          "on_time": 46,
+          "early": 0,
+          "late": 2,
+          "missing": 0
+        },
+        "harvest->return": {
+          "on_time": 47,
+          "early": 1,
+          "late": 0,
+          "missing": 0
+        },
+        "return->adjust": {
+          "on_time": 23,
+          "early": 1,
+          "late": 0,
+          "missing": 0
+        },
+        "adjust->pickup": {
+          "on_time": 15,
+          "early": 4,
+          "late": 5,
+          "missing": 0
+        }
+      },
+      "seed_summary": {
+        "42": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 30,
+            "total": 48,
+            "false_events": 26,
+            "false_per_minute": 1.4047726249437191
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 2,
+            "late": 3
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 7,
+              "early": 1
+            }
+          },
+          "mismatch_s": 40.5,
+          "persistent_mismatch_s": 13.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 1.0430555555555565,
+          "latency_p95_episode_max_ms": 0.012688999999999999,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.978619153674833,
+            "macro_f1": 0.9565126439633314,
+            "nll": 0.07734887586246973,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9336099585062241,
+                "recall": 0.9183673469387755,
+                "f1": 0.9259259259259259,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.998015873015873,
+                "recall": 0.9934167215273206,
+                "f1": 0.9957109864731112,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9637681159420289,
+                "recall": 0.9432624113475178,
+                "f1": 0.953405017921147,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9322033898305084,
+                "recall": 0.9705882352941176,
+                "f1": 0.9510086455331412,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                225,
+                1,
+                0,
+                19
+              ],
+              [
+                6,
+                1509,
+                4,
+                0
+              ],
+              [
+                1,
+                2,
+                133,
+                5
+              ],
+              [
+                9,
+                0,
+                1,
+                330
+              ]
+            ],
+            "return_adjust_confusions": 6,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9612787032868078,
+            "macro_f1": 0.9221852828845993,
+            "nll": 0.11240177513918206,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8818181818181818,
+                "recall": 0.8778280542986425,
+                "f1": 0.8798185941043084,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.9920053297801465,
+                "recall": 0.9802501645819618,
+                "f1": 0.9860927152317881,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.86,
+                "recall": 0.9148936170212766,
+                "f1": 0.8865979381443299,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9228571428571428,
+                "recall": 0.95,
+                "f1": 0.936231884057971,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                194,
+                8,
+                0,
+                19
+              ],
+              [
+                12,
+                1489,
+                18,
+                0
+              ],
+              [
+                0,
+                4,
+                129,
+                8
+              ],
+              [
+                14,
+                0,
+                3,
+                323
+              ]
+            ],
+            "return_adjust_confusions": 11,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 33,
+            "1.5": 42,
+            "2.0": 43
+          },
+          "severe_early_gt1s": 0,
+          "late_gt1p5s": 4
+        },
+        "43": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 25,
+            "total": 48,
+            "false_events": 28,
+            "false_per_minute": 1.5128320576316974
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 2,
+            "late": 3
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "early": 1
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 44.0,
+          "persistent_mismatch_s": 16.0,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 1.128472222222223,
+          "latency_p95_episode_max_ms": 0.009365999999999998,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.976391982182628,
+            "macro_f1": 0.9552975978996134,
+            "nll": 0.11543469844303036,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.907258064516129,
+                "recall": 0.9183673469387755,
+                "f1": 0.9127789046653144,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.9980066445182725,
+                "recall": 0.9888084265964451,
+                "f1": 0.9933862433862434,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9452054794520548,
+                "recall": 0.9787234042553191,
+                "f1": 0.9616724738675958,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9450867052023122,
+                "recall": 0.961764705882353,
+                "f1": 0.9533527696793003,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                225,
+                1,
+                0,
+                19
+              ],
+              [
+                11,
+                1502,
+                6,
+                0
+              ],
+              [
+                1,
+                2,
+                138,
+                0
+              ],
+              [
+                11,
+                0,
+                2,
+                327
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.955425484016209,
+            "macro_f1": 0.9128750710380747,
+            "nll": 0.140235615079337,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.852017937219731,
+                "recall": 0.8597285067873304,
+                "f1": 0.8558558558558559,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.9919517102615694,
+                "recall": 0.9736668861092824,
+                "f1": 0.9827242524916944,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.8486842105263158,
+                "recall": 0.9148936170212766,
+                "f1": 0.8805460750853242,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9126760563380282,
+                "recall": 0.9529411764705882,
+                "f1": 0.9323741007194245,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                190,
+                5,
+                0,
+                26
+              ],
+              [
+                24,
+                1479,
+                16,
+                0
+              ],
+              [
+                0,
+                7,
+                129,
+                5
+              ],
+              [
+                9,
+                0,
+                7,
+                324
+              ]
+            ],
+            "return_adjust_confusions": 12,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 30,
+            "1.5": 42,
+            "2.0": 43
+          },
+          "severe_early_gt1s": 1,
+          "late_gt1p5s": 4
+        },
+        "44": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 29,
+            "total": 48,
+            "false_events": 22,
+            "false_per_minute": 1.1886537595677622
+          },
+          "prompt_counts": {
+            "on_time": 45,
+            "early": 2,
+            "late": 1
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 5,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 39.0,
+          "persistent_mismatch_s": 7.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 5,
+          "prompt_abs_error_s": 1.0090277777777783,
+          "latency_p95_episode_max_ms": 0.009742799999999996,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.9804008908685968,
+            "macro_f1": 0.960505066761732,
+            "nll": 0.08637138545726708,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9203187250996016,
+                "recall": 0.9428571428571428,
+                "f1": 0.9314516129032258,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.9934426229508196,
+                "recall": 0.9973666886109283,
+                "f1": 0.9954007884362681,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9708029197080292,
+                "recall": 0.9432624113475178,
+                "f1": 0.9568345323741008,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9698795180722891,
+                "recall": 0.9470588235294117,
+                "f1": 0.9583333333333334,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                231,
+                4,
+                0,
+                10
+              ],
+              [
+                2,
+                1515,
+                2,
+                0
+              ],
+              [
+                2,
+                6,
+                133,
+                0
+              ],
+              [
+                16,
+                0,
+                2,
+                322
+              ]
+            ],
+            "return_adjust_confusions": 2,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9635299414678073,
+            "macro_f1": 0.9236411920194574,
+            "nll": 0.1280056428791487,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8794642857142857,
+                "recall": 0.8914027149321267,
+                "f1": 0.8853932584269663,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.9817945383615084,
+                "recall": 0.9940750493745886,
+                "f1": 0.9878966306836768,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9512195121951219,
+                "recall": 0.8297872340425532,
+                "f1": 0.8863636363636364,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9404761904761905,
+                "recall": 0.9294117647058824,
+                "f1": 0.9349112426035503,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                197,
+                11,
+                0,
+                13
+              ],
+              [
+                6,
+                1510,
+                3,
+                0
+              ],
+              [
+                0,
+                17,
+                117,
+                7
+              ],
+              [
+                21,
+                0,
+                3,
+                316
+              ]
+            ],
+            "return_adjust_confusions": 10,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 28,
+            "1.5": 44,
+            "2.0": 45
+          },
+          "severe_early_gt1s": 1,
+          "late_gt1p5s": 2
+        }
+      }
+    },
+    "G2_local_history8": {
+      "current_f1_mean": 0.966039980231805,
+      "current_f1_seed_sd": 0.006907900046169387,
+      "future_f1_mean": 0.925540873809489,
+      "future_f1_seed_sd": 0.014705120250297896,
+      "prompt_counts": {
+        "on_time": 127,
+        "early": 11,
+        "late": 6,
+        "missing": 0
+      },
+      "within_delay": {
+        "1.0": 101,
+        "1.5": 120,
+        "2.0": 127
+      },
+      "mismatch_s": 107.5,
+      "severe_early_gt1s": 2,
+      "late_gt1p5s": 13,
+      "future_strict_hits": 89,
+      "future_strict_total": 144,
+      "future_false_events": 71,
+      "future_false_per_minute_mean": 1.2787032868077444,
+      "by_transition": {
+        "pickup->harvest": {
+          "on_time": 46,
+          "early": 0,
+          "late": 2,
+          "missing": 0
+        },
+        "harvest->return": {
+          "on_time": 46,
+          "early": 2,
+          "late": 0,
+          "missing": 0
+        },
+        "return->adjust": {
+          "on_time": 24,
+          "early": 0,
+          "late": 0,
+          "missing": 0
+        },
+        "adjust->pickup": {
+          "on_time": 11,
+          "early": 9,
+          "late": 4,
+          "missing": 0
+        }
+      },
+      "seed_summary": {
+        "42": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 28,
+            "total": 48,
+            "false_events": 30,
+            "false_per_minute": 1.6208914903196758
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 3,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 3,
+              "on_time": 4,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 35.0,
+          "persistent_mismatch_s": 5.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 3,
+          "prompt_abs_error_s": 0.9090277777777781,
+          "latency_p95_episode_max_ms": 0.013731549999999999,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.9848552338530067,
+            "macro_f1": 0.9685407700287803,
+            "nll": 0.05335534588192569,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9545454545454546,
+                "recall": 0.9428571428571428,
+                "f1": 0.9486652977412731,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.9973614775725593,
+                "recall": 0.9953917050691244,
+                "f1": 0.9963756177924218,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9328859060402684,
+                "recall": 0.9858156028368794,
+                "f1": 0.9586206896551724,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9733727810650887,
+                "recall": 0.9676470588235294,
+                "f1": 0.9705014749262537,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                231,
+                3,
+                3,
+                8
+              ],
+              [
+                3,
+                1512,
+                4,
+                0
+              ],
+              [
+                0,
+                1,
+                139,
+                1
+              ],
+              [
+                8,
+                0,
+                3,
+                329
+              ]
+            ],
+            "return_adjust_confusions": 4,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9581269698334084,
+            "macro_f1": 0.9147972619945384,
+            "nll": 0.14596645361191932,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.851063829787234,
+                "recall": 0.9049773755656109,
+                "f1": 0.8771929824561403,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.9900398406374502,
+                "recall": 0.9815668202764977,
+                "f1": 0.9857851239669422,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.8611111111111112,
+                "recall": 0.8794326241134752,
+                "f1": 0.8701754385964913,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9315476190476191,
+                "recall": 0.9205882352941176,
+                "f1": 0.9260355029585798,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                200,
+                7,
+                0,
+                14
+              ],
+              [
+                11,
+                1491,
+                17,
+                0
+              ],
+              [
+                0,
+                8,
+                124,
+                9
+              ],
+              [
+                24,
+                0,
+                3,
+                313
+              ]
+            ],
+            "return_adjust_confusions": 12,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 33,
+            "1.5": 41,
+            "2.0": 43
+          },
+          "severe_early_gt1s": 0,
+          "late_gt1p5s": 4
+        },
+        "43": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 29,
+            "total": 48,
+            "false_events": 25,
+            "false_per_minute": 1.3507429085997298
+          },
+          "prompt_counts": {
+            "on_time": 41,
+            "early": 5,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 4,
+              "on_time": 3,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "early": 1
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 38.5,
+          "persistent_mismatch_s": 7.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 2,
+          "prompt_abs_error_s": 0.9652777777777778,
+          "latency_p95_episode_max_ms": 0.009229999999999999,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.977728285077951,
+            "macro_f1": 0.9582299648533373,
+            "nll": 0.08607817383577286,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.905511811023622,
+                "recall": 0.9387755102040817,
+                "f1": 0.9218436873747495,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.9980066445182725,
+                "recall": 0.9888084265964451,
+                "f1": 0.9933862433862434,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9391891891891891,
+                "recall": 0.9858156028368794,
+                "f1": 0.9619377162629758,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9585798816568047,
+                "recall": 0.9529411764705882,
+                "f1": 0.9557522123893806,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                230,
+                2,
+                0,
+                13
+              ],
+              [
+                11,
+                1502,
+                6,
+                0
+              ],
+              [
+                0,
+                1,
+                139,
+                1
+              ],
+              [
+                13,
+                0,
+                3,
+                324
+              ]
+            ],
+            "return_adjust_confusions": 4,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9572264745610085,
+            "macro_f1": 0.9195253329911919,
+            "nll": 0.15514767407024332,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.8023715415019763,
+                "recall": 0.918552036199095,
+                "f1": 0.8565400843881856,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.9946236559139785,
+                "recall": 0.9743252139565504,
+                "f1": 0.984369803791154,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.8607594936708861,
+                "recall": 0.9645390070921985,
+                "f1": 0.9096989966555183,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.953416149068323,
+                "recall": 0.9029411764705882,
+                "f1": 0.9274924471299094,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                203,
+                5,
+                0,
+                13
+              ],
+              [
+                22,
+                1480,
+                17,
+                0
+              ],
+              [
+                0,
+                3,
+                136,
+                2
+              ],
+              [
+                28,
+                0,
+                5,
+                307
+              ]
+            ],
+            "return_adjust_confusions": 7,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 31,
+            "1.5": 38,
+            "2.0": 41
+          },
+          "severe_early_gt1s": 1,
+          "late_gt1p5s": 5
+        },
+        "44": {
+          "recordings": 8,
+          "warnings": {
+            "hits": 32,
+            "total": 48,
+            "false_events": 16,
+            "false_per_minute": 0.8644754615038271
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 3,
+            "late": 2
+          },
+          "prompt_by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 4,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "early": 1
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          },
+          "mismatch_s": 34.0,
+          "persistent_mismatch_s": 4.5,
+          "cascade_affected_boundaries": 0,
+          "ordered_complete": 8,
+          "all_prompts_on_time": 4,
+          "prompt_abs_error_s": 0.9034722222222228,
+          "latency_p95_episode_max_ms": 0.009363999999999999,
+          "defer_once": 0,
+          "current": {
+            "samples": 2245,
+            "accuracy": 0.9857461024498887,
+            "macro_f1": 0.9713492058132978,
+            "nll": 0.06303067916023865,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9471544715447154,
+                "recall": 0.9510204081632653,
+                "f1": 0.9490835030549898,
+                "support": 245
+              },
+              "harvest": {
+                "precision": 0.9986807387862797,
+                "recall": 0.9967083607636603,
+                "f1": 0.9976935749588138,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.9652777777777778,
+                "recall": 0.9858156028368794,
+                "f1": 0.9754385964912281,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9646017699115044,
+                "recall": 0.961764705882353,
+                "f1": 0.9631811487481591,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                233,
+                1,
+                0,
+                11
+              ],
+              [
+                2,
+                1514,
+                3,
+                0
+              ],
+              [
+                0,
+                1,
+                139,
+                1
+              ],
+              [
+                11,
+                0,
+                2,
+                327
+              ]
+            ],
+            "return_adjust_confusions": 3,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "future": {
+            "samples": 2221,
+            "accuracy": 0.9720846465556056,
+            "macro_f1": 0.9423000264427368,
+            "nll": 0.12822384882022256,
+            "label_order": [
+              "pickup",
+              "harvest",
+              "return",
+              "adjust"
+            ],
+            "per_class": {
+              "pickup": {
+                "precision": 0.9351851851851852,
+                "recall": 0.9140271493212669,
+                "f1": 0.9244851258581236,
+                "support": 221
+              },
+              "harvest": {
+                "precision": 0.9855926653569089,
+                "recall": 0.9907834101382489,
+                "f1": 0.9881812212738017,
+                "support": 1519
+              },
+              "return": {
+                "precision": 0.917910447761194,
+                "recall": 0.8723404255319149,
+                "f1": 0.8945454545454545,
+                "support": 141
+              },
+              "adjust": {
+                "precision": 0.9563953488372093,
+                "recall": 0.9676470588235294,
+                "f1": 0.9619883040935673,
+                "support": 340
+              }
+            },
+            "confusion_true_rows": [
+              [
+                202,
+                9,
+                0,
+                10
+              ],
+              [
+                7,
+                1505,
+                7,
+                0
+              ],
+              [
+                0,
+                13,
+                123,
+                5
+              ],
+              [
+                7,
+                0,
+                4,
+                329
+              ]
+            ],
+            "return_adjust_confusions": 9,
+            "missing_classes": [],
+            "macro_definition": "unweighted four-class mean, zero_division=0"
+          },
+          "within_delay": {
+            "1.0": 37,
+            "1.5": 41,
+            "2.0": 43
+          },
+          "severe_early_gt1s": 1,
+          "late_gt1p5s": 4
+        }
+      }
+    }
+  },
+  "paired_differences": {
+    "G1_local_current_minus_G0_global_current": {
+      "recordings": [
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "mean_delta_on_time_percentage_points": 11.111111111111109
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "mean_delta_on_time_percentage_points": 5.5555555555555545
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "mean_delta_on_time_percentage_points": 0.0
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "mean_delta_on_time_percentage_points": 16.666666666666664
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "mean_delta_on_time_percentage_points": 0.0
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "mean_delta_on_time_percentage_points": 0.0
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "mean_delta_on_time_percentage_points": 0.0
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "mean_delta_on_time_percentage_points": 0.0
+        }
+      ],
+      "mean_percentage_points": 4.166666666666666,
+      "recording_paired_bootstrap_95_interval": [
+        0.6944444444444443,
+        9.027777777777775
+      ],
+      "scope": "repeatedly exposed development8; diagnostic uncertainty, not independent validation"
+    },
+    "G2_local_history8_minus_G1_local_current": {
+      "recordings": [
+        {
+          "episode_id": "3e645bf4e137d0f836c9d7ff",
+          "mean_delta_on_time_percentage_points": -5.5555555555555545
+        },
+        {
+          "episode_id": "27d8bc0413a42341c7e8c3e5",
+          "mean_delta_on_time_percentage_points": -5.5555555555555545
+        },
+        {
+          "episode_id": "0b12ac0fda9d7cd77dee6e60",
+          "mean_delta_on_time_percentage_points": 11.111111111111109
+        },
+        {
+          "episode_id": "61c420843f11ca54bfe804ee",
+          "mean_delta_on_time_percentage_points": -5.5555555555555545
+        },
+        {
+          "episode_id": "5b82f4bb76e70d8bf12c0798",
+          "mean_delta_on_time_percentage_points": 0.0
+        },
+        {
+          "episode_id": "f53f0b6fb7f3888f87a0f8ff",
+          "mean_delta_on_time_percentage_points": 0.0
+        },
+        {
+          "episode_id": "a8b23394b642f0bb769a0391",
+          "mean_delta_on_time_percentage_points": 0.0
+        },
+        {
+          "episode_id": "d0f8727d35eced697dcf79fe",
+          "mean_delta_on_time_percentage_points": -16.666666666666664
+        }
+      ],
+      "mean_percentage_points": -2.7777777777777772,
+      "recording_paired_bootstrap_95_interval": [
+        -7.6388888888888875,
+        2.083333333333333
+      ],
+      "scope": "repeatedly exposed development8; diagnostic uncertainty, not independent validation"
+    }
+  }
+}

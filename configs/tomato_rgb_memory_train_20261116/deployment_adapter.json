@@ -21,12 +21,18 @@
     "skipped": 1,
     "real_b0_service_smoke": 3
   },
-  "new_memory_checkpoint_trained": false,
+  "new_memory_checkpoint_trained": true,
   "cache_preparation": {
-    "version": "r11_v3",
-    "completed_episodes": 18,
+    "version": "r11_v4",
+    "completed_episodes": 92,
     "required_train_dev_episodes": 92,
-    "complete": false
+    "complete": true
   },
-  "scope": "Integration before new training; no default model, label, OpenPI or RTC changes"
+  "scope": "Integration before new training; no default model, label, OpenPI or RTC changes",
+  "new_memory_deployment_ready": false,
+  "default_changed": false,
+  "trained_models": 9,
+  "training_run": "runs/tomato/rgb_memory_train_20261116_r11_v1",
+  "checkpoint_manifest": "configs/tomato_rgb_memory_train_20261116/checkpoint_manifest.json",
+  "chronological_predictions_verified": 20205
 }

@@ -30,6 +30,14 @@ def run(cache,root):
     lines += ['', '### 录制配对不确定性', '', '先跨种子平均，再按录制bootstrap；没有将三个种子当独立新录制。']
     for name,x in differences.items():lines.append(f"- {name}：按时切换差{x['mean_percentage_points']:+.3f}个百分点，95%录制配对区间{x['recording_paired_bootstrap_95_interval']}。")
     lines += ['', '现有8条开发录制已经反复探索，以上区间不能证明未知录制泛化。不挑选最好种子，不依据历史测试选择模型。', '', '## 资源与可复现交付','', '- 9个checkpoint全部保存，包含模型权重、state统计、类别权重、四类输出Schema、历史长度、模型版本、训练来源、配置、cache/data/code SHA与训练耗时。当前默认配置没有替换。', '- verification.json保存9个模型在完整开发录制逐时刻重新推理与批处理概率等价、过期/跨身份拒绝、训练统计重算和录制隔离。延迟是冻结特征到读出概率，不能冒充相机到机器人端到端。', '- results.json保留各类P/R、混淆矩阵、逐Episode、逐转换事件；all_events.json和summary.json给出统一口径。', '- 训练缓存与权重不入Git；配置、代码、报告和精简摘要入Git。原始数据、旧checkpoint、标注和历史实验均保留。', '', '## 复现', '', '```bash', '.venv-tomato/bin/python -m tools.prepare_tomato_rgb_memory_cache --out runs/tomato/rgb_memory_cache_NEW', '.venv-tomato/bin/python -m tools.train_tomato_rgb_memory --cache runs/tomato/rgb_memory_cache_NEW --out runs/tomato/rgb_memory_train_NEW', '.venv-tomato/bin/python -m tools.verify_tomato_rgb_memory_training --cache runs/tomato/rgb_memory_cache_NEW --run runs/tomato/rgb_memory_train_NEW', '.venv-tomato/bin/python -m tools.report_tomato_rgb_memory_training --cache runs/tomato/rgb_memory_cache_NEW --run runs/tomato/rgb_memory_train_NEW', '```', '']
+    b=summary['B0_common_startup'];g=summary['G2_local_history8'];local=summary['G1_local_current']
+    lines += ['', '## 本轮结论与全参数微调可行性', '', f'- G2相对冻结B0：Current F1差{g["current_f1_mean"]-b["current_f1_mean"]:+.5f}、Future F1差{g["future_f1_mean"]-b["future_f1_mean"]:+.5f}；三种子状态不一致合计{b["mismatch_s"]:.1f}→{g["mismatch_s"]:.1f}s。', f'- G2严格预警命中{g["future_strict_hits"]}/{g["future_strict_total"]}，B0为{b["future_strict_hits"]}/{b["future_strict_total"]}；未匹配预警{b["future_false_events"]}→{g["future_false_events"]}。状态时间局部改善不等于整体决策改善。', '- G0/G1/G2是同结构同预算的配对对照；G0相对原B0同时改变读出结构、训练数据版本和联合损失，不能将G0较弱归因于编码器表征不足。', '- 不晋级新模型，不替换B0。保存全部九个新权重作离线研究；未来辅助ROI坐标未经在线输入一致性验收，不启用真实控制。']
+    resource=Path('configs/tomato_rgb_memory_train_20261116/full_encoder_resource_probe.json')
+    if resource.exists():
+        probe=ds.read_json(resource)
+        lines += ['', 'V-JEPA2编码器可以做全参数微调，不是只能训练读出。以下为真实四路视频的单步反向/AdamW资源探测；不代表正式全量收敛、训练吞吐或性能增益。']
+        for r in probe['probes']:lines.append(f'- 历史{r["history_windows"]}窗口：{r["encoder_gradient_parameters"]}个编码器参数获得梯度，峰值分配{r["peak_allocated_bytes"]/2**30:.2f}GiB，单次更新{r["optimizer_step_s"]:.3f}s；未保存或覆盖编码器权重。')
+        lines += ['- 全量微调需要重新做视频前向/反向，不能继续将冻结特征缓存当作可学习编码器输入。先保留本轮匹配对照；后续全量实验应锁定数据、预算和验证规则，不假定必然提升。']
     (root/'REPORT.md').write_text('\n'.join(lines));print({m:{k:s[k] for k in ['current_f1_mean','future_f1_mean','prompt_counts','severe_early_gt1s']} for m,s in summary.items()})
 
 
