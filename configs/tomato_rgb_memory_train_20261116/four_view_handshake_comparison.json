@@ -1,0 +1,803 @@
+{
+  "aggregate": {
+    "G1_local_current": {
+      "current_native": {
+        "prompt_counts": {
+          "on_time": 131,
+          "early": 6,
+          "late": 7
+        },
+        "repeated_events": 144,
+        "non_early_within_1p5s": 128,
+        "mismatch_exact_s": 152.66666666666677,
+        "complete": 24,
+        "timeouts": 0
+      },
+      "current_same_clock": {
+        "prompt_counts": {
+          "on_time": 129,
+          "late": 11,
+          "early": 4
+        },
+        "repeated_events": 144,
+        "non_early_within_1p5s": 93,
+        "mismatch_exact_s": 219.53333333333342,
+        "complete": 24,
+        "timeouts": 0
+      },
+      "future_commit_current_ack_k2": {
+        "prompt_counts": {
+          "early": 60,
+          "on_time": 59,
+          "missing": 21,
+          "late": 4
+        },
+        "repeated_events": 144,
+        "non_early_within_1p5s": 59,
+        "mismatch_exact_s": 656.4000000000001,
+        "complete": 17,
+        "timeouts": 9
+      }
+    },
+    "G2_local_history8": {
+      "current_native": {
+        "prompt_counts": {
+          "on_time": 127,
+          "early": 11,
+          "late": 6
+        },
+        "repeated_events": 144,
+        "non_early_within_1p5s": 120,
+        "mismatch_exact_s": 133.33333333333337,
+        "complete": 24,
+        "timeouts": 0
+      },
+      "current_same_clock": {
+        "prompt_counts": {
+          "on_time": 127,
+          "late": 13,
+          "early": 4
+        },
+        "repeated_events": 144,
+        "non_early_within_1p5s": 108,
+        "mismatch_exact_s": 198.4000000000001,
+        "complete": 24,
+        "timeouts": 0
+      },
+      "future_commit_current_ack_k2": {
+        "prompt_counts": {
+          "early": 63,
+          "on_time": 39,
+          "missing": 40,
+          "late": 2
+        },
+        "repeated_events": 144,
+        "non_early_within_1p5s": 39,
+        "mismatch_exact_s": 1002.5666666666666,
+        "complete": 11,
+        "timeouts": 13
+      }
+    }
+  },
+  "per_seed": {
+    "42": {
+      "G1_local_current": {
+        "current_native": {
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 2,
+            "late": 3
+          },
+          "within_delay": {
+            "0.5": 8,
+            "1.0": 33,
+            "1.5": 42,
+            "2.0": 43
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 7,
+              "early": 1
+            }
+          }
+        },
+        "current_same_clock": {
+          "prompt_counts": {
+            "on_time": 42,
+            "late": 4,
+            "early": 2
+          },
+          "within_delay": {
+            "0.5": 0,
+            "1.0": 8,
+            "1.5": 33,
+            "2.0": 42
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "late": 1,
+              "on_time": 6,
+              "early": 1
+            }
+          }
+        },
+        "future_commit_current_ack_k2": {
+          "prompt_counts": {
+            "early": 22,
+            "on_time": 20,
+            "missing": 5,
+            "late": 1
+          },
+          "within_delay": {
+            "0.5": 12,
+            "1.0": 17,
+            "1.5": 20,
+            "2.0": 20
+          },
+          "ordered_complete": 7,
+          "timeouts": 3,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 3,
+              "missing": 1,
+              "on_time": 3,
+              "late": 1
+            },
+            "harvest->return": {
+              "early": 11,
+              "missing": 2,
+              "on_time": 3
+            },
+            "pickup->harvest": {
+              "early": 5,
+              "on_time": 10,
+              "missing": 1
+            },
+            "return->adjust": {
+              "on_time": 4,
+              "early": 3,
+              "missing": 1
+            }
+          }
+        }
+      },
+      "G2_local_history8": {
+        "current_native": {
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 3,
+            "late": 2
+          },
+          "within_delay": {
+            "0.5": 6,
+            "1.0": 33,
+            "1.5": 41,
+            "2.0": 43
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 3,
+              "on_time": 4,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          }
+        },
+        "current_same_clock": {
+          "prompt_counts": {
+            "on_time": 42,
+            "late": 4,
+            "early": 2
+          },
+          "within_delay": {
+            "0.5": 1,
+            "1.0": 7,
+            "1.5": 34,
+            "2.0": 42
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 4,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "late": 1,
+              "on_time": 7
+            }
+          }
+        },
+        "future_commit_current_ack_k2": {
+          "prompt_counts": {
+            "early": 22,
+            "on_time": 8,
+            "missing": 17,
+            "late": 1
+          },
+          "within_delay": {
+            "0.5": 7,
+            "1.0": 8,
+            "1.5": 8,
+            "2.0": 8
+          },
+          "ordered_complete": 3,
+          "timeouts": 5,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 4,
+              "missing": 3,
+              "on_time": 1
+            },
+            "harvest->return": {
+              "early": 8,
+              "missing": 6,
+              "on_time": 2
+            },
+            "pickup->harvest": {
+              "early": 8,
+              "on_time": 3,
+              "missing": 5
+            },
+            "return->adjust": {
+              "on_time": 2,
+              "missing": 3,
+              "early": 2,
+              "late": 1
+            }
+          }
+        }
+      }
+    },
+    "43": {
+      "G1_local_current": {
+        "current_native": {
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 2,
+            "late": 3
+          },
+          "within_delay": {
+            "0.5": 7,
+            "1.0": 30,
+            "1.5": 42,
+            "2.0": 43
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "early": 1
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          }
+        },
+        "current_same_clock": {
+          "prompt_counts": {
+            "on_time": 43,
+            "late": 4,
+            "early": 1
+          },
+          "within_delay": {
+            "0.5": 1,
+            "1.0": 8,
+            "1.5": 31,
+            "2.0": 43
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "late": 1,
+              "on_time": 7
+            }
+          }
+        },
+        "future_commit_current_ack_k2": {
+          "prompt_counts": {
+            "on_time": 20,
+            "early": 17,
+            "missing": 9,
+            "late": 2
+          },
+          "within_delay": {
+            "0.5": 11,
+            "1.0": 16,
+            "1.5": 20,
+            "2.0": 20
+          },
+          "ordered_complete": 5,
+          "timeouts": 3,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "missing": 2,
+              "on_time": 3,
+              "late": 1
+            },
+            "harvest->return": {
+              "early": 10,
+              "missing": 3,
+              "on_time": 3
+            },
+            "pickup->harvest": {
+              "on_time": 10,
+              "missing": 3,
+              "late": 1,
+              "early": 2
+            },
+            "return->adjust": {
+              "on_time": 4,
+              "missing": 1,
+              "early": 3
+            }
+          }
+        }
+      },
+      "G2_local_history8": {
+        "current_native": {
+          "prompt_counts": {
+            "on_time": 41,
+            "early": 5,
+            "late": 2
+          },
+          "within_delay": {
+            "0.5": 5,
+            "1.0": 31,
+            "1.5": 38,
+            "2.0": 41
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 4,
+              "on_time": 3,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "early": 1
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          }
+        },
+        "current_same_clock": {
+          "prompt_counts": {
+            "on_time": 42,
+            "late": 5,
+            "early": 1
+          },
+          "within_delay": {
+            "0.5": 4,
+            "1.0": 9,
+            "1.5": 35,
+            "2.0": 42
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 5,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 15,
+              "late": 1
+            },
+            "return->adjust": {
+              "late": 2,
+              "on_time": 6
+            }
+          }
+        },
+        "future_commit_current_ack_k2": {
+          "prompt_counts": {
+            "on_time": 18,
+            "early": 17,
+            "missing": 13
+          },
+          "within_delay": {
+            "0.5": 12,
+            "1.0": 16,
+            "1.5": 18,
+            "2.0": 18
+          },
+          "ordered_complete": 4,
+          "timeouts": 4,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 4,
+              "missing": 2,
+              "on_time": 2
+            },
+            "harvest->return": {
+              "on_time": 3,
+              "missing": 5,
+              "early": 8
+            },
+            "pickup->harvest": {
+              "on_time": 9,
+              "missing": 4,
+              "early": 3
+            },
+            "return->adjust": {
+              "on_time": 4,
+              "early": 2,
+              "missing": 2
+            }
+          }
+        }
+      }
+    },
+    "44": {
+      "G1_local_current": {
+        "current_native": {
+          "prompt_counts": {
+            "on_time": 45,
+            "early": 2,
+            "late": 1
+          },
+          "within_delay": {
+            "0.5": 6,
+            "1.0": 28,
+            "1.5": 44,
+            "2.0": 45
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 5,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          }
+        },
+        "current_same_clock": {
+          "prompt_counts": {
+            "on_time": 44,
+            "early": 1,
+            "late": 3
+          },
+          "within_delay": {
+            "0.5": 1,
+            "1.0": 7,
+            "1.5": 29,
+            "2.0": 45
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 6,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 14,
+              "late": 2
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          }
+        },
+        "future_commit_current_ack_k2": {
+          "prompt_counts": {
+            "early": 21,
+            "on_time": 19,
+            "missing": 7,
+            "late": 1
+          },
+          "within_delay": {
+            "0.5": 12,
+            "1.0": 16,
+            "1.5": 19,
+            "2.0": 19
+          },
+          "ordered_complete": 5,
+          "timeouts": 3,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 3,
+              "missing": 1,
+              "on_time": 3,
+              "late": 1
+            },
+            "harvest->return": {
+              "on_time": 8,
+              "early": 5,
+              "missing": 3
+            },
+            "pickup->harvest": {
+              "early": 9,
+              "on_time": 4,
+              "missing": 3
+            },
+            "return->adjust": {
+              "on_time": 4,
+              "early": 4
+            }
+          }
+        }
+      },
+      "G2_local_history8": {
+        "current_native": {
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 3,
+            "late": 2
+          },
+          "within_delay": {
+            "0.5": 7,
+            "1.0": 37,
+            "1.5": 41,
+            "2.0": 43
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 2,
+              "on_time": 4,
+              "late": 2
+            },
+            "harvest->return": {
+              "on_time": 15,
+              "early": 1
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 8
+            }
+          }
+        },
+        "current_same_clock": {
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 1,
+            "late": 4
+          },
+          "within_delay": {
+            "0.5": 2,
+            "1.0": 9,
+            "1.5": 39,
+            "2.0": 43
+          },
+          "ordered_complete": 8,
+          "timeouts": 0,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 1,
+              "on_time": 4,
+              "late": 3
+            },
+            "harvest->return": {
+              "on_time": 16
+            },
+            "pickup->harvest": {
+              "on_time": 16
+            },
+            "return->adjust": {
+              "on_time": 7,
+              "late": 1
+            }
+          }
+        },
+        "future_commit_current_ack_k2": {
+          "prompt_counts": {
+            "early": 24,
+            "on_time": 13,
+            "late": 1,
+            "missing": 10
+          },
+          "within_delay": {
+            "0.5": 6,
+            "1.0": 13,
+            "1.5": 13,
+            "2.0": 13
+          },
+          "ordered_complete": 4,
+          "timeouts": 4,
+          "by_transition": {
+            "adjust->pickup": {
+              "early": 4,
+              "late": 1,
+              "missing": 2,
+              "on_time": 1
+            },
+            "harvest->return": {
+              "on_time": 8,
+              "early": 4,
+              "missing": 4
+            },
+            "pickup->harvest": {
+              "early": 11,
+              "on_time": 2,
+              "missing": 3
+            },
+            "return->adjust": {
+              "early": 5,
+              "missing": 1,
+              "on_time": 2
+            }
+          }
+        }
+      }
+    }
+  },
+  "receipt": {
+    "inputs": {
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G1_local_current_3e645bf4e137d0f836c9d7ff.npz": "2d211fb15ed0f871a619cbcbb89b00e428083040e3e7a7c14842f89061e9e38a",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G1_local_current_27d8bc0413a42341c7e8c3e5.npz": "cac94f393b531d81f1e082a8fa33ebe84930359473af79e127c29c454fc972a7",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G1_local_current_0b12ac0fda9d7cd77dee6e60.npz": "06b62bcc4a451f87cb5f07d9f8aa7f99fc1990ce77af3af71307eb6fe05afae6",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G1_local_current_61c420843f11ca54bfe804ee.npz": "71143fb886142d1894d8886191c567d82ccdd8e8c974e21fab140d961008a021",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G1_local_current_5b82f4bb76e70d8bf12c0798.npz": "8f2d5c326a303d8446251d1f675ec117d13e11ed0d637c64a3727dc4770dc356",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G1_local_current_f53f0b6fb7f3888f87a0f8ff.npz": "39659b3b774af1176cdcd3d5cb830605615546f5e2ee5ea6bad45b1cd7d71a28",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G1_local_current_a8b23394b642f0bb769a0391.npz": "f3187256eddddd0b1ddf717e0317b6a068862400b858ae16872b7d0701a5c82b",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G1_local_current_d0f8727d35eced697dcf79fe.npz": "d5b4adb898c1fd86ae2d4b9e60eab80efaa5e2cf2a8d10f3422cfaf2075767e9",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G2_local_history8_3e645bf4e137d0f836c9d7ff.npz": "e21e6863cf2b59006ca122c0658405963b8338d1bfe4be16b76244c733c38fa4",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G2_local_history8_27d8bc0413a42341c7e8c3e5.npz": "bd02d692c560bf439dd62749a39f1f447d5328eb0ae6f9af72f3add0502c4326",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G2_local_history8_0b12ac0fda9d7cd77dee6e60.npz": "5f5af9e750722df04c3dd1374aa6dc2d57c2d3c5746eab1541912a85f4e464ef",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G2_local_history8_61c420843f11ca54bfe804ee.npz": "5d60d013b90af93225db059b535a7a065ee086d4143f7afce9c98daa9aca161e",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G2_local_history8_5b82f4bb76e70d8bf12c0798.npz": "0deb67a4a823c887695647ffd024208ed898ebb83f4329508130681f268874c9",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G2_local_history8_f53f0b6fb7f3888f87a0f8ff.npz": "998902ce60959b0f6d94e1e8c0f3ef082fa49dc5b8ff35a381164f52ed1f57c1",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G2_local_history8_a8b23394b642f0bb769a0391.npz": "c2cda257fd5f8567a1d8b56a6f6459985919a1b62be116af15562f0e9ec5426f",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed42/G2_local_history8_d0f8727d35eced697dcf79fe.npz": "ca6c89b23c74f06c7dadfb5df4ac4999dd89f6cf76ca8d34fa0cddc1d3c5907e",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G1_local_current_3e645bf4e137d0f836c9d7ff.npz": "c26200e9e7843b1b6c769e8605a64bb8f5d0ef1048966b6474b013f694d712ad",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G1_local_current_27d8bc0413a42341c7e8c3e5.npz": "9301454fda597d4852dd0b16f3d9d7bb5127861a542d9e96e29de54b9b6180ea",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G1_local_current_0b12ac0fda9d7cd77dee6e60.npz": "c42180ebf9d0b1da2e0382864c4ec2b71964fb37e49d34702199b23eb015236c",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G1_local_current_61c420843f11ca54bfe804ee.npz": "f5641d028d8affba684f6c90641da4970cb223f4b3731b55219ad9d9c353ebaa",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G1_local_current_5b82f4bb76e70d8bf12c0798.npz": "7bcf432d5a908f055d801e08d168102571a6a1ce782f950dcb4a37469e789678",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G1_local_current_f53f0b6fb7f3888f87a0f8ff.npz": "e2d91599e662d142237a102b281c6c0a696fa5e4e87c62001f585b77c11d1a19",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G1_local_current_a8b23394b642f0bb769a0391.npz": "a555872f3ebd81df69e15e3c47047a05ee8d35ed423764e3b5070390bda98872",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G1_local_current_d0f8727d35eced697dcf79fe.npz": "2f644e643b50170c14bfb165cb1afa9d8c218433b68e5e8ede90b001ae29a1c5",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G2_local_history8_3e645bf4e137d0f836c9d7ff.npz": "fe073d5cfd7a9157a39ac0eb7604af25ffa40640ce6ee9340aeeccbc4ff07ad6",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G2_local_history8_27d8bc0413a42341c7e8c3e5.npz": "8a7e2c811f867a51640b664149418c0408bfb3dfba194314c4508cb2bc214c1c",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G2_local_history8_0b12ac0fda9d7cd77dee6e60.npz": "8aab3615c766e2a0e941fd82773ab23ae739637243904386b1ba8e7869693c8d",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G2_local_history8_61c420843f11ca54bfe804ee.npz": "0867cb3afae6a49647620ca803b15e701a9ab27fad24cac45351cf8614efc5d5",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G2_local_history8_5b82f4bb76e70d8bf12c0798.npz": "783547303af95ab8efbadf272206378eab22856796c150a0339a3b5625eeea38",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G2_local_history8_f53f0b6fb7f3888f87a0f8ff.npz": "9728b4bf6b941ef1097adc976f230c9e9914574b05fafc262b041ecc0908a516",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G2_local_history8_a8b23394b642f0bb769a0391.npz": "3a7bdff33e31f8f533927c4a7c334c214db305169d13e36778959823787b8e4f",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed43/G2_local_history8_d0f8727d35eced697dcf79fe.npz": "36397f37a4318ff7a67b01b5bdf6bfec1348017b48a83e8dd96f3359ed7a7286",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G1_local_current_3e645bf4e137d0f836c9d7ff.npz": "3bc72a2bc356f4423b55a7cf0d6d6776dc77d7c1e18d95aea334dcafb8a64491",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G1_local_current_27d8bc0413a42341c7e8c3e5.npz": "75d0bfcad9e08ebfa56732a9bd18d7c3154094f264025277c99604fed4d56155",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G1_local_current_0b12ac0fda9d7cd77dee6e60.npz": "941e36045c6892c344c1cae8d54c2b4c5e6fef6f2343d874107574281100ca57",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G1_local_current_61c420843f11ca54bfe804ee.npz": "25130d859d457b9d8c061b76c9fc1d9e2f5a251f5a811330e6984fa3af30f917",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G1_local_current_5b82f4bb76e70d8bf12c0798.npz": "d5f8f2968bfd5e5bdfd11803cea185aa54e977c28e73d945ae12cb354c853768",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G1_local_current_f53f0b6fb7f3888f87a0f8ff.npz": "1455a85d0a321e175ec9fad42e057097790edccf5ec019fe7a541a4c6bf2d9ba",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G1_local_current_a8b23394b642f0bb769a0391.npz": "1867b1436918527219f328d89d2ab277ff97a9c33d85637467dc6e5b7b60c0f2",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G1_local_current_d0f8727d35eced697dcf79fe.npz": "9c0567b086b9ef145c7d47f5474baf9202ae5e9eb588b09b1b00bf8b12e99786",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G2_local_history8_3e645bf4e137d0f836c9d7ff.npz": "e65a5b379d2966b8dd1595613ca00d908b801b4148ca57b8834a756001bf4543",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G2_local_history8_27d8bc0413a42341c7e8c3e5.npz": "bb736dd2d7b7d3b6a10a690e7078c00adc5b7c3cc8ac995a887f4aadcbefee31",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G2_local_history8_0b12ac0fda9d7cd77dee6e60.npz": "e49a8e138073148162bad934060682dd481c386294b98f88b8cf7b8b7c02f9db",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G2_local_history8_61c420843f11ca54bfe804ee.npz": "b10d1f2c17a5137bc354afd8aa63a8b642924e7e9f2f60a53646ee7f8b72a43c",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G2_local_history8_5b82f4bb76e70d8bf12c0798.npz": "a0cac9b7714eddb96df66cc9c9217b817bd722ded21227c4f7d17ed02ecfd156",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G2_local_history8_f53f0b6fb7f3888f87a0f8ff.npz": "a00c1d4eefb4cbe6fa26e3b715130106c510abef6f285b0d167ed906f1f9f94f",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G2_local_history8_a8b23394b642f0bb769a0391.npz": "c872517c812f0a8e71bc4e401775ac59eb329f5b3064af8aa88e5862fb896543",
+      "runs/tomato/rgb_memory_train_20261116_r11_v1/seed44/G2_local_history8_d0f8727d35eced697dcf79fe.npz": "e61b1d5b58cf85ce04bf8d3281b81ae09cbcbefe7cc622a725218ef473d58542"
+    },
+    "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+    "git_sha": "3b9967eb78c8121fdface575b163cf085f312219",
+    "handshake_commit": "07f93115d5427b3ebaaf1735e9bd18a1e1240aa5",
+    "runner_sha256": "435f8ca81bf2071eab096948fbf5f22768d09eaae315248cbc7efc371869cb15",
+    "source_results_sha256": "19ee54107cbc0c018652bae4ea760fd8c73914b38b1398686c9d132e2dd7736e",
+    "scope": "Exposed development8,48 boundaries repeated across3 seeds; not independent144 events",
+    "clocks": "simulated .09s availability/.5s planning; not measured deployment latency",
+    "interpretation": "Future commit then Current ACK; ACK is NOT a pre-commit safety check",
+    "threshold_search": false,
+    "training": false,
+    "historical_test_scored": false,
+    "default_changed": false,
+    "robot_calls": 0
+  },
+  "result_sha256": "f8e3382e415ed6c61e35f4a3e0ec2c316c2f3401cc3b27e9a5bb3790cdb37541",
+  "artifact_root": "/home/user/vjepa2_training/runs/tomato/four_view_handshake_20261116_v2",
+  "interpretation_zh": [
+    "已完成四路单窗口和四路历史8模型的三种子冻结编码器训练，本轮复用预测，不重复训练。",
+    "Current预测当前，Future预测1.5秒后；两者不能按置信度高低直接竞争。",
+    "此处握手是Future提交后由Current ACK，并非提交前Current确认。",
+    "原Current策略的按时窗口为边界后0至2秒；另外报告不提前且1.5秒内，不能混用Future严格预警召回。",
+    "native与同延迟时钟都保留；90ms仅模拟，不是测得真机延迟。",
+    "本表状态不一致为连续时间精确积分，先前训练表为2Hz采样积分，不直接比较。",
+    "48个开发事件重复三种子，不是144个独立事件；没有历史测试或阈值搜索。",
+    "不推广此Future先提交握手，不改变B0或部署配置。"
+  ],
+  "tests": "14 passed: paired decisions, RGB training and bridge"
+}
