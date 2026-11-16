@@ -1,0 +1,597 @@
+{
+  "colleague": {
+    "branch": "feat/tairan-deployment-handoff-20261113",
+    "commit": "90ac57ea9eb1de93821ebddeff5a88bb7b0edfc7",
+    "future_horizon_s": 1.0,
+    "prediction_hz": 2,
+    "cameras": 3,
+    "mode": "joint",
+    "checkpoint_sha256": "9324cdb3287c407c259eafbc725ac3bc3d3df6d38646545e8435e0faa9ad03d9",
+    "checkpoint_available_locally": false,
+    "handshake": "Future commit, Current ACK plus WAIT_LATE_ACK; not pre-commit agreement",
+    "K": 1,
+    "soft_ack_timeout_s": 1.5,
+    "late_ack_total_timeout_s": 5
+  },
+  "our_matched_G1": {
+    "h10": {
+      "current_macro_f1_all_anchors_mean": 0.9543369075691119,
+      "future_macro_f1_common_tail_mean": 0.9301849065834986,
+      "future_macro_f1_common_tail_sd": 0.0015405176198103087,
+      "prompt_counts": {
+        "on_time": 126,
+        "early": 9,
+        "late": 9
+      },
+      "prompt_non_early_within_1p5s": 119,
+      "windows": {
+        "1.0": {
+          "hits": 64,
+          "total": 144,
+          "false_events": 88,
+          "false_per_minute_mean": 1.584871679423683,
+          "adjust_pickup_hits": 6,
+          "adjust_pickup_total": 24
+        },
+        "1.5": {
+          "hits": 70,
+          "total": 144,
+          "false_events": 82,
+          "false_per_minute_mean": 1.4768122467357045,
+          "adjust_pickup_hits": 7,
+          "adjust_pickup_total": 24
+        }
+      },
+      "per_seed": {
+        "42": {
+          "future_macro_f1": 0.928574011392133,
+          "warnings": {
+            "1.0": {
+              "hits": 21,
+              "total": 48,
+              "recall": 0.4375,
+              "false_events": 27,
+              "false_per_minute": 1.4588023412877082,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 7,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 10,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 2,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 2,
+                  "total": 8
+                }
+              }
+            },
+            "1.5": {
+              "hits": 23,
+              "total": 48,
+              "recall": 0.4791666666666667,
+              "false_events": 25,
+              "false_per_minute": 1.3507429085997298,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 7,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 12,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 2,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 2,
+                  "total": 8
+                }
+              }
+            }
+          },
+          "prompt_counts": {
+            "on_time": 42,
+            "early": 3,
+            "late": 3
+          }
+        },
+        "43": {
+          "future_macro_f1": 0.9303369346747492,
+          "warnings": {
+            "1.0": {
+              "hits": 22,
+              "total": 48,
+              "recall": 0.4583333333333333,
+              "false_events": 31,
+              "false_per_minute": 1.674921206663665,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 8,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 9,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 3,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 2,
+                  "total": 8
+                }
+              }
+            },
+            "1.5": {
+              "hits": 25,
+              "total": 48,
+              "recall": 0.5208333333333334,
+              "false_events": 28,
+              "false_per_minute": 1.5128320576316974,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 8,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 11,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 3,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 3,
+                  "total": 8
+                }
+              }
+            }
+          },
+          "prompt_counts": {
+            "on_time": 42,
+            "late": 3,
+            "early": 3
+          }
+        },
+        "44": {
+          "future_macro_f1": 0.9316437736836136,
+          "warnings": {
+            "1.0": {
+              "hits": 21,
+              "total": 48,
+              "recall": 0.4375,
+              "false_events": 30,
+              "false_per_minute": 1.6208914903196758,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 7,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 9,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 3,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 2,
+                  "total": 8
+                }
+              }
+            },
+            "1.5": {
+              "hits": 22,
+              "total": 48,
+              "recall": 0.4583333333333333,
+              "false_events": 29,
+              "false_per_minute": 1.5668617739756867,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 7,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 10,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 3,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 2,
+                  "total": 8
+                }
+              }
+            }
+          },
+          "prompt_counts": {
+            "on_time": 42,
+            "early": 3,
+            "late": 3
+          }
+        }
+      }
+    },
+    "h15": {
+      "current_macro_f1_all_anchors_mean": 0.9574384362082257,
+      "future_macro_f1_common_tail_mean": 0.9195671819807106,
+      "future_macro_f1_common_tail_sd": 0.005841076913005814,
+      "prompt_counts": {
+        "on_time": 131,
+        "early": 6,
+        "late": 7
+      },
+      "prompt_non_early_within_1p5s": 128,
+      "windows": {
+        "1.0": {
+          "hits": 65,
+          "total": 144,
+          "false_events": 95,
+          "false_per_minute_mean": 1.7109410175596578,
+          "adjust_pickup_hits": 4,
+          "adjust_pickup_total": 24
+        },
+        "1.5": {
+          "hits": 84,
+          "total": 144,
+          "false_events": 76,
+          "false_per_minute_mean": 1.368752814047726,
+          "adjust_pickup_hits": 5,
+          "adjust_pickup_total": 24
+        }
+      },
+      "per_seed": {
+        "42": {
+          "future_macro_f1": 0.9221852828845993,
+          "warnings": {
+            "1.0": {
+              "hits": 24,
+              "total": 48,
+              "recall": 0.5,
+              "false_events": 32,
+              "false_per_minute": 1.7289509230076543,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 11,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 9,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 3,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 1,
+                  "total": 8
+                }
+              }
+            },
+            "1.5": {
+              "hits": 30,
+              "total": 48,
+              "recall": 0.625,
+              "false_events": 26,
+              "false_per_minute": 1.4047726249437191,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 12,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 12,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 5,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 1,
+                  "total": 8
+                }
+              }
+            }
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 2,
+            "late": 3
+          }
+        },
+        "43": {
+          "future_macro_f1": 0.9128750710380747,
+          "warnings": {
+            "1.0": {
+              "hits": 19,
+              "total": 48,
+              "recall": 0.3958333333333333,
+              "false_events": 34,
+              "false_per_minute": 1.8370103556956325,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 7,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 9,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 1,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 2,
+                  "total": 8
+                }
+              }
+            },
+            "1.5": {
+              "hits": 25,
+              "total": 48,
+              "recall": 0.5208333333333334,
+              "false_events": 28,
+              "false_per_minute": 1.5128320576316974,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 8,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 11,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 3,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 3,
+                  "total": 8
+                }
+              }
+            }
+          },
+          "prompt_counts": {
+            "on_time": 43,
+            "early": 2,
+            "late": 3
+          }
+        },
+        "44": {
+          "future_macro_f1": 0.9236411920194574,
+          "warnings": {
+            "1.0": {
+              "hits": 22,
+              "total": 48,
+              "recall": 0.4583333333333333,
+              "false_events": 29,
+              "false_per_minute": 1.5668617739756867,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 8,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 9,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 4,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 1,
+                  "total": 8
+                }
+              }
+            },
+            "1.5": {
+              "hits": 29,
+              "total": 48,
+              "recall": 0.6041666666666666,
+              "false_events": 22,
+              "false_per_minute": 1.1886537595677622,
+              "by_transition": {
+                "pickup->harvest": {
+                  "hits": 12,
+                  "total": 16
+                },
+                "harvest->return": {
+                  "hits": 11,
+                  "total": 16
+                },
+                "return->adjust": {
+                  "hits": 5,
+                  "total": 8
+                },
+                "adjust->pickup": {
+                  "hits": 1,
+                  "total": 8
+                }
+              }
+            }
+          },
+          "prompt_counts": {
+            "on_time": 45,
+            "early": 2,
+            "late": 1
+          }
+        }
+      }
+    }
+  },
+  "receipt": {
+    "identity": {
+      "pretrained": {
+        "model_id": "facebook/vjepa2-vitl-fpc64-256",
+        "revision": "b3c1679b7c34d3255ef3547f27c7b226aefab26f",
+        "sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b",
+        "config_sha256": "3dec96fe962e94e569182d3a7b9ef0dd74b6b8c89c337a428e43e10d593e70c9"
+      },
+      "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+      "cache_signature": "e4378207867319b424aa8190db9467781e3eaf0a5f104d132be995f32f620bc2",
+      "cache_index_sha256": "f6d97a4bc614bc84b7ba8c85f0cb5419934a232ee9dd58e02f3c15b1b23bc6ef",
+      "statistics_sha256": "c0db36237149c284cb74ff364a0aee6eeda5f59ca0743ef65787985e6ff79c5f",
+      "joint_names": [
+        "left_fr3_joint1.position",
+        "left_fr3_joint2.position",
+        "left_fr3_joint3.position",
+        "left_fr3_joint4.position",
+        "left_fr3_joint5.position",
+        "left_fr3_joint6.position",
+        "left_fr3_joint7.position",
+        "right_fr3_joint1.position",
+        "right_fr3_joint2.position",
+        "right_fr3_joint3.position",
+        "right_fr3_joint4.position",
+        "right_fr3_joint5.position",
+        "right_fr3_joint6.position",
+        "right_fr3_joint7.position",
+        "left_thumb_CMC_FE.position",
+        "left_thumb_CMC_AA.position",
+        "left_thumb_MCP_FE.position",
+        "left_thumb_MCP_AA.position",
+        "left_thumb_IP.position",
+        "left_index_MCP_FE.position",
+        "left_index_MCP_AA.position",
+        "left_index_PIP.position",
+        "left_index_DIP.position",
+        "left_middle_MCP_FE.position",
+        "left_middle_MCP_AA.position",
+        "left_middle_PIP.position",
+        "left_middle_DIP.position",
+        "left_ring_MCP_FE.position",
+        "left_ring_MCP_AA.position",
+        "left_ring_PIP.position",
+        "left_ring_DIP.position",
+        "left_pinky_CMC.position",
+        "left_pinky_MCP_FE.position",
+        "left_pinky_MCP_AA.position",
+        "left_pinky_PIP.position",
+        "left_pinky_DIP.position",
+        "right_thumb_CMC_FE.position",
+        "right_thumb_CMC_AA.position",
+        "right_thumb_MCP_FE.position",
+        "right_thumb_MCP_AA.position",
+        "right_thumb_IP.position",
+        "right_index_MCP_FE.position",
+        "right_index_MCP_AA.position",
+        "right_index_PIP.position",
+        "right_index_DIP.position",
+        "right_middle_MCP_FE.position",
+        "right_middle_MCP_AA.position",
+        "right_middle_PIP.position",
+        "right_middle_DIP.position",
+        "right_ring_MCP_FE.position",
+        "right_ring_MCP_AA.position",
+        "right_ring_PIP.position",
+        "right_ring_DIP.position",
+        "right_pinky_CMC.position",
+        "right_pinky_MCP_FE.position",
+        "right_pinky_MCP_AA.position",
+        "right_pinky_PIP.position",
+        "right_pinky_DIP.position"
+      ],
+      "supervision_horizon_s": 1.0,
+      "feature_cache_supervision_horizon_s": 1.5,
+      "source_sha256": {
+        "/home/user/vjepa2_training/tools/compare_tomato_four_view_horizons.py": "5d54d902a4fda3ad2338e5c8b523c0bd0bd91c30b22f62606e3105b606632d72",
+        "/home/user/vjepa2_training/tools/train_tomato_rgb_memory.py": "51798290d70dda75b7941f547ced1cb6b875cd3b5df24f2e25726c7945ca6574",
+        "tools/tomato_rgb_memory_model.py": "e42ce34abb657909f7f98f1079d40cbfc053fe29c2e33c00c7510e4f8b303eb7",
+        "tools/tomato_rgb_memory_training.py": "04bad1a3c0d2d92e6855e4487eeac009d3329e574355dbc9a51fe1297e68df89"
+      }
+    },
+    "colleague_commit": "90ac57ea9eb1de93821ebddeff5a88bb7b0edfc7",
+    "colleague_config_sha256": "89994e4596c722f18545dedc751871b81fdf425d298fe7ce4e2c98fa00f91f73",
+    "reference_results_sha256": "19ee54107cbc0c018652bae4ea760fd8c73914b38b1398686c9d132e2dd7736e",
+    "reference": "/home/user/vjepa2_training/runs/tomato/rgb_memory_train_20261116_r11_v1",
+    "cache": "/home/user/vjepa2_training/runs/tomato/rgb_memory_cache_20261116_r11_v4",
+    "git_sha": "fda72cf401b54683fef68442611dde94a99457d9",
+    "trained_models": 3,
+    "encoder_unfrozen": false,
+    "historical_test_evaluated": false,
+    "default_changed": false,
+    "threshold_search": false,
+    "scope": "Repeatedly exposed development8; not independent generalization or colleague model head-to-head",
+    "caveat": "Shared readout jointly optimized: changing future supervision can also change Current outputs. No deployment change."
+  },
+  "verification": {
+    "checks": [
+      {
+        "seed": 42,
+        "checkpoint_sha256": "8322342f5f458b6eb472170d3255b3c9ba8c5759c90ba4a8a2d5b21bbc21ac62",
+        "model_version": "old100-G1_local_current-s42-e43782078673-h10-fa4d65a2d438",
+        "recomputed_windows": 2245,
+        "max_probability_error": 0.0
+      },
+      {
+        "seed": 43,
+        "checkpoint_sha256": "18c193943775ba16d2e384d8314c73acbf45e66e8bb52776f656442ac6a0344e",
+        "model_version": "old100-G1_local_current-s43-e43782078673-h10-fa4d65a2d438",
+        "recomputed_windows": 2245,
+        "max_probability_error": 0.0
+      },
+      {
+        "seed": 44,
+        "checkpoint_sha256": "ec6a97e67ab030aeeab96e9e253c9aecd794f697df1a434951f5ebb342fd60ce",
+        "model_version": "old100-G1_local_current-s44-e43782078673-h10-fa4d65a2d438",
+        "recomputed_windows": 2245,
+        "max_probability_error": 0.0
+      }
+    ],
+    "historical_test_scored": false,
+    "default_changed": false
+  },
+  "checkpoints": {
+    "checkpoints": [
+      {
+        "path": "/home/user/vjepa2_training/runs/tomato/four_view_horizon1s_20261116_v1/seed42/G1_local_current.pt",
+        "pre_version_metadata_sha256": "178d4d6c0cc732a8f832366638baa0db389810e2cc9014eb5a386729ae1166ce",
+        "sha256": "8322342f5f458b6eb472170d3255b3c9ba8c5759c90ba4a8a2d5b21bbc21ac62"
+      },
+      {
+        "path": "/home/user/vjepa2_training/runs/tomato/four_view_horizon1s_20261116_v1/seed43/G1_local_current.pt",
+        "pre_version_metadata_sha256": "6a3cf0ae9ce921d598c8bc95ff6bbfe251cbd6f6faa856b98f9b6ff07a5b2c76",
+        "sha256": "18c193943775ba16d2e384d8314c73acbf45e66e8bb52776f656442ac6a0344e"
+      },
+      {
+        "path": "/home/user/vjepa2_training/runs/tomato/four_view_horizon1s_20261116_v1/seed44/G1_local_current.pt",
+        "pre_version_metadata_sha256": "fb2dad2b55aa1936ca1096469d8a08f354a00590da85f0a433ce19ee372e354e",
+        "sha256": "ec6a97e67ab030aeeab96e9e253c9aecd794f697df1a434951f5ebb342fd60ce"
+      }
+    ],
+    "reason": "Distinct1s prediction model_version on reused1.5s visual cache; weight tensors unchanged",
+    "tool_sha256": "fc70532c1f34237e6e41b5fe56824c5bbc4e407417bc90bf6ebd479a8ddde50c"
+  },
+  "training_s": 38.65269955608528,
+  "artifact_root": "/home/user/vjepa2_training/runs/tomato/four_view_horizon1s_20261116_v1",
+  "results_sha256": "22c7d9267b06133191223b7db6a4e57e6e107b38c6c5b38e983abce603797423",
+  "tests": "16 passed",
+  "conclusions_zh": [
+    "1秒Future分类分数提高约1.06个百分点；两种分类监督目标不同，不能等同于切换提升。",
+    "共同1秒窗：1秒模型64/144、88次未匹配，1.5秒模型65/144、95次未匹配；未体现稳定整体收益。",
+    "Current也受共享读出联合训练影响，正式Current和Prompt策略没有修改；本轮仅研究候选。",
+    "Prompt按时126对131；不提前且1.5秒内119对128；不支持替换现有1.5秒方案。",
+    "同事权重路径不在本机，未做其模型与我方同数据直接准确率比较。",
+    "本轮输入为旧100r11离线ROI，坐标生成非因果，不能声称真机验证。",
+    "8条反复使用的开发录制，48事件跨3种子重复；不是144独立事件，不使用历史测试。",
+    "此前握手对照使用07f9311，本轮核实的90ac57e新增WAIT_LATE_ACK，旧对照不能当作最新握手实测。"
+  ]
+}
