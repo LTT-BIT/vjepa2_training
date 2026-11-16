@@ -35,7 +35,7 @@ class RGBMemoryReader(nn.Module):
     State mean/std must be fitted on TRAIN sources only and saved in checkpoint.
     Whole-window ROI validity and source coordinates remain explicit metadata.
     """
-    def __init__(self, state_mean, state_std, hidden=128):
+    def __init__(self, state_mean, state_std, hidden=128, memory_scope='all'):
         super().__init__()
         mean, std = (torch.as_tensor(v, dtype=torch.float32) for v in (state_mean, state_std))
         if (mean.shape != (58,) or std.shape != (58,) or not torch.isfinite(mean).all()
@@ -43,6 +43,9 @@ class RGBMemoryReader(nn.Module):
             raise ValueError('Training-fitted finite 58D mean and positive std required')
         if type(hidden) is not int or hidden < 4 or hidden % 4:
             raise ValueError('Hidden dimension must be positive and divisible by four')
+        if memory_scope not in ('all', 'local_only'):
+            raise ValueError('Unknown memory scope')
+        self.memory_scope = memory_scope
         self.register_buffer('state_mean', mean)
         self.register_buffer('state_std', std)
         self.visual = nn.Sequential(nn.Linear(4096, hidden), nn.GELU())
@@ -66,6 +69,15 @@ class RGBMemoryReader(nn.Module):
                 raise ValueError('Boolean history mask with real latest observation required')
         q = positions.reshape(b, n, 16, 58)
         q = ((q-self.state_mean)/self.state_std).flatten(2)
+        if self.memory_scope == 'local_only':
+            # Older keys contain ONLY local RGB, ROI geometry and relative time.
+            # Current global/state evidence stays in the latest query/residual.
+            visual = visual.clone()
+            visual[:, :-1, :3] = 0
+            q = q.clone()
+            q[:, :-1] = 0
+            metadata = metadata.clone()
+            metadata[:, :-1, 96:112] = 0
         z = self.norm(self.visual(visual.flatten(2))+self.state(q)+self.geometry(metadata))
         # Only latest output is predicted: all keys are at or before its time.
         context, _ = self.attention(z[:, -1:], z, z, key_padding_mask=None if history_valid is None else ~history_valid, need_weights=False)

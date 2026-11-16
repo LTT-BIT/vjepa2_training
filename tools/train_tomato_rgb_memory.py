@@ -9,7 +9,7 @@ from . import tomato_dataset as ds,tomato_metrics as metrics
 from .tomato_frozen_protocol import verify
 from .tomato_runtime import initialize_runtime
 from .tomato_rgb_memory_model import RGBMemoryReader
-from .tomato_rgb_memory_training import history_indices,gather_inputs
+from .tomato_rgb_memory_training import history_indices,gather_inputs,history_length,memory_scope
 from .train_tomato_vjepa_phase import fit_class_weights
 from .evaluate_tomato_disagreement import score,summarize
 
@@ -39,7 +39,7 @@ def features(b,ids,method):return gather_inputs(b['visual'],b['positions'],b['me
 
 
 def fit(rows,method,seed,cfg,mean,std,path,identity):
-    initialize_runtime(dict(device='cuda',seed=seed));b=bank(rows,8 if method=='G2_local_history8' else 1);cw,_=fit_class_weights(b['current'].cpu().numpy());future_np=b['future'].cpu().numpy();fw,_=fit_class_weights(future_np[future_np>=0]);cw=torch.from_numpy(cw).cuda();fw=torch.from_numpy(fw).cuda();net=RGBMemoryReader(mean,std,cfg['hidden']).cuda();initial=ds.fingerprint({k:v.detach().cpu().numpy().tolist() for k,v in net.state_dict().items()});opt=torch.optim.AdamW(net.parameters(),lr=cfg['learning_rate'],weight_decay=cfg['weight_decay']);rng=np.random.default_rng(seed);losses=[];torch.cuda.reset_peak_memory_stats();torch.cuda.synchronize();start=time.perf_counter()
+    initialize_runtime(dict(device='cuda',seed=seed));b=bank(rows,history_length(method));cw,_=fit_class_weights(b['current'].cpu().numpy());future_np=b['future'].cpu().numpy();fw,_=fit_class_weights(future_np[future_np>=0]);cw=torch.from_numpy(cw).cuda();fw=torch.from_numpy(fw).cuda();net=RGBMemoryReader(mean,std,cfg['hidden'],memory_scope=memory_scope(method)).cuda();initial=ds.fingerprint({k:v.detach().cpu().numpy().tolist() for k,v in net.state_dict().items()});opt=torch.optim.AdamW(net.parameters(),lr=cfg['learning_rate'],weight_decay=cfg['weight_decay']);rng=np.random.default_rng(seed);losses=[];torch.cuda.reset_peak_memory_stats();torch.cuda.synchronize();start=time.perf_counter()
     for epoch in range(cfg['epochs']):
         net.train();epoch_loss=[]
         for batch in np.array_split(rng.permutation(len(b['current'])),int(np.ceil(len(b['current'])/cfg['batch_size']))):
@@ -48,14 +48,14 @@ def fit(rows,method,seed,cfg,mean,std,path,identity):
             loss=cfg['current_loss_weight']*loss+cfg['future_loss_weight']*future_loss;loss.backward();torch.nn.utils.clip_grad_norm_(net.parameters(),1.,error_if_nonfinite=True);opt.step();epoch_loss.append(float(loss.detach()))
         losses.append(float(np.mean(epoch_loss)))
     torch.cuda.synchronize();info=dict(training_s=time.perf_counter()-start,peak_allocated_bytes=torch.cuda.max_memory_allocated(),parameters=sum(p.numel() for p in net.parameters()),initialization_sha256=initial,loss=losses)
-    torch.save(dict(format_version=1,architecture='old100_rgb_memory_reader_v2',method=method,seed=seed,model_version=f'old100-{method}-s{seed}-{identity["cache_signature"][:12]}',head={k:v.detach().cpu() for k,v in net.state_dict().items()},state_mean=torch.from_numpy(mean),state_std=torch.from_numpy(std),current_class_weights=cw.cpu(),future_class_weights=fw.cpu(),training_sources=[r['episode']['source_recording_id'] for r in rows],protocol=cfg,identity=identity,training=info,input_schema=dict(visual=[4,1024],positions=[16,58],metadata=116,joint_names=identity['joint_names'],labels=ds.LABELS,history=8 if method=='G2_local_history8' else 1,language_prompt=False,stage_oracle=False)),path);info['checkpoint_sha256']=ds.digest(path);del b;return net,info
+    torch.save(dict(format_version=1,architecture='old100_rgb_memory_reader_v2',method=method,seed=seed,model_version=f'old100-{method}-s{seed}-{identity["cache_signature"][:12]}',head={k:v.detach().cpu() for k,v in net.state_dict().items()},state_mean=torch.from_numpy(mean),state_std=torch.from_numpy(std),current_class_weights=cw.cpu(),future_class_weights=fw.cpu(),training_sources=[r['episode']['source_recording_id'] for r in rows],protocol=cfg,identity=identity,training=info,input_schema=dict(visual=[4,1024],positions=[16,58],metadata=116,joint_names=identity['joint_names'],labels=ds.LABELS,history=history_length(method),language_prompt=False,stage_oracle=False,memory_scope=memory_scope(method))),path);info['checkpoint_sha256']=ds.digest(path);del b;return net,info
 
 
 @torch.inference_mode()
 def predict(net,rows,method,cfg):
     net.eval();pred={}
     for r in rows:
-        b=bank([r],8 if method=='G2_local_history8' else 1);c=[];f=[]
+        b=bank([r],history_length(method));c=[];f=[]
         for ids in torch.arange(len(r['times']),device='cuda').split(cfg['batch_size']):
             z=net(**features(b,ids,method));c.append(z['current_logits'].softmax(-1).cpu().numpy());f.append(z['future_logits'].softmax(-1).cpu().numpy())
         pred[r['episode']['episode_id']]=dict(current=np.concatenate(c),future=np.concatenate(f));del b

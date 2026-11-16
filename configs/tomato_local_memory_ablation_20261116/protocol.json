@@ -1,0 +1,73 @@
+{
+  "version": "old100-r11-only-local-history-v1",
+  "frozen_lock": "configs/tomato_frozen_independent_20261112/b0.lock.v3.json",
+  "manifest_sha256": "95679c2f4457701c3898e538b83883c27106aa3aa44c647ad046b92dd20410e1",
+  "scope": "old100 seven-position task; train84/dev8; historical test8 untouched",
+  "labels": [
+    "pickup",
+    "harvest",
+    "return",
+    "adjust"
+  ],
+  "ordered_classes": [
+    0,
+    1,
+    2,
+    3,
+    0,
+    1,
+    2
+  ],
+  "language_prompt_input": false,
+  "oracle_stage_input": false,
+  "future_horizon_s": 1.5,
+  "raw_fps": 30,
+  "observation_hz": 2,
+  "video_frames": 16,
+  "video_sample_hz": 10,
+  "startup": "wait for complete1.5s window; compare all methods on same anchors",
+  "methods": [
+    "G0_global_current",
+    "G1_local_current",
+    "G3_local_only_history8"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 30,
+  "batch_size": 128,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "hidden": 128,
+  "current_loss_weight": 1.0,
+  "future_loss_weight": 1.0,
+  "selection": "fixed last epoch; report every seed/method; no threshold or test-set tuning",
+  "state_normalization": "raw measured positions of train84 only",
+  "visual_encoder": "Frozen official V-JEPA2; existing global cache plus recorded r11 local224 resized256",
+  "roi": "Exact existing r11 mixed right/left/both interaction video; no new right-hand anchor or motion-only selector",
+  "roi_quality": "experimental; detection validity is not semantic accuracy",
+  "roi_uses_manual_interpolation": true,
+  "roi_uses_phase_labels": false,
+  "history_padding": "left padding masked, latest query valid, never mix episodes",
+  "decision": "unchanged four-to-seven ordered B0 Current0.8/K2; Future advisory only",
+  "cache_encoder_batch": 8,
+  "default_changed": false,
+  "openpi_modified": false,
+  "robot_calls": 0,
+  "roi_target_reference": "old100 policy checkpoint training bundle only; new119 excluded",
+  "roi_source_mode": "recorded_offline_r11",
+  "roi_stream_contract": "offline_bidirectional_local_rgb_v6",
+  "roi_bundle": "/home/user/datasets/derived/tomato_complete100_four_view_offline_local_candidate_r11",
+  "roi_uses_future_coordinates": true,
+  "roi_uses_future_pixels": false,
+  "online_roi_validated": false,
+  "evaluation_scope": "Recorded offline ROI replay; history sampling is causal, ROI coordinate generation is not",
+  "policy_checkpoint_uri": "sftp://28/mnt/public_data/local-realrobot-train-data/checkpoints/mengxiang/tomato-openpi-sharpa/pi05_sharpa_tomato_complete100_b_crop_fullft_delta_r1_offline_r11/tomato_complete100_b_crop_delta_r1_offline_r11_s42_b256_s16000_c4000",
+  "memory_scope": "local_only",
+  "new_training_methods": [
+    "G3_local_only_history8"
+  ],
+  "comparison": "A three global current; B four current; C three global current plus local history8"
+}

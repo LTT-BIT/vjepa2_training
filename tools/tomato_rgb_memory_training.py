@@ -3,6 +3,17 @@ import numpy as np
 import torch
 
 
+def history_length(method):
+    if method not in ('G0_global_current','G1_local_current','G2_local_history8','G3_local_only_history8'):
+        raise ValueError('Unknown RGB readout method')
+    return 8 if method in ('G2_local_history8','G3_local_only_history8') else 1
+
+
+def memory_scope(method):
+    history_length(method)
+    return 'local_only' if method=='G3_local_only_history8' else 'all'
+
+
 def history_indices(times,length,gap=.75):
     times=np.asarray(times);out=np.full((len(times),length),-1,np.int64);first=0
     if len(times)>1 and np.any(np.diff(times)<=0):raise ValueError('Strict increasing history times required')

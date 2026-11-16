@@ -1,0 +1,42 @@
+{
+  "models": [
+    {
+      "seed": 42,
+      "checkpoint_sha256": "5f853722bb335209f3a8b4d531e68f7afce1c19e39937bc994b08abfcc7721f9",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 1.3709068298339844e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 0.6730740424245596,
+        "p95": 0.927228806540369,
+        "max": 4.623580025509
+      }
+    },
+    {
+      "seed": 43,
+      "checkpoint_sha256": "dd17e2390bb8e0c433a9336b954323353a188ce8a1e95cec299d8844a209b7ff",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 1.5497207641601562e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 0.6692189490422606,
+        "p95": 0.8687586290761828,
+        "max": 1.2378139654174447
+      }
+    },
+    {
+      "seed": 44,
+      "checkpoint_sha256": "82ccebb24543599b8b5bd9e2d3c5e99d068221bc8056e1fb6a22a4abf1a3c860",
+      "observations": 2245,
+      "stream_batch_max_abs_error": 1.4901161193847656e-06,
+      "old_global_and_state_discarded": true,
+      "head_only_latency_ms": {
+        "p50": 0.6768130697309971,
+        "p95": 0.9414676111191507,
+        "max": 1.583994016982615
+      }
+    }
+  ],
+  "latency_scope": "frozen feature bank to probabilities, no encoder/network/ROI",
+  "online_roi_validated": false
+}

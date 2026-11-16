@@ -1,0 +1,20 @@
+{
+  "tomato_tests": "366 passed,1 skipped",
+  "full_suite": "collection failed: unrelated tests/test_lemon_doubao_vjepa.py imports missing tools.annotate_lemon_doubao; no lemon files changed",
+  "trainable_parameters": 725640,
+  "new_training_seconds": 40.76457154506352,
+  "new_peak_allocated_bytes": {
+    "42": 612231680,
+    "43": 612624896,
+    "44": 612624896
+  },
+  "raw_artifacts": "/home/user/vjepa2_training/runs/tomato/local_only_memory_20261116_v1",
+  "plot_python": "/home/user/sharpa-pi05/.venv/bin/python",
+  "training_python": ".venv-tomato/bin/python",
+  "commands": [
+    ".venv-tomato/bin/python -m tools.train_tomato_local_only_memory --cache runs/tomato/rgb_memory_cache_20261116_r11_v4 --reference runs/tomato/rgb_memory_train_20261116_r11_v1 --out runs/tomato/local_only_memory_NEW",
+    "/home/user/sharpa-pi05/.venv/bin/python -m tools.report_tomato_local_only_memory --run runs/tomato/local_only_memory_NEW"
+  ],
+  "no_encoder_reextraction": true,
+  "default_changed": false
+}
