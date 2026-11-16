@@ -1,7 +1,9 @@
-"""Trainable experimental readout, UNTRAINED until a separate campaign validates it.
+"""Experimental history readout; trained status belongs to each versioned checkpoint.
 
 Only measured state, visual history, time and ROI geometry enter this model.
-No stage position, predictions, action commands, result labels or future truth.
+No stage position, predictions, action commands or result labels.
+ROI source causality is a separate dataset contract: recorded r11 boxes are
+future-assisted and must not be claimed as validated online observations.
 """
 import numpy as np
 import torch
@@ -51,17 +53,21 @@ class RGBMemoryReader(nn.Module):
         self.current = nn.Linear(hidden, 4)
         self.future = nn.Linear(hidden, 4)
 
-    def forward(self, visual, positions, metadata):
+    def forward(self, visual, positions, metadata, history_valid=None):
         b, n = positions.shape[:2]
         if (n < 1 or n > 64 or visual.shape != (b, n, 4, 1024)
                 or positions.shape != (b, n, 928) or metadata.shape != (b, n, 116)):
             raise ValueError('Expected bounded aligned four-view/state/ROI history')
         if any(not torch.isfinite(x).all() for x in (visual, positions, metadata)):
             raise ValueError('Finite readout inputs required')
+        if history_valid is not None:
+            if (history_valid.shape != (b,n) or history_valid.dtype != torch.bool
+                    or history_valid.device != positions.device or not history_valid[:,-1].all()):
+                raise ValueError('Boolean history mask with real latest observation required')
         q = positions.reshape(b, n, 16, 58)
         q = ((q-self.state_mean)/self.state_std).flatten(2)
         z = self.norm(self.visual(visual.flatten(2))+self.state(q)+self.geometry(metadata))
         # Only latest output is predicted: all keys are at or before its time.
-        context, _ = self.attention(z[:, -1:], z, z, need_weights=False)
+        context, _ = self.attention(z[:, -1:], z, z, key_padding_mask=None if history_valid is None else ~history_valid, need_weights=False)
         fused = self.norm(z[:, -1]+context[:, 0])
         return dict(current_logits=self.current(fused), future_logits=self.future(fused))

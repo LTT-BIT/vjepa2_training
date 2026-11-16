@@ -1,0 +1,20 @@
+{
+  "policy_checkpoint": "sftp://28/mnt/public_data/local-realrobot-train-data/checkpoints/mengxiang/tomato-openpi-sharpa/pi05_sharpa_tomato_complete100_b_crop_fullft_delta_r1_offline_r11/tomato_complete100_b_crop_delta_r1_offline_r11_s42_b256_s16000_c4000",
+  "remote_verified": true,
+  "completed_step_directory": 16000,
+  "training_dataset": "complete100_rgb_crop_offline_r11/b_coarse",
+  "episodes": 100,
+  "frames": 425556,
+  "roi_role_frame_counts": {
+    "right_only": 223242,
+    "both_hands": 189701,
+    "left_only": 12613
+  },
+  "roi_mode": "recorded_offline_r11",
+  "right_anchor_cache_selected": false,
+  "new119_selected": false,
+  "b0_changed": false,
+  "openpi_changed": false,
+  "robot_calls": 0,
+  "offline_vs_online_note": "Future-assisted ROI coordinates; offline replay source consistency verified; live crop parity unvalidated; Agent readout has no language prompt input"
+}

@@ -1,0 +1,66 @@
+{
+  "language_prompt_is_model_input": false,
+  "supervision_source": "frozen100 reviewed Subtask intervals; no new annotations",
+  "current_target": "class at anchor raw frame",
+  "future_target": "class at anchor+45 raw frames; unobserved tail masked",
+  "class_order": [
+    "pickup",
+    "harvest",
+    "return",
+    "adjust"
+  ],
+  "meanings_for_humans": {
+    "pickup": "右手抓持并拿起番茄串",
+    "harvest": "右手持串，左手摘取番茄",
+    "return": "右手将所持物放回右侧盘子",
+    "adjust": "在盘上调整番茄串/手指位置，沿用旧Subtask定义"
+  },
+  "ordered_positions": [
+    {
+      "position": 0,
+      "name": "pickup_1",
+      "class_id": 0,
+      "label": "pickup"
+    },
+    {
+      "position": 1,
+      "name": "harvest_1",
+      "class_id": 1,
+      "label": "harvest"
+    },
+    {
+      "position": 2,
+      "name": "return_truss",
+      "class_id": 2,
+      "label": "return"
+    },
+    {
+      "position": 3,
+      "name": "adjust",
+      "class_id": 3,
+      "label": "adjust"
+    },
+    {
+      "position": 4,
+      "name": "pickup_2",
+      "class_id": 0,
+      "label": "pickup"
+    },
+    {
+      "position": 5,
+      "name": "harvest_2",
+      "class_id": 1,
+      "label": "harvest"
+    },
+    {
+      "position": 6,
+      "name": "return_stem",
+      "class_id": 2,
+      "label": "return"
+    }
+  ],
+  "online_seven_position_is_oracle": false,
+  "prompt_switch_logic_changed": false,
+  "new119_task_used": false,
+  "physical_outcome_labels_inferred": false
+}
