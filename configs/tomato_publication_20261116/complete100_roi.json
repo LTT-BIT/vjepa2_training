@@ -1,22 +1,17 @@
 {
-  "status": "published_and_hash_verified",
+  "status": "published_clean_data_package_hash_verified",
   "host": "28",
   "target": "/mnt/data/train_platform/datasets/tomato_sharpa/normal/no-block-more/subtask-roi",
   "source": "/mnt/data/users/mengxiang/workspace/data/sharpa/no-block-more/complete100_rgb_crop_offline_r11",
   "episodes": 100,
   "frames": 425556,
-  "files_verified": 1010,
-  "roi_manifest_sha256": "506d39ec4876024a06b370e26ed1484ad754802de6ee4fac1942a61cd433d3c0",
+  "files_verified": 906,
+  "roi_manifest_sha256": "8d731f3170ea8b3a815e28cdde3f7a11521e66d0cc8e29d3537e0e3949621827",
   "video_counts": {
     "observation.images.cam0": 100,
     "observation.images.cam1": 100,
     "observation.images.cam2": 100,
     "observation.images.interaction": 100
-  },
-  "agent_splits": {
-    "train": 84,
-    "val": 8,
-    "test": 8
   },
   "grouping": "merged_no_AB_directories",
   "recording_mapping_count": 100,
@@ -31,5 +26,8 @@
     "passed": 360,
     "skipped": 1
   },
-  "scope": "Existing offline r11 publication only; active causal right-truss Memory experiment is separate"
+  "scope": "Existing offline r11 publication only; active causal right-truss Memory experiment is separate",
+  "experimental_extras_archived_outside_dataset": "/mnt/data/users/mengxiang/workspace/data/sharpa/no-block-more/publication_extras_20261116",
+  "experimental_splits_in_publication": false,
+  "canonical_annotations": "annotations/subtasks/coarse"
 }

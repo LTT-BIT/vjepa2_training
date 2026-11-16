@@ -79,12 +79,10 @@ def publish(source,target,agent_identity):
         bound=copy.deepcopy(doc);bound['source']=dict(dataset=str(target),episode_index=ep,length=entry['length'],fps=30,source_recording_id=entry.get('source_recording_id'),sha256={p:sha(safe(stage,p)) for p in paths})
         bound['source_migration']=dict(profile='merged100-publication-binding-v1',upstream_source=doc['source'],upstream_annotation=snapshot,upstream_annotation_sha256=sha(stage/snapshot))
         assert bound['segments']==doc['segments']
-        write(stage/f'annotations/episode_{ep:06d}.json',bound);write(stage/f'annotations/subtasks/coarse/episode_{ep:06d}.json',bound)
-        remapped.append(dict(episode_index=ep,source_dataset=r['source_dataset'],source_episode_index=r['source_episode_index'],source_recording_id=a['source_recording_id'],agent_episode_id=a['episode_id'],agent_split=a['split']))
+        (stage/f'annotations/episode_{ep:06d}.json').unlink();write(stage/f'annotations/subtasks/coarse/episode_{ep:06d}.json',bound)
+        remapped.append(dict(episode_index=ep,source_dataset=r['source_dataset'],source_episode_index=r['source_episode_index'],source_recording_id=a['source_recording_id']))
     write(stage/'processing/source_mapping.json',dict(episodes=remapped,grouping='merged; original A/B retained only in provenance'))
-    write(stage/'agent_splits.json',dict(source_manifest_sha256=sha(agent_identity),splits={s:[r['episode_index'] for r in remapped if r['agent_split']==s] for s in ['train','val','test']},note='Agent84/8/8 only; meta/info train0:100 is the policy dataset container, not Agent evaluation split'))
-    for name in ['bundle.json','crop_manifest.json','splits.json']:
-        p=source/name;dst=stage/'provenance/source_bundle'/name;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,dst);source_hashes[str(p)]=sha(p)
+    # Experimental splits and training bundle snapshots belong outside the data publication.
     for p,h in source_hashes.items():
         if sha(p)!=h:raise ValueError('Source changed during publication')
     files={str(p.relative_to(stage)):sha(p) for p in sorted(stage.rglob('*')) if p.is_file()}
