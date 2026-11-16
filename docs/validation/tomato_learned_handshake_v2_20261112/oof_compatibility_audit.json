@@ -1,0 +1,59 @@
+{
+  "compatible": true,
+  "expected_original_joint_training": {
+    "batch_size": 128,
+    "epochs": 100,
+    "patience": 15,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "lambda_current": 1.0,
+    "lambda_future": 0.5,
+    "prediction_hz": 2,
+    "future_horizon_s": 1.0,
+    "grad_clip_norm": 1.0
+  },
+  "oof": {
+    "folds": 5,
+    "train": 54,
+    "inner_val": 6,
+    "held": 15
+  },
+  "folds": [
+    {
+      "name": "fold_0",
+      "seed": 42,
+      "joint_shapes_verified": true,
+      "feature_and_source_bindings_verified": true,
+      "normalization_shape": 4000
+    },
+    {
+      "name": "fold_1",
+      "seed": 43,
+      "joint_shapes_verified": true,
+      "feature_and_source_bindings_verified": true,
+      "normalization_shape": 4000
+    },
+    {
+      "name": "fold_2",
+      "seed": 44,
+      "joint_shapes_verified": true,
+      "feature_and_source_bindings_verified": true,
+      "normalization_shape": 4000
+    },
+    {
+      "name": "fold_3",
+      "seed": 45,
+      "joint_shapes_verified": true,
+      "feature_and_source_bindings_verified": true,
+      "normalization_shape": 4000
+    },
+    {
+      "name": "fold_4",
+      "seed": 46,
+      "joint_shapes_verified": true,
+      "feature_and_source_bindings_verified": true,
+      "normalization_shape": 4000
+    }
+  ],
+  "encoder_new_calls": 0
+}

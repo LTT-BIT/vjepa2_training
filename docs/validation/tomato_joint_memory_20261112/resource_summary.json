@@ -1,0 +1,13 @@
+{
+  "main_fits": 18,
+  "oof_fits": 5,
+  "smoke_fits": 5,
+  "sum_main_teacher_optimization_validation_seconds": 135.08862940850668,
+  "max_fit_gpu_allocated_bytes": 543838208,
+  "encoder_calls_training_and_accuracy_eval": 0,
+  "encoder_calls_supplemental_timing": 175,
+  "not_measured": [
+    "pi05 concurrency",
+    "live camera acquisition-to-control latency"
+  ]
+}

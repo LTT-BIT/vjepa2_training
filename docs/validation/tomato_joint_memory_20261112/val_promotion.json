@@ -1,0 +1,42 @@
+{
+  "T0": {
+    "val_only_pass": false,
+    "mean_current_delta": -0.00027788017997931735,
+    "mean_future_delta": 0.002664263219864053,
+    "current_seed_wins": 1,
+    "future_seed_wins": 3,
+    "mean_raw_warning_fp_per_min_delta": -0.1065175421077158
+  },
+  "T1": {
+    "val_only_pass": false,
+    "mean_current_delta": 0.0037549921735854364,
+    "mean_future_delta": 0.0052705183645109415,
+    "current_seed_wins": 3,
+    "future_seed_wins": 3,
+    "mean_raw_warning_fp_per_min_delta": 0.17309100592503826
+  },
+  "T2": {
+    "val_only_pass": false,
+    "mean_current_delta": 0.006455480733500922,
+    "mean_future_delta": 0.005545209414741385,
+    "current_seed_wins": 3,
+    "future_seed_wins": 3,
+    "mean_raw_warning_fp_per_min_delta": 0.23966446974236066
+  },
+  "K1": {
+    "val_only_pass": true,
+    "mean_current_delta": 0.0011744587907111341,
+    "mean_future_delta": 0.00654420818134512,
+    "current_seed_wins": 3,
+    "future_seed_wins": 2,
+    "mean_raw_warning_fp_per_min_delta": -0.013314692763464494
+  },
+  "P1": {
+    "val_only_pass": false,
+    "mean_current_delta": 0.0049638840209662955,
+    "mean_future_delta": 0.0041527925909272305,
+    "current_seed_wins": 3,
+    "future_seed_wins": 3,
+    "mean_raw_warning_fp_per_min_delta": 0.07988815658078696
+  }
+}

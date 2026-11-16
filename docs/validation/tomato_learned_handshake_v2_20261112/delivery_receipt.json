@@ -1,0 +1,26 @@
+{
+  "experiment_dir": "/home/user/pi05/vjepa2_training/runs/tomato/learned_handshake_v2_20261112_212907_36ff73",
+  "report": "/home/user/pi05/vjepa2_training/docs/TOMATO_LEARNED_HANDSHAKE_POLICY_ABLATION_REPORT_20261112.md",
+  "report_sha256": "fe78780f55bd7c7c3bd65088a18cffb054c9866e46c13274fef342222e5ac982",
+  "archive": "/home/user/pi05/vjepa2_training/runs/tomato/learned_handshake_v2_20261112_212907_36ff73/handoff.zip",
+  "archive_sha256": "57f1ebde2c1e969575557adc7b6af2b6bee4c622f01a2d4443d806e47cd754c5",
+  "archive_bytes": 6621833,
+  "artifact_hashes_verified": 3459,
+  "zip_crc_valid": true,
+  "selection": "KEEP_H0",
+  "models": 15,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "main_fits_including_aggregation_and_L0_correction": 27,
+  "original_files_unchanged": 10490,
+  "exact_checkpoint_reload_replays": 180,
+  "independent_saved_replays": 1332,
+  "commits_verified": 6733,
+  "tests": "231 passed in 11.74s",
+  "synthetic_unit_tests": 42,
+  "branch": "feat/tomato-learned-handshake-v2-20261112",
+  "commit_created": false
+}

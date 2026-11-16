@@ -1,0 +1,41 @@
+{
+  "samples": 21631,
+  "train_sources": 75,
+  "action_counts": [
+    20847,
+    256,
+    180,
+    178,
+    170
+  ],
+  "time_counts": {
+    "-100": 1413,
+    "0": 17949,
+    "1": 369,
+    "2": 342,
+    "3": 159,
+    "4": 290,
+    "5": 1109
+  },
+  "positive_gate": 384.0,
+  "late_catchup": 1331,
+  "behavior_policy": "H0 on OOF",
+  "sensitivity": {
+    "-0.1": {
+      "action_changes": 62,
+      "time_changes": 299
+    },
+    "-0.03333333333333333": {
+      "action_changes": 14,
+      "time_changes": 99
+    },
+    "0.03333333333333333": {
+      "action_changes": 22,
+      "time_changes": 195
+    },
+    "0.1": {
+      "action_changes": 56,
+      "time_changes": 379
+    }
+  }
+}

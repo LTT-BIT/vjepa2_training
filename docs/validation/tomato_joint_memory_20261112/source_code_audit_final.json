@@ -1,0 +1,24 @@
+{
+  "train_model_loss_scorer_handshake_sources_unchanged": true,
+  "training_window_motion_belief_smoothing_functions_AST_unchanged": true,
+  "changes": {
+    "tools/tomato_joint_memory/cache_reader.py": {
+      "locked": "94b87423f1f6b1c5ca510c22ca7454badcb6c2114e10a6a7e509dd6eea020808",
+      "actual": "740d8da5bf9f3a5d3f01bb4ec5ed04b666df63be6382ef983acb84bdb3c46af4"
+    },
+    "tools/tomato_joint_memory/report.py": {
+      "locked": "e90ef8c30b50407527c110a5edb8ed77df595129d99d12206be1016ba21309ec",
+      "actual": "c48b5d6090160adf6fc224c02823543ac0c15e40a624300109df3292cadc4d2d"
+    },
+    "tools/tomato_joint_memory/run.py": {
+      "locked": "87ee1f975b5c5c61e7aa64dc745d619fb9b848d1fc12ad2543755dcf90185075",
+      "actual": "7c634d860ac388acaecaba7c6af1349bd9d1f53d8e761fe586a8f3c159d1786e"
+    }
+  },
+  "receipts": [
+    "reporting_code_amendment.json",
+    "reporting_finalization.json",
+    "test_resume_code_fix.json",
+    "streaming_validation_amendment.json"
+  ]
+}

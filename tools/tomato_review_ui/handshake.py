@@ -60,7 +60,8 @@ class Handshake:
     def recover(self,t,reason):
         if self.state!='RECOVERY_REQUIRED' or not reason:raise ValueError('Explicit external recovery required')
         self.state='READY';self.late_count=0;self.late_last=None;self.emit('external_recovery',t,reason=reason)
-    def prediction(self,m):
+    def receive_evidence(self,m):
+        """Ingest real evidence and run ACK/TTL only; return candidate-port readiness."""
         if self.last and m.observed_at<=self.last.observed_at:raise ValueError('Duplicate/HELD/reversed anchor')
         t=m.available_at
         if self.last and t-self.last.available_at>self.c['prediction_ttl_s']+1e-9:self.cancel(t,'stale_evidence')
@@ -70,12 +71,12 @@ class Handshake:
         if not m.valid:
             self.late_count=0;self.late_last=None
             if self.state=='WAIT_LATE_ACK':self.emit('late_ack_reset',t,reason='invalid_observation')
-            self.cancel(t,'invalid_observation');return
+            self.cancel(t,'invalid_observation');return False
         cur=LABELS[max(range(4),key=lambda i:m.current[i])];fut=LABELS[max(range(4),key=lambda i:m.future[i])]
         if self.state=='WAIT_CURRENT_ACK':
             if t<=self.deadline+1e-9 and m.observed_at>self.commit_at+1e-9 and cur==self.active and m.current[LABELS.index(cur)]>=self.c['theta_ack']:
                 self.state='READY';self.emit('ack',t,observed_at=m.observed_at,commit_at=self.commit_at)
-            else:self.emit('wait_ack',t,observed_at=m.observed_at);return
+            else:self.emit('wait_ack',t,observed_at=m.observed_at);return False
         if self.state=='WAIT_LATE_ACK':
             qualifies=(m.observed_at>self.commit_at+1e-9 and cur==self.active and m.current[LABELS.index(self.active)]>=self.c['theta_ack'])
             if qualifies:
@@ -85,12 +86,20 @@ class Handshake:
                 if self.late_count>=2:
                     self.state='READY';self.emit('late_ack',t,observed_at=m.observed_at,commit_at=self.commit_at,ack_delay_s=t-self.commit_at)
                     self.late_count=0;self.late_last=None
-                else:return
+                else:return False
             else:
                 self.late_count=0;self.late_last=None
                 self.emit('late_ack_reset',t,observed_at=m.observed_at,reason='current_not_confidently_active')
-                self.timer(t);return
-        if self.state=='RECOVERY_REQUIRED':self.emit('blocked',t,reason='explicit_recovery_required');return
+                self.timer(t);return False
+        if self.state=='RECOVERY_REQUIRED':self.emit('blocked',t,reason='explicit_recovery_required');return False
+        return True
+    def prediction(self,m):
+        if not self.receive_evidence(m):return
+        self.propose_default_candidate(m)
+    def propose_default_candidate(self,m):
+        """Original H0 candidate/request logic, unchanged for the default path."""
+        t=m.available_at
+        cur=LABELS[max(range(4),key=lambda i:m.current[i])];fut=LABELS[max(range(4),key=lambda i:m.future[i])]
         if fut==self.active:self.cancel(t,'candidate_equals_active');return
         if self.c['legal_edges'] and NEXT[self.active]!=fut:self.cancel(t,'candidate_changed');self.emit('illegal_candidate',t,candidate=fut);return
         p=m.future[LABELS.index(fut)]

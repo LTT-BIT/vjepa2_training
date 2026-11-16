@@ -1,0 +1,26 @@
+baseline_root: runs/tomato/local93_20261107
+memory_experiment: runs/tomato/joint_memory_ablation_20261112_183157_246624
+reference_experiment: runs/tomato/learned_handshake_v2_20261112_212907_36ff73
+output_root: runs/tomato
+seeds: [42, 43, 44]
+groups: [G0, G1, G2, G3]
+history: 4
+theta_prepare: 0.65
+gate_threshold: 0.5
+device: cuda
+learning_rate: 0.0003
+weight_decay: 0.01
+explicit_l2: 0.01
+batch_size: 256
+epochs: 80
+patience: 10
+dropout: 0.1
+grad_clip: 1.0
+hazard_lambda: 0.25
+aggregate_unseen_fraction: 0.05
+aggregate_active_shift_seconds: 10.0
+aggregation_rounds: 1
+bootstrap_replicates: 5000
+bootstrap_seed: 20261113
+run_stress: true
+run_k1: false

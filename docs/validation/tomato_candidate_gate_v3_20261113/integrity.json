@@ -1,0 +1,11 @@
+{
+  "originals_unchanged": true,
+  "protected_files": 18861,
+  "differences": [],
+  "explicit_API_refactor": {
+    "path": "/home/user/pi05/vjepa2_training/tools/tomato_review_ui/handshake.py",
+    "before_sha256": "c45a09b97aec4199383f53027b5517eeaf96dc944bf82633a41495dc935d7a1e",
+    "after_sha256": "ba907d56d01320087d09b3f37ac48fe97ac7c363af181c6d78dcc5593b897339",
+    "change": "Extract ACK/TTL receive_evidence and original propose_default_candidate; default path executes both unchanged; real Future is never replaced. Full parity required."
+  }
+}

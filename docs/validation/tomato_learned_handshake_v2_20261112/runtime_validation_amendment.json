@@ -1,0 +1,7 @@
+{
+  "before_sha256": "bd4029a743c2f7778a4455c6b098df4c226223338cfa8f8edf78e039a842bec6",
+  "after_sha256": "168da4514226614b4918a73fdf4080115c91c076dfed9ae9546a672d35dbcb24",
+  "reason": "Final malformed-output audit: reject proposal timestamps before actual available evidence; sanitize nonfinite policy score/time in JSON HOLD logs. Policy/clock/targets/weights unchanged for every valid recorded proposal. Require exact full reload replay parity against original saved runs.",
+  "stage": "after locked evaluation; runtime invalid-input guard only",
+  "changed_file": "tools/tomato_review_ui/learned_handshake/shell_adapter.py"
+}

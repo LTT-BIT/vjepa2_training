@@ -1,0 +1,17 @@
+{
+  "head": "db4cdad6e87af7c077f5be16a00bc277efeb54d9",
+  "branch": "feat/tomato-learned-handshake-v2-20261112",
+  "baseline_checkpoint_sha256": "9324cdb3287c407c259eafbc725ac3bc3d3df6d38646545e8435e0faa9ad03d9",
+  "baseline_original_predictions_sha256": "f88df6121def39d21a053500d1685e74de5d5440e469b7b654b334eaff3eca26",
+  "canonical_predictions": "Prior B0-frozen probabilities, same checkpoint; earlier reproduction maximum float error5.64e-7 vs original split batching. Enables exact historical H0 event parity.",
+  "sources": 93,
+  "split_counts": {
+    "train": 75,
+    "val": 9,
+    "test": 9
+  },
+  "previous_protected_count": 6149,
+  "full_protected_count": 10490,
+  "prior_experiment": "/home/user/pi05/vjepa2_training/runs/tomato/joint_memory_ablation_20261112_183157_246624",
+  "manifest_sha256": "474301f37a8dd65d78fdde4624abacc4d0644a5401598121231198e969f11750"
+}

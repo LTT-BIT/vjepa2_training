@@ -1,0 +1,38 @@
+{
+  "initial_prompt": "pickup",
+  "prediction_ttl_s": 0.75,
+  "main_latency_s": 0.09,
+  "main_plan_period_s": 0.5,
+  "main_plan_offset_s": 0.0,
+  "selection": {
+    "max_wrong_time_fraction": 0.05,
+    "max_premature_ge_05_fraction": 0.10,
+    "min_transition_recall": 0.80,
+    "aggregation": "equal weight B and C, duration-weighted within each model",
+    "feasible_order": ["maximize_mean_recall", "minimize_mean_wrong_fraction", "minimize_mean_absolute_matched_delta", "candidate_id"],
+    "fallback_order": ["minimize_normalized_constraint_excess", "minimize_mean_wrong_fraction", "minimize_premature_fraction", "maximize_mean_recall", "candidate_id"]
+  },
+  "policies": [
+    {"name":"P0_raw", "id":"P0", "theta":0.0, "K":1, "margin":0.0, "d":0.0},
+    {"name":"P1_t70", "id":"P1", "theta":0.70, "K":1, "margin":0.0, "d":0.0},
+    {"name":"P1_t80", "id":"P1", "theta":0.80, "K":1, "margin":0.0, "d":0.0},
+    {"name":"P1_t90", "id":"P1", "theta":0.90, "K":1, "margin":0.0, "d":0.0},
+    {"name":"P2_k1", "id":"P2", "theta":0.80, "K":1, "margin":0.0, "d":0.0},
+    {"name":"P2_k2", "id":"P2", "theta":0.80, "K":2, "margin":0.0, "d":0.0},
+    {"name":"P2_k2_m10", "id":"P2", "theta":0.80, "K":2, "margin":0.10, "d":0.0},
+    {"name":"P3_d0", "id":"P3", "theta":0.80, "K":2, "margin":0.0, "d":0.0},
+    {"name":"P3_d25", "id":"P3", "theta":0.80, "K":2, "margin":0.0, "d":0.25},
+    {"name":"P3_d50", "id":"P3", "theta":0.80, "K":2, "margin":0.0, "d":0.50},
+    {"name":"P4_legal", "id":"P4", "theta":0.80, "K":2, "margin":0.0, "d":0.25},
+    {"name":"P4_legal_m10", "id":"P4", "theta":0.80, "K":2, "margin":0.10, "d":0.25}
+  ],
+  "not_tried": "No Cartesian product; no threshold calibration, checkpoint selection, TTL or horizon tuning. No model-specific policy tuning.",
+  "auxiliary": "Selected shared policy with Joint Current freeze when current argmax differs from Active; selected policy with Current-only reactive input. No auxiliary parameter search.",
+  "sensitivity": {"latency_s":[0.0,0.09,0.2,0.3], "plan_period_s":[0.25,0.5,1.0], "phase_fraction":[0.0,0.5], "references":["P0_raw","P2_k2"]},
+  "seed":20261108,
+  "event_priority":"prediction available, expiry/release, planning; stream end last. All times rounded to 1 ns.",
+  "ttl_definition":"Since last newly available prediction; strict greater than TTL; input at exact TTL is accepted first.",
+  "queue":"Serial single worker, constant latency below 0.5 s; no concurrent or overloaded queue simulation.",
+  "data_arrival_latency_s":0.0,
+  "finish":"not_supported"
+}

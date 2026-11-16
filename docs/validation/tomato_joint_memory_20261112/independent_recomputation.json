@@ -1,0 +1,7 @@
+{
+  "classification_heads": 120,
+  "episode_policy_replays": 3720,
+  "all_exact": true,
+  "tolerance": 1e-10,
+  "method": "reload JSONL probabilities, recompute confusion/F1/Accuracy/NLL/Brier/ECE; independently sum per-episode handshake metrics and commit events"
+}

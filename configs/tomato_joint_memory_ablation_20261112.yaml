@@ -1,0 +1,30 @@
+baseline_root: runs/tomato/local93_20261107
+baseline_config: configs/tomato_four_stage_local93.yaml
+pretrained_dir: pretrained/vjepa2-vitl-fpc64-256
+output_root: runs/tomato
+reference_sha: f5c65c0215e8ac1d352b0170fde15110c402a93b
+seeds: [42, 43, 44]
+groups: [B0R, T0, T1, T2, K1, P1]
+device: cuda
+hidden: 128
+architecture: latest_query_attention
+memory_lengths: {B0R: 1, T0: 1, T1: 4, T2: 8, K1: 4, P1: 4}
+dropout: 0.3
+epochs: 100
+patience: 15
+batch_size: 128
+learning_rate: 0.0003
+weight_decay: 0.01
+grad_clip_norm: 1.0
+lambda_current: 1.0
+lambda_future: 0.5
+prediction_hz: 2
+future_horizon_s: 1.0
+gap_reset_s: 0.75
+ema_alpha: 0.6
+warning_threshold: 0.8
+warning_k: 2
+bootstrap_replicates: 5000
+bootstrap_seed: 20261112
+promotion: {min_seed_wins: 2, min_f1_gain: 0.005, max_other_head_loss: 0.005, max_fp_per_min_increase: 0.1}
+oof: {folds: 5, seed: 42, inner_val_fraction: 0.1}

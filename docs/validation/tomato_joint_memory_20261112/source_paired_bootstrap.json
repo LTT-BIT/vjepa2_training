@@ -1,0 +1,3606 @@
+{
+  "T0": {
+    "42": {
+      "val": {
+        "current": {
+          "delta": -0.003632636870582018,
+          "ci95": [
+            -0.015807511400720325,
+            0.008454021898269798
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "future": {
+          "delta": 0.001572084134781715,
+          "ci95": [
+            -0.009749076969785882,
+            0.011665123684328333
+          ],
+          "source_wins": 6,
+          "ties": 0,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": -2.0,
+          "ci95": [
+            -7.0,
+            2.0
+          ],
+          "source_positive": 1,
+          "source_negative": 2,
+          "ties": 6
+        },
+        "early_ge05": {
+          "delta": 2.0,
+          "ci95": [
+            -2.0,
+            6.0
+          ],
+          "source_positive": 3,
+          "source_negative": 1,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": -11.866666666666665,
+          "ci95": [
+            -49.07083333333337,
+            15.200000000000026
+          ],
+          "source_positive": 5,
+          "source_negative": 3,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": 0.0,
+          "ci95": [
+            -0.09259259259259259,
+            0.09259259259259259
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.7189934092270821,
+          "ci95": [
+            -0.9878742233190384,
+            -0.451693594340397
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": 0.0005370008941892879,
+          "ci95": [
+            -0.007127523450127562,
+            0.007757727342279133
+          ],
+          "source_wins": 4,
+          "ties": 2,
+          "losses": 3
+        },
+        "future": {
+          "delta": 0.010304310833388008,
+          "ci95": [
+            0.0033691253815973684,
+            0.017479717739649465
+          ],
+          "source_wins": 6,
+          "ties": 0,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": -7.0,
+          "ci95": [
+            -12.0,
+            -2.0
+          ],
+          "source_positive": 0,
+          "source_negative": 4,
+          "ties": 5
+        },
+        "early_ge05": {
+          "delta": 2.0,
+          "ci95": [
+            -2.0,
+            5.0
+          ],
+          "source_positive": 3,
+          "source_negative": 1,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": -13.366666666666694,
+          "ci95": [
+            -39.56750000000001,
+            2.53333333333331
+          ],
+          "source_positive": 2,
+          "source_negative": 5,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": 0.05555555555555558,
+          "ci95": [
+            -0.037037037037037035,
+            0.16666666666666666
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.60516719683451,
+          "ci95": [
+            -0.938950063399436,
+            -0.31213112795343734
+          ]
+        }
+      }
+    },
+    "43": {
+      "val": {
+        "current": {
+          "delta": 0.003553426915873903,
+          "ci95": [
+            -0.0008635789022952783,
+            0.007528245505217544
+          ],
+          "source_wins": 5,
+          "ties": 3,
+          "losses": 1
+        },
+        "future": {
+          "delta": 0.0021768502710999282,
+          "ci95": [
+            -0.007554655648521561,
+            0.01286891899275005
+          ],
+          "source_wins": 4,
+          "ties": 1,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": 5.0,
+          "ci95": [
+            2.0,
+            8.0
+          ],
+          "source_positive": 5,
+          "source_negative": 0,
+          "ties": 4
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            0.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 0,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": -32.23333333333332,
+          "ci95": [
+            -80.53666666666663,
+            -5.899999999999949
+          ],
+          "source_positive": 0,
+          "source_negative": 8,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": 0.037037037037037035,
+          "ci95": [
+            -0.037037037037037035,
+            0.1111111111111111
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.3195526263231476,
+          "ci95": [
+            -0.7268811414726074,
+            -0.03971844038924072
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": 1.5330779633226932e-05,
+          "ci95": [
+            -0.006090284731369733,
+            0.006792846073453717
+          ],
+          "source_wins": 4,
+          "ties": 1,
+          "losses": 4
+        },
+        "future": {
+          "delta": -0.0019503281876513956,
+          "ci95": [
+            -0.012467071269226322,
+            0.010307436677742195
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "source_positive": 0,
+          "source_negative": 0,
+          "ties": 9
+        },
+        "early_ge05": {
+          "delta": -3.0,
+          "ci95": [
+            -6.0,
+            -1.0
+          ],
+          "source_positive": 0,
+          "source_negative": 3,
+          "ties": 6
+        },
+        "wrong_active_s": {
+          "delta": -0.5333333333333243,
+          "ci95": [
+            -4.8999999999999915,
+            3.5
+          ],
+          "source_positive": 3,
+          "source_negative": 3,
+          "ties": 3
+        },
+        "warning_recall": {
+          "delta": 0.07407407407407407,
+          "ci95": [
+            -0.07407407407407407,
+            0.25925925925925924
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.23275661416711935,
+          "ci95": [
+            -0.32967329836862,
+            0.8202799879015873
+          ]
+        }
+      }
+    },
+    "44": {
+      "val": {
+        "current": {
+          "delta": -0.0007544305852298372,
+          "ci95": [
+            -0.008709110219492814,
+            0.009052979175235
+          ],
+          "source_wins": 3,
+          "ties": 0,
+          "losses": 6
+        },
+        "future": {
+          "delta": 0.004243855253710516,
+          "ci95": [
+            -0.007532849012481127,
+            0.017744339434042966
+          ],
+          "source_wins": 5,
+          "ties": 1,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": -9.0,
+          "ci95": [
+            -14.0,
+            -4.0
+          ],
+          "source_positive": 0,
+          "source_negative": 6,
+          "ties": 3
+        },
+        "early_ge05": {
+          "delta": -1.0,
+          "ci95": [
+            -3.0,
+            0.0
+          ],
+          "source_positive": 0,
+          "source_negative": 1,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": 72.96666666666665,
+          "ci95": [
+            -8.400000000000034,
+            225.43416666666664
+          ],
+          "source_positive": 4,
+          "source_negative": 3,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": -0.07407407407407407,
+          "ci95": [
+            -0.14814814814814814,
+            0.0
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.7189934092270822,
+          "ci95": [
+            0.36346381588559135,
+            1.1166785023150783
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": 0.0007353224452345541,
+          "ci95": [
+            -0.007067979127453658,
+            0.012095624405606761
+          ],
+          "source_wins": 3,
+          "ties": 1,
+          "losses": 5
+        },
+        "future": {
+          "delta": -0.03035603355760741,
+          "ci95": [
+            -0.06496034399744775,
+            -0.002230691859810915
+          ],
+          "source_wins": 2,
+          "ties": 0,
+          "losses": 7
+        },
+        "strict_hits": {
+          "delta": 2.0,
+          "ci95": [
+            -7.0,
+            12.0
+          ],
+          "source_positive": 4,
+          "source_negative": 3,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": -2.0,
+          "ci95": [
+            -7.0,
+            4.0
+          ],
+          "source_positive": 1,
+          "source_negative": 4,
+          "ties": 4
+        },
+        "wrong_active_s": {
+          "delta": -43.03333333333336,
+          "ci95": [
+            -301.76666666666677,
+            181.73333333333332
+          ],
+          "source_positive": 3,
+          "source_negative": 5,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": -0.07407407407407407,
+          "ci95": [
+            -0.24074074074074073,
+            0.07407407407407407
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 1.0241291023353247,
+          "ci95": [
+            0.08538799307790618,
+            2.07401634012003
+          ]
+        }
+      }
+    }
+  },
+  "T1": {
+    "42": {
+      "val": {
+        "current": {
+          "delta": 0.0007259998281107238,
+          "ci95": [
+            -0.007531030709431841,
+            0.008332549221782282
+          ],
+          "source_wins": 5,
+          "ties": 1,
+          "losses": 3
+        },
+        "future": {
+          "delta": 0.005724555544598164,
+          "ci95": [
+            -0.0007545848073337107,
+            0.012261809696311299
+          ],
+          "source_wins": 7,
+          "ties": 0,
+          "losses": 2
+        },
+        "strict_hits": {
+          "delta": 2.0,
+          "ci95": [
+            -4.0,
+            8.0
+          ],
+          "source_positive": 4,
+          "source_negative": 3,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": 3.0,
+          "ci95": [
+            -1.0,
+            7.0
+          ],
+          "source_positive": 4,
+          "source_negative": 1,
+          "ties": 4
+        },
+        "wrong_active_s": {
+          "delta": 8.700000000000003,
+          "ci95": [
+            -44.26666666666668,
+            72.13583333333331
+          ],
+          "source_positive": 6,
+          "source_negative": 2,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": -0.01851851851851849,
+          "ci95": [
+            -0.07407407407407407,
+            0.037037037037037035
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.03994407829039348,
+          "ci95": [
+            -0.3303521954844363,
+            0.28225002521247317
+          ]
+        }
+      },
+      "val_vs_T0": {
+        "current": {
+          "delta": 0.004358636698692742,
+          "ci95": [
+            -0.006953347631206389,
+            0.015531062284187498
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "future": {
+          "delta": 0.0041524714098164495,
+          "ci95": [
+            -0.008504824076802054,
+            0.017568824919375906
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": 4.0,
+          "ci95": [
+            -2.0,
+            10.0
+          ],
+          "source_positive": 5,
+          "source_negative": 2,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            -4.0,
+            6.0
+          ],
+          "source_positive": 2,
+          "source_negative": 2,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": 20.56666666666667,
+          "ci95": [
+            -13.599999999999994,
+            72.5
+          ],
+          "source_positive": 2,
+          "source_negative": 2,
+          "ties": 5
+        },
+        "warning_recall": {
+          "delta": -0.01851851851851849,
+          "ci95": [
+            -0.1111111111111111,
+            0.07407407407407407
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.6790493309366886,
+          "ci95": [
+            0.41948124493110855,
+            1.0052318385216048
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": 0.003401080218379704,
+          "ci95": [
+            -0.003496212530288484,
+            0.010777177135821254
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "future": {
+          "delta": -0.02021281460785951,
+          "ci95": [
+            -0.046065480038905905,
+            0.0020289902428460137
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": -7.0,
+          "ci95": [
+            -13.0,
+            -1.0
+          ],
+          "source_positive": 1,
+          "source_negative": 6,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": -2.0,
+          "ci95": [
+            -6.0,
+            2.0
+          ],
+          "source_positive": 1,
+          "source_negative": 3,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": 113.1,
+          "ci95": [
+            -23.033333333333278,
+            284.07249999999993
+          ],
+          "source_positive": 4,
+          "source_negative": 4,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": 0.03703703703703709,
+          "ci95": [
+            -0.09259259259259259,
+            0.14814814814814814
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.13965396850027134,
+          "ci95": [
+            -0.3768767838980987,
+            0.672357920862486
+          ]
+        }
+      },
+      "test_vs_T0": {
+        "current": {
+          "delta": 0.002864079324190416,
+          "ci95": [
+            -0.004733133713086768,
+            0.01139070894056634
+          ],
+          "source_wins": 4,
+          "ties": 1,
+          "losses": 4
+        },
+        "future": {
+          "delta": -0.030517125441247517,
+          "ci95": [
+            -0.05812418302869708,
+            -0.006525370173907113
+          ],
+          "source_wins": 2,
+          "ties": 0,
+          "losses": 7
+        },
+        "strict_hits": {
+          "delta": 0.0,
+          "ci95": [
+            -6.0,
+            6.0
+          ],
+          "source_positive": 3,
+          "source_negative": 4,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": -4.0,
+          "ci95": [
+            -8.0,
+            0.0
+          ],
+          "source_positive": 1,
+          "source_negative": 5,
+          "ties": 3
+        },
+        "wrong_active_s": {
+          "delta": 126.4666666666667,
+          "ci95": [
+            2.7325000000000235,
+            299.3466666666665
+          ],
+          "source_positive": 7,
+          "source_negative": 2,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": -0.01851851851851849,
+          "ci95": [
+            -0.1111111111111111,
+            0.07407407407407407
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.7448211653347814,
+          "ci95": [
+            0.22937785747067788,
+            1.2634844585494354
+          ]
+        }
+      }
+    },
+    "43": {
+      "val": {
+        "current": {
+          "delta": 0.006211494575039889,
+          "ci95": [
+            -0.00037939963279234315,
+            0.012262262820159997
+          ],
+          "source_wins": 6,
+          "ties": 0,
+          "losses": 3
+        },
+        "future": {
+          "delta": 0.008047845726150804,
+          "ci95": [
+            -0.00259756144335895,
+            0.018721426783854387
+          ],
+          "source_wins": 7,
+          "ties": 0,
+          "losses": 2
+        },
+        "strict_hits": {
+          "delta": 3.0,
+          "ci95": [
+            -1.0,
+            8.0
+          ],
+          "source_positive": 3,
+          "source_negative": 1,
+          "ties": 5
+        },
+        "early_ge05": {
+          "delta": 0.0,
+          "ci95": [
+            -4.0,
+            4.0
+          ],
+          "source_positive": 2,
+          "source_negative": 2,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": -48.000000000000014,
+          "ci95": [
+            -104.06916666666672,
+            -6.533333333333331
+          ],
+          "source_positive": 1,
+          "source_negative": 8,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": 0.0,
+          "ci95": [
+            -0.07407407407407407,
+            0.07407407407407407
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.07988815658078696,
+          "ci95": [
+            -0.4799043165977331,
+            0.2179869616799657
+          ]
+        }
+      },
+      "val_vs_T0": {
+        "current": {
+          "delta": 0.0026580676591659858,
+          "ci95": [
+            -0.004894179950944863,
+            0.010948019241150016
+          ],
+          "source_wins": 3,
+          "ties": 2,
+          "losses": 4
+        },
+        "future": {
+          "delta": 0.005870995455050876,
+          "ci95": [
+            -0.002440138527295424,
+            0.013538037750233545
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": -2.0,
+          "ci95": [
+            -8.0,
+            4.0
+          ],
+          "source_positive": 1,
+          "source_negative": 3,
+          "ties": 5
+        },
+        "early_ge05": {
+          "delta": -1.0,
+          "ci95": [
+            -4.0,
+            2.0
+          ],
+          "source_positive": 1,
+          "source_negative": 2,
+          "ties": 6
+        },
+        "wrong_active_s": {
+          "delta": -15.766666666666694,
+          "ci95": [
+            -48.8666666666667,
+            3.366666666666646
+          ],
+          "source_positive": 2,
+          "source_negative": 5,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": -0.037037037037037035,
+          "ci95": [
+            -0.1111111111111111,
+            0.037037037037037035
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.23966446974236066,
+          "ci95": [
+            -0.042513448596019805,
+            0.5014640546525033
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": -0.0039568408219771145,
+          "ci95": [
+            -0.01086531732048188,
+            0.0034612602883555394
+          ],
+          "source_wins": 2,
+          "ties": 4,
+          "losses": 3
+        },
+        "future": {
+          "delta": -0.01604802494300417,
+          "ci95": [
+            -0.04471184467443659,
+            0.012631984661386578
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": 1.0,
+          "ci95": [
+            -3.0,
+            5.0
+          ],
+          "source_positive": 3,
+          "source_negative": 2,
+          "ties": 4
+        },
+        "early_ge05": {
+          "delta": -4.0,
+          "ci95": [
+            -7.0,
+            -1.0
+          ],
+          "source_positive": 0,
+          "source_negative": 4,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": 127.30000000000001,
+          "ci95": [
+            -0.7341666666666531,
+            305.43333333333334
+          ],
+          "source_positive": 4,
+          "source_negative": 3,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": 0.14814814814814814,
+          "ci95": [
+            -0.018518518518518517,
+            0.3333333333333333
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.2793079370005431,
+          "ci95": [
+            -0.4246705402508494,
+            1.005377793771159
+          ]
+        }
+      },
+      "test_vs_T0": {
+        "current": {
+          "delta": -0.0039721716016103414,
+          "ci95": [
+            -0.01046055937393496,
+            0.003481323956344581
+          ],
+          "source_wins": 3,
+          "ties": 1,
+          "losses": 5
+        },
+        "future": {
+          "delta": -0.014097696755352773,
+          "ci95": [
+            -0.034864133225784286,
+            0.00437623519232902
+          ],
+          "source_wins": 3,
+          "ties": 2,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": 1.0,
+          "ci95": [
+            -3.0,
+            5.0
+          ],
+          "source_positive": 3,
+          "source_negative": 2,
+          "ties": 4
+        },
+        "early_ge05": {
+          "delta": -1.0,
+          "ci95": [
+            -3.0,
+            0.0
+          ],
+          "source_positive": 0,
+          "source_negative": 1,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": 127.83333333333334,
+          "ci95": [
+            0.633333333333354,
+            304.5424999999999
+          ],
+          "source_positive": 5,
+          "source_negative": 2,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": 0.07407407407407407,
+          "ci95": [
+            -0.018518518518518517,
+            0.16666666666666666
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.04655132283342378,
+          "ci95": [
+            -0.38370163630002385,
+            0.5179735006268504
+          ]
+        }
+      }
+    },
+    "44": {
+      "val": {
+        "current": {
+          "delta": 0.0043274821176056966,
+          "ci95": [
+            -0.006253318736945249,
+            0.0176153005712504
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "future": {
+          "delta": 0.002039153822783857,
+          "ci95": [
+            -0.012652233829318085,
+            0.018876868216990972
+          ],
+          "source_wins": 4,
+          "ties": 1,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": -10.0,
+          "ci95": [
+            -16.0,
+            -5.0
+          ],
+          "source_positive": 0,
+          "source_negative": 6,
+          "ties": 3
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            0.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 0,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": 75.46666666666665,
+          "ci95": [
+            -6.366666666666703,
+            227.49999999999997
+          ],
+          "source_positive": 6,
+          "source_negative": 3,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": -0.18518518518518517,
+          "ci95": [
+            -0.2777777777777778,
+            -0.09259259259259259
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.6391052526462953,
+          "ci95": [
+            0.12579847255254603,
+            1.1381466476194937
+          ]
+        }
+      },
+      "val_vs_T0": {
+        "current": {
+          "delta": 0.005081912702835534,
+          "ci95": [
+            -0.004410437288149882,
+            0.015051933746411396
+          ],
+          "source_wins": 4,
+          "ties": 2,
+          "losses": 3
+        },
+        "future": {
+          "delta": -0.002204701430926659,
+          "ci95": [
+            -0.015423908177313175,
+            0.007645409816810594
+          ],
+          "source_wins": 3,
+          "ties": 1,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": -1.0,
+          "ci95": [
+            -4.0,
+            2.0
+          ],
+          "source_positive": 1,
+          "source_negative": 2,
+          "ties": 6
+        },
+        "early_ge05": {
+          "delta": 2.0,
+          "ci95": [
+            0.0,
+            5.0
+          ],
+          "source_positive": 2,
+          "source_negative": 0,
+          "ties": 7
+        },
+        "wrong_active_s": {
+          "delta": 2.5,
+          "ci95": [
+            -1.5,
+            6.0
+          ],
+          "source_positive": 6,
+          "source_negative": 2,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": -0.1111111111111111,
+          "ci95": [
+            -0.18518518518518517,
+            -0.037037037037037035
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.07988815658078696,
+          "ci95": [
+            -0.6946805650430528,
+            0.5695398551173267
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": -0.005635322086757322,
+          "ci95": [
+            -0.01114782987975338,
+            0.0001381147079956999
+          ],
+          "source_wins": 2,
+          "ties": 0,
+          "losses": 7
+        },
+        "future": {
+          "delta": -0.02816148353700676,
+          "ci95": [
+            -0.06367140122823933,
+            0.006190866249839787
+          ],
+          "source_wins": 3,
+          "ties": 1,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": 2.0,
+          "ci95": [
+            -8.0,
+            12.0
+          ],
+          "source_positive": 5,
+          "source_negative": 4,
+          "ties": 0
+        },
+        "early_ge05": {
+          "delta": -4.0,
+          "ci95": [
+            -7.0,
+            -1.0
+          ],
+          "source_positive": 0,
+          "source_negative": 4,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": 19.833333333333286,
+          "ci95": [
+            -247.1666666666668,
+            256.50916666666654
+          ],
+          "source_positive": 6,
+          "source_negative": 3,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": -0.055555555555555525,
+          "ci95": [
+            -0.2222222222222222,
+            0.12962962962962962
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.3258592598339669,
+          "ci95": [
+            -0.4642963471116363,
+            1.1545884474683665
+          ]
+        }
+      },
+      "test_vs_T0": {
+        "current": {
+          "delta": -0.006370644531991876,
+          "ci95": [
+            -0.016342232276045397,
+            0.0010265401340189594
+          ],
+          "source_wins": 2,
+          "ties": 3,
+          "losses": 4
+        },
+        "future": {
+          "delta": 0.0021945500206006496,
+          "ci95": [
+            -0.01428861511061591,
+            0.013887322285005554
+          ],
+          "source_wins": 6,
+          "ties": 2,
+          "losses": 1
+        },
+        "strict_hits": {
+          "delta": 0.0,
+          "ci95": [
+            -3.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 1,
+          "ties": 7
+        },
+        "early_ge05": {
+          "delta": -2.0,
+          "ci95": [
+            -6.0,
+            0.0
+          ],
+          "source_positive": 0,
+          "source_negative": 1,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": 62.866666666666646,
+          "ci95": [
+            2.799999999999983,
+            178.50749999999988
+          ],
+          "source_positive": 6,
+          "source_negative": 2,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": 0.018518518518518545,
+          "ci95": [
+            -0.05555555555555555,
+            0.09259259259259259
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.6982698425013578,
+          "ci95": [
+            -1.1916382173940812,
+            -0.28595996378758787
+          ]
+        }
+      }
+    }
+  },
+  "T2": {
+    "42": {
+      "val": {
+        "current": {
+          "delta": 0.005158818093198514,
+          "ci95": [
+            -0.003916592620496145,
+            0.013990598980314265
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "future": {
+          "delta": 0.007059829543642482,
+          "ci95": [
+            -0.002989365463147431,
+            0.017306668142695755
+          ],
+          "source_wins": 5,
+          "ties": 1,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": -2.0,
+          "ci95": [
+            -8.0,
+            4.0
+          ],
+          "source_positive": 3,
+          "source_negative": 4,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": 2.0,
+          "ci95": [
+            -3.0,
+            6.0
+          ],
+          "source_positive": 4,
+          "source_negative": 2,
+          "ties": 3
+        },
+        "wrong_active_s": {
+          "delta": 10.266666666666666,
+          "ci95": [
+            -44.40250000000002,
+            71.73416666666665
+          ],
+          "source_positive": 6,
+          "source_negative": 3,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": -0.03703703703703709,
+          "ci95": [
+            -0.16666666666666666,
+            0.09259259259259259
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.1597763131615737,
+          "ci95": [
+            -0.1811275188045584,
+            0.5339045489131621
+          ]
+        }
+      },
+      "val_vs_T0": {
+        "current": {
+          "delta": 0.008791454963780532,
+          "ci95": [
+            -0.00768485993346793,
+            0.024132789952328353
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "future": {
+          "delta": 0.005487745408860767,
+          "ci95": [
+            -0.011234147894829549,
+            0.02204949899532869
+          ],
+          "source_wins": 6,
+          "ties": 0,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": 0.0,
+          "ci95": [
+            -8.0,
+            8.0
+          ],
+          "source_positive": 4,
+          "source_negative": 3,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": 0.0,
+          "ci95": [
+            -6.0,
+            6.0
+          ],
+          "source_positive": 4,
+          "source_negative": 3,
+          "ties": 2
+        },
+        "wrong_active_s": {
+          "delta": 22.133333333333333,
+          "ci95": [
+            -10.668333333333337,
+            72.26999999999995
+          ],
+          "source_positive": 5,
+          "source_negative": 4,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": -0.03703703703703709,
+          "ci95": [
+            -0.18518518518518517,
+            0.1111111111111111
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.8787697223886558,
+          "ci95": [
+            0.5409457914271333,
+            1.1596481974422241
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": -0.00095427286187455,
+          "ci95": [
+            -0.008034388697817826,
+            0.006011637423418801
+          ],
+          "source_wins": 3,
+          "ties": 1,
+          "losses": 5
+        },
+        "future": {
+          "delta": 0.005243044196838187,
+          "ci95": [
+            -0.007205217169405889,
+            0.015443126727126777
+          ],
+          "source_wins": 7,
+          "ties": 0,
+          "losses": 2
+        },
+        "strict_hits": {
+          "delta": -8.0,
+          "ci95": [
+            -17.0,
+            1.0
+          ],
+          "source_positive": 1,
+          "source_negative": 6,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": 4.0,
+          "ci95": [
+            -3.0,
+            10.0
+          ],
+          "source_positive": 6,
+          "source_negative": 3,
+          "ties": 0
+        },
+        "wrong_active_s": {
+          "delta": 45.5333333333333,
+          "ci95": [
+            -34.00416666666666,
+            171.99999999999997
+          ],
+          "source_positive": 4,
+          "source_negative": 5,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": -0.018518518518518545,
+          "ci95": [
+            -0.14814814814814814,
+            0.1111111111111111
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.09310264566684778,
+          "ci95": [
+            -0.49503286083401776,
+            0.28665963526365673
+          ]
+        }
+      },
+      "test_vs_T0": {
+        "current": {
+          "delta": -0.0014912737560638378,
+          "ci95": [
+            -0.010814452801739562,
+            0.005762603350787987
+          ],
+          "source_wins": 4,
+          "ties": 1,
+          "losses": 4
+        },
+        "future": {
+          "delta": -0.0050612666365498216,
+          "ci95": [
+            -0.017155369462178285,
+            0.005304194632073017
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": -1.0,
+          "ci95": [
+            -7.0,
+            6.0
+          ],
+          "source_positive": 2,
+          "source_negative": 3,
+          "ties": 4
+        },
+        "early_ge05": {
+          "delta": 2.0,
+          "ci95": [
+            -3.0,
+            8.0
+          ],
+          "source_positive": 3,
+          "source_negative": 2,
+          "ties": 4
+        },
+        "wrong_active_s": {
+          "delta": 58.9,
+          "ci95": [
+            -1.0341666666667217,
+            172.6
+          ],
+          "source_positive": 6,
+          "source_negative": 3,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": -0.07407407407407413,
+          "ci95": [
+            -0.2222222222222222,
+            0.05555555555555555
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.5120645511676623,
+          "ci95": [
+            0.14973795857249814,
+            0.9157975069956753
+          ]
+        }
+      }
+    },
+    "43": {
+      "val": {
+        "current": {
+          "delta": 0.007018025467824374,
+          "ci95": [
+            0.0019077968274108321,
+            0.011632436305983119
+          ],
+          "source_wins": 7,
+          "ties": 0,
+          "losses": 2
+        },
+        "future": {
+          "delta": 0.007949594909778535,
+          "ci95": [
+            -0.006152551365225275,
+            0.022843301074725222
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": 1.0,
+          "ci95": [
+            -2.0,
+            4.0
+          ],
+          "source_positive": 2,
+          "source_negative": 1,
+          "ties": 6
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            -2.0,
+            4.0
+          ],
+          "source_positive": 2,
+          "source_negative": 1,
+          "ties": 6
+        },
+        "wrong_active_s": {
+          "delta": -46.86666666666668,
+          "ci95": [
+            -103.00166666666667,
+            -5.73333333333332
+          ],
+          "source_positive": 1,
+          "source_negative": 7,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": -0.01851851851851849,
+          "ci95": [
+            -0.05555555555555555,
+            0.0
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.0,
+          "ci95": [
+            -0.5434919356867877,
+            0.4654598108893958
+          ]
+        }
+      },
+      "val_vs_T0": {
+        "current": {
+          "delta": 0.0034645985519504707,
+          "ci95": [
+            -0.0021462174691500024,
+            0.008653406194506899
+          ],
+          "source_wins": 5,
+          "ties": 2,
+          "losses": 2
+        },
+        "future": {
+          "delta": 0.005772744638678606,
+          "ci95": [
+            -0.0013518082700445576,
+            0.013444946601080109
+          ],
+          "source_wins": 5,
+          "ties": 1,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": -4.0,
+          "ci95": [
+            -8.0,
+            0.0
+          ],
+          "source_positive": 0,
+          "source_negative": 3,
+          "ties": 6
+        },
+        "early_ge05": {
+          "delta": 0.0,
+          "ci95": [
+            -3.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 1,
+          "ties": 7
+        },
+        "wrong_active_s": {
+          "delta": -14.633333333333361,
+          "ci95": [
+            -48.23333333333338,
+            3.5666666666666345
+          ],
+          "source_positive": 5,
+          "source_negative": 3,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": -0.055555555555555525,
+          "ci95": [
+            -0.1111111111111111,
+            -0.018518518518518517
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.3195526263231476,
+          "ci95": [
+            -0.04444710793261559,
+            0.7330802033686591
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": 0.00048275922520091274,
+          "ci95": [
+            -0.01014058119263166,
+            0.011131875247201143
+          ],
+          "source_wins": 4,
+          "ties": 2,
+          "losses": 3
+        },
+        "future": {
+          "delta": 0.002556735376100794,
+          "ci95": [
+            -0.011223278791283445,
+            0.016496190156085312
+          ],
+          "source_wins": 3,
+          "ties": 2,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": 4.0,
+          "ci95": [
+            -4.0,
+            12.0
+          ],
+          "source_positive": 3,
+          "source_negative": 1,
+          "ties": 5
+        },
+        "early_ge05": {
+          "delta": -2.0,
+          "ci95": [
+            -6.0,
+            2.0
+          ],
+          "source_positive": 1,
+          "source_negative": 3,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": 36.16666666666666,
+          "ci95": [
+            -232.8000000000001,
+            283.5333333333334
+          ],
+          "source_positive": 4,
+          "source_negative": 5,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": 0.07407407407407407,
+          "ci95": [
+            -0.07407407407407407,
+            0.24074074074074073
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.04655132283342378,
+          "ci95": [
+            -0.4331336554251588,
+            0.3425028823324052
+          ]
+        }
+      },
+      "test_vs_T0": {
+        "current": {
+          "delta": 0.0004674284455676858,
+          "ci95": [
+            -0.006303165878236661,
+            0.007281041473421708
+          ],
+          "source_wins": 4,
+          "ties": 2,
+          "losses": 3
+        },
+        "future": {
+          "delta": 0.004507063563752189,
+          "ci95": [
+            -0.0030928608496160275,
+            0.011514861981754129
+          ],
+          "source_wins": 6,
+          "ties": 0,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": 4.0,
+          "ci95": [
+            -4.0,
+            12.0
+          ],
+          "source_positive": 3,
+          "source_negative": 1,
+          "ties": 5
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            0.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 0,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": 36.69999999999999,
+          "ci95": [
+            -232.16750000000013,
+            284.36750000000006
+          ],
+          "source_positive": 4,
+          "source_negative": 4,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": 0.0,
+          "ci95": [
+            -0.09259259259259259,
+            0.1111111111111111
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.2793079370005431,
+          "ci95": [
+            -0.6222883047485563,
+            0.0471277605666693
+          ]
+        }
+      }
+    },
+    "44": {
+      "val": {
+        "current": {
+          "delta": 0.007189598639479877,
+          "ci95": [
+            -0.00043446201281360786,
+            0.015690966809670782
+          ],
+          "source_wins": 7,
+          "ties": 0,
+          "losses": 2
+        },
+        "future": {
+          "delta": 0.001626203790803138,
+          "ci95": [
+            -0.006005738681901748,
+            0.011368796788042408
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": 1.0,
+          "ci95": [
+            -3.0,
+            5.0
+          ],
+          "source_positive": 3,
+          "source_negative": 2,
+          "ties": 4
+        },
+        "early_ge05": {
+          "delta": 2.0,
+          "ci95": [
+            -3.0,
+            6.0
+          ],
+          "source_positive": 4,
+          "source_negative": 2,
+          "ties": 3
+        },
+        "wrong_active_s": {
+          "delta": 2.866666666666694,
+          "ci95": [
+            -14.26750000000005,
+            23.60000000000013
+          ],
+          "source_positive": 4,
+          "source_negative": 5,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": 0.0,
+          "ci95": [
+            -0.1111111111111111,
+            0.09259259259259259
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.5592170960655083,
+          "ci95": [
+            0.1659594224691665,
+            0.9565470984976324
+          ]
+        }
+      },
+      "val_vs_T0": {
+        "current": {
+          "delta": 0.007944029224709714,
+          "ci95": [
+            -0.0041112488276392216,
+            0.019538437297602098
+          ],
+          "source_wins": 5,
+          "ties": 1,
+          "losses": 3
+        },
+        "future": {
+          "delta": -0.0026176514629073777,
+          "ci95": [
+            -0.009199508800285222,
+            0.004531842256747417
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": 10.0,
+          "ci95": [
+            4.0,
+            16.0
+          ],
+          "source_positive": 6,
+          "source_negative": 0,
+          "ties": 3
+        },
+        "early_ge05": {
+          "delta": 3.0,
+          "ci95": [
+            -1.0,
+            7.0
+          ],
+          "source_positive": 4,
+          "source_negative": 1,
+          "ties": 4
+        },
+        "wrong_active_s": {
+          "delta": -70.09999999999997,
+          "ci95": [
+            -229.80166666666668,
+            19.466666666666747
+          ],
+          "source_positive": 3,
+          "source_negative": 6,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": 0.07407407407407407,
+          "ci95": [
+            0.0,
+            0.14814814814814814
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.15977631316157392,
+          "ci95": [
+            -0.6577825419640898,
+            0.3029472614119361
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": 0.009908150406542138,
+          "ci95": [
+            -0.00136850274778888,
+            0.02300458778721512
+          ],
+          "source_wins": 6,
+          "ties": 1,
+          "losses": 2
+        },
+        "future": {
+          "delta": -0.012231628890828294,
+          "ci95": [
+            -0.030201938489696694,
+            0.0016889648176867667
+          ],
+          "source_wins": 3,
+          "ties": 0,
+          "losses": 6
+        },
+        "strict_hits": {
+          "delta": 1.0,
+          "ci95": [
+            -10.0,
+            10.0
+          ],
+          "source_positive": 4,
+          "source_negative": 2,
+          "ties": 3
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            -3.0,
+            5.0
+          ],
+          "source_positive": 3,
+          "source_negative": 2,
+          "ties": 4
+        },
+        "wrong_active_s": {
+          "delta": 26.26666666666665,
+          "ci95": [
+            -246.06666666666675,
+            276.2666666666667
+          ],
+          "source_positive": 4,
+          "source_negative": 5,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": -0.1111111111111111,
+          "ci95": [
+            -0.2037037037037037,
+            0.0
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.558615874001086,
+          "ci95": [
+            0.04424669993362995,
+            1.044066414876061
+          ]
+        }
+      },
+      "test_vs_T0": {
+        "current": {
+          "delta": 0.009172827961307584,
+          "ci95": [
+            0.002580347026658875,
+            0.014191424491739183
+          ],
+          "source_wins": 7,
+          "ties": 1,
+          "losses": 1
+        },
+        "future": {
+          "delta": 0.018124404666779115,
+          "ci95": [
+            -0.005894733073725264,
+            0.05317054516539155
+          ],
+          "source_wins": 6,
+          "ties": 0,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": -1.0,
+          "ci95": [
+            -11.0,
+            8.0
+          ],
+          "source_positive": 4,
+          "source_negative": 3,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": 3.0,
+          "ci95": [
+            -1.0,
+            7.0
+          ],
+          "source_positive": 4,
+          "source_negative": 1,
+          "ties": 4
+        },
+        "wrong_active_s": {
+          "delta": 69.30000000000001,
+          "ci95": [
+            -127.535,
+            292.40000000000003
+          ],
+          "source_positive": 5,
+          "source_negative": 2,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": -0.037037037037037035,
+          "ci95": [
+            -0.18518518518518517,
+            0.1111111111111111
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.4655132283342387,
+          "ci95": [
+            -1.1431267290822986,
+            0.13642608315826227
+          ]
+        }
+      }
+    }
+  },
+  "K1": {
+    "42": {
+      "val": {
+        "current": {
+          "delta": 0.0015936265973625074,
+          "ci95": [
+            -0.006434208844699999,
+            0.009334096390856117
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "future": {
+          "delta": -0.0020022005781249463,
+          "ci95": [
+            -0.012619623545887058,
+            0.009192947381122666
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": -3.0,
+          "ci95": [
+            -9.0,
+            2.0
+          ],
+          "source_positive": 2,
+          "source_negative": 4,
+          "ties": 3
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            0.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 0,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": -49.50000000000002,
+          "ci95": [
+            -125.80000000000007,
+            6.433333333333355
+          ],
+          "source_positive": 2,
+          "source_negative": 5,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": 0.01851851851851849,
+          "ci95": [
+            -0.09259259259259259,
+            0.1111111111111111
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.1997203914519674,
+          "ci95": [
+            -0.5296525158494504,
+            0.04356505149774203
+          ]
+        }
+      },
+      "val_vs_T1": {
+        "current": {
+          "delta": 0.0008676267692517836,
+          "ci95": [
+            -0.008579295160460632,
+            0.009790385647739552
+          ],
+          "source_wins": 5,
+          "ties": 1,
+          "losses": 3
+        },
+        "future": {
+          "delta": -0.007726756122723111,
+          "ci95": [
+            -0.02273763290484523,
+            0.006921258445086505
+          ],
+          "source_wins": 3,
+          "ties": 0,
+          "losses": 6
+        },
+        "strict_hits": {
+          "delta": -5.0,
+          "ci95": [
+            -13.0,
+            2.0
+          ],
+          "source_positive": 2,
+          "source_negative": 4,
+          "ties": 3
+        },
+        "early_ge05": {
+          "delta": -2.0,
+          "ci95": [
+            -5.0,
+            2.0
+          ],
+          "source_positive": 1,
+          "source_negative": 3,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": -58.200000000000024,
+          "ci95": [
+            -141.73333333333338,
+            3.6333333333333258
+          ],
+          "source_positive": 1,
+          "source_negative": 6,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": 0.03703703703703698,
+          "ci95": [
+            -0.07407407407407407,
+            0.14814814814814814
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.15977631316157392,
+          "ci95": [
+            -0.6368263349225404,
+            0.18406072575969581
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": 0.0005876448173441906,
+          "ci95": [
+            -0.005920557590684439,
+            0.007440941459798168
+          ],
+          "source_wins": 4,
+          "ties": 1,
+          "losses": 4
+        },
+        "future": {
+          "delta": -0.004270153014887312,
+          "ci95": [
+            -0.017649503611371735,
+            0.010793296554841623
+          ],
+          "source_wins": 3,
+          "ties": 0,
+          "losses": 6
+        },
+        "strict_hits": {
+          "delta": -5.0,
+          "ci95": [
+            -14.0,
+            2.0
+          ],
+          "source_positive": 1,
+          "source_negative": 2,
+          "ties": 6
+        },
+        "early_ge05": {
+          "delta": 2.0,
+          "ci95": [
+            -2.0,
+            5.0
+          ],
+          "source_positive": 3,
+          "source_negative": 1,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": -14.966666666666667,
+          "ci95": [
+            -41.73333333333331,
+            1.23333333333332
+          ],
+          "source_positive": 3,
+          "source_negative": 5,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": 0.05555555555555558,
+          "ci95": [
+            -0.018518518518518517,
+            0.12962962962962962
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.5120645511676625,
+          "ci95": [
+            -1.0030279042900345,
+            -0.04780410248618485
+          ]
+        }
+      },
+      "test_vs_T1": {
+        "current": {
+          "delta": -0.0028134354010355134,
+          "ci95": [
+            -0.008095759569400878,
+            0.003911448970359763
+          ],
+          "source_wins": 2,
+          "ties": 1,
+          "losses": 6
+        },
+        "future": {
+          "delta": 0.015942661592972196,
+          "ci95": [
+            -0.003641873000486309,
+            0.03735015818741082
+          ],
+          "source_wins": 6,
+          "ties": 0,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": 2.0,
+          "ci95": [
+            -4.0,
+            7.0
+          ],
+          "source_positive": 5,
+          "source_negative": 2,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": 4.0,
+          "ci95": [
+            -1.0,
+            9.0
+          ],
+          "source_positive": 4,
+          "source_negative": 1,
+          "ties": 4
+        },
+        "wrong_active_s": {
+          "delta": -128.06666666666666,
+          "ci95": [
+            -299.90083333333337,
+            -1.8333333333333812
+          ],
+          "source_positive": 3,
+          "source_negative": 6,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": 0.01851851851851849,
+          "ci95": [
+            -0.07407407407407407,
+            0.12962962962962962
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.6517185196679338,
+          "ci95": [
+            -1.3629661715589039,
+            0.0
+          ]
+        }
+      }
+    },
+    "43": {
+      "val": {
+        "current": {
+          "delta": 0.0007697810296882768,
+          "ci95": [
+            -0.011017290090107499,
+            0.010503473080834607
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "future": {
+          "delta": 0.011888594072060998,
+          "ci95": [
+            0.00021384102961341807,
+            0.02271512437026403
+          ],
+          "source_wins": 7,
+          "ties": 0,
+          "losses": 2
+        },
+        "strict_hits": {
+          "delta": -2.0,
+          "ci95": [
+            -5.0,
+            0.0
+          ],
+          "source_positive": 0,
+          "source_negative": 2,
+          "ties": 7
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            0.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 0,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": -46.56666666666668,
+          "ci95": [
+            -104.63333333333337,
+            -3.9666666666666544
+          ],
+          "source_positive": 1,
+          "source_negative": 8,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": 0.0,
+          "ci95": [
+            -0.12962962962962962,
+            0.12962962962962962
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.19972039145196718,
+          "ci95": [
+            -0.49608020520000096,
+            0.15811092318974
+          ]
+        }
+      },
+      "val_vs_T1": {
+        "current": {
+          "delta": -0.005441713545351612,
+          "ci95": [
+            -0.019450333735423975,
+            0.0054555566291765055
+          ],
+          "source_wins": 3,
+          "ties": 0,
+          "losses": 6
+        },
+        "future": {
+          "delta": 0.0038407483459101943,
+          "ci95": [
+            -0.002826282729134766,
+            0.009514873113252996
+          ],
+          "source_wins": 7,
+          "ties": 0,
+          "losses": 2
+        },
+        "strict_hits": {
+          "delta": -5.0,
+          "ci95": [
+            -9.0,
+            -1.0
+          ],
+          "source_positive": 0,
+          "source_negative": 4,
+          "ties": 5
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            -2.0,
+            4.0
+          ],
+          "source_positive": 2,
+          "source_negative": 1,
+          "ties": 6
+        },
+        "wrong_active_s": {
+          "delta": 1.4333333333333371,
+          "ci95": [
+            -3.0,
+            5.933333333333337
+          ],
+          "source_positive": 3,
+          "source_negative": 3,
+          "ties": 3
+        },
+        "warning_recall": {
+          "delta": 0.0,
+          "ci95": [
+            -0.09259259259259259,
+            0.1111111111111111
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.11983223487118022,
+          "ci95": [
+            -0.5270282545538781,
+            0.33009785264431507
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": -0.004391571469967492,
+          "ci95": [
+            -0.01431474747781282,
+            0.005611709674381532
+          ],
+          "source_wins": 3,
+          "ties": 1,
+          "losses": 5
+        },
+        "future": {
+          "delta": -0.010313941616959421,
+          "ci95": [
+            -0.03184076635063941,
+            0.005009155303985174
+          ],
+          "source_wins": 3,
+          "ties": 1,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": 1.0,
+          "ci95": [
+            -2.0,
+            4.0
+          ],
+          "source_positive": 2,
+          "source_negative": 1,
+          "ties": 6
+        },
+        "early_ge05": {
+          "delta": -3.0,
+          "ci95": [
+            -6.0,
+            -1.0
+          ],
+          "source_positive": 0,
+          "source_negative": 3,
+          "ties": 6
+        },
+        "wrong_active_s": {
+          "delta": 56.76666666666668,
+          "ci95": [
+            -5.533333333333276,
+            175.73416666666668
+          ],
+          "source_positive": 3,
+          "source_negative": 5,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": 0.07407407407407407,
+          "ci95": [
+            -0.07407407407407407,
+            0.25925925925925924
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.09310264566684778,
+          "ci95": [
+            -0.32041857181500794,
+            0.47777770101648936
+          ]
+        }
+      },
+      "test_vs_T1": {
+        "current": {
+          "delta": -0.00043473064799037786,
+          "ci95": [
+            -0.007642497115556168,
+            0.005668720625268054
+          ],
+          "source_wins": 4,
+          "ties": 1,
+          "losses": 4
+        },
+        "future": {
+          "delta": 0.005734083326044748,
+          "ci95": [
+            -0.017758493378917207,
+            0.03413557564784242
+          ],
+          "source_wins": 3,
+          "ties": 0,
+          "losses": 6
+        },
+        "strict_hits": {
+          "delta": 0.0,
+          "ci95": [
+            -3.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 1,
+          "ties": 7
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            0.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 0,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": -70.53333333333333,
+          "ci95": [
+            -205.79999999999998,
+            -0.700000000000017
+          ],
+          "source_positive": 2,
+          "source_negative": 5,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": -0.07407407407407407,
+          "ci95": [
+            -0.18518518518518517,
+            0.018518518518518517
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.18620529133369534,
+          "ci95": [
+            -0.7870844651916399,
+            0.3620159536227058
+          ]
+        }
+      }
+    },
+    "44": {
+      "val": {
+        "current": {
+          "delta": 0.001159968745082618,
+          "ci95": [
+            -0.01087294227634748,
+            0.010549533342212666
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "future": {
+          "delta": 0.009746231050099308,
+          "ci95": [
+            -0.0014198647169492151,
+            0.02260154067135221
+          ],
+          "source_wins": 6,
+          "ties": 0,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": 2.0,
+          "ci95": [
+            -5.0,
+            8.0
+          ],
+          "source_positive": 4,
+          "source_negative": 2,
+          "ties": 3
+        },
+        "early_ge05": {
+          "delta": 3.0,
+          "ci95": [
+            -1.0,
+            7.0
+          ],
+          "source_positive": 4,
+          "source_negative": 1,
+          "ties": 4
+        },
+        "wrong_active_s": {
+          "delta": 14.766666666666708,
+          "ci95": [
+            -16.569166666666664,
+            64.53333333333333
+          ],
+          "source_positive": 4,
+          "source_negative": 5,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": 0.037037037037037035,
+          "ci95": [
+            -0.09259259259259259,
+            0.18518518518518517
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.3594967046135411,
+          "ci95": [
+            -0.051954049529527216,
+            0.7169930120136712
+          ]
+        }
+      },
+      "val_vs_T1": {
+        "current": {
+          "delta": -0.0031675133725230786,
+          "ci95": [
+            -0.023750831082145322,
+            0.010313743095318757
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "future": {
+          "delta": 0.007707077227315451,
+          "ci95": [
+            -0.002303499091635877,
+            0.01754472288107405
+          ],
+          "source_wins": 7,
+          "ties": 0,
+          "losses": 2
+        },
+        "strict_hits": {
+          "delta": 12.0,
+          "ci95": [
+            2.0,
+            22.0
+          ],
+          "source_positive": 7,
+          "source_negative": 1,
+          "ties": 1
+        },
+        "early_ge05": {
+          "delta": 2.0,
+          "ci95": [
+            -2.0,
+            6.0
+          ],
+          "source_positive": 3,
+          "source_negative": 1,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": -60.699999999999946,
+          "ci95": [
+            -233.3008333333333,
+            59.50083333333332
+          ],
+          "source_positive": 2,
+          "source_negative": 7,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": 0.2222222222222222,
+          "ci95": [
+            0.12962962962962962,
+            0.3148148148148148
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.27960854803275415,
+          "ci95": [
+            -1.0312326682277202,
+            0.45644550300792097
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": 0.004188238078914108,
+          "ci95": [
+            -0.00758810613919689,
+            0.017888672770510067
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "future": {
+          "delta": 0.00703013388812157,
+          "ci95": [
+            -0.002818301879519985,
+            0.019472139121346835
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": 2.0,
+          "ci95": [
+            -3.0,
+            7.0
+          ],
+          "source_positive": 3,
+          "source_negative": 2,
+          "ties": 4
+        },
+        "early_ge05": {
+          "delta": -1.0,
+          "ci95": [
+            -6.0,
+            4.0
+          ],
+          "source_positive": 2,
+          "source_negative": 2,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": 49.5,
+          "ci95": [
+            -37.834999999999994,
+            190.06666666666663
+          ],
+          "source_positive": 2,
+          "source_negative": 5,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": 0.0185185185185186,
+          "ci95": [
+            -0.09259259259259259,
+            0.12962962962962962
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.09310264566684756,
+          "ci95": [
+            -0.4288340765885443,
+            0.5742264373627142
+          ]
+        }
+      },
+      "test_vs_T1": {
+        "current": {
+          "delta": 0.00982356016567143,
+          "ci95": [
+            0.0006475528063029812,
+            0.021380870517183303
+          ],
+          "source_wins": 7,
+          "ties": 1,
+          "losses": 1
+        },
+        "future": {
+          "delta": 0.03519161742512833,
+          "ci95": [
+            0.005329126100607806,
+            0.06700454220490941
+          ],
+          "source_wins": 6,
+          "ties": 0,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": 0.0,
+          "ci95": [
+            -11.0,
+            11.0
+          ],
+          "source_positive": 4,
+          "source_negative": 3,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": 3.0,
+          "ci95": [
+            -1.0,
+            7.0
+          ],
+          "source_positive": 4,
+          "source_negative": 1,
+          "ties": 4
+        },
+        "wrong_active_s": {
+          "delta": 29.666666666666714,
+          "ci95": [
+            -185.93416666666664,
+            284.3425
+          ],
+          "source_positive": 2,
+          "source_negative": 6,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": 0.07407407407407413,
+          "ci95": [
+            -0.018518518518518517,
+            0.16666666666666666
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.23275661416711935,
+          "ci95": [
+            -0.9181367537482519,
+            0.3264191095976346
+          ]
+        }
+      }
+    }
+  },
+  "P1": {
+    "42": {
+      "val": {
+        "current": {
+          "delta": 0.004568258391721702,
+          "ci95": [
+            -0.0022525276398573987,
+            0.011243719507151011
+          ],
+          "source_wins": 5,
+          "ties": 3,
+          "losses": 1
+        },
+        "future": {
+          "delta": 0.0030593626220115633,
+          "ci95": [
+            -0.008060650326194298,
+            0.013577901451370876
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": -4.0,
+          "ci95": [
+            -8.0,
+            0.0
+          ],
+          "source_positive": 1,
+          "source_negative": 5,
+          "ties": 3
+        },
+        "early_ge05": {
+          "delta": 0.0,
+          "ci95": [
+            -4.0,
+            4.0
+          ],
+          "source_positive": 2,
+          "source_negative": 2,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": -44.63333333333333,
+          "ci95": [
+            -119.28166666666672,
+            6.20000000000004
+          ],
+          "source_positive": 5,
+          "source_negative": 3,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": -0.11111111111111116,
+          "ci95": [
+            -0.18518518518518517,
+            -0.037037037037037035
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.27960854803275415,
+          "ci95": [
+            -0.7946466614399639,
+            0.17826548305371484
+          ]
+        }
+      },
+      "val_vs_T1": {
+        "current": {
+          "delta": 0.0038422585636109785,
+          "ci95": [
+            -0.004532787751980236,
+            0.011883581707904597
+          ],
+          "source_wins": 5,
+          "ties": 1,
+          "losses": 3
+        },
+        "future": {
+          "delta": -0.002665192922586601,
+          "ci95": [
+            -0.010744935494223996,
+            0.0055682684230359495
+          ],
+          "source_wins": 2,
+          "ties": 0,
+          "losses": 7
+        },
+        "strict_hits": {
+          "delta": -6.0,
+          "ci95": [
+            -14.0,
+            1.0
+          ],
+          "source_positive": 1,
+          "source_negative": 3,
+          "ties": 5
+        },
+        "early_ge05": {
+          "delta": -3.0,
+          "ci95": [
+            -9.0,
+            3.0
+          ],
+          "source_positive": 2,
+          "source_negative": 4,
+          "ties": 3
+        },
+        "wrong_active_s": {
+          "delta": -53.333333333333336,
+          "ci95": [
+            -133.97083333333336,
+            6.666666666666686
+          ],
+          "source_positive": 5,
+          "source_negative": 3,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": -0.09259259259259267,
+          "ci95": [
+            -0.16666666666666666,
+            -0.018518518518518517
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.23966446974236066,
+          "ci95": [
+            -0.8119283297832351,
+            0.2243353934191735
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": -0.0016125059533992347,
+          "ci95": [
+            -0.010560221887633673,
+            0.005551689405306348
+          ],
+          "source_wins": 5,
+          "ties": 1,
+          "losses": 3
+        },
+        "future": {
+          "delta": 0.007651436974204007,
+          "ci95": [
+            -0.0036088203514893584,
+            0.01959983629830403
+          ],
+          "source_wins": 6,
+          "ties": 1,
+          "losses": 2
+        },
+        "strict_hits": {
+          "delta": -7.0,
+          "ci95": [
+            -17.0,
+            2.0
+          ],
+          "source_positive": 2,
+          "source_negative": 3,
+          "ties": 4
+        },
+        "early_ge05": {
+          "delta": 0.0,
+          "ci95": [
+            -5.0,
+            4.0
+          ],
+          "source_positive": 2,
+          "source_negative": 1,
+          "ties": 6
+        },
+        "wrong_active_s": {
+          "delta": 81.00000000000004,
+          "ci95": [
+            -35.205000000000005,
+            285.5666666666667
+          ],
+          "source_positive": 3,
+          "source_negative": 4,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": 0.01851851851851849,
+          "ci95": [
+            -0.09259259259259259,
+            0.1111111111111111
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.3724105826673909,
+          "ci95": [
+            -0.7170580903471339,
+            0.0
+          ]
+        }
+      },
+      "test_vs_T1": {
+        "current": {
+          "delta": -0.005013586171778939,
+          "ci95": [
+            -0.01047424640422159,
+            0.0004256850325563877
+          ],
+          "source_wins": 3,
+          "ties": 0,
+          "losses": 6
+        },
+        "future": {
+          "delta": 0.027864251582063515,
+          "ci95": [
+            0.005119492535757522,
+            0.05448672396133
+          ],
+          "source_wins": 6,
+          "ties": 0,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": 0.0,
+          "ci95": [
+            -8.0,
+            8.0
+          ],
+          "source_positive": 4,
+          "source_negative": 3,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": 2.0,
+          "ci95": [
+            -3.0,
+            6.0
+          ],
+          "source_positive": 4,
+          "source_negative": 2,
+          "ties": 3
+        },
+        "wrong_active_s": {
+          "delta": -32.099999999999966,
+          "ci95": [
+            -261.86999999999995,
+            227.50000000000006
+          ],
+          "source_positive": 5,
+          "source_negative": 4,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": -0.0185185185185186,
+          "ci95": [
+            -0.14814814814814814,
+            0.1111111111111111
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.5120645511676623,
+          "ci95": [
+            -1.0637130341900811,
+            0.0
+          ]
+        }
+      }
+    },
+    "43": {
+      "val": {
+        "current": {
+          "delta": 0.009623363218315029,
+          "ci95": [
+            0.0019430189730160895,
+            0.0171652629129303
+          ],
+          "source_wins": 6,
+          "ties": 1,
+          "losses": 2
+        },
+        "future": {
+          "delta": 0.005362363300923212,
+          "ci95": [
+            -0.008533059179035686,
+            0.017509942580579252
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": 1.0,
+          "ci95": [
+            -3.0,
+            5.0
+          ],
+          "source_positive": 3,
+          "source_negative": 2,
+          "ties": 4
+        },
+        "early_ge05": {
+          "delta": 0.0,
+          "ci95": [
+            -3.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 1,
+          "ties": 7
+        },
+        "wrong_active_s": {
+          "delta": -18.066666666666677,
+          "ci95": [
+            -50.83500000000002,
+            4.4341666666666555
+          ],
+          "source_positive": 3,
+          "source_negative": 6,
+          "ties": 0
+        },
+        "warning_recall": {
+          "delta": -0.07407407407407407,
+          "ci95": [
+            -0.12962962962962962,
+            -0.018518518518518517
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.07988815658078696,
+          "ci95": [
+            -0.35082447358101687,
+            0.5415803346341269
+          ]
+        }
+      },
+      "val_vs_T1": {
+        "current": {
+          "delta": 0.00341186864327514,
+          "ci95": [
+            -0.0032361052262361023,
+            0.012154276036238941
+          ],
+          "source_wins": 4,
+          "ties": 2,
+          "losses": 3
+        },
+        "future": {
+          "delta": -0.002685482425227592,
+          "ci95": [
+            -0.017624375813526293,
+            0.010224640909432266
+          ],
+          "source_wins": 4,
+          "ties": 2,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": -2.0,
+          "ci95": [
+            -6.0,
+            2.0
+          ],
+          "source_positive": 1,
+          "source_negative": 3,
+          "ties": 5
+        },
+        "early_ge05": {
+          "delta": 0.0,
+          "ci95": [
+            -4.0,
+            4.0
+          ],
+          "source_positive": 2,
+          "source_negative": 2,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": 29.933333333333337,
+          "ci95": [
+            -1.5666666666666629,
+            80.93333333333334
+          ],
+          "source_positive": 5,
+          "source_negative": 2,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": -0.07407407407407407,
+          "ci95": [
+            -0.14814814814814814,
+            0.0
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.15977631316157392,
+          "ci95": [
+            -0.22207599934199704,
+            0.6265597477878226
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": -0.0046982508333347495,
+          "ci95": [
+            -0.01400224348150123,
+            0.004183765872628711
+          ],
+          "source_wins": 3,
+          "ties": 2,
+          "losses": 4
+        },
+        "future": {
+          "delta": -0.012413018055438929,
+          "ci95": [
+            -0.0284745437196622,
+            0.0040481042149519515
+          ],
+          "source_wins": 3,
+          "ties": 1,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": 1.0,
+          "ci95": [
+            -5.0,
+            7.0
+          ],
+          "source_positive": 2,
+          "source_negative": 1,
+          "ties": 6
+        },
+        "early_ge05": {
+          "delta": 0.0,
+          "ci95": [
+            -3.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 1,
+          "ties": 7
+        },
+        "wrong_active_s": {
+          "delta": 91.20000000000002,
+          "ci95": [
+            2.0,
+            219.1666666666667
+          ],
+          "source_positive": 4,
+          "source_negative": 2,
+          "ties": 3
+        },
+        "warning_recall": {
+          "delta": 0.018518518518518545,
+          "ci95": [
+            -0.09259259259259259,
+            0.16666666666666666
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.3724105826673909,
+          "ci95": [
+            0.0,
+            0.7392348166647976
+          ]
+        }
+      },
+      "test_vs_T1": {
+        "current": {
+          "delta": -0.000741410011357635,
+          "ci95": [
+            -0.006315787469146961,
+            0.0045359781756257956
+          ],
+          "source_wins": 2,
+          "ties": 4,
+          "losses": 3
+        },
+        "future": {
+          "delta": 0.0036350068875652397,
+          "ci95": [
+            -0.01043752757148396,
+            0.019618618113658868
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": 0.0,
+          "ci95": [
+            -4.0,
+            4.0
+          ],
+          "source_positive": 2,
+          "source_negative": 2,
+          "ties": 5
+        },
+        "early_ge05": {
+          "delta": 4.0,
+          "ci95": [
+            1.0,
+            7.0
+          ],
+          "source_positive": 4,
+          "source_negative": 0,
+          "ties": 5
+        },
+        "wrong_active_s": {
+          "delta": -36.099999999999994,
+          "ci95": [
+            -132.51,
+            29.600000000000023
+          ],
+          "source_positive": 2,
+          "source_negative": 4,
+          "ties": 3
+        },
+        "warning_recall": {
+          "delta": -0.1296296296296296,
+          "ci95": [
+            -0.2222222222222222,
+            -0.05555555555555555
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.09310264566684778,
+          "ci95": [
+            -0.3423192126658109,
+            0.5508880768910811
+          ]
+        }
+      }
+    },
+    "44": {
+      "val": {
+        "current": {
+          "delta": 0.0007000304528621548,
+          "ci95": [
+            -0.007649985137838211,
+            0.012858189240384938
+          ],
+          "source_wins": 3,
+          "ties": 0,
+          "losses": 6
+        },
+        "future": {
+          "delta": 0.004036651849846917,
+          "ci95": [
+            -0.012195772026225571,
+            0.02354928851629079
+          ],
+          "source_wins": 5,
+          "ties": 0,
+          "losses": 4
+        },
+        "strict_hits": {
+          "delta": -10.0,
+          "ci95": [
+            -15.0,
+            -5.0
+          ],
+          "source_positive": 0,
+          "source_negative": 6,
+          "ties": 3
+        },
+        "early_ge05": {
+          "delta": -1.0,
+          "ci95": [
+            -3.0,
+            0.0
+          ],
+          "source_positive": 0,
+          "source_negative": 1,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": 144.30000000000004,
+          "ci95": [
+            3.6991666666667116,
+            314.1866666666653
+          ],
+          "source_positive": 6,
+          "source_negative": 2,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": -0.037037037037037035,
+          "ci95": [
+            -0.12962962962962962,
+            0.05555555555555555
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.43938486119432807,
+          "ci95": [
+            0.0,
+            0.7777479223313299
+          ]
+        }
+      },
+      "val_vs_T1": {
+        "current": {
+          "delta": -0.0036274516647435417,
+          "ci95": [
+            -0.009575637521171129,
+            0.002859207810712759
+          ],
+          "source_wins": 3,
+          "ties": 1,
+          "losses": 5
+        },
+        "future": {
+          "delta": 0.0019974980270630605,
+          "ci95": [
+            -0.008164349868468753,
+            0.012625920554840353
+          ],
+          "source_wins": 5,
+          "ties": 1,
+          "losses": 3
+        },
+        "strict_hits": {
+          "delta": 0.0,
+          "ci95": [
+            -5.0,
+            6.0
+          ],
+          "source_positive": 2,
+          "source_negative": 3,
+          "ties": 4
+        },
+        "early_ge05": {
+          "delta": -2.0,
+          "ci95": [
+            -5.0,
+            0.0
+          ],
+          "source_positive": 0,
+          "source_negative": 2,
+          "ties": 7
+        },
+        "wrong_active_s": {
+          "delta": 68.83333333333337,
+          "ci95": [
+            -4.300000000000011,
+            200.5424999999999
+          ],
+          "source_positive": 3,
+          "source_negative": 4,
+          "ties": 2
+        },
+        "warning_recall": {
+          "delta": 0.14814814814814814,
+          "ci95": [
+            0.07407407407407407,
+            0.2222222222222222
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": -0.19972039145196718,
+          "ci95": [
+            -0.6856866497746784,
+            0.15553120936094084
+          ]
+        }
+      },
+      "test": {
+        "current": {
+          "delta": -0.005188788714692416,
+          "ci95": [
+            -0.02224140853412817,
+            0.007857521890623664
+          ],
+          "source_wins": 4,
+          "ties": 1,
+          "losses": 4
+        },
+        "future": {
+          "delta": -0.03197343690492793,
+          "ci95": [
+            -0.0789678701796128,
+            0.004129573598645378
+          ],
+          "source_wins": 3,
+          "ties": 0,
+          "losses": 6
+        },
+        "strict_hits": {
+          "delta": 7.0,
+          "ci95": [
+            1.0,
+            13.0
+          ],
+          "source_positive": 6,
+          "source_negative": 1,
+          "ties": 2
+        },
+        "early_ge05": {
+          "delta": -3.0,
+          "ci95": [
+            -7.0,
+            1.0
+          ],
+          "source_positive": 1,
+          "source_negative": 4,
+          "ties": 4
+        },
+        "wrong_active_s": {
+          "delta": -45.10000000000005,
+          "ci95": [
+            -305.9666666666668,
+            185.17166666666657
+          ],
+          "source_positive": 2,
+          "source_negative": 6,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": -0.055555555555555525,
+          "ci95": [
+            -0.2222222222222222,
+            0.12962962962962962
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.9310264566684767,
+          "ci95": [
+            -0.04984841277386342,
+            2.1116240518533833
+          ]
+        }
+      },
+      "test_vs_T1": {
+        "current": {
+          "delta": 0.0004465333720649056,
+          "ci95": [
+            -0.012991713610056832,
+            0.010564044518708633
+          ],
+          "source_wins": 6,
+          "ties": 2,
+          "losses": 1
+        },
+        "future": {
+          "delta": -0.0038119533679211726,
+          "ci95": [
+            -0.026777810030912147,
+            0.02357535607320064
+          ],
+          "source_wins": 4,
+          "ties": 0,
+          "losses": 5
+        },
+        "strict_hits": {
+          "delta": 5.0,
+          "ci95": [
+            -1.0,
+            12.0
+          ],
+          "source_positive": 3,
+          "source_negative": 1,
+          "ties": 5
+        },
+        "early_ge05": {
+          "delta": 1.0,
+          "ci95": [
+            0.0,
+            3.0
+          ],
+          "source_positive": 1,
+          "source_negative": 0,
+          "ties": 8
+        },
+        "wrong_active_s": {
+          "delta": -64.93333333333334,
+          "ci95": [
+            -187.36666666666667,
+            -0.9333333333333336
+          ],
+          "source_positive": 2,
+          "source_negative": 6,
+          "ties": 1
+        },
+        "warning_recall": {
+          "delta": 0.0,
+          "ci95": [
+            -0.05555555555555555,
+            0.05555555555555555
+          ]
+        },
+        "warning_fp_per_min": {
+          "delta": 0.6051671968345098,
+          "ci95": [
+            -0.18647041120522814,
+            1.409624023510323
+          ]
+        }
+      }
+    }
+  }
+}

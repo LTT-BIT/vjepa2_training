@@ -1,0 +1,16 @@
+{
+  "reason": "Specification requires L2 Logistic. Correct AdamW decay approximation to explicit training loss penalty. Not a val/test-driven parameter change.",
+  "old_regularization": "AdamW decoupled WD=.01",
+  "new_regularization": "BCE+0.5*.01*||W||^2, bias excluded; optimizer decay0; earlystop val BCE only",
+  "lambda_value": 0.01,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 80,
+  "patience": 10,
+  "all_other_models_and_risk_criteria_unchanged": true,
+  "training_source_sha256": "130b34d9459f88a0a0368e7f7e871ba22cf15194e08a574dfc833f685e3925b4",
+  "historical_test_policy": "H0 already evaluated reused; if corrected val selects a new unique policy, evaluate it once after corrected receipt"
+}

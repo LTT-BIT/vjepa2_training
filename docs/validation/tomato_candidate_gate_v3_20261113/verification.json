@@ -1,0 +1,111 @@
+{
+  "reloaded": {
+    "H0": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "R1": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G0_s42": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G0_s43": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G0_s44": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G1_s42": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G1_s43": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G1_s44": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G2_s42": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G2_s43": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G2_s44": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G3_s42": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G3_s43": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    },
+    "G3_s44": {
+      "episodes": 9,
+      "metrics_exact": true,
+      "events_exact": true,
+      "gt_stripped_exact": true
+    }
+  },
+  "batch_stream_max_absolute_error": {
+    "H0": 0.0,
+    "R1": 0.0,
+    "G0_s42": 0.0,
+    "G0_s43": 5.960464477539063e-08,
+    "G0_s44": 5.960464477539063e-08,
+    "G1_s42": 1.1920928955078125e-07,
+    "G1_s43": 1.1920928955078125e-07,
+    "G1_s44": 1.7881393432617188e-07,
+    "G2_s42": 1.1920928955078125e-07,
+    "G2_s43": 1.1920928955078125e-07,
+    "G2_s44": 1.1920928955078125e-07,
+    "G3_s42": 1.7881393432617188e-07,
+    "G3_s43": 1.7881393432617188e-07,
+    "G3_s44": 1.1920928955078125e-07
+  },
+  "all_commit_protocol_invariants": true,
+  "replay_files": 2637,
+  "actual_commits": 14311,
+  "no_new_encoder": true,
+  "h0_parity": true,
+  "selection_lock_sha256": "7fe377dbb6c9f66a09c34a3a0e848c70137f1405d8c9d5606d8bf0bb1fafa605",
+  "test_lock_sha256": "ab7bd92485b517c68ee2810f85de8b893799ca8e03dcb307b77e74ee3dce0adb"
+}

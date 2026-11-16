@@ -1,0 +1,38 @@
+{
+  "selected": "KEEP_H0",
+  "audit": {
+    "R1": {
+      "pass_risk": true
+    },
+    "R2": {
+      "pass_risk": true
+    },
+    "L0": {
+      "non_degrade_seeds": 0,
+      "pass_risk": false,
+      "requirement": "at least2/3 risk-passing seeds; final checkpoint must itself pass"
+    },
+    "L1a": {
+      "non_degrade_seeds": 0,
+      "pass_risk": false,
+      "requirement": "at least2/3 risk-passing seeds; final checkpoint must itself pass"
+    },
+    "L1b": {
+      "non_degrade_seeds": 0,
+      "pass_risk": false,
+      "requirement": "at least2/3 risk-passing seeds; final checkpoint must itself pass"
+    },
+    "L2": {
+      "non_degrade_seeds": 0,
+      "pass_risk": false,
+      "requirement": "at least2/3 risk-passing seeds; final checkpoint must itself pass"
+    },
+    "L3a": {
+      "non_degrade_seeds": 0,
+      "pass_risk": false,
+      "requirement": "at least2/3 risk-passing seeds; final checkpoint must itself pass"
+    }
+  },
+  "criteria": "fixed val risk -> strict hits -> wrong seconds -> order; median seed within qualifying group",
+  "no_test_used": true
+}

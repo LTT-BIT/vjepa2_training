@@ -1,0 +1,368 @@
+{
+  "timestamp": "2026-11-13T17:22:13.171262+08:00",
+  "user_request": "保留本对话全部分析报告用于论文，删除交接包和纯测试分支",
+  "packages": [
+    {
+      "path": "runs/tomato/controlled_20261108/Tomato_Controlled_Experiment_Evidence.zip",
+      "sha256": "3293821c80d8ccc87121b076cf8b426cad67ee9c58b088e358c40ebf51eb4732",
+      "bytes": 4628416,
+      "members": 73,
+      "deleted": true
+    },
+    {
+      "path": "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/handoff.zip",
+      "sha256": "8e1d84b6bcef5b11de2128f7f4268d54fb4a877f44c5f3a4fdb3e2351d73db7e",
+      "bytes": 3690896,
+      "members": 317,
+      "deleted": true
+    },
+    {
+      "path": "runs/tomato/joint_memory_ablation_20261112_183157_246624/handoff.zip",
+      "sha256": "a170ac1478e20e2c21c3f48851184d850c3cc38cef59e1c96d9f1a1ed8657d68",
+      "bytes": 15389071,
+      "members": 4103,
+      "deleted": true
+    },
+    {
+      "path": "runs/tomato/learned_handshake_v2_20261112_212907_36ff73/handoff.zip",
+      "sha256": "57f1ebde2c1e969575557adc7b6af2b6bee4c622f01a2d4443d806e47cd754c5",
+      "bytes": 6621833,
+      "members": 465,
+      "deleted": true
+    },
+    {
+      "path": "runs/tomato/local93_20261107/analysis/Tomato_Local93_GPT_Evidence.zip",
+      "sha256": "2f05e074699379e622ddeb36f785b850a7688bad0d7d27191916d32e1df6c4d4",
+      "bytes": 504543,
+      "members": 44,
+      "deleted": true
+    },
+    {
+      "path": "runs/tomato/local93_20261107/handshake_improvement_sensitivity_20261112/Handshake_Improvement_Evidence.zip",
+      "sha256": "10aac38cf83f27a85ed949cc248fc72703fa1f8ab4b9c2fa75bfbdc2440e29d7",
+      "bytes": 2652924,
+      "members": 782,
+      "deleted": true
+    },
+    {
+      "path": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "sha256": "3167a218e180818eefae1e7cfceead2dd3a9e144a06f51d239674dc5d032ebdf",
+      "bytes": 19433244,
+      "members": 2083,
+      "deleted": true
+    }
+  ],
+  "package_members_exactly_preserved": 7867,
+  "unique_package_files_recovered": [
+    {
+      "path": "docs/paper_archive/recovered_package_files/20/20f2badbf510eb7debdefe9eaf0aed4aac7897deb777dfc9c22dd34b925b46ec__test_tomato_controlled_experiment.py",
+      "sha256": "20f2badbf510eb7debdefe9eaf0aed4aac7897deb777dfc9c22dd34b925b46ec",
+      "bytes": 10129,
+      "source_package": "runs/tomato/controlled_20261108/Tomato_Controlled_Experiment_Evidence.zip",
+      "source_member": "tools/test_tomato_controlled_experiment.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/71/713523590f4dfe4b761a7bd8403f961d865fea3d174ac8f3952352aee2156f82__report_tomato_controlled_experiment.py",
+      "sha256": "713523590f4dfe4b761a7bd8403f961d865fea3d174ac8f3952352aee2156f82",
+      "bytes": 18917,
+      "source_package": "runs/tomato/controlled_20261108/Tomato_Controlled_Experiment_Evidence.zip",
+      "source_member": "tools/report_tomato_controlled_experiment.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/05/05ca22dad0fc7702c022aa4a272d667968cbf6891e6040ab92ba493fd31138d4__test_tomato_controlled_experiment.py",
+      "sha256": "05ca22dad0fc7702c022aa4a272d667968cbf6891e6040ab92ba493fd31138d4",
+      "bytes": 2397,
+      "source_package": "runs/tomato/controlled_20261108/Tomato_Controlled_Experiment_Evidence.zip",
+      "source_member": "tests/test_tomato_controlled_experiment.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/c8/c857760f5ca61ea1e9d754dc3212cbf49d000cf4e736afaf0f2791b22a168dac__G0_faf6b8f0b07f427a262ba0b5.json",
+      "sha256": "c857760f5ca61ea1e9d754dc3212cbf49d000cf4e736afaf0f2791b22a168dac",
+      "bytes": 252850,
+      "source_package": "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/handoff.zip",
+      "source_member": "failure_examples/G0_faf6b8f0b07f427a262ba0b5.json"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/8b/8b60bab969e173f2e4f62ee893fe2f75d4ae9739159f5348f76701c1bfc897f6__G1_796aae799456b09dfd16c507.json",
+      "sha256": "8b60bab969e173f2e4f62ee893fe2f75d4ae9739159f5348f76701c1bfc897f6",
+      "bytes": 538551,
+      "source_package": "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/handoff.zip",
+      "source_member": "failure_examples/G1_796aae799456b09dfd16c507.json"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/e4/e403284044ae070a5091fdd9fd812e3cdffdce62b9ae0fbee5592b29be39d635__G2_faf6b8f0b07f427a262ba0b5.json",
+      "sha256": "e403284044ae070a5091fdd9fd812e3cdffdce62b9ae0fbee5592b29be39d635",
+      "bytes": 254157,
+      "source_package": "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/handoff.zip",
+      "source_member": "failure_examples/G2_faf6b8f0b07f427a262ba0b5.json"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/21/21fdf40d95b380c3198e9d46011589358e12304d8c470c0765c4c62420f7941b__G3_faf6b8f0b07f427a262ba0b5.json",
+      "sha256": "21fdf40d95b380c3198e9d46011589358e12304d8c470c0765c4c62420f7941b",
+      "bytes": 252842,
+      "source_package": "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/handoff.zip",
+      "source_member": "failure_examples/G3_faf6b8f0b07f427a262ba0b5.json"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/d8/d8fa9ba9f12fd613051452e9ee5ebbeca67b28d024b63cb0edb9eeea6bfb5ce1__test_tomato_handshake_improvements.py",
+      "sha256": "d8fa9ba9f12fd613051452e9ee5ebbeca67b28d024b63cb0edb9eeea6bfb5ce1",
+      "bytes": 1884,
+      "source_package": "runs/tomato/local93_20261107/handshake_improvement_sensitivity_20261112/Handshake_Improvement_Evidence.zip",
+      "source_member": "tests/test_tomato_handshake_improvements.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/d2/d219db1a4518f2cd018d8caf1c15909093b29a6516150a88b3f8fddd767865be__tests.log",
+      "sha256": "d219db1a4518f2cd018d8caf1c15909093b29a6516150a88b3f8fddd767865be",
+      "bytes": 261,
+      "source_package": "runs/tomato/local93_20261107/handshake_improvement_sensitivity_20261112/Handshake_Improvement_Evidence.zip",
+      "source_member": "docs/validation/handshake_improvement_20261112/tests.log"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/95/9524672b7bd6bda3dfab4afa5e31252f862f9f44944c5ff085f8208990c8f701__evaluate_tomato_prompt_switch.py",
+      "sha256": "9524672b7bd6bda3dfab4afa5e31252f862f9f44944c5ff085f8208990c8f701",
+      "bytes": 12975,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tools/evaluate_tomato_prompt_switch.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/81/81adcb8a209f7e536479fdbe0e1d4a6a59f9c5ee9d0992cf64f857a0b1622a65__tomato_prompt_policy.py",
+      "sha256": "81adcb8a209f7e536479fdbe0e1d4a6a59f9c5ee9d0992cf64f857a0b1622a65",
+      "bytes": 7004,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tools/tomato_prompt_policy.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/ef/efaffd674d687c12171c6ae1222ce41b6da2a74952fe075aee49363255781356__report_tomato_prompt_switch.py",
+      "sha256": "efaffd674d687c12171c6ae1222ce41b6da2a74952fe075aee49363255781356",
+      "bytes": 21235,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tools/report_tomato_prompt_switch.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/af/af278f966def1fe3f91819cabf72ee23c9986a327a6e9215296875805c3353fd__visualize_tomato_prompt_timeline.py",
+      "sha256": "af278f966def1fe3f91819cabf72ee23c9986a327a6e9215296875805c3353fd",
+      "bytes": 6439,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tools/visualize_tomato_prompt_timeline.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/f6/f65fe6215355101dcfed703fbf9e10adec0b30c49481c4c87950dd844d055619__compare_tomato_prompt_policies.py",
+      "sha256": "f65fe6215355101dcfed703fbf9e10adec0b30c49481c4c87950dd844d055619",
+      "bytes": 11355,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tools/compare_tomato_prompt_policies.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/ae/aee45efb42bbbc855e68d86d9c03472ecefe560f4322662a228252bcfec96517__enrich_tomato_prompt_report.py",
+      "sha256": "aee45efb42bbbc855e68d86d9c03472ecefe560f4322662a228252bcfec96517",
+      "bytes": 11182,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tools/enrich_tomato_prompt_report.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/9f/9fe3369ef743d45bfbb1f31d247578deab29f27855c0396fe435f02682d9c69d__tomato_prompt_replay.py",
+      "sha256": "9fe3369ef743d45bfbb1f31d247578deab29f27855c0396fe435f02682d9c69d",
+      "bytes": 7418,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tools/tomato_prompt_replay.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/25/25fb320b1816298d0f63cce0b120c768d8c074864da6953ff486a32fc3f6f7f8__simulate_tomato_prompt_switch.py",
+      "sha256": "25fb320b1816298d0f63cce0b120c768d8c074864da6953ff486a32fc3f6f7f8",
+      "bytes": 8199,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tools/simulate_tomato_prompt_switch.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/81/8185a9716a0241d1b6c4e0834a9839f2aef0222dca668de4cea031bb806ec555__test_tomato_prompt_replay.py",
+      "sha256": "8185a9716a0241d1b6c4e0834a9839f2aef0222dca668de4cea031bb806ec555",
+      "bytes": 4844,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tests/test_tomato_prompt_replay.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/17/17bc3cebac182f1d4e1c798c9610a598cbae29dde1fd5085113eedc5a0a29bb9__test_tomato_prompt_evaluation.py",
+      "sha256": "17bc3cebac182f1d4e1c798c9610a598cbae29dde1fd5085113eedc5a0a29bb9",
+      "bytes": 2441,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tests/test_tomato_prompt_evaluation.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/97/9755b8cce49dc56af1ca84884ade6d42ab3102f825aefc8cbc72197506806b92__test_tomato_prompt_comparison.py",
+      "sha256": "9755b8cce49dc56af1ca84884ade6d42ab3102f825aefc8cbc72197506806b92",
+      "bytes": 6275,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "tests/test_tomato_prompt_comparison.py"
+    },
+    {
+      "path": "docs/paper_archive/recovered_package_files/1b/1ba7e2b9d124a3c7befec9a94f0a079e073f24019532125d7acd3879a14700d5__tomato_prompt_switch_offline.yaml",
+      "sha256": "1ba7e2b9d124a3c7befec9a94f0a079e073f24019532125d7acd3879a14700d5",
+      "bytes": 2538,
+      "source_package": "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip",
+      "source_member": "configs/tomato_prompt_switch_offline.yaml"
+    }
+  ],
+  "reports_snapshotted": 31,
+  "restored_early_reports": [
+    "docs/TOMATO_LOCAL93_RESULT_ANALYSIS.md",
+    "docs/TOMATO_CONTROLLED_EXPERIMENT_REPORT_20261108.md",
+    "docs/TOMATO_HANDSHAKE_IMPROVEMENT_VALIDATION_20261112.md",
+    "docs/TOMATO_LOCAL93_PROMPT_SWITCH_SIM_REPORT.md"
+  ],
+  "branches": [
+    {
+      "branch": "feat/tomato-candidate-gate-v3-20261113",
+      "commit": "db4cdad6e87af7c077f5be16a00bc277efeb54d9",
+      "status": "deleted",
+      "git_result": "Deleted branch feat/tomato-candidate-gate-v3-20261113 (was db4cdad)."
+    },
+    {
+      "branch": "feat/tomato-joint-memory-ablation-20261112",
+      "commit": "db4cdad6e87af7c077f5be16a00bc277efeb54d9",
+      "status": "deleted",
+      "git_result": "Deleted branch feat/tomato-joint-memory-ablation-20261112 (was db4cdad)."
+    },
+    {
+      "branch": "feat/tomato-learned-handshake-v2-20261112",
+      "commit": "db4cdad6e87af7c077f5be16a00bc277efeb54d9",
+      "status": "deleted",
+      "git_result": "Deleted branch feat/tomato-learned-handshake-v2-20261112 (was db4cdad)."
+    }
+  ],
+  "current_branch": "main",
+  "head": "db4cdad6e87af7c077f5be16a00bc277efeb54d9",
+  "branch_inventory_before": "feat/tomato-candidate-gate-v3-20261113     db4cdad feat(tomato): add bounded WAIT_LATE_ACK recovery\n  feat/tomato-four-stage                     63d89e8 [origin/feat/tomato-four-stage] 增加一些训练配置\n  feat/tomato-joint-memory-ablation-20261112 db4cdad feat(tomato): add bounded WAIT_LATE_ACK recovery\n  feat/tomato-learned-handshake-v2-20261112  db4cdad feat(tomato): add bounded WAIT_LATE_ACK recovery\n  feat/tomato-offline-review-ui              07f9311 [origin/feat/tomato-offline-review-ui] 优化功能\n* main                                       db4cdad [origin/main] feat(tomato): add bounded WAIT_LATE_ACK recovery",
+  "extra_test_git_repositories_found": [],
+  "original_docs_sha256": {
+    "docs/TOMATO_JOINT_MEMORY_ABLATION_REPORT_20261112.md": "bb2f8115289ef97bf92e965af5cf1bd986507f835c8e40fcdc7cf5ac9bf690d0",
+    "docs/TOMATO_WAIT_LATE_ACK_IMPLEMENTATION.md": "0aaab65497e87c4010df275952c79af3a7984131a06133ddc7e9c7cc28fe0234",
+    "docs/TOMATO_CURRENT_FUTURE_JOINT_REPORT.md": "3c58118efec76b5211422a7c548b2e830244ae1414fe56f6813892498efe0c3c",
+    "docs/TOMATO_CURRENT_FUTURE_HANDSHAKE_V2_REPORT.md": "23f1adbc80ad2b44aab8a366ebbb387fc31a346fc92b3fd7d3ecdffdd77f1052",
+    "docs/TOMATO_REVIEW_UI_5HZ.md": "3157124be6b680d4d265a519d9795f70dae04f7e77512776b3148133925e851b",
+    "docs/TOMATO_LOCAL93_PROMPT_SWITCH_SIM_REPORT.md": "d434a2adb0d8d11ddaccdbcc49fadbb15fbce721d9ca27286d96ab8e39a27db4",
+    "docs/TOMATO_LOCAL93_TRAINING.md": "d8fb5ab6949f38adb53efa72603a990c9401fe9681d47f6a5eaf6214b0a3d185",
+    "docs/TOMATO_REMOTE93_TRAINING.md": "faa6caec7b335d8f97df4fe989951718b55f163dcd075d4b9a34c3b2c5c2ceb3",
+    "docs/TOMATO_HANDSHAKE_IMPROVEMENT_VALIDATION_20261112.md": "4a9c48bdd62676e81fc23a796308262ca35d88429bf24b03c961194906f73d49",
+    "docs/TOMATO_IMPLEMENTATION_REPORT.md": "55be61cf696e27ce00fdcc5412ec776af33d8b45916976c1aa44ceb6a76704e0",
+    "docs/TOMATO_LOCAL93_RESULT_ANALYSIS.md": "d2cbd2bae33ff12668014155198bac59038ca80843a42d2a94bd7fc0835c3d07",
+    "docs/TOMATO_HANDSHAKE_CANDIDATE_GATE_V3_REPORT_20261113.md": "1d1aa4e3fc9be130e0b8a3b154b69779121c3ffe8698af4506cc0f6be49d6488",
+    "docs/TOMATO_LEARNED_HANDSHAKE_POLICY_ABLATION_REPORT_20261112.md": "fe78780f55bd7c7c3bd65088a18cffb054c9866e46c13274fef342222e5ac982",
+    "docs/TOMATO_CONTROLLED_EXPERIMENT_REPORT_20261108.md": "352cbfed6e1c89eeeaafa1c14731de7a5e803f7bb2724996045fe5333c7cd9c3",
+    "docs/TOMATO_FOUR_STAGE_TRAINING.md": "0082ec034d52d34cabb123ab02285aa082d70dc02d511fe0006d10b60b1099b4",
+    "docs/TOMATO_VJEPA_REVIEW_UI_IMPLEMENTATION_REPORT.md": "fd6e4b78cb98c0d698111030d217a75da7291ad7472c89f1ba6cbf893ca3838b"
+  },
+  "original_source_sha256": {
+    "tools/annotate_lemon_phase_video.py": "6f8e996575f34aed413bbdb22f00d14ec6a2916b9f6796b1b3aaab96c6b8c090",
+    "tools/download_pretrained.py": "b3b98744a1f0cc5e5a2cdf711cd9a26be9bcbd1168c092a3becd08dd93447d72",
+    "tools/eval_tomato_vjepa_phase.py": "45c70bd895a66bdc88a99ae17cf18ae69b9b90a516969cce35f264a5cbfeb36c",
+    "tools/run_tomato_remote93.sh": "58ad5b413d04cbc6ebc67b02dc4c3afcf08f5c1f30b4f2f666361bc1f0e23349",
+    "tools/run_lemon_doubao_vjepa.py": "c362a40da38da0bd23a35ff8444a54b1cf25d03cbbc57d5bb4fa0e3e14c16b18",
+    "tools/train_tomato_vjepa_phase.py": "286d6ab8e05467f0c3bb33765d2ec8ba5f7db504dc77c7f8d9929a6abcf534b4",
+    "tools/tomato_metrics.py": "57da3d04ee50373319f6f975600e3e08c922cf0deca86fb9ec038674d3e686a2",
+    "tools/tomato_phase_model.py": "3bd79ab1174ecb4c032a5ed057ca6bc3e40f91ad783d2058b67711f4ddd594a6",
+    "tools/tomato_dataset.py": "1d84d589095ecbda33c8be457ff1d10af880aca30df47f4062cfe2898d3ad3db",
+    "tools/serve_lemon_phase_agent.py": "c49afdfcd3cc5510c2a7699e556c41f4a76e9ee9b603a50722e282dda9d7a6c4",
+    "tools/run_tomato_local93.sh": "a1ed86396cba6c5c91d0e8e45c8c51677799a3a07a7e4fb74bb26b2fdc982fa8",
+    "tools/train_lemon_vjepa_phase.py": "baa66894ab6208e06e59823cc978eb9075e8ddcb1b820d224ca5553a8a1e666c",
+    "tools/build_tomato_annotation_index.py": "c10eb6817280a3f7f87f602687fc20cca0fd5b5e0aa05a8a24b254d443d6faac",
+    "tools/train_source_snapshot.py": "d41b5147cff6d9ae2176b060663efcd350e43223971b9d6e62262d131366c0cb",
+    "tools/tomato_runtime.py": "af4f822e7ccf7e13864be84ae572b73a6914e614876e851b5ac9d6f44b97575a",
+    "tools/lemon_phase_model.py": "f0da0e0dfef15cc26b17f9125900bb61287f27214f28288fb1a2dfa4a57f3613",
+    "tools/tomato_joint_memory/report.py": "c48b5d6090160adf6fc224c02823543ac0c15e40a624300109df3292cadc4d2d",
+    "tools/tomato_joint_memory/cache_reader.py": "740d8da5bf9f3a5d3f01bb4ec5ed04b666df63be6382ef983acb84bdb3c46af4",
+    "tools/tomato_joint_memory/run.py": "7c634d860ac388acaecaba7c6af1349bd9d1f53d8e761fe586a8f3c159d1786e",
+    "tools/tomato_joint_memory/README.md": "9503ea7dfa83bcb2f2fc8956ba5706a51ea5b458090ff810d0114fcd2605ee23",
+    "tools/tomato_joint_memory/evaluate.py": "f948c392eab236169e9a0fba125f6571c82b0d3890670497135132b44183736f",
+    "tools/tomato_joint_memory/contracts.py": "ca820894c130b6dfb3f8fc4443677bc9edb947d67bda5a573252a8c5f12bcfe0",
+    "tools/tomato_joint_memory/prediction_memory.py": "20705c93f573d81168a1618182c2e5c9fab475c7c7eb5350f600d42087325ba3",
+    "tools/tomato_joint_memory/__init__.py": "2ceb207e9e8f5d0ed5766c35c81a67c2e1bee0d227c006ef5f4bb3f76a5dea46",
+    "tools/tomato_joint_memory/train.py": "053d374133f1065f9a4e7d415c74a1d204d45f1bec1db25f767f610fd8710763",
+    "tools/tomato_joint_memory/handshake_compare.py": "649a33d1cdb47eabcbc3fe5ef6ca224ccc969aff5818b8ea62230d26f22f4873",
+    "tools/tomato_joint_memory/benchmark.py": "f6329cbdb779a0753ffa10240569112060c9c30addd2a900570e13c4d9da6403",
+    "tools/tomato_joint_memory/models.py": "d9f50243bfb1c34d5b7fb27d8baee96b094a0540c59eac113a6a930fef4d4a3b",
+    "tools/tomato_review_ui/prediction_store.py": "6891f9e5aaf2b159b39399407b55332338eab63b59056abf685f8a5cdb6915a9",
+    "tools/tomato_review_ui/server.py": "436040500548cd301fd108bac7f9d96e81053f32ff711762d33b434936dd20a6",
+    "tools/tomato_review_ui/recognize.py": "9a474a33da6677a4fef39d0ccafb1202baf7435b3a875e76b82dc9e3080d18ed",
+    "tools/tomato_review_ui/handshake_experiment.py": "3e27e54775299fdbb7e57a9ebea54142ea4535fda21e6d9ee58fb536fa5afd66",
+    "tools/tomato_review_ui/catalog.py": "261bc697b9070c907190d7ee13c7e6de52c75c18f24e6d6d3cffacaa907ac762",
+    "tools/tomato_review_ui/acceptance.py": "ee55d076ebd556d2d4b61258235c4f9686a11a3c49cc01df0f1b38b5be84e39e",
+    "tools/tomato_review_ui/handshake.py": "ba907d56d01320087d09b3f37ac48fe97ac7c363af181c6d78dcc5593b897339",
+    "tools/tomato_review_ui/timeline.py": "57606684e9969f357d3e4cb151847ee92348c7e45455d93b7744508cba921bd1",
+    "tools/tomato_review_ui/five_hz.py": "aba2755b4c5e9ec5e7fb643b80017940f7e24c57c0100ce0078414281ae5acb4",
+    "tools/tomato_review_ui/__init__.py": "5b65db440caaec455d70593b4ad6aa3c86f996b9aa28ed9ed3750d214c14df2e",
+    "tools/tomato_review_ui/handshake_service.py": "a14c186cdc1071dc17dbd29260b4eceb19f200ad75e0dec65b6992e3c2f2cccf",
+    "tools/tomato_review_ui/HANDSHAKE_README.md": "34c4bab338c4fb1c58a214f2fe751635e69ac38a073b2069d65241a363c36d6f",
+    "tools/tomato_review_ui/video_export.py": "0d74090f036bea6b8328928bd241d705c7861a8d5b08dd0f8056f62a2ac7b3c6",
+    "tools/tomato_review_ui/static/app.js": "8dd9df1863d823192717362078d69e3a415298c1efc5ee14d0dbf53ca01260e2",
+    "tools/tomato_review_ui/static/style.css": "95d84a74029575372e04c826161015762c598d8639a5cbe8a275c3d2a7ff352d",
+    "tools/tomato_review_ui/static/index.html": "c34299cd33eaca980488bb49b4f66cf63f812538d15c5f24b5dcf09cbf271796",
+    "tools/tomato_review_ui/candidate_gate_v3/score.py": "e150418cbe4ae7ba4760d23c3d98d3824cc0198353e31ef20fe7387a8b5039e8",
+    "tools/tomato_review_ui/candidate_gate_v3/contract.py": "62a55a98fecd2b0a636a1987d0659156f34a471b62eb2c85bd22b8c9358809d0",
+    "tools/tomato_review_ui/candidate_gate_v3/report.py": "ba85420971bf76c6e5f43c07f0fb1ea34a75f0ed037b9af5b4af31f7278eacc0",
+    "tools/tomato_review_ui/candidate_gate_v3/identity.py": "eb32d9e7e95bec9463ced1b8503b67011b37097de1c605e35d5e11992373ee8c",
+    "tools/tomato_review_ui/candidate_gate_v3/README.md": "5fed321b589e718d1d2169565c53163ee2c36937416f519ac4cc215e809caff5",
+    "tools/tomato_review_ui/candidate_gate_v3/candidate.py": "e629042f494985eabbc2d4f0b8a1bb5a844775def44317dfb3e7b3c2e60606b5",
+    "tools/tomato_review_ui/candidate_gate_v3/targets.py": "2ebd702fdbdfc0e442c44ebe54364746d3167c64c2882438100bd5fdad2a94b3",
+    "tools/tomato_review_ui/candidate_gate_v3/policy.py": "06a848059326c7d8f1c2791ec9800169efd75f24650dec84baf789b5a00d40b4",
+    "tools/tomato_review_ui/candidate_gate_v3/verification.py": "10340a26b2e8abf0414cd6f4f78c79a50d022de12cbbde286f6ae9bbee0f4a02",
+    "tools/tomato_review_ui/candidate_gate_v3/stress.py": "43f7c1e632453f920ef3889816f57d010dd7065e53072e21723d77fe9cbd0d21",
+    "tools/tomato_review_ui/candidate_gate_v3/__init__.py": "f5eb267546e475bf635078b9ca8fa18620666c2b3fd18567c8e26ced2fe9cd34",
+    "tools/tomato_review_ui/candidate_gate_v3/analyze.py": "87cb4372765e65eda0172fd2e2c6c94842d2a85593452afb5505ffb7ff87489b",
+    "tools/tomato_review_ui/candidate_gate_v3/train.py": "981964da63abd02334ba5c8db1e6bd817576591c1a97449a700b346a27ca6b52",
+    "tools/tomato_review_ui/candidate_gate_v3/port.py": "538b30cc484399cdfee0e39f2c1ea798cb05bfc8be66b66a90c9edb7b5f4b557",
+    "tools/tomato_review_ui/candidate_gate_v3/features.py": "5347cb33ae9a68d2b829634e2765c0b6815e21690ffe18732caf7b772b958e0c",
+    "tools/tomato_review_ui/candidate_gate_v3/cli.py": "1d65e73087d1f8e43bf151660dc8d310223479a94f7908a59da3fa86ab1435b6",
+    "tools/tomato_review_ui/candidate_gate_v3/replay.py": "c9db872d03e41f688b0b04fec96ecc140ba83472c60b15713fe25396479674c0",
+    "tools/tomato_review_ui/candidate_gate_v3/data.py": "d25964d91521c847219dc1068d9d840a279d71b012e6de3169e27289b413727f",
+    "tools/tomato_review_ui/learned_handshake/report.py": "6ee3912f7fb2b87650e95cd6bc42634a6ee14909593e5d818acaecf0e7995b73",
+    "tools/tomato_review_ui/learned_handshake/feature_builder.py": "140cc74fb30c5a86ec80b172b219f6a5fa8fd183386b56fe37d56e6e3c092d2d",
+    "tools/tomato_review_ui/learned_handshake/identity.py": "c917c4bc8c15c1d0f8e64364a66bf26f18af94a7536af3a22cb94086694a6701",
+    "tools/tomato_review_ui/learned_handshake/README.md": "0659bcbd8bbdf22cc386660bc966b7a85ee9247afb3770cb2e68621016f2a92e",
+    "tools/tomato_review_ui/learned_handshake/evaluate.py": "18771fc8905f06fb0bc768b2d8e941963e7edd87a73431b010ae985c13418bce",
+    "tools/tomato_review_ui/learned_handshake/contracts.py": "42337974e1c8791f0355ac8d4c12f9e15a1b1f73c4319d1834c8d70343d5bdd3",
+    "tools/tomato_review_ui/learned_handshake/targets.py": "ac0d17d2691b5e9350724ac2015de6135d334187ef3f145c51624599cf26661e",
+    "tools/tomato_review_ui/learned_handshake/__init__.py": "2145a14da77d4da8f3ae4d479237c1bc7017eef9ae956432486d5bb20cbdd9f9",
+    "tools/tomato_review_ui/learned_handshake/train.py": "130b34d9459f88a0a0368e7f7e871ba22cf15194e08a574dfc833f685e3925b4",
+    "tools/tomato_review_ui/learned_handshake/shell_adapter.py": "168da4514226614b4918a73fdf4080115c91c076dfed9ae9546a672d35dbcb24",
+    "tools/tomato_review_ui/learned_handshake/rule_policies.py": "86311900da5c41bbc800e75c0746ab3ebcfb9152832fbb7d785d1b6885755036",
+    "tools/tomato_review_ui/learned_handshake/cli.py": "c4dfa49607836e0c4965c7ea0d71851863ea1c58e0f6277a1efd9de2f576930c",
+    "tools/tomato_review_ui/learned_handshake/replay.py": "d5f96ec0f71ea62520c110d17c291e0c329c99a5cf199e02b200d6f63fbd21af",
+    "tools/tomato_review_ui/learned_handshake/oof_teacher.py": "bed29b6449d6440e0a685ae24a4e95255094880277678932c5a6dfe4edf1f757",
+    "tools/tomato_review_ui/learned_handshake/models.py": "889c487dbf6b579a570d95fd2595fc1a4bd41133b5d6116fca6f28da79d84d2d",
+    "tests/test_tomato_learned_handshake_v2.py": "d11f3529f5bb33ac59b273c4d91081d41b712c66edcf040774902bf31195c144",
+    "tests/test_tomato_runtime.py": "d5f024d9af686b2cbc66ba818a019b22f58a5936fdb6ee1ce980bbf8f6000994",
+    "tests/test_lemon_vjepa_phase.py": "9ab66620136a85441306536030bacdca84844566d1ba5330cebe48f567fdb19a",
+    "tests/test_train_tomato_vjepa_phase.py": "2b0506736031cf3959ce7f1f742b3d75449c606c235667c43115335466a13cf5",
+    "tests/test_tomato_joint_training.py": "8eca041d405ce8ec6fe31ed5b96b67749b4ee3ca370045385f4df3649b5e08ff",
+    "tests/test_tomato_dataset.py": "9477bc833e742f3682e26a4607a98695b5ef3aeb91d0aa1c75a4dd6858cc1fae",
+    "tests/test_tomato_phase_model.py": "03e688c3c7a14384ae6f14ad3e9383f7c74663463b1fefed067b6d8887c56966",
+    "tests/test_tomato_candidate_gate_v3.py": "0110779d70689bac5aff08e2c8ab32b9fdcb99c6a17ad977f922879e581b4c76",
+    "tests/test_lemon_phase_model.py": "37f5f891023bf7d19add66eb6af13a77962d38348ea7e166c79f048e1aae714a",
+    "tests/test_eval_tomato_vjepa_phase.py": "b9a9ceb1f1c5c9c108ee86f0726a4131ce0e3ec1292591cd2838c0aa139dd46b",
+    "tests/test_tomato_review_ui.py": "3fa0a7d605828f9b00a215dc6d1956a5c2c6de9f1765afde3696ba2e5359526a",
+    "tests/test_lemon_doubao_vjepa.py": "632069906c1903e3a3e3eedc62acb71bd4c2437d52035b5e1f73bd2ece5f4ed3",
+    "tests/test_tomato_metrics.py": "298495cf1b6f3f7018613196a0881f979a544cc6b406b149240ddc57c4ff426f",
+    "tests/test_tomato_joint_memory_causality.py": "5730857de28032ebec34977b1f3dc4f996c6bafee576ae7bf070b3904beb98a7",
+    "tests/test_annotate_lemon_phase_video.py": "137f89b393f2d10ab4e4d86f9bde3e42623df0668db866725d991905e1648402",
+    "tests/test_tomato_joint_model.py": "5cc3013e43970ae5015dc21de1a71b4c5985f6064f25655aefc3cafa3e9f6b93",
+    "tests/tomato_helpers.py": "7462f921d2724a8533e2824f9123f44bbad174db70662065828006508a076b99",
+    "tests/test_tomato_handshake.py": "0186772ff0606034a0aeffc8155f14ef8ecad7ebc6bbdfdde7b6e1dc8463aee6",
+    "tests/test_tomato_joint_metrics.py": "d846b48fb026e3beb0e495f36157dd0e9400602a8ac2ab6e47c26dd3b0645c55",
+    "tests/test_tomato_review_five_hz.py": "7d8e69946bacc06c5378ed5c4766979a3f3e24f1408ccc5af5684c68cb977ca0",
+    "tests/test_tomato_wait_late_ack.py": "760e23c2ff744a1e8c2fb4bcf4398221ec99b62e43cde1ffe6880e02c8588c52",
+    "configs/tomato_learned_handshake_v2_20261112.yaml": "a108f6bd55591af5e8793a95b4cce1333e074ebe1fdc3f0b576fad26b6e2443d",
+    "configs/tomato_four_stage.yaml": "415d4d5f887bde2b164e4e5d21cabd3a24f6cc0b729af598405dfd3a88eb4771",
+    "configs/tomato_four_stage_local93.yaml": "2cf66c64e06a6034f00e61e20e685964fdace630cf9d42d80d1f2833bed36b0b",
+    "configs/tomato_four_stage_remote93.yaml": "4623150db00abcaa97cb6cfe15038f7fa5d7142ab12008bdc0f84be8e0101974",
+    "configs/tomato_joint_memory_ablation_20261112.yaml": "903e2d6fe160fcf28a990e4243d6bed7c38ece335e0c785ba9fc06aa66e1c1ae",
+    "configs/tomato_candidate_gate_v3_20261113.yaml": "dfa4aab13474f8fce13fdf009029d1879c21c56b658c098b8ae6c453db86a1ba",
+    "configs/tomato_remote93/annotation_index.json": "3c5186d98ab1a80d309f2fa7426ece66078aaa47f82a4b9f50af295121b3ad34",
+    "configs/tomato_remote93/split.json": "5ccda5a1499c01082c5223fbdb04d780f8cfb02da7146d5c50cc748ab32281de"
+  },
+  "status": "complete",
+  "historical_audit_note": "Original experiment hash manifests are left unchanged. Missing ZIP entries after this authorized cleanup are deliberate removals listed here, not missing model/data evidence. Archived branch names in historical reports describe their original provenance.",
+  "branch_inventory_after": "feat/tomato-four-stage        63d89e8 [origin/feat/tomato-four-stage] 增加一些训练配置\n  feat/tomato-offline-review-ui 07f9311 [origin/feat/tomato-offline-review-ui] 优化功能\n* main                          db4cdad [origin/main] feat(tomato): add bounded WAIT_LATE_ACK recovery",
+  "deleted_package_bytes": 52920927,
+  "recovered_asset_bytes": 1433893,
+  "all_original_reports_and_source_unchanged": true
+}

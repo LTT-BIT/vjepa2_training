@@ -1,0 +1,74 @@
+{
+  "strict_hits": {
+    "delta_total": -3.0,
+    "ci95": [
+      -9.0,
+      2.0
+    ],
+    "positive_sources": 2,
+    "negative_sources": 4,
+    "unchanged_sources": 3,
+    "worst_delta": 1.0,
+    "best_delta": -2.0
+  },
+  "wrong_active_s": {
+    "delta_total": -49.50000000000002,
+    "ci95": [
+      -125.80000000000007,
+      6.433333333333355
+    ],
+    "positive_sources": 2,
+    "negative_sources": 5,
+    "unchanged_sources": 2,
+    "worst_delta": 4.800000000000011,
+    "best_delta": -34.166666666666686
+  },
+  "early_ge05": {
+    "delta_total": 1.0,
+    "ci95": [
+      0.0,
+      3.0
+    ],
+    "positive_sources": 1,
+    "negative_sources": 0,
+    "unchanged_sources": 8,
+    "worst_delta": 1.0,
+    "best_delta": 0.0
+  },
+  "missed": {
+    "delta_total": -4.0,
+    "ci95": [
+      -9.0,
+      1.0
+    ],
+    "positive_sources": 1,
+    "negative_sources": 4,
+    "unchanged_sources": 4,
+    "worst_delta": 1.0,
+    "best_delta": -2.0
+  },
+  "unmatched_commits": {
+    "delta_total": -4.0,
+    "ci95": [
+      -9.0,
+      1.0
+    ],
+    "positive_sources": 1,
+    "negative_sources": 4,
+    "unchanged_sources": 4,
+    "worst_delta": 1.0,
+    "best_delta": -2.0
+  },
+  "hard_timeouts": {
+    "delta_total": -2.0,
+    "ci95": [
+      -5.0,
+      0.0
+    ],
+    "positive_sources": 0,
+    "negative_sources": 2,
+    "unchanged_sources": 7,
+    "worst_delta": 0.0,
+    "best_delta": -1.0
+  }
+}

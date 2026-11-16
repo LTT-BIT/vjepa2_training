@@ -1,0 +1,274 @@
+[
+  {
+    "path": "docs/paper_archive/reports/352cbfed6e1c89ee__TOMATO_CONTROLLED_EXPERIMENT_REPORT_20261108.md",
+    "sha256": "352cbfed6e1c89eeeaafa1c14731de7a5e803f7bb2724996045fe5333c7cd9c3",
+    "bytes": 13191,
+    "origins": [
+      "docs/TOMATO_CONTROLLED_EXPERIMENT_REPORT_20261108.md",
+      "runs/tomato/controlled_20261108/Tomato_Controlled_Experiment_Evidence.zip :: docs/TOMATO_CONTROLLED_EXPERIMENT_REPORT_20261108.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/23f1adbc80ad2b44__TOMATO_CURRENT_FUTURE_HANDSHAKE_V2_REPORT.md",
+    "sha256": "23f1adbc80ad2b44aab8a366ebbb387fc31a346fc92b3fd7d3ecdffdd77f1052",
+    "bytes": 12509,
+    "origins": [
+      "docs/TOMATO_CURRENT_FUTURE_HANDSHAKE_V2_REPORT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/3c58118efec76b52__TOMATO_CURRENT_FUTURE_JOINT_REPORT.md",
+    "sha256": "3c58118efec76b5211422a7c548b2e830244ae1414fe56f6813892498efe0c3c",
+    "bytes": 19252,
+    "origins": [
+      "docs/TOMATO_CURRENT_FUTURE_JOINT_REPORT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/0082ec034d52d34c__TOMATO_FOUR_STAGE_TRAINING.md",
+    "sha256": "0082ec034d52d34cabb123ab02285aa082d70dc02d511fe0006d10b60b1099b4",
+    "bytes": 19841,
+    "origins": [
+      "docs/TOMATO_FOUR_STAGE_TRAINING.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/1d1aa4e3fc9be130__TOMATO_HANDSHAKE_CANDIDATE_GATE_V3_REPORT_20261113.md",
+    "sha256": "1d1aa4e3fc9be130e0b8a3b154b69779121c3ffe8698af4506cc0f6be49d6488",
+    "bytes": 22444,
+    "origins": [
+      "docs/TOMATO_HANDSHAKE_CANDIDATE_GATE_V3_REPORT_20261113.md",
+      "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/REPORT.md",
+      "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/handoff.zip :: repository/docs/TOMATO_HANDSHAKE_CANDIDATE_GATE_V3_REPORT_20261113.md",
+      "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/handoff.zip :: REPORT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/4a9c48bdd62676e8__TOMATO_HANDSHAKE_IMPROVEMENT_VALIDATION_20261112.md",
+    "sha256": "4a9c48bdd62676e81fc23a796308262ca35d88429bf24b03c961194906f73d49",
+    "bytes": 12745,
+    "origins": [
+      "docs/TOMATO_HANDSHAKE_IMPROVEMENT_VALIDATION_20261112.md",
+      "runs/tomato/local93_20261107/handshake_improvement_sensitivity_20261112/Handshake_Improvement_Evidence.zip :: docs/TOMATO_HANDSHAKE_IMPROVEMENT_VALIDATION_20261112.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/55be61cf696e27ce__TOMATO_IMPLEMENTATION_REPORT.md",
+    "sha256": "55be61cf696e27ce00fdcc5412ec776af33d8b45916976c1aa44ceb6a76704e0",
+    "bytes": 16089,
+    "origins": [
+      "docs/TOMATO_IMPLEMENTATION_REPORT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/bb2f8115289ef97b__TOMATO_JOINT_MEMORY_ABLATION_REPORT_20261112.md",
+    "sha256": "bb2f8115289ef97bf92e965af5cf1bd986507f835c8e40fcdc7cf5ac9bf690d0",
+    "bytes": 20805,
+    "origins": [
+      "docs/TOMATO_JOINT_MEMORY_ABLATION_REPORT_20261112.md",
+      "runs/tomato/joint_memory_ablation_20261112_183157_246624/REPORT.md",
+      "runs/tomato/joint_memory_ablation_20261112_183157_246624/handoff.zip :: evidence/REPORT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/fe78780f55bd7c7c__TOMATO_LEARNED_HANDSHAKE_POLICY_ABLATION_REPORT_20261112.md",
+    "sha256": "fe78780f55bd7c7c3bd65088a18cffb054c9866e46c13274fef342222e5ac982",
+    "bytes": 20288,
+    "origins": [
+      "docs/TOMATO_LEARNED_HANDSHAKE_POLICY_ABLATION_REPORT_20261112.md",
+      "runs/tomato/learned_handshake_v2_20261112_212907_36ff73/REPORT.md",
+      "runs/tomato/learned_handshake_v2_20261112_212907_36ff73/handoff.zip :: evidence/REPORT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/d434a2adb0d8d11d__TOMATO_LOCAL93_PROMPT_SWITCH_SIM_REPORT.md",
+    "sha256": "d434a2adb0d8d11ddaccdbcc49fadbb15fbce721d9ca27286d96ab8e39a27db4",
+    "bytes": 25243,
+    "origins": [
+      "docs/TOMATO_LOCAL93_PROMPT_SWITCH_SIM_REPORT.md",
+      "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/TOMATO_LOCAL93_PROMPT_SWITCH_SIM_REPORT.md",
+      "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip :: runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/TOMATO_LOCAL93_PROMPT_SWITCH_SIM_REPORT.md",
+      "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip :: docs/TOMATO_LOCAL93_PROMPT_SWITCH_SIM_REPORT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/d2cbd2bae33ff126__TOMATO_LOCAL93_RESULT_ANALYSIS.md",
+    "sha256": "d2cbd2bae33ff12668014155198bac59038ca80843a42d2a94bd7fc0835c3d07",
+    "bytes": 20176,
+    "origins": [
+      "docs/TOMATO_LOCAL93_RESULT_ANALYSIS.md",
+      "runs/tomato/local93_20261107/analysis/Tomato_Local93_GPT_Analysis.md",
+      "runs/tomato/local93_20261107/analysis/Tomato_Local93_GPT_Evidence.zip :: docs/TOMATO_LOCAL93_RESULT_ANALYSIS.md",
+      "runs/tomato/local93_20261107/analysis/Tomato_Local93_GPT_Evidence.zip :: runs/tomato/local93_20261107/analysis/Tomato_Local93_GPT_Analysis.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/d8fb5ab6949f38ad__TOMATO_LOCAL93_TRAINING.md",
+    "sha256": "d8fb5ab6949f38adb53efa72603a990c9401fe9681d47f6a5eaf6214b0a3d185",
+    "bytes": 2210,
+    "origins": [
+      "docs/TOMATO_LOCAL93_TRAINING.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/faa6caec7b335d8f__TOMATO_REMOTE93_TRAINING.md",
+    "sha256": "faa6caec7b335d8f97df4fe989951718b55f163dcd075d4b9a34c3b2c5c2ceb3",
+    "bytes": 4676,
+    "origins": [
+      "docs/TOMATO_REMOTE93_TRAINING.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/3157124be6b680d4__TOMATO_REVIEW_UI_5HZ.md",
+    "sha256": "3157124be6b680d4d265a519d9795f70dae04f7e77512776b3148133925e851b",
+    "bytes": 3427,
+    "origins": [
+      "docs/TOMATO_REVIEW_UI_5HZ.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/fd6e4b78cb98c0d6__TOMATO_VJEPA_REVIEW_UI_IMPLEMENTATION_REPORT.md",
+    "sha256": "fd6e4b78cb98c0d698111030d217a75da7291ad7472c89f1ba6cbf893ca3838b",
+    "bytes": 11671,
+    "origins": [
+      "docs/TOMATO_VJEPA_REVIEW_UI_IMPLEMENTATION_REPORT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/0aaab65497e87c40__TOMATO_WAIT_LATE_ACK_IMPLEMENTATION.md",
+    "sha256": "0aaab65497e87c4010df275952c79af3a7984131a06133ddc7e9c7cc28fe0234",
+    "bytes": 6134,
+    "origins": [
+      "docs/TOMATO_WAIT_LATE_ACK_IMPLEMENTATION.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/54ad57d9468d1448__README.md",
+    "sha256": "54ad57d9468d1448a54d56ca8f2c958e8d9715a197fb4abbfa94656c9fa941d1",
+    "bytes": 4046,
+    "origins": [
+      "runs/tomato/current_future_validation/baseline/README.md",
+      "runs/tomato/environment/baseline/README.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/bb07416bbff81f7b__TOMATO_FOUR_STAGE_TRAINING.md",
+    "sha256": "bb07416bbff81f7ba08348d8cd6af5a16a7da944ea2b36292230be7e72d9d5b2",
+    "bytes": 16419,
+    "origins": [
+      "runs/tomato/current_future_validation/baseline/docs/TOMATO_FOUR_STAGE_TRAINING.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/17e54b56c7f00894__TOMATO_IMPLEMENTATION_REPORT.md",
+    "sha256": "17e54b56c7f008942b49ce2b5bb298a7adbc1c32daa4d0fc2deda476788ad3c7",
+    "bytes": 15660,
+    "origins": [
+      "runs/tomato/current_future_validation/baseline/docs/TOMATO_IMPLEMENTATION_REPORT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/819d7de290081722__README.md",
+    "sha256": "819d7de290081722af73f5ea41517fd681e40b1b6aa013e0c815b1c7b28f6c06",
+    "bytes": 3113,
+    "origins": [
+      "runs/tomato/current_future_validation/baseline/experiment_results/README.md",
+      "runs/tomato/environment/baseline/experiment_results/README.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/ed9ac652b8a21052__RESULTS.md",
+    "sha256": "ed9ac652b8a210528535a2b7c4a85a74b5bd9c8ec51dccf88dc4801cad3ccbf4",
+    "bytes": 3117,
+    "origins": [
+      "runs/tomato/current_future_validation/baseline/experiment_results/RESULTS.md",
+      "runs/tomato/environment/baseline/experiment_results/RESULTS.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/73fd6fccdd802c41__README.md",
+    "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad",
+    "bytes": 302,
+    "origins": [
+      "runs/tomato/environment/baseline/.pytest_cache/README.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/f50cabdae3083776__SUPERSEDED_IMPLEMENTATION_AUDIT.md",
+    "sha256": "f50cabdae3083776bbc38128b980a3d4535d4819cb83f1bb1f5700be262830d9",
+    "bytes": 578,
+    "origins": [
+      "runs/tomato/handshake_candidate_gate_v3_20261113_110116_4ee71f/SUPERSEDED_IMPLEMENTATION_AUDIT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/72913fd57fd6389f__RESEARCH_FINDINGS.md",
+    "sha256": "72913fd57fd6389ffdea385822e0a3b91ef59f66e53c196fea1ea5a4b69fcf10",
+    "bytes": 3098,
+    "origins": [
+      "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/RESEARCH_FINDINGS.md",
+      "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/handoff.zip :: RESEARCH_FINDINGS.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/f62c7d04a13b28f5__ANALYSIS_SUPPLEMENT.md",
+    "sha256": "f62c7d04a13b28f575b2d62f8bccc48448ead815898a56fba04a6ffc310cfd02",
+    "bytes": 11725,
+    "origins": [
+      "runs/tomato/joint_memory_ablation_20261112_183157_246624/ANALYSIS_SUPPLEMENT.md",
+      "runs/tomato/joint_memory_ablation_20261112_183157_246624/handoff.zip :: evidence/ANALYSIS_SUPPLEMENT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/9503ea7dfa83bcb2__PACKAGE_README.md",
+    "sha256": "9503ea7dfa83bcb2f2fc8956ba5706a51ea5b458090ff810d0114fcd2605ee23",
+    "bytes": 2799,
+    "origins": [
+      "runs/tomato/joint_memory_ablation_20261112_183157_246624/supplemental/PACKAGE_README.md",
+      "runs/tomato/joint_memory_ablation_20261112_183157_246624/handoff.zip :: evidence/supplemental/PACKAGE_README.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/8ad99ae121eb5702__ANALYSIS_SUPPLEMENT.md",
+    "sha256": "8ad99ae121eb57024567ff95b5637ebbc03b4d353ed56ad6032cc953f0f5d1d3",
+    "bytes": 11432,
+    "origins": [
+      "runs/tomato/learned_handshake_v2_20261112_212907_36ff73/ANALYSIS_SUPPLEMENT.md",
+      "runs/tomato/learned_handshake_v2_20261112_212907_36ff73/handoff.zip :: evidence/ANALYSIS_SUPPLEMENT.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/0659bcbd8bbdf22c__PACKAGE_README.md",
+    "sha256": "0659bcbd8bbdf22cc386660bc966b7a85ee9247afb3770cb2e68621016f2a92e",
+    "bytes": 3774,
+    "origins": [
+      "runs/tomato/learned_handshake_v2_20261112_212907_36ff73/supplemental/PACKAGE_README.md",
+      "runs/tomato/learned_handshake_v2_20261112_212907_36ff73/handoff.zip :: evidence/supplemental/PACKAGE_README.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/03fbfba7301f9ecb__timeline_index.md",
+    "sha256": "03fbfba7301f9ecb6ede73a5eadde4c527d0ed47d09588183ab8309a6689d163",
+    "bytes": 14122,
+    "origins": [
+      "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/plots/timeline_index.md",
+      "runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/Tomato_Prompt_Switch_Evidence.zip :: runs/tomato/local93_20261107/prompt_switch_sim_20261108_p1_p6_v2/plots/timeline_index.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/33c3b9c360cf6df4__README.md",
+    "sha256": "33c3b9c360cf6df4fe611a945f1b106c9d8a826eb52d000fee3418d13039ced5",
+    "bytes": 2806,
+    "origins": [
+      "runs/tomato/remote_io_probe_20261107/README.md"
+    ]
+  },
+  {
+    "path": "docs/paper_archive/reports/5fed321b589e718d__README.md",
+    "sha256": "5fed321b589e718d1d2169565c53163ee2c36937416f519ac4cc215e809caff5",
+    "bytes": 2945,
+    "origins": [
+      "runs/tomato/handshake_candidate_gate_v3_20261113_112707_tailmask/handoff.zip :: repository/tools/tomato_review_ui/candidate_gate_v3/README.md"
+    ]
+  }
+]

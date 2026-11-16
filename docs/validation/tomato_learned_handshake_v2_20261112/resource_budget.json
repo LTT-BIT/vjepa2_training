@@ -1,0 +1,13 @@
+{
+  "final_policies": 15,
+  "original_main_fits": 24,
+  "aggregation_refits": 9,
+  "L0_L2_math_correction_fits": 3,
+  "total_main_fits": 27,
+  "main_training_wall_seconds": 143.78600514295977,
+  "main_updates": 137750,
+  "training_device": "CUDA RTX4070TiSUPER FP32",
+  "GPU_kernel_active_seconds": "NOT_MEASURED",
+  "new_encoder_calls": 0,
+  "new_teachers": 0
+}

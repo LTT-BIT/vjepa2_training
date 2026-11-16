@@ -1,0 +1,65 @@
+{
+  "selected": "KEEP_H0",
+  "audit": {
+    "G0": {
+      "seed_passes": [
+        true,
+        false,
+        false
+      ],
+      "all_three_pass": false,
+      "mean_strict": 20.0,
+      "mean_wrong_s": 53.12222222222218,
+      "worst_early": 4,
+      "worst_hard": 0,
+      "benefit": true,
+      "qualifies": false
+    },
+    "G1": {
+      "seed_passes": [
+        false,
+        false,
+        false
+      ],
+      "all_three_pass": false,
+      "mean_strict": 20.333333333333332,
+      "mean_wrong_s": 188.66666666666663,
+      "worst_early": 4,
+      "worst_hard": 1,
+      "benefit": false,
+      "qualifies": false
+    },
+    "G2": {
+      "seed_passes": [
+        false,
+        false,
+        false
+      ],
+      "all_three_pass": false,
+      "mean_strict": 21.0,
+      "mean_wrong_s": 46.05555555555552,
+      "worst_early": 2,
+      "worst_hard": 0,
+      "benefit": true,
+      "qualifies": false
+    },
+    "G3": {
+      "seed_passes": [
+        true,
+        false,
+        false
+      ],
+      "all_three_pass": false,
+      "mean_strict": 21.666666666666668,
+      "mean_wrong_s": 110.32222222222215,
+      "worst_early": 3,
+      "worst_hard": 0,
+      "benefit": false,
+      "qualifies": false
+    }
+  },
+  "representative_seed": 42,
+  "no_test_used": true,
+  "benefit_rule": "mean strict>=25 OR mean wrong<=.9*H0; all three seeds independently pass every non-degradation rule",
+  "ranking": "mean strict desc, worst early, worst hard, mean wrong, fixed capacity tie order"
+}

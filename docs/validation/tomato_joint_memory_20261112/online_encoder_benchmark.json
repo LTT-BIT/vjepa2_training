@@ -1,0 +1,73 @@
+{
+  "measured": true,
+  "device": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "rgb_shape": [
+    1,
+    3,
+    16,
+    256,
+    256,
+    3
+  ],
+  "dtype": "Encoder BF16; Joint FP32",
+  "episode_id": "07fe3c11197b0902d8c37fa4",
+  "anchor_frame": 150,
+  "repeats": 20,
+  "warmup": 5,
+  "encoder_new_benchmark_calls": 175,
+  "encoder_calls_training_evaluation": 0,
+  "cache_feature_max_abs_delta": 0.0,
+  "timings": {
+    "B0-frozen": {
+      "p50_ms": 89.0077234362252,
+      "p95_ms": 89.82279518386349,
+      "p99_ms": 89.88952616928145
+    },
+    "B0R": {
+      "p50_ms": 88.93993496894836,
+      "p95_ms": 89.66232882812619,
+      "p99_ms": 89.85471380874515
+    },
+    "T0": {
+      "p50_ms": 89.39455251675099,
+      "p95_ms": 90.28209960088134,
+      "p99_ms": 90.52240546792746
+    },
+    "T1": {
+      "p50_ms": 89.45076848613098,
+      "p95_ms": 89.93280294816941,
+      "p99_ms": 89.96931330766529
+    },
+    "T2": {
+      "p50_ms": 89.49642354855314,
+      "p95_ms": 90.43507070746273,
+      "p99_ms": 90.60960696544498
+    },
+    "K1": {
+      "p50_ms": 89.64909793576226,
+      "p95_ms": 90.2020419947803,
+      "p99_ms": 90.30467161908746
+    },
+    "P1": {
+      "p50_ms": 89.67708703130484,
+      "p95_ms": 90.13736406923272,
+      "p99_ms": 90.19260233384557
+    }
+  },
+  "includes": [
+    "raw full RGB preprocessing",
+    "three-view frozen Encoder",
+    "GPU->CPU pooled features",
+    "normalization",
+    "CPU->GPU normalized features",
+    "latest-query readout, history already cached",
+    "P1 fixed B0 teacher forward"
+  ],
+  "excludes": [
+    "live video acquisition/decode",
+    "CPU memory construction",
+    "pi05 concurrency"
+  ],
+  "selected_video_decode_s": 5.370214710012078,
+  "source_encoder_sha256": "25466aef85727d16546c6cf8c99f12fcfad9cbca8225d45f23685e2e025b786b"
+}

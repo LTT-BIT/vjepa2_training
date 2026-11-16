@@ -1,0 +1,87 @@
+{
+  "head": "db4cdad6e87af7c077f5be16a00bc277efeb54d9",
+  "baseline_checkpoint_sha256": "9324cdb3287c407c259eafbc725ac3bc3d3df6d38646545e8435e0faa9ad03d9",
+  "summary": {
+    "train": {
+      "sources": 75,
+      "episodes": 75,
+      "anchors": 21706,
+      "class_counts": [
+        2829,
+        14413,
+        1450,
+        3014
+      ],
+      "current_class_counts": [
+        2829,
+        14413,
+        1450,
+        3014
+      ],
+      "future_class_counts": [
+        2679,
+        14413,
+        1450,
+        3014
+      ],
+      "future_valid": 21556,
+      "future_invalid": 150
+    },
+    "val": {
+      "sources": 9,
+      "episodes": 9,
+      "anchors": 3007,
+      "class_counts": [
+        346,
+        2138,
+        180,
+        343
+      ],
+      "current_class_counts": [
+        346,
+        2138,
+        180,
+        343
+      ],
+      "future_class_counts": [
+        328,
+        2138,
+        180,
+        343
+      ],
+      "future_valid": 2989,
+      "future_invalid": 18
+    },
+    "test": {
+      "sources": 9,
+      "episodes": 9,
+      "anchors": 2580,
+      "class_counts": [
+        318,
+        1744,
+        171,
+        347
+      ],
+      "current_class_counts": [
+        318,
+        1744,
+        171,
+        347
+      ],
+      "future_class_counts": [
+        300,
+        1744,
+        171,
+        347
+      ],
+      "future_valid": 2562,
+      "future_invalid": 18
+    }
+  },
+  "feature_dim": 4000,
+  "encoder_new_calls": 0,
+  "verified_sources": 93,
+  "source_bytes": 5898187950,
+  "existing_full_decode_receipt_sha256": "8c532596fa3e8aea3fc8f53e56a179d6c005f8dba1923e7da8c09f2bfc71c7bb",
+  "timestamp_check": "actual Parquet all frames; cached indices and measured q verified; unchanged video SHA binds original full PTS decode receipt"
+}

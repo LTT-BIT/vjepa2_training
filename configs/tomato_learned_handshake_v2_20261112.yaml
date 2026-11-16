@@ -1,0 +1,27 @@
+baseline_root: runs/tomato/local93_20261107
+memory_experiment: runs/tomato/joint_memory_ablation_20261112_183157_246624
+output_root: runs/tomato
+seeds: [42, 43, 44]
+policies: [L0, L1a, L1b, L2, L3a]
+history_length: 4
+mlp_hidden: [64, 32]
+gru_hidden: 32
+dropout: 0.1
+device: cuda
+learning_rate: 0.0003
+weight_decay: 0.01
+batch_size: 256
+epochs: 80
+patience: 10
+grad_clip: 1.0
+aggregation_threshold: 0.10
+aggregation_rounds_max: 1
+lambda_time: 1.0
+commit_probability: 0.5
+hazard_switch_cost: [4, 3, 2, 0, 0.3, 4]
+hazard_hold_cost: [0, 0.25, 1, 3, 4, 0]
+bootstrap_replicates: 5000
+bootstrap_seed: 20261112
+risk_max_extra_missed: 0
+risk_max_extra_unmatched: 0
+min_non_degrading_seeds: 2

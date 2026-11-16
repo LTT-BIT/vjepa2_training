@@ -1,0 +1,7 @@
+{
+  "command": ".venv-tomato/bin/python -m pytest -q tests/test_*tomato*.py tests/test_lemon_vjepa_phase.py",
+  "result": "275 passed in 11.95s",
+  "dedicated_unit_result": "44 passed in 1.02s",
+  "old_api_regression": "31 passed",
+  "returncode": 0
+}

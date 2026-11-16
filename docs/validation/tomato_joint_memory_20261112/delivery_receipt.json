@@ -1,0 +1,18 @@
+{
+  "experiment_dir": "/home/user/pi05/vjepa2_training/runs/tomato/joint_memory_ablation_20261112_183157_246624",
+  "report_path": "/home/user/pi05/vjepa2_training/docs/TOMATO_JOINT_MEMORY_ABLATION_REPORT_20261112.md",
+  "report_sha256": "bb2f8115289ef97bf92e965af5cf1bd986507f835c8e40fcdc7cf5ac9bf690d0",
+  "archive_path": "/home/user/pi05/vjepa2_training/runs/tomato/joint_memory_ablation_20261112_183157_246624/handoff.zip",
+  "archive_sha256": "a170ac1478e20e2c21c3f48851184d850c3cc38cef59e1c96d9f1a1ed8657d68",
+  "archive_size_bytes": 15389071,
+  "archive_crc_ok": true,
+  "artifact_hashes_verified": 4339,
+  "test_result": "189 passed in 11.87s",
+  "models": 20,
+  "trainable_models": 18,
+  "oof_teachers": 5,
+  "source_count": 93,
+  "protected_files": 6149,
+  "branch": "feat/tomato-joint-memory-ablation-20261112",
+  "commit_created": false
+}

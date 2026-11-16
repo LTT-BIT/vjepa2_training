@@ -1,0 +1,20 @@
+{
+  "feature_targets_architecture_cost_clock_selection_sources_unchanged": true,
+  "other_12_model_checkpoints_unchanged": true,
+  "L0_explicit_L2_correction": "L0_L2_correction.lock.json",
+  "runtime_valid_input_parity": "checkpoint_reload_parity.json",
+  "changes": {
+    "tools/tomato_review_ui/learned_handshake/report.py": {
+      "locked": "c7c8182670ae1515d4bd51500ade7bcabccd14f2c5ec062cee527f5032bd877e",
+      "actual": "6ee3912f7fb2b87650e95cd6bc42634a6ee14909593e5d818acaecf0e7995b73"
+    },
+    "tools/tomato_review_ui/learned_handshake/shell_adapter.py": {
+      "locked": "bd4029a743c2f7778a4455c6b098df4c226223338cfa8f8edf78e039a842bec6",
+      "actual": "168da4514226614b4918a73fdf4080115c91c076dfed9ae9546a672d35dbcb24"
+    },
+    "tools/tomato_review_ui/learned_handshake/train.py": {
+      "locked": "1420465c4ab996b5b3273c2d254278b2073a5c0606a959f230ac8fa5ad07a1da",
+      "actual": "130b34d9459f88a0a0368e7f7e871ba22cf15194e08a574dfc833f685e3925b4"
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "version": "learned-handshake-v2",
+  "config": {
+    "baseline_root": "/home/user/pi05/vjepa2_training/runs/tomato/local93_20261107",
+    "memory_experiment": "/home/user/pi05/vjepa2_training/runs/tomato/joint_memory_ablation_20261112_183157_246624",
+    "output_root": "/home/user/pi05/vjepa2_training/runs/tomato",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "policies": [
+      "L0",
+      "L1a",
+      "L1b",
+      "L2",
+      "L3a"
+    ],
+    "history_length": 4,
+    "mlp_hidden": [
+      64,
+      32
+    ],
+    "gru_hidden": 32,
+    "dropout": 0.1,
+    "device": "cuda",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "batch_size": 256,
+    "epochs": 80,
+    "patience": 10,
+    "grad_clip": 1.0,
+    "aggregation_threshold": 0.1,
+    "aggregation_rounds_max": 1,
+    "lambda_time": 1.0,
+    "commit_probability": 0.5,
+    "hazard_switch_cost": [
+      4,
+      3,
+      2,
+      0,
+      0.3,
+      4
+    ],
+    "hazard_hold_cost": [
+      0,
+      0.25,
+      1,
+      3,
+      4,
+      0
+    ],
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20261112,
+    "risk_max_extra_missed": 0,
+    "risk_max_extra_unmatched": 0,
+    "min_non_degrading_seeds": 2
+  },
+  "source_sha256": {
+    "tools/tomato_review_ui/learned_handshake/__init__.py": "2145a14da77d4da8f3ae4d479237c1bc7017eef9ae956432486d5bb20cbdd9f9",
+    "tools/tomato_review_ui/learned_handshake/cli.py": "c4dfa49607836e0c4965c7ea0d71851863ea1c58e0f6277a1efd9de2f576930c",
+    "tools/tomato_review_ui/learned_handshake/contracts.py": "42337974e1c8791f0355ac8d4c12f9e15a1b1f73c4319d1834c8d70343d5bdd3",
+    "tools/tomato_review_ui/learned_handshake/evaluate.py": "18771fc8905f06fb0bc768b2d8e941963e7edd87a73431b010ae985c13418bce",
+    "tools/tomato_review_ui/learned_handshake/feature_builder.py": "140cc74fb30c5a86ec80b172b219f6a5fa8fd183386b56fe37d56e6e3c092d2d",
+    "tools/tomato_review_ui/learned_handshake/identity.py": "c917c4bc8c15c1d0f8e64364a66bf26f18af94a7536af3a22cb94086694a6701",
+    "tools/tomato_review_ui/learned_handshake/models.py": "889c487dbf6b579a570d95fd2595fc1a4bd41133b5d6116fca6f28da79d84d2d",
+    "tools/tomato_review_ui/learned_handshake/oof_teacher.py": "bed29b6449d6440e0a685ae24a4e95255094880277678932c5a6dfe4edf1f757",
+    "tools/tomato_review_ui/learned_handshake/replay.py": "d5f96ec0f71ea62520c110d17c291e0c329c99a5cf199e02b200d6f63fbd21af",
+    "tools/tomato_review_ui/learned_handshake/report.py": "c7c8182670ae1515d4bd51500ade7bcabccd14f2c5ec062cee527f5032bd877e",
+    "tools/tomato_review_ui/learned_handshake/rule_policies.py": "86311900da5c41bbc800e75c0746ab3ebcfb9152832fbb7d785d1b6885755036",
+    "tools/tomato_review_ui/learned_handshake/shell_adapter.py": "bd4029a743c2f7778a4455c6b098df4c226223338cfa8f8edf78e039a842bec6",
+    "tools/tomato_review_ui/learned_handshake/targets.py": "ac0d17d2691b5e9350724ac2015de6135d334187ef3f145c51624599cf26661e",
+    "tools/tomato_review_ui/learned_handshake/train.py": "1420465c4ab996b5b3273c2d254278b2073a5c0606a959f230ac8fa5ad07a1da"
+  },
+  "clock": {
+    "margin": 0.0,
+    "theta_prepare": 0.65,
+    "theta_commit": 0.8,
+    "K": 1,
+    "min_confirm_span_s": 0.0,
+    "theta_ack": 0.7,
+    "ack_timeout_s": 1.5,
+    "late_ack_enabled": true,
+    "late_ack_timeout_s": 5.0,
+    "legal_edges": true,
+    "ack_enabled": true,
+    "latency_s": 0.09,
+    "plan_period_s": 0.5,
+    "plan_offset_s": 0.0,
+    "prediction_ttl_s": 0.75
+  },
+  "task_policy": {
+    "pickup": [
+      "harvest"
+    ],
+    "harvest": [
+      "return"
+    ],
+    "return": [
+      "adjust"
+    ],
+    "adjust": [
+      "pickup"
+    ]
+  },
+  "feature_schema": {
+    "flat": 92,
+    "state": 48,
+    "sequence": [
+      4,
+      11
+    ],
+    "no_absolute_episode_time": true
+  },
+  "architecture": {
+    "L0": "linear current+delta+state 56->1",
+    "L1a": "92->64->32->1",
+    "L1b": "92->64->32->5",
+    "L2": "11->32 masked GRUCell32 + state48 ->64->32->5",
+    "L3a": "same L1b trunk, next4 + time6"
+  },
+  "targets": {
+    "request_window_commit_minus_boundary": [
+      -0.2,
+      0.5
+    ],
+    "time_bins": "A delta>1; B(.5,1]; C(0,.5]; D[-.2,0]; E[-1,-.2); F no valid target; delta<-1 late-catchup masked time but positive action while GT current=legal candidate",
+    "end_tail": "right-censored next boundary: mask next/time, retain HOLD only while actual commit tick remains annotated; exclude supervision beyond recording; never physical FINISH",
+    "weights": "equal source, equal event, equal occupied time stratum; sqrt weighted class mass; BCE pos_weight from train capped10"
+  },
+  "rules": {
+    "R1": "prepare>=.65, commitFuture>=.95 K1; .8<=p<.95 K2 distinct anchors",
+    "R2": "prepareFuture>=.65 and legal; request pF>=.8 OR pC(candidate)>=.8; Current never veto",
+    "R3": "NOT_RUN: referenced V1 fixed threshold unavailable; no invented replacement"
+  },
+  "aggregation": {
+    "rounds_max": 1,
+    "trigger": "train-only Active time disagreement from H0 OOF >.10",
+    "action": "combine H0+own train trajectories equally by source/event/time strata; reinitialize same seed; final v1 used unconditionally when triggered; no Active-based checkpoint search"
+  },
+  "validation": "fixed H0-state supervised loss early stopping; final own-trajectory Active risk ordering only after checkpoints fixed",
+  "selection": {
+    "non_degrade_seeds": 2,
+    "illegal_actual_max": 0,
+    "hard_timeouts_delta_max": 0,
+    "early_ge05_delta_max": 0,
+    "missed_delta_max": 0,
+    "extra_unmatched_delta_max": 0,
+    "order": "strict hits descending then wrong seconds ascending then exact order descending; qualifying learns >=2/3 seeds, select only risk-passing seed; report worst seed; deterministic rules same constraints; must improve strict or wrong to replace H0"
+  },
+  "conditional_groups": {
+    "L3b": "NOT_RUN_BUDGET initial minimum matrix",
+    "length8": "NOT_RUN_BUDGET",
+    "K1": "only fixed H0 and selected val policy after main lock, use existing K1 seed42 Future with B0 Current, no retrain"
+  },
+  "test": "H0 + unique validation-selected checkpoint only; test exposed historically; no test tuning",
+  "hazard_mapping": {
+    "switch_cost": [
+      4,
+      3,
+      2,
+      0,
+      0.3,
+      4
+    ],
+    "hold_cost": [
+      0,
+      0.25,
+      1,
+      3,
+      4,
+      0
+    ],
+    "request": "next_max>=.5 AND expected switch cost<hold cost",
+    "ablation": "same weights CDE mass>=.5, val-only diagnostic, not selection eligible"
+  },
+  "smoke": "seed42 two epochs, no architecture choice"
+}
