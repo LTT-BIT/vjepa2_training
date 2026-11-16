@@ -1,0 +1,32 @@
+{
+  "protocol": "tomato-stage-prediction-v1",
+  "b0_supported": true,
+  "memory_raw_input_shape": [
+    4,
+    16,
+    256,
+    256,
+    3
+  ],
+  "named_joint_input_shape": [
+    16,
+    58
+  ],
+  "roi_metadata_dimension": 116,
+  "checkpoint_encoder_binding_required": true,
+  "memory_control_eligible": false,
+  "offline_r11_live_enabled": false,
+  "tests": {
+    "agent_suite_passed": 363,
+    "skipped": 1,
+    "real_b0_service_smoke": 3
+  },
+  "new_memory_checkpoint_trained": false,
+  "cache_preparation": {
+    "version": "r11_v3",
+    "completed_episodes": 18,
+    "required_train_dev_episodes": 92,
+    "complete": false
+  },
+  "scope": "Integration before new training; no default model, label, OpenPI or RTC changes"
+}

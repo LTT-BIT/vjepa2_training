@@ -16,22 +16,33 @@ def main():
     p.add_argument('--pretrained-dir', required=True)
     p.add_argument('--device', choices=['cuda', 'cpu'], default='cuda')
     p.add_argument('--max-age-s', type=float, default=2.)
+    p.add_argument("--offline-replay", action="store_true", help="Research Memory replay only; never eligible for automatic control")
     a = p.parse_args()
-    agent = TomatoAgent(a.checkpoint, a.pretrained_dir, a.device)
-    print(json.dumps(dict(protocol=PROTOCOL, status='ready', model_version=agent.model_version)), flush=True)
+    import torch
+    architecture=torch.load(a.checkpoint,map_location='cpu',weights_only=True).get('architecture')
+    memory=architecture in ('old100_causal_rgb_memory_reader_v1','old100_rgb_memory_reader_v2')
+    if memory:
+        from .tomato_rgb_memory_agent import TomatoRGBMemoryAgent
+        agent=TomatoRGBMemoryAgent(a.checkpoint,a.pretrained_dir,a.device,offline_replay=a.offline_replay)
+    else:
+        if a.offline_replay:raise ValueError('offline-replay flag is for research Memory adapter only')
+        agent=TomatoAgent(a.checkpoint,a.pretrained_dir,a.device)
+    capabilities=dict(requires_local_roi=memory,control_eligible=not memory,architecture=architecture or 'b0',roi_contract=agent.contract if memory else None)
+    print(json.dumps(dict(protocol=PROTOCOL, status='ready', model_version=agent.model_version,**capabilities)), flush=True)
     for line in sys.stdin:
         request = {}
         try:
             request = json.loads(line)
             if request.get('operation') == 'health':
-                response = dict(protocol=PROTOCOL, status='ready', model_version=agent.model_version)
+                response = dict(protocol=PROTOCOL, status='ready', model_version=agent.model_version,**capabilities)
             else:
                 if request.get('protocol') != PROTOCOL:
                     raise ValueError('Unsupported protocol')
                 with np.load(request['observation_npz'], allow_pickle=False) as data:
+                    extra=dict(roi_metadata=data['roi_metadata'],roi_contract=str(data['roi_contract'])) if memory else {}
                     response = agent.predict(data['rgb'], data['joints'], data['joint_names'].tolist(),
                                              observation_id=request['observation_id'], session_id=request['session_id'],
-                                             timestamp=request['timestamp'], max_age_s=a.max_age_s)
+                                             timestamp=request['timestamp'], max_age_s=a.max_age_s,**extra)
         except Exception as exc:
             response = dict(protocol=PROTOCOL, valid=False, error=str(exc),
                             observation_id=request.get('observation_id') if isinstance(request, dict) else None)

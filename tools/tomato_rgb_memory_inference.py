@@ -19,7 +19,7 @@ class RGBMemorySession:
         if (session_id,episode_id,cache_signature)!=(self.session_id,self.episode_id,self.signature):return dict(valid=False,reason='identity_mismatch',suggests_prompt_update=False)
         try:
             t=float(timestamp);arrival=float(arrival_timestamp);v=np.asarray(visual,np.float32);q=np.asarray(positions,np.float32);m=np.asarray(metadata,np.float32)
-            valid=(q.shape==(16,58) and v.shape==(4,1024) and m.shape==(116,) and np.isfinite(v).all() and np.isfinite(q).all() and np.isfinite(m).all() and np.isfinite([t,arrival]).all() and 0<=arrival-t<=1 and (self.last is None or t>self.last) and (self.last_arrival is None or arrival>=self.last_arrival) and abs(m[112])<1e-6 and np.allclose(m[80:96],np.linspace(-1.5,0,16),atol=1e-5) and np.all(m[96:112]<=1e-6) and np.all(m[96:112]>=-.050001) and np.all(np.isin(m[64:80],[0,1])))
+            valid=(q.shape==(16,58) and v.shape==(4,1024) and m.shape==(116,) and np.isfinite(v).all() and np.isfinite(q).all() and np.isfinite(m).all() and np.isfinite([t,arrival]).all() and 0<=arrival-t<=1 and (self.last is None or t>self.last) and (self.last_arrival is None or arrival>=self.last_arrival) and abs(m[112])<1e-6 and np.allclose(m[80:96],np.linspace(-1.5,0,16),atol=.040001) and np.all(m[80:96]<=1e-6) and np.all(m[80:96]+m[96:112]<=1e-6) and np.all(m[96:112]<=.040001) and np.all(m[96:112]>=-.050001) and np.all(np.isin(m[64:80],[0,1])))
         except (TypeError,ValueError):valid=False
         if not valid:return dict(valid=False,reason='invalid_stale_or_reordered_window',suggests_prompt_update=False)
         if self.last is not None and t-self.last>.75:self.rows.clear()

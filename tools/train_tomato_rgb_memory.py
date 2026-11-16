@@ -74,7 +74,7 @@ def run(cache,out):
     if out.exists():raise FileExistsError('Preserve historical weights')
     cfg=ds.read_json(CONFIG);lock=verify(Path(cfg['frozen_lock']));manifest=ds.read_json(lock['manifest']);rows,index,mean,std=load_rows(cache,cfg,manifest);train=[r for r in rows if r['episode']['split']=='train'];dev=[r for r in rows if r['episode']['split']=='val'];assert not {r['episode']['source_recording_id'] for r in train}&{r['episode']['source_recording_id'] for r in dev};out.mkdir(parents=True);ds.write_json(out/'protocol.json',cfg);ds.write_json(out/'cache_binding.json',index);sources=[Path(__file__),Path('tools/tomato_rgb_memory_model.py'),Path('tools/tomato_rgb_memory_training.py')]
     for p in sources:(out/p.name).write_bytes(p.read_bytes())
-    identity=dict(manifest_sha256=lock['manifest_sha256'],cache_signature=index['signature'],cache_index_sha256=ds.digest(cache/'index.json'),statistics_sha256=index['statistics_sha256'],joint_names=index['joint_names'],source_sha256={str(p):ds.digest(p) for p in sources});results={};start=time.perf_counter()
+    identity=dict(pretrained=lock['pretrained'],manifest_sha256=lock['manifest_sha256'],cache_signature=index['signature'],cache_index_sha256=ds.digest(cache/'index.json'),statistics_sha256=index['statistics_sha256'],joint_names=index['joint_names'],source_sha256={str(p):ds.digest(p) for p in sources});results={};start=time.perf_counter()
     for seed in cfg['seeds']:
         folder=out/f'seed{seed}';folder.mkdir();results[str(seed)]={};baseline={}
         for r in dev:
