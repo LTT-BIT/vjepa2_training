@@ -42,7 +42,7 @@ def fit_single(rows,method,target,seed,cfg,mean,std,path,identity):
     info=dict(training_s=time.perf_counter()-start,peak_allocated_bytes=torch.cuda.max_memory_allocated(),
         parameters=sum(p.numel() for p in net.parameters()),initialization_sha256=initial,
         loss=history,updates=updates,target=target,valid_training_windows=int(valid.sum()))
-    torch.save(dict(format_version=1,architecture='old100_single_rgb_memory_v1',target=target,
+    torch.save(dict(format_version=1,architecture=cfg.get('single_architecture','old100_single_rgb_memory_v1'),target=target,
         method=method,head={k:v.detach().cpu() for k,v in net.state_dict().items()},
         state_mean=torch.from_numpy(mean),state_std=torch.from_numpy(std),class_weights=weight.cpu(),
         optimizer_state=optimizer.state_dict(),rng_state=rng.bit_generator.state,

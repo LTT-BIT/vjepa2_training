@@ -1,5 +1,22 @@
 # 本地番茄 Agent 训练与接口
 
+## 119条全部方案训练（2026-11-18）
+
+用户已授权全部训练。入口为 `tools/train_tomato_inhand119_agents.py`，独立于旧100条实验：三路全图、四路当前图、四路加局部历史8窗口，分别训练独立 Current/Future 头，种子42/43/44，共9个双头模型、18个分类头。视觉编码器冻结，共用视觉特征，不共用训练中的分类头。
+
+新数据固定119个normal原始录制，共357970帧。按录制ID排序后用seed42划分95训练、12验证、12测试，三组共享划分；关节统计只拟合95条训练录制。模型输出仍是pickup/harvest/return/adjust四类，任务顺序改为pickup→harvest→adjust→harvest→return，不能套用旧七阶段评估。历史16帧、10Hz采样，查询2Hz，Future标签为当前时刻后1.5秒；超出录制末尾的Future标签不训练。
+
+入口校验新119条policy bundle和selection的固定SHA，校验所有视频、带标注的Parquet及ROI元数据，保留原始数据。30epoch和Current≥0.8连续两次的回放规则预先固定；9个模型冻结后才计算独立测试集结果，不根据测试集改阈值或重训。配置、划分、统计、进度、各头权重、双头包、验证/测试指标及最终receipt保存在独立run目录。重复执行会校验并复用已完成的视觉缓存和双头包，未完成的双头训练重新进行。
+
+```bash
+OMP_NUM_THREADS=8 MKL_NUM_THREADS=8 .venv-tomato/bin/python -u \
+  -m tools.train_tomato_inhand119_agents \
+  --root /home/user/datasets/derived/tomato_inhand119_agent_20261118 \
+  --out runs/tomato/inhand119_independent_20261118
+```
+
+使用新119条动作模型对应的已录制右手番茄串ROI。ROI坐标由离线前后帧辅助生成，像素来自相应历史帧；权重明确记录 `roi_uses_future_coordinates=true`、`control_eligible=false`。训练完成和离线评估不等于已经通过在线ROI或自动切阶段验收。部署端原有手动切换不受训练影响。
+
 当前优先完成可运行的训练和离线推理。冻结官方视觉编码器，训练 current/future 头；不改 OpenPI 模型、训练损失、归一化或 RTC。首次适配阶段只运行三条smoke，未进行94条全规模训练，也没有连接真实机器人。后续用户授权的正式训练以 [多方案训练说明](TOMATO_CAMPAIGN.md) 为准。
 
 ## 环境与官方模型
