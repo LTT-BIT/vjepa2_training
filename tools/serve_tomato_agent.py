@@ -20,7 +20,7 @@ def main():
     a = p.parse_args()
     import torch
     architecture=torch.load(a.checkpoint,map_location='cpu',weights_only=True).get('architecture')
-    memory=architecture in ('old100_causal_rgb_memory_reader_v1','old100_rgb_memory_reader_v2','old100_independent_rgb_memory_v1')
+    memory=architecture in ('old100_causal_rgb_memory_reader_v1','old100_rgb_memory_reader_v2','old100_independent_rgb_memory_v1','tomato_inhand_independent_rgb_memory_v2')
     if memory:
         from .tomato_rgb_memory_agent import TomatoRGBMemoryAgent
         agent=TomatoRGBMemoryAgent(a.checkpoint,a.pretrained_dir,a.device,offline_replay=a.offline_replay)

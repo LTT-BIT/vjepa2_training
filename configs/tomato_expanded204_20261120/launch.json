@@ -1,0 +1,25 @@
+{
+  "run": "/home/user/vjepa2_training/runs/tomato/inhand204_independent_20261120_v1",
+  "training_log": "/home/user/vjepa2_training/runs/tomato/inhand204_independent_20261120_v1/training.log",
+  "pid": 4004205,
+  "tests": "378 passed,1 skipped",
+  "previous_models": "119 checkpoints archived; never used to initialize new models",
+  "reuse": "Only107 unchanged training/val recordings frozen visual cache,428 camera files; no holdout RGB read",
+  "new_video_files": 260,
+  "default_deployment": "Tairan unchanged; research weights not automatically activated",
+  "sealed_new_test": 20,
+  "historical_test": 12,
+  "training_completed": false,
+  "selection": "fixed30epochs,all3seeds; no test/threshold selection",
+  "tool_session": 63961,
+  "phase_at_commit": {
+    "stage": "extracting",
+    "updated_at": "2026-11-20T09:51:11.238204+00:00",
+    "completed": 312,
+    "total": 688,
+    "elapsed_s": 75.06039887689985,
+    "last": "inhand204_a9533997a220432a9fc3a95c6beb839a/interaction"
+  },
+  "initial_new_video_encoding_verified": true,
+  "source_lock_verified": true
+}

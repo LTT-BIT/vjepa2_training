@@ -1,0 +1,14 @@
+{
+  "source_sha256": {
+    "/home/user/vjepa2_training/tools/train_tomato_expanded_agents.py": "30482a33cd790032851a0ea3038970ac163f2dfdf99e3e55492b95d1c8ec4467",
+    "tools/train_tomato_independent_rgb_memory.py": "6b20db53932669af97f973cb984164d9d447f9571a9b89868f93ee75cb6e4a8b",
+    "tools/train_tomato_inhand119_agents.py": "64ca41f00f3772e8615f9e8ff453c93fa094d81c660d6f408aa267fe031d3518",
+    "tools/train_tomato_rgb_memory.py": "61d2309f63500bc448cf56d2e51e6a6f5b5127cf24e2151bdbc15ed8ac2ff003",
+    "tools/tomato_independent_rgb_memory.py": "3ce7d828404ce6cc503d850384d39a52cb3dd0bf0d2d10b222e0f3f2d972f1b9",
+    "tools/tomato_rgb_memory_model.py": "ad87a2deefcb80709546fad63541ee77753ebb2431d112551298352a30f00eca",
+    "tools/tomato_rgb_memory_training.py": "237f1c509af43b66fbe4e715a0733569d81b65de9f4782bba21da9576aaa63a4",
+    "tools/tomato_dataset.py": "1d84d589095ecbda33c8be457ff1d10af880aca30df47f4062cfe2898d3ad3db",
+    "tools/tomato_phase_model.py": "8cdebb9a52422fac670b0feb421dce2b8939e03635c312f26f007d3754af8671"
+  },
+  "git_sha": "7fb446b5dd1c2c8e0bef101ee82fe44358103ed3"
+}

@@ -10,11 +10,11 @@ class RGBMemorySession:
     def __init__(self,checkpoint,*,session_id,episode_id,device='cpu',offline_replay=False):
         if not session_id or not episode_id:raise ValueError('Session and episode identity required')
         saved=torch.load(checkpoint,map_location='cpu',weights_only=True)
-        if saved.get('architecture') not in ('old100_causal_rgb_memory_reader_v1','old100_rgb_memory_reader_v2','old100_independent_rgb_memory_v1') or saved.get('format_version')!=1:raise ValueError('Experimental RGB-memory checkpoint required')
+        if saved.get('architecture') not in ('old100_causal_rgb_memory_reader_v1','old100_rgb_memory_reader_v2','old100_independent_rgb_memory_v1','tomato_inhand_independent_rgb_memory_v2') or saved.get('format_version')!=1:raise ValueError('Experimental RGB-memory checkpoint required')
         self.offline_only=bool(saved['protocol'].get('roi_uses_future_coordinates',False))
         if self.offline_only and not offline_replay:raise ValueError('Recorded r11 future-assisted ROI checkpoint is offline-replay-only; live ROI acceptance required')
         self.saved=saved;self.device=device
-        if saved['architecture']=='old100_independent_rgb_memory_v1':
+        if saved['architecture'] in ('old100_independent_rgb_memory_v1','tomato_inhand_independent_rgb_memory_v2'):
             from .tomato_independent_rgb_memory import restore_reader
             self.net=restore_reader(saved).to(device).eval()
         else:
